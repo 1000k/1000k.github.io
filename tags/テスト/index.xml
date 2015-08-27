@@ -17,7 +17,7 @@
       <guid>http://1000k.github.io/2014/05/22/protractor-doesnt-work-for-me/</guid>
       <description>
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/angular/angular-seed&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/angular/angular-seed&#39;, &#39;angular-seed&#39;]);&#34; &gt;angular-seed&lt;/a&gt; を使って Angular.js の開発環境を作成していたのですが、どうにもこうにも e2e テストが動かなくてハマりました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/angular/angular-seed&#34;&gt;angular-seed&lt;/a&gt; を使って Angular.js の開発環境を作成していたのですが、どうにもこうにも e2e テストが動かなくてハマりました。&lt;/p&gt;
 
 &lt;p&gt;エラーメッセージは以下のとおり。&lt;/p&gt;
 
@@ -98,7 +98,7 @@ $ java -version
 &lt;h2 id=&#34;参考:44911033301877b7be87059dd5b5c5f6&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/20188679/how-to-run-protractor/23772014#23772014&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://stackoverflow.com/questions/20188679/how-to-run-protractor/23772014#23772014&#39;, &#39;angularjs &amp;#8211; How to run protractor? &amp;#8211; Stack Overflow&#39;]);&#34; &gt;angularjs &amp;#8211; How to run protractor? &amp;#8211; Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/20188679/how-to-run-protractor/23772014#23772014&#34;&gt;angularjs - How to run protractor? - Stack Overflow&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -170,7 +170,7 @@ class FooClassTest extends PHPUnit_Framework_TestCase {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;また、PHPUnit の Expectation はメソッドチェーンで連続して指定できます (&amp;#8220;-&amp;gt;&amp;#8221; 演算子で繋げて書ける) が、そもそも記述量が多いです。いちいち this this 書くのも煩わしい。&lt;/p&gt;
+&lt;p&gt;また、PHPUnit の Expectation はメソッドチェーンで連続して指定できます (&amp;ldquo;-&amp;gt;&amp;rdquo; 演算子で繋げて書ける) が、そもそも記述量が多いです。いちいち this this 書くのも煩わしい。&lt;/p&gt;
 
 &lt;p&gt;そこで、Expectation をセットするためのメソッドを作ってやると楽になります。&lt;/p&gt;
 
@@ -178,12 +178,12 @@ class FooClassTest extends PHPUnit_Framework_TestCase {
     /**
      * モックオブジェクトに Expectation を設定する。
      *
-     * @param Object &amp;amp;#038;$mock モックオブジェクト
+     * @param Object &amp;amp;$mock モックオブジェクト
      * @param string $matcher マッチャー ([any|once|never|...])
      * @param string $method メソッド名
      * @param mixed $return_value 期待する戻り値
      */
-    protected function _setExpectation(&amp;amp;#038;$mock, $matcher, $method, $return_value = null) {
+    protected function _setExpectation(&amp;amp;$mock, $matcher, $method, $return_value = null) {
         $mock-&amp;gt;expects($this-&amp;gt;$matcher())
             -&amp;gt;method($method)
             -&amp;gt;will($this-&amp;gt;returnValue($return_value));
@@ -216,13 +216,13 @@ class FooClassTest extends MyTestCase {
 
 &lt;p&gt;また、PHPDoc 部分に &lt;code&gt;@test&lt;/code&gt; アノテーションを付けると、メソッド名を &lt;code&gt;test&lt;/code&gt; で始めなくてもテストケースとして認識されるようになります。私はこの方が読みやすいので、最近はこう書くことが多いです。&lt;/p&gt;
 
-&lt;p&gt;こういう改善をしても、Ruby に慣れているとまだ長く感じます。「$」「&amp;#8217;」「&amp;gt;」などの記号を打つのも煩わしいです。Ruby 使いてえなあ。&lt;/p&gt;
+&lt;p&gt;こういう改善をしても、Ruby に慣れているとまだ長く感じます。「$」「&amp;rsquo;」「&amp;gt;」などの記号を打つのも煩わしいです。Ruby 使いてえなあ。&lt;/p&gt;
 
 &lt;h2 id=&#34;参考:66eb9e16e3cbfb7a24c972ec7c7d6f12&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://phpunit.de/manual/3.8/ja/test-doubles.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://phpunit.de/manual/3.8/ja/test-doubles.html&#39;, &#39;PHPUnit 公式マニュアル &gt; 第10章 テストダブル&amp;rsquo;]);&amp;rdquo; &amp;gt;PHPUnit 公式マニュアル &amp;gt; 第10章 テストダブル&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://phpunit.de/manual/3.8/ja/appendixes.annotations.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://phpunit.de/manual/3.8/ja/appendixes.annotations.html&#39;, &#39;付録B アノテーション&#39;]);&#34; &gt;付録B アノテーション&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ 第10章 テストダブル&amp;rsquo;]);&amp;rdquo; &amp;gt;PHPUnit 公式マニュアル &amp;gt; 第10章 テストダブル](&lt;a href=&#34;http://phpunit.de/manual/3.8/ja/test-doubles.html&#34;&gt;http://phpunit.de/manual/3.8/ja/test-doubles.html&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://phpunit.de/manual/3.8/ja/appendixes.annotations.html&#34;&gt;付録B アノテーション&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -235,7 +235,7 @@ class FooClassTest extends MyTestCase {
       <guid>http://1000k.github.io/2013/03/27/usage-of-vfsstream/</guid>
       <description>
 
-&lt;p&gt;PHPUnit でファイルシステムのテストを行うとき便利な &lt;a href=&#34;http://vfs.bovigo.org/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://vfs.bovigo.org/&#39;, &#39;vfsStream&#39;]);&#34; &gt;vfsStream&lt;/a&gt; ですが、簡単なサンプルがあまり無かったので書いてみました。&lt;/p&gt;
+&lt;p&gt;PHPUnit でファイルシステムのテストを行うとき便利な &lt;a href=&#34;http://vfs.bovigo.org/&#34;&gt;vfsStream&lt;/a&gt; ですが、簡単なサンプルがあまり無かったので書いてみました。&lt;/p&gt;
 
 &lt;h2 id=&#34;vfsstream-とは:1bb7a2da6956cd5c18323dac9c2045f6&#34;&gt;vfsStream とは？&lt;/h2&gt;
 
@@ -244,8 +244,8 @@ class FooClassTest extends MyTestCase {
 &lt;li&gt;仮想ファイルシステムを作成し、その中でディレクトリやファイルを操作できる。
 
 &lt;ul&gt;
-&lt;li&gt;実ファイルシステム: &lt;em&gt;file://&amp;#8230;&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;仮想ファイルシステム: &lt;em&gt;vfs://&amp;#8230;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;実ファイルシステム: &lt;em&gt;file://…&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;仮想ファイルシステム: &lt;em&gt;vfs://…&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;実ファイルを作成せずにテストできるので、テストファイルが散らばる可能性が無く、前回のテストのゴミを意識せずに済む。&lt;/li&gt;
 &lt;li&gt;ディレクトリやファイルの権限/ユーザー/オーナーも再現可能。&lt;/li&gt;
@@ -253,7 +253,7 @@ class FooClassTest extends MyTestCase {
 
 &lt;h2 id=&#34;インストール方法:1bb7a2da6956cd5c18323dac9c2045f6&#34;&gt;インストール方法&lt;/h2&gt;
 
-&lt;p&gt;詳しくは以前書いた &lt;a href=&#34;http://blog.1000k.net/2012/09/04/vfsstream%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/2012/09/04/vfsstream%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/&#39;, &#39;vfsStreamをインストールする | 1000g&#39;]);&#34; &gt;vfsStreamをインストールする | 1000g&lt;/a&gt; を参照。&lt;/p&gt;
+&lt;p&gt;詳しくは以前書いた &lt;a href=&#34;http://blog.1000k.net/2012/09/04/vfsstream%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/&#34;&gt;vfsStreamをインストールする | 1000g&lt;/a&gt; を参照。&lt;/p&gt;
 
 &lt;h3 id=&#34;php-5-3-の場合:1bb7a2da6956cd5c18323dac9c2045f6&#34;&gt;PHP &amp;lt; 5.3 の場合&lt;/h3&gt;
 
@@ -268,7 +268,7 @@ $ pear install bovigo/vfsStream-beta
 &lt;pre&gt;&lt;code&gt;&amp;quot;mikey179/vfsStream&amp;quot;: &amp;quot;v1.1.0&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;利用可能なバージョンは &lt;a href=&#34;https://packagist.org/packages/mikey179/vfsStream&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://packagist.org/packages/mikey179/vfsStream&#39;, &#39;mikey179/vfsStream &amp;#8211; Packagist&#39;]);&#34; &gt;mikey179/vfsStream &amp;#8211; Packagist&lt;/a&gt; を参照。&lt;/p&gt;
+&lt;p&gt;利用可能なバージョンは &lt;a href=&#34;https://packagist.org/packages/mikey179/vfsStream&#34;&gt;mikey179/vfsStream - Packagist&lt;/a&gt; を参照。&lt;/p&gt;
 
 &lt;h2 id=&#34;サンプルコード:1bb7a2da6956cd5c18323dac9c2045f6&#34;&gt;サンプルコード&lt;/h2&gt;
 
@@ -321,17 +321,17 @@ class LoggerTest extends PHPUnit_Framework_Test {
 &lt;h2 id=&#34;参考:1bb7a2da6956cd5c18323dac9c2045f6&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://tech.vg.no/2011/03/09/mocking-the-file-system-using-phpunit-and-vfsstream/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://tech.vg.no/2011/03/09/mocking-the-file-system-using-phpunit-and-vfsstream/&#39;, &#39;Mocking the file system using PHPUnit and vfsStream – VG Tech&#39;]);&#34; &gt;Mocking the file system using PHPUnit and vfsStream – VG Tech&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://tech.vg.no/2011/03/09/mocking-the-file-system-using-phpunit-and-vfsstream/&#34;&gt;Mocking the file system using PHPUnit and vfsStream – VG Tech&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;vfsStream を使った様々なテストのサンプルがあります。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/mikey179/vfsStream/wiki&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/mikey179/vfsStream/wiki&#39;, &#39;Home · mikey179/vfsStream Wiki&#39;]);&#34; &gt;Home · mikey179/vfsStream Wiki&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mikey179/vfsStream/wiki&#34;&gt;Home · mikey179/vfsStream Wiki&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;作成元の GitHub ページ。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.phpunit.de/manual/current/ja/test-doubles.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.phpunit.de/manual/current/ja/test-doubles.html&#39;, &#39;第10章 テストダブル&#39;]);&#34; &gt;第10章 テストダブル&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.phpunit.de/manual/current/ja/test-doubles.html&#34;&gt;第10章 テストダブル&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;PHPUnit のドキュメント内にある解説。&lt;/li&gt;
@@ -362,7 +362,7 @@ java.lang.UnsupportedClassVersionError: 48.0
 
 &lt;p&gt;修正方法をメモしておきます。&lt;/p&gt;
 
-&lt;p&gt;OS がどの JDK を参照しているのかは、 &lt;span class=&#34;lang:default decode:true crayon-inline&#34;&gt;update-alternatives &amp;#8211;display java&lt;/span&gt; コマンドで確認することができます。&lt;/p&gt;
+&lt;p&gt;OS がどの JDK を参照しているのかは、 &lt;span class=&#34;lang:default decode:true crayon-inline&#34;&gt;update-alternatives -display java&lt;/span&gt; コマンドで確認することができます。&lt;/p&gt;
 
 &lt;p&gt;叩いてみると、やはり古い JDK を参照していました。&lt;/p&gt;
 
@@ -380,7 +380,7 @@ java -ステータスは自動です。
 
 &lt;p&gt;これを最新版に切り替えたいのですが、私は手動で JDK 1.6.0 をインストールしたせいで、update-alternatives に認識されていませんでした。&lt;/p&gt;
 
-&lt;p&gt;&lt;span class=&#34;lang:default decode:true crayon-inline&#34;&gt;&amp;#8211;config java&lt;/span&gt; オプションで確認してみると、JDK 1.4.2 しか表示されません。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;lang:default decode:true crayon-inline&#34;&gt;-config java&lt;/span&gt; オプションで確認してみると、JDK 1.4.2 しか表示されません。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;# update-alternatives --config java
 
@@ -402,7 +402,7 @@ Enter を押して現在の選択 [+] を保持するか、選択番号を入力
 
 &lt;p&gt;これでOKです。&lt;/p&gt;
 
-&lt;p&gt;再び &lt;span class=&#34;lang:default decode:true crayon-inline&#34;&gt;update-alternatives &amp;#8211;config java&lt;/span&gt; コマンドでリンクの書き換えが成功してしていることを確かめられます。&lt;/p&gt;
+&lt;p&gt;再び &lt;span class=&#34;lang:default decode:true crayon-inline&#34;&gt;update-alternatives -config java&lt;/span&gt; コマンドでリンクの書き換えが成功してしていることを確かめられます。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;# update-alternatives --config java
 
@@ -423,9 +423,9 @@ Starting Jenkins                                           [  OK  ]
 &lt;h2 id=&#34;参考:ad0e5aaa074c415a1446b0cc67a27773&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/9527737/how-do-i-configure-starting-jdk-for-hudsonnow-jenkins&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://stackoverflow.com/questions/9527737/how-do-i-configure-starting-jdk-for-hudsonnow-jenkins&#39;, &#39;How do I configure starting jdk for hudson(now jenkins)? &amp;#8211; Stack Overflow&#39;]);&#34; &gt;How do I configure starting jdk for hudson(now jenkins)? &amp;#8211; Stack Overflow&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.neofig.com/2011/03/11/update-alternatives%E3%81%A7%E8%A4%87%E6%95%B0%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%82%92%E6%8C%81%E3%81%A4%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E3%81%AE%E5%88%87%E3%82%8A/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.neofig.com/2011/03/11/update-alternatives%E3%81%A7%E8%A4%87%E6%95%B0%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%82%92%E6%8C%81%E3%81%A4%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E3%81%AE%E5%88%87%E3%82%8A/&#39;, &#39;update-alternativesで複数のバージョンを持つプログラムの切り替え | kyamamoto at blog.neofig.com&#39;]);&#34; &gt;update-alternativesで複数のバージョンを持つプログラムの切り替え | kyamamoto at blog.neofig.com&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://piggydb.jp/document-view.htm?id=597&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://piggydb.jp/document-view.htm?id=597&#39;, &#39;update-alternativesのグループにインストールしたJavaが追加されていないのかも&#39;]);&#34; &gt;update-alternativesのグループにインストールしたJavaが追加されていないのかも&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/9527737/how-do-i-configure-starting-jdk-for-hudsonnow-jenkins&#34;&gt;How do I configure starting jdk for hudson(now jenkins)? - Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.neofig.com/2011/03/11/update-alternatives%E3%81%A7%E8%A4%87%E6%95%B0%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%82%92%E6%8C%81%E3%81%A4%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E3%81%AE%E5%88%87%E3%82%8A/&#34;&gt;update-alternativesで複数のバージョンを持つプログラムの切り替え | kyamamoto at blog.neofig.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://piggydb.jp/document-view.htm?id=597&#34;&gt;update-alternativesのグループにインストールしたJavaが追加されていないのかも&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -444,7 +444,7 @@ Starting Jenkins                                           [  OK  ]
 
 &lt;p&gt;単体テストの際には必ず必要になる知識なので、解説しておきます。&lt;/p&gt;
 
-&lt;p&gt;以下のサンプルでは &lt;a href=&#34;http://www.phpunit.de/manual/3.8/ja/index.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.phpunit.de/manual/3.8/ja/index.html&#39;, &#39;PHPUnit&#39;]);&#34; &gt;PHPUnit&lt;/a&gt; を利用しています。&lt;/p&gt;
+&lt;p&gt;以下のサンプルでは &lt;a href=&#34;http://www.phpunit.de/manual/3.8/ja/index.html&#34;&gt;PHPUnit&lt;/a&gt; を利用しています。&lt;/p&gt;
 
 &lt;h2 id=&#34;単体テストができないケース:d011759973daaf90efe485c60339885a&#34;&gt;単体テストができないケース&lt;/h2&gt;
 
@@ -637,26 +637,26 @@ Starting Jenkins                                           [  OK  ]
 
 &lt;h2 id=&#34;補足1-runkitで強引にメソッドの挙動を変える方法:d011759973daaf90efe485c60339885a&#34;&gt;補足1: runkitで強引にメソッドの挙動を変える方法&lt;/h2&gt;
 
-&lt;p&gt;PHPにおいては &lt;a href=&#34;http://php.net/manual/ja/book.runkit.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://php.net/manual/ja/book.runkit.php&#39;, &#39;runkit&#39;]);&#34; &gt;runkit&lt;/a&gt; を使うことで、モック化をしなくてもメソッドの挙動を強引に変えることが可能です。ただし破壊的な手段であり、これが必要な時点でオブジェクト指向的な設計ができていない疑いが非常に強いです。&lt;/p&gt;
+&lt;p&gt;PHPにおいては &lt;a href=&#34;http://php.net/manual/ja/book.runkit.php&#34;&gt;runkit&lt;/a&gt; を使うことで、モック化をしなくてもメソッドの挙動を強引に変えることが可能です。ただし破壊的な手段であり、これが必要な時点でオブジェクト指向的な設計ができていない疑いが非常に強いです。&lt;/p&gt;
 
 &lt;p&gt;できるだけ Constructor Injection 等の方法を用い、テスト可能になるようリファクタリングをしましょう。リファクタリング中はコードが醜くなるかもしれませんが、最終的に設計が改善できるならば結果OKです。美しさよりも安全性が何より重要です。&lt;/p&gt;
 
 &lt;h2 id=&#34;補足2-constructor-injection-vs-setter-injection:d011759973daaf90efe485c60339885a&#34;&gt;補足2: Constructor Injection vs Setter Injection&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/2012/10/23/%e6%8a%84%e8%a8%b3-constructor-injection-vs-setter-injection/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/2012/10/23/%e6%8a%84%e8%a8%b3-constructor-injection-vs-setter-injection/&#39;, &#39;抄訳: Constructor Injection vs. Setter Injection | 1000g&#39;]);&#34; &gt;抄訳: Constructor Injection vs. Setter Injection | 1000g&lt;/a&gt; にて、コンストラクター・インジェクションとセッター・インジェクションのどちらが良いかを考察しています。結論としてはコンストラクター・インジェクションがベターです。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/2012/10/23/%e6%8a%84%e8%a8%b3-constructor-injection-vs-setter-injection/&#34;&gt;抄訳: Constructor Injection vs. Setter Injection | 1000g&lt;/a&gt; にて、コンストラクター・インジェクションとセッター・インジェクションのどちらが良いかを考察しています。結論としてはコンストラクター・インジェクションがベターです。&lt;/p&gt;
 
 &lt;h2 id=&#34;参考:d011759973daaf90efe485c60339885a&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://ja.wikipedia.org/wiki/%E4%BE%9D%E5%AD%98%E6%80%A7%E3%81%AE%E6%B3%A8%E5%85%A5&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://ja.wikipedia.org/wiki/%E4%BE%9D%E5%AD%98%E6%80%A7%E3%81%AE%E6%B3%A8%E5%85%A5&#39;, &#39;依存性の注入 &amp;#8211; Wikipedia&#39;]);&#34; &gt;依存性の注入 &amp;#8211; Wikipedia&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/m-hiyama/20060926/1159253903&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://d.hatena.ne.jp/m-hiyama/20060926/1159253903&#39;, &#39;DI（依存性注入）を白紙から説明してみる &amp;#8211; 檜山正幸のキマイラ飼育記&#39;]);&#34; &gt;DI（依存性注入）を白紙から説明してみる &amp;#8211; 檜山正幸のキマイラ飼育記&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://martinfowler.com/articles/injection.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://martinfowler.com/articles/injection.html&#39;, &#39;Inversion of Control Containers and the Dependency Injection pattern&#39;]);&#34; &gt;Inversion of Control Containers and the Dependency Injection pattern&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://ja.wikipedia.org/wiki/%E4%BE%9D%E5%AD%98%E6%80%A7%E3%81%AE%E6%B3%A8%E5%85%A5&#34;&gt;依存性の注入 - Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/m-hiyama/20060926/1159253903&#34;&gt;DI（依存性注入）を白紙から説明してみる - 檜山正幸のキマイラ飼育記&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://martinfowler.com/articles/injection.html&#34;&gt;Inversion of Control Containers and the Dependency Injection pattern&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;リファクタリング界の大御所、Martin Fowler氏の考察。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.techscore.com/tech/Java/Others/Spring/1-3/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.techscore.com/tech/Java/Others/Spring/1-3/&#39;, &#39;Dependency Injection のタイプ | TECHSCORE(テックスコア)&#39;]);&#34; &gt;Dependency Injection のタイプ | TECHSCORE(テックスコア)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.phpunit.de/manual/3.7/ja/test-doubles.html#test-doubles.mock-objects&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.phpunit.de/manual/3.7/ja/test-doubles.html#test-doubles.mock-objects&#39;, &#39;第10章 テストダブル&#39;]);&#34; &gt;第10章 テストダブル&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.techscore.com/tech/Java/Others/Spring/1-3/&#34;&gt;Dependency Injection のタイプ | TECHSCORE(テックスコア)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.phpunit.de/manual/3.7/ja/test-doubles.html#test-doubles.mock-objects&#34;&gt;第10章 テストダブル&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;PHPUnit 公式マニュアルによるモックの使い方。&lt;/li&gt;
@@ -673,7 +673,7 @@ Starting Jenkins                                           [  OK  ]
       <guid>http://1000k.github.io/2012/10/23/translation-constructor-injection-vs-setter-injection/</guid>
       <description>
 
-&lt;p&gt;&lt;a href=&#34;http://misko.hevery.com/2009/02/19/constructor-injection-vs-setter-injection/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://misko.hevery.com/2009/02/19/constructor-injection-vs-setter-injection/&#39;, &#39;Constructor Injection vs. Setter Injection&#39;]);&#34; &gt;Constructor Injection vs. Setter Injection&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://misko.hevery.com/2009/02/19/constructor-injection-vs-setter-injection/&#34;&gt;Constructor Injection vs. Setter Injection&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;3年前の記事ですが、かなり役立つ知識だったので、一部補足しながら訳しました。コードを単体テスト可能にする（＝「接合点を作る」）ために知っておくべき内容です。&lt;/p&gt;
 
@@ -710,7 +710,7 @@ processor.setDatabase(db);
 
 &lt;h2 id=&#34;どちらが良いか:b2ac201c3b760f5a9180de0cd4a738c1&#34;&gt;どちらが良いか？&lt;/h2&gt;
 
-&lt;p&gt;一見すると、コンストラクタにごちゃごちゃ引数を渡さなくて済むぶん Setter Injection の方が楽に書けて良いように思えます。しかし Contructor Injection の方が優れている部分があるため、私は後者を選びます。それは、Constructor Injection はパラメータの順序を指定でき、&lt;a href=&#34;http://misko.hevery.com/2008/08/01/circular-dependency-in-constructors-and-dependency-injection/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://misko.hevery.com/2008/08/01/circular-dependency-in-constructors-and-dependency-injection/&#39;, &#39;Circular Dependency&#39;]);&#34; title=&#34;Circular Dependency in constructors and Dependency Injection&#34;&gt;Circular Dependency&lt;/a&gt;（循環参照）に陥る危険が無いという点です。&lt;/p&gt;
+&lt;p&gt;一見すると、コンストラクタにごちゃごちゃ引数を渡さなくて済むぶん Setter Injection の方が楽に書けて良いように思えます。しかし Contructor Injection の方が優れている部分があるため、私は後者を選びます。それは、Constructor Injection はパラメータの順序を指定でき、&lt;a href=&#34;http://misko.hevery.com/2008/08/01/circular-dependency-in-constructors-and-dependency-injection/&#34;&gt;Circular Dependency&lt;/a&gt;（循環参照）に陥る危険が無いという点です。&lt;/p&gt;
 
 &lt;p&gt;一般的なアプリは多くのクラスと連携します。そこに Setter Injection を採用すると、何度も setter の呼び出しを行う事になってしまいます。これだと連携するクラスの数が増えるたびに setter をコールする行を追加しなくてはいけません。面倒ですし、コールし忘れの危険性も増えます。さらに set する順番が決まっている場合は最悪です。&lt;/p&gt;
 
@@ -856,9 +856,9 @@ OK (1 test, 3 assertions)
 &lt;h2 id=&#34;参考:caf62378c2e0b948501f395df88dace1&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.phpunit.de/manual/3.7/ja/appendixes.annotations.html#appendixes.annotations.runInSeparateProcess&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.phpunit.de/manual/3.7/ja/appendixes.annotations.html#appendixes.annotations.runInSeparateProcess&#39;, &#39;付録B アノテーション&#39;]);&#34; &gt;付録B アノテーション&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.php.net/manual/ja/function.header.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.php.net/manual/ja/function.header.php&#39;, &#39;PHP: header &amp;#8211; Manual&#39;]);&#34; &gt;PHP: header &amp;#8211; Manual&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/9745080/test-php-headers-with-phpunit&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://stackoverflow.com/questions/9745080/test-php-headers-with-phpunit&#39;, &#39;unit testing &amp;#8211; Test PHP headers with PHPunit &amp;#8211; Stack Overflow&#39;]);&#34; &gt;unit testing &amp;#8211; Test PHP headers with PHPunit &amp;#8211; Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.phpunit.de/manual/3.7/ja/appendixes.annotations.html#appendixes.annotations.runInSeparateProcess&#34;&gt;付録B アノテーション&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.php.net/manual/ja/function.header.php&#34;&gt;PHP: header - Manual&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/9745080/test-php-headers-with-phpunit&#34;&gt;unit testing - Test PHP headers with PHPunit - Stack Overflow&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

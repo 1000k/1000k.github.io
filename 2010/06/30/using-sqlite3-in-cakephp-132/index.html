@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -43,17 +48,17 @@
         <div class="post-content">
           <p>bakeできなかったので、下記を参考にやり直しました。</p>
 
-<p><a href="http://stackoverflow.com/questions/1021980/cakephp-sqlite/2241385#2241385" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://stackoverflow.com/questions/1021980/cakephp-sqlite/2241385#2241385', 'CakePHP SQLite &#8211; Stack Overflow']);" title="CakePHP SQLite - Stack Overflow">CakePHP SQLite &#8211; Stack Overflow</a></p>
+<p><a href="http://stackoverflow.com/questions/1021980/cakephp-sqlite/2241385#2241385">CakePHP SQLite - Stack Overflow</a></p>
 
 <p>bake all するとWarningが続々出ますが、一応動きました。</p>
 
 <ol>
-<li><a href="http://github.com/cakephp/datasources" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://github.com/cakephp/datasources', 'cakephp&#8217;s datasources at master &#8211; GitHub']);" title="cakephp's datasources at master - GitHub">cakephp&#8217;s datasources at master &#8211; GitHub</a> から「CakePHP Datasources Plugin v0.2」をダウンロードする</li>
+<li><a href="http://github.com/cakephp/datasources">cakephp&rsquo;s datasources at master - GitHub</a> から「CakePHP Datasources Plugin v0.2」をダウンロードする</li>
 <li>「cakePHPディレクトリ/app/plugins/datasources」内に解凍する</li>
-<li>プラグイン内の「models/datasources/dbo/dbo_sqlite3.php」を編集し、「class DboSqlite3 extends DboSource {」より前の行に「App::import(&#8216;Datasource&#8217;,&#8217;DboSource&#8217;);」を追加する</li>
+<li>プラグイン内の「models/datasources/dbo/dbo_sqlite3.php」を編集し、「class DboSqlite3 extends DboSource {」より前の行に「App::import(&lsquo;Datasource&rsquo;,&lsquo;DboSource&rsquo;);」を追加する</li>
 </ol>
 
-<pre><code>&lt;?php
+<pre><code class="language-php">&lt;?php
 /**
  * SQLite layer for DBO.
  *
@@ -86,27 +91,17 @@ App::import('Datasource','DboSource');
 class DboSqlite3 extends DboSource {
 </code></pre>
 
-<ol>
-  <li>
-    「/app/config/database.php」を以下のように設定する
-  </li>
+<p>2. 「/app/config/database.php」を以下のように設定する</p>
 
-</ol>
-
-<pre><code>
-    var $default = array(
+<pre><code class="language-php">    var $default = array(
         'driver' =&gt; 'Datasources.DboSqlite3',
         'database' =&gt; '/full/path/to/db/db.sqlite',
     );
 </code></pre>
 
-<p>
-  これで何とかbakeできるようになる。ただし、何かにつけ「Warning: FIXME: Can't parse field:  in C:\xampp\htdocs\cake\sandbox\cake\libs\model\datasources\dbo_source.php on line 2510」みたいなエラーが出てくる。
-</p>
+<p>これで何とかbakeできるようになる。ただし、何かにつけ「<code>Warning: FIXME: Can't parse field:  in C:\xampp\htdocs\cake\sandbox\cake\libs\model\datasources\dbo_source.php on line 2510</code>」みたいなエラーが出てくる。</p>
 
-<p>
-  とりあえず<a href="http://book.cakephp.org/view/1543/Simple-Acl-controlled-Application" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://book.cakephp.org/view/1543/Simple-Acl-controlled-Application', 'CakePHP1.3の公式チュートリアル']);" title="Simple Acl controlled Application :: Tutorials & Examples :: The Manual :: 1.3 Collection :: The Cookbook">CakePHP1.3の公式チュートリアル</a>をやってみたけど、一応普通に動きました。
-</p>
+<p>とりあえず<a href="http://book.cakephp.org/view/1543/Simple-Acl-controlled-Application">CakePHP1.3の公式チュートリアル</a>をやってみたけど、一応普通に動きました。</p>
 
         </div>
       </div>

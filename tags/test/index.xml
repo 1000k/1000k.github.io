@@ -21,7 +21,7 @@
 
 &lt;h2 id=&#34;スタブとは:64967b015e52257cb9a199be0513508e&#34;&gt;スタブとは&lt;/h2&gt;
 
-&lt;p&gt;ref: &lt;a href=&#34;http://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%BF%E3%83%96&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%BF%E3%83%96&#39;, &#39;スタブ &amp;#8211; Wikipedia&#39;]);&#34; title=&#34;スタブ - Wikipedia&#34;&gt;スタブ &amp;#8211; Wikipedia&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ref: &lt;a href=&#34;http://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%BF%E3%83%96&#34;&gt;スタブ - Wikipedia&lt;/a&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;呼び出す側（上位）のモジュールを検査する場合に、呼び出される側（下位）の部品モジュールが未完成であることがある。このとき、呼び出される側の部品モジュールの代用とする仮のモジュールを、「スタブ」と呼ぶ。スタブモジュールは設計仕様に定義されている全ての関数を実装してあるが、関数内部は正規の動作をする事無く適当な定数を返すというような作りになっている事が多い。&lt;/p&gt;
@@ -31,7 +31,7 @@
 
 &lt;h2 id=&#34;モックとは:64967b015e52257cb9a199be0513508e&#34;&gt;モックとは&lt;/h2&gt;
 
-&lt;p&gt;ref: &lt;a href=&#34;http://d.hatena.ne.jp/sekom/20090702/p1&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://d.hatena.ne.jp/sekom/20090702/p1&#39;, &#39;スタブとモックの違い &amp;#8211; ソフト開発お仕事メモ&#39;]);&#34; title=&#34;スタブとモックの違い - ソフト開発お仕事メモ&#34;&gt;スタブとモックの違い &amp;#8211; ソフト開発お仕事メモ&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ref: &lt;a href=&#34;http://d.hatena.ne.jp/sekom/20090702/p1&#34;&gt;スタブとモックの違い - ソフト開発お仕事メモ&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;モック戦略を使用する際には、3つの手順を踏むことになります。&lt;/p&gt;
 
@@ -43,7 +43,7 @@
 
 &lt;h2 id=&#34;スタブやモックが必要になる理由:64967b015e52257cb9a199be0513508e&#34;&gt;スタブやモックが必要になる理由&lt;/h2&gt;
 
-&lt;p&gt;ref: &lt;a href=&#34;http://www39.atwiki.jp/startruby/pages/23.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www39.atwiki.jp/startruby/pages/23.html&#39;, &#39;Start! Ruby &amp;#8211; RSpecの構文&#39;]);&#34; title=&#34;Start! Ruby - RSpecの構文&#34;&gt;Start! Ruby &amp;#8211; RSpecの構文&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ref: &lt;a href=&#34;http://www39.atwiki.jp/startruby/pages/23.html&#34;&gt;Start! Ruby - RSpecの構文&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;全てを「本物」でテストしようとすると、「全てが揃わないとテストできない」という本末転倒な事が起こりかねない。&lt;/li&gt;
@@ -55,7 +55,7 @@
 
 &lt;h2 id=&#34;モックでできること:64967b015e52257cb9a199be0513508e&#34;&gt;モックでできること&lt;/h2&gt;
 
-&lt;p&gt;ref: &lt;a href=&#34;http://gihyo.jp/dev/feature/01/php-test/0004&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://gihyo.jp/dev/feature/01/php-test/0004&#39;, &#39;PHPUnit3で始めるユニットテスト：第4回　モックオブジェクトを使ったテスト｜gihyo.jp … 技術評論社&#39;]);&#34; title=&#34;PHPUnit3で始めるユニットテスト：第4回　モックオブジェクトを使ったテスト｜gihyo.jp … 技術評論社&#34;&gt;PHPUnit3で始めるユニットテスト：第4回　モックオブジェクトを使ったテスト｜gihyo.jp … 技術評論社&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ref: &lt;a href=&#34;http://gihyo.jp/dev/feature/01/php-test/0004&#34;&gt;PHPUnit3で始めるユニットテスト：第4回　モックオブジェクトを使ったテスト｜gihyo.jp … 技術評論社&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;生成されるオブジェクトにメソッドを定義する&lt;/li&gt;
@@ -79,10 +79,10 @@
 
 &lt;h2 id=&#34;スタブとモックの違い:64967b015e52257cb9a199be0513508e&#34;&gt;スタブとモックの違い&lt;/h2&gt;
 
-&lt;p&gt;ref: &lt;a href=&#34;http://www.ibm.com/developerworks/jp/web/library/wa-mockrails/index.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.ibm.com/developerworks/jp/web/library/wa-mockrails/index.html&#39;, &#39;Ruby on Rails でのモックとスタブの作成&#39;]);&#34; title=&#34;Ruby on Rails でのモックとスタブの作成&#34;&gt;Ruby on Rails でのモックとスタブの作成&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ref: &lt;a href=&#34;http://www.ibm.com/developerworks/jp/web/library/wa-mockrails/index.html&#34;&gt;Ruby on Rails でのモックとスタブの作成&lt;/a&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;「&lt;a href=&#34;http://d.hatena.ne.jp/devbankh/20100210&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://d.hatena.ne.jp/devbankh/20100210&#39;, &#39;モックとスタブの違い &amp;#8211; [lib]&#39;]);&#34; title=&#34;モックとスタブの違い - [lib]&#34;&gt;モックとスタブの違い &amp;#8211; [lib]&lt;/a&gt;」&lt;/p&gt;
+&lt;p&gt;「&lt;a href=&#34;http://d.hatena.ne.jp/devbankh/20100210&#34;&gt;モックとスタブの違い - [lib]&lt;/a&gt;」&lt;/p&gt;
 
 &lt;p&gt;モック・オブジェクトは一種のスタブです。モック・オブジェクトは、テスト対象のオブジェクトを使用するクライアント・コードを置き換えます。しかしモック・オブジェクトはそれ以上のことを行い、テスト対象のオブジェクトがクライアント・コードを実際にどう使うかを測定するのです。&lt;/p&gt;
 
@@ -91,7 +91,7 @@
 &lt;p&gt;モック・オブジェクトの作成は、スタブの作成とよく似ています。違いは、スタブは受動的であるということです。スタブは、スタブの作成対象のメソッドに対して呼び出しを行う実在のソリューションを単にシミュレーションするにすぎません。一方モックは能動的であり、モック・オブジェクトを使って行うその方法を実際にテストします。想定の動作と一致する方法でモックを使わないと、テストは失敗します。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;ref: &lt;a href=&#34;http://capsctrl.que.jp/kdmsnr/wiki/bliki/?TestDouble&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://capsctrl.que.jp/kdmsnr/wiki/bliki/?TestDouble&#39;, &#39;Martin Fowler&amp;#8217;s Bliki in Japanese &amp;#8211; テストダブル&#39;]);&#34; title=&#34;Martin Fowler&#39;s Bliki in Japanese - テストダブル&#34;&gt;Martin Fowler&amp;#8217;s Bliki in Japanese &amp;#8211; テストダブル&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ref: &lt;a href=&#34;http://capsctrl.que.jp/kdmsnr/wiki/bliki/?TestDouble&#34;&gt;Martin Fowler&amp;rsquo;s Bliki in Japanese - テストダブル&lt;/a&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;スタブは、テスト時の呼び出しに対して、あらかじめ用意された結果を返す。通常、テスト用にプログラムされたところ以外には応答しない。スタブは呼び出しの情報を記録することもある。例えば、Eメールゲートウェイスタブは「送られた」メッセージを記録するような場合だ。単に「送られた」メールの数を記録する場合もあるだろう。&lt;/p&gt;
@@ -119,8 +119,8 @@
 
 &lt;ul&gt;
 &lt;li&gt;FireFox 3.x&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://seleniumhq.org/download/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://seleniumhq.org/download/&#39;, &#39;Selenium IDE&#39;]);&#34; title=&#34;Selenium IDE&#34;&gt;Selenium IDE&lt;/a&gt; (執筆時 バージョン1.0.7)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://pearlcrescent.com/products/pagesaver/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://pearlcrescent.com/products/pagesaver/&#39;, &#39;Pearl Crescent Page Saver&#39;]);&#34; title=&#34;Pearl Crescent Page Saver&#34;&gt;Pearl Crescent Page Saver&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://seleniumhq.org/download/&#34;&gt;Selenium IDE&lt;/a&gt; (執筆時 バージョン1.0.7)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://pearlcrescent.com/products/pagesaver/&#34;&gt;Pearl Crescent Page Saver&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;手順:462da812d7d4ed2797cfbcdf095e949a&#34;&gt;手順&lt;/h2&gt;
@@ -131,94 +131,94 @@
 &lt;li&gt;「全般」タブ
 
 &lt;ul&gt;
-&lt;li&gt;「キーボードショートカットかツールバーのボタンがクリックされた時:」 &amp;#8211; &lt;strong&gt;ページ全体&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;「キーボードショートカット:」 &amp;#8211; &lt;strong&gt;Alt+w&lt;/strong&gt; (好きなキーで構わないですが、下記はこの設定でやります)&lt;/li&gt;
+&lt;li&gt;「キーボードショートカットかツールバーのボタンがクリックされた時:」 - &lt;strong&gt;ページ全体&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;「キーボードショートカット:」 - &lt;strong&gt;Alt+w&lt;/strong&gt; (好きなキーで構わないですが、下記はこの設定でやります)&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;「画像のキャプチャー」タブ
 
 &lt;ul&gt;
-&lt;li&gt;「ファイルの保存名:」 &amp;#8211; &lt;strong&gt;%t %u&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;「次のフォルダに保存する」 &amp;#8211; 好きなフォルダ&lt;/li&gt;
-&lt;li&gt;「同じ名前のファイルがあるときは上書きする」 &amp;#8211; &lt;strong&gt;チェックする&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;「ファイルの保存名:」 - &lt;strong&gt;%t %u&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;「次のフォルダに保存する」 - 好きなフォルダ&lt;/li&gt;
+&lt;li&gt;「同じ名前のファイルがあるときは上書きする」 - &lt;strong&gt;チェックする&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;次に、Selenium IDEのテストケースを作成します。Selenium IDEの基本的な使い方は 「&lt;a href=&#34;http://www.atmarkit.co.jp/fjava/rensai4/devtool07/devtool07_2.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.atmarkit.co.jp/fjava/rensai4/devtool07/devtool07_2.html&#39;, &#39;ブラウザを選ばずWebテストを自動化するSelenium (2/3) &amp;#8211; ＠IT&#39;]);&#34; title=&#34;ブラウザを選ばずWebテストを自動化するSelenium (2/3) - ＠IT&#34;&gt;ブラウザを選ばずWebテストを自動化するSelenium (&lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt;) &amp;#8211; ＠IT&lt;/a&gt;」 が詳しいです。&lt;/p&gt;
+&lt;p&gt;次に、Selenium IDEのテストケースを作成します。Selenium IDEの基本的な使い方は 「&lt;a href=&#34;http://www.atmarkit.co.jp/fjava/rensai4/devtool07/devtool07_2.html&#34;&gt;ブラウザを選ばずWebテストを自動化するSelenium (&lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt;) - ＠IT&lt;/a&gt;」 が詳しいです。&lt;/p&gt;
 
 &lt;table&gt;
   &lt;tr&gt;
     &lt;th&gt;
       コマンド
     &lt;/th&gt;
-    
+
     &lt;th&gt;
       対象
     &lt;/th&gt;
-    
+
     &lt;th&gt;
       値
     &lt;/th&gt;
   &lt;/tr&gt;
-  
+
   &lt;tr&gt;
     &lt;td&gt;
       open
     &lt;/td&gt;
-    
+
     &lt;td&gt;
       /index.php
     &lt;/td&gt;
-    
+
     &lt;td&gt;
     &lt;/td&gt;
   &lt;/tr&gt;
-  
+
   &lt;tr&gt;
     &lt;td&gt;
       windowFocus
     &lt;/td&gt;
-    
+
     &lt;td&gt;
     &lt;/td&gt;
-    
+
     &lt;td&gt;
     &lt;/td&gt;
   &lt;/tr&gt;
-  
+
   &lt;tr&gt;
     &lt;td&gt;
       altKeyDown
     &lt;/td&gt;
-    
+
     &lt;td&gt;
     &lt;/td&gt;
-    
+
     &lt;td&gt;
     &lt;/td&gt;
   &lt;/tr&gt;
-  
+
   &lt;tr&gt;
     &lt;td&gt;
       keyPress
     &lt;/td&gt;
-    
+
     &lt;td&gt;
       //
     &lt;/td&gt;
-    
+
     &lt;td&gt;
       \119
     &lt;/td&gt;
   &lt;/tr&gt;
-  
+
   &lt;tr&gt;
     &lt;td&gt;
       altKeyUp
     &lt;/td&gt;
-    
+
     &lt;td&gt;
     &lt;/td&gt;
-    
+
     &lt;td&gt;
     &lt;/td&gt;
   &lt;/tr&gt;
@@ -233,7 +233,7 @@
 &lt;h2 id=&#34;日本語を含むテストケースファイルが読み込めない場合:462da812d7d4ed2797cfbcdf095e949a&#34;&gt;日本語を含むテストケースファイルが読み込めない場合&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;XHTMLのヘッダを「xml:lang=&amp;#8221;en&amp;#8221; lang=&amp;#8221;en&amp;#8221;」から「xml:lang=&amp;#8221;ja&amp;#8221; lang=&amp;#8221;ja&amp;#8221;」に直す&lt;/li&gt;
+&lt;li&gt;XHTMLのヘッダを「xml:lang=&amp;ldquo;en&amp;rdquo; lang=&amp;ldquo;en&amp;rdquo;」から「xml:lang=&amp;ldquo;ja&amp;rdquo; lang=&amp;ldquo;ja&amp;rdquo;」に直す&lt;/li&gt;
 &lt;li&gt;ファイル保存形式を「UTF-8 BOM無し」にする&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -243,7 +243,7 @@
 
 &lt;h2 id=&#34;参考:462da812d7d4ed2797cfbcdf095e949a&#34;&gt;参考&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://d.hatena.ne.jp/szk-takanori/20071104/1194181489&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://d.hatena.ne.jp/szk-takanori/20071104/1194181489&#39;, &#39;Seleniumでキャプチャを取得する拡張コマンド:captureScreenshot &amp;#8211; 現場のためのソフトウェア開発プロセス &amp;#8211; たかのり日記&#39;]);&#34; title=&#34;Seleniumでキャプチャを取得する拡張コマンド:captureScreenshot - 現場のためのソフトウェア開発プロセス - たかのり日記&#34;&gt;Seleniumでキャプチャを取得する拡張コマンド:captureScreenshot &amp;#8211; 現場のためのソフトウェア開発プロセス &amp;#8211; たかのり日記&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://d.hatena.ne.jp/szk-takanori/20071104/1194181489&#34;&gt;Seleniumでキャプチャを取得する拡張コマンド:captureScreenshot - 現場のためのソフトウェア開発プロセス - たかのり日記&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

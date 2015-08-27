@@ -25,7 +25,7 @@
 
 &lt;h2 id=&#34;インストール手順:2e9f7bf7118303b30947563102a07bb4&#34;&gt;インストール手順&lt;/h2&gt;
 
-&lt;p&gt;最新のソースは &lt;a href=&#34;http://paco.sourceforge.net/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://paco.sourceforge.net/&#39;, &#39;paco &amp;#8211; a source code pacKAGE oRGANIZER for Unix/Linux&#39;]);&#34; &gt;paco &amp;#8211; a source code pacKAGE oRGANIZER for Unix/Linux&lt;/a&gt; で確認してください。&lt;/p&gt;
+&lt;p&gt;最新のソースは &lt;a href=&#34;http://paco.sourceforge.net/&#34;&gt;paco - a source code pacKAGE oRGANIZER for Unix/Linux&lt;/a&gt; で確認してください。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;# wget http://sourceforge.net/projects/paco/files/paco/2.0.9/paco-2.0.9.tar.bz2/download
 # tar xvf paco-2.0.9.tar.bz2
@@ -36,9 +36,9 @@
 # make logme
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;今回はGUIを使わないので、configureオプションに「&amp;#8211;disable-gpaco」を付けています。&lt;/p&gt;
+&lt;p&gt;今回はGUIを使わないので、configureオプションに「-disable-gpaco」を付けています。&lt;/p&gt;
 
-&lt;p&gt;これを付けないと「No package &amp;#8216;gtkmm-2.4&amp;#8217; found」というエラーが出ます。&lt;/p&gt;
+&lt;p&gt;これを付けないと「No package &amp;lsquo;gtkmm-2.4&amp;rsquo; found」というエラーが出ます。&lt;/p&gt;
 
 &lt;p&gt;最後の「make logme」でpaco自身のインストール内容を記録しています。&lt;/p&gt;
 
@@ -98,9 +98,9 @@ paco-2.0.9:
 &lt;h2 id=&#34;参考:2e9f7bf7118303b30947563102a07bb4&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/kasei_san/20100220/p1&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://d.hatena.ne.jp/kasei_san/20100220/p1&#39;, &#39;さくらのユーザディレクトリにPACOをインストールしたときの手順 &amp;#8211; かせいさんとこ&#39;]);&#34; &gt;さくらのユーザディレクトリにPACOをインストールしたときの手順 &amp;#8211; かせいさんとこ&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://paco.sourceforge.net/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://paco.sourceforge.net/&#39;, &#39;paco &amp;#8211; a source code pacKAGE oRGANIZER for Unix/Linux&#39;]);&#34; &gt;paco &amp;#8211; a source code pacKAGE oRGANIZER for Unix/Linux&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.atmarkit.co.jp/flinux/rensai/linuxtips/886usepaco.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.atmarkit.co.jp/flinux/rensai/linuxtips/886usepaco.html&#39;, &#39;ソースからインストールしたアプリを管理するには － ＠IT&#39;]);&#34; &gt;ソースからインストールしたアプリを管理するには － ＠IT&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/kasei_san/20100220/p1&#34;&gt;さくらのユーザディレクトリにPACOをインストールしたときの手順 - かせいさんとこ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://paco.sourceforge.net/&#34;&gt;paco - a source code pacKAGE oRGANIZER for Unix/Linux&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.atmarkit.co.jp/flinux/rensai/linuxtips/886usepaco.html&#34;&gt;ソースからインストールしたアプリを管理するには － ＠IT&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

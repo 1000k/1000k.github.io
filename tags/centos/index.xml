@@ -44,8 +44,8 @@ Usage: /etc/init.d/mysql_master {start|stop|restart|status}
 &lt;h2 id=&#34;参考:78516bd3eda8050d97cd4c550e13df69&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.linuxquestions.org/questions/red-hat-31/init-d-script-error-bad-interpreter-204902/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.linuxquestions.org/questions/red-hat-31/init-d-script-error-bad-interpreter-204902/&#39;, &#39;init.d script error bad interpreter&#39;]);&#34; &gt;init.d script error bad interpreter&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/82726/convert-dos-line-endings-to-linux-line-endings-in-vim&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://stackoverflow.com/questions/82726/convert-dos-line-endings-to-linux-line-endings-in-vim&#39;, &#39;Convert DOS line endings to Linux line endings in vim &amp;#8211; Stack Overflow&#39;]);&#34; &gt;Convert DOS line endings to Linux line endings in vim &amp;#8211; Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.linuxquestions.org/questions/red-hat-31/init-d-script-error-bad-interpreter-204902/&#34;&gt;init.d script error bad interpreter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/82726/convert-dos-line-endings-to-linux-line-endings-in-vim&#34;&gt;Convert DOS line endings to Linux line endings in vim - Stack Overflow&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -101,7 +101,7 @@ svn, version 1.7.10 (r1485443)
 // `--with-ssl` を忘れずに！
 # cd neon/
 # ./configure --with-ssl
-# make &amp;amp;#038;&amp;amp;#038; make install
+# make &amp;amp;&amp;amp; make install
 
 // Subversion をインストールする。
 # cd ../
@@ -110,7 +110,7 @@ svn, version 1.7.10 (r1485443)
   --without-berkeley-db \
   --with-neon \
   --with-ssl
-# make &amp;amp;#038;&amp;amp;#038; make install
+# make &amp;amp;&amp;amp; make install
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;正しくインストールできると、以下のように &lt;code&gt;ra_neon&lt;/code&gt; という表示が出ます。&lt;/p&gt;
@@ -132,7 +132,7 @@ svn, version 1.7.10 (r1485443)
 
 &lt;p&gt;今回とは逆で、「neon だとエラーになるが serf なら大丈夫だった」という事例もありました。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://masutaka.net/chalow/2009-06-15-1.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://masutaka.net/chalow/2009-06-15-1.html&#39;, &#39;Debian squeeze の subversion で http リポジトリにアクセスできなくなった / マスタカの ChangeLog メモ&#39;]);&#34; &gt;Debian squeeze の subversion で http リポジトリにアクセスできなくなった / マスタカの ChangeLog メモ&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://masutaka.net/chalow/2009-06-15-1.html&#34;&gt;Debian squeeze の subversion で http リポジトリにアクセスできなくなった / マスタカの ChangeLog メモ&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;バージョンアップのたびに不具合が入れ替わるんでしょうか。&lt;/p&gt;
 
@@ -141,9 +141,9 @@ svn, version 1.7.10 (r1485443)
 &lt;h2 id=&#34;参考:b3d12b85aa6526b84cee44966cb0c763&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.iss.ms/2009/04/12/141537&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.iss.ms/2009/04/12/141537&#39;, &#39;[memo][svn] svnクライアントにSSLをサポートさせる « いわぶろ（ろてん）&#39;]);&#34; &gt;[memo][svn] svnクライアントにSSLをサポートさせる « いわぶろ（ろてん）&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.r-unit.co.jp/archives/726&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.r-unit.co.jp/archives/726&#39;, &#39;はだかの隊長日記 » Subversionコンパイル方法&#39;]);&#34; &gt;はだかの隊長日記 » Subversionコンパイル方法&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://masutaka.net/chalow/2009-06-15-1.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://masutaka.net/chalow/2009-06-15-1.html&#39;, &#39;Debian squeeze の subversion で http リポジトリにアクセスできなくなった / マスタカの ChangeLog メモ&#39;]);&#34; &gt;Debian squeeze の subversion で http リポジトリにアクセスできなくなった / マスタカの ChangeLog メモ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.iss.ms/2009/04/12/141537&#34;&gt;[memo][svn] svnクライアントにSSLをサポートさせる « いわぶろ（ろてん）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.r-unit.co.jp/archives/726&#34;&gt;はだかの隊長日記 » Subversionコンパイル方法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://masutaka.net/chalow/2009-06-15-1.html&#34;&gt;Debian squeeze の subversion で http リポジトリにアクセスできなくなった / マスタカの ChangeLog メモ&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -156,13 +156,13 @@ svn, version 1.7.10 (r1485443)
       <guid>http://1000k.github.io/2013/07/02/jenkins-user-cannot-run-ant/</guid>
       <description>
 
-&lt;p&gt;CentOS 6.3 にて、&lt;a href=&#34;http://jenkins-php.org/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://jenkins-php.org/&#39;, &#39;Template for Jenkins Jobs for PHP Projects&#39;]);&#34; &gt;Template for Jenkins Jobs for PHP Projects&lt;/a&gt; にある ant タスク (build.xml) 通りに PHPUnit タスクを実行しようとしたら、エラーが出てしまいました。&lt;/p&gt;
+&lt;p&gt;CentOS 6.3 にて、&lt;a href=&#34;http://jenkins-php.org/&#34;&gt;Template for Jenkins Jobs for PHP Projects&lt;/a&gt; にある ant タスク (build.xml) 通りに PHPUnit タスクを実行しようとしたら、エラーが出てしまいました。&lt;/p&gt;
 
 &lt;p&gt;かなり長時間ハマったのでメモを残しておきます。&lt;/p&gt;
 
 &lt;h2 id=&#34;症状:135291858de89f6329950b22fca515d3&#34;&gt;症状&lt;/h2&gt;
 
-&lt;p&gt;CentOS 6.3 にて、&lt;a href=&#34;http://jenkins-php.org/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://jenkins-php.org/&#39;, &#39;Template for Jenkins Jobs for PHP Projects&#39;]);&#34; &gt;Template for Jenkins Jobs for PHP Projects&lt;/a&gt; にある以下のタスクを実行するとエラーが出ました。&lt;code&gt;
+&lt;p&gt;CentOS 6.3 にて、&lt;a href=&#34;http://jenkins-php.org/&#34;&gt;Template for Jenkins Jobs for PHP Projects&lt;/a&gt; にある以下のタスクを実行するとエラーが出ました。&lt;code&gt;
  &amp;lt;target name=&amp;quot;phpunit&amp;quot; description=&amp;quot;Run unit tests using PHPUnit and generates junit.xml and clover.xml&amp;quot;&amp;gt; &amp;lt;exec executable=&amp;quot;phpunit&amp;quot; failonerror=&amp;quot;true&amp;quot;/&amp;gt; &amp;lt;/target&amp;gt;&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;エラーメッセージ:&lt;code&gt;
@@ -184,13 +184,13 @@ export PATH=$PATH:/usr/local/bin
 
 &lt;p&gt;また、下記のように ant タスク内で PATH を変更するシェルを走らせてもダメでした。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;amp;lt;target name=&amp;quot;setenv&amp;quot;&amp;gt;
-   &amp;amp;lt;exec executable=&amp;quot;/bin/sh&amp;quot;&amp;gt;
-     &amp;amp;lt;arg line=&amp;quot;./setenv.sh&amp;quot;/&amp;gt;
-   &amp;amp;lt;/exec&amp;gt;
- &amp;amp;lt;/target&amp;gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;target name=&amp;quot;setenv&amp;quot;&amp;gt;
+   &amp;lt;exec executable=&amp;quot;/bin/sh&amp;quot;&amp;gt;
+     &amp;lt;arg line=&amp;quot;./setenv.sh&amp;quot;/&amp;gt;
+   &amp;lt;/exec&amp;gt;
+ &amp;lt;/target&amp;gt;
 
- &amp;amp;lt;target name=&amp;quot;env&amp;quot;&amp;gt;&amp;amp;lt;exec executable=&amp;quot;env&amp;quot; /&amp;gt;&amp;amp;lt;/target&amp;gt;
+ &amp;lt;target name=&amp;quot;env&amp;quot;&amp;gt;&amp;lt;exec executable=&amp;quot;env&amp;quot; /&amp;gt;&amp;lt;/target&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;setenv.sh の中身は下記。&lt;/p&gt;
@@ -214,7 +214,7 @@ env:
      [exec] HISTSIZE=1000
      [exec] USER=jenkins
      ...
-     [exec] PATH=/sbin:/bin:/usr/sbin:/usr/bin      &amp;amp;lt;- /usr/local/bin が追加されていない
+     [exec] PATH=/sbin:/bin:/usr/sbin:/usr/bin      &amp;lt;- /usr/local/bin が追加されていない
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;とういわけで、setenv で環境変数をセットする方法はボツでした。&lt;/p&gt;
@@ -227,7 +227,18 @@ env:
 
 &lt;p&gt;&lt;code&gt;Jenkinsの管理 &amp;gt; システムの設定 &amp;gt; グローバルプロパティ &amp;gt; 環境変数&lt;/code&gt; にて、以下のように設定します。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_global_property.png&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/wp-content/uploads/jenkins_global_property.png&#39;, &#39;&#39;]);&#34; &gt;&lt;img src=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_global_property-300x191.png&#34; alt=&#34;Jenkins グローバルプロパティ&#34; width=&#34;300&#34; height=&#34;191&#34; class=&#34;alignnone size-medium wp-image-1507&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_global_property.png&#34;&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://1000k.github.io/img/jenkins_global_property-300x191.png&#34;  /&gt;
+    
+    
+    &lt;figcaption&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;キー: &lt;code&gt;PATH&lt;/code&gt;&lt;/li&gt;
@@ -251,9 +262,9 @@ env:
 &lt;h2 id=&#34;参考:135291858de89f6329950b22fca515d3&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://deginzabi163.wordpress.com/2011/04/23/%E8%A6%9A%E6%9B%B8fedora-14%E3%81%AEsudo%E3%81%8Cpath%E7%92%B0%E5%A2%83%E5%A4%89%E6%95%B0%E3%82%92%E6%BD%B0%E3%81%99%E3%81%AE%E3%81%8C%E9%AC%B1%E9%99%B6%E3%81%97%E3%81%84%EF%BC%86%E5%AF%BE%E7%AD%96/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://deginzabi163.wordpress.com/2011/04/23/%E8%A6%9A%E6%9B%B8fedora-14%E3%81%AEsudo%E3%81%8Cpath%E7%92%B0%E5%A2%83%E5%A4%89%E6%95%B0%E3%82%92%E6%BD%B0%E3%81%99%E3%81%AE%E3%81%8C%E9%AC%B1%E9%99%B6%E3%81%97%E3%81%84%EF%BC%86%E5%AF%BE%E7%AD%96/&#39;, &#39;[覚書]Fedora 14のsudoでPATHがアレで鬱陶しい＆対策 | Deginzabi163\&#39;s Blog&#39;]);&#34; &gt;[覚書]Fedora 14のsudoでPATHがアレで鬱陶しい＆対策 | Deginzabi163&amp;rsquo;s Blog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://fishrimper.blogspot.jp/2012/12/sudo-path.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://fishrimper.blogspot.jp/2012/12/sudo-path.html&#39;, &#39;IT とかその他もろもろ: sudo した時の PATH&#39;]);&#34; &gt;IT とかその他もろもろ: sudo した時の PATH&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://superuser.com/questions/98686/passing-path-through-sudo&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://superuser.com/questions/98686/passing-path-through-sudo&#39;, &#39;linux - Passing PATH through sudo - Super User&#39;]);&#34; &gt;linux - Passing PATH through sudo - Super User&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://deginzabi163.wordpress.com/2011/04/23/%E8%A6%9A%E6%9B%B8fedora-14%E3%81%AEsudo%E3%81%8Cpath%E7%92%B0%E5%A2%83%E5%A4%89%E6%95%B0%E3%82%92%E6%BD%B0%E3%81%99%E3%81%AE%E3%81%8C%E9%AC%B1%E9%99%B6%E3%81%97%E3%81%84%EF%BC%86%E5%AF%BE%E7%AD%96/&#34;&gt;[覚書]Fedora 14のsudoでPATHがアレで鬱陶しい＆対策 | Deginzabi163&amp;rsquo;s Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://fishrimper.blogspot.jp/2012/12/sudo-path.html&#34;&gt;IT とかその他もろもろ: sudo した時の PATH&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://superuser.com/questions/98686/passing-path-through-sudo&#34;&gt;linux - Passing PATH through sudo - Super User&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -275,7 +286,7 @@ env:
 
 &lt;h2 id=&#34;リポジトリを追加する:22b952c0c7ccdbfe7d7cc04c5066aa86&#34;&gt;リポジトリを追加する&lt;/h2&gt;
 
-&lt;p&gt;バージョンによって異なります。&lt;a href=&#34;https://downloads.mariadb.org/mariadb/repositories/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://downloads.mariadb.org/mariadb/repositories/&#39;, &#39;MariaDB &amp;#8211; Setting up MariaDB Repositories &amp;#8211; MariaDB&#39;]);&#34; &gt;MariaDB &amp;#8211; Setting up MariaDB Repositories &amp;#8211; MariaDB&lt;/a&gt; からバージョン＆環境毎のリポジトリが選択できるので、10.0 以外をインストールする場合はそちらを参考にしてください。&lt;/p&gt;
+&lt;p&gt;バージョンによって異なります。&lt;a href=&#34;https://downloads.mariadb.org/mariadb/repositories/&#34;&gt;MariaDB - Setting up MariaDB Repositories - MariaDB&lt;/a&gt; からバージョン＆環境毎のリポジトリが選択できるので、10.0 以外をインストールする場合はそちらを参考にしてください。&lt;/p&gt;
 
 &lt;p&gt;今回は CentOS 6.3 64bit です。&lt;/p&gt;
 
@@ -321,10 +332,10 @@ package &#39;MariaDB-server&#39;
 &lt;h2 id=&#34;参考:22b952c0c7ccdbfe7d7cc04c5066aa86&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://downloads.mariadb.org/mariadb/repositories/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://downloads.mariadb.org/mariadb/repositories/&#39;, &#39;MariaDB &amp;#8211; Setting up MariaDB Repositories &amp;#8211; MariaDB&#39;]);&#34; &gt;MariaDB &amp;#8211; Setting up MariaDB Repositories &amp;#8211; MariaDB&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://kb.askmonty.org/en/installing-mariadb-with-yum/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://kb.askmonty.org/en/installing-mariadb-with-yum/&#39;, &#39;Installing MariaDB with yum &amp;#8211; AskMonty KnowledgeBase&#39;]);&#34; &gt;Installing MariaDB with yum &amp;#8211; AskMonty KnowledgeBase&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.e-agency.co.jp/column/20130208.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.e-agency.co.jp/column/20130208.html&#39;, &#39;MariaDBをCentOS 6にyumでインストールする方法 | ブログ | 株式会社イー・エージェンシー&#39;]);&#34; &gt;MariaDBをCentOS 6にyumでインストールする方法 | ブログ | 株式会社イー・エージェンシー&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/opscode-cookbooks/yum/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/opscode-cookbooks/yum/&#39;, &#39;opscode-cookbooks/yum · GitHub&#39;]);&#34; &gt;opscode-cookbooks/yum · GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://downloads.mariadb.org/mariadb/repositories/&#34;&gt;MariaDB - Setting up MariaDB Repositories - MariaDB&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kb.askmonty.org/en/installing-mariadb-with-yum/&#34;&gt;Installing MariaDB with yum - AskMonty KnowledgeBase&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.e-agency.co.jp/column/20130208.html&#34;&gt;MariaDBをCentOS 6にyumでインストールする方法 | ブログ | 株式会社イー・エージェンシー&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/opscode-cookbooks/yum/&#34;&gt;opscode-cookbooks/yum · GitHub&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -365,7 +376,7 @@ Complete!
 &lt;h1 id=&#34;参考:b209194a963523f744e005b58f948c6d&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/hiroponz/20070205&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://d.hatena.ne.jp/hiroponz/20070205&#39;, &#39;2007-02-05 &amp;#8211; プチ技術メモ&#39;]);&#34; &gt;2007-02-05 &amp;#8211; プチ技術メモ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/hiroponz/20070205&#34;&gt;2007-02-05 - プチ技術メモ&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -539,7 +550,7 @@ port 10022
 
 &lt;p&gt;初期状態では4つのデーモンしか自動起動設定になっておらず、特に停止するようなデーモンはありません。&lt;/p&gt;
 
-&lt;p&gt;参考: &lt;a href=&#34;http://www.cloudcore.jp/vps/spec/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.cloudcore.jp/vps/spec/&#39;, &#39;スペック｜CloudCore VPS｜KDDIウェブコミュニケーションズ&#39;]);&#34; &gt;スペック｜CloudCore VPS｜KDDIウェブコミュニケーションズ&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;参考: &lt;a href=&#34;http://www.cloudcore.jp/vps/spec/&#34;&gt;スペック｜CloudCore VPS｜KDDIウェブコミュニケーションズ&lt;/a&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;ファイアーウォールの構築:7a522374c61fbafc7888cdbb99c2c3ca&#34;&gt;ファイアーウォールの構築&lt;/h1&gt;
 
@@ -629,25 +640,25 @@ vsftpd 用の vsftpd を起動中:                               [  OK  ]
 &lt;h1 id=&#34;参考:7a522374c61fbafc7888cdbb99c2c3ca&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://tanaka.sakura.ad.jp/archives/001065.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://tanaka.sakura.ad.jp/archives/001065.html&#39;, &#39;CentOSをサーバーとして活用するための基本的な設定 &amp;#8211; さくらインターネット創業日記&#39;]);&#34; &gt;CentOSをサーバーとして活用するための基本的な設定 &amp;#8211; さくらインターネット創業日記&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://tanaka.sakura.ad.jp/archives/001065.html&#34;&gt;CentOSをサーバーとして活用するための基本的な設定 - さくらインターネット創業日記&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;さくらの社長による、自社のVPSの初期設定方法&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/a__z/20071011&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://d.hatena.ne.jp/a__z/20071011&#39;, &#39;CentOS:sudo を設定する &amp;#8211; 日々のメモ&#39;]);&#34; &gt;CentOS:sudo を設定する &amp;#8211; 日々のメモ&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://weble.org/2011/05/16/sakura-vps-and-centos&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://weble.org/2011/05/16/sakura-vps-and-centos&#39;, &#39;はじめてのさくら VPS + CentOS の初期設定からチューニングなどの作業まとめ | ウェブル&#39;]);&#34; &gt;はじめてのさくら VPS + CentOS の初期設定からチューニングなどの作業まとめ | ウェブル&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/a__z/20071011&#34;&gt;CentOS:sudo を設定する - 日々のメモ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://weble.org/2011/05/16/sakura-vps-and-centos&#34;&gt;はじめてのさくら VPS + CentOS の初期設定からチューニングなどの作業まとめ | ウェブル&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;LAMP環境の構築手順も&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://akabeko.sakura.ne.jp/blog/2010/09/%E3%81%95%E3%81%8F%E3%82%89%E3%81%AEvps-%E3%82%92%E4%BD%BF%E3%81%84%E3%81%AF%E3%81%98%E3%82%81%E3%82%8B-3/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://akabeko.sakura.ne.jp/blog/2010/09/%E3%81%95%E3%81%8F%E3%82%89%E3%81%AEvps-%E3%82%92%E4%BD%BF%E3%81%84%E3%81%AF%E3%81%98%E3%82%81%E3%82%8B-3/&#39;, &#39;さくらのVPS を使いはじめる 3 – iptables を設定する | アカベコマイリ&#39;]);&#34; &gt;さくらのVPS を使いはじめる 3 – iptables を設定する | アカベコマイリ&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.searchman.info/linux/1070.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.searchman.info/linux/1070.html&#39;, &#39;クライアントＰＣから、ＬINUXサーバー(Fedora9)にFTPで接続する。&#39;]);&#34; &gt;クライアントＰＣから、ＬINUXサーバー(Fedora9)にFTPで接続する。&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://akabeko.sakura.ne.jp/blog/2010/09/%E3%81%95%E3%81%8F%E3%82%89%E3%81%AEvps-%E3%82%92%E4%BD%BF%E3%81%84%E3%81%AF%E3%81%98%E3%82%81%E3%82%8B-3/&#34;&gt;さくらのVPS を使いはじめる 3 – iptables を設定する | アカベコマイリ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.searchman.info/linux/1070.html&#34;&gt;クライアントＰＣから、ＬINUXサーバー(Fedora9)にFTPで接続する。&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;vsftpdの設定方法&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://sakura.off-soft.net/blog/cloudcore_vps_centos_first_setup.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://sakura.off-soft.net/blog/cloudcore_vps_centos_first_setup.html&#39;, &#39;評判のCloudCore VPSを使うときに最初にやっておきたいこと(CentOS編) | レンタルサーバー・自宅サーバー設定・構築のヒント&#39;]);&#34; &gt;評判のCloudCore VPSを使うときに最初にやっておきたいこと(CentOS編) | レンタルサーバー・自宅サーバー設定・構築のヒント&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.cloudcore.jp/vps/spec/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.cloudcore.jp/vps/spec/&#39;, &#39;スペック｜CloudCore VPS｜KDDIウェブコミュニケーションズ&#39;]);&#34; &gt;スペック｜CloudCore VPS｜KDDIウェブコミュニケーションズ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://sakura.off-soft.net/blog/cloudcore_vps_centos_first_setup.html&#34;&gt;評判のCloudCore VPSを使うときに最初にやっておきたいこと(CentOS編) | レンタルサーバー・自宅サーバー設定・構築のヒント&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cloudcore.jp/vps/spec/&#34;&gt;スペック｜CloudCore VPS｜KDDIウェブコミュニケーションズ&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

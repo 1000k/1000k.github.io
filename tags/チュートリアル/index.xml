@@ -17,9 +17,9 @@
       <guid>http://1000k.github.io/2015/01/27/validate-cakephp2-rules-with-sublime-text2-phpcs-plugin/</guid>
       <description>
 
-&lt;p&gt;Sublime Text 2 のエディタ上で PHP CodeSniffer を使い、コーディング規約をチェックする方法です。&lt;a href=&#34;http://benmatselby.github.io/sublime-phpcs/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://benmatselby.github.io/sublime-phpcs/&#39;, &#39;sublime-phpcs&#39;]);&#34; &gt;sublime-phpcs&lt;/a&gt; プラグインを導入することで、コーディング規約違反のある行がエディタ上に表示されるようになります。&lt;/p&gt;
+&lt;p&gt;Sublime Text 2 のエディタ上で PHP CodeSniffer を使い、コーディング規約をチェックする方法です。&lt;a href=&#34;http://benmatselby.github.io/sublime-phpcs/&#34;&gt;sublime-phpcs&lt;/a&gt; プラグインを導入することで、コーディング規約違反のある行がエディタ上に表示されるようになります。&lt;/p&gt;
 
-&lt;p&gt;なお、プラグインの公式ページでは phpmd も一緒に導入していますが、&lt;a href=&#34;http://blog.1000k.net/2013/11/26/phpmd-%e3%81%ae%e9%a0%ad%e3%81%8c%e3%81%8b%e3%81%aa%e3%82%8a-messy/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/2013/11/26/phpmd-%e3%81%ae%e9%a0%ad%e3%81%8c%e3%81%8b%e3%81%aa%e3%82%8a-messy/&#39;, &#39;PHPMD はヒステリックすぎて個人的にお勧めしない&#39;]);&#34; &gt;PHPMD はヒステリックすぎて個人的にお勧めしない&lt;/a&gt; ので省略します。&lt;/p&gt;
+&lt;p&gt;なお、プラグインの公式ページでは phpmd も一緒に導入していますが、&lt;a href=&#34;http://blog.1000k.net/2013/11/26/phpmd-%e3%81%ae%e9%a0%ad%e3%81%8c%e3%81%8b%e3%81%aa%e3%82%8a-messy/&#34;&gt;PHPMD はヒステリックすぎて個人的にお勧めしない&lt;/a&gt; ので省略します。&lt;/p&gt;
 
 &lt;h2 id=&#34;チュートリアル:0e3f1a6b553d4169127746e6faedbbcf&#34;&gt;チュートリアル&lt;/h2&gt;
 
@@ -43,13 +43,13 @@ The installed coding standards are CakePHP, MySource, PEAR, PHPCS, PSR1, PSR2, S
 
 &lt;h3 id=&#34;sublime-text-2-に-codesniffer-プラグインをインストールする:0e3f1a6b553d4169127746e6faedbbcf&#34;&gt;Sublime Text 2 に CodeSniffer プラグインをインストールする&lt;/h3&gt;
 
-&lt;p&gt;&amp;#8220;Package Control: Install Package&amp;#8221; で &lt;code&gt;Phpcs&lt;/code&gt; をインストールするだけ。&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Package Control: Install Package&amp;rdquo; で &lt;code&gt;Phpcs&lt;/code&gt; をインストールするだけ。&lt;/p&gt;
 
-&lt;p&gt;(Package Control 自体のインストール方法は &lt;a href=&#34;https://sublime.wbond.net/installation#st2&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://sublime.wbond.net/installation#st2&#39;, &#39;Installation &amp;#8211; Package Control&#39;]);&#34; &gt;Installation &amp;#8211; Package Control&lt;/a&gt; を参照)&lt;/p&gt;
+&lt;p&gt;(Package Control 自体のインストール方法は &lt;a href=&#34;https://sublime.wbond.net/installation#st2&#34;&gt;Installation - Package Control&lt;/a&gt; を参照)&lt;/p&gt;
 
 &lt;h3 id=&#34;sublime-text-の設定:0e3f1a6b553d4169127746e6faedbbcf&#34;&gt;Sublime Text の設定&lt;/h3&gt;
 
-&lt;p&gt;&amp;#8220;Preferences &amp;gt; Package Settings &amp;gt; PHP Code Sniffer &amp;gt; Settings &amp;#8211; User&amp;#8221; を開き、以下のキーを設定する必要があります。&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Preferences &amp;gt; Package Settings &amp;gt; PHP Code Sniffer &amp;gt; Settings - User&amp;rdquo; を開き、以下のキーを設定する必要があります。&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;phpcs_php_path&lt;/li&gt;
@@ -78,8 +78,8 @@ The installed coding standards are CakePHP, MySource, PEAR, PHPCS, PSR1, PSR2, S
 &lt;p&gt;以下の手順でプラグインのコードを修正してください。&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&amp;#8220;Preferences &amp;gt; Browse Packages&amp;#8230;&amp;#8221; でパッケージディレクトリを開く。&lt;/li&gt;
-&lt;li&gt;&amp;#8220;Phpcs &amp;gt; phpcs.py&amp;#8221; を開く。&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Preferences &amp;gt; Browse Packages…&amp;rdquo; でパッケージディレクトリを開く。&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Phpcs &amp;gt; phpcs.py&amp;rdquo; を開く。&lt;/li&gt;
 &lt;li&gt;169行目を以下のように修正 (パラメータに &lt;code&gt;shell=True&lt;/code&gt; を追加) する。&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -99,7 +99,7 @@ proc = subprocess.Popen(cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stde
 
 &lt;p&gt;プラグインインストール後のデフォルトだと、保存するたびに規約違反がサジェストされます。&lt;/p&gt;
 
-&lt;p&gt;鬱陶しい場合は &amp;#8220;Preferences &amp;gt; Package Settings &amp;gt; PHP Code Sniffer &amp;gt; Settings &amp;#8211; User&amp;#8221; に下記を追加することでオフにできます。&lt;/p&gt;
+&lt;p&gt;鬱陶しい場合は &amp;ldquo;Preferences &amp;gt; Package Settings &amp;gt; PHP Code Sniffer &amp;gt; Settings - User&amp;rdquo; に下記を追加することでオフにできます。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
   &amp;quot;phpcs_execute_on_save&amp;quot;: false
@@ -109,11 +109,11 @@ proc = subprocess.Popen(cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stde
 &lt;h2 id=&#34;参考:0e3f1a6b553d4169127746e6faedbbcf&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://benmatselby.github.io/sublime-phpcs/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://benmatselby.github.io/sublime-phpcs/&#39;, &#39;sublime-phpcs&#39;]);&#34; &gt;sublime-phpcs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/10585274/custom-ruleset-for-phpcs-using-phpstorm&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://stackoverflow.com/questions/10585274/custom-ruleset-for-phpcs-using-phpstorm&#39;, &#39;php &amp;#8211; Custom ruleset for phpcs using PHPStorm &amp;#8211; Stack Overflow&#39;]);&#34; &gt;php &amp;#8211; Custom ruleset for phpcs using PHPStorm &amp;#8211; Stack Overflow&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/cakephp/cakephp-codesniffer&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/cakephp/cakephp-codesniffer&#39;, &#39;cakephp/cakephp-codesniffer · GitHub&#39;]);&#34; &gt;cakephp/cakephp-codesniffer · GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/fabpot/PHP-CS-Fixer&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/fabpot/PHP-CS-Fixer&#39;, &#39;fabpot/PHP-CS-Fixer · GitHub&#39;]);&#34; &gt;fabpot/PHP-CS-Fixer · GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://matsu-chara.hatenablog.com/entry/2013/12/27/125026&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://matsu-chara.hatenablog.com/entry/2013/12/27/125026&#39;, &#39;sublime-phpcsでPSR-2準拠のコーディング &amp;#8211; だいたいよくわからないブログ( ´_ゝ`)&#39;]);&#34; &gt;sublime-phpcsでPSR-2準拠のコーディング &amp;#8211; だいたいよくわからないブログ( ´_ゝ`)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://benmatselby.github.io/sublime-phpcs/&#34;&gt;sublime-phpcs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/10585274/custom-ruleset-for-phpcs-using-phpstorm&#34;&gt;php - Custom ruleset for phpcs using PHPStorm - Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cakephp/cakephp-codesniffer&#34;&gt;cakephp/cakephp-codesniffer · GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/fabpot/PHP-CS-Fixer&#34;&gt;fabpot/PHP-CS-Fixer · GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://matsu-chara.hatenablog.com/entry/2013/12/27/125026&#34;&gt;sublime-phpcsでPSR-2準拠のコーディング - だいたいよくわからないブログ( ´_ゝ`)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -126,7 +126,7 @@ proc = subprocess.Popen(cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stde
       <guid>http://1000k.github.io/2014/05/13/collect-audit-log-with-mcafee-mysql-audit-plugin/</guid>
       <description>
 
-&lt;p&gt;McAfee が作った MySQL プラグイン &amp;#8220;&lt;a href=&#34;https://github.com/mcafee/mysql-audit&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/mcafee/mysql-audit&#39;, &#39;McAfee MySQL Audit Plugin&#39;]);&#34; &gt;McAfee MySQL Audit Plugin&lt;/a&gt;&amp;#8221; を使うと、MySQL の監査ログが取得できるようになります。&lt;/p&gt;
+&lt;p&gt;McAfee が作った MySQL プラグイン &amp;ldquo;&lt;a href=&#34;https://github.com/mcafee/mysql-audit&#34;&gt;McAfee MySQL Audit Plugin&lt;/a&gt;&amp;rdquo; を使うと、MySQL の監査ログが取得できるようになります。&lt;/p&gt;
 
 &lt;p&gt;会社のセキュリティ要件で監査が必要になったので、検証してみました。&lt;/p&gt;
 
@@ -144,7 +144,7 @@ proc = subprocess.Popen(cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stde
 
 &lt;p&gt;CentOS 6.3 (64bit) 上に MySQL 5.6 をインストールしている環境を想定しています。&lt;/p&gt;
 
-&lt;p&gt;まず、&lt;a href=&#34;https://bintray.com/mcafee/mysql-audit-plugin/release&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://bintray.com/mcafee/mysql-audit-plugin/release&#39;, &#39;Plugin のダウンロードページ&#39;]);&#34; &gt;Plugin のダウンロードページ&lt;/a&gt; から最新のバイナリをダウンロードし、MySQL のプラグインディレクトリに解凍します。MySQL のバージョンと OS の bit を間違えないように。&lt;/p&gt;
+&lt;p&gt;まず、&lt;a href=&#34;https://bintray.com/mcafee/mysql-audit-plugin/release&#34;&gt;Plugin のダウンロードページ&lt;/a&gt; から最新のバイナリをダウンロードし、MySQL のプラグインディレクトリに解凍します。MySQL のバージョンと OS の bit を間違えないように。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ wget http://dl.bintray.com/mcafee/mysql-audit-plugin/1.0.4/audit-plugin-mysql-5.6-1.0.4-459-linux-x86_64.zip
 $ unzip audit-plugin-mysql-5.6-1.0.4-459-linux-x86_64.zip
@@ -212,7 +212,7 @@ audit_json_file = On
 
 &lt;h2 id=&#34;プラグインの設定:c6474aa8b06dbbdfd3d89714dc33b5d2&#34;&gt;プラグインの設定&lt;/h2&gt;
 
-&lt;p&gt;設定パラメータを全部書くのは面倒なので主要なものだけ。詳しくは &lt;a href=&#34;https://github.com/mcafee/mysql-audit/wiki/Configuration&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/mcafee/mysql-audit/wiki/Configuration&#39;, &#39;Configuration · mcafee/mysql-audit Wiki&#39;]);&#34; &gt;Configuration · mcafee/mysql-audit Wiki&lt;/a&gt; を参照。&lt;/p&gt;
+&lt;p&gt;設定パラメータを全部書くのは面倒なので主要なものだけ。詳しくは &lt;a href=&#34;https://github.com/mcafee/mysql-audit/wiki/Configuration&#34;&gt;Configuration · mcafee/mysql-audit Wiki&lt;/a&gt; を参照。&lt;/p&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -392,12 +392,12 @@ audit_json_file = On
 &lt;h2 id=&#34;参考:c6474aa8b06dbbdfd3d89714dc33b5d2&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/mcafee/mysql-audit/wiki&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/mcafee/mysql-audit/wiki&#39;, &#39;Home · mcafee/mysql-audit Wiki&#39;]);&#34; &gt;Home · mcafee/mysql-audit Wiki&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mcafee/mysql-audit/wiki&#34;&gt;Home · mcafee/mysql-audit Wiki&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;公式の Wiki。これを見ればだいたい大丈夫。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.majide.com/2012/10/mysql-mcafee-audit-plugin/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.majide.com/2012/10/mysql-mcafee-audit-plugin/&#39;, &#39;McAfeeのおかげでMySQLで監査ログが取れるようになった&#39;]);&#34; &gt;McAfeeのおかげでMySQLで監査ログが取れるようになった&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.majide.com/2012/10/mysql-mcafee-audit-plugin/&#34;&gt;McAfeeのおかげでMySQLで監査ログが取れるようになった&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;インストール手順や設定項目が詳しい。プラグインが読み込めないエラーの直し方も。&lt;/li&gt;
@@ -566,22 +566,22 @@ $ sudo mkdir ssl.key
 $ sudo sh -c &amp;quot;openssl genrsa 2048 &amp;gt; ssl.key/server.key&amp;quot;
 $ sudo sh -c &amp;quot;openssl req -new -key ssl.key/server.key &amp;gt; server.csr&amp;quot;
 (質問は全てデフォルトのまま Enter)
-$ sudo sh -c &amp;quot;openssl x509 -days 3650 -req -signkey ssl.key/server.key &amp;amp;lt; server.csr &amp;gt; ssl.crt/server.crt&amp;quot;
+$ sudo sh -c &amp;quot;openssl x509 -days 3650 -req -signkey ssl.key/server.key &amp;lt; server.csr &amp;gt; ssl.crt/server.crt&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;https アクセスを有効にする。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$ sudo sh -c &amp;quot;cat &amp;amp;lt;&amp;amp;lt;EOT &amp;gt; /usr/local/apache2/conf.d/ssl.conf
+&lt;pre&gt;&lt;code&gt;$ sudo sh -c &amp;quot;cat &amp;lt;&amp;lt;EOT &amp;gt; /usr/local/apache2/conf.d/ssl.conf
 NameVirtualHost *:443
 Listen 443
 
-&amp;amp;lt;VirtualHost *:443&amp;gt;
+&amp;lt;VirtualHost *:443&amp;gt;
     DocumentRoot /var/www
 
     SSLEngine on
     SSLCertificateFile conf/ssl.crt/server.crt
     SSLCertificateKeyFile conf/ssl.key/server.key
-&amp;amp;lt;/VirtualHost&amp;gt;
+&amp;lt;/VirtualHost&amp;gt;
 EOT&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -595,8 +595,8 @@ EOT&amp;quot;
 &lt;h2 id=&#34;参考:1ec5ca8028cd506870889668379eecae&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://smokycat.info/ubuntu/440&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://smokycat.info/ubuntu/440&#39;, &#39;ubuntuにオレオレ証明書を入れてapacheにhttpsできるようにする話。 | smokycat.info&#39;]);&#34; &gt;ubuntuにオレオレ証明書を入れてapacheにhttpsできるようにする話。 | smokycat.info&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/ozuma/20130511/1368284304&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://d.hatena.ne.jp/ozuma/20130511/1368284304&#39;, &#39;オレオレ証明書をopensslで作る（詳細版） &amp;#8211; ろば電子が詰まっている&#39;]);&#34; &gt;オレオレ証明書をopensslで作る（詳細版） &amp;#8211; ろば電子が詰まっている&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://smokycat.info/ubuntu/440&#34;&gt;ubuntuにオレオレ証明書を入れてapacheにhttpsできるようにする話。 | smokycat.info&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/ozuma/20130511/1368284304&#34;&gt;オレオレ証明書をopensslで作る（詳細版） - ろば電子が詰まっている&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -609,13 +609,24 @@ EOT&amp;quot;
       <guid>http://1000k.github.io/2013/12/18/display-remaining-time-by-progress-bar/</guid>
       <description>
 
-&lt;p&gt;&lt;a href=&#34;http://e.ggtimer.com/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://e.ggtimer.com/&#39;, &#39;E.gg Timer&#39;]);&#34; &gt;E.gg Timer&lt;/a&gt; のようなタイマーアプリを作りたかったので、プログレスバーの作り方を調べました。タイマーそのものより、progress タグのスタイルシートをクロスブラウザ対応させるのに苦労しました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://e.ggtimer.com/&#34;&gt;E.gg Timer&lt;/a&gt; のようなタイマーアプリを作りたかったので、プログレスバーの作り方を調べました。タイマーそのものより、progress タグのスタイルシートをクロスブラウザ対応させるのに苦労しました。&lt;/p&gt;
 
 &lt;p&gt;今回作ったのは下の画像のような簡単なタイマーです。経過時間に合わせてプログレスバーが赤くなります。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://blog.1000k.net/wp-content/uploads/timer.png&#34; alt=&#34;timer&#34; width=&#34;585&#34; height=&#34;81&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://1000k.github.io/img/timer.png&#34;  /&gt;
+    
+    
+    &lt;figcaption&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://jsfiddle.net/tcxx9/3/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://jsfiddle.net/tcxx9/3/&#39;, &#39;デモはこちら。&#39;]);&#34; &gt;デモはこちら。&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://jsfiddle.net/tcxx9/3/&#34;&gt;デモはこちら。&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;なお、IE11, Firefox26, Chrome31 で動作を確認しています。&lt;/p&gt;
 
@@ -626,7 +637,7 @@ EOT&amp;quot;
 &lt;p&gt;プログレスバー、時間入力欄、開始/停止ボタンがあるだけです。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;progressWrapper&amp;quot;&amp;gt;
-  &amp;amp;lt;progress id=&amp;quot;bar&amp;quot; value=&amp;quot;0&amp;quot; max=&amp;quot;1000&amp;quot; min=&amp;quot;0&amp;quot;&amp;gt;&amp;amp;lt;/progress&amp;gt;
+  &amp;lt;progress id=&amp;quot;bar&amp;quot; value=&amp;quot;0&amp;quot; max=&amp;quot;1000&amp;quot; min=&amp;quot;0&amp;quot;&amp;gt;&amp;lt;/progress&amp;gt;
 
 &amp;lt;/div&amp;gt;
 
@@ -659,7 +670,7 @@ var countdown = function() {
 
   $(&#39;#bar&#39;).attr(&#39;value&#39;, restBarLength);
 
-  if (restMs &amp;amp;lt; 0) {
+  if (restMs &amp;lt; 0) {
     resetTimer();
     alert(&#39;time expired&#39;);
   }
@@ -728,15 +739,15 @@ progress::-moz-progress-bar {
 &lt;h2 id=&#34;参考:2853c5683734ff1185ea9e66d817967b&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.hongkiat.com/blog/html5-progress-bar/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.hongkiat.com/blog/html5-progress-bar/&#39;, &#39;Creating &amp; Styling Progress Bar With HTML5&#39;]);&#34; &gt;Creating &amp;amp; Styling Progress Bar With HTML5&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.pori2.net/js/timer/6.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.pori2.net/js/timer/6.html&#39;, &#39;カウントダウンタイマー－JavaScript入門&#39;]);&#34; &gt;カウントダウンタイマー－JavaScript入門&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.useragentman.com/blog/2012/01/03/cross-browser-html5-progress-bars-in-depth/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.useragentman.com/blog/2012/01/03/cross-browser-html5-progress-bars-in-depth/&#39;, &#39;Cross Browser HTML5 Progress Bars In Depth&#39;]);&#34; &gt;Cross Browser HTML5 Progress Bars In Depth&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.hongkiat.com/blog/html5-progress-bar/&#34;&gt;Creating &amp;amp; Styling Progress Bar With HTML5&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.pori2.net/js/timer/6.html&#34;&gt;カウントダウンタイマー－JavaScript入門&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.useragentman.com/blog/2012/01/03/cross-browser-html5-progress-bars-in-depth/&#34;&gt;Cross Browser HTML5 Progress Bars In Depth&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;カウントダウンに合わせて動くサルのアニメや、スピードメーターの書き方など。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://css-tricks.com/html5-progress-element/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://css-tricks.com/html5-progress-element/&#39;, &#39;The HTML5 progress Element | CSS-Tricks&#39;]);&#34; &gt;The HTML5 progress Element | CSS-Tricks&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/ja/docs/Web/CSS/::-moz-progress-bar&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://developer.mozilla.org/ja/docs/Web/CSS/::-moz-progress-bar&#39;, &#39;::-moz-progress-bar - CSS | MDN&#39;]);&#34; &gt;::-moz-progress-bar - CSS | MDN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://css-tricks.com/html5-progress-element/&#34;&gt;The HTML5 progress Element | CSS-Tricks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/ja/docs/Web/CSS/::-moz-progress-bar&#34;&gt;::-moz-progress-bar - CSS | MDN&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -762,43 +773,120 @@ progress::-moz-progress-bar {
 
 &lt;p&gt;リポジトリの URL は &lt;code&gt;https://foo.com/git/bar.git&lt;/code&gt; とします。&lt;/p&gt;
 
-&lt;p&gt;&amp;#8220;Jenkins の管理 &amp;gt; Credentials &amp;gt; Add domain&amp;#8221; をクリックし、Git リポジトリのドメインを入力します。&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Jenkins の管理 &amp;gt; Credentials &amp;gt; Add domain&amp;rdquo; をクリックし、Git リポジトリのドメインを入力します。&lt;/p&gt;
 
 &lt;p&gt;Specification の URI スキーマには &lt;code&gt;https&lt;/code&gt; を選択します。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_1.png&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_1.png&#39;, &#39;&#39;]);&#34; &gt;&lt;img src=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_1-300x163.png&#34; alt=&#34;jenkins_secure_credientials_1&#34; width=&#34;300&#34; height=&#34;163&#34; class=&#34;alignnone size-medium wp-image-1641&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_1.png&#34;&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://1000k.github.io/img/jenkins_secure_credientials_1-300x163.png&#34;  /&gt;
+    
+    
+    &lt;figcaption&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;続いて、&amp;#8221;Add Credentials&amp;#8221; をクリックし、認証情報入力画面を出します。&lt;/p&gt;
+&lt;p&gt;続いて、&amp;rdquo;Add Credentials&amp;rdquo; をクリックし、認証情報入力画面を出します。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_2.png&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_2.png&#39;, &#39;&#39;]);&#34; &gt;&lt;img src=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_2-300x71.png&#34; alt=&#34;jenkins_secure_credientials_2&#34; width=&#34;300&#34; height=&#34;71&#34; class=&#34;alignnone size-medium wp-image-1642&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_2.png&#34;&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://1000k.github.io/img/jenkins_secure_credientials_2-300x71.png&#34;  /&gt;
+    
+    
+    &lt;figcaption&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&amp;#8220;Kind&amp;#8221; は &lt;code&gt;ユーザー名とパスワード&lt;/code&gt; を、&amp;#8221;ユーザー名&amp;#8221; には https 認証のユーザー名を入力します。完了したら &amp;#8220;OK&amp;#8221; をクリック。&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Kind&amp;rdquo; は &lt;code&gt;ユーザー名とパスワード&lt;/code&gt; を、&amp;rdquo;ユーザー名&amp;rdquo; には https 認証のユーザー名を入力します。完了したら &amp;ldquo;OK&amp;rdquo; をクリック。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_3.png&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_3.png&#39;, &#39;&#39;]);&#34; &gt;&lt;img src=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_3-300x139.png&#34; alt=&#34;jenkins_secure_credientials_3&#34; width=&#34;300&#34; height=&#34;139&#34; class=&#34;alignnone size-medium wp-image-1643&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_3.png&#34;&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://1000k.github.io/img/jenkins_secure_credientials_3-300x139.png&#34;  /&gt;
+    
+    
+    &lt;figcaption&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;これで一旦、認証鍵一覧画面に戻されます。引き続き、いま入力したユーザー名をクリック。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_4.png&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_4.png&#39;, &#39;&#39;]);&#34; &gt;&lt;img src=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_4-300x136.png&#34; alt=&#34;jenkins_secure_credientials_4&#34; width=&#34;300&#34; height=&#34;136&#34; class=&#34;alignnone size-medium wp-image-1644&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_4.png&#34;&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://1000k.github.io/img/jenkins_secure_credientials_4-300x136.png&#34;  /&gt;
+    
+    
+    &lt;figcaption&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&amp;#8220;Update&amp;#8221; をクリック。&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Update&amp;rdquo; をクリック。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_5.png&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_5.png&#39;, &#39;&#39;]);&#34; &gt;&lt;img src=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_5-300x137.png&#34; alt=&#34;jenkins_secure_credientials_5&#34; width=&#34;300&#34; height=&#34;137&#34; class=&#34;alignnone size-medium wp-image-1645&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_5.png&#34;&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://1000k.github.io/img/jenkins_secure_credientials_5-300x137.png&#34;  /&gt;
+    
+    
+    &lt;figcaption&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&amp;#8220;パスワード&amp;#8221; 欄に認証パスワードを入力し、&amp;#8221;Save&amp;#8221; をクリック。&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;パスワード&amp;rdquo; 欄に認証パスワードを入力し、&amp;rdquo;Save&amp;rdquo; をクリック。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_6.png&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_6.png&#39;, &#39;&#39;]);&#34; &gt;&lt;img src=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_6-300x134.png&#34; alt=&#34;jenkins_secure_credientials_6&#34; width=&#34;300&#34; height=&#34;134&#34; class=&#34;alignnone size-medium wp-image-1646&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_6.png&#34;&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://1000k.github.io/img/jenkins_secure_credientials_6-300x134.png&#34;  /&gt;
+    
+    
+    &lt;figcaption&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;以上で foo.com のリポジトリの認証情報が設定できました。&lt;/p&gt;
 
-&lt;p&gt;あとはプロジェクトの設定画面を開き、&amp;#8221;ソースコード管理システム &amp;gt; Git&amp;#8221; の &amp;#8220;Repository URL&amp;#8221; に &lt;code&gt;https://foo.com/git/bar.git&lt;/code&gt; を、&amp;#8221;Credentials&amp;#8221; に先ほど入力した ID/PW のペアを選択すれば OKです。&lt;/p&gt;
+&lt;p&gt;あとはプロジェクトの設定画面を開き、&amp;rdquo;ソースコード管理システム &amp;gt; Git&amp;rdquo; の &amp;ldquo;Repository URL&amp;rdquo; に &lt;code&gt;https://foo.com/git/bar.git&lt;/code&gt; を、&amp;rdquo;Credentials&amp;rdquo; に先ほど入力した ID/PW のペアを選択すれば OKです。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_7.png&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_7.png&#39;, &#39;&#39;]);&#34; &gt;&lt;img src=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_7-300x242.png&#34; alt=&#34;jenkins_secure_credientials_7&#34; width=&#34;300&#34; height=&#34;242&#34; class=&#34;alignnone size-medium wp-image-1647&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_7.png&#34;&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://1000k.github.io/img/jenkins_secure_credientials_7-300x242.png&#34;  /&gt;
+    
+    
+    &lt;figcaption&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;これでプロジェクトをビルド可能になります。&lt;/p&gt;
 
 &lt;h2 id=&#34;git-1-7-1-では認証が通らない:094599a56af5c07d8e54136f1f310fd1&#34;&gt;Git 1.7.1 では認証が通らない？&lt;/h2&gt;
 
-&lt;p&gt;CentOS 6.3 で、EPEL リポジトリから Git をインストールすると 1.7.1 が入りますが、これだとうまく認証が通りませんでした。プロジェクトの設定画面で &amp;#8220;Repository URL&amp;#8221; と &amp;#8220;Credential&amp;#8221; を入力しても、 &lt;code&gt;Error performing command: ls-remote -h&lt;/code&gt; というエラーが出て進めませんでした。&lt;/p&gt;
+&lt;p&gt;CentOS 6.3 で、EPEL リポジトリから Git をインストールすると 1.7.1 が入りますが、これだとうまく認証が通りませんでした。プロジェクトの設定画面で &amp;ldquo;Repository URL&amp;rdquo; と &amp;ldquo;Credential&amp;rdquo; を入力しても、 &lt;code&gt;Error performing command: ls-remote -h&lt;/code&gt; というエラーが出て進めませんでした。&lt;/p&gt;
 
 &lt;p&gt;仕方ないので手動でソースから Git 1.8.4.1 をインストールしたら、無事エラーが出なくなりました。&lt;/p&gt;
 
@@ -813,15 +901,26 @@ make
 make install
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;なお、この場合 Git のバイナリが &lt;code&gt;/usr/local/bin&lt;/code&gt; 配下にインストールされるので、&amp;#8221;Jenkins の管理 &amp;gt; システム設定 &amp;gt; Git &amp;gt; Path to Git executable&amp;#8221; に &lt;code&gt;/usr/local/bin/git&lt;/code&gt; と入力する必要があります。&lt;/p&gt;
+&lt;p&gt;なお、この場合 Git のバイナリが &lt;code&gt;/usr/local/bin&lt;/code&gt; 配下にインストールされるので、&amp;rdquo;Jenkins の管理 &amp;gt; システム設定 &amp;gt; Git &amp;gt; Path to Git executable&amp;rdquo; に &lt;code&gt;/usr/local/bin/git&lt;/code&gt; と入力する必要があります。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_81.png&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_81.png&#39;, &#39;&#39;]);&#34; &gt;&lt;img src=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_81-255x300.png&#34; alt=&#34;jenkins_secure_credientials_8&#34; width=&#34;255&#34; height=&#34;300&#34; class=&#34;alignnone size-medium wp-image-1649&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_81.png&#34;&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://1000k.github.io/img/jenkins_secure_credientials_81-255x300.png&#34;  /&gt;
+    
+    
+    &lt;figcaption&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;参考:094599a56af5c07d8e54136f1f310fd1&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin&#39;, &#39;Git Plugin &amp;#8211; Jenkins &amp;#8211; Jenkins Wiki&#39;]);&#34; &gt;Git Plugin &amp;#8211; Jenkins &amp;#8211; Jenkins Wiki&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://qiita.com/naonya3/items/54c8e3436212ad6686b3&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://qiita.com/naonya3/items/54c8e3436212ad6686b3&#39;, &#39;CentOS6.3にgitをソースコードから入れる &amp;#8211; Qiita [キータ]&#39;]);&#34; &gt;CentOS6.3にgitをソースコードから入れる &amp;#8211; Qiita [キータ]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin&#34;&gt;Git Plugin - Jenkins - Jenkins Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://qiita.com/naonya3/items/54c8e3436212ad6686b3&#34;&gt;CentOS6.3にgitをソースコードから入れる - Qiita [キータ]&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -834,7 +933,7 @@ make install
       <guid>http://1000k.github.io/2013/06/25/how-to-run-phpunit-under-php-5-2-environment/</guid>
       <description>
 
-&lt;p&gt;業務で使っているアプリが PHP 5.2 でしか動かず、仕方なく PHP 5.2 でも動く PHPUnit 3.6.11 を使っています。(&lt;a href=&#34;http://blog.1000k.net/2012/10/19/phpunit%E3%82%92%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%97%E3%81%9F%E3%82%89%E5%8B%95%E4%BD%9C%E3%81%97%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9F/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/2012/10/19/phpunit%E3%82%92%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%97%E3%81%9F%E3%82%89%E5%8B%95%E4%BD%9C%E3%81%97%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9F/&#39;, &#39;PHPUnit &gt;= 3.6.12 は PHP 5.3 が必要。&amp;rsquo;]);&amp;rdquo; title=&amp;ldquo;PHPUnitをアップグレードしたら動作しなくなった | 1000g&amp;rdquo;&amp;gt;PHPUnit &amp;gt;= 3.6.12 は PHP 5.3 が必要。&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;業務で使っているアプリが PHP 5.2 でしか動かず、仕方なく PHP 5.2 でも動く PHPUnit 3.6.11 を使っています。([= 3.6.12 は PHP 5.3 が必要。&amp;rsquo;]);&amp;rdquo; title=&amp;ldquo;PHPUnitをアップグレードしたら動作しなくなった | 1000g&amp;rdquo;&amp;gt;PHPUnit &amp;gt;= 3.6.12 は PHP 5.3 が必要。](&lt;a href=&#34;http://blog.1000k.net/2012/10/19/phpunit%E3%82%92%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%97%E3%81%9F%E3%82%89%E5%8B%95%E4%BD%9C%E3%81%97%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9F/))&#34;&gt;http://blog.1000k.net/2012/10/19/phpunit%E3%82%92%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%97%E3%81%9F%E3%82%89%E5%8B%95%E4%BD%9C%E3%81%97%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9F/))&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;最近になってサーバーのリプレースの時期になり、新しいビルドマシンに PHPUnit をインストールする羽目になったのですが、うまくバージョンが揃わず苦労しました。&lt;/p&gt;
 
@@ -850,7 +949,7 @@ make install
 
 &lt;p&gt;そもそも5.2系はとっくに Deprecated なので使うべきではないのですが、業務で使うから仕方ない。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.php.net/releases/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.php.net/releases/&#39;, &#39;PHP: Releases&#39;]);&#34; &gt;PHP: Releases&lt;/a&gt; から 5.2.17 をダウンロードして、ソースからインストールします。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.php.net/releases/&#34;&gt;PHP: Releases&lt;/a&gt; から 5.2.17 をダウンロードして、ソースからインストールします。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;# wget http://museum.php.net/php5/php-5.2.17.tar.gz
 # tar -zxf php-5.2.17.tar.gz
@@ -860,7 +959,7 @@ make install
 # make install
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;configure オプションは &lt;a href=&#34;http://www.php.net/manual/ja/configure.about.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.php.net/manual/ja/configure.about.php&#39;, &#39;PHP: 中心となる configure オプションのリスト &amp;#8211; Manual&#39;]);&#34; &gt;PHP: 中心となる configure オプションのリスト &amp;#8211; Manual&lt;/a&gt; を参考に。&lt;/p&gt;
+&lt;p&gt;configure オプションは &lt;a href=&#34;http://www.php.net/manual/ja/configure.about.php&#34;&gt;PHP: 中心となる configure オプションのリスト - Manual&lt;/a&gt; を参考に。&lt;/p&gt;
 
 &lt;h2 id=&#34;pear-をアップグレードする:a58652de0ea1df651ea37649dd28159c&#34;&gt;PEAR をアップグレードする&lt;/h2&gt;
 
@@ -901,7 +1000,7 @@ PHPUnit 3.6.11 by Sebastian Bergmann.
 
 &lt;h2 id=&#34;ついでに関連ツールも入れる:a58652de0ea1df651ea37649dd28159c&#34;&gt;ついでに関連ツールも入れる&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://jenkins-php.org/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://jenkins-php.org/&#39;, &#39;Template for Jenkins Jobs for PHP Projects&#39;]);&#34; &gt;Template for Jenkins Jobs for PHP Projects&lt;/a&gt; で紹介されているツールは下記のコマンドでインストールできます。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://jenkins-php.org/&#34;&gt;Template for Jenkins Jobs for PHP Projects&lt;/a&gt; で紹介されているツールは下記のコマンドでインストールできます。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;# pear channel-add pear.pdepend.org
 # pear channel-add pear.phpmd.org
@@ -919,7 +1018,7 @@ PHPUnit 3.6.11 by Sebastian Bergmann.
 &lt;h2 id=&#34;愚痴:a58652de0ea1df651ea37649dd28159c&#34;&gt;愚痴&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/composer/composer&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/composer/composer&#39;, &#39;Composer&#39;]);&#34; &gt;Composer&lt;/a&gt; を使えれば圧倒的に楽なのですが、PHP &amp;gt;= 5.3.2 でしか動かないので諦めました。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/composer/composer&#34;&gt;Composer&lt;/a&gt; を使えれば圧倒的に楽なのですが、PHP &amp;gt;= 5.3.2 でしか動かないので諦めました。&lt;/li&gt;
 &lt;li&gt;PEAR 遅い。&lt;/li&gt;
 &lt;li&gt;自動テストがあれば PHP をバージョンアップできるか検証できるのですが、ほとんどテストケースが無いのでそれも無理。コード総数は10万行。死にたい。&lt;/li&gt;
 &lt;/ul&gt;
@@ -938,7 +1037,7 @@ PHPUnit 3.6.11 by Sebastian Bergmann.
 
 &lt;h2 id=&#34;bower-とは:2b0e69e44f6fba1737d988e786e216a8&#34;&gt;Bower とは？&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://bower.io/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://bower.io/&#39;, &#39;BOWER: A package manager for the web&#39;]);&#34; &gt;BOWER: A package manager for the web&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://bower.io/&#34;&gt;BOWER: A package manager for the web&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Twitter 製の JavaScript パッケージ管理ライブラリ。Ruby の Gem, PHP の Composer みたいなもの。&lt;/p&gt;
 
@@ -974,10 +1073,10 @@ PHPUnit 3.6.11 by Sebastian Bergmann.
 bower install
 
 # パッケージを指定してインストールする
-bower install &amp;amp;lt;package&amp;gt;
+bower install &amp;lt;package&amp;gt;
 
 # git にタグ付けされたバージョンを元にインストールする
-bower install &amp;amp;lt;package&amp;gt;#&amp;amp;lt;version&amp;gt;
+bower install &amp;lt;package&amp;gt;#&amp;lt;version&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;bower.json のサンプルは下記の通り。&lt;/p&gt;
@@ -993,7 +1092,7 @@ bower install &amp;amp;lt;package&amp;gt;#&amp;amp;lt;version&amp;gt;
   , &amp;quot;dependencies&amp;quot;: {
     &amp;quot;backbone&amp;quot;: &amp;quot;1.0.0&amp;quot;
     , &amp;quot;underscore&amp;quot;: &amp;quot;1.4.4&amp;quot;
-    , &amp;quot;jquery&amp;quot;: &amp;quot;&amp;amp;lt; 2.0.0&amp;quot;
+    , &amp;quot;jquery&amp;quot;: &amp;quot;&amp;lt; 2.0.0&amp;quot;
     , &amp;quot;jquery-mousewheel&amp;quot;: &amp;quot;latest&amp;quot;
     , &amp;quot;snap&amp;quot;: &amp;quot;git://github.com/jakiestfu/Snap.js.git&amp;quot;
   }
@@ -1018,12 +1117,12 @@ bower install &amp;amp;lt;package&amp;gt;#&amp;amp;lt;version&amp;gt;
 &lt;h2 id=&#34;参考:2b0e69e44f6fba1737d988e786e216a8&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://bower.io/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://bower.io/&#39;, &#39;BOWER: A package manager for the web&#39;]);&#34; &gt;BOWER: A package manager for the web&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/bower/bower&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/bower/bower&#39;, &#39;bower/bower · GitHub&#39;]);&#34; &gt;bower/bower · GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://uzulla.hateblo.jp/entry/2013/04/28/143507&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://uzulla.hateblo.jp/entry/2013/04/28/143507&#39;, &#39;bowerでつまづいた事のメモなど - uzullaがブログ&#39;]);&#34; &gt;bowerでつまづいた事のメモなど - uzullaがブログ&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.mach3.jp/2013/01/bower.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.mach3.jp/2013/01/bower.html&#39;, &#39;パッケージマネージャー「Bower」が大変便利で捗りそうです | Mach3.laBlog&#39;]);&#34; &gt;パッケージマネージャー「Bower」が大変便利で捗りそうです | Mach3.laBlog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://qiita.com/items/ba952bdade627af99e93&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://qiita.com/items/ba952bdade627af99e93&#39;, &#39;なにはともあれ入れてみるぜ。バウワー。(bower) #Node.js #JavaScript #twitter - Qiita [キータ]&#39;]);&#34; &gt;なにはともあれ入れてみるぜ。バウワー。(bower) #Node.js #JavaScript #twitter - Qiita [キータ]&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://net.tutsplus.com/tutorials/tools-and-tips/meet-bower-a-package-manager-for-the-web/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://net.tutsplus.com/tutorials/tools-and-tips/meet-bower-a-package-manager-for-the-web/&#39;, &#39;Meet Bower: A Package Manager For The Web | Nettuts+&#39;]);&#34; &gt;Meet Bower: A Package Manager For The Web | Nettuts+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://bower.io/&#34;&gt;BOWER: A package manager for the web&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/bower/bower&#34;&gt;bower/bower · GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://uzulla.hateblo.jp/entry/2013/04/28/143507&#34;&gt;bowerでつまづいた事のメモなど - uzullaがブログ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.mach3.jp/2013/01/bower.html&#34;&gt;パッケージマネージャー「Bower」が大変便利で捗りそうです | Mach3.laBlog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://qiita.com/items/ba952bdade627af99e93&#34;&gt;なにはともあれ入れてみるぜ。バウワー。(bower) #Node.js #JavaScript #twitter - Qiita [キータ]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://net.tutsplus.com/tutorials/tools-and-tips/meet-bower-a-package-manager-for-the-web/&#34;&gt;Meet Bower: A Package Manager For The Web | Nettuts+&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -1045,7 +1144,7 @@ bower install &amp;amp;lt;package&amp;gt;#&amp;amp;lt;version&amp;gt;
 
 &lt;h2 id=&#34;リポジトリを追加する:22b952c0c7ccdbfe7d7cc04c5066aa86&#34;&gt;リポジトリを追加する&lt;/h2&gt;
 
-&lt;p&gt;バージョンによって異なります。&lt;a href=&#34;https://downloads.mariadb.org/mariadb/repositories/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://downloads.mariadb.org/mariadb/repositories/&#39;, &#39;MariaDB &amp;#8211; Setting up MariaDB Repositories &amp;#8211; MariaDB&#39;]);&#34; &gt;MariaDB &amp;#8211; Setting up MariaDB Repositories &amp;#8211; MariaDB&lt;/a&gt; からバージョン＆環境毎のリポジトリが選択できるので、10.0 以外をインストールする場合はそちらを参考にしてください。&lt;/p&gt;
+&lt;p&gt;バージョンによって異なります。&lt;a href=&#34;https://downloads.mariadb.org/mariadb/repositories/&#34;&gt;MariaDB - Setting up MariaDB Repositories - MariaDB&lt;/a&gt; からバージョン＆環境毎のリポジトリが選択できるので、10.0 以外をインストールする場合はそちらを参考にしてください。&lt;/p&gt;
 
 &lt;p&gt;今回は CentOS 6.3 64bit です。&lt;/p&gt;
 
@@ -1091,10 +1190,10 @@ package &#39;MariaDB-server&#39;
 &lt;h2 id=&#34;参考:22b952c0c7ccdbfe7d7cc04c5066aa86&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://downloads.mariadb.org/mariadb/repositories/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://downloads.mariadb.org/mariadb/repositories/&#39;, &#39;MariaDB &amp;#8211; Setting up MariaDB Repositories &amp;#8211; MariaDB&#39;]);&#34; &gt;MariaDB &amp;#8211; Setting up MariaDB Repositories &amp;#8211; MariaDB&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://kb.askmonty.org/en/installing-mariadb-with-yum/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://kb.askmonty.org/en/installing-mariadb-with-yum/&#39;, &#39;Installing MariaDB with yum &amp;#8211; AskMonty KnowledgeBase&#39;]);&#34; &gt;Installing MariaDB with yum &amp;#8211; AskMonty KnowledgeBase&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.e-agency.co.jp/column/20130208.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.e-agency.co.jp/column/20130208.html&#39;, &#39;MariaDBをCentOS 6にyumでインストールする方法 | ブログ | 株式会社イー・エージェンシー&#39;]);&#34; &gt;MariaDBをCentOS 6にyumでインストールする方法 | ブログ | 株式会社イー・エージェンシー&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/opscode-cookbooks/yum/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/opscode-cookbooks/yum/&#39;, &#39;opscode-cookbooks/yum · GitHub&#39;]);&#34; &gt;opscode-cookbooks/yum · GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://downloads.mariadb.org/mariadb/repositories/&#34;&gt;MariaDB - Setting up MariaDB Repositories - MariaDB&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kb.askmonty.org/en/installing-mariadb-with-yum/&#34;&gt;Installing MariaDB with yum - AskMonty KnowledgeBase&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.e-agency.co.jp/column/20130208.html&#34;&gt;MariaDBをCentOS 6にyumでインストールする方法 | ブログ | 株式会社イー・エージェンシー&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/opscode-cookbooks/yum/&#34;&gt;opscode-cookbooks/yum · GitHub&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -1215,9 +1314,9 @@ $ git checkout -b 0.2.0 origin/0.2.0
 
 &lt;p&gt;ここは git の内部構造を理解していないと飲み込めないかもしれません。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/matsukaz/git-17499005&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.slideshare.net/matsukaz/git-17499005&#39;, &#39;いつやるの？Git入門&#39;]);&#34; &gt;いつやるの？Git入門&lt;/a&gt; が簡潔に内部構造を説明しているので、目を通すことをオススメします。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.slideshare.net/matsukaz/git-17499005&#34;&gt;いつやるの？Git入門&lt;/a&gt; が簡潔に内部構造を説明しているので、目を通すことをオススメします。&lt;/p&gt;
 
-&lt;h3 id=&#34;commit-8211-amend:c200c94cf5af25837ca230fae46d8045&#34;&gt;commit &amp;#8211;amend&lt;/h3&gt;
+&lt;h3 id=&#34;commit-amend:c200c94cf5af25837ca230fae46d8045&#34;&gt;commit -amend&lt;/h3&gt;
 
 &lt;p&gt;後から前回のコミットに追加して変更をするやり方です。&lt;/p&gt;
 
@@ -1255,13 +1354,13 @@ git commit --amend -m &amp;quot;Successful commit&amp;quot;
 &lt;h2 id=&#34;参考:c200c94cf5af25837ca230fae46d8045&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/nayutaya/20090519/1242701594&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://d.hatena.ne.jp/nayutaya/20090519/1242701594&#39;, &#39;gitのリモートブランチを使って作業を行う流れのメモ &amp;#8211; 那由多屋 開発日誌&#39;]);&#34; &gt;gitのリモートブランチを使って作業を行う流れのメモ &amp;#8211; 那由多屋 開発日誌&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/948354/git-push-current-branch&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://stackoverflow.com/questions/948354/git-push-current-branch&#39;, &#39;git push current branch &amp;#8211; Stack Overflow&#39;]);&#34; &gt;git push current branch &amp;#8211; Stack Overflow&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://transitive.info/article/git/command/tag/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://transitive.info/article/git/command/tag/&#39;, &#39;transitive.info &amp;#8211; git tag 使い方&#39;]);&#34; &gt;transitive.info &amp;#8211; git tag 使い方&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://qiita.com/items/e082d64f3f8b424e9b7d&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://qiita.com/items/e082d64f3f8b424e9b7d&#39;, &#39;fetch と pullの違い #git &amp;#8211; Qiita&#39;]);&#34; &gt;fetch と pullの違い #git &amp;#8211; Qiita&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://dqn.sakusakutto.jp/2012/11/git_pull.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://dqn.sakusakutto.jp/2012/11/git_pull.html&#39;, &#39;Git pullを使うべきでない３つの理由 &amp;#8211; DQNEO起業日記&#39;]);&#34; &gt;Git pullを使うべきでない３つの理由 &amp;#8211; DQNEO起業日記&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/mrgoofy33/20100910/1284069468&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://d.hatena.ne.jp/mrgoofy33/20100910/1284069468&#39;, &#39;git commitをやり直しする＆取り消しする(「get commit &amp;#8211;amend」と「git reset」) &amp;#8211; hogehoge foobar Blog Style5&#39;]);&#34; &gt;git commitをやり直しする＆取り消しする(「get commit &amp;#8211;amend」と「git reset」) &amp;#8211; hogehoge foobar Blog Style5&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.slideshare.net/matsukaz/git-17499005&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.slideshare.net/matsukaz/git-17499005&#39;, &#39;いつやるの？Git入門&#39;]);&#34; &gt;いつやるの？Git入門&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/nayutaya/20090519/1242701594&#34;&gt;gitのリモートブランチを使って作業を行う流れのメモ - 那由多屋 開発日誌&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/948354/git-push-current-branch&#34;&gt;git push current branch - Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://transitive.info/article/git/command/tag/&#34;&gt;transitive.info - git tag 使い方&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://qiita.com/items/e082d64f3f8b424e9b7d&#34;&gt;fetch と pullの違い #git - Qiita&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dqn.sakusakutto.jp/2012/11/git_pull.html&#34;&gt;Git pullを使うべきでない３つの理由 - DQNEO起業日記&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/mrgoofy33/20100910/1284069468&#34;&gt;git commitをやり直しする＆取り消しする(「get commit -amend」と「git reset」) - hogehoge foobar Blog Style5&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.slideshare.net/matsukaz/git-17499005&#34;&gt;いつやるの？Git入門&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -1274,11 +1373,11 @@ git commit --amend -m &amp;quot;Successful commit&amp;quot;
       <guid>http://1000k.github.io/2013/04/03/installing-redis-2-6/</guid>
       <description>
 
-&lt;p&gt;なぜか&lt;a href=&#34;http://redis.io/download&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://redis.io/download&#39;, &#39;公式サイトのインストール手順&#39;]);&#34; &gt;公式サイトのインストール手順&lt;/a&gt;はコンパイルまでで終わっているので、完全な手順をメモしておきます。&lt;/p&gt;
+&lt;p&gt;なぜか&lt;a href=&#34;http://redis.io/download&#34;&gt;公式サイトのインストール手順&lt;/a&gt;はコンパイルまでで終わっているので、完全な手順をメモしておきます。&lt;/p&gt;
 
 &lt;h2 id=&#34;ダウンロード:d385bf451ffc60def1f51e177c3e1b7c&#34;&gt;ダウンロード&lt;/h2&gt;
 
-&lt;p&gt;最新のソースを &lt;a href=&#34;http://redis.io/download&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://redis.io/download&#39;, &#39;Download – Redis&#39;]);&#34; &gt;Download – Redis&lt;/a&gt; からダウンロードします。&lt;/p&gt;
+&lt;p&gt;最新のソースを &lt;a href=&#34;http://redis.io/download&#34;&gt;Download – Redis&lt;/a&gt; からダウンロードします。&lt;/p&gt;
 
 &lt;p&gt;以下、執筆時のバージョン (2.6.12) で話を進めます。&lt;/p&gt;
 
@@ -1299,7 +1398,7 @@ $ make distclean
 $ make
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;参考: &lt;a href=&#34;http://www.eschrade.com/page/undefined-reference-to-__sync_add_and_fetch_4/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.eschrade.com/page/undefined-reference-to-__sync_add_and_fetch_4/&#39;, &#39;undefined reference to `__sync_add_and_fetch_4′ when compiling Redis | ESchrade&#39;]);&#34; &gt;undefined reference to `__sync_add_and_fetch_4′ when compiling Redis | ESchrade&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;参考: &lt;a href=&#34;http://www.eschrade.com/page/undefined-reference-to-__sync_add_and_fetch_4/&#34;&gt;undefined reference to `__sync_add_and_fetch_4′ when compiling Redis | ESchrade&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;インストール:d385bf451ffc60def1f51e177c3e1b7c&#34;&gt;インストール&lt;/h2&gt;
 
@@ -1372,7 +1471,7 @@ $ sudo /etc/init.d/redis_6379 stop
       <guid>http://1000k.github.io/2013/03/27/usage-of-vfsstream/</guid>
       <description>
 
-&lt;p&gt;PHPUnit でファイルシステムのテストを行うとき便利な &lt;a href=&#34;http://vfs.bovigo.org/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://vfs.bovigo.org/&#39;, &#39;vfsStream&#39;]);&#34; &gt;vfsStream&lt;/a&gt; ですが、簡単なサンプルがあまり無かったので書いてみました。&lt;/p&gt;
+&lt;p&gt;PHPUnit でファイルシステムのテストを行うとき便利な &lt;a href=&#34;http://vfs.bovigo.org/&#34;&gt;vfsStream&lt;/a&gt; ですが、簡単なサンプルがあまり無かったので書いてみました。&lt;/p&gt;
 
 &lt;h2 id=&#34;vfsstream-とは:1bb7a2da6956cd5c18323dac9c2045f6&#34;&gt;vfsStream とは？&lt;/h2&gt;
 
@@ -1381,8 +1480,8 @@ $ sudo /etc/init.d/redis_6379 stop
 &lt;li&gt;仮想ファイルシステムを作成し、その中でディレクトリやファイルを操作できる。
 
 &lt;ul&gt;
-&lt;li&gt;実ファイルシステム: &lt;em&gt;file://&amp;#8230;&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;仮想ファイルシステム: &lt;em&gt;vfs://&amp;#8230;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;実ファイルシステム: &lt;em&gt;file://…&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;仮想ファイルシステム: &lt;em&gt;vfs://…&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;実ファイルを作成せずにテストできるので、テストファイルが散らばる可能性が無く、前回のテストのゴミを意識せずに済む。&lt;/li&gt;
 &lt;li&gt;ディレクトリやファイルの権限/ユーザー/オーナーも再現可能。&lt;/li&gt;
@@ -1390,7 +1489,7 @@ $ sudo /etc/init.d/redis_6379 stop
 
 &lt;h2 id=&#34;インストール方法:1bb7a2da6956cd5c18323dac9c2045f6&#34;&gt;インストール方法&lt;/h2&gt;
 
-&lt;p&gt;詳しくは以前書いた &lt;a href=&#34;http://blog.1000k.net/2012/09/04/vfsstream%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/2012/09/04/vfsstream%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/&#39;, &#39;vfsStreamをインストールする | 1000g&#39;]);&#34; &gt;vfsStreamをインストールする | 1000g&lt;/a&gt; を参照。&lt;/p&gt;
+&lt;p&gt;詳しくは以前書いた &lt;a href=&#34;http://blog.1000k.net/2012/09/04/vfsstream%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/&#34;&gt;vfsStreamをインストールする | 1000g&lt;/a&gt; を参照。&lt;/p&gt;
 
 &lt;h3 id=&#34;php-5-3-の場合:1bb7a2da6956cd5c18323dac9c2045f6&#34;&gt;PHP &amp;lt; 5.3 の場合&lt;/h3&gt;
 
@@ -1405,7 +1504,7 @@ $ pear install bovigo/vfsStream-beta
 &lt;pre&gt;&lt;code&gt;&amp;quot;mikey179/vfsStream&amp;quot;: &amp;quot;v1.1.0&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;利用可能なバージョンは &lt;a href=&#34;https://packagist.org/packages/mikey179/vfsStream&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://packagist.org/packages/mikey179/vfsStream&#39;, &#39;mikey179/vfsStream &amp;#8211; Packagist&#39;]);&#34; &gt;mikey179/vfsStream &amp;#8211; Packagist&lt;/a&gt; を参照。&lt;/p&gt;
+&lt;p&gt;利用可能なバージョンは &lt;a href=&#34;https://packagist.org/packages/mikey179/vfsStream&#34;&gt;mikey179/vfsStream - Packagist&lt;/a&gt; を参照。&lt;/p&gt;
 
 &lt;h2 id=&#34;サンプルコード:1bb7a2da6956cd5c18323dac9c2045f6&#34;&gt;サンプルコード&lt;/h2&gt;
 
@@ -1458,17 +1557,17 @@ class LoggerTest extends PHPUnit_Framework_Test {
 &lt;h2 id=&#34;参考:1bb7a2da6956cd5c18323dac9c2045f6&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://tech.vg.no/2011/03/09/mocking-the-file-system-using-phpunit-and-vfsstream/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://tech.vg.no/2011/03/09/mocking-the-file-system-using-phpunit-and-vfsstream/&#39;, &#39;Mocking the file system using PHPUnit and vfsStream – VG Tech&#39;]);&#34; &gt;Mocking the file system using PHPUnit and vfsStream – VG Tech&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://tech.vg.no/2011/03/09/mocking-the-file-system-using-phpunit-and-vfsstream/&#34;&gt;Mocking the file system using PHPUnit and vfsStream – VG Tech&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;vfsStream を使った様々なテストのサンプルがあります。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/mikey179/vfsStream/wiki&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/mikey179/vfsStream/wiki&#39;, &#39;Home · mikey179/vfsStream Wiki&#39;]);&#34; &gt;Home · mikey179/vfsStream Wiki&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mikey179/vfsStream/wiki&#34;&gt;Home · mikey179/vfsStream Wiki&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;作成元の GitHub ページ。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.phpunit.de/manual/current/ja/test-doubles.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.phpunit.de/manual/current/ja/test-doubles.html&#39;, &#39;第10章 テストダブル&#39;]);&#34; &gt;第10章 テストダブル&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.phpunit.de/manual/current/ja/test-doubles.html&#34;&gt;第10章 テストダブル&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;PHPUnit のドキュメント内にある解説。&lt;/li&gt;
@@ -1605,7 +1704,7 @@ public function testIndex() {
 
 $this-&amp;gt;testAction($action, $options) は、Controller を叩いた時の挙動をシミュレートするメソッドです。今回は uso=800 という値を POST している状況を再現しています。
 
-第2引数の $options には様々なオプションを指定できます。「&amp;amp;#8217;return&amp;amp;#8217; =&amp;gt; &amp;amp;#8216;vars&amp;amp;#8217;」を指定することで、testAction() 実行時に Controller から View に渡った値を、$this-&amp;gt;vars に格納することができます。
+第2引数の $options には様々なオプションを指定できます。「&#39;return&#39; =&amp;gt; &#39;vars&#39;」を指定することで、testAction() 実行時に Controller から View に渡った値を、$this-&amp;gt;vars に格納することができます。
 
 この時点でテストを叩くと、当然まだ ApisController::index() が実装できていないので、エラーが出て終了します。
 
@@ -1727,7 +1826,7 @@ public function index() {
 
 &lt;h2 id=&#34;補足:ebcb7468c782ecd2d611762d0def266a&#34;&gt;補足&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://book.cakephp.org/2.0/en/development/testing.html#testing-controllers&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://book.cakephp.org/2.0/en/development/testing.html#testing-controllers&#39;, &#39;公式チュートリアル&#39;]);&#34; &gt;公式チュートリアル&lt;/a&gt; はそこそこ学べますが、なぜか結果を debug() でコンソールに表示してるだけで、アサーション（期待される値と実際の結果の照合）をやってません。これはダメです。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://book.cakephp.org/2.0/en/development/testing.html#testing-controllers&#34;&gt;公式チュートリアル&lt;/a&gt; はそこそこ学べますが、なぜか結果を debug() でコンソールに表示してるだけで、アサーション（期待される値と実際の結果の照合）をやってません。これはダメです。&lt;/p&gt;
 
 &lt;p&gt;戻り値はちゃんと assert しましょう。モックを使って挙動を確かめるなら expectation を使いましょう。&lt;/p&gt;
 
@@ -1736,17 +1835,17 @@ public function index() {
 &lt;h2 id=&#34;参考になるサイト:ebcb7468c782ecd2d611762d0def266a&#34;&gt;参考になるサイト&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://api21.cakephp.org&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://api21.cakephp.org&#39;, &#39;CakePHP API&#39;]);&#34; &gt;CakePHP API&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://api21.cakephp.org&#34;&gt;CakePHP API&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;CakeBook は CakePHP の機能の概要を知るのに向いていますが、メソッドの使い方を調べるだけならこっちの方が早いです。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.phpunit.de/manual/3.6/ja/index.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.phpunit.de/manual/3.6/ja/index.html&#39;, &#39;PHPUnit 公式マニュアル&#39;]);&#34; &gt;PHPUnit 公式マニュアル&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.phpunit.de/manual/3.6/ja/index.html&#34;&gt;PHPUnit 公式マニュアル&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;CakePHP2 の CakeTestCase クラスは、PHPUnit の簡単なラッパーなので、全ての機能が使えます。こちらのドキュメントも読んでおくといいです。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.phpunit.de/manual/3.6/ja/writing-tests-for-phpunit.html#writing-tests-for-phpunit.assertions&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.phpunit.de/manual/3.6/ja/writing-tests-for-phpunit.html#writing-tests-for-phpunit.assertions&#39;, &#39;PHPUnit のアサーション一覧&#39;]);&#34; &gt;PHPUnit のアサーション一覧&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.phpunit.de/manual/3.6/ja/writing-tests-for-phpunit.html#writing-tests-for-phpunit.assertions&#34;&gt;PHPUnit のアサーション一覧&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;ほとんどの場合は assertEquals() でカバーできますが、知っておくと便利なものも多いです。&lt;/li&gt;
@@ -1829,7 +1928,7 @@ public function index() {
 &lt;h2 id=&#34;参考:d103d0ed9885bf3d8051c00805d3aeed&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://bugs.launchpad.net/ubuntu/+source/php-apc/+bug/994882&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://bugs.launchpad.net/ubuntu/+source/php-apc/+bug/994882&#39;, &#39;Bug #994882 “php5{en/dis}mod not available in php 5.3.10” : Bugs : “php-apc” package : Ubuntu&#39;]);&#34; &gt;Bug #994882 “php5{en/dis}mod not available in php 5.3.10” : Bugs : “php-apc” package : Ubuntu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bugs.launchpad.net/ubuntu/+source/php-apc/+bug/994882&#34;&gt;Bug #994882 “php5{en/dis}mod not available in php 5.3.10” : Bugs : “php-apc” package : Ubuntu&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;日頃CentOSばかり触っているとUbuntuルールにつまづきます。&lt;/p&gt;
@@ -1852,7 +1951,7 @@ public function index() {
 
 &lt;p&gt;単体テストの際には必ず必要になる知識なので、解説しておきます。&lt;/p&gt;
 
-&lt;p&gt;以下のサンプルでは &lt;a href=&#34;http://www.phpunit.de/manual/3.8/ja/index.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.phpunit.de/manual/3.8/ja/index.html&#39;, &#39;PHPUnit&#39;]);&#34; &gt;PHPUnit&lt;/a&gt; を利用しています。&lt;/p&gt;
+&lt;p&gt;以下のサンプルでは &lt;a href=&#34;http://www.phpunit.de/manual/3.8/ja/index.html&#34;&gt;PHPUnit&lt;/a&gt; を利用しています。&lt;/p&gt;
 
 &lt;h2 id=&#34;単体テストができないケース:d011759973daaf90efe485c60339885a&#34;&gt;単体テストができないケース&lt;/h2&gt;
 
@@ -2045,26 +2144,26 @@ public function index() {
 
 &lt;h2 id=&#34;補足1-runkitで強引にメソッドの挙動を変える方法:d011759973daaf90efe485c60339885a&#34;&gt;補足1: runkitで強引にメソッドの挙動を変える方法&lt;/h2&gt;
 
-&lt;p&gt;PHPにおいては &lt;a href=&#34;http://php.net/manual/ja/book.runkit.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://php.net/manual/ja/book.runkit.php&#39;, &#39;runkit&#39;]);&#34; &gt;runkit&lt;/a&gt; を使うことで、モック化をしなくてもメソッドの挙動を強引に変えることが可能です。ただし破壊的な手段であり、これが必要な時点でオブジェクト指向的な設計ができていない疑いが非常に強いです。&lt;/p&gt;
+&lt;p&gt;PHPにおいては &lt;a href=&#34;http://php.net/manual/ja/book.runkit.php&#34;&gt;runkit&lt;/a&gt; を使うことで、モック化をしなくてもメソッドの挙動を強引に変えることが可能です。ただし破壊的な手段であり、これが必要な時点でオブジェクト指向的な設計ができていない疑いが非常に強いです。&lt;/p&gt;
 
 &lt;p&gt;できるだけ Constructor Injection 等の方法を用い、テスト可能になるようリファクタリングをしましょう。リファクタリング中はコードが醜くなるかもしれませんが、最終的に設計が改善できるならば結果OKです。美しさよりも安全性が何より重要です。&lt;/p&gt;
 
 &lt;h2 id=&#34;補足2-constructor-injection-vs-setter-injection:d011759973daaf90efe485c60339885a&#34;&gt;補足2: Constructor Injection vs Setter Injection&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/2012/10/23/%e6%8a%84%e8%a8%b3-constructor-injection-vs-setter-injection/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/2012/10/23/%e6%8a%84%e8%a8%b3-constructor-injection-vs-setter-injection/&#39;, &#39;抄訳: Constructor Injection vs. Setter Injection | 1000g&#39;]);&#34; &gt;抄訳: Constructor Injection vs. Setter Injection | 1000g&lt;/a&gt; にて、コンストラクター・インジェクションとセッター・インジェクションのどちらが良いかを考察しています。結論としてはコンストラクター・インジェクションがベターです。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/2012/10/23/%e6%8a%84%e8%a8%b3-constructor-injection-vs-setter-injection/&#34;&gt;抄訳: Constructor Injection vs. Setter Injection | 1000g&lt;/a&gt; にて、コンストラクター・インジェクションとセッター・インジェクションのどちらが良いかを考察しています。結論としてはコンストラクター・インジェクションがベターです。&lt;/p&gt;
 
 &lt;h2 id=&#34;参考:d011759973daaf90efe485c60339885a&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://ja.wikipedia.org/wiki/%E4%BE%9D%E5%AD%98%E6%80%A7%E3%81%AE%E6%B3%A8%E5%85%A5&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://ja.wikipedia.org/wiki/%E4%BE%9D%E5%AD%98%E6%80%A7%E3%81%AE%E6%B3%A8%E5%85%A5&#39;, &#39;依存性の注入 &amp;#8211; Wikipedia&#39;]);&#34; &gt;依存性の注入 &amp;#8211; Wikipedia&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/m-hiyama/20060926/1159253903&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://d.hatena.ne.jp/m-hiyama/20060926/1159253903&#39;, &#39;DI（依存性注入）を白紙から説明してみる &amp;#8211; 檜山正幸のキマイラ飼育記&#39;]);&#34; &gt;DI（依存性注入）を白紙から説明してみる &amp;#8211; 檜山正幸のキマイラ飼育記&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://martinfowler.com/articles/injection.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://martinfowler.com/articles/injection.html&#39;, &#39;Inversion of Control Containers and the Dependency Injection pattern&#39;]);&#34; &gt;Inversion of Control Containers and the Dependency Injection pattern&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://ja.wikipedia.org/wiki/%E4%BE%9D%E5%AD%98%E6%80%A7%E3%81%AE%E6%B3%A8%E5%85%A5&#34;&gt;依存性の注入 - Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/m-hiyama/20060926/1159253903&#34;&gt;DI（依存性注入）を白紙から説明してみる - 檜山正幸のキマイラ飼育記&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://martinfowler.com/articles/injection.html&#34;&gt;Inversion of Control Containers and the Dependency Injection pattern&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;リファクタリング界の大御所、Martin Fowler氏の考察。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.techscore.com/tech/Java/Others/Spring/1-3/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.techscore.com/tech/Java/Others/Spring/1-3/&#39;, &#39;Dependency Injection のタイプ | TECHSCORE(テックスコア)&#39;]);&#34; &gt;Dependency Injection のタイプ | TECHSCORE(テックスコア)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.phpunit.de/manual/3.7/ja/test-doubles.html#test-doubles.mock-objects&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.phpunit.de/manual/3.7/ja/test-doubles.html#test-doubles.mock-objects&#39;, &#39;第10章 テストダブル&#39;]);&#34; &gt;第10章 テストダブル&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.techscore.com/tech/Java/Others/Spring/1-3/&#34;&gt;Dependency Injection のタイプ | TECHSCORE(テックスコア)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.phpunit.de/manual/3.7/ja/test-doubles.html#test-doubles.mock-objects&#34;&gt;第10章 テストダブル&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;PHPUnit 公式マニュアルによるモックの使い方。&lt;/li&gt;

@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -43,7 +48,7 @@
         <div class="post-content">
           
 
-<p>McAfee が作った MySQL プラグイン &#8220;<a href="https://github.com/mcafee/mysql-audit" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/mcafee/mysql-audit', 'McAfee MySQL Audit Plugin']);" >McAfee MySQL Audit Plugin</a>&#8221; を使うと、MySQL の監査ログが取得できるようになります。</p>
+<p>McAfee が作った MySQL プラグイン &ldquo;<a href="https://github.com/mcafee/mysql-audit">McAfee MySQL Audit Plugin</a>&rdquo; を使うと、MySQL の監査ログが取得できるようになります。</p>
 
 <p>会社のセキュリティ要件で監査が必要になったので、検証してみました。</p>
 
@@ -61,7 +66,7 @@
 
 <p>CentOS 6.3 (64bit) 上に MySQL 5.6 をインストールしている環境を想定しています。</p>
 
-<p>まず、<a href="https://bintray.com/mcafee/mysql-audit-plugin/release" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://bintray.com/mcafee/mysql-audit-plugin/release', 'Plugin のダウンロードページ']);" >Plugin のダウンロードページ</a> から最新のバイナリをダウンロードし、MySQL のプラグインディレクトリに解凍します。MySQL のバージョンと OS の bit を間違えないように。</p>
+<p>まず、<a href="https://bintray.com/mcafee/mysql-audit-plugin/release">Plugin のダウンロードページ</a> から最新のバイナリをダウンロードし、MySQL のプラグインディレクトリに解凍します。MySQL のバージョンと OS の bit を間違えないように。</p>
 
 <pre><code>$ wget http://dl.bintray.com/mcafee/mysql-audit-plugin/1.0.4/audit-plugin-mysql-5.6-1.0.4-459-linux-x86_64.zip
 $ unzip audit-plugin-mysql-5.6-1.0.4-459-linux-x86_64.zip
@@ -129,7 +134,7 @@ audit_json_file = On
 
 <h2 id="プラグインの設定:c6474aa8b06dbbdfd3d89714dc33b5d2">プラグインの設定</h2>
 
-<p>設定パラメータを全部書くのは面倒なので主要なものだけ。詳しくは <a href="https://github.com/mcafee/mysql-audit/wiki/Configuration" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/mcafee/mysql-audit/wiki/Configuration', 'Configuration · mcafee/mysql-audit Wiki']);" >Configuration · mcafee/mysql-audit Wiki</a> を参照。</p>
+<p>設定パラメータを全部書くのは面倒なので主要なものだけ。詳しくは <a href="https://github.com/mcafee/mysql-audit/wiki/Configuration">Configuration · mcafee/mysql-audit Wiki</a> を参照。</p>
 
 <table>
 <thead>
@@ -309,12 +314,12 @@ audit_json_file = On
 <h2 id="参考:c6474aa8b06dbbdfd3d89714dc33b5d2">参考</h2>
 
 <ul>
-<li><a href="https://github.com/mcafee/mysql-audit/wiki" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/mcafee/mysql-audit/wiki', 'Home · mcafee/mysql-audit Wiki']);" >Home · mcafee/mysql-audit Wiki</a>
+<li><a href="https://github.com/mcafee/mysql-audit/wiki">Home · mcafee/mysql-audit Wiki</a>
 
 <ul>
 <li>公式の Wiki。これを見ればだいたい大丈夫。</li>
 </ul></li>
-<li><a href="http://blog.majide.com/2012/10/mysql-mcafee-audit-plugin/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blog.majide.com/2012/10/mysql-mcafee-audit-plugin/', 'McAfeeのおかげでMySQLで監査ログが取れるようになった']);" >McAfeeのおかげでMySQLで監査ログが取れるようになった</a>
+<li><a href="http://blog.majide.com/2012/10/mysql-mcafee-audit-plugin/">McAfeeのおかげでMySQLで監査ログが取れるようになった</a>
 
 <ul>
 <li>インストール手順や設定項目が詳しい。プラグインが読み込めないエラーの直し方も。</li>

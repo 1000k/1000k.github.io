@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -66,7 +71,7 @@ output from attempting to unpackage (if any):
 
 <p>GitHub の issue レポートにワークアラウンドが見つかりました。</p>
 
-<p><a href="https://github.com/mitchellh/vagrant/issues/3674" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/mitchellh/vagrant/issues/3674', 'The executable &#8216;bsdtar&#8217; Vagrant is trying to run was not found in the %PATH% variable · Issue #3674 · mitchellh/vagrant']);" >The executable &#8216;bsdtar&#8217; Vagrant is trying to run was not found in the %PATH% variable · Issue #3674 · mitchellh/vagrant</a></p>
+<p><a href="https://github.com/mitchellh/vagrant/issues/3674">The executable &lsquo;bsdtar&rsquo; Vagrant is trying to run was not found in the %PATH% variable · Issue #3674 · mitchellh/vagrant</a></p>
 
 <p>これによると、古いバージョンが入った Windows に 1.6.x をインストールすると、bsdtar (Vagrant Box を解凍するツール？) がなぜかインストールされないそうです。実際に <code>C:\HashiCorp\Vagrant\embedded\gnuwin32\bin</code> を見てみたところ、<code>bsdtar.exe</code> は見つからず、<code>libarchive.dll</code> というファイル1つしかありませんでした。</p>
 

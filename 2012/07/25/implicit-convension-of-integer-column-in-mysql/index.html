@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -103,15 +108,15 @@ mysql&gt; INSERT INTO users VALUES(0, &quot;name1&quot;);
 1 row in set (0.00 sec)
 </code></pre>
 
-<p>「不正なDOUBLE型の値&#8217;uhouho&#8217;を切り捨てました」と書いてあります。どうやら、MySQLの_暗黙の型変換_が悪さをしているようです。</p>
+<p>「不正なDOUBLE型の値&rsquo;uhouho&rsquo;を切り捨てました」と書いてあります。どうやら、MySQLの_暗黙の型変換_が悪さをしているようです。</p>
 
-<p><a href="http://dev.mysql.com/doc/refman/5.1/ja/type-conversion.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://dev.mysql.com/doc/refman/5.1/ja/type-conversion.html', 'MySQL :: MySQL 5.1 リファレンスマニュアル :: 11.1.2 式評価でのタイプ変換']);" title="MySQL :: MySQL 5.1 リファレンスマニュアル :: 11.1.2 式評価でのタイプ変換">MySQL :: MySQL 5.1 リファレンスマニュアル :: 11.1.2 式評価でのタイプ変換</a> に淡々と箇条書きされていることを引用します。</p>
+<p><a href="http://dev.mysql.com/doc/refman/5.1/ja/type-conversion.html">MySQL :: MySQL 5.1 リファレンスマニュアル :: 11.1.2 式評価でのタイプ変換</a> に淡々と箇条書きされていることを引用します。</p>
 
 <blockquote>
 <ul>
 <li>比較の演算の両方の引数がストリングの場合、それらはストリングとして比較されます。</li>
 <li>両方の引数が整数の場合、それらは整数として比較されます。</li>
-<li>&#8230; 中略 &#8230;</li>
+<li>… 中略 …</li>
 <li>他のすべてのケースでは、引数は浮動少数点 ( 実 ) 数として比較されます。</li>
 </ul>
 </blockquote>
@@ -133,22 +138,22 @@ mysql&gt; SELECT 0 = 'x6';
 <h2 id="参考:6f5857c1e488bfc7db27046670c471b9">参考</h2>
 
 <ul>
-<li><a href="http://d.hatena.ne.jp/hnw/20120405" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://d.hatena.ne.jp/hnw/20120405', 'MySQLの文字列型から数値型への自動型変換が意味不明すぎる &#8211; hnwの日記']);" title="MySQLの文字列型から数値型への自動型変換が意味不明すぎる - hnwの日記">MySQLの文字列型から数値型への自動型変換が意味不明すぎる &#8211; hnwの日記</a>
+<li><a href="http://d.hatena.ne.jp/hnw/20120405">MySQLの文字列型から数値型への自動型変換が意味不明すぎる - hnwの日記</a>
 
 <ul>
 <li>文字列が浮動小数点に切り替えられる問題を詳しく解説。</li>
 </ul></li>
-<li><a href="http://www.tokumaru.org/d/20090924.html#p01" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.tokumaru.org/d/20090924.html#p01', 'undefined &#8211; 徳丸浩の日記(2009-09-24)']);" title="undefined - 徳丸浩の日記(2009-09-24)">undefined &#8211; 徳丸浩の日記(2009-09-24)</a>
+<li><a href="http://www.tokumaru.org/d/20090924.html#p01">undefined - 徳丸浩の日記(2009-09-24)</a>
 
 <ul>
 <li>SQLインジェクション対策時にはまりやすいことの説明。値を文字列にキャストしているときに遭遇しうる不具合について解説。</li>
 </ul></li>
-<li><a href="http://dev.mysql.com/doc/refman/5.1/ja/server-sql-mode.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://dev.mysql.com/doc/refman/5.1/ja/server-sql-mode.html', 'MySQL :: MySQL 5.1 リファレンスマニュアル :: 4.2.6 SQL モード']);" title="MySQL :: MySQL 5.1 リファレンスマニュアル :: 4.2.6 SQL モード">MySQL :: MySQL 5.1 リファレンスマニュアル :: 4.2.6 SQL モード</a>
+<li><a href="http://dev.mysql.com/doc/refman/5.1/ja/server-sql-mode.html">MySQL :: MySQL 5.1 リファレンスマニュアル :: 4.2.6 SQL モード</a>
 
 <ul>
 <li>値チェックのモード。不正な日付や0除算などのチェックを厳格にできる。</li>
 </ul></li>
-<li><a href="http://dev.mysql.com/doc/refman/5.1/ja/type-conversion.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://dev.mysql.com/doc/refman/5.1/ja/type-conversion.html', 'MySQL :: MySQL 5.1 リファレンスマニュアル :: 11.1.2 式評価でのタイプ変換']);" title="MySQL :: MySQL 5.1 リファレンスマニュアル :: 11.1.2 式評価でのタイプ変換">MySQL :: MySQL 5.1 リファレンスマニュアル :: 11.1.2 式評価でのタイプ変換</a></li>
+<li><a href="http://dev.mysql.com/doc/refman/5.1/ja/type-conversion.html">MySQL :: MySQL 5.1 リファレンスマニュアル :: 11.1.2 式評価でのタイプ変換</a></li>
 </ul>
 
         </div>

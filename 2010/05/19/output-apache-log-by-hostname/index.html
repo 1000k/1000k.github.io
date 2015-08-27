@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -43,25 +48,29 @@
         <div class="post-content">
           
 
-<h1 id="目的:77765f74a92d10ae85948efc17fa953f">目的</h1>
+<h2 id="目的:77765f74a92d10ae85948efc17fa953f">目的</h2>
 
-<p>&#8220;server001&#8221;, &#8220;server002&#8221;, &#8230;, &#8220;serverN&#8221; すべてで共通の httpd.conf を使い、それぞれのログファイルを &#8220;log/server001/access_log&#8221;, &#8230;, &#8220;log/serverN/access_log&#8221; に吐くようにしたい。</p>
+<p>&ldquo;server001&rdquo;, &ldquo;server002&rdquo;, …, &ldquo;serverN&rdquo; すべてで共通の httpd.conf を使い、それぞれのログファイルを &ldquo;log/server001/access_log&rdquo;, …, &ldquo;log/serverN/access_log&rdquo; に吐くようにしたい。</p>
 
 <p>ノード追加の度に手動でconfファイルをいちいち書き換えるのにはもううんざり。</p>
 
 <p>そんな人には以下の方法をおすすめします。</p>
 
-<h1 id="やり方:77765f74a92d10ae85948efc17fa953f">やり方</h1>
+<h2 id="やり方:77765f74a92d10ae85948efc17fa953f">やり方</h2>
 
 <p>Apacheディレクトリ内の <strong>envvars</strong> というファイルに記述することで、OSの環境変数を conf ファイルに渡すことができることを利用します。</p>
 
-<p>1&#46; &#8220;apache2/bin/envvars&#8221; に以下の2行を追加する</p>
+<ol>
+<li>&ldquo;apache2/bin/envvars&rdquo; に以下の2行を追加する</li>
+</ol>
 
 <pre><code>HOSTNAME=&quot;$HOSTNAME&quot;
 export HOSTNAME
 </code></pre>
 
-<p>2&#46; &#8220;apache2/conf/httpd.conf&#8221; のログ出力行を編集する</p>
+<ol>
+<li>&ldquo;apache2/conf/httpd.conf&rdquo; のログ出力行を編集する</li>
+</ol>
 
 <pre><code>#ErrorLog &quot;logs/error_log&quot;
 ErrorLog &quot;logs/${HOSTNAME}_error_log&quot;
@@ -70,13 +79,15 @@ ErrorLog &quot;logs/${HOSTNAME}_error_log&quot;
 CustomLog &quot;logs/${HOSTNAME}_access_log&quot; common
 </code></pre>
 
-<p>3&#46; Apacheを再起動する</p>
+<ol>
+<li>Apacheを再起動する</li>
+</ol>
 
-<h1 id="参考:77765f74a92d10ae85948efc17fa953f">参考</h1>
+<h2 id="参考:77765f74a92d10ae85948efc17fa953f">参考</h2>
 
 <ul>
-<li><a href="http://wall-climb.com/2009/05/29/httpd-conf%E5%86%85%E3%81%A7%E5%A4%89%E6%95%B0%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://wall-climb.com/2009/05/29/httpd-conf%E5%86%85%E3%81%A7%E5%A4%89%E6%95%B0%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B/', 'wall-climb » httpd.conf内で変数を利用する']);" title="wall-climb » httpd.conf内で変数を利用する">wall-climb » httpd.conf内で変数を利用する</a></li>
-<li><a href="http://playispeace.com/blog/766/load_mod_env_for_use_setenv" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://playispeace.com/blog/766/load_mod_env_for_use_setenv', 'apacheのSetEnvを利用するときはmod_env.soを読み込む » pblo']);" title="apacheのSetEnvを利用するときはmod_env.soを読み込む » pblo">apacheのSetEnvを利用するときはmod_env.soを読み込む » pblo</a></li>
+<li><a href="http://wall-climb.com/2009/05/29/httpd-conf%E5%86%85%E3%81%A7%E5%A4%89%E6%95%B0%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B/">wall-climb » httpd.conf内で変数を利用する</a></li>
+<li><a href="http://playispeace.com/blog/766/load_mod_env_for_use_setenv">apacheのSetEnvを利用するときはmod_env.soを読み込む » pblo</a></li>
 </ul>
 
         </div>

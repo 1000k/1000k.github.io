@@ -29,10 +29,10 @@
 
 &lt;pre&gt;&lt;code&gt;window.onload = function() {
     var ua = navigator.userAgent.toLowerCase();
-    var is_safari = ua.indexOf(&#39;safari&#39;) &amp;gt; -1 &amp;amp;#038;&amp;amp;#038; ua.indexOf(&#39;version&#39;) &amp;gt; -1;
+    var is_safari = ua.indexOf(&#39;safari&#39;) &amp;gt; -1 &amp;amp;&amp;amp; ua.indexOf(&#39;version&#39;) &amp;gt; -1;
     var version = is_safari ? ua.match(/version\/([\d\.]+)/i)[1].substr(0,1) : null;
 
-    if (is_safari &amp;amp;#038;&amp;amp;#038; version == &#39;5&#39;) {
+    if (is_safari &amp;amp;&amp;amp; version == &#39;5&#39;) {
         // Safari 5.xユーザー向けの処理
         alert(&#39;You use Safari 5.x&#39;);
     } else {
@@ -44,12 +44,12 @@
 &lt;h2 id=&#34;参考:5c20e64dfc0ac35ddade7fa8fcd267b4&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.useragentstring.com/pages/useragentstring.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.useragentstring.com/pages/useragentstring.php&#39;, &#39;UserAgentString.com &amp;#8211; List of User Agent Strings&#39;]);&#34; title=&#34;UserAgentString.com - List of User Agent Strings&#34;&gt;UserAgentString.com &amp;#8211; List of User Agent Strings&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.useragentstring.com/pages/useragentstring.php&#34;&gt;UserAgentString.com - List of User Agent Strings&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;各ブラウザのUserAgent文字列の一覧。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.useragentstring.com/pages/Safari/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.useragentstring.com/pages/Safari/&#39;, &#39;Safari&#39;]);&#34; title=&#34;UserAgentString.com - List of Safari User Agent Strings&#34;&gt;Safari&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.useragentstring.com/pages/Chrome/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.useragentstring.com/pages/Chrome/&#39;, &#39;Chrome&#39;]);&#34; title=&#34;UserAgentString.com - List of Chrome User Agent Strings&#34;&gt;Chrome&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.useragentstring.com/pages/Safari/&#34;&gt;Safari&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.useragentstring.com/pages/Chrome/&#34;&gt;Chrome&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>

@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -102,7 +107,7 @@ class FooClassTest extends PHPUnit_Framework_TestCase {
 }
 </code></pre>
 
-<p>また、PHPUnit の Expectation はメソッドチェーンで連続して指定できます (&#8220;-&gt;&#8221; 演算子で繋げて書ける) が、そもそも記述量が多いです。いちいち this this 書くのも煩わしい。</p>
+<p>また、PHPUnit の Expectation はメソッドチェーンで連続して指定できます (&ldquo;-&gt;&rdquo; 演算子で繋げて書ける) が、そもそも記述量が多いです。いちいち this this 書くのも煩わしい。</p>
 
 <p>そこで、Expectation をセットするためのメソッドを作ってやると楽になります。</p>
 
@@ -110,12 +115,12 @@ class FooClassTest extends PHPUnit_Framework_TestCase {
     /**
      * モックオブジェクトに Expectation を設定する。
      *
-     * @param Object &amp;#038;$mock モックオブジェクト
+     * @param Object &amp;$mock モックオブジェクト
      * @param string $matcher マッチャー ([any|once|never|...])
      * @param string $method メソッド名
      * @param mixed $return_value 期待する戻り値
      */
-    protected function _setExpectation(&amp;#038;$mock, $matcher, $method, $return_value = null) {
+    protected function _setExpectation(&amp;$mock, $matcher, $method, $return_value = null) {
         $mock-&gt;expects($this-&gt;$matcher())
             -&gt;method($method)
             -&gt;will($this-&gt;returnValue($return_value));
@@ -148,13 +153,13 @@ class FooClassTest extends MyTestCase {
 
 <p>また、PHPDoc 部分に <code>@test</code> アノテーションを付けると、メソッド名を <code>test</code> で始めなくてもテストケースとして認識されるようになります。私はこの方が読みやすいので、最近はこう書くことが多いです。</p>
 
-<p>こういう改善をしても、Ruby に慣れているとまだ長く感じます。「$」「&#8217;」「&gt;」などの記号を打つのも煩わしいです。Ruby 使いてえなあ。</p>
+<p>こういう改善をしても、Ruby に慣れているとまだ長く感じます。「$」「&rsquo;」「&gt;」などの記号を打つのも煩わしいです。Ruby 使いてえなあ。</p>
 
 <h2 id="参考:66eb9e16e3cbfb7a24c972ec7c7d6f12">参考</h2>
 
 <ul>
-<li><a href="http://phpunit.de/manual/3.8/ja/test-doubles.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://phpunit.de/manual/3.8/ja/test-doubles.html', 'PHPUnit 公式マニュアル > 第10章 テストダブル&rsquo;]);&rdquo; &gt;PHPUnit 公式マニュアル &gt; 第10章 テストダブル</a></li>
-<li><a href="http://phpunit.de/manual/3.8/ja/appendixes.annotations.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://phpunit.de/manual/3.8/ja/appendixes.annotations.html', '付録B アノテーション']);" >付録B アノテーション</a></li>
+<li>[ 第10章 テストダブル&rsquo;]);&rdquo; &gt;PHPUnit 公式マニュアル &gt; 第10章 テストダブル](<a href="http://phpunit.de/manual/3.8/ja/test-doubles.html">http://phpunit.de/manual/3.8/ja/test-doubles.html</a>)</li>
+<li><a href="http://phpunit.de/manual/3.8/ja/appendixes.annotations.html">付録B アノテーション</a></li>
 </ul>
 
         </div>

@@ -29,7 +29,7 @@
 &lt;li&gt;親・子ウィンドウ両方が固まってしまう。&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;ウィンドウを閉じる時に単純な &lt;code&gt;window.close()&lt;/code&gt; ではなく &lt;code&gt;window.open(&#39;about:blank&#39;,&#39;_self&#39;).close()&lt;/code&gt; を使っているのは、IE/FF/Chrome いずれのブラウザーでも綺麗に閉じるための有名な Hack だったからです。詳細は &lt;a href=&#34;http://kojikoji75.hatenablog.com/entry/2013/12/15/223839&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://kojikoji75.hatenablog.com/entry/2013/12/15/223839&#39;, &#39;JavaScriptでWindow.closeする時のブラウザ別対応まとめ - TechNote&#39;]);&#34; &gt;JavaScriptでWindow.closeする時のブラウザ別対応まとめ - TechNote&lt;/a&gt; がわかりやすいです。&lt;/p&gt;
+&lt;p&gt;ウィンドウを閉じる時に単純な &lt;code&gt;window.close()&lt;/code&gt; ではなく &lt;code&gt;window.open(&#39;about:blank&#39;,&#39;_self&#39;).close()&lt;/code&gt; を使っているのは、IE/FF/Chrome いずれのブラウザーでも綺麗に閉じるための有名な Hack だったからです。詳細は &lt;a href=&#34;http://kojikoji75.hatenablog.com/entry/2013/12/15/223839&#34;&gt;JavaScriptでWindow.closeする時のブラウザ別対応まとめ - TechNote&lt;/a&gt; がわかりやすいです。&lt;/p&gt;
 
 &lt;p&gt;どうやらブラウザーのバージョンアップに伴い、このあたりの事情が変わってきてたようです。&lt;/p&gt;
 
@@ -125,9 +125,9 @@
 &lt;h2 id=&#34;参考:96680621d7ebbfce2d483f1126ea0d2a&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/19761241/window-close-and-self-close-do-not-close-the-window-in-chrome&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://stackoverflow.com/questions/19761241/window-close-and-self-close-do-not-close-the-window-in-chrome&#39;, &#39;javascript - window.close and self.close do not close the window in Chrome - Stack Overflow&#39;]);&#34; &gt;javascript - window.close and self.close do not close the window in Chrome - Stack Overflow&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/12625876/how-to-detect-chrome-and-safari-browser-webkit&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://stackoverflow.com/questions/12625876/how-to-detect-chrome-and-safari-browser-webkit&#39;, &#39;javascript - How to detect chrome and safari browser (webkit) - Stack Overflow&#39;]);&#34; &gt;javascript - How to detect chrome and safari browser (webkit) - Stack Overflow&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://kojikoji75.hatenablog.com/entry/2013/12/15/223839&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://kojikoji75.hatenablog.com/entry/2013/12/15/223839&#39;, &#39;JavaScriptでWindow.closeする時のブラウザ別対応まとめ - TechNote&#39;]);&#34; &gt;JavaScriptでWindow.closeする時のブラウザ別対応まとめ - TechNote&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/19761241/window-close-and-self-close-do-not-close-the-window-in-chrome&#34;&gt;javascript - window.close and self.close do not close the window in Chrome - Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/12625876/how-to-detect-chrome-and-safari-browser-webkit&#34;&gt;javascript - How to detect chrome and safari browser (webkit) - Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://kojikoji75.hatenablog.com/entry/2013/12/15/223839&#34;&gt;JavaScriptでWindow.closeする時のブラウザ別対応まとめ - TechNote&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -140,13 +140,24 @@
       <guid>http://1000k.github.io/2013/12/18/display-remaining-time-by-progress-bar/</guid>
       <description>
 
-&lt;p&gt;&lt;a href=&#34;http://e.ggtimer.com/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://e.ggtimer.com/&#39;, &#39;E.gg Timer&#39;]);&#34; &gt;E.gg Timer&lt;/a&gt; のようなタイマーアプリを作りたかったので、プログレスバーの作り方を調べました。タイマーそのものより、progress タグのスタイルシートをクロスブラウザ対応させるのに苦労しました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://e.ggtimer.com/&#34;&gt;E.gg Timer&lt;/a&gt; のようなタイマーアプリを作りたかったので、プログレスバーの作り方を調べました。タイマーそのものより、progress タグのスタイルシートをクロスブラウザ対応させるのに苦労しました。&lt;/p&gt;
 
 &lt;p&gt;今回作ったのは下の画像のような簡単なタイマーです。経過時間に合わせてプログレスバーが赤くなります。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://blog.1000k.net/wp-content/uploads/timer.png&#34; alt=&#34;timer&#34; width=&#34;585&#34; height=&#34;81&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://1000k.github.io/img/timer.png&#34;  /&gt;
+    
+    
+    &lt;figcaption&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://jsfiddle.net/tcxx9/3/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://jsfiddle.net/tcxx9/3/&#39;, &#39;デモはこちら。&#39;]);&#34; &gt;デモはこちら。&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://jsfiddle.net/tcxx9/3/&#34;&gt;デモはこちら。&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;なお、IE11, Firefox26, Chrome31 で動作を確認しています。&lt;/p&gt;
 
@@ -157,7 +168,7 @@
 &lt;p&gt;プログレスバー、時間入力欄、開始/停止ボタンがあるだけです。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;progressWrapper&amp;quot;&amp;gt;
-  &amp;amp;lt;progress id=&amp;quot;bar&amp;quot; value=&amp;quot;0&amp;quot; max=&amp;quot;1000&amp;quot; min=&amp;quot;0&amp;quot;&amp;gt;&amp;amp;lt;/progress&amp;gt;
+  &amp;lt;progress id=&amp;quot;bar&amp;quot; value=&amp;quot;0&amp;quot; max=&amp;quot;1000&amp;quot; min=&amp;quot;0&amp;quot;&amp;gt;&amp;lt;/progress&amp;gt;
 
 &amp;lt;/div&amp;gt;
 
@@ -190,7 +201,7 @@ var countdown = function() {
 
   $(&#39;#bar&#39;).attr(&#39;value&#39;, restBarLength);
 
-  if (restMs &amp;amp;lt; 0) {
+  if (restMs &amp;lt; 0) {
     resetTimer();
     alert(&#39;time expired&#39;);
   }
@@ -259,15 +270,15 @@ progress::-moz-progress-bar {
 &lt;h2 id=&#34;参考:2853c5683734ff1185ea9e66d817967b&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.hongkiat.com/blog/html5-progress-bar/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.hongkiat.com/blog/html5-progress-bar/&#39;, &#39;Creating &amp; Styling Progress Bar With HTML5&#39;]);&#34; &gt;Creating &amp;amp; Styling Progress Bar With HTML5&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.pori2.net/js/timer/6.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.pori2.net/js/timer/6.html&#39;, &#39;カウントダウンタイマー－JavaScript入門&#39;]);&#34; &gt;カウントダウンタイマー－JavaScript入門&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.useragentman.com/blog/2012/01/03/cross-browser-html5-progress-bars-in-depth/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.useragentman.com/blog/2012/01/03/cross-browser-html5-progress-bars-in-depth/&#39;, &#39;Cross Browser HTML5 Progress Bars In Depth&#39;]);&#34; &gt;Cross Browser HTML5 Progress Bars In Depth&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.hongkiat.com/blog/html5-progress-bar/&#34;&gt;Creating &amp;amp; Styling Progress Bar With HTML5&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.pori2.net/js/timer/6.html&#34;&gt;カウントダウンタイマー－JavaScript入門&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.useragentman.com/blog/2012/01/03/cross-browser-html5-progress-bars-in-depth/&#34;&gt;Cross Browser HTML5 Progress Bars In Depth&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;カウントダウンに合わせて動くサルのアニメや、スピードメーターの書き方など。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://css-tricks.com/html5-progress-element/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://css-tricks.com/html5-progress-element/&#39;, &#39;The HTML5 progress Element | CSS-Tricks&#39;]);&#34; &gt;The HTML5 progress Element | CSS-Tricks&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/ja/docs/Web/CSS/::-moz-progress-bar&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://developer.mozilla.org/ja/docs/Web/CSS/::-moz-progress-bar&#39;, &#39;::-moz-progress-bar - CSS | MDN&#39;]);&#34; &gt;::-moz-progress-bar - CSS | MDN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://css-tricks.com/html5-progress-element/&#34;&gt;The HTML5 progress Element | CSS-Tricks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/ja/docs/Web/CSS/::-moz-progress-bar&#34;&gt;::-moz-progress-bar - CSS | MDN&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -293,7 +304,7 @@ progress::-moz-progress-bar {
 &lt;p&gt;やり方は以下の記事あたりを参考に。&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://havelog.ayumusato.com/develop/javascript/e210-install_nodejs_and_npm.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://havelog.ayumusato.com/develop/javascript/e210-install_nodejs_and_npm.html&#39;, &#39;node.jsとnpmのインストールをしたメモ（CentOS さくらのVPS） ::ハブろぐ&#39;]);&#34; &gt;node.jsとnpmのインストールをしたメモ（CentOS さくらのVPS） ::ハブろぐ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://havelog.ayumusato.com/develop/javascript/e210-install_nodejs_and_npm.html&#34;&gt;node.jsとnpmのインストールをしたメモ（CentOS さくらのVPS） ::ハブろぐ&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;次に grunt-cli をグローバルにインストールします。&lt;/p&gt;
@@ -356,11 +367,11 @@ progress::-moz-progress-bar {
     },
     uglify: {
       options: {
-        banner: &#39;/*! &amp;amp;lt;%= pkg.name %&amp;gt; &amp;amp;lt;%= grunt.template.today(&amp;quot;dd-mm-yyyy&amp;quot;) %&amp;gt; */\n&#39;
+        banner: &#39;/*! &amp;lt;%= pkg.name %&amp;gt; &amp;lt;%= grunt.template.today(&amp;quot;dd-mm-yyyy&amp;quot;) %&amp;gt; */\n&#39;
       },
       dist: {
         files: {
-          &#39;app/webroot/js/merged.min.js&#39;: [&#39;&amp;amp;lt;%= concat.dist.dest %&amp;gt;&#39;]
+          &#39;app/webroot/js/merged.min.js&#39;: [&#39;&amp;lt;%= concat.dist.dest %&amp;gt;&#39;]
         }
       }
     },
@@ -377,7 +388,7 @@ progress::-moz-progress-bar {
       }
     },
     watch: {
-      files: [&#39;&amp;amp;lt;%= jshint.files %&amp;gt;&#39;],
+      files: [&#39;&amp;lt;%= jshint.files %&amp;gt;&#39;],
       tasks: [&#39;concat&#39;, &#39;uglify&#39;]
     }
   });
@@ -398,8 +409,8 @@ progress::-moz-progress-bar {
 &lt;p&gt;詳しい記述方法は公式のガイドを参考に。&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://gruntjs.com/configuring-tasks&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://gruntjs.com/configuring-tasks&#39;, &#39;Configuring tasks &amp;#8211; Grunt: The JavaScript Task Runner&#39;]);&#34; &gt;Configuring tasks &amp;#8211; Grunt: The JavaScript Task Runner&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gruntjs.com/creating-tasks&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://gruntjs.com/creating-tasks&#39;, &#39;Creating tasks &amp;#8211; Grunt: The JavaScript Task Runner&#39;]);&#34; &gt;Creating tasks &amp;#8211; Grunt: The JavaScript Task Runner&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gruntjs.com/configuring-tasks&#34;&gt;Configuring tasks - Grunt: The JavaScript Task Runner&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gruntjs.com/creating-tasks&#34;&gt;Creating tasks - Grunt: The JavaScript Task Runner&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;あとは &lt;code&gt;grunt {タスク名}&lt;/code&gt; と叩くだけで、指定したタスクが動きます。&lt;/p&gt;
@@ -413,20 +424,20 @@ progress::-moz-progress-bar {
 &lt;h2 id=&#34;参考:31d9c632b09e89723d113ebbe8ae7aa4&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://hamalog.tumblr.com/post/18137176043/grunt-js-css&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://hamalog.tumblr.com/post/18137176043/grunt-js-css&#39;, &#39;gruntで快適JS/CSSビルド生活 &amp;#8211; Takazudo hamalog&#39;]);&#34; &gt;gruntで快適JS/CSSビルド生活 &amp;#8211; Takazudo hamalog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gruntjs.com/getting-started&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://gruntjs.com/getting-started&#39;, &#39;Getting started &amp;#8211; Grunt: The JavaScript Task Runner&#39;]);&#34; &gt;Getting started &amp;#8211; Grunt: The JavaScript Task Runner&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/gruntjs/grunt/wiki/Sample-Gruntfile&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/gruntjs/grunt/wiki/Sample-Gruntfile&#39;, &#39;Sample Gruntfile · gruntjs/grunt Wiki&#39;]);&#34; &gt;Sample Gruntfile · gruntjs/grunt Wiki&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://hamalog.tumblr.com/post/18137176043/grunt-js-css&#34;&gt;gruntで快適JS/CSSビルド生活 - Takazudo hamalog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gruntjs.com/getting-started&#34;&gt;Getting started - Grunt: The JavaScript Task Runner&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/gruntjs/grunt/wiki/Sample-Gruntfile&#34;&gt;Sample Gruntfile · gruntjs/grunt Wiki&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Gruntfile のサンプル。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gruntjs.com/plugins/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://gruntjs.com/plugins/&#39;, &#39;Plugins &amp;#8211; Grunt: The JavaScript Task Runner&#39;]);&#34; &gt;Plugins &amp;#8211; Grunt: The JavaScript Task Runner&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://gruntjs.com/plugins/&#34;&gt;Plugins - Grunt: The JavaScript Task Runner&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;grunt プラグインの一覧。&lt;/li&gt;
-&lt;li&gt;公式のものは &amp;#8216;Show contrib plugins first&amp;#8217; にチェックを入れれば出てくる。&lt;/li&gt;
+&lt;li&gt;公式のものは &amp;lsquo;Show contrib plugins first&amp;rsquo; にチェックを入れれば出てくる。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://publicdraft.studiomohawk.com/2012/12/16/npm-and-package.json/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://publicdraft.studiomohawk.com/2012/12/16/npm-and-package.json/&#39;, &#39;npm / package.json | Public Draft | Outlining and Researching for the Presentation&#39;]);&#34; &gt;npm / package.json | Public Draft | Outlining and Researching for the Presentation&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://publicdraft.studiomohawk.com/2012/12/16/npm-and-package.json/&#34;&gt;npm / package.json | Public Draft | Outlining and Researching for the Presentation&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;package.json の基本。&lt;/li&gt;
@@ -445,7 +456,7 @@ progress::-moz-progress-bar {
 
 &lt;h2 id=&#34;bower-とは:2b0e69e44f6fba1737d988e786e216a8&#34;&gt;Bower とは？&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://bower.io/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://bower.io/&#39;, &#39;BOWER: A package manager for the web&#39;]);&#34; &gt;BOWER: A package manager for the web&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://bower.io/&#34;&gt;BOWER: A package manager for the web&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Twitter 製の JavaScript パッケージ管理ライブラリ。Ruby の Gem, PHP の Composer みたいなもの。&lt;/p&gt;
 
@@ -481,10 +492,10 @@ progress::-moz-progress-bar {
 bower install
 
 # パッケージを指定してインストールする
-bower install &amp;amp;lt;package&amp;gt;
+bower install &amp;lt;package&amp;gt;
 
 # git にタグ付けされたバージョンを元にインストールする
-bower install &amp;amp;lt;package&amp;gt;#&amp;amp;lt;version&amp;gt;
+bower install &amp;lt;package&amp;gt;#&amp;lt;version&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;bower.json のサンプルは下記の通り。&lt;/p&gt;
@@ -500,7 +511,7 @@ bower install &amp;amp;lt;package&amp;gt;#&amp;amp;lt;version&amp;gt;
   , &amp;quot;dependencies&amp;quot;: {
     &amp;quot;backbone&amp;quot;: &amp;quot;1.0.0&amp;quot;
     , &amp;quot;underscore&amp;quot;: &amp;quot;1.4.4&amp;quot;
-    , &amp;quot;jquery&amp;quot;: &amp;quot;&amp;amp;lt; 2.0.0&amp;quot;
+    , &amp;quot;jquery&amp;quot;: &amp;quot;&amp;lt; 2.0.0&amp;quot;
     , &amp;quot;jquery-mousewheel&amp;quot;: &amp;quot;latest&amp;quot;
     , &amp;quot;snap&amp;quot;: &amp;quot;git://github.com/jakiestfu/Snap.js.git&amp;quot;
   }
@@ -525,12 +536,12 @@ bower install &amp;amp;lt;package&amp;gt;#&amp;amp;lt;version&amp;gt;
 &lt;h2 id=&#34;参考:2b0e69e44f6fba1737d988e786e216a8&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://bower.io/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://bower.io/&#39;, &#39;BOWER: A package manager for the web&#39;]);&#34; &gt;BOWER: A package manager for the web&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/bower/bower&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/bower/bower&#39;, &#39;bower/bower · GitHub&#39;]);&#34; &gt;bower/bower · GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://uzulla.hateblo.jp/entry/2013/04/28/143507&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://uzulla.hateblo.jp/entry/2013/04/28/143507&#39;, &#39;bowerでつまづいた事のメモなど - uzullaがブログ&#39;]);&#34; &gt;bowerでつまづいた事のメモなど - uzullaがブログ&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.mach3.jp/2013/01/bower.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.mach3.jp/2013/01/bower.html&#39;, &#39;パッケージマネージャー「Bower」が大変便利で捗りそうです | Mach3.laBlog&#39;]);&#34; &gt;パッケージマネージャー「Bower」が大変便利で捗りそうです | Mach3.laBlog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://qiita.com/items/ba952bdade627af99e93&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://qiita.com/items/ba952bdade627af99e93&#39;, &#39;なにはともあれ入れてみるぜ。バウワー。(bower) #Node.js #JavaScript #twitter - Qiita [キータ]&#39;]);&#34; &gt;なにはともあれ入れてみるぜ。バウワー。(bower) #Node.js #JavaScript #twitter - Qiita [キータ]&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://net.tutsplus.com/tutorials/tools-and-tips/meet-bower-a-package-manager-for-the-web/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://net.tutsplus.com/tutorials/tools-and-tips/meet-bower-a-package-manager-for-the-web/&#39;, &#39;Meet Bower: A Package Manager For The Web | Nettuts+&#39;]);&#34; &gt;Meet Bower: A Package Manager For The Web | Nettuts+&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://bower.io/&#34;&gt;BOWER: A package manager for the web&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/bower/bower&#34;&gt;bower/bower · GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://uzulla.hateblo.jp/entry/2013/04/28/143507&#34;&gt;bowerでつまづいた事のメモなど - uzullaがブログ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.mach3.jp/2013/01/bower.html&#34;&gt;パッケージマネージャー「Bower」が大変便利で捗りそうです | Mach3.laBlog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://qiita.com/items/ba952bdade627af99e93&#34;&gt;なにはともあれ入れてみるぜ。バウワー。(bower) #Node.js #JavaScript #twitter - Qiita [キータ]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://net.tutsplus.com/tutorials/tools-and-tips/meet-bower-a-package-manager-for-the-web/&#34;&gt;Meet Bower: A Package Manager For The Web | Nettuts+&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -555,10 +566,10 @@ bower install &amp;amp;lt;package&amp;gt;#&amp;amp;lt;version&amp;gt;
 
 &lt;pre&gt;&lt;code&gt;window.onload = function() {
     var ua = navigator.userAgent.toLowerCase();
-    var is_safari = ua.indexOf(&#39;safari&#39;) &amp;gt; -1 &amp;amp;#038;&amp;amp;#038; ua.indexOf(&#39;version&#39;) &amp;gt; -1;
+    var is_safari = ua.indexOf(&#39;safari&#39;) &amp;gt; -1 &amp;amp;&amp;amp; ua.indexOf(&#39;version&#39;) &amp;gt; -1;
     var version = is_safari ? ua.match(/version\/([\d\.]+)/i)[1].substr(0,1) : null;
 
-    if (is_safari &amp;amp;#038;&amp;amp;#038; version == &#39;5&#39;) {
+    if (is_safari &amp;amp;&amp;amp; version == &#39;5&#39;) {
         // Safari 5.xユーザー向けの処理
         alert(&#39;You use Safari 5.x&#39;);
     } else {
@@ -570,12 +581,12 @@ bower install &amp;amp;lt;package&amp;gt;#&amp;amp;lt;version&amp;gt;
 &lt;h2 id=&#34;参考:5c20e64dfc0ac35ddade7fa8fcd267b4&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.useragentstring.com/pages/useragentstring.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.useragentstring.com/pages/useragentstring.php&#39;, &#39;UserAgentString.com &amp;#8211; List of User Agent Strings&#39;]);&#34; title=&#34;UserAgentString.com - List of User Agent Strings&#34;&gt;UserAgentString.com &amp;#8211; List of User Agent Strings&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.useragentstring.com/pages/useragentstring.php&#34;&gt;UserAgentString.com - List of User Agent Strings&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;各ブラウザのUserAgent文字列の一覧。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.useragentstring.com/pages/Safari/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.useragentstring.com/pages/Safari/&#39;, &#39;Safari&#39;]);&#34; title=&#34;UserAgentString.com - List of Safari User Agent Strings&#34;&gt;Safari&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.useragentstring.com/pages/Chrome/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.useragentstring.com/pages/Chrome/&#39;, &#39;Chrome&#39;]);&#34; title=&#34;UserAgentString.com - List of Chrome User Agent Strings&#34;&gt;Chrome&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.useragentstring.com/pages/Safari/&#34;&gt;Safari&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.useragentstring.com/pages/Chrome/&#34;&gt;Chrome&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
@@ -624,12 +635,12 @@ bower install &amp;amp;lt;package&amp;gt;#&amp;amp;lt;version&amp;gt;
 &lt;/p&gt;
 
 &lt;p&gt;
-  &lt;a href=&#34;http://stackoverflow.com/questions/10546653/what-is-the-work-around-for-a-weird-javascript-form-submit-bug-in-safari-5&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://stackoverflow.com/questions/10546653/what-is-the-work-around-for-a-weird-javascript-form-submit-bug-in-safari-5&#39;, &#39;What is the work around for a weird javascript form submit bug in Safari 5? &amp;#8211; Stack Overflow&#39;]);&#34; title=&#34;What is the work around for a weird javascript form submit bug in Safari 5? - Stack Overflow&#34;&gt;What is the work around for a weird javascript form submit bug in Safari 5? &amp;#8211; Stack Overflow&lt;/a&gt;
+  [What is the work around for a weird javascript form submit bug in Safari 5? - Stack Overflow](http://stackoverflow.com/questions/10546653/what-is-the-work-around-for-a-weird-javascript-form-submit-bug-in-safari-5)
 &lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;
-    Safari is filling in the form field using autofill behaviour. You probably have the &amp;#8220;Other forms&amp;#8221; option enabled in your preferences. Even Apple recommend you turn this feature off since it can be used for stealing private information.
+    Safari is filling in the form field using autofill behaviour. You probably have the &#34;Other forms&#34; option enabled in your preferences. Even Apple recommend you turn this feature off since it can be used for stealing private information.
 
   &lt;/p&gt;
 &lt;/blockquote&gt;
@@ -639,7 +650,7 @@ bower install &amp;amp;lt;package&amp;gt;#&amp;amp;lt;version&amp;gt;
 &lt;/h2&gt;
 
 &lt;p&gt;
-  上記のベストアンサーでは、&lt;strong&gt;formタグにautocomplete=&amp;#8221;off&amp;#8221;を指定してやれば直る&lt;/strong&gt;とアドバイスされています。&lt;br /&gt;
+  上記のベストアンサーでは、&lt;strong&gt;formタグにautocomplete=&#34;off&#34;を指定してやれば直る&lt;/strong&gt;とアドバイスされています。&lt;br /&gt;
   実際に試してみたところ、正しくPOSTできるようになりました。
 &lt;/p&gt;
 
@@ -665,12 +676,12 @@ bower install &amp;amp;lt;package&amp;gt;#&amp;amp;lt;version&amp;gt;
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;a href=&#34;http://stackoverflow.com/questions/10546653/what-is-the-work-around-for-a-weird-javascript-form-submit-bug-in-safari-5&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://stackoverflow.com/questions/10546653/what-is-the-work-around-for-a-weird-javascript-form-submit-bug-in-safari-5&#39;, &#39;What is the work around for a weird javascript form submit bug in Safari 5? &amp;#8211; Stack Overflow&#39;]);&#34; title=&#34;What is the work around for a weird javascript form submit bug in Safari 5? - Stack Overflow&#34;&gt;What is the work around for a weird javascript form submit bug in Safari 5? &amp;#8211; Stack Overflow&lt;/a&gt;
+    [What is the work around for a weird javascript form submit bug in Safari 5? - Stack Overflow](http://stackoverflow.com/questions/10546653/what-is-the-work-around-for-a-weird-javascript-form-submit-bug-in-safari-5)
   &lt;/li&gt;
 
 
   &lt;li&gt;
-    &lt;a href=&#34;http://mac.softpedia.com/progChangelog/Safari-Changelog-25616.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://mac.softpedia.com/progChangelog/Safari-Changelog-25616.html&#39;, &#39;Safari 5.1.7 &amp;#8211; Changelog &amp;#8211; Softpedia&#39;]);&#34; title=&#34;Safari 5.1.7 - Changelog - Softpedia&#34;&gt;Safari 5.1.7 &amp;#8211; Changelog &amp;#8211; Softpedia&lt;/a&gt;
+    [Safari 5.1.7 - Changelog - Softpedia](http://mac.softpedia.com/progChangelog/Safari-Changelog-25616.html)
     &lt;ul&gt;
       &lt;li&gt;
         Safariの更新履歴一覧。
@@ -699,7 +710,7 @@ bower install &amp;amp;lt;package&amp;gt;#&amp;amp;lt;version&amp;gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code&gt;/*
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;/*
  * 画像の実際のサイズを取得する
  *
  * @param  string  image  img要素
@@ -712,7 +723,7 @@ function getActualDimension(image) {
         return {width: image.naturalWidth, height: image.naturalHeight};
     }
     if (&amp;quot;src&amp;quot; in image) { // HTMLImageElement
-        if (image[key] &amp;amp;#038;&amp;amp;#038; image[key].src === image.src) {return  image[key];}
+        if (image[key] &amp;amp;&amp;amp; image[key].src === image.src) {return  image[key];}
 
         if (document.uniqueID) { // for IE
             w = $(image).css(&amp;quot;width&amp;quot;);
@@ -759,7 +770,7 @@ function getActualDimension(image) {
 
 &lt;h1 id=&#34;参考:fef478bcfeefba53d74161fd20826e36&#34;&gt;参考&lt;/h1&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://forum.jquery.com/topic/selector-problem-foo-and-bar-works-but-buz-doesn-t-12-4-2010&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://forum.jquery.com/topic/selector-problem-foo-and-bar-works-but-buz-doesn-t-12-4-2010&#39;, &#39;\nSelector problem: $(\&#39;#&amp;#092;&lt;foo\&#39;) and $(\&#39;#bar&amp;#092;&gt;\&amp;lsquo;) works, but $(\&amp;lsquo;#&amp;#092;&lt;buz&amp;#092;&gt;\&amp;lsquo;) doesn\&amp;rsquo;t. &amp;#8211; jQuery Forum&amp;rsquo;]);&amp;rdquo; &amp;gt;&lt;br /&gt; Selector problem: $(&amp;lsquo;#&amp;#92;&lt;foo&#39;) and $(&#39;#bar&amp;#92;&gt;&amp;rsquo;) works, but $(&amp;lsquo;#&amp;#92;&lt;buz&amp;#92;&gt;&amp;rsquo;) doesn&amp;rsquo;t. &amp;#8211; jQuery Forum&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[\&amp;lsquo;) works, but $(\&amp;lsquo;#&amp;lt;buz&amp;gt;\&amp;lsquo;) doesn\&amp;rsquo;t. - jQuery Forum&amp;rsquo;]);&amp;rdquo; &amp;gt;&lt;br /&gt; Selector problem: $(&amp;lsquo;#&amp;#92;&lt;foo&#39;) and $(&#39;#bar&amp;#92;&gt;&amp;rsquo;) works, but $(&amp;lsquo;#&amp;#92;&lt;buz&amp;#92;&gt;&amp;rsquo;) doesn&amp;rsquo;t. - jQuery Forum](&lt;a href=&#34;http://forum.jquery.com/topic/selector-problem-foo-and-bar-works-but-buz-doesn-t-12-4-2010&#34;&gt;http://forum.jquery.com/topic/selector-problem-foo-and-bar-works-but-buz-doesn-t-12-4-2010&lt;/a&gt;)&lt;/p&gt;
 </description>
     </item>
     

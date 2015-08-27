@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -43,7 +48,7 @@
         <div class="post-content">
           
 
-<h1 id="きっかけ:98dfd3c78aef4b2602956cc8387353ab">きっかけ</h1>
+<h2 id="きっかけ:98dfd3c78aef4b2602956cc8387353ab">きっかけ</h2>
 
 <p>WordPressデフォルトのテキストエディタは以下の理由で使いづらいです。</p>
 
@@ -55,13 +60,13 @@
 
 <p>wiki記法なら多少は楽になるだろうと思い、「WP MarkItUp! WordPress plugin」プラグインを導入してみました。</p>
 
-<h1 id="導入環境:98dfd3c78aef4b2602956cc8387353ab">導入環境</h1>
+<h2 id="導入環境:98dfd3c78aef4b2602956cc8387353ab">導入環境</h2>
 
 <ul>
 <li>WordPress 2.9.2</li>
 </ul>
 
-<h1 id="手順:98dfd3c78aef4b2602956cc8387353ab">手順</h1>
+<h2 id="手順:98dfd3c78aef4b2602956cc8387353ab">手順</h2>
 
 <p>WordPress内のプラグインインストーラーだけで完結します。</p>
 
@@ -80,23 +85,13 @@
 
 <p>あとはいつもの編集画面がMarkDown用に変わっているので、好きに書けばいいでしょう。</p>
 
-<p>初めてMarkDown記法を使ってみましたが、悪くないです。記法の詳細は <a href="http://bono.s206.xrea.com/2007/01/312-markdown_syntax/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://bono.s206.xrea.com/2007/01/312-markdown_syntax/', 'power source* » WP: PHP Markdown 記法早見表（的なもの）']);" title="power source* » WP: PHP Markdown 記法早見表（的なもの）">power source* » WP: PHP Markdown 記法早見表（的なもの）</a> あたりを見れば十分です。</p>
+<p>初めてMarkDown記法を使ってみましたが、悪くないです。記法の詳細は <a href="http://bono.s206.xrea.com/2007/01/312-markdown_syntax/">power source* » WP: PHP Markdown 記法早見表（的なもの）</a> あたりを見れば十分です。</p>
 
-<h1 id="トラブルシューティング:98dfd3c78aef4b2602956cc8387353ab">トラブルシューティング</h1>
+<h2 id="参考:98dfd3c78aef4b2602956cc8387353ab">参考</h2>
 
-<h2 id="syntax-highlighter-と競合する場合:98dfd3c78aef4b2602956cc8387353ab">「Syntax Highlighter」と競合する場合</h2>
-
-<p>このブログでは「Syntax Highlighter for WordPress」を入れていますが、&#91;code]～[/code]ブロック内までMarkDown記法と解釈され、おかしな表示になることがあります。</p>
-
-<p>そんなときは、&#91;code]～[/code] をdivブロックで囲ってやると、MarkDownが無視して正常に表示されます。</p>
-
-<pre><code></code></pre>
-
-<p>&hellip; ```</p>
-
-<p>
-  参考: <a href="http://wordpress.org/support/topic/293458" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://wordpress.org/support/topic/293458', 'WordPress › Support » [Plugin: SyntaxHighlighter Evolved] Conflict with Markdown Extra plugin']);" title="WordPress › Support » [Plugin: SyntaxHighlighter Evolved] Conflict with Markdown Extra plugin">WordPress › Support » [Plugin: SyntaxHighlighter Evolved] Conflict with Markdown Extra plugin</a>
-</p>
+<ul>
+<li><a href="http://wordpress.org/support/topic/293458">WordPress › Support » [Plugin: SyntaxHighlighter Evolved] Conflict with Markdown Extra plugin</a></li>
+</ul>
 
         </div>
       </div>

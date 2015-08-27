@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -102,11 +107,11 @@ Error:
 <pre><code>function __construct($method, $messages) {
     $this-&gt;stdout = fopen('php://stdout', 'w');
     $this-&gt;stderr = fopen('php://stderr', 'w');
-    call_user_func_array(array(&amp;#038;$this, $method), $messages); //NG
+    call_user_func_array(array(&amp;$this, $method), $messages); //NG
 }
 </code></pre>
 
-<p>引数 $method に &#8220;error&#8221; を、$messages に配列を入れても、なぜか error メソッドに渡る時点で、$messages の中身が最初の要素の文字列だけになってしまいます。</p>
+<p>引数 $method に &ldquo;error&rdquo; を、$messages に配列を入れても、なぜか error メソッドに渡る時点で、$messages の中身が最初の要素の文字列だけになってしまいます。</p>
 
 <p>そこで、call_user_func_array() ではなく call_user_func() メソッドを使うと動くようになりました。</p>
 
@@ -126,10 +131,10 @@ Error:
 <h3 id="参考:72d171629237a4417381e6389736c783">参考</h3>
 
 <ul>
-<li><a href="http://book.cakephp.org/ja/view/1188/Error-Handling" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://book.cakephp.org/ja/view/1188/Error-Handling', 'エラーハンドリング(Error Handling) :: CakePHPによる作業の定石 :: マニュアル :: 1.3コレクション :: The Cookbook']);" title="エラーハンドリング(Error Handling) :: CakePHPによる作業の定石 :: マニュアル :: 1.3コレクション :: The Cookbook">エラーハンドリング(Error Handling) :: CakePHPによる作業の定石 :: マニュアル :: 1.3コレクション :: The Cookbook</a></li>
-<li><a href="http://blog.hard-boiled.jp/?p=415" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blog.hard-boiled.jp/?p=415', 'いつか辿りつこう(* ^ーﾟ) java seasar2 struts EL mysql many tips » CakePHP 例外処理']);" title="いつか辿りつこう(* ^ーﾟ) java seasar2 struts EL mysql many tips » CakePHP 例外処理">いつか辿りつこう(* ^ーﾟ) java seasar2 struts EL mysql many tips » CakePHP 例外処理</a></li>
-<li><a href="http://d.hatena.ne.jp/lifegood/20081008/p1" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://d.hatena.ne.jp/lifegood/20081008/p1', 'CakePHP＞エラーハンドリング(Error Handling) &#8211; 大人でも自由研究 &#8211; Everyone is creative. Originaly&#8230;!!']);" title="CakePHP＞エラーハンドリング(Error Handling) - 大人でも自由研究 - Everyone is creative. Originaly...!!">CakePHP＞エラーハンドリング(Error Handling) &#8211; 大人でも自由研究 &#8211; Everyone is creative. Originaly&#8230;!!</a></li>
-<li><a href="http://php.net/manual/ja/function.call-user-func-array.php" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://php.net/manual/ja/function.call-user-func-array.php', 'PHP: call_user_func_array &#8211; Manual']);" title="PHP: call_user_func_array - Manual">PHP: call_user_func_array &#8211; Manual</a></li>
+<li><a href="http://book.cakephp.org/ja/view/1188/Error-Handling">エラーハンドリング(Error Handling) :: CakePHPによる作業の定石 :: マニュアル :: 1.3コレクション :: The Cookbook</a></li>
+<li><a href="http://blog.hard-boiled.jp/?p=415">いつか辿りつこう(* ^ーﾟ) java seasar2 struts EL mysql many tips » CakePHP 例外処理</a></li>
+<li><a href="http://d.hatena.ne.jp/lifegood/20081008/p1">CakePHP＞エラーハンドリング(Error Handling) - 大人でも自由研究 - Everyone is creative. Originaly…!!</a></li>
+<li><a href="http://php.net/manual/ja/function.call-user-func-array.php">PHP: call_user_func_array - Manual</a></li>
 </ul>
 
         </div>

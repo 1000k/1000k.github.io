@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -67,8 +72,8 @@ Call Stack:
 <p>私の環境は PHP 5.2.x だったため、今回のエラーに出くわしました。原因は phpunit/PHP_Timer がバージョンアップしたせいでした。</p>
 
 <ul>
-<li><a href="https://github.com/sebastianbergmann/php-timer/blob/1.0.4/PHP/Timer/Autoload.php" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/sebastianbergmann/php-timer/blob/1.0.4/PHP/Timer/Autoload.php', 'phpunit/PHP_Timer-1.0.4']);" title="php-timer/PHP/Timer/Autoload.php at 1.0.4 · sebastianbergmann/php-timer">phpunit/PHP_Timer-1.0.4</a></li>
-<li><a href="https://github.com/sebastianbergmann/php-timer/blob/1.0.3/PHP/Timer/Autoload.php" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/sebastianbergmann/php-timer/blob/1.0.3/PHP/Timer/Autoload.php', 'phpunit/PHP_Timer-1.0.3']);" title="php-timer/PHP/Timer/Autoload.php at 1.0.3 · sebastianbergmann/php-timer">phpunit/PHP_Timer-1.0.3</a></li>
+<li><a href="https://github.com/sebastianbergmann/php-timer/blob/1.0.4/PHP/Timer/Autoload.php">phpunit/PHP_Timer-1.0.4</a></li>
+<li><a href="https://github.com/sebastianbergmann/php-timer/blob/1.0.3/PHP/Timer/Autoload.php">phpunit/PHP_Timer-1.0.3</a></li>
 </ul>
 
 <p>上記のソースからおわかりのように、1.0.4 から匿名関数を使っています。これは PHP &gt;= 5.3 でしか動きません。5.2系ではパースエラーになります。</p>
@@ -82,7 +87,7 @@ Call Stack:
 <pre><code># pear uninstall -n phpunit/PHP_Timer
 &quot;phpunit/PHP_Timer&quot; can be optionally used by installed package pear/PHP_CodeSniffer
 warning: phpunit/PHP_Timer (version &gt;= 1.0.2) is required by installed package &quot;phpunit/phpcpd&quot;
-warning: phpunit/PHP_Timer (version &gt;= 1.0.1, version &amp;lt;= 1.0.3) is required by installed package &quot;phpunit/PHPUnit&quot;
+warning: phpunit/PHP_Timer (version &gt;= 1.0.1, version &lt;= 1.0.3) is required by installed package &quot;phpunit/PHPUnit&quot;
 warning: phpunit/PHP_Timer should not be uninstalled, other installed packages depend on this package
 uninstall ok: channel://pear.phpunit.de/PHP_Timer-1.0.4
 
@@ -102,7 +107,7 @@ install ok: channel://pear.phpunit.de/PHP_Timer-1.0.3
 <h2 id="参考:50be0dd242e143a3defa66c95863f49e">参考</h2>
 
 <ul>
-<li><a href="http://dustyreagan.com/downgrade-phpunit-3-6-to-3-5-15/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://dustyreagan.com/downgrade-phpunit-3-6-to-3-5-15/', 'How to Downgrade PHPUnit 3.6 to 3.5.15 | Dusty Reagan']);" >How to Downgrade PHPUnit 3.6 to 3.5.15 | Dusty Reagan</a>
+<li><a href="http://dustyreagan.com/downgrade-phpunit-3-6-to-3-5-15/">How to Downgrade PHPUnit 3.6 to 3.5.15 | Dusty Reagan</a>
 
 <ul>
 <li>pear パッケージのダウングレード方法はこちらを参考にしました。</li>

@@ -77,15 +77,15 @@ mysql&amp;gt; INSERT INTO users VALUES(0, &amp;quot;name1&amp;quot;);
 1 row in set (0.00 sec)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;「不正なDOUBLE型の値&amp;#8217;uhouho&amp;#8217;を切り捨てました」と書いてあります。どうやら、MySQLの_暗黙の型変換_が悪さをしているようです。&lt;/p&gt;
+&lt;p&gt;「不正なDOUBLE型の値&amp;rsquo;uhouho&amp;rsquo;を切り捨てました」と書いてあります。どうやら、MySQLの_暗黙の型変換_が悪さをしているようです。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://dev.mysql.com/doc/refman/5.1/ja/type-conversion.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://dev.mysql.com/doc/refman/5.1/ja/type-conversion.html&#39;, &#39;MySQL :: MySQL 5.1 リファレンスマニュアル :: 11.1.2 式評価でのタイプ変換&#39;]);&#34; title=&#34;MySQL :: MySQL 5.1 リファレンスマニュアル :: 11.1.2 式評価でのタイプ変換&#34;&gt;MySQL :: MySQL 5.1 リファレンスマニュアル :: 11.1.2 式評価でのタイプ変換&lt;/a&gt; に淡々と箇条書きされていることを引用します。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://dev.mysql.com/doc/refman/5.1/ja/type-conversion.html&#34;&gt;MySQL :: MySQL 5.1 リファレンスマニュアル :: 11.1.2 式評価でのタイプ変換&lt;/a&gt; に淡々と箇条書きされていることを引用します。&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;比較の演算の両方の引数がストリングの場合、それらはストリングとして比較されます。&lt;/li&gt;
 &lt;li&gt;両方の引数が整数の場合、それらは整数として比較されます。&lt;/li&gt;
-&lt;li&gt;&amp;#8230; 中略 &amp;#8230;&lt;/li&gt;
+&lt;li&gt;… 中略 …&lt;/li&gt;
 &lt;li&gt;他のすべてのケースでは、引数は浮動少数点 ( 実 ) 数として比較されます。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
@@ -107,22 +107,22 @@ mysql&amp;gt; SELECT 0 = &#39;x6&#39;;
 &lt;h2 id=&#34;参考:6f5857c1e488bfc7db27046670c471b9&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/hnw/20120405&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://d.hatena.ne.jp/hnw/20120405&#39;, &#39;MySQLの文字列型から数値型への自動型変換が意味不明すぎる &amp;#8211; hnwの日記&#39;]);&#34; title=&#34;MySQLの文字列型から数値型への自動型変換が意味不明すぎる - hnwの日記&#34;&gt;MySQLの文字列型から数値型への自動型変換が意味不明すぎる &amp;#8211; hnwの日記&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/hnw/20120405&#34;&gt;MySQLの文字列型から数値型への自動型変換が意味不明すぎる - hnwの日記&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;文字列が浮動小数点に切り替えられる問題を詳しく解説。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.tokumaru.org/d/20090924.html#p01&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.tokumaru.org/d/20090924.html#p01&#39;, &#39;undefined &amp;#8211; 徳丸浩の日記(2009-09-24)&#39;]);&#34; title=&#34;undefined - 徳丸浩の日記(2009-09-24)&#34;&gt;undefined &amp;#8211; 徳丸浩の日記(2009-09-24)&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.tokumaru.org/d/20090924.html#p01&#34;&gt;undefined - 徳丸浩の日記(2009-09-24)&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;SQLインジェクション対策時にはまりやすいことの説明。値を文字列にキャストしているときに遭遇しうる不具合について解説。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://dev.mysql.com/doc/refman/5.1/ja/server-sql-mode.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://dev.mysql.com/doc/refman/5.1/ja/server-sql-mode.html&#39;, &#39;MySQL :: MySQL 5.1 リファレンスマニュアル :: 4.2.6 SQL モード&#39;]);&#34; title=&#34;MySQL :: MySQL 5.1 リファレンスマニュアル :: 4.2.6 SQL モード&#34;&gt;MySQL :: MySQL 5.1 リファレンスマニュアル :: 4.2.6 SQL モード&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://dev.mysql.com/doc/refman/5.1/ja/server-sql-mode.html&#34;&gt;MySQL :: MySQL 5.1 リファレンスマニュアル :: 4.2.6 SQL モード&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;値チェックのモード。不正な日付や0除算などのチェックを厳格にできる。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://dev.mysql.com/doc/refman/5.1/ja/type-conversion.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://dev.mysql.com/doc/refman/5.1/ja/type-conversion.html&#39;, &#39;MySQL :: MySQL 5.1 リファレンスマニュアル :: 11.1.2 式評価でのタイプ変換&#39;]);&#34; title=&#34;MySQL :: MySQL 5.1 リファレンスマニュアル :: 11.1.2 式評価でのタイプ変換&#34;&gt;MySQL :: MySQL 5.1 リファレンスマニュアル :: 11.1.2 式評価でのタイプ変換&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dev.mysql.com/doc/refman/5.1/ja/type-conversion.html&#34;&gt;MySQL :: MySQL 5.1 リファレンスマニュアル :: 11.1.2 式評価でのタイプ変換&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -137,7 +137,7 @@ mysql&amp;gt; SELECT 0 = &#39;x6&#39;;
 
 &lt;p&gt;MySQL にて BOOLEAN 型のフィールドを作りたいと思ったのですが、Googleで調べると「MySQL の BOOLEAN 型は実質 tinyint(1) と同じ」といったことが書いてありました。&lt;/p&gt;
 
-&lt;p&gt;また、「MySQL で厳密な BOOLEAN 型を表現したければ、ENUM(&amp;#8216;TRUE&amp;#8217;, &amp;#8216;FALSE&amp;#8217;) を使った方がいい」とも書いてありました。&lt;/p&gt;
+&lt;p&gt;また、「MySQL で厳密な BOOLEAN 型を表現したければ、ENUM(&amp;lsquo;TRUE&amp;rsquo;, &amp;lsquo;FALSE&amp;rsquo;) を使った方がいい」とも書いてありました。&lt;/p&gt;
 
 &lt;p&gt;個人的には SQL 文に「WHERE flag IS TRUE」と書いて SELECT できれば文句ありません。そういった挙動ができるのか確認しました。&lt;/p&gt;
 
@@ -232,7 +232,7 @@ SELECT * FROM boolean_test WHERE flag IS FALSE; -- id:2, 4 がヒット
 
 &lt;p&gt;SQL-99 の定義によると、「BOOLEAN 型は TRUE/FALSE/UNKNOWN の3値で表現される」ようです。&lt;/p&gt;
 
-&lt;p&gt;ref: &lt;a href=&#34;http://www.atmarkit.co.jp/fnetwork/tokusyuu/01sql99/sql99_2a.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.atmarkit.co.jp/fnetwork/tokusyuu/01sql99/sql99_2a.html&#39;, &#39;新しい業界標準「SQL99」詳細解説&#39;]);&#34; &gt;新しい業界標準「SQL99」詳細解説&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ref: &lt;a href=&#34;http://www.atmarkit.co.jp/fnetwork/tokusyuu/01sql99/sql99_2a.html&#34;&gt;新しい業界標準「SQL99」詳細解説&lt;/a&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;SQL99では本来の意味であるTRUE（真）とFALSE（偽）およびUNKNOWN（不明）を値として持つ真理値型が提供される。&lt;/p&gt;
@@ -270,10 +270,10 @@ SELECT * FROM boolean_test WHERE flag = &#39;UNKNOWN&#39;; -- ???: id:2, 4 が�
 &lt;h2 id=&#34;参考:fac054033163afd225cf9e287567f3c9&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://slashdot.jp/comments.pl?threshold=0&amp;mode=thread&amp;commentsort=1&amp;sid=446159&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://slashdot.jp/comments.pl?threshold=0&amp;mode=thread&amp;commentsort=1&amp;sid=446159&#39;, &#39;コメント: mySQLには、boolean型が無いなんて・・ &amp;#8211; スラッシュドット・ジャパン&#39;]);&#34; title=&#34;コメント: mySQLには、boolean型が無いなんて・・ - スラッシュドット・ジャパン&#34;&gt;コメント: mySQLには、boolean型が無いなんて・・ &amp;#8211; スラッシュドット・ジャパン&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.atmarkit.co.jp/fnetwork/tokusyuu/01sql99/sql99_2a.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.atmarkit.co.jp/fnetwork/tokusyuu/01sql99/sql99_2a.html&#39;, &#39;新しい業界標準「SQL99」詳細解説&#39;]);&#34; title=&#34;新しい業界標準「SQL99」詳細解説&#34;&gt;新しい業界標準「SQL99」詳細解説&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.geocities.jp/ky_webid/c/010.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.geocities.jp/ky_webid/c/010.html&#39;, &#39;Ｃ言語編　第１０章　変数のサイズ&#39;]);&#34; title=&#34;Ｃ言語編　第１０章　変数のサイズ&#34;&gt;Ｃ言語編　第１０章　変数のサイズ&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.nslabs.jp/book2-sql-types.rhtml&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.nslabs.jp/book2-sql-types.rhtml&#39;, &#39;追補: SQLデータ型の一覧 | Netsphere Laboratories&#39;]);&#34; &gt;追補: SQLデータ型の一覧 | Netsphere Laboratories&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://slashdot.jp/comments.pl?threshold=0&amp;amp;mode=thread&amp;amp;commentsort=1&amp;amp;sid=446159&#34;&gt;コメント: mySQLには、boolean型が無いなんて・・ - スラッシュドット・ジャパン&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.atmarkit.co.jp/fnetwork/tokusyuu/01sql99/sql99_2a.html&#34;&gt;新しい業界標準「SQL99」詳細解説&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.geocities.jp/ky_webid/c/010.html&#34;&gt;Ｃ言語編　第１０章　変数のサイズ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.nslabs.jp/book2-sql-types.rhtml&#34;&gt;追補: SQLデータ型の一覧 | Netsphere Laboratories&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -286,9 +286,9 @@ SELECT * FROM boolean_test WHERE flag = &#39;UNKNOWN&#39;; -- ???: id:2, 4 が�
       <guid>http://1000k.github.io/2010/07/05/insert-current-time-in-sqlite3/</guid>
       <description>
 
-&lt;p&gt;&lt;strong&gt;datetime(&amp;#8216;now&amp;#8217;, &amp;#8216;localtime&amp;#8217;)&lt;/strong&gt;を使う。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;datetime(&amp;lsquo;now&amp;rsquo;, &amp;lsquo;localtime&amp;rsquo;)&lt;/strong&gt;を使う。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;INSERT INTO posts (body, created, modified)
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;INSERT INTO posts (body, created, modified)
 VALUES (&#39;ウソ文章&#39;, datetime(&#39;now&#39;, &#39;localtime&#39;), datetime(&#39;now&#39;, &#39;localtime&#39;));
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -296,7 +296,7 @@ VALUES (&#39;ウソ文章&#39;, datetime(&#39;now&#39;, &#39;localtime&#39;), da
 
 &lt;h3 id=&#34;参考:f8899ebbf568af077f83512b36b60fed&#34;&gt;参考&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.tamandua-webtools.net/sqlite3-date.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.tamandua-webtools.net/sqlite3-date.html&#39;, &#39;SQLite3 での日付処理&#39;]);&#34; title=&#34;SQLite3 での日付処理&#34;&gt;SQLite3 での日付処理&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.tamandua-webtools.net/sqlite3-date.html&#34;&gt;SQLite3 での日付処理&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -324,8 +324,8 @@ VALUES (&#39;ウソ文章&#39;, datetime(&#39;now&#39;, &#39;localtime&#39;), da
 &lt;h3 id=&#34;参考:07ceee9a1b936a2d0a03452dc239ee08&#34;&gt;参考&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://java-etc.cocolog-nifty.com/blog/2007/02/post_a311.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://java-etc.cocolog-nifty.com/blog/2007/02/post_a311.html&#39;, &#39;ＳＱＬの魔術: Javaの日々&#39;]);&#34; title=&#34;ＳＱＬの魔術: Javaの日々&#34;&gt;ＳＱＬの魔術: Javaの日々&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.postgresql.jp/document/pg814doc/html/sql-select.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.postgresql.jp/document/pg814doc/html/sql-select.html&#39;, &#39;SELECT&#39;]);&#34; title=&#34;SELECT&#34;&gt;SELECT&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://java-etc.cocolog-nifty.com/blog/2007/02/post_a311.html&#34;&gt;ＳＱＬの魔術: Javaの日々&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.postgresql.jp/document/pg814doc/html/sql-select.html&#34;&gt;SELECT&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

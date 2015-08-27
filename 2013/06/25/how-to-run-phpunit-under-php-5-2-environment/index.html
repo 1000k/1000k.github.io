@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -43,7 +48,7 @@
         <div class="post-content">
           
 
-<p>業務で使っているアプリが PHP 5.2 でしか動かず、仕方なく PHP 5.2 でも動く PHPUnit 3.6.11 を使っています。(<a href="http://blog.1000k.net/2012/10/19/phpunit%E3%82%92%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%97%E3%81%9F%E3%82%89%E5%8B%95%E4%BD%9C%E3%81%97%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9F/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blog.1000k.net/2012/10/19/phpunit%E3%82%92%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%97%E3%81%9F%E3%82%89%E5%8B%95%E4%BD%9C%E3%81%97%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9F/', 'PHPUnit >= 3.6.12 は PHP 5.3 が必要。&rsquo;]);&rdquo; title=&ldquo;PHPUnitをアップグレードしたら動作しなくなった | 1000g&rdquo;&gt;PHPUnit &gt;= 3.6.12 は PHP 5.3 が必要。</a>)</p>
+<p>業務で使っているアプリが PHP 5.2 でしか動かず、仕方なく PHP 5.2 でも動く PHPUnit 3.6.11 を使っています。([= 3.6.12 は PHP 5.3 が必要。&rsquo;]);&rdquo; title=&ldquo;PHPUnitをアップグレードしたら動作しなくなった | 1000g&rdquo;&gt;PHPUnit &gt;= 3.6.12 は PHP 5.3 が必要。](<a href="http://blog.1000k.net/2012/10/19/phpunit%E3%82%92%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%97%E3%81%9F%E3%82%89%E5%8B%95%E4%BD%9C%E3%81%97%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9F/))">http://blog.1000k.net/2012/10/19/phpunit%E3%82%92%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%97%E3%81%9F%E3%82%89%E5%8B%95%E4%BD%9C%E3%81%97%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9F/))</a></p>
 
 <p>最近になってサーバーのリプレースの時期になり、新しいビルドマシンに PHPUnit をインストールする羽目になったのですが、うまくバージョンが揃わず苦労しました。</p>
 
@@ -59,7 +64,7 @@
 
 <p>そもそも5.2系はとっくに Deprecated なので使うべきではないのですが、業務で使うから仕方ない。</p>
 
-<p><a href="http://www.php.net/releases/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.php.net/releases/', 'PHP: Releases']);" >PHP: Releases</a> から 5.2.17 をダウンロードして、ソースからインストールします。</p>
+<p><a href="http://www.php.net/releases/">PHP: Releases</a> から 5.2.17 をダウンロードして、ソースからインストールします。</p>
 
 <pre><code># wget http://museum.php.net/php5/php-5.2.17.tar.gz
 # tar -zxf php-5.2.17.tar.gz
@@ -69,7 +74,7 @@
 # make install
 </code></pre>
 
-<p>configure オプションは <a href="http://www.php.net/manual/ja/configure.about.php" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.php.net/manual/ja/configure.about.php', 'PHP: 中心となる configure オプションのリスト &#8211; Manual']);" >PHP: 中心となる configure オプションのリスト &#8211; Manual</a> を参考に。</p>
+<p>configure オプションは <a href="http://www.php.net/manual/ja/configure.about.php">PHP: 中心となる configure オプションのリスト - Manual</a> を参考に。</p>
 
 <h2 id="pear-をアップグレードする:a58652de0ea1df651ea37649dd28159c">PEAR をアップグレードする</h2>
 
@@ -110,7 +115,7 @@ PHPUnit 3.6.11 by Sebastian Bergmann.
 
 <h2 id="ついでに関連ツールも入れる:a58652de0ea1df651ea37649dd28159c">ついでに関連ツールも入れる</h2>
 
-<p><a href="http://jenkins-php.org/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://jenkins-php.org/', 'Template for Jenkins Jobs for PHP Projects']);" >Template for Jenkins Jobs for PHP Projects</a> で紹介されているツールは下記のコマンドでインストールできます。</p>
+<p><a href="http://jenkins-php.org/">Template for Jenkins Jobs for PHP Projects</a> で紹介されているツールは下記のコマンドでインストールできます。</p>
 
 <pre><code># pear channel-add pear.pdepend.org
 # pear channel-add pear.phpmd.org
@@ -128,7 +133,7 @@ PHPUnit 3.6.11 by Sebastian Bergmann.
 <h2 id="愚痴:a58652de0ea1df651ea37649dd28159c">愚痴</h2>
 
 <ul>
-<li><a href="https://github.com/composer/composer" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/composer/composer', 'Composer']);" >Composer</a> を使えれば圧倒的に楽なのですが、PHP &gt;= 5.3.2 でしか動かないので諦めました。</li>
+<li><a href="https://github.com/composer/composer">Composer</a> を使えれば圧倒的に楽なのですが、PHP &gt;= 5.3.2 でしか動かないので諦めました。</li>
 <li>PEAR 遅い。</li>
 <li>自動テストがあれば PHP をバージョンアップできるか検証できるのですが、ほとんどテストケースが無いのでそれも無理。コード総数は10万行。死にたい。</li>
 </ul>

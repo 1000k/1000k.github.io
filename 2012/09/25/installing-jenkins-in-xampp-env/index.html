@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -45,15 +50,22 @@
 
 <p>XAMPPにはTomcatが同梱されているため、JenkinsのWARファイルをデプロイすれば、すぐにCI環境が構築できます。</p>
 
-<p>以下、<a href="http://www.apachefriends.org/jp/xampp-windows.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.apachefriends.org/jp/xampp-windows.html', 'XAMPP for Windows 1.8.0']);" title="apache friends - xampp for windows">XAMPP for Windows 1.8.0</a> を使ってJenkins環境を構築する手順を書きます。</p>
+<p>以下、<a href="http://www.apachefriends.org/jp/xampp-windows.html">XAMPP for Windows 1.8.0</a> を使ってJenkins環境を構築する手順を書きます。</p>
 
 <h2 id="手順:a2b978718054ff7ee3bcbdd86b4ab357">手順</h2>
 
 <h3 id="jenkinsをダウンロードする:a2b978718054ff7ee3bcbdd86b4ab357">Jenkinsをダウンロードする</h3>
 
-<p><a href="http://blog.1000k.net/wp-content/uploads/jenkins_homepage.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blog.1000k.net/wp-content/uploads/jenkins_homepage.png', '']);" ><img src="http://blog.1000k.net/wp-content/uploads/jenkins_homepage.png" alt="" title="Jenkinsホームページ" width="600" height="553" class="alignnone size-full wp-image-1096" /></a></p>
+<p><a href="http://blog.1000k.net/wp-content/uploads/jenkins_homepage.png">
+<figure >
+    
+        <img src="/img/jenkins_homepage.png"  />
+    
+    
+</figure>
+</a></p>
 
-<p><a href="http://jenkins-ci.org/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://jenkins-ci.org/', 'Jenkinsのホームページ']);" >Jenkinsのホームページ</a>から最新のwarアーカイブをダウンロードします。「Latest and greatest」をクリックして jenkins.war をダウンロードしてください。<strong>Windowsパッケージではない</strong>ので注意してください。</p>
+<p><a href="http://jenkins-ci.org/">Jenkinsのホームページ</a>から最新のwarアーカイブをダウンロードします。「Latest and greatest」をクリックして jenkins.war をダウンロードしてください。<strong>Windowsパッケージではない</strong>ので注意してください。</p>
 
 <h3 id="tomcatの管理者ユーザーを設定する:a2b978718054ff7ee3bcbdd86b4ab357">Tomcatの管理者ユーザーを設定する</h3>
 
@@ -67,7 +79,14 @@
 
 <h3 id="tomcatを起動する:a2b978718054ff7ee3bcbdd86b4ab357">Tomcatを起動する</h3>
 
-<p><a href="http://blog.1000k.net/wp-content/uploads/xampp_control_panel.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blog.1000k.net/wp-content/uploads/xampp_control_panel.png', '']);" ><img src="http://blog.1000k.net/wp-content/uploads/xampp_control_panel.png" alt="" title="XAMPPコントロールパネル" width="714" height="450" class="alignnone size-full wp-image-1086" /></a></p>
+<p><a href="http://blog.1000k.net/wp-content/uploads/xampp_control_panel.png">
+<figure >
+    
+        <img src="/img/xampp_control_panel.png"  />
+    
+    
+</figure>
+</a></p>
 
 <p>XAMPPコントロールパネルを起動し、Tomcatの横にある「Start」ボタンをクリックするだけです。</p>
 
@@ -75,19 +94,40 @@
 
 <h3 id="管理画面にログインする:a2b978718054ff7ee3bcbdd86b4ab357">管理画面にログインする</h3>
 
-<p><a href="http://blog.1000k.net/wp-content/uploads/tomcat_top.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blog.1000k.net/wp-content/uploads/tomcat_top.png', '']);" ><img src="http://blog.1000k.net/wp-content/uploads/tomcat_top.png" alt="" title="Tomcatトップページ" width="600" height="433" class="alignnone size-full wp-image-1087" /></a></p>
+<p><a href="http://blog.1000k.net/wp-content/uploads/tomcat_top.png">
+<figure >
+    
+        <img src="/img/tomcat_top.png"  />
+    
+    
+</figure>
+</a></p>
 
 <p>「Manage App」をクリックして管理画面にログインします。認証パスワードは先ほど設定した通り、ユーザー名が「_tomcat_」、パスワードが「_s3cret_」となります。</p>
 
 <h3 id="warファイルをデプロイする:a2b978718054ff7ee3bcbdd86b4ab357">warファイルをデプロイする</h3>
 
-<p><a href="http://blog.1000k.net/wp-content/uploads/tomcat_manage.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blog.1000k.net/wp-content/uploads/tomcat_manage.png', '']);" ><img src="http://blog.1000k.net/wp-content/uploads/tomcat_manage.png" alt="" title="Tomcatデプロイ" width="600" height="174" class="alignnone size-full wp-image-1088" /></a></p>
+<p><a href="http://blog.1000k.net/wp-content/uploads/tomcat_manage.png">
+<figure >
+    
+        <img src="/img/tomcat_manage.png"  />
+    
+    
+</figure>
+</a></p>
 
 <p>「warファイルの配備」に先ほどダウンロードした jenkins.war を指定し、「配備」をクリックします。</p>
 
 <h3 id="jenkinsの画面を確認する:a2b978718054ff7ee3bcbdd86b4ab357">Jenkinsの画面を確認する</h3>
 
-<p><a href="http://blog.1000k.net/wp-content/uploads/jenkins_dashboard.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blog.1000k.net/wp-content/uploads/jenkins_dashboard.png', '']);" ><img src="http://blog.1000k.net/wp-content/uploads/jenkins_dashboard.png" alt="" title="Jenkinsダッシュボード" width="600" height="271" class="alignnone size-full wp-image-1090" /></a></p>
+<p><a href="http://blog.1000k.net/wp-content/uploads/jenkins_dashboard.png">
+<figure >
+    
+        <img src="/img/jenkins_dashboard.png"  />
+    
+    
+</figure>
+</a></p>
 
 <p>以上で完了です。<a href="http://localhost:8080/jenkins/">http://localhost:8080/jenkins/</a> にアクセスすれば Jenkins のトップ画面が表示されます。</p>
 

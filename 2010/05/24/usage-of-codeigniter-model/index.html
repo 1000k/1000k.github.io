@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -54,7 +59,7 @@
 
 <p>下記は「Usersテーブルのデータを取得したり件数をカウントしたりするクラス」の例。 <strong>/system/application/models/users_model.php</strong>とする。</p>
 
-<pre><code>&lt;?php
+<pre><code class="language-php">&lt;?php
 class Users_model extends Model {
 
     function __construct() {
@@ -89,7 +94,7 @@ class Users_model extends Model {
 /** End of PHP file */
 </code></pre>
 
-<p>データベースクラスの細かい実装は <a href="http://codeigniter.jp/user_guide_ja/database/index.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://codeigniter.jp/user_guide_ja/database/index.html', 'データベースクラス : CodeIgniter ユーザガイド 日本語版']);" title="データベースクラス : CodeIgniter ユーザガイド 日本語版">データベースクラス : CodeIgniter ユーザガイド 日本語版</a> を参照。以下に挙げるものはよく使うので覚えておいた方が良い。</p>
+<p>データベースクラスの細かい実装は <a href="http://codeigniter.jp/user_guide_ja/database/index.html">データベースクラス : CodeIgniter ユーザガイド 日本語版</a> を参照。以下に挙げるものはよく使うので覚えておいた方が良い。</p>
 
 <table>
 <thead>
@@ -101,7 +106,7 @@ class Users_model extends Model {
 
 <tbody>
 <tr>
-<td>$this-&gt;db-&gt;get(&#8216;table_name&#8217;)</td>
+<td>$this-&gt;db-&gt;get(&lsquo;table_name&rsquo;)</td>
 <td>table_nameテーブル内の全行を取得する</td>
 </tr>
 
@@ -111,7 +116,7 @@ class Users_model extends Model {
 </tr>
 
 <tr>
-<td>$this-&gt;db-&gt;count_all(&#8216;table_name&#8217;)</td>
+<td>$this-&gt;db-&gt;count_all(&lsquo;table_name&rsquo;)</td>
 <td>table_nameテーブルの行数を取得する</td>
 </tr>
 
@@ -133,7 +138,7 @@ class Users_model extends Model {
 
 <p><strong>/system/application/controllers/Users.php</strong> を下記のようにすることで、上述のモデルで作成したAPIをロードできる。</p>
 
-<pre><code>&lt;?php
+<pre><code class="language-php">&lt;?php
 class Users extends Controller {
 
     function __construct() {
@@ -156,7 +161,7 @@ class Users extends Controller {
 
 <h1 id="参考:9e420bce93e176a58a0a53cf159db0b1">参考</h1>
 
-<p><a href="http://www.devshed.com/c/a/PHP/Building-a-DatabaseDriven-Application-with-the-Code-Igniter-PHP-Framework/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.devshed.com/c/a/PHP/Building-a-DatabaseDriven-Application-with-the-Code-Igniter-PHP-Framework/', 'Building a Database-Driven Application with the Code Igniter PHP Framework']);" title="Building a Database-Driven Application with the Code Igniter PHP Framework">Building a Database-Driven Application with the Code Igniter PHP Framework</a></p>
+<p><a href="http://www.devshed.com/c/a/PHP/Building-a-DatabaseDriven-Application-with-the-Code-Igniter-PHP-Framework/">Building a Database-Driven Application with the Code Igniter PHP Framework</a></p>
 
 <p>（文字がクレイジーなほど小さくて読みづらいので、「PDF Version Of Article」を見るのがおすすめ）</p>
 

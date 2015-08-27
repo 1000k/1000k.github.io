@@ -15,7 +15,7 @@
       <pubDate>Wed, 30 May 2012 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2012/05/30/how-to-test-singular-named-table-by-phacory/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://phactory.org/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://phactory.org/&#39;, &#39;Phactory&#39;]);&#34; title=&#34;Phactory - A Database Factory for PHP Unit Tests&#34;&gt;Phactory&lt;/a&gt;はRoRライクな設計思想のため、テーブル名を勝手に複数形に変換（pluralize）します。&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;http://phactory.org/&#34;&gt;Phactory&lt;/a&gt;はRoRライクな設計思想のため、テーブル名を勝手に複数形に変換（pluralize）します。&lt;/p&gt;
 
 &lt;p&gt;このせいで単数形のテーブル名がテストできない場合、下記のようにdefine()の前に&lt;strong&gt;setInflector()&lt;/strong&gt;を使えば直ります。&lt;/p&gt;
 
@@ -33,7 +33,7 @@
     }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;参考: &lt;a href=&#34;https://github.com/chriskite/phactory/issues/3&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/chriskite/phactory/issues/3&#39;, &#39;Issue #3: Can&amp;#8217;t create singular tables · chriskite/phactory · GitHub&#39;]);&#34; title=&#34;Issue #3: Can&#39;t create singular tables · chriskite/phactory · GitHub&#34;&gt;Issue #3: Can&amp;#8217;t create singular tables · chriskite/phactory · GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;参考: &lt;a href=&#34;https://github.com/chriskite/phactory/issues/3&#34;&gt;Issue #3: Can&amp;rsquo;t create singular tables · chriskite/phactory · GitHub&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

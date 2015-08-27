@@ -17,9 +17,9 @@
       <guid>http://1000k.github.io/2015/01/27/validate-cakephp2-rules-with-sublime-text2-phpcs-plugin/</guid>
       <description>
 
-&lt;p&gt;Sublime Text 2 のエディタ上で PHP CodeSniffer を使い、コーディング規約をチェックする方法です。&lt;a href=&#34;http://benmatselby.github.io/sublime-phpcs/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://benmatselby.github.io/sublime-phpcs/&#39;, &#39;sublime-phpcs&#39;]);&#34; &gt;sublime-phpcs&lt;/a&gt; プラグインを導入することで、コーディング規約違反のある行がエディタ上に表示されるようになります。&lt;/p&gt;
+&lt;p&gt;Sublime Text 2 のエディタ上で PHP CodeSniffer を使い、コーディング規約をチェックする方法です。&lt;a href=&#34;http://benmatselby.github.io/sublime-phpcs/&#34;&gt;sublime-phpcs&lt;/a&gt; プラグインを導入することで、コーディング規約違反のある行がエディタ上に表示されるようになります。&lt;/p&gt;
 
-&lt;p&gt;なお、プラグインの公式ページでは phpmd も一緒に導入していますが、&lt;a href=&#34;http://blog.1000k.net/2013/11/26/phpmd-%e3%81%ae%e9%a0%ad%e3%81%8c%e3%81%8b%e3%81%aa%e3%82%8a-messy/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/2013/11/26/phpmd-%e3%81%ae%e9%a0%ad%e3%81%8c%e3%81%8b%e3%81%aa%e3%82%8a-messy/&#39;, &#39;PHPMD はヒステリックすぎて個人的にお勧めしない&#39;]);&#34; &gt;PHPMD はヒステリックすぎて個人的にお勧めしない&lt;/a&gt; ので省略します。&lt;/p&gt;
+&lt;p&gt;なお、プラグインの公式ページでは phpmd も一緒に導入していますが、&lt;a href=&#34;http://blog.1000k.net/2013/11/26/phpmd-%e3%81%ae%e9%a0%ad%e3%81%8c%e3%81%8b%e3%81%aa%e3%82%8a-messy/&#34;&gt;PHPMD はヒステリックすぎて個人的にお勧めしない&lt;/a&gt; ので省略します。&lt;/p&gt;
 
 &lt;h2 id=&#34;チュートリアル:0e3f1a6b553d4169127746e6faedbbcf&#34;&gt;チュートリアル&lt;/h2&gt;
 
@@ -43,13 +43,13 @@ The installed coding standards are CakePHP, MySource, PEAR, PHPCS, PSR1, PSR2, S
 
 &lt;h3 id=&#34;sublime-text-2-に-codesniffer-プラグインをインストールする:0e3f1a6b553d4169127746e6faedbbcf&#34;&gt;Sublime Text 2 に CodeSniffer プラグインをインストールする&lt;/h3&gt;
 
-&lt;p&gt;&amp;#8220;Package Control: Install Package&amp;#8221; で &lt;code&gt;Phpcs&lt;/code&gt; をインストールするだけ。&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Package Control: Install Package&amp;rdquo; で &lt;code&gt;Phpcs&lt;/code&gt; をインストールするだけ。&lt;/p&gt;
 
-&lt;p&gt;(Package Control 自体のインストール方法は &lt;a href=&#34;https://sublime.wbond.net/installation#st2&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://sublime.wbond.net/installation#st2&#39;, &#39;Installation &amp;#8211; Package Control&#39;]);&#34; &gt;Installation &amp;#8211; Package Control&lt;/a&gt; を参照)&lt;/p&gt;
+&lt;p&gt;(Package Control 自体のインストール方法は &lt;a href=&#34;https://sublime.wbond.net/installation#st2&#34;&gt;Installation - Package Control&lt;/a&gt; を参照)&lt;/p&gt;
 
 &lt;h3 id=&#34;sublime-text-の設定:0e3f1a6b553d4169127746e6faedbbcf&#34;&gt;Sublime Text の設定&lt;/h3&gt;
 
-&lt;p&gt;&amp;#8220;Preferences &amp;gt; Package Settings &amp;gt; PHP Code Sniffer &amp;gt; Settings &amp;#8211; User&amp;#8221; を開き、以下のキーを設定する必要があります。&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Preferences &amp;gt; Package Settings &amp;gt; PHP Code Sniffer &amp;gt; Settings - User&amp;rdquo; を開き、以下のキーを設定する必要があります。&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;phpcs_php_path&lt;/li&gt;
@@ -78,8 +78,8 @@ The installed coding standards are CakePHP, MySource, PEAR, PHPCS, PSR1, PSR2, S
 &lt;p&gt;以下の手順でプラグインのコードを修正してください。&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&amp;#8220;Preferences &amp;gt; Browse Packages&amp;#8230;&amp;#8221; でパッケージディレクトリを開く。&lt;/li&gt;
-&lt;li&gt;&amp;#8220;Phpcs &amp;gt; phpcs.py&amp;#8221; を開く。&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Preferences &amp;gt; Browse Packages…&amp;rdquo; でパッケージディレクトリを開く。&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Phpcs &amp;gt; phpcs.py&amp;rdquo; を開く。&lt;/li&gt;
 &lt;li&gt;169行目を以下のように修正 (パラメータに &lt;code&gt;shell=True&lt;/code&gt; を追加) する。&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -99,7 +99,7 @@ proc = subprocess.Popen(cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stde
 
 &lt;p&gt;プラグインインストール後のデフォルトだと、保存するたびに規約違反がサジェストされます。&lt;/p&gt;
 
-&lt;p&gt;鬱陶しい場合は &amp;#8220;Preferences &amp;gt; Package Settings &amp;gt; PHP Code Sniffer &amp;gt; Settings &amp;#8211; User&amp;#8221; に下記を追加することでオフにできます。&lt;/p&gt;
+&lt;p&gt;鬱陶しい場合は &amp;ldquo;Preferences &amp;gt; Package Settings &amp;gt; PHP Code Sniffer &amp;gt; Settings - User&amp;rdquo; に下記を追加することでオフにできます。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
   &amp;quot;phpcs_execute_on_save&amp;quot;: false
@@ -109,11 +109,11 @@ proc = subprocess.Popen(cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stde
 &lt;h2 id=&#34;参考:0e3f1a6b553d4169127746e6faedbbcf&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://benmatselby.github.io/sublime-phpcs/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://benmatselby.github.io/sublime-phpcs/&#39;, &#39;sublime-phpcs&#39;]);&#34; &gt;sublime-phpcs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/10585274/custom-ruleset-for-phpcs-using-phpstorm&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://stackoverflow.com/questions/10585274/custom-ruleset-for-phpcs-using-phpstorm&#39;, &#39;php &amp;#8211; Custom ruleset for phpcs using PHPStorm &amp;#8211; Stack Overflow&#39;]);&#34; &gt;php &amp;#8211; Custom ruleset for phpcs using PHPStorm &amp;#8211; Stack Overflow&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/cakephp/cakephp-codesniffer&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/cakephp/cakephp-codesniffer&#39;, &#39;cakephp/cakephp-codesniffer · GitHub&#39;]);&#34; &gt;cakephp/cakephp-codesniffer · GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/fabpot/PHP-CS-Fixer&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/fabpot/PHP-CS-Fixer&#39;, &#39;fabpot/PHP-CS-Fixer · GitHub&#39;]);&#34; &gt;fabpot/PHP-CS-Fixer · GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://matsu-chara.hatenablog.com/entry/2013/12/27/125026&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://matsu-chara.hatenablog.com/entry/2013/12/27/125026&#39;, &#39;sublime-phpcsでPSR-2準拠のコーディング &amp;#8211; だいたいよくわからないブログ( ´_ゝ`)&#39;]);&#34; &gt;sublime-phpcsでPSR-2準拠のコーディング &amp;#8211; だいたいよくわからないブログ( ´_ゝ`)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://benmatselby.github.io/sublime-phpcs/&#34;&gt;sublime-phpcs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/10585274/custom-ruleset-for-phpcs-using-phpstorm&#34;&gt;php - Custom ruleset for phpcs using PHPStorm - Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cakephp/cakephp-codesniffer&#34;&gt;cakephp/cakephp-codesniffer · GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/fabpot/PHP-CS-Fixer&#34;&gt;fabpot/PHP-CS-Fixer · GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://matsu-chara.hatenablog.com/entry/2013/12/27/125026&#34;&gt;sublime-phpcsでPSR-2準拠のコーディング - だいたいよくわからないブログ( ´_ゝ`)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -204,18 +204,18 @@ class AppController extends Controller {
 
 &lt;h2 id=&#34;余談:882e9f5bab62127de673717c90df9029&#34;&gt;余談&lt;/h2&gt;
 
-&lt;p&gt;本当は CakePHP 2.1 から採用された &lt;a href=&#34;http://book.cakephp.org/2.0/en/core-libraries/events.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://book.cakephp.org/2.0/en/core-libraries/events.html&#39;, &#39;Events System&#39;]);&#34; &gt;Events System&lt;/a&gt; を使って &lt;code&gt;beforeFilter()&lt;/code&gt; 以降のアクションを実行されないようにしたかったのですが、やり方がわかりませんでした。アクションを detach する方法をご存知の方がいたら教えて下さい。&lt;/p&gt;
+&lt;p&gt;本当は CakePHP 2.1 から採用された &lt;a href=&#34;http://book.cakephp.org/2.0/en/core-libraries/events.html&#34;&gt;Events System&lt;/a&gt; を使って &lt;code&gt;beforeFilter()&lt;/code&gt; 以降のアクションを実行されないようにしたかったのですが、やり方がわかりませんでした。アクションを detach する方法をご存知の方がいたら教えて下さい。&lt;/p&gt;
 
 &lt;h2 id=&#34;参考:882e9f5bab62127de673717c90df9029&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://book.cakephp.org/2.0/en/views/json-and-xml-views.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://book.cakephp.org/2.0/en/views/json-and-xml-views.html&#39;, &#39;JSON and XML views — CakePHP Cookbook v2.x documentation&#39;]);&#34; &gt;JSON and XML views — CakePHP Cookbook v2.x documentation&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://book.cakephp.org/2.0/en/views/json-and-xml-views.html&#34;&gt;JSON and XML views — CakePHP Cookbook v2.x documentation&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;ビューを使わず JSON で出力を行う方法が書かれています。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://book.cakephp.org/2.0/en/controllers.html#request-life-cycle-callbacks&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://book.cakephp.org/2.0/en/controllers.html#request-life-cycle-callbacks&#39;, &#39;Controllers — CakePHP Cookbook v2.x documentation&#39;]);&#34; &gt;Controllers — CakePHP Cookbook v2.x documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://api.cakephp.org/2.4/class-Controller.html#_invokeAction&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://api.cakephp.org/2.4/class-Controller.html#_invokeAction&#39;, &#39;CakeAPI &gt; invokeAction&amp;rsquo;]);&amp;rdquo; &amp;gt;CakeAPI &amp;gt; invokeAction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://book.cakephp.org/2.0/en/controllers.html#request-life-cycle-callbacks&#34;&gt;Controllers — CakePHP Cookbook v2.x documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ invokeAction&amp;rsquo;]);&amp;rdquo; &amp;gt;CakeAPI &amp;gt; invokeAction](&lt;a href=&#34;http://api.cakephp.org/2.4/class-Controller.html#_invokeAction&#34;&gt;http://api.cakephp.org/2.4/class-Controller.html#_invokeAction&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -228,7 +228,7 @@ class AppController extends Controller {
       <guid>http://1000k.github.io/2013/11/26/phpmd-is-messy/</guid>
       <description>
 
-&lt;p&gt;&lt;a href=&#34;http://phpmd.org/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://phpmd.org/&#39;, &#39;PHPMD (PHP Mess Detector)&#39;]);&#34; &gt;PHPMD (PHP Mess Detector)&lt;/a&gt; は、PHP のコードを静的解析して、潜在的なバグや無意味なブロックを発見してくれるツールです。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://phpmd.org/&#34;&gt;PHPMD (PHP Mess Detector)&lt;/a&gt; は、PHP のコードを静的解析して、潜在的なバグや無意味なブロックを発見してくれるツールです。&lt;/p&gt;
 
 &lt;p&gt;が、しばしば問題ないブロックにもケチをつけてきます。&lt;/p&gt;
 
@@ -249,7 +249,7 @@ class AppController extends Controller {
 &lt;p&gt;ほかにも、if-else を使うと下のような警告を出します。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;public function step() {
-    if ($this-&amp;gt;find(&#39;count&#39;) &amp;amp;lt; 1) {
+    if ($this-&amp;gt;find(&#39;count&#39;) &amp;lt; 1) {
         $this-&amp;gt;foo();
     } else {
         // 警告: The method step uses an else expression. Else is never necessary and you can simplify the code to work without else.
@@ -266,8 +266,8 @@ class AppController extends Controller {
 &lt;h2 id=&#34;参考:fa9ca428d896ab32fcf9e86dc6eea620&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://phpmd.org/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://phpmd.org/&#39;, &#39;PHPMD &amp;#8211; PHP Mess Detector&#39;]);&#34; &gt;PHPMD &amp;#8211; PHP Mess Detector&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/18604179/phpmd-avoid-static-access-to-parent&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://stackoverflow.com/questions/18604179/phpmd-avoid-static-access-to-parent&#39;, &#39;php &amp;#8211; PHPMD avoid static access to parent &amp;#8211; Stack Overflow&#39;]);&#34; &gt;php &amp;#8211; PHPMD avoid static access to parent &amp;#8211; Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://phpmd.org/&#34;&gt;PHPMD - PHP Mess Detector&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/18604179/phpmd-avoid-static-access-to-parent&#34;&gt;php - PHPMD avoid static access to parent - Stack Overflow&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -339,7 +339,7 @@ class FooClassTest extends PHPUnit_Framework_TestCase {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;また、PHPUnit の Expectation はメソッドチェーンで連続して指定できます (&amp;#8220;-&amp;gt;&amp;#8221; 演算子で繋げて書ける) が、そもそも記述量が多いです。いちいち this this 書くのも煩わしい。&lt;/p&gt;
+&lt;p&gt;また、PHPUnit の Expectation はメソッドチェーンで連続して指定できます (&amp;ldquo;-&amp;gt;&amp;rdquo; 演算子で繋げて書ける) が、そもそも記述量が多いです。いちいち this this 書くのも煩わしい。&lt;/p&gt;
 
 &lt;p&gt;そこで、Expectation をセットするためのメソッドを作ってやると楽になります。&lt;/p&gt;
 
@@ -347,12 +347,12 @@ class FooClassTest extends PHPUnit_Framework_TestCase {
     /**
      * モックオブジェクトに Expectation を設定する。
      *
-     * @param Object &amp;amp;#038;$mock モックオブジェクト
+     * @param Object &amp;amp;$mock モックオブジェクト
      * @param string $matcher マッチャー ([any|once|never|...])
      * @param string $method メソッド名
      * @param mixed $return_value 期待する戻り値
      */
-    protected function _setExpectation(&amp;amp;#038;$mock, $matcher, $method, $return_value = null) {
+    protected function _setExpectation(&amp;amp;$mock, $matcher, $method, $return_value = null) {
         $mock-&amp;gt;expects($this-&amp;gt;$matcher())
             -&amp;gt;method($method)
             -&amp;gt;will($this-&amp;gt;returnValue($return_value));
@@ -385,13 +385,13 @@ class FooClassTest extends MyTestCase {
 
 &lt;p&gt;また、PHPDoc 部分に &lt;code&gt;@test&lt;/code&gt; アノテーションを付けると、メソッド名を &lt;code&gt;test&lt;/code&gt; で始めなくてもテストケースとして認識されるようになります。私はこの方が読みやすいので、最近はこう書くことが多いです。&lt;/p&gt;
 
-&lt;p&gt;こういう改善をしても、Ruby に慣れているとまだ長く感じます。「$」「&amp;#8217;」「&amp;gt;」などの記号を打つのも煩わしいです。Ruby 使いてえなあ。&lt;/p&gt;
+&lt;p&gt;こういう改善をしても、Ruby に慣れているとまだ長く感じます。「$」「&amp;rsquo;」「&amp;gt;」などの記号を打つのも煩わしいです。Ruby 使いてえなあ。&lt;/p&gt;
 
 &lt;h2 id=&#34;参考:66eb9e16e3cbfb7a24c972ec7c7d6f12&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://phpunit.de/manual/3.8/ja/test-doubles.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://phpunit.de/manual/3.8/ja/test-doubles.html&#39;, &#39;PHPUnit 公式マニュアル &gt; 第10章 テストダブル&amp;rsquo;]);&amp;rdquo; &amp;gt;PHPUnit 公式マニュアル &amp;gt; 第10章 テストダブル&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://phpunit.de/manual/3.8/ja/appendixes.annotations.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://phpunit.de/manual/3.8/ja/appendixes.annotations.html&#39;, &#39;付録B アノテーション&#39;]);&#34; &gt;付録B アノテーション&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ 第10章 テストダブル&amp;rsquo;]);&amp;rdquo; &amp;gt;PHPUnit 公式マニュアル &amp;gt; 第10章 テストダブル](&lt;a href=&#34;http://phpunit.de/manual/3.8/ja/test-doubles.html&#34;&gt;http://phpunit.de/manual/3.8/ja/test-doubles.html&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://phpunit.de/manual/3.8/ja/appendixes.annotations.html&#34;&gt;付録B アノテーション&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -404,7 +404,7 @@ class FooClassTest extends MyTestCase {
       <guid>http://1000k.github.io/2013/06/25/how-to-run-phpunit-under-php-5-2-environment/</guid>
       <description>
 
-&lt;p&gt;業務で使っているアプリが PHP 5.2 でしか動かず、仕方なく PHP 5.2 でも動く PHPUnit 3.6.11 を使っています。(&lt;a href=&#34;http://blog.1000k.net/2012/10/19/phpunit%E3%82%92%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%97%E3%81%9F%E3%82%89%E5%8B%95%E4%BD%9C%E3%81%97%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9F/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/2012/10/19/phpunit%E3%82%92%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%97%E3%81%9F%E3%82%89%E5%8B%95%E4%BD%9C%E3%81%97%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9F/&#39;, &#39;PHPUnit &gt;= 3.6.12 は PHP 5.3 が必要。&amp;rsquo;]);&amp;rdquo; title=&amp;ldquo;PHPUnitをアップグレードしたら動作しなくなった | 1000g&amp;rdquo;&amp;gt;PHPUnit &amp;gt;= 3.6.12 は PHP 5.3 が必要。&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;業務で使っているアプリが PHP 5.2 でしか動かず、仕方なく PHP 5.2 でも動く PHPUnit 3.6.11 を使っています。([= 3.6.12 は PHP 5.3 が必要。&amp;rsquo;]);&amp;rdquo; title=&amp;ldquo;PHPUnitをアップグレードしたら動作しなくなった | 1000g&amp;rdquo;&amp;gt;PHPUnit &amp;gt;= 3.6.12 は PHP 5.3 が必要。](&lt;a href=&#34;http://blog.1000k.net/2012/10/19/phpunit%E3%82%92%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%97%E3%81%9F%E3%82%89%E5%8B%95%E4%BD%9C%E3%81%97%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9F/))&#34;&gt;http://blog.1000k.net/2012/10/19/phpunit%E3%82%92%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%97%E3%81%9F%E3%82%89%E5%8B%95%E4%BD%9C%E3%81%97%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9F/))&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;最近になってサーバーのリプレースの時期になり、新しいビルドマシンに PHPUnit をインストールする羽目になったのですが、うまくバージョンが揃わず苦労しました。&lt;/p&gt;
 
@@ -420,7 +420,7 @@ class FooClassTest extends MyTestCase {
 
 &lt;p&gt;そもそも5.2系はとっくに Deprecated なので使うべきではないのですが、業務で使うから仕方ない。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.php.net/releases/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.php.net/releases/&#39;, &#39;PHP: Releases&#39;]);&#34; &gt;PHP: Releases&lt;/a&gt; から 5.2.17 をダウンロードして、ソースからインストールします。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.php.net/releases/&#34;&gt;PHP: Releases&lt;/a&gt; から 5.2.17 をダウンロードして、ソースからインストールします。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;# wget http://museum.php.net/php5/php-5.2.17.tar.gz
 # tar -zxf php-5.2.17.tar.gz
@@ -430,7 +430,7 @@ class FooClassTest extends MyTestCase {
 # make install
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;configure オプションは &lt;a href=&#34;http://www.php.net/manual/ja/configure.about.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.php.net/manual/ja/configure.about.php&#39;, &#39;PHP: 中心となる configure オプションのリスト &amp;#8211; Manual&#39;]);&#34; &gt;PHP: 中心となる configure オプションのリスト &amp;#8211; Manual&lt;/a&gt; を参考に。&lt;/p&gt;
+&lt;p&gt;configure オプションは &lt;a href=&#34;http://www.php.net/manual/ja/configure.about.php&#34;&gt;PHP: 中心となる configure オプションのリスト - Manual&lt;/a&gt; を参考に。&lt;/p&gt;
 
 &lt;h2 id=&#34;pear-をアップグレードする:a58652de0ea1df651ea37649dd28159c&#34;&gt;PEAR をアップグレードする&lt;/h2&gt;
 
@@ -471,7 +471,7 @@ PHPUnit 3.6.11 by Sebastian Bergmann.
 
 &lt;h2 id=&#34;ついでに関連ツールも入れる:a58652de0ea1df651ea37649dd28159c&#34;&gt;ついでに関連ツールも入れる&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://jenkins-php.org/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://jenkins-php.org/&#39;, &#39;Template for Jenkins Jobs for PHP Projects&#39;]);&#34; &gt;Template for Jenkins Jobs for PHP Projects&lt;/a&gt; で紹介されているツールは下記のコマンドでインストールできます。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://jenkins-php.org/&#34;&gt;Template for Jenkins Jobs for PHP Projects&lt;/a&gt; で紹介されているツールは下記のコマンドでインストールできます。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;# pear channel-add pear.pdepend.org
 # pear channel-add pear.phpmd.org
@@ -489,7 +489,7 @@ PHPUnit 3.6.11 by Sebastian Bergmann.
 &lt;h2 id=&#34;愚痴:a58652de0ea1df651ea37649dd28159c&#34;&gt;愚痴&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/composer/composer&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/composer/composer&#39;, &#39;Composer&#39;]);&#34; &gt;Composer&lt;/a&gt; を使えれば圧倒的に楽なのですが、PHP &amp;gt;= 5.3.2 でしか動かないので諦めました。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/composer/composer&#34;&gt;Composer&lt;/a&gt; を使えれば圧倒的に楽なのですが、PHP &amp;gt;= 5.3.2 でしか動かないので諦めました。&lt;/li&gt;
 &lt;li&gt;PEAR 遅い。&lt;/li&gt;
 &lt;li&gt;自動テストがあれば PHP をバージョンアップできるか検証できるのですが、ほとんどテストケースが無いのでそれも無理。コード総数は10万行。死にたい。&lt;/li&gt;
 &lt;/ul&gt;
@@ -535,9 +535,9 @@ xdebug.var_display_max_depth = -1
 &lt;h2 id=&#34;参考:4a6779c3da90459c9dffed130ddd9ac1&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://xdebug.org/docs/all_settings#var_display_max_depth&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://xdebug.org/docs/all_settings#var_display_max_depth&#39;, &#39;Xdebug: Documentation&#39;]);&#34; &gt;Xdebug: Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.kantenna.com/info/2012/02/xdebug_vardump.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.kantenna.com/info/2012/02/xdebug_vardump.php&#39;, &#39;[PHP]Xdebugでvar_dump()の出力が省略されて困る場合の対応 | 情報備忘録&#39;]);&#34; &gt;[PHP]Xdebugでvar_dump()の出力が省略されて困る場合の対応 | 情報備忘録&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.crossl.net/blog/php_xdebug_vardump_size/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.crossl.net/blog/php_xdebug_vardump_size/&#39;, &#39;PHPでvar_dump時に数が多いと省略されてしまう現象&#39;]);&#34; &gt;PHPでvar_dump時に数が多いと省略されてしまう現象&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://xdebug.org/docs/all_settings#var_display_max_depth&#34;&gt;Xdebug: Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.kantenna.com/info/2012/02/xdebug_vardump.php&#34;&gt;[PHP]Xdebugでvar_dump()の出力が省略されて困る場合の対応 | 情報備忘録&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.crossl.net/blog/php_xdebug_vardump_size/&#34;&gt;PHPでvar_dump時に数が多いと省略されてしまう現象&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -555,7 +555,7 @@ xdebug.var_display_max_depth = -1
 &lt;ul&gt;
 &lt;li&gt;Oracle VirtualBox で CentOS 6.3 VM を起動&lt;/li&gt;
 &lt;li&gt;ホストOSは Windows 7&lt;/li&gt;
-&lt;li&gt;ホストOS側の &amp;#8220;c:\www\app&amp;#8221; を VM 側の &amp;#8220;/www&amp;#8221; に共有フォルダとしてマウント&lt;/li&gt;
+&lt;li&gt;ホストOS側の &amp;ldquo;c:\www\app&amp;rdquo; を VM 側の &amp;ldquo;/www&amp;rdquo; に共有フォルダとしてマウント&lt;/li&gt;
 &lt;li&gt;VM上は Apache 2.2 を稼働させ、PHP アプリサーバーとして利用&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -581,7 +581,7 @@ Uncaught SyntaxError: Unexpected token ILLEGAL
 
 &lt;h2 id=&#34;原因:b37b64915a4bf2c4cb4c44aab2bf62d1&#34;&gt;原因&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://httpd.apache.org/docs/2.2/ja/mod/core.html#enablesendfile&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://httpd.apache.org/docs/2.2/ja/mod/core.html#enablesendfile&#39;, &#39;EnableSendfile ディレクティブ&#39;]);&#34; &gt;EnableSendfile ディレクティブ&lt;/a&gt; の説明には以下のように書いてあります。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://httpd.apache.org/docs/2.2/ja/mod/core.html#enablesendfile&#34;&gt;EnableSendfile ディレクティブ&lt;/a&gt; の説明には以下のように書いてあります。&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;このディレクティブはクライアントにファイルの内容を送るときに httpd がカーネルの sendfile サポートを使うかどうかを制御します。デフォルトでは、 例えば静的なファイルの配送のように、リクエストの処理にファイルの 途中のデータのアクセスを必要としないときには、Apache は OS が サポートしていればファイルを読み込むことなく sendfile を使って ファイルの内容を送ります。&lt;/p&gt;
@@ -604,7 +604,7 @@ Uncaught SyntaxError: Unexpected token ILLEGAL
 
 &lt;h2 id=&#34;補足-enablemmap-ディレクティブ:b37b64915a4bf2c4cb4c44aab2bf62d1&#34;&gt;補足: EnableMMAP ディレクティブ&lt;/h2&gt;
 
-&lt;p&gt;私はまだ遭遇していないのですが、&lt;a href=&#34;http://httpd.apache.org/docs/2.2/ja/mod/core.html#enablemmap&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://httpd.apache.org/docs/2.2/ja/mod/core.html#enablemmap&#39;, &#39;EnableMMAP ディレクティブ&#39;]);&#34; &gt;&lt;em&gt;EnableMMAP&lt;/em&gt; ディレクティブ&lt;/a&gt;も Apache をクラッシュさせる危険があるので、Offにしておいた方が良いそうです。&lt;/p&gt;
+&lt;p&gt;私はまだ遭遇していないのですが、&lt;a href=&#34;http://httpd.apache.org/docs/2.2/ja/mod/core.html#enablemmap&#34;&gt;&lt;em&gt;EnableMMAP&lt;/em&gt; ディレクティブ&lt;/a&gt;も Apache をクラッシュさせる危険があるので、Offにしておいた方が良いそうです。&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;NFS マウントされた DocumentRoot では、httpd がメモリマップしている間にファイルが削除されたり 短くなったりしたときに起こるセグメンテーションフォールトのために httpd がクラッシュする可能性があります。&lt;/p&gt;
@@ -619,9 +619,9 @@ EnableMMAP Off
 &lt;h2 id=&#34;参考:b37b64915a4bf2c4cb4c44aab2bf62d1&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.flup.jp/2009/04/06/problem_of_using_shared_folder_to_document_root/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.flup.jp/2009/04/06/problem_of_using_shared_folder_to_document_root/&#39;, &#39;DocumentRootに共有フォルダを使った場合の問題 &amp;#8211; フリップフラップ&#39;]);&#34; &gt;DocumentRootに共有フォルダを使った場合の問題 &amp;#8211; フリップフラップ&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://tipshare.info/view/4f3481ee4b21227814000001&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://tipshare.info/view/4f3481ee4b21227814000001&#39;, &#39;Virtualbox上のApacheでホストマシンと共有している静的ファイル（CSSなど）の更新が検知されない問題を解決する方法 | tipshare.info&#39;]);&#34; &gt;Virtualbox上のApacheでホストマシンと共有している静的ファイル（CSSなど）の更新が検知されない問題を解決する方法 | tipshare.info&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://httpd.apache.org/docs/2.2/ja/mod/core.html#enablemmap&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://httpd.apache.org/docs/2.2/ja/mod/core.html#enablemmap&#39;, &#39;core &amp;#8211; Apache HTTP サーバ&#39;]);&#34; &gt;core &amp;#8211; Apache HTTP サーバ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.flup.jp/2009/04/06/problem_of_using_shared_folder_to_document_root/&#34;&gt;DocumentRootに共有フォルダを使った場合の問題 - フリップフラップ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://tipshare.info/view/4f3481ee4b21227814000001&#34;&gt;Virtualbox上のApacheでホストマシンと共有している静的ファイル（CSSなど）の更新が検知されない問題を解決する方法 | tipshare.info&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://httpd.apache.org/docs/2.2/ja/mod/core.html#enablemmap&#34;&gt;core - Apache HTTP サーバ&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -754,7 +754,7 @@ public function testIndex() {
 
 $this-&amp;gt;testAction($action, $options) は、Controller を叩いた時の挙動をシミュレートするメソッドです。今回は uso=800 という値を POST している状況を再現しています。
 
-第2引数の $options には様々なオプションを指定できます。「&amp;amp;#8217;return&amp;amp;#8217; =&amp;gt; &amp;amp;#8216;vars&amp;amp;#8217;」を指定することで、testAction() 実行時に Controller から View に渡った値を、$this-&amp;gt;vars に格納することができます。
+第2引数の $options には様々なオプションを指定できます。「&#39;return&#39; =&amp;gt; &#39;vars&#39;」を指定することで、testAction() 実行時に Controller から View に渡った値を、$this-&amp;gt;vars に格納することができます。
 
 この時点でテストを叩くと、当然まだ ApisController::index() が実装できていないので、エラーが出て終了します。
 
@@ -876,7 +876,7 @@ public function index() {
 
 &lt;h2 id=&#34;補足:ebcb7468c782ecd2d611762d0def266a&#34;&gt;補足&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://book.cakephp.org/2.0/en/development/testing.html#testing-controllers&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://book.cakephp.org/2.0/en/development/testing.html#testing-controllers&#39;, &#39;公式チュートリアル&#39;]);&#34; &gt;公式チュートリアル&lt;/a&gt; はそこそこ学べますが、なぜか結果を debug() でコンソールに表示してるだけで、アサーション（期待される値と実際の結果の照合）をやってません。これはダメです。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://book.cakephp.org/2.0/en/development/testing.html#testing-controllers&#34;&gt;公式チュートリアル&lt;/a&gt; はそこそこ学べますが、なぜか結果を debug() でコンソールに表示してるだけで、アサーション（期待される値と実際の結果の照合）をやってません。これはダメです。&lt;/p&gt;
 
 &lt;p&gt;戻り値はちゃんと assert しましょう。モックを使って挙動を確かめるなら expectation を使いましょう。&lt;/p&gt;
 
@@ -885,17 +885,17 @@ public function index() {
 &lt;h2 id=&#34;参考になるサイト:ebcb7468c782ecd2d611762d0def266a&#34;&gt;参考になるサイト&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://api21.cakephp.org&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://api21.cakephp.org&#39;, &#39;CakePHP API&#39;]);&#34; &gt;CakePHP API&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://api21.cakephp.org&#34;&gt;CakePHP API&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;CakeBook は CakePHP の機能の概要を知るのに向いていますが、メソッドの使い方を調べるだけならこっちの方が早いです。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.phpunit.de/manual/3.6/ja/index.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.phpunit.de/manual/3.6/ja/index.html&#39;, &#39;PHPUnit 公式マニュアル&#39;]);&#34; &gt;PHPUnit 公式マニュアル&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.phpunit.de/manual/3.6/ja/index.html&#34;&gt;PHPUnit 公式マニュアル&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;CakePHP2 の CakeTestCase クラスは、PHPUnit の簡単なラッパーなので、全ての機能が使えます。こちらのドキュメントも読んでおくといいです。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.phpunit.de/manual/3.6/ja/writing-tests-for-phpunit.html#writing-tests-for-phpunit.assertions&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.phpunit.de/manual/3.6/ja/writing-tests-for-phpunit.html#writing-tests-for-phpunit.assertions&#39;, &#39;PHPUnit のアサーション一覧&#39;]);&#34; &gt;PHPUnit のアサーション一覧&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.phpunit.de/manual/3.6/ja/writing-tests-for-phpunit.html#writing-tests-for-phpunit.assertions&#34;&gt;PHPUnit のアサーション一覧&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;ほとんどの場合は assertEquals() でカバーできますが、知っておくと便利なものも多いです。&lt;/li&gt;
@@ -928,7 +928,7 @@ Fri, 11 Jan 2013 11:48:03 +090
 
 &lt;p&gt;date()関数の第1引数でフォーマットを変更できます。&lt;/p&gt;
 
-&lt;p&gt;詳しくは &lt;a href=&#34;http://php.net/manual/ja/function.date.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://php.net/manual/ja/function.date.php&#39;, &#39;PHP: date &amp;#8211; Manual&#39;]);&#34; title=&#34;PHP: date - Manual&#34;&gt;PHP: date &amp;#8211; Manual&lt;/a&gt; を参照。&lt;/p&gt;
+&lt;p&gt;詳しくは &lt;a href=&#34;http://php.net/manual/ja/function.date.php&#34;&gt;PHP: date - Manual&lt;/a&gt; を参照。&lt;/p&gt;
 
 &lt;h2 id=&#34;ruby:9514b206b957b6cd4e0a3c8ebb046a97&#34;&gt;Ruby&lt;/h2&gt;
 
@@ -939,8 +939,8 @@ Fri Jan 11 11:48:03 +0900 2013
 &lt;h2 id=&#34;参考:9514b206b957b6cd4e0a3c8ebb046a97&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/2371248/how-to-convert-timestamps-to-dates-in-bash&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://stackoverflow.com/questions/2371248/how-to-convert-timestamps-to-dates-in-bash&#39;, &#39;How to convert timestamps to dates in bash? &amp;#8211; Stack Overflow&#39;]);&#34; title=&#34;How to convert timestamps to dates in bash? - Stack Overflow&#34;&gt;How to convert timestamps to dates in bash? &amp;#8211; Stack Overflow&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://open-groove.net/linux/change-unix-timestamp/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://open-groove.net/linux/change-unix-timestamp/&#39;, &#39;UNIX timestampを通常時刻に変換したい時 &amp;#8211; OpenGroove&#39;]);&#34; title=&#34;UNIX timestampを通常時刻に変換したい時 - OpenGroove&#34;&gt;UNIX timestampを通常時刻に変換したい時 &amp;#8211; OpenGroove&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/2371248/how-to-convert-timestamps-to-dates-in-bash&#34;&gt;How to convert timestamps to dates in bash? - Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://open-groove.net/linux/change-unix-timestamp/&#34;&gt;UNIX timestampを通常時刻に変換したい時 - OpenGroove&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -1019,7 +1019,7 @@ Fri Jan 11 11:48:03 +0900 2013
 &lt;h2 id=&#34;参考:d103d0ed9885bf3d8051c00805d3aeed&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://bugs.launchpad.net/ubuntu/+source/php-apc/+bug/994882&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://bugs.launchpad.net/ubuntu/+source/php-apc/+bug/994882&#39;, &#39;Bug #994882 “php5{en/dis}mod not available in php 5.3.10” : Bugs : “php-apc” package : Ubuntu&#39;]);&#34; &gt;Bug #994882 “php5{en/dis}mod not available in php 5.3.10” : Bugs : “php-apc” package : Ubuntu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bugs.launchpad.net/ubuntu/+source/php-apc/+bug/994882&#34;&gt;Bug #994882 “php5{en/dis}mod not available in php 5.3.10” : Bugs : “php-apc” package : Ubuntu&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;日頃CentOSばかり触っているとUbuntuルールにつまづきます。&lt;/p&gt;
@@ -1042,7 +1042,7 @@ Fri Jan 11 11:48:03 +0900 2013
 
 &lt;p&gt;単体テストの際には必ず必要になる知識なので、解説しておきます。&lt;/p&gt;
 
-&lt;p&gt;以下のサンプルでは &lt;a href=&#34;http://www.phpunit.de/manual/3.8/ja/index.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.phpunit.de/manual/3.8/ja/index.html&#39;, &#39;PHPUnit&#39;]);&#34; &gt;PHPUnit&lt;/a&gt; を利用しています。&lt;/p&gt;
+&lt;p&gt;以下のサンプルでは &lt;a href=&#34;http://www.phpunit.de/manual/3.8/ja/index.html&#34;&gt;PHPUnit&lt;/a&gt; を利用しています。&lt;/p&gt;
 
 &lt;h2 id=&#34;単体テストができないケース:d011759973daaf90efe485c60339885a&#34;&gt;単体テストができないケース&lt;/h2&gt;
 
@@ -1235,26 +1235,26 @@ Fri Jan 11 11:48:03 +0900 2013
 
 &lt;h2 id=&#34;補足1-runkitで強引にメソッドの挙動を変える方法:d011759973daaf90efe485c60339885a&#34;&gt;補足1: runkitで強引にメソッドの挙動を変える方法&lt;/h2&gt;
 
-&lt;p&gt;PHPにおいては &lt;a href=&#34;http://php.net/manual/ja/book.runkit.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://php.net/manual/ja/book.runkit.php&#39;, &#39;runkit&#39;]);&#34; &gt;runkit&lt;/a&gt; を使うことで、モック化をしなくてもメソッドの挙動を強引に変えることが可能です。ただし破壊的な手段であり、これが必要な時点でオブジェクト指向的な設計ができていない疑いが非常に強いです。&lt;/p&gt;
+&lt;p&gt;PHPにおいては &lt;a href=&#34;http://php.net/manual/ja/book.runkit.php&#34;&gt;runkit&lt;/a&gt; を使うことで、モック化をしなくてもメソッドの挙動を強引に変えることが可能です。ただし破壊的な手段であり、これが必要な時点でオブジェクト指向的な設計ができていない疑いが非常に強いです。&lt;/p&gt;
 
 &lt;p&gt;できるだけ Constructor Injection 等の方法を用い、テスト可能になるようリファクタリングをしましょう。リファクタリング中はコードが醜くなるかもしれませんが、最終的に設計が改善できるならば結果OKです。美しさよりも安全性が何より重要です。&lt;/p&gt;
 
 &lt;h2 id=&#34;補足2-constructor-injection-vs-setter-injection:d011759973daaf90efe485c60339885a&#34;&gt;補足2: Constructor Injection vs Setter Injection&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/2012/10/23/%e6%8a%84%e8%a8%b3-constructor-injection-vs-setter-injection/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/2012/10/23/%e6%8a%84%e8%a8%b3-constructor-injection-vs-setter-injection/&#39;, &#39;抄訳: Constructor Injection vs. Setter Injection | 1000g&#39;]);&#34; &gt;抄訳: Constructor Injection vs. Setter Injection | 1000g&lt;/a&gt; にて、コンストラクター・インジェクションとセッター・インジェクションのどちらが良いかを考察しています。結論としてはコンストラクター・インジェクションがベターです。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/2012/10/23/%e6%8a%84%e8%a8%b3-constructor-injection-vs-setter-injection/&#34;&gt;抄訳: Constructor Injection vs. Setter Injection | 1000g&lt;/a&gt; にて、コンストラクター・インジェクションとセッター・インジェクションのどちらが良いかを考察しています。結論としてはコンストラクター・インジェクションがベターです。&lt;/p&gt;
 
 &lt;h2 id=&#34;参考:d011759973daaf90efe485c60339885a&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://ja.wikipedia.org/wiki/%E4%BE%9D%E5%AD%98%E6%80%A7%E3%81%AE%E6%B3%A8%E5%85%A5&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://ja.wikipedia.org/wiki/%E4%BE%9D%E5%AD%98%E6%80%A7%E3%81%AE%E6%B3%A8%E5%85%A5&#39;, &#39;依存性の注入 &amp;#8211; Wikipedia&#39;]);&#34; &gt;依存性の注入 &amp;#8211; Wikipedia&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/m-hiyama/20060926/1159253903&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://d.hatena.ne.jp/m-hiyama/20060926/1159253903&#39;, &#39;DI（依存性注入）を白紙から説明してみる &amp;#8211; 檜山正幸のキマイラ飼育記&#39;]);&#34; &gt;DI（依存性注入）を白紙から説明してみる &amp;#8211; 檜山正幸のキマイラ飼育記&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://martinfowler.com/articles/injection.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://martinfowler.com/articles/injection.html&#39;, &#39;Inversion of Control Containers and the Dependency Injection pattern&#39;]);&#34; &gt;Inversion of Control Containers and the Dependency Injection pattern&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://ja.wikipedia.org/wiki/%E4%BE%9D%E5%AD%98%E6%80%A7%E3%81%AE%E6%B3%A8%E5%85%A5&#34;&gt;依存性の注入 - Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/m-hiyama/20060926/1159253903&#34;&gt;DI（依存性注入）を白紙から説明してみる - 檜山正幸のキマイラ飼育記&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://martinfowler.com/articles/injection.html&#34;&gt;Inversion of Control Containers and the Dependency Injection pattern&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;リファクタリング界の大御所、Martin Fowler氏の考察。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.techscore.com/tech/Java/Others/Spring/1-3/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.techscore.com/tech/Java/Others/Spring/1-3/&#39;, &#39;Dependency Injection のタイプ | TECHSCORE(テックスコア)&#39;]);&#34; &gt;Dependency Injection のタイプ | TECHSCORE(テックスコア)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.phpunit.de/manual/3.7/ja/test-doubles.html#test-doubles.mock-objects&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.phpunit.de/manual/3.7/ja/test-doubles.html#test-doubles.mock-objects&#39;, &#39;第10章 テストダブル&#39;]);&#34; &gt;第10章 テストダブル&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.techscore.com/tech/Java/Others/Spring/1-3/&#34;&gt;Dependency Injection のタイプ | TECHSCORE(テックスコア)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.phpunit.de/manual/3.7/ja/test-doubles.html#test-doubles.mock-objects&#34;&gt;第10章 テストダブル&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;PHPUnit 公式マニュアルによるモックの使い方。&lt;/li&gt;
@@ -1342,7 +1342,7 @@ isset(array ()): true
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;&amp;#8211;&lt;/th&gt;
+&lt;th&gt;-&lt;/th&gt;
 &lt;th&gt;isset($var)&lt;/th&gt;
 &lt;th&gt;!empty($var)&lt;/th&gt;
 &lt;th&gt;($var)&lt;/th&gt;
@@ -1372,14 +1372,14 @@ isset(array ()): true
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td&gt;&amp;#8216;false&amp;#8217;&lt;/td&gt;
+&lt;td&gt;&amp;lsquo;false&amp;rsquo;&lt;/td&gt;
 &lt;td&gt;true&lt;/td&gt;
 &lt;td&gt;true&lt;/td&gt;
 &lt;td&gt;true&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td&gt;&amp;#8221;&lt;/td&gt;
+&lt;td&gt;&amp;ldquo;&lt;/td&gt;
 &lt;td&gt;true&lt;/td&gt;
 &lt;td&gt;false&lt;/td&gt;
 &lt;td&gt;false&lt;/td&gt;
@@ -1393,14 +1393,14 @@ isset(array ()): true
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td&gt;&amp;#8216;0&amp;#8217;&lt;/td&gt;
+&lt;td&gt;&amp;lsquo;0&amp;rsquo;&lt;/td&gt;
 &lt;td&gt;true&lt;/td&gt;
 &lt;td&gt;false&lt;/td&gt;
 &lt;td&gt;false&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td&gt;&amp;#8216;aaaaa&amp;#8217;&lt;/td&gt;
+&lt;td&gt;&amp;lsquo;aaaaa&amp;rsquo;&lt;/td&gt;
 &lt;td&gt;true&lt;/td&gt;
 &lt;td&gt;true&lt;/td&gt;
 &lt;td&gt;true&lt;/td&gt;
@@ -1427,7 +1427,7 @@ isset(array ()): true
 &lt;ul&gt;
 &lt;li&gt;issetはNULL以外がセットされていればtrue&lt;/li&gt;
 &lt;li&gt;「!empty($var)」と「($var)」は同義&lt;/li&gt;
-&lt;li&gt;empty()は大変クセが強いので、&lt;a href=&#34;http://jp.php.net/manual/ja/function.empty.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://jp.php.net/manual/ja/function.empty.php&#39;, &#39;公式マニュアル&#39;]);&#34; &gt;公式マニュアル&lt;/a&gt;を熟読しましょう。&lt;/li&gt;
+&lt;li&gt;empty()は大変クセが強いので、&lt;a href=&#34;http://jp.php.net/manual/ja/function.empty.php&#34;&gt;公式マニュアル&lt;/a&gt;を熟読しましょう。&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;blockquote&gt;
@@ -1436,10 +1436,10 @@ isset(array ()): true
 &lt;p&gt;次のような値は空であるとみなされます。&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&amp;#8220;&amp;#8221; (空文字列)&lt;/li&gt;
+&lt;li&gt;&amp;rdquo;&amp;rdquo; (空文字列)&lt;/li&gt;
 &lt;li&gt;0 (整数 の 0)&lt;/li&gt;
 &lt;li&gt;0.0 (浮動小数点数の 0)&lt;/li&gt;
-&lt;li&gt;&amp;#8220;0&amp;#8221; (文字列 の 0)&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;0&amp;rdquo; (文字列 の 0)&lt;/li&gt;
 &lt;li&gt;NULL&lt;/li&gt;
 &lt;li&gt;FALSE&lt;/li&gt;
 &lt;li&gt;array() (空の配列)&lt;/li&gt;
@@ -1452,9 +1452,9 @@ isset(array ()): true
 &lt;p&gt;PHPの公式マニュアルを見て確かめましょう。&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://jp.php.net/manual/ja/function.empty.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://jp.php.net/manual/ja/function.empty.php&#39;, &#39;PHP: empty &amp;#8211; Manual&#39;]);&#34; &gt;PHP: empty &amp;#8211; Manual&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jp.php.net/manual/ja/function.isset.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://jp.php.net/manual/ja/function.isset.php&#39;, &#39;PHP: isset &amp;#8211; Manual&#39;]);&#34; &gt;PHP: isset &amp;#8211; Manual&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jp.php.net/manual/ja/control-structures.if.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://jp.php.net/manual/ja/control-structures.if.php&#39;, &#39;PHP: if &amp;#8211; Manual&#39;]);&#34; &gt;PHP: if &amp;#8211; Manual&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jp.php.net/manual/ja/function.empty.php&#34;&gt;PHP: empty - Manual&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jp.php.net/manual/ja/function.isset.php&#34;&gt;PHP: isset - Manual&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jp.php.net/manual/ja/control-structures.if.php&#34;&gt;PHP: if - Manual&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -1472,8 +1472,8 @@ isset(array ()): true
 &lt;p&gt;下記に記す非公式リポジトリを参照することで、最新のパッケージをyumでインストールできます。&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.famillecollet.com/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.famillecollet.com/&#39;, &#39;Remi&#39;]);&#34; &gt;Remi&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.jasonlitka.com/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.jasonlitka.com/&#39;, &#39;Utter Ramblings&#39;]);&#34; &gt;Utter Ramblings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.famillecollet.com/&#34;&gt;Remi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jasonlitka.com/&#34;&gt;Utter Ramblings&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;なお、これらのサイトで配布されているパッケージの信頼性は公式のリポジトリのものより劣るので、利用の際には注意が必要です。&lt;/p&gt;
@@ -1487,7 +1487,7 @@ isset(array ()): true
 &lt;p&gt;最新のダウンロード先は下記から確認してください。&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Remi: &lt;a href=&#34;http://rpms.famillecollet.com/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://rpms.famillecollet.com/&#39;, &#39;RepoView: Les RPM de Remi&#39;]);&#34; &gt;RepoView: Les RPM de Remi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Remi: &lt;a href=&#34;http://rpms.famillecollet.com/&#34;&gt;RepoView: Les RPM de Remi&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;EPEL: &lt;a href=&#34;http://download.fedora.redhat.com/pub/epel/5/i386/&#34;&gt;http://download.fedora.redhat.com/pub/epel/5/i386/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1521,7 +1521,7 @@ gpgkey=http://www.jasonlitka.com/media/RPM-GPG-KEY-jlitka
 
 &lt;h2 id=&#34;最新パッケージのインストール:f0d8039714e0227fd6e46c45b7c77e52&#34;&gt;最新パッケージのインストール&lt;/h2&gt;
 
-&lt;p&gt;yumコマンドに「&amp;#8211;enablerepo={リポジトリ名}」オプションを付けることで、それぞれのリポジトリを参照できます。&lt;/p&gt;
+&lt;p&gt;yumコマンドに「-enablerepo={リポジトリ名}」オプションを付けることで、それぞれのリポジトリを参照できます。&lt;/p&gt;
 
 &lt;p&gt;PHPの場合&lt;/p&gt;
 
@@ -1573,14 +1573,14 @@ Is this ok [y/N]:
 &lt;h1 id=&#34;参考:f0d8039714e0227fd6e46c45b7c77e52&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://hoge001.exblog.jp/13982612/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://hoge001.exblog.jp/13982612/&#39;, &#39;hoge001 : CentOS5.5 Apache 2.2.15 インストール&#39;]);&#34; &gt;hoge001 : CentOS5.5 Apache 2.2.15 インストール&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://fedoraproject.org/wiki/About_EPEL/ja&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://fedoraproject.org/wiki/About_EPEL/ja&#39;, &#39;About EPEL/ja &amp;#8211; FedoraProject&#39;]);&#34; &gt;About EPEL/ja &amp;#8211; FedoraProject&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://hoge001.exblog.jp/13982612/&#34;&gt;hoge001 : CentOS5.5 Apache 2.2.15 インストール&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://fedoraproject.org/wiki/About_EPEL/ja&#34;&gt;About EPEL/ja - FedoraProject&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;EPELとは？EPELの目的など&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.goofoo.jp/2011/03/556&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.goofoo.jp/2011/03/556&#39;, &#39;yumでremiリポジトリを使えるようにする | グーフー WordPressのためのLinuxノート&#39;]);&#34; &gt;yumでremiリポジトリを使えるようにする | グーフー WordPressのためのLinuxノート&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://pentan.info/server/linux/yum_new.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://pentan.info/server/linux/yum_new.html&#39;, &#39;yumで、より新しいパッケージをインストールする方法(CentOS) &amp;#8211; [yum/Linux [Red Hatなど]] ぺんたん info&#39;]);&#34; &gt;yumで、より新しいパッケージをインストールする方法(CentOS) &amp;#8211; [yum/Linux [Red Hatなど]] ぺんたん info&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.goofoo.jp/2011/03/556&#34;&gt;yumでremiリポジトリを使えるようにする | グーフー WordPressのためのLinuxノート&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://pentan.info/server/linux/yum_new.html&#34;&gt;yumで、より新しいパッケージをインストールする方法(CentOS) - [yum/Linux [Red Hatなど]] ぺんたん info&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -1606,7 +1606,7 @@ stream_socket_client(): unable to connect to ssl://www.google.com:443 (Unknown e
 
 &lt;h1 id=&#34;原因:718cece10d0369f9449331b24890587d&#34;&gt;原因&lt;/h1&gt;
 
-&lt;p&gt;どうやら HTTP_Request::setConfig() で正しい接続設定を行えていない場合、&amp;#8221;Malformed response&amp;#8221; というエラーが出るようです。&lt;/p&gt;
+&lt;p&gt;どうやら HTTP_Request::setConfig() で正しい接続設定を行えていない場合、&amp;rdquo;Malformed response&amp;rdquo; というエラーが出るようです。&lt;/p&gt;
 
 &lt;p&gt;私の場合、オレオレ証明書の許可と社内プロキシの設定を行っていなかったためにはまってしまったようです。&lt;/p&gt;
 
@@ -1631,17 +1631,17 @@ $response = $req-&amp;gt;setUrl(&amp;quot;https://www.google.com/&amp;quot;)-&am
 print_r($response);     // HTTPレスポンスが出力される
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;ほかにも設定項目はあるので、&lt;a href=&#34;http://pear.php.net/manual/en/package.http.http-request2.config.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://pear.php.net/manual/en/package.http.http-request2.config.php&#39;, &#39;マニュアル&#39;]);&#34; &gt;マニュアル&lt;/a&gt;を参考に設定を疑ってみてはどうでしょうか。&lt;/p&gt;
+&lt;p&gt;ほかにも設定項目はあるので、&lt;a href=&#34;http://pear.php.net/manual/en/package.http.http-request2.config.php&#34;&gt;マニュアル&lt;/a&gt;を参考に設定を疑ってみてはどうでしょうか。&lt;/p&gt;
 
 &lt;h1 id=&#34;参考:718cece10d0369f9449331b24890587d&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://pear.php.net/manual/en/package.http.http-request2.config.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://pear.php.net/manual/en/package.http.http-request2.config.php&#39;, &#39;Manual :: Configuration parameters for HTTP_Request2&#39;]);&#34; &gt;Manual :: Configuration parameters for HTTP_Request2&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://pear.php.net/manual/en/package.http.http-request2.config.php&#34;&gt;Manual :: Configuration parameters for HTTP_Request2&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;setConfigで設定できる項目一覧&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/vivid_skid/20110822/1314013148&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://d.hatena.ne.jp/vivid_skid/20110822/1314013148&#39;, &#39;HTTP_Request2 でのSSL通信でのPOST送信 &amp;#8211; クマーのえんじにありんぐ&#39;]);&#34; &gt;HTTP_Request2 でのSSL通信でのPOST送信 &amp;#8211; クマーのえんじにありんぐ&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/vivid_skid/20110822/1314013148&#34;&gt;HTTP_Request2 でのSSL通信でのPOST送信 - クマーのえんじにありんぐ&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;オレオレ証明書の許可ではまってしまった方はこちら&lt;/li&gt;
@@ -1714,7 +1714,7 @@ install ok: channel://pear.php.net/HTTP_Request2-2.0.0
 &lt;h2 id=&#34;参考:ffbf1c0b8401971288a56b58bcdcb029&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/6442187/security-error-while-installing-phing-using-pear&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://stackoverflow.com/questions/6442187/security-error-while-installing-phing-using-pear&#39;, &#39;Security Error while installing phing using pear &amp;#8211; Stack Overflow&#39;]);&#34; &gt;Security Error while installing phing using pear &amp;#8211; Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/6442187/security-error-while-installing-phing-using-pear&#34;&gt;Security Error while installing phing using pear - Stack Overflow&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

@@ -27,11 +27,11 @@
 
 &lt;p&gt;そんな時は、mod_rewriteの RewriteCond ${QUERY_STRING} を使うと良いです。具体的には以下の用にします。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;amp;lt;IfModule mod_rewrite.c&amp;gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;IfModule mod_rewrite.c&amp;gt;
     RewriteEngine on
     RewriteCond %{QUERY_STRING} category=1
     RewriteRule ^/moja.php /moja.php?category=999 [R=301,L]
-&amp;amp;lt;/IfModule&amp;gt;
+&amp;lt;/IfModule&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;これでApacheを再起動すれば、リダイレクトが成功するようになっています。&lt;/p&gt;
@@ -39,8 +39,8 @@
 &lt;h3 id=&#34;参考:44dfa8f56fa655b8b85093045fdbf75d&#34;&gt;参考&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://muumoo.jp/news/2006/04/06/0redirect.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://muumoo.jp/news/2006/04/06/0redirect.html&#39;, &#39;URIのリダイレクト設定をやってみた(管理人日記) &amp;#8211; むぅもぉ.jp&#39;]);&#34; title=&#34;URIのリダイレクト設定をやってみた(管理人日記) - むぅもぉ.jp&#34;&gt;URIのリダイレクト設定をやってみた(管理人日記) &amp;#8211; むぅもぉ.jp&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://cubic9.com/Linux/Apache/%A5%E2%A5%B8%A5%E5%A1%BC%A5%EB/mod_rewrite/%B0%DC%C5%BE%A5%EA%A5%C0%A5%A4%A5%EC%A5%AF%A5%C8/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://cubic9.com/Linux/Apache/%A5%E2%A5%B8%A5%E5%A1%BC%A5%EB/mod_rewrite/%B0%DC%C5%BE%A5%EA%A5%C0%A5%A4%A5%EC%A5%AF%A5%C8/&#39;, &#39;Linux/Apache/モジュール/mod_rewrite/移転リダイレクト &amp;#8211; cubic9.com&#39;]);&#34; title=&#34;Linux/Apache/モジュール/mod_rewrite/移転リダイレクト - cubic9.com&#34;&gt;Linux/Apache/モジュール/mod_rewrite/移転リダイレクト &amp;#8211; cubic9.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://muumoo.jp/news/2006/04/06/0redirect.html&#34;&gt;URIのリダイレクト設定をやってみた(管理人日記) - むぅもぉ.jp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://cubic9.com/Linux/Apache/%A5%E2%A5%B8%A5%E5%A1%BC%A5%EB/mod_rewrite/%B0%DC%C5%BE%A5%EA%A5%C0%A5%A4%A5%EC%A5%AF%A5%C8/&#34;&gt;Linux/Apache/モジュール/mod_rewrite/移転リダイレクト - cubic9.com&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

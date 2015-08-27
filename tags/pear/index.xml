@@ -17,7 +17,7 @@
       <guid>http://1000k.github.io/2013/06/25/how-to-run-phpunit-under-php-5-2-environment/</guid>
       <description>
 
-&lt;p&gt;業務で使っているアプリが PHP 5.2 でしか動かず、仕方なく PHP 5.2 でも動く PHPUnit 3.6.11 を使っています。(&lt;a href=&#34;http://blog.1000k.net/2012/10/19/phpunit%E3%82%92%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%97%E3%81%9F%E3%82%89%E5%8B%95%E4%BD%9C%E3%81%97%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9F/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/2012/10/19/phpunit%E3%82%92%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%97%E3%81%9F%E3%82%89%E5%8B%95%E4%BD%9C%E3%81%97%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9F/&#39;, &#39;PHPUnit &gt;= 3.6.12 は PHP 5.3 が必要。&amp;rsquo;]);&amp;rdquo; title=&amp;ldquo;PHPUnitをアップグレードしたら動作しなくなった | 1000g&amp;rdquo;&amp;gt;PHPUnit &amp;gt;= 3.6.12 は PHP 5.3 が必要。&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;業務で使っているアプリが PHP 5.2 でしか動かず、仕方なく PHP 5.2 でも動く PHPUnit 3.6.11 を使っています。([= 3.6.12 は PHP 5.3 が必要。&amp;rsquo;]);&amp;rdquo; title=&amp;ldquo;PHPUnitをアップグレードしたら動作しなくなった | 1000g&amp;rdquo;&amp;gt;PHPUnit &amp;gt;= 3.6.12 は PHP 5.3 が必要。](&lt;a href=&#34;http://blog.1000k.net/2012/10/19/phpunit%E3%82%92%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%97%E3%81%9F%E3%82%89%E5%8B%95%E4%BD%9C%E3%81%97%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9F/))&#34;&gt;http://blog.1000k.net/2012/10/19/phpunit%E3%82%92%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%97%E3%81%9F%E3%82%89%E5%8B%95%E4%BD%9C%E3%81%97%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9F/))&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;最近になってサーバーのリプレースの時期になり、新しいビルドマシンに PHPUnit をインストールする羽目になったのですが、うまくバージョンが揃わず苦労しました。&lt;/p&gt;
 
@@ -33,7 +33,7 @@
 
 &lt;p&gt;そもそも5.2系はとっくに Deprecated なので使うべきではないのですが、業務で使うから仕方ない。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.php.net/releases/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.php.net/releases/&#39;, &#39;PHP: Releases&#39;]);&#34; &gt;PHP: Releases&lt;/a&gt; から 5.2.17 をダウンロードして、ソースからインストールします。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.php.net/releases/&#34;&gt;PHP: Releases&lt;/a&gt; から 5.2.17 をダウンロードして、ソースからインストールします。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;# wget http://museum.php.net/php5/php-5.2.17.tar.gz
 # tar -zxf php-5.2.17.tar.gz
@@ -43,7 +43,7 @@
 # make install
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;configure オプションは &lt;a href=&#34;http://www.php.net/manual/ja/configure.about.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.php.net/manual/ja/configure.about.php&#39;, &#39;PHP: 中心となる configure オプションのリスト &amp;#8211; Manual&#39;]);&#34; &gt;PHP: 中心となる configure オプションのリスト &amp;#8211; Manual&lt;/a&gt; を参考に。&lt;/p&gt;
+&lt;p&gt;configure オプションは &lt;a href=&#34;http://www.php.net/manual/ja/configure.about.php&#34;&gt;PHP: 中心となる configure オプションのリスト - Manual&lt;/a&gt; を参考に。&lt;/p&gt;
 
 &lt;h2 id=&#34;pear-をアップグレードする:a58652de0ea1df651ea37649dd28159c&#34;&gt;PEAR をアップグレードする&lt;/h2&gt;
 
@@ -84,7 +84,7 @@ PHPUnit 3.6.11 by Sebastian Bergmann.
 
 &lt;h2 id=&#34;ついでに関連ツールも入れる:a58652de0ea1df651ea37649dd28159c&#34;&gt;ついでに関連ツールも入れる&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://jenkins-php.org/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://jenkins-php.org/&#39;, &#39;Template for Jenkins Jobs for PHP Projects&#39;]);&#34; &gt;Template for Jenkins Jobs for PHP Projects&lt;/a&gt; で紹介されているツールは下記のコマンドでインストールできます。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://jenkins-php.org/&#34;&gt;Template for Jenkins Jobs for PHP Projects&lt;/a&gt; で紹介されているツールは下記のコマンドでインストールできます。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;# pear channel-add pear.pdepend.org
 # pear channel-add pear.phpmd.org
@@ -102,7 +102,7 @@ PHPUnit 3.6.11 by Sebastian Bergmann.
 &lt;h2 id=&#34;愚痴:a58652de0ea1df651ea37649dd28159c&#34;&gt;愚痴&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/composer/composer&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/composer/composer&#39;, &#39;Composer&#39;]);&#34; &gt;Composer&lt;/a&gt; を使えれば圧倒的に楽なのですが、PHP &amp;gt;= 5.3.2 でしか動かないので諦めました。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/composer/composer&#34;&gt;Composer&lt;/a&gt; を使えれば圧倒的に楽なのですが、PHP &amp;gt;= 5.3.2 でしか動かないので諦めました。&lt;/li&gt;
 &lt;li&gt;PEAR 遅い。&lt;/li&gt;
 &lt;li&gt;自動テストがあれば PHP をバージョンアップできるか検証できるのですが、ほとんどテストケースが無いのでそれも無理。コード総数は10万行。死にたい。&lt;/li&gt;
 &lt;/ul&gt;
@@ -143,8 +143,8 @@ Call Stack:
 &lt;p&gt;私の環境は PHP 5.2.x だったため、今回のエラーに出くわしました。原因は phpunit/PHP_Timer がバージョンアップしたせいでした。&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/sebastianbergmann/php-timer/blob/1.0.4/PHP/Timer/Autoload.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/sebastianbergmann/php-timer/blob/1.0.4/PHP/Timer/Autoload.php&#39;, &#39;phpunit/PHP_Timer-1.0.4&#39;]);&#34; title=&#34;php-timer/PHP/Timer/Autoload.php at 1.0.4 · sebastianbergmann/php-timer&#34;&gt;phpunit/PHP_Timer-1.0.4&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/sebastianbergmann/php-timer/blob/1.0.3/PHP/Timer/Autoload.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/sebastianbergmann/php-timer/blob/1.0.3/PHP/Timer/Autoload.php&#39;, &#39;phpunit/PHP_Timer-1.0.3&#39;]);&#34; title=&#34;php-timer/PHP/Timer/Autoload.php at 1.0.3 · sebastianbergmann/php-timer&#34;&gt;phpunit/PHP_Timer-1.0.3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/sebastianbergmann/php-timer/blob/1.0.4/PHP/Timer/Autoload.php&#34;&gt;phpunit/PHP_Timer-1.0.4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/sebastianbergmann/php-timer/blob/1.0.3/PHP/Timer/Autoload.php&#34;&gt;phpunit/PHP_Timer-1.0.3&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;上記のソースからおわかりのように、1.0.4 から匿名関数を使っています。これは PHP &amp;gt;= 5.3 でしか動きません。5.2系ではパースエラーになります。&lt;/p&gt;
@@ -158,7 +158,7 @@ Call Stack:
 &lt;pre&gt;&lt;code&gt;# pear uninstall -n phpunit/PHP_Timer
 &amp;quot;phpunit/PHP_Timer&amp;quot; can be optionally used by installed package pear/PHP_CodeSniffer
 warning: phpunit/PHP_Timer (version &amp;gt;= 1.0.2) is required by installed package &amp;quot;phpunit/phpcpd&amp;quot;
-warning: phpunit/PHP_Timer (version &amp;gt;= 1.0.1, version &amp;amp;lt;= 1.0.3) is required by installed package &amp;quot;phpunit/PHPUnit&amp;quot;
+warning: phpunit/PHP_Timer (version &amp;gt;= 1.0.1, version &amp;lt;= 1.0.3) is required by installed package &amp;quot;phpunit/PHPUnit&amp;quot;
 warning: phpunit/PHP_Timer should not be uninstalled, other installed packages depend on this package
 uninstall ok: channel://pear.phpunit.de/PHP_Timer-1.0.4
 
@@ -178,7 +178,7 @@ install ok: channel://pear.phpunit.de/PHP_Timer-1.0.3
 &lt;h2 id=&#34;参考:50be0dd242e143a3defa66c95863f49e&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://dustyreagan.com/downgrade-phpunit-3-6-to-3-5-15/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://dustyreagan.com/downgrade-phpunit-3-6-to-3-5-15/&#39;, &#39;How to Downgrade PHPUnit 3.6 to 3.5.15 | Dusty Reagan&#39;]);&#34; &gt;How to Downgrade PHPUnit 3.6 to 3.5.15 | Dusty Reagan&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://dustyreagan.com/downgrade-phpunit-3-6-to-3-5-15/&#34;&gt;How to Downgrade PHPUnit 3.6 to 3.5.15 | Dusty Reagan&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;pear パッケージのダウングレード方法はこちらを参考にしました。&lt;/li&gt;
@@ -208,7 +208,7 @@ stream_socket_client(): unable to connect to ssl://www.google.com:443 (Unknown e
 
 &lt;h1 id=&#34;原因:718cece10d0369f9449331b24890587d&#34;&gt;原因&lt;/h1&gt;
 
-&lt;p&gt;どうやら HTTP_Request::setConfig() で正しい接続設定を行えていない場合、&amp;#8221;Malformed response&amp;#8221; というエラーが出るようです。&lt;/p&gt;
+&lt;p&gt;どうやら HTTP_Request::setConfig() で正しい接続設定を行えていない場合、&amp;rdquo;Malformed response&amp;rdquo; というエラーが出るようです。&lt;/p&gt;
 
 &lt;p&gt;私の場合、オレオレ証明書の許可と社内プロキシの設定を行っていなかったためにはまってしまったようです。&lt;/p&gt;
 
@@ -233,17 +233,17 @@ $response = $req-&amp;gt;setUrl(&amp;quot;https://www.google.com/&amp;quot;)-&am
 print_r($response);     // HTTPレスポンスが出力される
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;ほかにも設定項目はあるので、&lt;a href=&#34;http://pear.php.net/manual/en/package.http.http-request2.config.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://pear.php.net/manual/en/package.http.http-request2.config.php&#39;, &#39;マニュアル&#39;]);&#34; &gt;マニュアル&lt;/a&gt;を参考に設定を疑ってみてはどうでしょうか。&lt;/p&gt;
+&lt;p&gt;ほかにも設定項目はあるので、&lt;a href=&#34;http://pear.php.net/manual/en/package.http.http-request2.config.php&#34;&gt;マニュアル&lt;/a&gt;を参考に設定を疑ってみてはどうでしょうか。&lt;/p&gt;
 
 &lt;h1 id=&#34;参考:718cece10d0369f9449331b24890587d&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://pear.php.net/manual/en/package.http.http-request2.config.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://pear.php.net/manual/en/package.http.http-request2.config.php&#39;, &#39;Manual :: Configuration parameters for HTTP_Request2&#39;]);&#34; &gt;Manual :: Configuration parameters for HTTP_Request2&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://pear.php.net/manual/en/package.http.http-request2.config.php&#34;&gt;Manual :: Configuration parameters for HTTP_Request2&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;setConfigで設定できる項目一覧&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/vivid_skid/20110822/1314013148&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://d.hatena.ne.jp/vivid_skid/20110822/1314013148&#39;, &#39;HTTP_Request2 でのSSL通信でのPOST送信 &amp;#8211; クマーのえんじにありんぐ&#39;]);&#34; &gt;HTTP_Request2 でのSSL通信でのPOST送信 &amp;#8211; クマーのえんじにありんぐ&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/vivid_skid/20110822/1314013148&#34;&gt;HTTP_Request2 でのSSL通信でのPOST送信 - クマーのえんじにありんぐ&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;オレオレ証明書の許可ではまってしまった方はこちら&lt;/li&gt;
@@ -316,7 +316,7 @@ install ok: channel://pear.php.net/HTTP_Request2-2.0.0
 &lt;h2 id=&#34;参考:ffbf1c0b8401971288a56b58bcdcb029&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/6442187/security-error-while-installing-phing-using-pear&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://stackoverflow.com/questions/6442187/security-error-while-installing-phing-using-pear&#39;, &#39;Security Error while installing phing using pear &amp;#8211; Stack Overflow&#39;]);&#34; &gt;Security Error while installing phing using pear &amp;#8211; Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/6442187/security-error-while-installing-phing-using-pear&#34;&gt;Security Error while installing phing using pear - Stack Overflow&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

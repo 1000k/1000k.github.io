@@ -15,18 +15,12 @@
       <pubDate>Sun, 16 May 2010 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2010/05/17/firefox-addon-copy-title-and-url/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://addons.mozilla.org/ja/firefox/addon/142/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://addons.mozilla.org/ja/firefox/addon/142/&#39;, &#39;Make Link :: Add-ons for Firefox&#39;]);&#34; &gt;Make Link :: Add-ons for Firefox&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://addons.mozilla.org/ja/firefox/addon/142/&#34;&gt;Make Link :: Add-ons for Firefox&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;ウインドウを右クリックして出るメニューをクリックするだけで、簡単に下のようなリンクをコピーできる&lt;/li&gt;
 &lt;li&gt;独自フォーマットを作成することも可能&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;[html]&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://addons.mozilla.org/ja/firefox/addon/142/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://addons.mozilla.org/ja/firefox/addon/142/&#39;, &#39;Make Link :: Add-ons for Firefox&#39;]);&#34; &gt;Make Link :: Add-ons for Firefox&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;[/html]&lt;/p&gt;
 </description>
     </item>
     

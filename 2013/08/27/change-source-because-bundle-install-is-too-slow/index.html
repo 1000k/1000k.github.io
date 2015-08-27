@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -45,7 +50,7 @@
 
 <p>Rails 4 アプリを作ろうとして <code>rails new</code> コマンドを叩いたら、<code>bundle install</code> のフェーズが永遠に終わらず老人になりそうでした。</p>
 
-<p>どうやら gem リポジトリの <a href="http://rubygems.org" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://rubygems.org', 'http://rubygems.org']);" ><a href="http://rubygems.org">http://rubygems.org</a></a> のレスポンスが遅すぎるようです。</p>
+<p>どうやら gem リポジトリの <a href="http://rubygems.org">http://rubygems.org</a> のレスポンスが遅すぎるようです。</p>
 
 <p>そこで、Rails アプリの作成時は <code>bundler install</code> を省略し、Gemfile をいじってもっと早いリポジトリを参照するように変更したら、無事インストールできました。</p>
 
@@ -77,8 +82,8 @@ source &quot;http://bundler-api.herokuapp.com&quot;
 <h2 id="参考:52707943b292ea793cda924d2a6b7275">参考</h2>
 
 <ul>
-<li><a href="http://qiita.com/quattro_4/items/fcc2ff8b04c43229a2fb" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://qiita.com/quattro_4/items/fcc2ff8b04c43229a2fb', 'Ruby &#8211; bundlerが遅い(Error Bundler::HTTPError)のを解決 &#8211; Qiita [キータ]']);" >Ruby &#8211; bundlerが遅い(Error Bundler::HTTPError)のを解決 &#8211; Qiita [キータ]</a></li>
-<li><a href="http://www.ideaxidea.com/archives/2013/08/resolv.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.ideaxidea.com/archives/2013/08/resolv.html', 'Vagrant+VirtualBox（CentOS6）で「gem install rails」がすっごい遅い時の対処法 | IDEA*IDEA']);" >Vagrant+VirtualBox（CentOS6）で「gem install rails」がすっごい遅い時の対処法 | IDEA*IDEA</a></li>
+<li><a href="http://qiita.com/quattro_4/items/fcc2ff8b04c43229a2fb">Ruby - bundlerが遅い(Error Bundler::HTTPError)のを解決 - Qiita [キータ]</a></li>
+<li><a href="http://www.ideaxidea.com/archives/2013/08/resolv.html">Vagrant+VirtualBox（CentOS6）で「gem install rails」がすっごい遅い時の対処法 | IDEA*IDEA</a></li>
 </ul>
 
         </div>

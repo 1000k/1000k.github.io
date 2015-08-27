@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -55,10 +60,10 @@
 
 <pre><code>window.onload = function() {
     var ua = navigator.userAgent.toLowerCase();
-    var is_safari = ua.indexOf('safari') &gt; -1 &amp;#038;&amp;#038; ua.indexOf('version') &gt; -1;
+    var is_safari = ua.indexOf('safari') &gt; -1 &amp;&amp; ua.indexOf('version') &gt; -1;
     var version = is_safari ? ua.match(/version\/([\d\.]+)/i)[1].substr(0,1) : null;
 
-    if (is_safari &amp;#038;&amp;#038; version == '5') {
+    if (is_safari &amp;&amp; version == '5') {
         // Safari 5.xユーザー向けの処理
         alert('You use Safari 5.x');
     } else {
@@ -70,12 +75,12 @@
 <h2 id="参考:5c20e64dfc0ac35ddade7fa8fcd267b4">参考</h2>
 
 <ul>
-<li><a href="http://www.useragentstring.com/pages/useragentstring.php" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.useragentstring.com/pages/useragentstring.php', 'UserAgentString.com &#8211; List of User Agent Strings']);" title="UserAgentString.com - List of User Agent Strings">UserAgentString.com &#8211; List of User Agent Strings</a>
+<li><a href="http://www.useragentstring.com/pages/useragentstring.php">UserAgentString.com - List of User Agent Strings</a>
 
 <ul>
 <li>各ブラウザのUserAgent文字列の一覧。</li>
-<li><a href="http://www.useragentstring.com/pages/Safari/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.useragentstring.com/pages/Safari/', 'Safari']);" title="UserAgentString.com - List of Safari User Agent Strings">Safari</a></li>
-<li><a href="http://www.useragentstring.com/pages/Chrome/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.useragentstring.com/pages/Chrome/', 'Chrome']);" title="UserAgentString.com - List of Chrome User Agent Strings">Chrome</a></li>
+<li><a href="http://www.useragentstring.com/pages/Safari/">Safari</a></li>
+<li><a href="http://www.useragentstring.com/pages/Chrome/">Chrome</a></li>
 </ul></li>
 </ul>
 

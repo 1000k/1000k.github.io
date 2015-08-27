@@ -21,7 +21,7 @@
 
 &lt;p&gt;基本的な構造&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;// /app/vendors/shell/uso.php
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;// /app/vendors/shell/uso.php
 &amp;lt;?php
 class UsoShell extends Shell {
     // モデルを使う場合、配列$usesで指定する
@@ -76,8 +76,8 @@ Error: 異常発見
 &lt;h3 id=&#34;参考:bdb7996c2533e0f70688b6e9484f46be&#34;&gt;参考&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/brtRiver/20090427/1240802118&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://d.hatena.ne.jp/brtRiver/20090427/1240802118&#39;, &#39;CakePHPコンソールのシェルを作るときのメモ &amp;#8211; ぷぎがぽぎ&#39;]);&#34; title=&#34;CakePHPコンソールのシェルを作るときのメモ - ぷぎがぽぎ&#34;&gt;CakePHPコンソールのシェルを作るときのメモ &amp;#8211; ぷぎがぽぎ&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://book.cakephp.org/ja/view/110/Creating-Shells-Tasks&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://book.cakephp.org/ja/view/110/Creating-Shells-Tasks&#39;, &#39;シェルやタスクを作成する :: CakePHP コンソール :: CakePHPによる開発 :: マニュアル :: 1.2コレクション :: The Cookbook&#39;]);&#34; title=&#34;シェルやタスクを作成する :: CakePHP コンソール :: CakePHPによる開発 :: マニュアル :: 1.2コレクション :: The Cookbook&#34;&gt;シェルやタスクを作成する :: CakePHP コンソール :: CakePHPによる開発 :: マニュアル :: 1.2コレクション :: The Cookbook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/brtRiver/20090427/1240802118&#34;&gt;CakePHPコンソールのシェルを作るときのメモ - ぷぎがぽぎ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://book.cakephp.org/ja/view/110/Creating-Shells-Tasks&#34;&gt;シェルやタスクを作成する :: CakePHP コンソール :: CakePHPによる開発 :: マニュアル :: 1.2コレクション :: The Cookbook&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

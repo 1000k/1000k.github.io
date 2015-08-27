@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -43,13 +48,13 @@
         <div class="post-content">
           
 
-<p>CentOS 6.3 にて、<a href="http://jenkins-php.org/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://jenkins-php.org/', 'Template for Jenkins Jobs for PHP Projects']);" >Template for Jenkins Jobs for PHP Projects</a> にある ant タスク (build.xml) 通りに PHPUnit タスクを実行しようとしたら、エラーが出てしまいました。</p>
+<p>CentOS 6.3 にて、<a href="http://jenkins-php.org/">Template for Jenkins Jobs for PHP Projects</a> にある ant タスク (build.xml) 通りに PHPUnit タスクを実行しようとしたら、エラーが出てしまいました。</p>
 
 <p>かなり長時間ハマったのでメモを残しておきます。</p>
 
 <h2 id="症状:135291858de89f6329950b22fca515d3">症状</h2>
 
-<p>CentOS 6.3 にて、<a href="http://jenkins-php.org/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://jenkins-php.org/', 'Template for Jenkins Jobs for PHP Projects']);" >Template for Jenkins Jobs for PHP Projects</a> にある以下のタスクを実行するとエラーが出ました。<code>
+<p>CentOS 6.3 にて、<a href="http://jenkins-php.org/">Template for Jenkins Jobs for PHP Projects</a> にある以下のタスクを実行するとエラーが出ました。<code>
  &lt;target name=&quot;phpunit&quot; description=&quot;Run unit tests using PHPUnit and generates junit.xml and clover.xml&quot;&gt; &lt;exec executable=&quot;phpunit&quot; failonerror=&quot;true&quot;/&gt; &lt;/target&gt;</code></p>
 
 <p>エラーメッセージ:<code>
@@ -71,13 +76,13 @@ export PATH=$PATH:/usr/local/bin
 
 <p>また、下記のように ant タスク内で PATH を変更するシェルを走らせてもダメでした。</p>
 
-<pre><code>&amp;lt;target name=&quot;setenv&quot;&gt;
-   &amp;lt;exec executable=&quot;/bin/sh&quot;&gt;
-     &amp;lt;arg line=&quot;./setenv.sh&quot;/&gt;
-   &amp;lt;/exec&gt;
- &amp;lt;/target&gt;
+<pre><code>&lt;target name=&quot;setenv&quot;&gt;
+   &lt;exec executable=&quot;/bin/sh&quot;&gt;
+     &lt;arg line=&quot;./setenv.sh&quot;/&gt;
+   &lt;/exec&gt;
+ &lt;/target&gt;
 
- &amp;lt;target name=&quot;env&quot;&gt;&amp;lt;exec executable=&quot;env&quot; /&gt;&amp;lt;/target&gt;
+ &lt;target name=&quot;env&quot;&gt;&lt;exec executable=&quot;env&quot; /&gt;&lt;/target&gt;
 </code></pre>
 
 <p>setenv.sh の中身は下記。</p>
@@ -101,7 +106,7 @@ env:
      [exec] HISTSIZE=1000
      [exec] USER=jenkins
      ...
-     [exec] PATH=/sbin:/bin:/usr/sbin:/usr/bin      &amp;lt;- /usr/local/bin が追加されていない
+     [exec] PATH=/sbin:/bin:/usr/sbin:/usr/bin      &lt;- /usr/local/bin が追加されていない
 </code></pre>
 
 <p>とういわけで、setenv で環境変数をセットする方法はボツでした。</p>
@@ -114,7 +119,18 @@ env:
 
 <p><code>Jenkinsの管理 &gt; システムの設定 &gt; グローバルプロパティ &gt; 環境変数</code> にて、以下のように設定します。</p>
 
-<p><a href="http://blog.1000k.net/wp-content/uploads/jenkins_global_property.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blog.1000k.net/wp-content/uploads/jenkins_global_property.png', '']);" ><img src="http://blog.1000k.net/wp-content/uploads/jenkins_global_property-300x191.png" alt="Jenkins グローバルプロパティ" width="300" height="191" class="alignnone size-medium wp-image-1507" /></a></p>
+<p><a href="http://blog.1000k.net/wp-content/uploads/jenkins_global_property.png">
+<figure >
+    
+        <img src="/img/jenkins_global_property-300x191.png"  />
+    
+    
+    <figcaption>
+        
+    </figcaption>
+    
+</figure>
+</a></p>
 
 <ul>
 <li>キー: <code>PATH</code></li>
@@ -138,9 +154,9 @@ env:
 <h2 id="参考:135291858de89f6329950b22fca515d3">参考</h2>
 
 <ul>
-<li><a href="http://deginzabi163.wordpress.com/2011/04/23/%E8%A6%9A%E6%9B%B8fedora-14%E3%81%AEsudo%E3%81%8Cpath%E7%92%B0%E5%A2%83%E5%A4%89%E6%95%B0%E3%82%92%E6%BD%B0%E3%81%99%E3%81%AE%E3%81%8C%E9%AC%B1%E9%99%B6%E3%81%97%E3%81%84%EF%BC%86%E5%AF%BE%E7%AD%96/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://deginzabi163.wordpress.com/2011/04/23/%E8%A6%9A%E6%9B%B8fedora-14%E3%81%AEsudo%E3%81%8Cpath%E7%92%B0%E5%A2%83%E5%A4%89%E6%95%B0%E3%82%92%E6%BD%B0%E3%81%99%E3%81%AE%E3%81%8C%E9%AC%B1%E9%99%B6%E3%81%97%E3%81%84%EF%BC%86%E5%AF%BE%E7%AD%96/', '[覚書]Fedora 14のsudoでPATHがアレで鬱陶しい＆対策 | Deginzabi163\'s Blog']);" >[覚書]Fedora 14のsudoでPATHがアレで鬱陶しい＆対策 | Deginzabi163&rsquo;s Blog</a></li>
-<li><a href="http://fishrimper.blogspot.jp/2012/12/sudo-path.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://fishrimper.blogspot.jp/2012/12/sudo-path.html', 'IT とかその他もろもろ: sudo した時の PATH']);" >IT とかその他もろもろ: sudo した時の PATH</a></li>
-<li><a href="http://superuser.com/questions/98686/passing-path-through-sudo" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://superuser.com/questions/98686/passing-path-through-sudo', 'linux - Passing PATH through sudo - Super User']);" >linux - Passing PATH through sudo - Super User</a></li>
+<li><a href="http://deginzabi163.wordpress.com/2011/04/23/%E8%A6%9A%E6%9B%B8fedora-14%E3%81%AEsudo%E3%81%8Cpath%E7%92%B0%E5%A2%83%E5%A4%89%E6%95%B0%E3%82%92%E6%BD%B0%E3%81%99%E3%81%AE%E3%81%8C%E9%AC%B1%E9%99%B6%E3%81%97%E3%81%84%EF%BC%86%E5%AF%BE%E7%AD%96/">[覚書]Fedora 14のsudoでPATHがアレで鬱陶しい＆対策 | Deginzabi163&rsquo;s Blog</a></li>
+<li><a href="http://fishrimper.blogspot.jp/2012/12/sudo-path.html">IT とかその他もろもろ: sudo した時の PATH</a></li>
+<li><a href="http://superuser.com/questions/98686/passing-path-through-sudo">linux - Passing PATH through sudo - Super User</a></li>
 </ul>
 
         </div>

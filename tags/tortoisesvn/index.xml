@@ -45,7 +45,7 @@
 
 &lt;p&gt;キーワードは「&lt;strong&gt;$Id$&lt;/strong&gt;」のように、「$」で囲みます。&lt;/p&gt;
 
-&lt;p&gt;使用可能なキーワードは &lt;a href=&#34;http://wiki.bit-hive.com/tomizoo/pg/Subversion%20%A5%AD%A1%BC%A5%EF%A1%BC%A5%C9%A4%CE%C5%B8%B3%AB&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://wiki.bit-hive.com/tomizoo/pg/Subversion%20%A5%AD%A1%BC%A5%EF%A1%BC%A5%C9%A4%CE%C5%B8%B3%AB&#39;, &#39;Subversion キーワードの展開 &amp;#8211; とみぞーノート&#39;]);&#34; title=&#34;Subversion キーワードの展開 - とみぞーノート&#34;&gt;Subversion キーワードの展開 &amp;#8211; とみぞーノート&lt;/a&gt; あたりを参考にしてください。&lt;/p&gt;
+&lt;p&gt;使用可能なキーワードは &lt;a href=&#34;http://wiki.bit-hive.com/tomizoo/pg/Subversion%20%A5%AD%A1%BC%A5%EF%A1%BC%A5%C9%A4%CE%C5%B8%B3%AB&#34;&gt;Subversion キーワードの展開 - とみぞーノート&lt;/a&gt; あたりを参考にしてください。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;/**
  * テストクラス
@@ -93,9 +93,9 @@ class Uso
 &lt;h2 id=&#34;参考:9b148e080555f5a4ead4adee49ce465c&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://wiki.bit-hive.com/tomizoo/pg/Subversion%20%A5%AD%A1%BC%A5%EF%A1%BC%A5%C9%A4%CE%C5%B8%B3%AB&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://wiki.bit-hive.com/tomizoo/pg/Subversion%20%A5%AD%A1%BC%A5%EF%A1%BC%A5%C9%A4%CE%C5%B8%B3%AB&#39;, &#39;Subversion キーワードの展開 &amp;#8211; とみぞーノート&#39;]);&#34; title=&#34;Subversion キーワードの展開 - とみぞーノート&#34;&gt;Subversion キーワードの展開 &amp;#8211; とみぞーノート&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://bokunomichi.blogspot.com/2007/03/subversiontortoisesvn.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://bokunomichi.blogspot.com/2007/03/subversiontortoisesvn.html&#39;, &#39;僕の道(仮)　devlog: Subversion　クライアントの設定（TortoiseSVN）&#39;]);&#34; title=&#34;僕の道(仮)　devlog: Subversion　クライアントの設定（TortoiseSVN）&#34;&gt;僕の道(仮)　devlog: Subversion　クライアントの設定（TortoiseSVN）&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://cheebow.info/chemt/archives/2006/03/tortoisesvn.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://cheebow.info/chemt/archives/2006/03/tortoisesvn.html&#39;, &#39;ヒビノアワ: TortoiseSVNでキーワードアンカーの設定をする&#39;]);&#34; title=&#34;ヒビノアワ: TortoiseSVNでキーワードアンカーの設定をする&#34;&gt;ヒビノアワ: TortoiseSVNでキーワードアンカーの設定をする&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://wiki.bit-hive.com/tomizoo/pg/Subversion%20%A5%AD%A1%BC%A5%EF%A1%BC%A5%C9%A4%CE%C5%B8%B3%AB&#34;&gt;Subversion キーワードの展開 - とみぞーノート&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://bokunomichi.blogspot.com/2007/03/subversiontortoisesvn.html&#34;&gt;僕の道(仮)　devlog: Subversion　クライアントの設定（TortoiseSVN）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://cheebow.info/chemt/archives/2006/03/tortoisesvn.html&#34;&gt;ヒビノアワ: TortoiseSVNでキーワードアンカーの設定をする&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

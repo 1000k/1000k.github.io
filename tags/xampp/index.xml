@@ -19,15 +19,22 @@
 
 &lt;p&gt;XAMPPにはTomcatが同梱されているため、JenkinsのWARファイルをデプロイすれば、すぐにCI環境が構築できます。&lt;/p&gt;
 
-&lt;p&gt;以下、&lt;a href=&#34;http://www.apachefriends.org/jp/xampp-windows.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.apachefriends.org/jp/xampp-windows.html&#39;, &#39;XAMPP for Windows 1.8.0&#39;]);&#34; title=&#34;apache friends - xampp for windows&#34;&gt;XAMPP for Windows 1.8.0&lt;/a&gt; を使ってJenkins環境を構築する手順を書きます。&lt;/p&gt;
+&lt;p&gt;以下、&lt;a href=&#34;http://www.apachefriends.org/jp/xampp-windows.html&#34;&gt;XAMPP for Windows 1.8.0&lt;/a&gt; を使ってJenkins環境を構築する手順を書きます。&lt;/p&gt;
 
 &lt;h2 id=&#34;手順:a2b978718054ff7ee3bcbdd86b4ab357&#34;&gt;手順&lt;/h2&gt;
 
 &lt;h3 id=&#34;jenkinsをダウンロードする:a2b978718054ff7ee3bcbdd86b4ab357&#34;&gt;Jenkinsをダウンロードする&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_homepage.png&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/wp-content/uploads/jenkins_homepage.png&#39;, &#39;&#39;]);&#34; &gt;&lt;img src=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_homepage.png&#34; alt=&#34;&#34; title=&#34;Jenkinsホームページ&#34; width=&#34;600&#34; height=&#34;553&#34; class=&#34;alignnone size-full wp-image-1096&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_homepage.png&#34;&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://1000k.github.io/img/jenkins_homepage.png&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://jenkins-ci.org/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://jenkins-ci.org/&#39;, &#39;Jenkinsのホームページ&#39;]);&#34; &gt;Jenkinsのホームページ&lt;/a&gt;から最新のwarアーカイブをダウンロードします。「Latest and greatest」をクリックして jenkins.war をダウンロードしてください。&lt;strong&gt;Windowsパッケージではない&lt;/strong&gt;ので注意してください。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://jenkins-ci.org/&#34;&gt;Jenkinsのホームページ&lt;/a&gt;から最新のwarアーカイブをダウンロードします。「Latest and greatest」をクリックして jenkins.war をダウンロードしてください。&lt;strong&gt;Windowsパッケージではない&lt;/strong&gt;ので注意してください。&lt;/p&gt;
 
 &lt;h3 id=&#34;tomcatの管理者ユーザーを設定する:a2b978718054ff7ee3bcbdd86b4ab357&#34;&gt;Tomcatの管理者ユーザーを設定する&lt;/h3&gt;
 
@@ -41,7 +48,14 @@
 
 &lt;h3 id=&#34;tomcatを起動する:a2b978718054ff7ee3bcbdd86b4ab357&#34;&gt;Tomcatを起動する&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/xampp_control_panel.png&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/wp-content/uploads/xampp_control_panel.png&#39;, &#39;&#39;]);&#34; &gt;&lt;img src=&#34;http://blog.1000k.net/wp-content/uploads/xampp_control_panel.png&#34; alt=&#34;&#34; title=&#34;XAMPPコントロールパネル&#34; width=&#34;714&#34; height=&#34;450&#34; class=&#34;alignnone size-full wp-image-1086&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/xampp_control_panel.png&#34;&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://1000k.github.io/img/xampp_control_panel.png&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;XAMPPコントロールパネルを起動し、Tomcatの横にある「Start」ボタンをクリックするだけです。&lt;/p&gt;
 
@@ -49,19 +63,40 @@
 
 &lt;h3 id=&#34;管理画面にログインする:a2b978718054ff7ee3bcbdd86b4ab357&#34;&gt;管理画面にログインする&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/tomcat_top.png&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/wp-content/uploads/tomcat_top.png&#39;, &#39;&#39;]);&#34; &gt;&lt;img src=&#34;http://blog.1000k.net/wp-content/uploads/tomcat_top.png&#34; alt=&#34;&#34; title=&#34;Tomcatトップページ&#34; width=&#34;600&#34; height=&#34;433&#34; class=&#34;alignnone size-full wp-image-1087&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/tomcat_top.png&#34;&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://1000k.github.io/img/tomcat_top.png&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;「Manage App」をクリックして管理画面にログインします。認証パスワードは先ほど設定した通り、ユーザー名が「_tomcat_」、パスワードが「_s3cret_」となります。&lt;/p&gt;
 
 &lt;h3 id=&#34;warファイルをデプロイする:a2b978718054ff7ee3bcbdd86b4ab357&#34;&gt;warファイルをデプロイする&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/tomcat_manage.png&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/wp-content/uploads/tomcat_manage.png&#39;, &#39;&#39;]);&#34; &gt;&lt;img src=&#34;http://blog.1000k.net/wp-content/uploads/tomcat_manage.png&#34; alt=&#34;&#34; title=&#34;Tomcatデプロイ&#34; width=&#34;600&#34; height=&#34;174&#34; class=&#34;alignnone size-full wp-image-1088&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/tomcat_manage.png&#34;&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://1000k.github.io/img/tomcat_manage.png&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;「warファイルの配備」に先ほどダウンロードした jenkins.war を指定し、「配備」をクリックします。&lt;/p&gt;
 
 &lt;h3 id=&#34;jenkinsの画面を確認する:a2b978718054ff7ee3bcbdd86b4ab357&#34;&gt;Jenkinsの画面を確認する&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_dashboard.png&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/wp-content/uploads/jenkins_dashboard.png&#39;, &#39;&#39;]);&#34; &gt;&lt;img src=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_dashboard.png&#34; alt=&#34;&#34; title=&#34;Jenkinsダッシュボード&#34; width=&#34;600&#34; height=&#34;271&#34; class=&#34;alignnone size-full wp-image-1090&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/jenkins_dashboard.png&#34;&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://1000k.github.io/img/jenkins_dashboard.png&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;以上で完了です。&lt;a href=&#34;http://localhost:8080/jenkins/&#34;&gt;http://localhost:8080/jenkins/&lt;/a&gt; にアクセスすれば Jenkins のトップ画面が表示されます。&lt;/p&gt;
 </description>
@@ -96,7 +131,7 @@ htpasswd.exe -bc {パスワード生成先のパス} {ID} {パスワード}
 
 &lt;h2 id=&#34;参考:cf50432cf2a4769fc0daace11f9afc31&#34;&gt;参考&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://d.hatena.ne.jp/ise_daisuke/20080412/1207978885&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://d.hatena.ne.jp/ise_daisuke/20080412/1207978885&#39;, &#39;xamppでローカルでBasic認証 &amp;#8211; 絶対に読んではいけない日記&#39;]);&#34; &gt;xamppでローカルでBasic認証 &amp;#8211; 絶対に読んではいけない日記&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://d.hatena.ne.jp/ise_daisuke/20080412/1207978885&#34;&gt;xamppでローカルでBasic認証 - 絶対に読んではいけない日記&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

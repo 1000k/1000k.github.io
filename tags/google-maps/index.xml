@@ -17,11 +17,33 @@
       <guid>http://1000k.github.io/2013/12/17/display-google-maps-showing-fixed-header-and-footer/</guid>
       <description>
 
-&lt;p&gt;&lt;a href=&#34;http://jsfiddle.net/893s2/2/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://jsfiddle.net/893s2/2/&#39;, &#39;このデモ&#39;]);&#34; &gt;このデモ&lt;/a&gt;を見れば、何をやりたいかすぐ把握できると思います。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://jsfiddle.net/893s2/2/&#34;&gt;このデモ&lt;/a&gt;を見れば、何をやりたいかすぐ把握できると思います。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/map_1.png&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/wp-content/uploads/map_1.png&#39;, &#39;&#39;]);&#34; &gt;&lt;img src=&#34;http://blog.1000k.net/wp-content/uploads/map_1-300x225.png&#34; alt=&#34;map_1&#34; width=&#34;300&#34; height=&#34;225&#34; class=&#34;alignnone size-medium wp-image-1683&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/map_1.png&#34;&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://1000k.github.io/img/map_1-300x225.png&#34;  /&gt;
+    
+    
+    &lt;figcaption&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/map_2.png&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/wp-content/uploads/map_2.png&#39;, &#39;&#39;]);&#34; &gt;&lt;img src=&#34;http://blog.1000k.net/wp-content/uploads/map_2-190x300.png&#34; alt=&#34;map_2&#34; width=&#34;190&#34; height=&#34;300&#34; class=&#34;alignnone size-medium wp-image-1684&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/map_2.png&#34;&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://1000k.github.io/img/map_2-190x300.png&#34;  /&gt;
+    
+    
+    &lt;figcaption&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;ウィンドウの幅や高さを変えても、ヘッダーとフッターは常に同じ高さのままで、マップの部分はウィンドウサイズに合うように伸縮しています。&lt;/p&gt;
 
@@ -39,7 +61,7 @@
 
 
 &amp;lt;div id=&amp;quot;container&amp;quot;&amp;gt;
-  &amp;amp;lt;header&amp;gt;header&amp;amp;lt;/header&amp;gt;
+  &amp;lt;header&amp;gt;header&amp;lt;/header&amp;gt;
 
 
 
@@ -50,7 +72,7 @@
 
   &amp;lt;/div&amp;gt;
 
-      &amp;amp;lt;footer&amp;gt;This footer is absolutely positioned&amp;amp;lt;/footer&amp;gt;
+      &amp;lt;footer&amp;gt;This footer is absolutely positioned&amp;lt;/footer&amp;gt;
 
 &amp;lt;/div&amp;gt;
 
@@ -123,7 +145,7 @@ footer {
 &lt;h2 id=&#34;参考:58e354fc35f3ca4266379278104f5f1b&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/2821596/100-height-with-fixed-footer-and-embedded-google-map&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://stackoverflow.com/questions/2821596/100-height-with-fixed-footer-and-embedded-google-map&#39;, &#39;html &amp;#8211; 100% height with fixed footer and embedded Google Map &amp;#8211; Stack Overflow&#39;]);&#34; &gt;html &amp;#8211; 100% height with fixed footer and embedded Google Map &amp;#8211; Stack Overflow&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/2821596/100-height-with-fixed-footer-and-embedded-google-map&#34;&gt;html - 100% height with fixed footer and embedded Google Map - Stack Overflow&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;今回のデモは、この Q&amp;amp;A に書かれているコードをシンプルにしただけです。&lt;/li&gt;
@@ -196,7 +218,7 @@ footer {
 
 
 &amp;lt;div data-role=&amp;quot;dialog&amp;quot; data-theme=&amp;quot;a&amp;quot; id=&amp;quot;page2&amp;quot;&amp;gt;
-  &amp;amp;lt;/form&amp;gt;
+  &amp;lt;/form&amp;gt;
 
           &amp;lt;a href=&amp;quot;gmap1.html&amp;quot; data-role=&amp;quot;button&amp;quot; data-rel=&amp;quot;back&amp;quot;&amp;gt;back to gmap1.html&amp;lt;/a&amp;gt;
 
@@ -237,12 +259,12 @@ footer {
 &lt;h2 id=&#34;参考:463549662c038eb75ba927c71eba6045&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://jquerymobile.com/test/docs/api/globalconfig.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://jquerymobile.com/test/docs/api/globalconfig.html&#39;, &#39;jQuery Mobile Docs &amp;#8211; Configuring default settings&#39;]);&#34; &gt;jQuery Mobile Docs &amp;#8211; Configuring default settings&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://jquerymobile.com/test/docs/api/globalconfig.html&#34;&gt;jQuery Mobile Docs - Configuring default settings&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;$.mobile.ajaxEnabled のリファレンス。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://code.google.com/p/jquery-ui-map/wiki/jquery_ui_map_v_3_tutorial&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://code.google.com/p/jquery-ui-map/wiki/jquery_ui_map_v_3_tutorial&#39;, &#39;jquery_ui_map_v_3_tutorial &amp;#8211; jquery-ui-map &amp;#8211; Google map v3 plugin for jQuery and jQuery Mobile &amp;#8211; Google Project Hosting&#39;]);&#34; &gt;jquery_ui_map_v_3_tutorial &amp;#8211; jquery-ui-map &amp;#8211; Google map v3 plugin for jQuery and jQuery Mobile &amp;#8211; Google Project Hosting&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://code.google.com/p/jquery-ui-map/wiki/jquery_ui_map_v_3_tutorial&#34;&gt;jquery_ui_map_v_3_tutorial - jquery-ui-map - Google map v3 plugin for jQuery and jQuery Mobile - Google Project Hosting&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;「Help, my map is rendered incorrectly! (jQM)」に同じ不具合の対処法が書いてありました。&lt;/li&gt;

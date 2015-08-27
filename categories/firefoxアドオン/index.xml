@@ -27,8 +27,8 @@
 
 &lt;ul&gt;
 &lt;li&gt;FireFox 3.x&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://seleniumhq.org/download/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://seleniumhq.org/download/&#39;, &#39;Selenium IDE&#39;]);&#34; title=&#34;Selenium IDE&#34;&gt;Selenium IDE&lt;/a&gt; (執筆時 バージョン1.0.7)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://pearlcrescent.com/products/pagesaver/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://pearlcrescent.com/products/pagesaver/&#39;, &#39;Pearl Crescent Page Saver&#39;]);&#34; title=&#34;Pearl Crescent Page Saver&#34;&gt;Pearl Crescent Page Saver&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://seleniumhq.org/download/&#34;&gt;Selenium IDE&lt;/a&gt; (執筆時 バージョン1.0.7)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://pearlcrescent.com/products/pagesaver/&#34;&gt;Pearl Crescent Page Saver&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;手順:462da812d7d4ed2797cfbcdf095e949a&#34;&gt;手順&lt;/h2&gt;
@@ -39,94 +39,94 @@
 &lt;li&gt;「全般」タブ
 
 &lt;ul&gt;
-&lt;li&gt;「キーボードショートカットかツールバーのボタンがクリックされた時:」 &amp;#8211; &lt;strong&gt;ページ全体&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;「キーボードショートカット:」 &amp;#8211; &lt;strong&gt;Alt+w&lt;/strong&gt; (好きなキーで構わないですが、下記はこの設定でやります)&lt;/li&gt;
+&lt;li&gt;「キーボードショートカットかツールバーのボタンがクリックされた時:」 - &lt;strong&gt;ページ全体&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;「キーボードショートカット:」 - &lt;strong&gt;Alt+w&lt;/strong&gt; (好きなキーで構わないですが、下記はこの設定でやります)&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;「画像のキャプチャー」タブ
 
 &lt;ul&gt;
-&lt;li&gt;「ファイルの保存名:」 &amp;#8211; &lt;strong&gt;%t %u&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;「次のフォルダに保存する」 &amp;#8211; 好きなフォルダ&lt;/li&gt;
-&lt;li&gt;「同じ名前のファイルがあるときは上書きする」 &amp;#8211; &lt;strong&gt;チェックする&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;「ファイルの保存名:」 - &lt;strong&gt;%t %u&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;「次のフォルダに保存する」 - 好きなフォルダ&lt;/li&gt;
+&lt;li&gt;「同じ名前のファイルがあるときは上書きする」 - &lt;strong&gt;チェックする&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;次に、Selenium IDEのテストケースを作成します。Selenium IDEの基本的な使い方は 「&lt;a href=&#34;http://www.atmarkit.co.jp/fjava/rensai4/devtool07/devtool07_2.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.atmarkit.co.jp/fjava/rensai4/devtool07/devtool07_2.html&#39;, &#39;ブラウザを選ばずWebテストを自動化するSelenium (2/3) &amp;#8211; ＠IT&#39;]);&#34; title=&#34;ブラウザを選ばずWebテストを自動化するSelenium (2/3) - ＠IT&#34;&gt;ブラウザを選ばずWebテストを自動化するSelenium (&lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt;) &amp;#8211; ＠IT&lt;/a&gt;」 が詳しいです。&lt;/p&gt;
+&lt;p&gt;次に、Selenium IDEのテストケースを作成します。Selenium IDEの基本的な使い方は 「&lt;a href=&#34;http://www.atmarkit.co.jp/fjava/rensai4/devtool07/devtool07_2.html&#34;&gt;ブラウザを選ばずWebテストを自動化するSelenium (&lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt;) - ＠IT&lt;/a&gt;」 が詳しいです。&lt;/p&gt;
 
 &lt;table&gt;
   &lt;tr&gt;
     &lt;th&gt;
       コマンド
     &lt;/th&gt;
-    
+
     &lt;th&gt;
       対象
     &lt;/th&gt;
-    
+
     &lt;th&gt;
       値
     &lt;/th&gt;
   &lt;/tr&gt;
-  
+
   &lt;tr&gt;
     &lt;td&gt;
       open
     &lt;/td&gt;
-    
+
     &lt;td&gt;
       /index.php
     &lt;/td&gt;
-    
+
     &lt;td&gt;
     &lt;/td&gt;
   &lt;/tr&gt;
-  
+
   &lt;tr&gt;
     &lt;td&gt;
       windowFocus
     &lt;/td&gt;
-    
+
     &lt;td&gt;
     &lt;/td&gt;
-    
+
     &lt;td&gt;
     &lt;/td&gt;
   &lt;/tr&gt;
-  
+
   &lt;tr&gt;
     &lt;td&gt;
       altKeyDown
     &lt;/td&gt;
-    
+
     &lt;td&gt;
     &lt;/td&gt;
-    
+
     &lt;td&gt;
     &lt;/td&gt;
   &lt;/tr&gt;
-  
+
   &lt;tr&gt;
     &lt;td&gt;
       keyPress
     &lt;/td&gt;
-    
+
     &lt;td&gt;
       //
     &lt;/td&gt;
-    
+
     &lt;td&gt;
       \119
     &lt;/td&gt;
   &lt;/tr&gt;
-  
+
   &lt;tr&gt;
     &lt;td&gt;
       altKeyUp
     &lt;/td&gt;
-    
+
     &lt;td&gt;
     &lt;/td&gt;
-    
+
     &lt;td&gt;
     &lt;/td&gt;
   &lt;/tr&gt;
@@ -141,7 +141,7 @@
 &lt;h2 id=&#34;日本語を含むテストケースファイルが読み込めない場合:462da812d7d4ed2797cfbcdf095e949a&#34;&gt;日本語を含むテストケースファイルが読み込めない場合&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;XHTMLのヘッダを「xml:lang=&amp;#8221;en&amp;#8221; lang=&amp;#8221;en&amp;#8221;」から「xml:lang=&amp;#8221;ja&amp;#8221; lang=&amp;#8221;ja&amp;#8221;」に直す&lt;/li&gt;
+&lt;li&gt;XHTMLのヘッダを「xml:lang=&amp;ldquo;en&amp;rdquo; lang=&amp;ldquo;en&amp;rdquo;」から「xml:lang=&amp;ldquo;ja&amp;rdquo; lang=&amp;ldquo;ja&amp;rdquo;」に直す&lt;/li&gt;
 &lt;li&gt;ファイル保存形式を「UTF-8 BOM無し」にする&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -151,7 +151,7 @@
 
 &lt;h2 id=&#34;参考:462da812d7d4ed2797cfbcdf095e949a&#34;&gt;参考&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://d.hatena.ne.jp/szk-takanori/20071104/1194181489&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://d.hatena.ne.jp/szk-takanori/20071104/1194181489&#39;, &#39;Seleniumでキャプチャを取得する拡張コマンド:captureScreenshot &amp;#8211; 現場のためのソフトウェア開発プロセス &amp;#8211; たかのり日記&#39;]);&#34; title=&#34;Seleniumでキャプチャを取得する拡張コマンド:captureScreenshot - 現場のためのソフトウェア開発プロセス - たかのり日記&#34;&gt;Seleniumでキャプチャを取得する拡張コマンド:captureScreenshot &amp;#8211; 現場のためのソフトウェア開発プロセス &amp;#8211; たかのり日記&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://d.hatena.ne.jp/szk-takanori/20071104/1194181489&#34;&gt;Seleniumでキャプチャを取得する拡張コマンド:captureScreenshot - 現場のためのソフトウェア開発プロセス - たかのり日記&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -161,18 +161,12 @@
       <pubDate>Sun, 16 May 2010 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2010/05/17/firefox-addon-copy-title-and-url/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://addons.mozilla.org/ja/firefox/addon/142/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://addons.mozilla.org/ja/firefox/addon/142/&#39;, &#39;Make Link :: Add-ons for Firefox&#39;]);&#34; &gt;Make Link :: Add-ons for Firefox&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://addons.mozilla.org/ja/firefox/addon/142/&#34;&gt;Make Link :: Add-ons for Firefox&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;ウインドウを右クリックして出るメニューをクリックするだけで、簡単に下のようなリンクをコピーできる&lt;/li&gt;
 &lt;li&gt;独自フォーマットを作成することも可能&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;[html]&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://addons.mozilla.org/ja/firefox/addon/142/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://addons.mozilla.org/ja/firefox/addon/142/&#39;, &#39;Make Link :: Add-ons for Firefox&#39;]);&#34; &gt;Make Link :: Add-ons for Firefox&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;[/html]&lt;/p&gt;
 </description>
     </item>
     

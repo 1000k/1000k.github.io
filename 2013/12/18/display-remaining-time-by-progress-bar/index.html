@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -43,13 +48,24 @@
         <div class="post-content">
           
 
-<p><a href="http://e.ggtimer.com/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://e.ggtimer.com/', 'E.gg Timer']);" >E.gg Timer</a> のようなタイマーアプリを作りたかったので、プログレスバーの作り方を調べました。タイマーそのものより、progress タグのスタイルシートをクロスブラウザ対応させるのに苦労しました。</p>
+<p><a href="http://e.ggtimer.com/">E.gg Timer</a> のようなタイマーアプリを作りたかったので、プログレスバーの作り方を調べました。タイマーそのものより、progress タグのスタイルシートをクロスブラウザ対応させるのに苦労しました。</p>
 
 <p>今回作ったのは下の画像のような簡単なタイマーです。経過時間に合わせてプログレスバーが赤くなります。</p>
 
-<p><img src="http://blog.1000k.net/wp-content/uploads/timer.png" alt="timer" width="585" height="81" /></p>
+<p>
+<figure >
+    
+        <img src="/img/timer.png"  />
+    
+    
+    <figcaption>
+        
+    </figcaption>
+    
+</figure>
+</p>
 
-<p><a href="http://jsfiddle.net/tcxx9/3/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://jsfiddle.net/tcxx9/3/', 'デモはこちら。']);" >デモはこちら。</a></p>
+<p><a href="http://jsfiddle.net/tcxx9/3/">デモはこちら。</a></p>
 
 <p>なお、IE11, Firefox26, Chrome31 で動作を確認しています。</p>
 
@@ -60,7 +76,7 @@
 <p>プログレスバー、時間入力欄、開始/停止ボタンがあるだけです。</p>
 
 <pre><code>&lt;div class=&quot;progressWrapper&quot;&gt;
-  &amp;lt;progress id=&quot;bar&quot; value=&quot;0&quot; max=&quot;1000&quot; min=&quot;0&quot;&gt;&amp;lt;/progress&gt;
+  &lt;progress id=&quot;bar&quot; value=&quot;0&quot; max=&quot;1000&quot; min=&quot;0&quot;&gt;&lt;/progress&gt;
 
 &lt;/div&gt;
 
@@ -93,7 +109,7 @@ var countdown = function() {
 
   $('#bar').attr('value', restBarLength);
 
-  if (restMs &amp;lt; 0) {
+  if (restMs &lt; 0) {
     resetTimer();
     alert('time expired');
   }
@@ -162,15 +178,15 @@ progress::-moz-progress-bar {
 <h2 id="参考:2853c5683734ff1185ea9e66d817967b">参考</h2>
 
 <ul>
-<li><a href="http://www.hongkiat.com/blog/html5-progress-bar/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.hongkiat.com/blog/html5-progress-bar/', 'Creating & Styling Progress Bar With HTML5']);" >Creating &amp; Styling Progress Bar With HTML5</a></li>
-<li><a href="http://www.pori2.net/js/timer/6.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.pori2.net/js/timer/6.html', 'カウントダウンタイマー－JavaScript入門']);" >カウントダウンタイマー－JavaScript入門</a></li>
-<li><a href="http://www.useragentman.com/blog/2012/01/03/cross-browser-html5-progress-bars-in-depth/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.useragentman.com/blog/2012/01/03/cross-browser-html5-progress-bars-in-depth/', 'Cross Browser HTML5 Progress Bars In Depth']);" >Cross Browser HTML5 Progress Bars In Depth</a>
+<li><a href="http://www.hongkiat.com/blog/html5-progress-bar/">Creating &amp; Styling Progress Bar With HTML5</a></li>
+<li><a href="http://www.pori2.net/js/timer/6.html">カウントダウンタイマー－JavaScript入門</a></li>
+<li><a href="http://www.useragentman.com/blog/2012/01/03/cross-browser-html5-progress-bars-in-depth/">Cross Browser HTML5 Progress Bars In Depth</a>
 
 <ul>
 <li>カウントダウンに合わせて動くサルのアニメや、スピードメーターの書き方など。</li>
 </ul></li>
-<li><a href="http://css-tricks.com/html5-progress-element/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://css-tricks.com/html5-progress-element/', 'The HTML5 progress Element | CSS-Tricks']);" >The HTML5 progress Element | CSS-Tricks</a></li>
-<li><a href="https://developer.mozilla.org/ja/docs/Web/CSS/::-moz-progress-bar" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://developer.mozilla.org/ja/docs/Web/CSS/::-moz-progress-bar', '::-moz-progress-bar - CSS | MDN']);" >::-moz-progress-bar - CSS | MDN</a></li>
+<li><a href="http://css-tricks.com/html5-progress-element/">The HTML5 progress Element | CSS-Tricks</a></li>
+<li><a href="https://developer.mozilla.org/ja/docs/Web/CSS/::-moz-progress-bar">::-moz-progress-bar - CSS | MDN</a></li>
 </ul>
 
         </div>

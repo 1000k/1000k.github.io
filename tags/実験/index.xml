@@ -88,7 +88,7 @@ isset(array ()): true
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;&amp;#8211;&lt;/th&gt;
+&lt;th&gt;-&lt;/th&gt;
 &lt;th&gt;isset($var)&lt;/th&gt;
 &lt;th&gt;!empty($var)&lt;/th&gt;
 &lt;th&gt;($var)&lt;/th&gt;
@@ -118,14 +118,14 @@ isset(array ()): true
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td&gt;&amp;#8216;false&amp;#8217;&lt;/td&gt;
+&lt;td&gt;&amp;lsquo;false&amp;rsquo;&lt;/td&gt;
 &lt;td&gt;true&lt;/td&gt;
 &lt;td&gt;true&lt;/td&gt;
 &lt;td&gt;true&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td&gt;&amp;#8221;&lt;/td&gt;
+&lt;td&gt;&amp;ldquo;&lt;/td&gt;
 &lt;td&gt;true&lt;/td&gt;
 &lt;td&gt;false&lt;/td&gt;
 &lt;td&gt;false&lt;/td&gt;
@@ -139,14 +139,14 @@ isset(array ()): true
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td&gt;&amp;#8216;0&amp;#8217;&lt;/td&gt;
+&lt;td&gt;&amp;lsquo;0&amp;rsquo;&lt;/td&gt;
 &lt;td&gt;true&lt;/td&gt;
 &lt;td&gt;false&lt;/td&gt;
 &lt;td&gt;false&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td&gt;&amp;#8216;aaaaa&amp;#8217;&lt;/td&gt;
+&lt;td&gt;&amp;lsquo;aaaaa&amp;rsquo;&lt;/td&gt;
 &lt;td&gt;true&lt;/td&gt;
 &lt;td&gt;true&lt;/td&gt;
 &lt;td&gt;true&lt;/td&gt;
@@ -173,7 +173,7 @@ isset(array ()): true
 &lt;ul&gt;
 &lt;li&gt;issetはNULL以外がセットされていればtrue&lt;/li&gt;
 &lt;li&gt;「!empty($var)」と「($var)」は同義&lt;/li&gt;
-&lt;li&gt;empty()は大変クセが強いので、&lt;a href=&#34;http://jp.php.net/manual/ja/function.empty.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://jp.php.net/manual/ja/function.empty.php&#39;, &#39;公式マニュアル&#39;]);&#34; &gt;公式マニュアル&lt;/a&gt;を熟読しましょう。&lt;/li&gt;
+&lt;li&gt;empty()は大変クセが強いので、&lt;a href=&#34;http://jp.php.net/manual/ja/function.empty.php&#34;&gt;公式マニュアル&lt;/a&gt;を熟読しましょう。&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;blockquote&gt;
@@ -182,10 +182,10 @@ isset(array ()): true
 &lt;p&gt;次のような値は空であるとみなされます。&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&amp;#8220;&amp;#8221; (空文字列)&lt;/li&gt;
+&lt;li&gt;&amp;rdquo;&amp;rdquo; (空文字列)&lt;/li&gt;
 &lt;li&gt;0 (整数 の 0)&lt;/li&gt;
 &lt;li&gt;0.0 (浮動小数点数の 0)&lt;/li&gt;
-&lt;li&gt;&amp;#8220;0&amp;#8221; (文字列 の 0)&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;0&amp;rdquo; (文字列 の 0)&lt;/li&gt;
 &lt;li&gt;NULL&lt;/li&gt;
 &lt;li&gt;FALSE&lt;/li&gt;
 &lt;li&gt;array() (空の配列)&lt;/li&gt;
@@ -198,9 +198,9 @@ isset(array ()): true
 &lt;p&gt;PHPの公式マニュアルを見て確かめましょう。&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://jp.php.net/manual/ja/function.empty.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://jp.php.net/manual/ja/function.empty.php&#39;, &#39;PHP: empty &amp;#8211; Manual&#39;]);&#34; &gt;PHP: empty &amp;#8211; Manual&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jp.php.net/manual/ja/function.isset.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://jp.php.net/manual/ja/function.isset.php&#39;, &#39;PHP: isset &amp;#8211; Manual&#39;]);&#34; &gt;PHP: isset &amp;#8211; Manual&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jp.php.net/manual/ja/control-structures.if.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://jp.php.net/manual/ja/control-structures.if.php&#39;, &#39;PHP: if &amp;#8211; Manual&#39;]);&#34; &gt;PHP: if &amp;#8211; Manual&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jp.php.net/manual/ja/function.empty.php&#34;&gt;PHP: empty - Manual&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jp.php.net/manual/ja/function.isset.php&#34;&gt;PHP: isset - Manual&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jp.php.net/manual/ja/control-structures.if.php&#34;&gt;PHP: if - Manual&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

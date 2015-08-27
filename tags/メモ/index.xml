@@ -19,7 +19,7 @@
 
 &lt;p&gt;Agile Conference Tokyo 2013 のまとめ&lt;/p&gt;
 
-&lt;p&gt;&lt;sup&gt;7&lt;/sup&gt;&amp;frasl;&lt;sub&gt;17&lt;/sub&gt; に開催された &lt;a href=&#34;http://pw.tech-arts.co.jp/act2013/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://pw.tech-arts.co.jp/act2013/&#39;, &#39;Agile Conference tokyo 2013&#39;]);&#34; &gt;Agile Conference tokyo 2013&lt;/a&gt; に参加してきました。10時から18時までひたすら座学で激しく消耗しましたが、得るものも多かったです。&lt;/p&gt;
+&lt;p&gt;&lt;sup&gt;7&lt;/sup&gt;&amp;frasl;&lt;sub&gt;17&lt;/sub&gt; に開催された &lt;a href=&#34;http://pw.tech-arts.co.jp/act2013/&#34;&gt;Agile Conference tokyo 2013&lt;/a&gt; に参加してきました。10時から18時までひたすら座学で激しく消耗しましたが、得るものも多かったです。&lt;/p&gt;
 
 &lt;p&gt;全体を通して思ったことは下記の通り。&lt;/p&gt;
 
@@ -165,7 +165,7 @@
 
 &lt;p&gt;藤井 拓氏 (オージス総研 技術部アジャイル開発センター センター長)&lt;/p&gt;
 
-&lt;p&gt;SAFe とは、企業規模でリーンとアジャイルのプラクティスを実現するためのフレームワーク。&lt;a href=&#34;http://scaledagileframework.com/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://scaledagileframework.com/&#39;, &#39;Scaled Agile Framework&#39;]);&#34; &gt;Scaled Agile Framework&lt;/a&gt; で公開されている。&lt;/p&gt;
+&lt;p&gt;SAFe とは、企業規模でリーンとアジャイルのプラクティスを実現するためのフレームワーク。&lt;a href=&#34;http://scaledagileframework.com/&#34;&gt;Scaled Agile Framework&lt;/a&gt; で公開されている。&lt;/p&gt;
 
 &lt;p&gt;細かいことはホームページに書いてあるので省略。一言で言うと、複数の Scrum チームを束ねて定期的なリリースを可能にするルールと、経営層の意思決定をリリースに繋げる流れを示したフレームワーク。&lt;/p&gt;
 
@@ -237,7 +237,7 @@
 &lt;li&gt;新たに溜まった暗黙知を、またカンバンに貼り出す。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;自分やチームの仕事を写像→カンバンに見える化→暗黙知が形式知に置き換えられる→カイゼンのための会話が生まれる→修正した形式知に従ってやってみる→ツールを見て仕事をする（暗黙化）→カイゼンのアイディアを写像→&amp;#8230;&lt;/p&gt;
+&lt;p&gt;自分やチームの仕事を写像→カンバンに見える化→暗黙知が形式知に置き換えられる→カイゼンのための会話が生まれる→修正した形式知に従ってやってみる→ツールを見て仕事をする（暗黙化）→カイゼンのアイディアを写像→…&lt;/p&gt;
 
 &lt;h3 id=&#34;アジャイルプロセス適用のステップ:29d91c6d9de33ba41ab60dac9e5e82f1&#34;&gt;アジャイルプロセス適用のステップ&lt;/h3&gt;
 
@@ -347,7 +347,7 @@
 
 &lt;h4 id=&#34;heroku:29d91c6d9de33ba41ab60dac9e5e82f1&#34;&gt;Heroku&lt;/h4&gt;
 
-&lt;p&gt;AWS を使いたくても、エンタープライズ向けの必須要件 (セキュリティ、パフォーマンス、SLA、&amp;#8230;) をクリアさせることができない。&lt;/p&gt;
+&lt;p&gt;AWS を使いたくても、エンタープライズ向けの必須要件 (セキュリティ、パフォーマンス、SLA、…) をクリアさせることができない。&lt;/p&gt;
 
 &lt;p&gt;人数が少なく専任のインフラエンジニアを割り振れないので、それらを吸収してくれる PaaS の Heroku を使い始めた。&lt;/p&gt;
 

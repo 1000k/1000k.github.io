@@ -27,7 +27,7 @@
 &lt;ul&gt;
 &lt;li&gt;ほかには GNU screen が有名&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;読み方は &amp;#8220;ティーマックス&amp;#8221;&lt;/li&gt;
+&lt;li&gt;読み方は &amp;ldquo;ティーマックス&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;できること:a506571e48bbc5459d921757c1950894&#34;&gt;できること&lt;/h3&gt;
@@ -268,23 +268,23 @@
 
 &lt;p&gt;&lt;code&gt;~/.tmux.conf&lt;/code&gt; にカスタマイズ設定を書き込むことができます。&lt;/p&gt;
 
-&lt;p&gt;yum でインストールした場合は &lt;code&gt;/usr/share/doc/tmux-1.6/examples/&lt;/code&gt; 配下にサンプルファイルがあります。vimmer は &lt;a href=&#34;https://github.com/jordansissel/tmux/blob/master/trunk/examples/vim-keys.conf&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/jordansissel/tmux/blob/master/trunk/examples/vim-keys.conf&#39;, &#39;vim-keys.conf&#39;]);&#34; &gt;vim-keys.conf&lt;/a&gt; を設定するとペイン操作が楽になるかもしれません。&lt;/p&gt;
+&lt;p&gt;yum でインストールした場合は &lt;code&gt;/usr/share/doc/tmux-1.6/examples/&lt;/code&gt; 配下にサンプルファイルがあります。vimmer は &lt;a href=&#34;https://github.com/jordansissel/tmux/blob/master/trunk/examples/vim-keys.conf&#34;&gt;vim-keys.conf&lt;/a&gt; を設定するとペイン操作が楽になるかもしれません。&lt;/p&gt;
 
 &lt;h2 id=&#34;参考:a506571e48bbc5459d921757c1950894&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man1/tmux.1?query=tmux&amp;sec=1&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man1/tmux.1?query=tmux&amp;sec=1&#39;, &#39;OpenBSD manual pages&#39;]);&#34; &gt;OpenBSD manual pages&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man1/tmux.1?query=tmux&amp;amp;sec=1&#34;&gt;OpenBSD manual pages&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;公式マニュアル。英語。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://kanjuku-tomato.blogspot.jp/2014/02/tmux.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://kanjuku-tomato.blogspot.jp/2014/02/tmux.html&#39;, &#39;tmuxを使い始めたので基本的な機能の使い方とかを整理してみた &amp;#8211; 完熟トマト&#39;]);&#34; &gt;tmuxを使い始めたので基本的な機能の使い方とかを整理してみた &amp;#8211; 完熟トマト&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://kanjuku-tomato.blogspot.jp/2014/02/tmux.html&#34;&gt;tmuxを使い始めたので基本的な機能の使い方とかを整理してみた - 完熟トマト&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;概念図やスクリーンショット満載でわかりやすいです。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://room6933.com/mymemo/tmux/tmux-basic.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://room6933.com/mymemo/tmux/tmux-basic.html&#39;, &#39;tmux基本のコマンド — nato&amp;#8217;s memo 1.0 documentation&#39;]);&#34; &gt;tmux基本のコマンド — nato&amp;#8217;s memo 1.0 documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://qiita.com/b4b4r07/items/01359e8a3066d1c37edc&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://qiita.com/b4b4r07/items/01359e8a3066d1c37edc&#39;, &#39;Vim &amp;#8211; ターミナルマルチプレクサ tmux をカスタマイズする &amp;#8211; Qiita&#39;]);&#34; &gt;Vim &amp;#8211; ターミナルマルチプレクサ tmux をカスタマイズする &amp;#8211; Qiita&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://room6933.com/mymemo/tmux/tmux-basic.html&#34;&gt;tmux基本のコマンド — nato&amp;rsquo;s memo 1.0 documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://qiita.com/b4b4r07/items/01359e8a3066d1c37edc&#34;&gt;Vim - ターミナルマルチプレクサ tmux をカスタマイズする - Qiita&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;使えるカスタマイズの例。zsh と連携して、ログイン時にいきなり tmux セッションにアタッチする方法など。&lt;/li&gt;
@@ -301,9 +301,9 @@
       <guid>http://1000k.github.io/2015/01/27/validate-cakephp2-rules-with-sublime-text2-phpcs-plugin/</guid>
       <description>
 
-&lt;p&gt;Sublime Text 2 のエディタ上で PHP CodeSniffer を使い、コーディング規約をチェックする方法です。&lt;a href=&#34;http://benmatselby.github.io/sublime-phpcs/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://benmatselby.github.io/sublime-phpcs/&#39;, &#39;sublime-phpcs&#39;]);&#34; &gt;sublime-phpcs&lt;/a&gt; プラグインを導入することで、コーディング規約違反のある行がエディタ上に表示されるようになります。&lt;/p&gt;
+&lt;p&gt;Sublime Text 2 のエディタ上で PHP CodeSniffer を使い、コーディング規約をチェックする方法です。&lt;a href=&#34;http://benmatselby.github.io/sublime-phpcs/&#34;&gt;sublime-phpcs&lt;/a&gt; プラグインを導入することで、コーディング規約違反のある行がエディタ上に表示されるようになります。&lt;/p&gt;
 
-&lt;p&gt;なお、プラグインの公式ページでは phpmd も一緒に導入していますが、&lt;a href=&#34;http://blog.1000k.net/2013/11/26/phpmd-%e3%81%ae%e9%a0%ad%e3%81%8c%e3%81%8b%e3%81%aa%e3%82%8a-messy/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/2013/11/26/phpmd-%e3%81%ae%e9%a0%ad%e3%81%8c%e3%81%8b%e3%81%aa%e3%82%8a-messy/&#39;, &#39;PHPMD はヒステリックすぎて個人的にお勧めしない&#39;]);&#34; &gt;PHPMD はヒステリックすぎて個人的にお勧めしない&lt;/a&gt; ので省略します。&lt;/p&gt;
+&lt;p&gt;なお、プラグインの公式ページでは phpmd も一緒に導入していますが、&lt;a href=&#34;http://blog.1000k.net/2013/11/26/phpmd-%e3%81%ae%e9%a0%ad%e3%81%8c%e3%81%8b%e3%81%aa%e3%82%8a-messy/&#34;&gt;PHPMD はヒステリックすぎて個人的にお勧めしない&lt;/a&gt; ので省略します。&lt;/p&gt;
 
 &lt;h2 id=&#34;チュートリアル:0e3f1a6b553d4169127746e6faedbbcf&#34;&gt;チュートリアル&lt;/h2&gt;
 
@@ -327,13 +327,13 @@ The installed coding standards are CakePHP, MySource, PEAR, PHPCS, PSR1, PSR2, S
 
 &lt;h3 id=&#34;sublime-text-2-に-codesniffer-プラグインをインストールする:0e3f1a6b553d4169127746e6faedbbcf&#34;&gt;Sublime Text 2 に CodeSniffer プラグインをインストールする&lt;/h3&gt;
 
-&lt;p&gt;&amp;#8220;Package Control: Install Package&amp;#8221; で &lt;code&gt;Phpcs&lt;/code&gt; をインストールするだけ。&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Package Control: Install Package&amp;rdquo; で &lt;code&gt;Phpcs&lt;/code&gt; をインストールするだけ。&lt;/p&gt;
 
-&lt;p&gt;(Package Control 自体のインストール方法は &lt;a href=&#34;https://sublime.wbond.net/installation#st2&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://sublime.wbond.net/installation#st2&#39;, &#39;Installation &amp;#8211; Package Control&#39;]);&#34; &gt;Installation &amp;#8211; Package Control&lt;/a&gt; を参照)&lt;/p&gt;
+&lt;p&gt;(Package Control 自体のインストール方法は &lt;a href=&#34;https://sublime.wbond.net/installation#st2&#34;&gt;Installation - Package Control&lt;/a&gt; を参照)&lt;/p&gt;
 
 &lt;h3 id=&#34;sublime-text-の設定:0e3f1a6b553d4169127746e6faedbbcf&#34;&gt;Sublime Text の設定&lt;/h3&gt;
 
-&lt;p&gt;&amp;#8220;Preferences &amp;gt; Package Settings &amp;gt; PHP Code Sniffer &amp;gt; Settings &amp;#8211; User&amp;#8221; を開き、以下のキーを設定する必要があります。&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Preferences &amp;gt; Package Settings &amp;gt; PHP Code Sniffer &amp;gt; Settings - User&amp;rdquo; を開き、以下のキーを設定する必要があります。&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;phpcs_php_path&lt;/li&gt;
@@ -362,8 +362,8 @@ The installed coding standards are CakePHP, MySource, PEAR, PHPCS, PSR1, PSR2, S
 &lt;p&gt;以下の手順でプラグインのコードを修正してください。&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&amp;#8220;Preferences &amp;gt; Browse Packages&amp;#8230;&amp;#8221; でパッケージディレクトリを開く。&lt;/li&gt;
-&lt;li&gt;&amp;#8220;Phpcs &amp;gt; phpcs.py&amp;#8221; を開く。&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Preferences &amp;gt; Browse Packages…&amp;rdquo; でパッケージディレクトリを開く。&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Phpcs &amp;gt; phpcs.py&amp;rdquo; を開く。&lt;/li&gt;
 &lt;li&gt;169行目を以下のように修正 (パラメータに &lt;code&gt;shell=True&lt;/code&gt; を追加) する。&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -383,7 +383,7 @@ proc = subprocess.Popen(cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stde
 
 &lt;p&gt;プラグインインストール後のデフォルトだと、保存するたびに規約違反がサジェストされます。&lt;/p&gt;
 
-&lt;p&gt;鬱陶しい場合は &amp;#8220;Preferences &amp;gt; Package Settings &amp;gt; PHP Code Sniffer &amp;gt; Settings &amp;#8211; User&amp;#8221; に下記を追加することでオフにできます。&lt;/p&gt;
+&lt;p&gt;鬱陶しい場合は &amp;ldquo;Preferences &amp;gt; Package Settings &amp;gt; PHP Code Sniffer &amp;gt; Settings - User&amp;rdquo; に下記を追加することでオフにできます。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
   &amp;quot;phpcs_execute_on_save&amp;quot;: false
@@ -393,11 +393,11 @@ proc = subprocess.Popen(cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stde
 &lt;h2 id=&#34;参考:0e3f1a6b553d4169127746e6faedbbcf&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://benmatselby.github.io/sublime-phpcs/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://benmatselby.github.io/sublime-phpcs/&#39;, &#39;sublime-phpcs&#39;]);&#34; &gt;sublime-phpcs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/10585274/custom-ruleset-for-phpcs-using-phpstorm&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://stackoverflow.com/questions/10585274/custom-ruleset-for-phpcs-using-phpstorm&#39;, &#39;php &amp;#8211; Custom ruleset for phpcs using PHPStorm &amp;#8211; Stack Overflow&#39;]);&#34; &gt;php &amp;#8211; Custom ruleset for phpcs using PHPStorm &amp;#8211; Stack Overflow&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/cakephp/cakephp-codesniffer&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/cakephp/cakephp-codesniffer&#39;, &#39;cakephp/cakephp-codesniffer · GitHub&#39;]);&#34; &gt;cakephp/cakephp-codesniffer · GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/fabpot/PHP-CS-Fixer&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/fabpot/PHP-CS-Fixer&#39;, &#39;fabpot/PHP-CS-Fixer · GitHub&#39;]);&#34; &gt;fabpot/PHP-CS-Fixer · GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://matsu-chara.hatenablog.com/entry/2013/12/27/125026&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://matsu-chara.hatenablog.com/entry/2013/12/27/125026&#39;, &#39;sublime-phpcsでPSR-2準拠のコーディング &amp;#8211; だいたいよくわからないブログ( ´_ゝ`)&#39;]);&#34; &gt;sublime-phpcsでPSR-2準拠のコーディング &amp;#8211; だいたいよくわからないブログ( ´_ゝ`)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://benmatselby.github.io/sublime-phpcs/&#34;&gt;sublime-phpcs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/10585274/custom-ruleset-for-phpcs-using-phpstorm&#34;&gt;php - Custom ruleset for phpcs using PHPStorm - Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cakephp/cakephp-codesniffer&#34;&gt;cakephp/cakephp-codesniffer · GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/fabpot/PHP-CS-Fixer&#34;&gt;fabpot/PHP-CS-Fixer · GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://matsu-chara.hatenablog.com/entry/2013/12/27/125026&#34;&gt;sublime-phpcsでPSR-2準拠のコーディング - だいたいよくわからないブログ( ´_ゝ`)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -410,7 +410,7 @@ proc = subprocess.Popen(cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stde
       <guid>http://1000k.github.io/2015/01/16/reasons-for-using-chef-client-local-mode-instead-of-chef-solo/</guid>
       <description>
 
-&lt;p&gt;2014/06/24 に Opscode 公式ブログで &lt;a href=&#34;http://www.getchef.com/blog/2014/06/24/from-solo-to-zero-migrating-to-chef-client-local-mode/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.getchef.com/blog/2014/06/24/from-solo-to-zero-migrating-to-chef-client-local-mode/&#39;, &#39;From Solo to Zero: Migrating to Chef Client Local Mode&#39;]);&#34; &gt;From Solo to Zero: Migrating to Chef Client Local Mode&lt;/a&gt; という記事が公開されました。記事を要約すると「Chef Solo はオワコンだから Chef Client Local Mode を使え」ということのようです。&lt;/p&gt;
+&lt;p&gt;2014/06/24 に Opscode 公式ブログで &lt;a href=&#34;http://www.getchef.com/blog/2014/06/24/from-solo-to-zero-migrating-to-chef-client-local-mode/&#34;&gt;From Solo to Zero: Migrating to Chef Client Local Mode&lt;/a&gt; という記事が公開されました。記事を要約すると「Chef Solo はオワコンだから Chef Client Local Mode を使え」ということのようです。&lt;/p&gt;
 
 &lt;h2 id=&#34;chef-client-local-mode-旧-chef-zero-って:519ef52691307b5f7476688034bf2c1d&#34;&gt;Chef Client Local Mode (旧 Chef Zero) って？&lt;/h2&gt;
 
@@ -424,11 +424,13 @@ proc = subprocess.Popen(cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stde
 
 &lt;h2 id=&#34;chef-solo-から-chef-client-local-mode-に移行するべき理由:519ef52691307b5f7476688034bf2c1d&#34;&gt;Chef Solo から Chef Client Local mode に移行するべき理由&lt;/h2&gt;
 
-&lt;p&gt;1&amp;#46; Local Mode なら Server-Client で使える全ての機能 &amp;#8212; environments, roles, (encrypted) data bags &amp;#8212; が使える。ノードやレシピの検索機能も使える。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Local Mode なら Server-Client で使える全ての機能 &amp;#8212; environments, roles, (encrypted) data bags &amp;#8212; が使える。ノードやレシピの検索機能も使える。&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;2&amp;#46; 特別なツールや knife プラグインは必要無い。&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;特別なツールや knife プラグインは必要無い。&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;3&amp;#46; レシピ実行環境が Solo か Server かの分岐を書く必要が無くなる。例えば以下のようなコード。&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;レシピ実行環境が Solo か Server かの分岐を書く必要が無くなる。例えば以下のようなコード。&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;pre&gt;&lt;code&gt;if Chef::Config[:solo]
     # do something
@@ -437,9 +439,11 @@ else
 end
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;4&amp;#46; &lt;code&gt;chef_zero&lt;/code&gt; を Test Kitchen の provisioner に使う際、 &amp;#8220;fixture node objects&amp;#8221; をテストデータとして使える。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;chef_zero&lt;/code&gt; を Test Kitchen の provisioner に使う際、 &amp;ldquo;fixture node objects&amp;rdquo; をテストデータとして使える。&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;5&amp;#46; 後に Chef Server 構成を使いたくなった時にすんなり移行できる。&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;後に Chef Server 構成を使いたくなった時にすんなり移行できる。&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;今すぐ Chef Solo をお払い箱にする必要はありませんが、公式に deprecated 扱いされているので、今後は Solo よりも Local Mode を使うことをお薦めします。これから Chef を始める人は、chef-apply か local mode を使うといいでしょう。&lt;/p&gt;
 
@@ -447,7 +451,7 @@ end
 
 &lt;p&gt;Vagrant 1.7.0 より、Chef Client Local mode が使えるようになりました。単純に provisioner に &lt;code&gt;chef_zero&lt;/code&gt; を指定するだけで動作します。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://docs.vagrantup.com/v2/provisioning/chef_zero.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://docs.vagrantup.com/v2/provisioning/chef_zero.html&#39;, &#39;Chef Zero &amp;#8211; Provisioning &amp;#8211; Vagrant Documentation&#39;]);&#34; &gt;Chef Zero &amp;#8211; Provisioning &amp;#8211; Vagrant Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.vagrantup.com/v2/provisioning/chef_zero.html&#34;&gt;Chef Zero - Provisioning - Vagrant Documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;Vagrant.configure(&amp;quot;2&amp;quot;) do |config|
   config.vm.provision &amp;quot;chef_zero&amp;quot; do |chef|
@@ -468,10 +472,10 @@ end
 &lt;h2 id=&#34;参考:519ef52691307b5f7476688034bf2c1d&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.getchef.com/blog/2014/06/24/from-solo-to-zero-migrating-to-chef-client-local-mode/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.getchef.com/blog/2014/06/24/from-solo-to-zero-migrating-to-chef-client-local-mode/&#39;, &#39;From Solo to Zero: Migrating to Chef Client Local Mode | Chef Blog&#39;]);&#34; &gt;From Solo to Zero: Migrating to Chef Client Local Mode | Chef Blog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.slideshare.net/YukihikoSawanobori/chef-2014&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.slideshare.net/YukihikoSawanobori/chef-2014&#39;, &#39;2014年のChefとInfrastructure as code&#39;]);&#34; &gt;2014年のChefとInfrastructure as code&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://docs.opscode.com/ctl_chef_client.html#run-in-local-mode&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://docs.opscode.com/ctl_chef_client.html#run-in-local-mode&#39;, &#39;chef-client (executable) — Chef Docs # Run in Local Mode&#39;]);&#34; &gt;chef-client (executable) — Chef Docs # Run in Local Mode&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://docs.opscode.com/ctl_chef_solo.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://docs.opscode.com/ctl_chef_solo.html&#39;, &#39;chef-solo (executable) — Chef Docs&#39;]);&#34; &gt;chef-solo (executable) — Chef Docs&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.getchef.com/blog/2014/06/24/from-solo-to-zero-migrating-to-chef-client-local-mode/&#34;&gt;From Solo to Zero: Migrating to Chef Client Local Mode | Chef Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.slideshare.net/YukihikoSawanobori/chef-2014&#34;&gt;2014年のChefとInfrastructure as code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://docs.opscode.com/ctl_chef_client.html#run-in-local-mode&#34;&gt;chef-client (executable) — Chef Docs # Run in Local Mode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://docs.opscode.com/ctl_chef_solo.html&#34;&gt;chef-solo (executable) — Chef Docs&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;一番上に warning で「&lt;code&gt;--local-mode&lt;/code&gt; を検討しなよ」と書いてある。&lt;/li&gt;
@@ -500,7 +504,7 @@ end
 &lt;li&gt;親・子ウィンドウ両方が固まってしまう。&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;ウィンドウを閉じる時に単純な &lt;code&gt;window.close()&lt;/code&gt; ではなく &lt;code&gt;window.open(&#39;about:blank&#39;,&#39;_self&#39;).close()&lt;/code&gt; を使っているのは、IE/FF/Chrome いずれのブラウザーでも綺麗に閉じるための有名な Hack だったからです。詳細は &lt;a href=&#34;http://kojikoji75.hatenablog.com/entry/2013/12/15/223839&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://kojikoji75.hatenablog.com/entry/2013/12/15/223839&#39;, &#39;JavaScriptでWindow.closeする時のブラウザ別対応まとめ - TechNote&#39;]);&#34; &gt;JavaScriptでWindow.closeする時のブラウザ別対応まとめ - TechNote&lt;/a&gt; がわかりやすいです。&lt;/p&gt;
+&lt;p&gt;ウィンドウを閉じる時に単純な &lt;code&gt;window.close()&lt;/code&gt; ではなく &lt;code&gt;window.open(&#39;about:blank&#39;,&#39;_self&#39;).close()&lt;/code&gt; を使っているのは、IE/FF/Chrome いずれのブラウザーでも綺麗に閉じるための有名な Hack だったからです。詳細は &lt;a href=&#34;http://kojikoji75.hatenablog.com/entry/2013/12/15/223839&#34;&gt;JavaScriptでWindow.closeする時のブラウザ別対応まとめ - TechNote&lt;/a&gt; がわかりやすいです。&lt;/p&gt;
 
 &lt;p&gt;どうやらブラウザーのバージョンアップに伴い、このあたりの事情が変わってきてたようです。&lt;/p&gt;
 
@@ -596,9 +600,9 @@ end
 &lt;h2 id=&#34;参考:96680621d7ebbfce2d483f1126ea0d2a&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/19761241/window-close-and-self-close-do-not-close-the-window-in-chrome&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://stackoverflow.com/questions/19761241/window-close-and-self-close-do-not-close-the-window-in-chrome&#39;, &#39;javascript - window.close and self.close do not close the window in Chrome - Stack Overflow&#39;]);&#34; &gt;javascript - window.close and self.close do not close the window in Chrome - Stack Overflow&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/12625876/how-to-detect-chrome-and-safari-browser-webkit&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://stackoverflow.com/questions/12625876/how-to-detect-chrome-and-safari-browser-webkit&#39;, &#39;javascript - How to detect chrome and safari browser (webkit) - Stack Overflow&#39;]);&#34; &gt;javascript - How to detect chrome and safari browser (webkit) - Stack Overflow&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://kojikoji75.hatenablog.com/entry/2013/12/15/223839&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://kojikoji75.hatenablog.com/entry/2013/12/15/223839&#39;, &#39;JavaScriptでWindow.closeする時のブラウザ別対応まとめ - TechNote&#39;]);&#34; &gt;JavaScriptでWindow.closeする時のブラウザ別対応まとめ - TechNote&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/19761241/window-close-and-self-close-do-not-close-the-window-in-chrome&#34;&gt;javascript - window.close and self.close do not close the window in Chrome - Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/12625876/how-to-detect-chrome-and-safari-browser-webkit&#34;&gt;javascript - How to detect chrome and safari browser (webkit) - Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://kojikoji75.hatenablog.com/entry/2013/12/15/223839&#34;&gt;JavaScriptでWindow.closeする時のブラウザ別対応まとめ - TechNote&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -634,7 +638,7 @@ output from attempting to unpackage (if any):
 
 &lt;p&gt;GitHub の issue レポートにワークアラウンドが見つかりました。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/mitchellh/vagrant/issues/3674&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/mitchellh/vagrant/issues/3674&#39;, &#39;The executable &amp;#8216;bsdtar&amp;#8217; Vagrant is trying to run was not found in the %PATH% variable · Issue #3674 · mitchellh/vagrant&#39;]);&#34; &gt;The executable &amp;#8216;bsdtar&amp;#8217; Vagrant is trying to run was not found in the %PATH% variable · Issue #3674 · mitchellh/vagrant&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/mitchellh/vagrant/issues/3674&#34;&gt;The executable &amp;lsquo;bsdtar&amp;rsquo; Vagrant is trying to run was not found in the %PATH% variable · Issue #3674 · mitchellh/vagrant&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;これによると、古いバージョンが入った Windows に 1.6.x をインストールすると、bsdtar (Vagrant Box を解凍するツール？) がなぜかインストールされないそうです。実際に &lt;code&gt;C:\HashiCorp\Vagrant\embedded\gnuwin32\bin&lt;/code&gt; を見てみたところ、&lt;code&gt;bsdtar.exe&lt;/code&gt; は見つからず、&lt;code&gt;libarchive.dll&lt;/code&gt; というファイル1つしかありませんでした。&lt;/p&gt;
 
@@ -658,7 +662,7 @@ output from attempting to unpackage (if any):
       <guid>http://1000k.github.io/2014/05/22/protractor-doesnt-work-for-me/</guid>
       <description>
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/angular/angular-seed&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/angular/angular-seed&#39;, &#39;angular-seed&#39;]);&#34; &gt;angular-seed&lt;/a&gt; を使って Angular.js の開発環境を作成していたのですが、どうにもこうにも e2e テストが動かなくてハマりました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/angular/angular-seed&#34;&gt;angular-seed&lt;/a&gt; を使って Angular.js の開発環境を作成していたのですが、どうにもこうにも e2e テストが動かなくてハマりました。&lt;/p&gt;
 
 &lt;p&gt;エラーメッセージは以下のとおり。&lt;/p&gt;
 
@@ -739,7 +743,7 @@ $ java -version
 &lt;h2 id=&#34;参考:44911033301877b7be87059dd5b5c5f6&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/20188679/how-to-run-protractor/23772014#23772014&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://stackoverflow.com/questions/20188679/how-to-run-protractor/23772014#23772014&#39;, &#39;angularjs &amp;#8211; How to run protractor? &amp;#8211; Stack Overflow&#39;]);&#34; &gt;angularjs &amp;#8211; How to run protractor? &amp;#8211; Stack Overflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/20188679/how-to-run-protractor/23772014#23772014&#34;&gt;angularjs - How to run protractor? - Stack Overflow&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -752,7 +756,7 @@ $ java -version
       <guid>http://1000k.github.io/2014/05/13/collect-audit-log-with-mcafee-mysql-audit-plugin/</guid>
       <description>
 
-&lt;p&gt;McAfee が作った MySQL プラグイン &amp;#8220;&lt;a href=&#34;https://github.com/mcafee/mysql-audit&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/mcafee/mysql-audit&#39;, &#39;McAfee MySQL Audit Plugin&#39;]);&#34; &gt;McAfee MySQL Audit Plugin&lt;/a&gt;&amp;#8221; を使うと、MySQL の監査ログが取得できるようになります。&lt;/p&gt;
+&lt;p&gt;McAfee が作った MySQL プラグイン &amp;ldquo;&lt;a href=&#34;https://github.com/mcafee/mysql-audit&#34;&gt;McAfee MySQL Audit Plugin&lt;/a&gt;&amp;rdquo; を使うと、MySQL の監査ログが取得できるようになります。&lt;/p&gt;
 
 &lt;p&gt;会社のセキュリティ要件で監査が必要になったので、検証してみました。&lt;/p&gt;
 
@@ -770,7 +774,7 @@ $ java -version
 
 &lt;p&gt;CentOS 6.3 (64bit) 上に MySQL 5.6 をインストールしている環境を想定しています。&lt;/p&gt;
 
-&lt;p&gt;まず、&lt;a href=&#34;https://bintray.com/mcafee/mysql-audit-plugin/release&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://bintray.com/mcafee/mysql-audit-plugin/release&#39;, &#39;Plugin のダウンロードページ&#39;]);&#34; &gt;Plugin のダウンロードページ&lt;/a&gt; から最新のバイナリをダウンロードし、MySQL のプラグインディレクトリに解凍します。MySQL のバージョンと OS の bit を間違えないように。&lt;/p&gt;
+&lt;p&gt;まず、&lt;a href=&#34;https://bintray.com/mcafee/mysql-audit-plugin/release&#34;&gt;Plugin のダウンロードページ&lt;/a&gt; から最新のバイナリをダウンロードし、MySQL のプラグインディレクトリに解凍します。MySQL のバージョンと OS の bit を間違えないように。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ wget http://dl.bintray.com/mcafee/mysql-audit-plugin/1.0.4/audit-plugin-mysql-5.6-1.0.4-459-linux-x86_64.zip
 $ unzip audit-plugin-mysql-5.6-1.0.4-459-linux-x86_64.zip
@@ -838,7 +842,7 @@ audit_json_file = On
 
 &lt;h2 id=&#34;プラグインの設定:c6474aa8b06dbbdfd3d89714dc33b5d2&#34;&gt;プラグインの設定&lt;/h2&gt;
 
-&lt;p&gt;設定パラメータを全部書くのは面倒なので主要なものだけ。詳しくは &lt;a href=&#34;https://github.com/mcafee/mysql-audit/wiki/Configuration&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/mcafee/mysql-audit/wiki/Configuration&#39;, &#39;Configuration · mcafee/mysql-audit Wiki&#39;]);&#34; &gt;Configuration · mcafee/mysql-audit Wiki&lt;/a&gt; を参照。&lt;/p&gt;
+&lt;p&gt;設定パラメータを全部書くのは面倒なので主要なものだけ。詳しくは &lt;a href=&#34;https://github.com/mcafee/mysql-audit/wiki/Configuration&#34;&gt;Configuration · mcafee/mysql-audit Wiki&lt;/a&gt; を参照。&lt;/p&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -1018,12 +1022,12 @@ audit_json_file = On
 &lt;h2 id=&#34;参考:c6474aa8b06dbbdfd3d89714dc33b5d2&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/mcafee/mysql-audit/wiki&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/mcafee/mysql-audit/wiki&#39;, &#39;Home · mcafee/mysql-audit Wiki&#39;]);&#34; &gt;Home · mcafee/mysql-audit Wiki&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mcafee/mysql-audit/wiki&#34;&gt;Home · mcafee/mysql-audit Wiki&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;公式の Wiki。これを見ればだいたい大丈夫。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.majide.com/2012/10/mysql-mcafee-audit-plugin/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.majide.com/2012/10/mysql-mcafee-audit-plugin/&#39;, &#39;McAfeeのおかげでMySQLで監査ログが取れるようになった&#39;]);&#34; &gt;McAfeeのおかげでMySQLで監査ログが取れるようになった&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.majide.com/2012/10/mysql-mcafee-audit-plugin/&#34;&gt;McAfeeのおかげでMySQLで監査ログが取れるようになった&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;インストール手順や設定項目が詳しい。プラグインが読み込めないエラーの直し方も。&lt;/li&gt;
@@ -1040,7 +1044,7 @@ audit_json_file = On
       <guid>http://1000k.github.io/2014/05/13/estimate-load-of-mcafee-mysql-audit-plugin/</guid>
       <description>
 
-&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/?p=1837&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/?p=1837&#39;, &#39;前の記事&#39;]);&#34; &gt;前の記事&lt;/a&gt; で McAfee MySQL Audit Plugin を使うと簡単に監査ログが取れることを紹介しましたが、性能劣化はどれくらいあるのか心配になったので検証してみました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/?p=1837&#34;&gt;前の記事&lt;/a&gt; で McAfee MySQL Audit Plugin を使うと簡単に監査ログが取れることを紹介しましたが、性能劣化はどれくらいあるのか心配になったので検証してみました。&lt;/p&gt;
 
 &lt;h2 id=&#34;audit-プラグインの設定値:ca0842c38bf6f0227cc53f5afc5d2b62&#34;&gt;Audit プラグインの設定値&lt;/h2&gt;
 
@@ -1053,7 +1057,7 @@ audit_json_file = On
 | audit_checksum                  |                            |
 | audit_delay_cmds                |                            |
 | audit_delay_ms                  | 0                          |
-| audit_json_file                 | OFF                        | &amp;amp;lt;- Audit 有効時は ON にする
+| audit_json_file                 | OFF                        | &amp;lt;- Audit 有効時は ON にする
 | audit_json_file_flush           | OFF                        |
 | audit_json_file_sync            | 0                          |
 | audit_json_log_file             | mysql-audit.json           |
@@ -1072,7 +1076,7 @@ audit_json_file = On
 
 &lt;h2 id=&#34;ベンチマークの条件:ca0842c38bf6f0227cc53f5afc5d2b62&#34;&gt;ベンチマークの条件&lt;/h2&gt;
 
-&lt;p&gt;mysqlslap なら簡単にベンチマークが取れます。詳しい使い方は &lt;a href=&#34;http://blog.1000k.net/?p=1847&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/?p=1847&#39;, &#39;mysqlslap で MySQL の負荷テストをする方法&#39;]);&#34; &gt;mysqlslap で MySQL の負荷テストをする方法&lt;/a&gt; をご覧ください。&lt;/p&gt;
+&lt;p&gt;mysqlslap なら簡単にベンチマークが取れます。詳しい使い方は &lt;a href=&#34;http://blog.1000k.net/?p=1847&#34;&gt;mysqlslap で MySQL の負荷テストをする方法&lt;/a&gt; をご覧ください。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;mysqlslap \
   --no-defaults \
@@ -1253,8 +1257,8 @@ Average number of queries per client: 1000
 &lt;h2 id=&#34;参考:c586e0247ceee441e4b1b150e9d62fd0&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://dev.mysql.com/doc/refman/5.1/ja/mysqlslap.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://dev.mysql.com/doc/refman/5.1/ja/mysqlslap.html&#39;, &#39;MySQL :: MySQL 5.1 リファレンスマニュアル :: 7.15 mysqlslap — クライアント負荷エミュレーション&#39;]);&#34; &gt;MySQL :: MySQL 5.1 リファレンスマニュアル :: 7.15 mysqlslap — クライアント負荷エミュレーション&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/tetsuyai/20110209/1297253834&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://d.hatena.ne.jp/tetsuyai/20110209/1297253834&#39;, &#39;MySQL標準 負荷測定ツール mysqlslap &amp;#8211; 祈れ、そして働け ～ Ora et labora&#39;]);&#34; &gt;MySQL標準 負荷測定ツール mysqlslap &amp;#8211; 祈れ、そして働け ～ Ora et labora&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dev.mysql.com/doc/refman/5.1/ja/mysqlslap.html&#34;&gt;MySQL :: MySQL 5.1 リファレンスマニュアル :: 7.15 mysqlslap — クライアント負荷エミュレーション&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/tetsuyai/20110209/1297253834&#34;&gt;MySQL標準 負荷測定ツール mysqlslap - 祈れ、そして働け ～ Ora et labora&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -1419,22 +1423,22 @@ $ sudo mkdir ssl.key
 $ sudo sh -c &amp;quot;openssl genrsa 2048 &amp;gt; ssl.key/server.key&amp;quot;
 $ sudo sh -c &amp;quot;openssl req -new -key ssl.key/server.key &amp;gt; server.csr&amp;quot;
 (質問は全てデフォルトのまま Enter)
-$ sudo sh -c &amp;quot;openssl x509 -days 3650 -req -signkey ssl.key/server.key &amp;amp;lt; server.csr &amp;gt; ssl.crt/server.crt&amp;quot;
+$ sudo sh -c &amp;quot;openssl x509 -days 3650 -req -signkey ssl.key/server.key &amp;lt; server.csr &amp;gt; ssl.crt/server.crt&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;https アクセスを有効にする。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$ sudo sh -c &amp;quot;cat &amp;amp;lt;&amp;amp;lt;EOT &amp;gt; /usr/local/apache2/conf.d/ssl.conf
+&lt;pre&gt;&lt;code&gt;$ sudo sh -c &amp;quot;cat &amp;lt;&amp;lt;EOT &amp;gt; /usr/local/apache2/conf.d/ssl.conf
 NameVirtualHost *:443
 Listen 443
 
-&amp;amp;lt;VirtualHost *:443&amp;gt;
+&amp;lt;VirtualHost *:443&amp;gt;
     DocumentRoot /var/www
 
     SSLEngine on
     SSLCertificateFile conf/ssl.crt/server.crt
     SSLCertificateKeyFile conf/ssl.key/server.key
-&amp;amp;lt;/VirtualHost&amp;gt;
+&amp;lt;/VirtualHost&amp;gt;
 EOT&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -1448,8 +1452,8 @@ EOT&amp;quot;
 &lt;h2 id=&#34;参考:1ec5ca8028cd506870889668379eecae&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://smokycat.info/ubuntu/440&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://smokycat.info/ubuntu/440&#39;, &#39;ubuntuにオレオレ証明書を入れてapacheにhttpsできるようにする話。 | smokycat.info&#39;]);&#34; &gt;ubuntuにオレオレ証明書を入れてapacheにhttpsできるようにする話。 | smokycat.info&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/ozuma/20130511/1368284304&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://d.hatena.ne.jp/ozuma/20130511/1368284304&#39;, &#39;オレオレ証明書をopensslで作る（詳細版） &amp;#8211; ろば電子が詰まっている&#39;]);&#34; &gt;オレオレ証明書をopensslで作る（詳細版） &amp;#8211; ろば電子が詰まっている&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://smokycat.info/ubuntu/440&#34;&gt;ubuntuにオレオレ証明書を入れてapacheにhttpsできるようにする話。 | smokycat.info&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/ozuma/20130511/1368284304&#34;&gt;オレオレ証明書をopensslで作る（詳細版） - ろば電子が詰まっている&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -1468,7 +1472,18 @@ EOT&amp;quot;
 
 &lt;h2 id=&#34;時間と複雑性の関係:194584669bba4a67d0a447ada7873d53&#34;&gt;時間と複雑性の関係&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://blog.1000k.net/wp-content/uploads/complexity_by_time.png&#34; alt=&#34;複雑性と時間&#34; width=&#34;640&#34; height=&#34;480&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://1000k.github.io/img/complexity_by_time.png&#34;  /&gt;
+    
+    
+    &lt;figcaption&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
 
 &lt;p&gt;上はよく見かける時間と複雑性のモデルです。初回リリース時点では低かった複雑性も、その後の度重なる変更を経て、指数関数的に複雑性が上昇します。下げる努力をしなければ、1回の変更に要する労力は増え続け、最終的には変更不能に陥ります。&lt;/p&gt;
 
@@ -1539,7 +1554,7 @@ EOT&amp;quot;
 &lt;li&gt;不要なコンポーネントを削除してスリム化する&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;これについては私自身も経験があるので、別の記事で詳しく書く予定です。また、『&lt;a href=&#34;http://www.amazon.co.jp/gp/product/4798116831/ref=as_li_ss_tl?ie=UTF8&amp;camp=247&amp;creative=7399&amp;creativeASIN=4798116831&amp;linkCode=as2&amp;tag=1000k-22&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.amazon.co.jp/gp/product/4798116831/ref=as_li_ss_tl?ie=UTF8&amp;camp=247&amp;creative=7399&amp;creativeASIN=4798116831&amp;linkCode=as2&amp;tag=1000k-22&#39;, &#39;レガシーコード改善ガイド&#39;]);&#34; &gt;レガシーコード改善ガイド&lt;/a&gt;』が素晴らしいアイディアを与えてくれるでしょう。&lt;/p&gt;
+&lt;p&gt;これについては私自身も経験があるので、別の記事で詳しく書く予定です。また、『&lt;a href=&#34;http://www.amazon.co.jp/gp/product/4798116831/ref=as_li_ss_tl?ie=UTF8&amp;amp;camp=247&amp;amp;creative=7399&amp;amp;creativeASIN=4798116831&amp;amp;linkCode=as2&amp;amp;tag=1000k-22&#34;&gt;レガシーコード改善ガイド&lt;/a&gt;』が素晴らしいアイディアを与えてくれるでしょう。&lt;/p&gt;
 
 &lt;h3 id=&#34;逃げる:194584669bba4a67d0a447ada7873d53&#34;&gt;逃げる&lt;/h3&gt;
 
@@ -1563,7 +1578,7 @@ EOT&amp;quot;
       <guid>http://1000k.github.io/2014/01/19/questions-to-jutta-eckstein/</guid>
       <description>
 
-&lt;p&gt;Jutta Eckstein 氏の基調講演&lt;a href=&#34;http://blog.1000k.net/2014/01/18/sgt2014-%e5%9f%ba%e8%aa%bf%e8%ac%9b%e6%bc%942/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/2014/01/18/sgt2014-%e5%9f%ba%e8%aa%bf%e8%ac%9b%e6%bc%942/&#39;, &#39;「組織にアジリティを取り入れる – どうすればアジャイルになれる？」&#39;]);&#34; &gt;「組織にアジリティを取り入れる – どうすればアジャイルになれる？」&lt;/a&gt; の後に行われた質疑応答です。&lt;/p&gt;
+&lt;p&gt;Jutta Eckstein 氏の基調講演&lt;a href=&#34;http://blog.1000k.net/2014/01/18/sgt2014-%e5%9f%ba%e8%aa%bf%e8%ac%9b%e6%bc%942/&#34;&gt;「組織にアジリティを取り入れる – どうすればアジャイルになれる？」&lt;/a&gt; の後に行われた質疑応答です。&lt;/p&gt;
 
 &lt;h2 id=&#34;変化のために必要な3つのロールが揃わない場合は:a3e13834c7e6dd718e478ab87401cef7&#34;&gt;変化のために必要な3つのロールが揃わない場合は？&lt;/h2&gt;
 
@@ -1609,11 +1624,22 @@ EOT&amp;quot;
       <guid>http://1000k.github.io/2014/01/18/sgt2014-keynote2/</guid>
       <description>
 
-&lt;p&gt;&lt;img src=&#34;http://blog.1000k.net/wp-content/uploads/jutta_eckstein-300x198.jpg&#34; alt=&#34;Jutta Eckstein&#34; width=&#34;300&#34; height=&#34;198&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://1000k.github.io/img/jutta_eckstein-300x198.jpg&#34;  /&gt;
+    
+    
+    &lt;figcaption&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/2014/01/17/sgt2014-%e5%9f%ba%e8%aa%bf%e8%ac%9b%e6%bc%94%e3%80%8c%e3%82%a8%e3%83%b3%e3%82%bf%e3%83%bc%e3%83%97%e3%83%a9%e3%82%a4%e3%82%ba%e3%83%bb%e3%82%b9%e3%82%af%e3%83%a9%e3%83%a0-%e4%bc%81%e6%a5%ad%e6%b4%bb/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/2014/01/17/sgt2014-%e5%9f%ba%e8%aa%bf%e8%ac%9b%e6%bc%94%e3%80%8c%e3%82%a8%e3%83%b3%e3%82%bf%e3%83%bc%e3%83%97%e3%83%a9%e3%82%a4%e3%82%ba%e3%83%bb%e3%82%b9%e3%82%af%e3%83%a9%e3%83%a0-%e4%bc%81%e6%a5%ad%e6%b4%bb/&#39;, &#39;1日目の基調講演&#39;]);&#34; &gt;1日目の基調講演&lt;/a&gt; に続き、2日目の基調講演もメモします。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/2014/01/17/sgt2014-%e5%9f%ba%e8%aa%bf%e8%ac%9b%e6%bc%94%e3%80%8c%e3%82%a8%e3%83%b3%e3%82%bf%e3%83%bc%e3%83%97%e3%83%a9%e3%82%a4%e3%82%ba%e3%83%bb%e3%82%b9%e3%82%af%e3%83%a9%e3%83%a0-%e4%bc%81%e6%a5%ad%e6%b4%bb/&#34;&gt;1日目の基調講演&lt;/a&gt; に続き、2日目の基調講演もメモします。&lt;/p&gt;
 
-&lt;p&gt;スピーカーの &lt;a href=&#34;http://www.jeckstein.com/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.jeckstein.com/&#39;, &#39;Jutta Eckstein 氏&#39;]);&#34; &gt;Jutta Eckstein 氏&lt;/a&gt;はもともと教師であり、その後 IT 業界に入って製品開発を通じてアジャイルプロセスを身につけました。今回の講義では、アジャイルを組織に導入する方法と変化のモデルについて、明晰な分析と的確なアドバイスをされていました。&lt;/p&gt;
+&lt;p&gt;スピーカーの &lt;a href=&#34;http://www.jeckstein.com/&#34;&gt;Jutta Eckstein 氏&lt;/a&gt;はもともと教師であり、その後 IT 業界に入って製品開発を通じてアジャイルプロセスを身につけました。今回の講義では、アジャイルを組織に導入する方法と変化のモデルについて、明晰な分析と的確なアドバイスをされていました。&lt;/p&gt;
 
 &lt;h2 id=&#34;アジャイルを組織に導入するための2つの典型的なアプローチ:c795c54138722eda973de47e1a73c007&#34;&gt;アジャイルを組織に導入するための2つの典型的なアプローチ&lt;/h2&gt;
 
@@ -1642,7 +1668,7 @@ EOT&amp;quot;
 
 &lt;h2 id=&#34;変化のモデル:c795c54138722eda973de47e1a73c007&#34;&gt;変化のモデル&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.mindtools.com/pages/article/newPPM_96.htm&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.mindtools.com/pages/article/newPPM_96.htm&#39;, &#39;Elisabeth Kübler-Ross モデル&#39;]);&#34; &gt;Elisabeth Kübler-Ross モデル&lt;/a&gt; と &lt;a href=&#34;http://stevenmsmith.com/ar-satir-change-model/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://stevenmsmith.com/ar-satir-change-model/&#39;, &#39;Virginia Satir モデル&#39;]);&#34; &gt;Virginia Satir モデル&lt;/a&gt; がある。後者は &lt;a href=&#34;http://www.amazon.co.jp/gp/product/462108786X/ref=as_li_ss_tl?ie=UTF8&amp;camp=247&amp;creative=7399&amp;creativeASIN=462108786X&amp;linkCode=as2&amp;tag=1000k-22&amp;quot;&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.amazon.co.jp/gp/product/462108786X/ref=as_li_ss_tl?ie=UTF8&amp;camp=247&amp;creative=7399&amp;creativeASIN=462108786X&amp;linkCode=as2&amp;tag=1000k-22&amp;quot;&#39;, &#39;『Fearless Change アジャイルに効く アイデアを組織に広めるための48のパターン』&#39;]);&#34; &gt;『Fearless Change アジャイルに効く アイデアを組織に広めるための48のパターン』&lt;/a&gt; に素晴らしい解説がある。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.mindtools.com/pages/article/newPPM_96.htm&#34;&gt;Elisabeth Kübler-Ross モデル&lt;/a&gt; と &lt;a href=&#34;http://stevenmsmith.com/ar-satir-change-model/&#34;&gt;Virginia Satir モデル&lt;/a&gt; がある。後者は &lt;a href=&#34;http://www.amazon.co.jp/gp/product/462108786X/ref=as_li_ss_tl?ie=UTF8&amp;amp;camp=247&amp;amp;creative=7399&amp;amp;creativeASIN=462108786X&amp;amp;linkCode=as2&amp;amp;tag=1000k-22&amp;amp;quot;&#34;&gt;『Fearless Change アジャイルに効く アイデアを組織に広めるための48のパターン』&lt;/a&gt; に素晴らしい解説がある。&lt;/p&gt;
 
 &lt;h3 id=&#34;アジャイル導入直後に時間と共に起きること:c795c54138722eda973de47e1a73c007&#34;&gt;アジャイル導入直後に時間と共に起きること&lt;/h3&gt;
 
@@ -1770,7 +1796,7 @@ EOT&amp;quot;
 
 &lt;p&gt;質疑応答でも素晴らしい討議が行われていたので、別ページに書きました。↓&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/2014/01/19/jutta-eckstein-%e3%81%b8%e3%81%ae%e8%b3%aa%e5%95%8f/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/2014/01/19/jutta-eckstein-%e3%81%b8%e3%81%ae%e8%b3%aa%e5%95%8f/&#39;, &#39;Jutta Eckstein への質問&#39;]);&#34; &gt;Jutta Eckstein への質問&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/2014/01/19/jutta-eckstein-%e3%81%b8%e3%81%ae%e8%b3%aa%e5%95%8f/&#34;&gt;Jutta Eckstein への質問&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -1782,7 +1808,7 @@ EOT&amp;quot;
       <guid>http://1000k.github.io/2014/01/17/questions-to-mike-beedle/</guid>
       <description>
 
-&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/?p=1736&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/?p=1736&#39;, &#39;Mike Beedle の基調講演&#39;]);&#34; &gt;Mike Beedle の基調講演&lt;/a&gt;の後の質疑応答では、非常に興味深いディスカッションが行われました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/?p=1736&#34;&gt;Mike Beedle の基調講演&lt;/a&gt;の後の質疑応答では、非常に興味深いディスカッションが行われました。&lt;/p&gt;
 
 &lt;p&gt;幾つかのやりとりをメモします。&lt;/p&gt;
 
@@ -1802,7 +1828,7 @@ EOT&amp;quot;
 
 &lt;p&gt;A: 前もってスクラムを隠しプロジェクト (カバープロジェクト) で実践していた。そういうところで成功して実績を立てておき、良い噂を流した。&lt;/p&gt;
 
-&lt;p&gt;今は時代が変わったから、そんなことする必要は無い。&lt;a href=&#34;https://secure.standishgroup.com/reports/reports.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://secure.standishgroup.com/reports/reports.php&#39;, &#39;Standish Group のレポート&#39;]);&#34; &gt;Standish Group のレポート&lt;/a&gt;を買えば、マネジメントレベルの成功例がたくさん書いてある。あらゆるケーススタディや実績例を学べる。&lt;/p&gt;
+&lt;p&gt;今は時代が変わったから、そんなことする必要は無い。&lt;a href=&#34;https://secure.standishgroup.com/reports/reports.php&#34;&gt;Standish Group のレポート&lt;/a&gt;を買えば、マネジメントレベルの成功例がたくさん書いてある。あらゆるケーススタディや実績例を学べる。&lt;/p&gt;
 
 &lt;h2 id=&#34;q-エンタープライズスクラムのスプリントの長さはどれくらい:22e56902b6d51e44bdd3ca7927ccaaab&#34;&gt;Q: エンタープライズスクラムのスプリントの長さはどれくらい？&lt;/h2&gt;
 

@@ -21,9 +21,11 @@
 
 &lt;h3 id=&#34;手順:82fe1e63d08f1c786a02c83fe3f1d6bb&#34;&gt;手順&lt;/h3&gt;
 
-&lt;p&gt;1&amp;#46; &lt;a href=&#34;http://hal456.net/qdmail/downloads&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://hal456.net/qdmail/downloads&#39;, &#39;Qdmailをダウンロード&#39;]);&#34; title=&#34;ダウンロードdownload - Qdmail - PHP::Mail Library , Quick and Detailed for Multibyte&#34;&gt;Qdmailをダウンロード&lt;/a&gt;し、/app/controllers/components に解凍する&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://hal456.net/qdmail/downloads&#34;&gt;Qdmailをダウンロード&lt;/a&gt;し、/app/controllers/components に解凍する&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;2&amp;#46; コンソールプログラムを下記のように作成する&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;コンソールプログラムを下記のように作成する&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;pre&gt;&lt;code&gt;// /app/vendors/shells/uso.php
 
@@ -45,8 +47,8 @@ class UsoShell extends Shell {
         App::import(&amp;quot;Core&amp;quot;, &amp;quot;Controller&amp;quot;);
         App::import(&amp;quot;Component&amp;quot;, &amp;quot;Qdmail&amp;quot;);
 
-        $this-&amp;gt;Controller =&amp;amp;#038; new Controller();
-        $this-&amp;gt;Qdmail =&amp;amp;#038; new QdmailComponent(null);
+        $this-&amp;gt;Controller =&amp;amp; new Controller();
+        $this-&amp;gt;Qdmail =&amp;amp; new QdmailComponent(null);
         $this-&amp;gt;Qdmail-&amp;gt;startup($this-&amp;gt;Controller);
     }
 
@@ -80,10 +82,10 @@ class UsoShell extends Shell {
 &lt;h3 id=&#34;参考:82fe1e63d08f1c786a02c83fe3f1d6bb&#34;&gt;参考&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://hal456.net/qdmail/cakebase&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://hal456.net/qdmail/cakebase&#39;, &#39;使い方　CakePHPでのメール送信 &amp;#8211; Qdmail &amp;#8211; PHP::Mail Library , Quick and Detailed for Multibyte&#39;]);&#34; title=&#34;使い方　CakePHPでのメール送信 - Qdmail - PHP::Mail Library , Quick and Detailed for Multibyte&#34;&gt;使い方　CakePHPでのメール送信 &amp;#8211; Qdmail &amp;#8211; PHP::Mail Library , Quick and Detailed for Multibyte&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://c-brains.jp/blog/wsg/10/06/10-110652.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://c-brains.jp/blog/wsg/10/06/10-110652.php&#39;, &#39;[ステップアップ！ CakePHP] Shell を使ってコマンドラインで CakePHP | バシャログ。&#39;]);&#34; title=&#34;[ステップアップ！ CakePHP] Shell を使ってコマンドラインで CakePHP | バシャログ。&#34;&gt;[ステップアップ！ CakePHP] Shell を使ってコマンドラインで CakePHP | バシャログ。&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://bakery.cakephp.org/articles/view/emailcomponent-in-a-cake-shell&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://bakery.cakephp.org/articles/view/emailcomponent-in-a-cake-shell&#39;, &#39;EmailComponent in a (cake) Shell (Articles) | The Bakery, Everything CakePHP&#39;]);&#34; title=&#34;EmailComponent in a (cake) Shell (Articles) | The Bakery, Everything CakePHP&#34;&gt;EmailComponent in a (cake) Shell (Articles) | The Bakery, Everything CakePHP&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://c-brains.jp/blog/wsg/10/06/10-110652.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://c-brains.jp/blog/wsg/10/06/10-110652.php&#39;, &#39;[ステップアップ！ CakePHP] Shell を使ってコマンドラインで CakePHP | バシャログ。&#39;]);&#34; title=&#34;[ステップアップ！ CakePHP] Shell を使ってコマンドラインで CakePHP | バシャログ。&#34;&gt;[ステップアップ！ CakePHP] Shell を使ってコマンドラインで CakePHP | バシャログ。&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://hal456.net/qdmail/cakebase&#34;&gt;使い方　CakePHPでのメール送信 - Qdmail - PHP::Mail Library , Quick and Detailed for Multibyte&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://c-brains.jp/blog/wsg/10/06/10-110652.php&#34;&gt;[ステップアップ！ CakePHP] Shell を使ってコマンドラインで CakePHP | バシャログ。&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://bakery.cakephp.org/articles/view/emailcomponent-in-a-cake-shell&#34;&gt;EmailComponent in a (cake) Shell (Articles) | The Bakery, Everything CakePHP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://c-brains.jp/blog/wsg/10/06/10-110652.php&#34;&gt;[ステップアップ！ CakePHP] Shell を使ってコマンドラインで CakePHP | バシャログ。&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

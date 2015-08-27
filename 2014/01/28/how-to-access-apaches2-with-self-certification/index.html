@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -64,22 +69,22 @@ $ sudo mkdir ssl.key
 $ sudo sh -c &quot;openssl genrsa 2048 &gt; ssl.key/server.key&quot;
 $ sudo sh -c &quot;openssl req -new -key ssl.key/server.key &gt; server.csr&quot;
 (質問は全てデフォルトのまま Enter)
-$ sudo sh -c &quot;openssl x509 -days 3650 -req -signkey ssl.key/server.key &amp;lt; server.csr &gt; ssl.crt/server.crt&quot;
+$ sudo sh -c &quot;openssl x509 -days 3650 -req -signkey ssl.key/server.key &lt; server.csr &gt; ssl.crt/server.crt&quot;
 </code></pre>
 
 <p>https アクセスを有効にする。</p>
 
-<pre><code>$ sudo sh -c &quot;cat &amp;lt;&amp;lt;EOT &gt; /usr/local/apache2/conf.d/ssl.conf
+<pre><code>$ sudo sh -c &quot;cat &lt;&lt;EOT &gt; /usr/local/apache2/conf.d/ssl.conf
 NameVirtualHost *:443
 Listen 443
 
-&amp;lt;VirtualHost *:443&gt;
+&lt;VirtualHost *:443&gt;
     DocumentRoot /var/www
 
     SSLEngine on
     SSLCertificateFile conf/ssl.crt/server.crt
     SSLCertificateKeyFile conf/ssl.key/server.key
-&amp;lt;/VirtualHost&gt;
+&lt;/VirtualHost&gt;
 EOT&quot;
 </code></pre>
 
@@ -93,8 +98,8 @@ EOT&quot;
 <h2 id="参考:1ec5ca8028cd506870889668379eecae">参考</h2>
 
 <ul>
-<li><a href="http://smokycat.info/ubuntu/440" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://smokycat.info/ubuntu/440', 'ubuntuにオレオレ証明書を入れてapacheにhttpsできるようにする話。 | smokycat.info']);" >ubuntuにオレオレ証明書を入れてapacheにhttpsできるようにする話。 | smokycat.info</a></li>
-<li><a href="http://d.hatena.ne.jp/ozuma/20130511/1368284304" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://d.hatena.ne.jp/ozuma/20130511/1368284304', 'オレオレ証明書をopensslで作る（詳細版） &#8211; ろば電子が詰まっている']);" >オレオレ証明書をopensslで作る（詳細版） &#8211; ろば電子が詰まっている</a></li>
+<li><a href="http://smokycat.info/ubuntu/440">ubuntuにオレオレ証明書を入れてapacheにhttpsできるようにする話。 | smokycat.info</a></li>
+<li><a href="http://d.hatena.ne.jp/ozuma/20130511/1368284304">オレオレ証明書をopensslで作る（詳細版） - ろば電子が詰まっている</a></li>
 </ul>
 
         </div>

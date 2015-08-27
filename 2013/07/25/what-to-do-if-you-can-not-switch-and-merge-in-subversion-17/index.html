@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -86,7 +91,7 @@ svn, version 1.7.10 (r1485443)
 // `--with-ssl` を忘れずに！
 # cd neon/
 # ./configure --with-ssl
-# make &amp;#038;&amp;#038; make install
+# make &amp;&amp; make install
 
 // Subversion をインストールする。
 # cd ../
@@ -95,7 +100,7 @@ svn, version 1.7.10 (r1485443)
   --without-berkeley-db \
   --with-neon \
   --with-ssl
-# make &amp;#038;&amp;#038; make install
+# make &amp;&amp; make install
 </code></pre>
 
 <p>正しくインストールできると、以下のように <code>ra_neon</code> という表示が出ます。</p>
@@ -117,7 +122,7 @@ svn, version 1.7.10 (r1485443)
 
 <p>今回とは逆で、「neon だとエラーになるが serf なら大丈夫だった」という事例もありました。</p>
 
-<p><a href="http://masutaka.net/chalow/2009-06-15-1.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://masutaka.net/chalow/2009-06-15-1.html', 'Debian squeeze の subversion で http リポジトリにアクセスできなくなった / マスタカの ChangeLog メモ']);" >Debian squeeze の subversion で http リポジトリにアクセスできなくなった / マスタカの ChangeLog メモ</a></p>
+<p><a href="http://masutaka.net/chalow/2009-06-15-1.html">Debian squeeze の subversion で http リポジトリにアクセスできなくなった / マスタカの ChangeLog メモ</a></p>
 
 <p>バージョンアップのたびに不具合が入れ替わるんでしょうか。</p>
 
@@ -126,9 +131,9 @@ svn, version 1.7.10 (r1485443)
 <h2 id="参考:b3d12b85aa6526b84cee44966cb0c763">参考</h2>
 
 <ul>
-<li><a href="http://blog.iss.ms/2009/04/12/141537" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blog.iss.ms/2009/04/12/141537', '[memo][svn] svnクライアントにSSLをサポートさせる « いわぶろ（ろてん）']);" >[memo][svn] svnクライアントにSSLをサポートさせる « いわぶろ（ろてん）</a></li>
-<li><a href="http://blog.r-unit.co.jp/archives/726" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blog.r-unit.co.jp/archives/726', 'はだかの隊長日記 » Subversionコンパイル方法']);" >はだかの隊長日記 » Subversionコンパイル方法</a></li>
-<li><a href="http://masutaka.net/chalow/2009-06-15-1.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://masutaka.net/chalow/2009-06-15-1.html', 'Debian squeeze の subversion で http リポジトリにアクセスできなくなった / マスタカの ChangeLog メモ']);" >Debian squeeze の subversion で http リポジトリにアクセスできなくなった / マスタカの ChangeLog メモ</a></li>
+<li><a href="http://blog.iss.ms/2009/04/12/141537">[memo][svn] svnクライアントにSSLをサポートさせる « いわぶろ（ろてん）</a></li>
+<li><a href="http://blog.r-unit.co.jp/archives/726">はだかの隊長日記 » Subversionコンパイル方法</a></li>
+<li><a href="http://masutaka.net/chalow/2009-06-15-1.html">Debian squeeze の subversion で http リポジトリにアクセスできなくなった / マスタカの ChangeLog メモ</a></li>
 </ul>
 
         </div>

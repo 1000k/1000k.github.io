@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -77,7 +82,7 @@
 
 <p><strong>/app/libs/my_cake_test_case.php</strong></p>
 
-<pre><code>&lt;?php
+<pre><code class="language-php">&lt;?php
 /**
  * Extension of CakeTestCase Class
  *
@@ -161,7 +166,7 @@ class MyCakeTestCase extends CakeTestCase {
             if (isset($fixtureFile)) {
                 require_once($fixtureFile);
                 $fixtureClass = Inflector::camelize($fixture) . 'Fixture';
-                $this-&gt;_fixtures[$this-&gt;fixtures[$index]] =&amp;#038; new $fixtureClass($this-&gt;db);
+                $this-&gt;_fixtures[$this-&gt;fixtures[$index]] =&amp; new $fixtureClass($this-&gt;db);
                 $this-&gt;_fixtureClassMap[Inflector::camelize($fixture)] = $this-&gt;fixtures[$index];
             }
         }
@@ -177,7 +182,7 @@ class MyCakeTestCase extends CakeTestCase {
 
 <p>**/app/tests/cases/controllers/higes_controller.test.php**</p>
 
-<pre><code>&lt;?php
+<pre><code class="language-php">&lt;?php
 App::import('Model', 'Uso');
 App::import('Lib', 'MyCakeTestCase');
 
@@ -190,14 +195,14 @@ class HigesControllerTestCase extends MyCakeTestCase {
 
 <h2 id="副作用:06041edaaf4ad9c158653456ce78f617">副作用</h2>
 
-<p>テストケースで「App::import(&#8216;Lib&#8217;, &#8216;MyCakeTestCase&#8217;);」すると、なぜかMyCakeTestCaseもテスト対象になるらしく、テスト結果の「n/n test cases complete」の値が1増えます。</p>
+<p>テストケースで「App::import(&lsquo;Lib&rsquo;, &lsquo;MyCakeTestCase&rsquo;);」すると、なぜかMyCakeTestCaseもテスト対象になるらしく、テスト結果の「n/n test cases complete」の値が1増えます。</p>
 
 <p>テスト結果のGreen/Redには影響しないので、無視してください。</p>
 
 <h2 id="参考:06041edaaf4ad9c158653456ce78f617">参考</h2>
 
 <ul>
-<li><a href="http://d.hatena.ne.jp/hiromi2424/20101215/1292379625" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://d.hatena.ne.jp/hiromi2424/20101215/1292379625', 'App::import() は凄い &#8211; 24時間CakePHP']);" title="App::import() は凄い - 24時間CakePHP">App::import() は凄い &#8211; 24時間CakePHP</a>
+<li><a href="http://d.hatena.ne.jp/hiromi2424/20101215/1292379625">App::import() は凄い - 24時間CakePHP</a>
 
 <ul>
 <li>本当はApp::importだけでできれば一番いいんですけどね。</li>

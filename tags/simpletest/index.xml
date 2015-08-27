@@ -37,7 +37,7 @@ class UsosControllerTestCase extends CakeTestCase {
 
     function startTest() {
         echo(&amp;quot;startTest\n&amp;quot;);
-        $this-&amp;gt;Usos =&amp;amp;#038; new TestUsosController();
+        $this-&amp;gt;Usos =&amp;amp; new TestUsosController();
         $this-&amp;gt;Usos-&amp;gt;constructClasses();
     }
 
@@ -103,7 +103,7 @@ end after
 &lt;h3 id=&#34;参考:7c93c2bceb58597d643b29645d174b10&#34;&gt;参考&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://book.cakephp.org/ja/view/1206/CakeTestCase-Callback-Methods&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://book.cakephp.org/ja/view/1206/CakeTestCase-Callback-Methods&#39;, &#39;CakeTestCase Callback Methods :: テストの作成 :: テスト(Testing) :: CakePHPによる作業の定石 :: マニュアル :: 1.3コレクション :: The Cookbook&#39;]);&#34; title=&#34;CakeTestCase Callback Methods :: テストの作成 :: テスト(Testing) :: CakePHPによる作業の定石 :: マニュアル :: 1.3コレクション :: The Cookbook&#34;&gt;CakeTestCase Callback Methods :: テストの作成 :: テスト(Testing) :: CakePHPによる作業の定石 :: マニュアル :: 1.3コレクション :: The Cookbook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://book.cakephp.org/ja/view/1206/CakeTestCase-Callback-Methods&#34;&gt;CakeTestCase Callback Methods :: テストの作成 :: テスト(Testing) :: CakePHPによる作業の定石 :: マニュアル :: 1.3コレクション :: The Cookbook&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

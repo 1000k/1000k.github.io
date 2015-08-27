@@ -38,22 +38,22 @@ $ sudo mkdir ssl.key
 $ sudo sh -c &amp;quot;openssl genrsa 2048 &amp;gt; ssl.key/server.key&amp;quot;
 $ sudo sh -c &amp;quot;openssl req -new -key ssl.key/server.key &amp;gt; server.csr&amp;quot;
 (質問は全てデフォルトのまま Enter)
-$ sudo sh -c &amp;quot;openssl x509 -days 3650 -req -signkey ssl.key/server.key &amp;amp;lt; server.csr &amp;gt; ssl.crt/server.crt&amp;quot;
+$ sudo sh -c &amp;quot;openssl x509 -days 3650 -req -signkey ssl.key/server.key &amp;lt; server.csr &amp;gt; ssl.crt/server.crt&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;https アクセスを有効にする。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$ sudo sh -c &amp;quot;cat &amp;amp;lt;&amp;amp;lt;EOT &amp;gt; /usr/local/apache2/conf.d/ssl.conf
+&lt;pre&gt;&lt;code&gt;$ sudo sh -c &amp;quot;cat &amp;lt;&amp;lt;EOT &amp;gt; /usr/local/apache2/conf.d/ssl.conf
 NameVirtualHost *:443
 Listen 443
 
-&amp;amp;lt;VirtualHost *:443&amp;gt;
+&amp;lt;VirtualHost *:443&amp;gt;
     DocumentRoot /var/www
 
     SSLEngine on
     SSLCertificateFile conf/ssl.crt/server.crt
     SSLCertificateKeyFile conf/ssl.key/server.key
-&amp;amp;lt;/VirtualHost&amp;gt;
+&amp;lt;/VirtualHost&amp;gt;
 EOT&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -67,8 +67,8 @@ EOT&amp;quot;
 &lt;h2 id=&#34;参考:1ec5ca8028cd506870889668379eecae&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://smokycat.info/ubuntu/440&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://smokycat.info/ubuntu/440&#39;, &#39;ubuntuにオレオレ証明書を入れてapacheにhttpsできるようにする話。 | smokycat.info&#39;]);&#34; &gt;ubuntuにオレオレ証明書を入れてapacheにhttpsできるようにする話。 | smokycat.info&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/ozuma/20130511/1368284304&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://d.hatena.ne.jp/ozuma/20130511/1368284304&#39;, &#39;オレオレ証明書をopensslで作る（詳細版） &amp;#8211; ろば電子が詰まっている&#39;]);&#34; &gt;オレオレ証明書をopensslで作る（詳細版） &amp;#8211; ろば電子が詰まっている&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://smokycat.info/ubuntu/440&#34;&gt;ubuntuにオレオレ証明書を入れてapacheにhttpsできるようにする話。 | smokycat.info&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/ozuma/20130511/1368284304&#34;&gt;オレオレ証明書をopensslで作る（詳細版） - ろば電子が詰まっている&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -81,11 +81,33 @@ EOT&amp;quot;
       <guid>http://1000k.github.io/2013/12/17/display-google-maps-showing-fixed-header-and-footer/</guid>
       <description>
 
-&lt;p&gt;&lt;a href=&#34;http://jsfiddle.net/893s2/2/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://jsfiddle.net/893s2/2/&#39;, &#39;このデモ&#39;]);&#34; &gt;このデモ&lt;/a&gt;を見れば、何をやりたいかすぐ把握できると思います。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://jsfiddle.net/893s2/2/&#34;&gt;このデモ&lt;/a&gt;を見れば、何をやりたいかすぐ把握できると思います。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/map_1.png&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/wp-content/uploads/map_1.png&#39;, &#39;&#39;]);&#34; &gt;&lt;img src=&#34;http://blog.1000k.net/wp-content/uploads/map_1-300x225.png&#34; alt=&#34;map_1&#34; width=&#34;300&#34; height=&#34;225&#34; class=&#34;alignnone size-medium wp-image-1683&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/map_1.png&#34;&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://1000k.github.io/img/map_1-300x225.png&#34;  /&gt;
+    
+    
+    &lt;figcaption&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/map_2.png&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/wp-content/uploads/map_2.png&#39;, &#39;&#39;]);&#34; &gt;&lt;img src=&#34;http://blog.1000k.net/wp-content/uploads/map_2-190x300.png&#34; alt=&#34;map_2&#34; width=&#34;190&#34; height=&#34;300&#34; class=&#34;alignnone size-medium wp-image-1684&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/map_2.png&#34;&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://1000k.github.io/img/map_2-190x300.png&#34;  /&gt;
+    
+    
+    &lt;figcaption&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;ウィンドウの幅や高さを変えても、ヘッダーとフッターは常に同じ高さのままで、マップの部分はウィンドウサイズに合うように伸縮しています。&lt;/p&gt;
 
@@ -103,7 +125,7 @@ EOT&amp;quot;
 
 
 &amp;lt;div id=&amp;quot;container&amp;quot;&amp;gt;
-  &amp;amp;lt;header&amp;gt;header&amp;amp;lt;/header&amp;gt;
+  &amp;lt;header&amp;gt;header&amp;lt;/header&amp;gt;
 
 
 
@@ -114,7 +136,7 @@ EOT&amp;quot;
 
   &amp;lt;/div&amp;gt;
 
-      &amp;amp;lt;footer&amp;gt;This footer is absolutely positioned&amp;amp;lt;/footer&amp;gt;
+      &amp;lt;footer&amp;gt;This footer is absolutely positioned&amp;lt;/footer&amp;gt;
 
 &amp;lt;/div&amp;gt;
 
@@ -187,7 +209,7 @@ footer {
 &lt;h2 id=&#34;参考:58e354fc35f3ca4266379278104f5f1b&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/2821596/100-height-with-fixed-footer-and-embedded-google-map&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://stackoverflow.com/questions/2821596/100-height-with-fixed-footer-and-embedded-google-map&#39;, &#39;html &amp;#8211; 100% height with fixed footer and embedded Google Map &amp;#8211; Stack Overflow&#39;]);&#34; &gt;html &amp;#8211; 100% height with fixed footer and embedded Google Map &amp;#8211; Stack Overflow&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/2821596/100-height-with-fixed-footer-and-embedded-google-map&#34;&gt;html - 100% height with fixed footer and embedded Google Map - Stack Overflow&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;今回のデモは、この Q&amp;amp;A に書かれているコードをシンプルにしただけです。&lt;/li&gt;
@@ -282,18 +304,18 @@ class AppController extends Controller {
 
 &lt;h2 id=&#34;余談:882e9f5bab62127de673717c90df9029&#34;&gt;余談&lt;/h2&gt;
 
-&lt;p&gt;本当は CakePHP 2.1 から採用された &lt;a href=&#34;http://book.cakephp.org/2.0/en/core-libraries/events.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://book.cakephp.org/2.0/en/core-libraries/events.html&#39;, &#39;Events System&#39;]);&#34; &gt;Events System&lt;/a&gt; を使って &lt;code&gt;beforeFilter()&lt;/code&gt; 以降のアクションを実行されないようにしたかったのですが、やり方がわかりませんでした。アクションを detach する方法をご存知の方がいたら教えて下さい。&lt;/p&gt;
+&lt;p&gt;本当は CakePHP 2.1 から採用された &lt;a href=&#34;http://book.cakephp.org/2.0/en/core-libraries/events.html&#34;&gt;Events System&lt;/a&gt; を使って &lt;code&gt;beforeFilter()&lt;/code&gt; 以降のアクションを実行されないようにしたかったのですが、やり方がわかりませんでした。アクションを detach する方法をご存知の方がいたら教えて下さい。&lt;/p&gt;
 
 &lt;h2 id=&#34;参考:882e9f5bab62127de673717c90df9029&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://book.cakephp.org/2.0/en/views/json-and-xml-views.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://book.cakephp.org/2.0/en/views/json-and-xml-views.html&#39;, &#39;JSON and XML views — CakePHP Cookbook v2.x documentation&#39;]);&#34; &gt;JSON and XML views — CakePHP Cookbook v2.x documentation&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://book.cakephp.org/2.0/en/views/json-and-xml-views.html&#34;&gt;JSON and XML views — CakePHP Cookbook v2.x documentation&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;ビューを使わず JSON で出力を行う方法が書かれています。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://book.cakephp.org/2.0/en/controllers.html#request-life-cycle-callbacks&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://book.cakephp.org/2.0/en/controllers.html#request-life-cycle-callbacks&#39;, &#39;Controllers — CakePHP Cookbook v2.x documentation&#39;]);&#34; &gt;Controllers — CakePHP Cookbook v2.x documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://api.cakephp.org/2.4/class-Controller.html#_invokeAction&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://api.cakephp.org/2.4/class-Controller.html#_invokeAction&#39;, &#39;CakeAPI &gt; invokeAction&amp;rsquo;]);&amp;rdquo; &amp;gt;CakeAPI &amp;gt; invokeAction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://book.cakephp.org/2.0/en/controllers.html#request-life-cycle-callbacks&#34;&gt;Controllers — CakePHP Cookbook v2.x documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ invokeAction&amp;rsquo;]);&amp;rdquo; &amp;gt;CakeAPI &amp;gt; invokeAction](&lt;a href=&#34;http://api.cakephp.org/2.4/class-Controller.html#_invokeAction&#34;&gt;http://api.cakephp.org/2.4/class-Controller.html#_invokeAction&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -312,7 +334,7 @@ class AppController extends Controller {
 
 &lt;h2 id=&#34;参考:e45e994ba8135917364d3e9a430429e3&#34;&gt;参考&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/5828324/update-git-submodule&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://stackoverflow.com/questions/5828324/update-git-submodule&#39;, &#39;Update git submodule &amp;#8211; Stack Overflow&#39;]);&#34; &gt;Update git submodule &amp;#8211; Stack Overflow&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/5828324/update-git-submodule&#34;&gt;Update git submodule - Stack Overflow&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -324,7 +346,7 @@ class AppController extends Controller {
       <guid>http://1000k.github.io/2013/10/20/speed-up-grunt-watch/</guid>
       <description>
 
-&lt;p&gt;Grunt を使うからには &lt;a href=&#34;https://github.com/gruntjs/grunt-contrib-watch#optionsnospawn&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/gruntjs/grunt-contrib-watch#optionsnospawn&#39;, &#39;grunt-contrib-watch&#39;]);&#34; &gt;grunt-contrib-watch&lt;/a&gt; でファイルの変更を監視して自動ビルドしたいのですが、どうも遅い。&lt;/p&gt;
+&lt;p&gt;Grunt を使うからには &lt;a href=&#34;https://github.com/gruntjs/grunt-contrib-watch#optionsnospawn&#34;&gt;grunt-contrib-watch&lt;/a&gt; でファイルの変更を監視して自動ビルドしたいのですが、どうも遅い。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ grunt watch
 
@@ -404,8 +426,8 @@ OK
 &lt;h2 id=&#34;参考:bcbef8a25879c17668c0f2da3a272309&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/gruntjs/grunt-contrib-watch/issues/69&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/gruntjs/grunt-contrib-watch/issues/69&#39;, &#39;Why Watch is so slow compared to Regarde · Issue #69 · gruntjs/grunt-contrib-watch&#39;]);&#34; &gt;Why Watch is so slow compared to Regarde · Issue #69 · gruntjs/grunt-contrib-watch&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/gruntjs/grunt-contrib-watch#optionsnospawn&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/gruntjs/grunt-contrib-watch#optionsnospawn&#39;, &#39;gruntjs/grunt-contrib-watch#optionsnospawn&#39;]);&#34; &gt;gruntjs/grunt-contrib-watch#optionsnospawn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/gruntjs/grunt-contrib-watch/issues/69&#34;&gt;Why Watch is so slow compared to Regarde · Issue #69 · gruntjs/grunt-contrib-watch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/gruntjs/grunt-contrib-watch#optionsnospawn&#34;&gt;gruntjs/grunt-contrib-watch#optionsnospawn&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -477,7 +499,7 @@ class FooClassTest extends PHPUnit_Framework_TestCase {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;また、PHPUnit の Expectation はメソッドチェーンで連続して指定できます (&amp;#8220;-&amp;gt;&amp;#8221; 演算子で繋げて書ける) が、そもそも記述量が多いです。いちいち this this 書くのも煩わしい。&lt;/p&gt;
+&lt;p&gt;また、PHPUnit の Expectation はメソッドチェーンで連続して指定できます (&amp;ldquo;-&amp;gt;&amp;rdquo; 演算子で繋げて書ける) が、そもそも記述量が多いです。いちいち this this 書くのも煩わしい。&lt;/p&gt;
 
 &lt;p&gt;そこで、Expectation をセットするためのメソッドを作ってやると楽になります。&lt;/p&gt;
 
@@ -485,12 +507,12 @@ class FooClassTest extends PHPUnit_Framework_TestCase {
     /**
      * モックオブジェクトに Expectation を設定する。
      *
-     * @param Object &amp;amp;#038;$mock モックオブジェクト
+     * @param Object &amp;amp;$mock モックオブジェクト
      * @param string $matcher マッチャー ([any|once|never|...])
      * @param string $method メソッド名
      * @param mixed $return_value 期待する戻り値
      */
-    protected function _setExpectation(&amp;amp;#038;$mock, $matcher, $method, $return_value = null) {
+    protected function _setExpectation(&amp;amp;$mock, $matcher, $method, $return_value = null) {
         $mock-&amp;gt;expects($this-&amp;gt;$matcher())
             -&amp;gt;method($method)
             -&amp;gt;will($this-&amp;gt;returnValue($return_value));
@@ -523,13 +545,13 @@ class FooClassTest extends MyTestCase {
 
 &lt;p&gt;また、PHPDoc 部分に &lt;code&gt;@test&lt;/code&gt; アノテーションを付けると、メソッド名を &lt;code&gt;test&lt;/code&gt; で始めなくてもテストケースとして認識されるようになります。私はこの方が読みやすいので、最近はこう書くことが多いです。&lt;/p&gt;
 
-&lt;p&gt;こういう改善をしても、Ruby に慣れているとまだ長く感じます。「$」「&amp;#8217;」「&amp;gt;」などの記号を打つのも煩わしいです。Ruby 使いてえなあ。&lt;/p&gt;
+&lt;p&gt;こういう改善をしても、Ruby に慣れているとまだ長く感じます。「$」「&amp;rsquo;」「&amp;gt;」などの記号を打つのも煩わしいです。Ruby 使いてえなあ。&lt;/p&gt;
 
 &lt;h2 id=&#34;参考:66eb9e16e3cbfb7a24c972ec7c7d6f12&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://phpunit.de/manual/3.8/ja/test-doubles.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://phpunit.de/manual/3.8/ja/test-doubles.html&#39;, &#39;PHPUnit 公式マニュアル &gt; 第10章 テストダブル&amp;rsquo;]);&amp;rdquo; &amp;gt;PHPUnit 公式マニュアル &amp;gt; 第10章 テストダブル&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://phpunit.de/manual/3.8/ja/appendixes.annotations.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://phpunit.de/manual/3.8/ja/appendixes.annotations.html&#39;, &#39;付録B アノテーション&#39;]);&#34; &gt;付録B アノテーション&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ 第10章 テストダブル&amp;rsquo;]);&amp;rdquo; &amp;gt;PHPUnit 公式マニュアル &amp;gt; 第10章 テストダブル](&lt;a href=&#34;http://phpunit.de/manual/3.8/ja/test-doubles.html&#34;&gt;http://phpunit.de/manual/3.8/ja/test-doubles.html&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://phpunit.de/manual/3.8/ja/appendixes.annotations.html&#34;&gt;付録B アノテーション&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -546,12 +568,12 @@ class FooClassTest extends MyTestCase {
 
 &lt;h2 id=&#34;使うコマンド:eab99a5c8d7d52c5c56e0b2e7fa8bbba&#34;&gt;使うコマンド&lt;/h2&gt;
 
-&lt;p&gt;受信側では &amp;#8220;-l&amp;#8221; (Listen mode) オプションを使い、待受状態にします。&lt;/p&gt;
+&lt;p&gt;受信側では &amp;ldquo;-l&amp;rdquo; (Listen mode) オプションを使い、待受状態にします。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ nc -l {listenするポート番号}
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;送信側は &amp;#8220;-z&amp;#8221; (Zero-I/O mode) オプションを使い、指定したポートに接続できるかテストします。&lt;/p&gt;
+&lt;p&gt;送信側は &amp;ldquo;-z&amp;rdquo; (Zero-I/O mode) オプションを使い、指定したポートに接続できるかテストします。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ nc -v -z {受信側のIP} {受信側のポート番号}
 &lt;/code&gt;&lt;/pre&gt;
@@ -565,7 +587,7 @@ class FooClassTest extends MyTestCase {
 &lt;pre&gt;&lt;code&gt;[host001]$ nc -v -k -l 4949
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&amp;#8220;-v&amp;#8221; でより多くのメッセージを出力し、&amp;#8221;-k&amp;#8221; でコネクションを永続化することができます。（&amp;#8221;-k&amp;#8221; を指定しないと1回受信するたびに nc が終了します）&lt;/p&gt;
+&lt;p&gt;&amp;rdquo;-v&amp;rdquo; でより多くのメッセージを出力し、&amp;rdquo;-k&amp;rdquo; でコネクションを永続化することができます。（&amp;rdquo;-k&amp;rdquo; を指定しないと1回受信するたびに nc が終了します）&lt;/p&gt;
 
 &lt;h3 id=&#34;2-送信側から接続できるか確かめる:eab99a5c8d7d52c5c56e0b2e7fa8bbba&#34;&gt;2. 送信側から接続できるか確かめる&lt;/h3&gt;
 
@@ -587,8 +609,8 @@ class FooClassTest extends MyTestCase {
 &lt;h2 id=&#34;参考:eab99a5c8d7d52c5c56e0b2e7fa8bbba&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.techrepublic.com/article/learn-the-many-uses-of-netcat/5689982&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.techrepublic.com/article/learn-the-many-uses-of-netcat/5689982&#39;, &#39;Learn the many uses of netcat | TechRepublic&#39;]);&#34; &gt;Learn the many uses of netcat | TechRepublic&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.usupi.org/sysad/190.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.usupi.org/sysad/190.html&#39;, &#39;Netcat でネットワークをもう少し活用する &amp;#8211; いますぐ実践! Linuxシステム管理 / Vol.190&#39;]);&#34; &gt;Netcat でネットワークをもう少し活用する &amp;#8211; いますぐ実践! Linuxシステム管理 / Vol.190&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.techrepublic.com/article/learn-the-many-uses-of-netcat/5689982&#34;&gt;Learn the many uses of netcat | TechRepublic&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.usupi.org/sysad/190.html&#34;&gt;Netcat でネットワークをもう少し活用する - いますぐ実践! Linuxシステム管理 / Vol.190&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -620,7 +642,7 @@ public function varExportToLog($var, $path) {
 &lt;h1 id=&#34;参考:48c102883614406009a90644938731e2&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://plaza.rakuten.co.jp/hknopage/diary/201109060000/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://plaza.rakuten.co.jp/hknopage/diary/201109060000/&#39;, &#39;PHPメモ：var_export() &amp;#8211; まんじうこわい@楽 &amp;#8211; 楽天ブログ（Blog）&#39;]);&#34; &gt;PHPメモ：var_export() &amp;#8211; まんじうこわい@楽 &amp;#8211; 楽天ブログ（Blog）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://plaza.rakuten.co.jp/hknopage/diary/201109060000/&#34;&gt;PHPメモ：var_export() - まんじうこわい@楽 - 楽天ブログ（Blog）&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -635,7 +657,7 @@ public function varExportToLog($var, $path) {
 
 &lt;p&gt;vmstatの値をファイルに出力したいとき、次のコマンドが使えます。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;nohup vmstat -n -S M 1 | awk &#39;{ print strftime(&amp;quot;%Y/%m/%d %H:%M:%S&amp;quot;), $0 } { system(&amp;quot;:&amp;quot;) }&#39; &amp;gt;&amp;gt; /path/to/log &amp;amp;#038;
+&lt;pre&gt;&lt;code&gt;nohup vmstat -n -S M 1 | awk &#39;{ print strftime(&amp;quot;%Y/%m/%d %H:%M:%S&amp;quot;), $0 } { system(&amp;quot;:&amp;quot;) }&#39; &amp;gt;&amp;gt; /path/to/log &amp;amp;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;出力は下記のようになります。&lt;/p&gt;
@@ -658,9 +680,9 @@ $ kill {上で出てきたpid}
 &lt;h1 id=&#34;参考:981194324cf5b426a797d33ec4db9e80&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://babyp.blog55.fc2.com/blog-entry-446.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://babyp.blog55.fc2.com/blog-entry-446.html&#39;, &#39;サーバのリソースを定期的に出力しとく方法：なんとなしの日記&#39;]);&#34; &gt;サーバのリソースを定期的に出力しとく方法：なんとなしの日記&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/higher_tomorrow/20110601/1306887919&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://d.hatena.ne.jp/higher_tomorrow/20110601/1306887919&#39;, &#39;（今さら） vmstat の結果に時間をつけてファイルに出力する &amp;#8211; あしのあしあと&#39;]);&#34; &gt;（今さら） vmstat の結果に時間をつけてファイルに出力する &amp;#8211; あしのあしあと&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://itpro.nikkeibp.co.jp/article/COLUMN/20060227/230850/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://itpro.nikkeibp.co.jp/article/COLUMN/20060227/230850/&#39;, &#39;【 nohup 】 ログアウトした後もコマンドを実行し続ける &amp;#8211; Linuxコマンド集：ITpro&#39;]);&#34; &gt;【 nohup 】 ログアウトした後もコマンドを実行し続ける &amp;#8211; Linuxコマンド集：ITpro&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://babyp.blog55.fc2.com/blog-entry-446.html&#34;&gt;サーバのリソースを定期的に出力しとく方法：なんとなしの日記&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/higher_tomorrow/20110601/1306887919&#34;&gt;（今さら） vmstat の結果に時間をつけてファイルに出力する - あしのあしあと&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://itpro.nikkeibp.co.jp/article/COLUMN/20060227/230850/&#34;&gt;【 nohup 】 ログアウトした後もコマンドを実行し続ける - Linuxコマンド集：ITpro&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -701,8 +723,8 @@ $ kill {上で出てきたpid}
 &lt;h1 id=&#34;参考:8ae62bd64dbb38a5a9b5b7de400f164f&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://openlab.dino.co.jp/2007/10/23/184825129.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://openlab.dino.co.jp/2007/10/23/184825129.html&#39;, &#39;svn diffで-wオプションを使う — ディノオープンラボラトリ&#39;]);&#34; title=&#34;svn diffで-wオプションを使う — ディノオープンラボラトリ&#34;&gt;svn diffで-wオプションを使う — ディノオープンラボラトリ&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.enjoitech.jp/article/71&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.enjoitech.jp/article/71&#39;, &#39;Linux である文字を含む行を削除したい &amp;#8211; Enjoi Blog&#39;]);&#34; title=&#34;Linux である文字を含む行を削除したい - Enjoi Blog&#34;&gt;Linux である文字を含む行を削除したい &amp;#8211; Enjoi Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://openlab.dino.co.jp/2007/10/23/184825129.html&#34;&gt;svn diffで-wオプションを使う — ディノオープンラボラトリ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.enjoitech.jp/article/71&#34;&gt;Linux である文字を含む行を削除したい - Enjoi Blog&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -749,7 +771,7 @@ $ kill {上で出てきたpid}
 
 &lt;p&gt;&lt;strong&gt;/app/libs/my_cake_test_case.php&lt;/strong&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;&amp;lt;?php
 /**
  * Extension of CakeTestCase Class
  *
@@ -833,7 +855,7 @@ class MyCakeTestCase extends CakeTestCase {
             if (isset($fixtureFile)) {
                 require_once($fixtureFile);
                 $fixtureClass = Inflector::camelize($fixture) . &#39;Fixture&#39;;
-                $this-&amp;gt;_fixtures[$this-&amp;gt;fixtures[$index]] =&amp;amp;#038; new $fixtureClass($this-&amp;gt;db);
+                $this-&amp;gt;_fixtures[$this-&amp;gt;fixtures[$index]] =&amp;amp; new $fixtureClass($this-&amp;gt;db);
                 $this-&amp;gt;_fixtureClassMap[Inflector::camelize($fixture)] = $this-&amp;gt;fixtures[$index];
             }
         }
@@ -849,7 +871,7 @@ class MyCakeTestCase extends CakeTestCase {
 
 &lt;p&gt;**/app/tests/cases/controllers/higes_controller.test.php**&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;&amp;lt;?php
 App::import(&#39;Model&#39;, &#39;Uso&#39;);
 App::import(&#39;Lib&#39;, &#39;MyCakeTestCase&#39;);
 
@@ -862,14 +884,14 @@ class HigesControllerTestCase extends MyCakeTestCase {
 
 &lt;h2 id=&#34;副作用:06041edaaf4ad9c158653456ce78f617&#34;&gt;副作用&lt;/h2&gt;
 
-&lt;p&gt;テストケースで「App::import(&amp;#8216;Lib&amp;#8217;, &amp;#8216;MyCakeTestCase&amp;#8217;);」すると、なぜかMyCakeTestCaseもテスト対象になるらしく、テスト結果の「n/n test cases complete」の値が1増えます。&lt;/p&gt;
+&lt;p&gt;テストケースで「App::import(&amp;lsquo;Lib&amp;rsquo;, &amp;lsquo;MyCakeTestCase&amp;rsquo;);」すると、なぜかMyCakeTestCaseもテスト対象になるらしく、テスト結果の「n/n test cases complete」の値が1増えます。&lt;/p&gt;
 
 &lt;p&gt;テスト結果のGreen/Redには影響しないので、無視してください。&lt;/p&gt;
 
 &lt;h2 id=&#34;参考:06041edaaf4ad9c158653456ce78f617&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/hiromi2424/20101215/1292379625&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://d.hatena.ne.jp/hiromi2424/20101215/1292379625&#39;, &#39;App::import() は凄い &amp;#8211; 24時間CakePHP&#39;]);&#34; title=&#34;App::import() は凄い - 24時間CakePHP&#34;&gt;App::import() は凄い &amp;#8211; 24時間CakePHP&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/hiromi2424/20101215/1292379625&#34;&gt;App::import() は凄い - 24時間CakePHP&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;本当はApp::importだけでできれば一番いいんですけどね。&lt;/li&gt;
@@ -891,7 +913,7 @@ class HigesControllerTestCase extends MyCakeTestCase {
 &lt;pre&gt;&lt;code&gt;-----------------------------------------------------------------------
 ATTENTION!  Your password for authentication realm:
 
-&amp;amp;lt;http://localhost:80&amp;gt; TEST SVN repository
+&amp;lt;http://localhost:80&amp;gt; TEST SVN repository
 
 can only be stored to disk unencrypted!  You are advised to configure
 your system so that Subversion can store passwords encrypted, if
@@ -922,8 +944,8 @@ store-plaintext-passwords = no
 &lt;h1 id=&#34;参考:a8b04d0b8996e9714afe4865fd320deb&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.linuxforu.com/previews/subversion-16-security-improvements-illustrated/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.linuxforu.com/previews/subversion-16-security-improvements-illustrated/&#39;, &#39;Subversion 1.6: Security Improvements Illustrated – LINUX For You Magazine&#39;]);&#34; title=&#34;Subversion 1.6: Security Improvements Illustrated – LINUX For You Magazine&#34;&gt;Subversion 1.6: Security Improvements Illustrated – LINUX For You Magazine&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/fumokmm/20070820/1187575030&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://d.hatena.ne.jp/fumokmm/20070820/1187575030&#39;, &#39;Subversionのユーザ名とパスワードの記録場所 &amp;#8211; No Programming, No Life&#39;]);&#34; title=&#34;Subversionのユーザ名とパスワードの記録場所 - No Programming, No Life&#34;&gt;Subversionのユーザ名とパスワードの記録場所 &amp;#8211; No Programming, No Life&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.linuxforu.com/previews/subversion-16-security-improvements-illustrated/&#34;&gt;Subversion 1.6: Security Improvements Illustrated – LINUX For You Magazine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/fumokmm/20070820/1187575030&#34;&gt;Subversionのユーザ名とパスワードの記録場所 - No Programming, No Life&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -942,9 +964,9 @@ store-plaintext-passwords = no
 
 &lt;h1 id=&#34;例:8f479fe2b847018d9162cbf4baf74733&#34;&gt;例&lt;/h1&gt;
 
-&lt;p&gt;classが&amp;#8221;uso&amp;#8221;のaリンクをクリックした時に &amp;#8220;a#mojamoja&amp;#8221; をクリックした時のアクション起動したい場合は、下記のように書けます。&lt;/p&gt;
+&lt;p&gt;classが&amp;rdquo;uso&amp;rdquo;のaリンクをクリックした時に &amp;ldquo;a#mojamoja&amp;rdquo; をクリックした時のアクション起動したい場合は、下記のように書けます。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$(function() {
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;$(function() {
     $(&amp;quot;a.uso&amp;quot;).click(function(e) {
         e.preventDefault();
         $(&amp;quot;a#mojamoja&amp;quot;).eq(0).click();
@@ -964,9 +986,9 @@ store-plaintext-passwords = no
 &lt;h1 id=&#34;参考:8f479fe2b847018d9162cbf4baf74733&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://semooh.jp/jquery/api/events/click/_/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://semooh.jp/jquery/api/events/click/_/&#39;, &#39;click() &amp;#8211; jQuery 日本語リファレンス&#39;]);&#34; title=&#34;click() - jQuery 日本語リファレンス&#34;&gt;click() &amp;#8211; jQuery 日本語リファレンス&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://semooh.jp/jquery/api/events/click/fn/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://semooh.jp/jquery/api/events/click/fn/&#39;, &#39;click(fn) &amp;#8211; jQuery 日本語リファレンス&#39;]);&#34; title=&#34;click(fn) - jQuery 日本語リファレンス&#34;&gt;click(fn) &amp;#8211; jQuery 日本語リファレンス&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://tobysoft.net/wiki/index.php?JavaScript%2FjQuery%2Fready%A4%B8%A4%E3%A4%CA%A4%AF%A4%C6onload%A5%A4%A5%D9%A5%F3%A5%C8%A4%CB%B4%D8%BF%F4%A4%F2%C4%C9%B2%C3%A4%B7%A4%BF%A4%A4&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://tobysoft.net/wiki/index.php?JavaScript%2FjQuery%2Fready%A4%B8%A4%E3%A4%CA%A4%AF%A4%C6onload%A5%A4%A5%D9%A5%F3%A5%C8%A4%CB%B4%D8%BF%F4%A4%F2%C4%C9%B2%C3%A4%B7%A4%BF%A4%A4&#39;, &#39;JavaScript/jQuery/readyじゃなくてonloadイベントに関数を追加したい &amp;#8211; TOBY SOFT wiki&#39;]);&#34; title=&#34;JavaScript/jQuery/readyじゃなくてonloadイベントに関数を追加したい - TOBY SOFT wiki&#34;&gt;JavaScript/jQuery/readyじゃなくてonloadイベントに関数を追加したい &amp;#8211; TOBY SOFT wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://semooh.jp/jquery/api/events/click/_/&#34;&gt;click() - jQuery 日本語リファレンス&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://semooh.jp/jquery/api/events/click/fn/&#34;&gt;click(fn) - jQuery 日本語リファレンス&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://tobysoft.net/wiki/index.php?JavaScript%2FjQuery%2Fready%A4%B8%A4%E3%A4%CA%A4%AF%A4%C6onload%A5%A4%A5%D9%A5%F3%A5%C8%A4%CB%B4%D8%BF%F4%A4%F2%C4%C9%B2%C3%A4%B7%A4%BF%A4%A4&#34;&gt;JavaScript/jQuery/readyじゃなくてonloadイベントに関数を追加したい - TOBY SOFT wiki&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

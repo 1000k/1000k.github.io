@@ -100,7 +100,7 @@ Cannot fetch data via $pdo2.
 
 &lt;h3 id=&#34;公式チュートリアルと今回のやり方の違い:c559210a78aceddc33ab13f880a8e277&#34;&gt;公式チュートリアルと今回のやり方の違い&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://book.cakephp.org/view/1527/Tutorials-Examples&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://book.cakephp.org/view/1527/Tutorials-Examples&#39;, &#39;公式チュートリアル&#39;]);&#34; title=&#34;Tutorials &amp; Examples :: The Manual :: 1.3 Collection :: The Cookbook&#34;&gt;公式チュートリアル&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://book.cakephp.org/view/1527/Tutorials-Examples&#34;&gt;公式チュートリアル&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;MySQL でなく SQLite3 で作る&lt;/li&gt;
@@ -271,16 +271,16 @@ class DATABASE_CONFIG {
 ?&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;ここまでやったら、&lt;a href=&#34;http://localhost/cake/blog&#34;&gt;http://localhost/cake/blog&lt;/a&gt; にアクセスして、「Sweet, &amp;#8220;Blog&amp;#8221; got Baked by CakePHP!」という画面が出ることを確認します。画面に赤か黄色で示されるエラーがあれば、どこか間違っているので直してください。&lt;/p&gt;
+&lt;p&gt;ここまでやったら、&lt;a href=&#34;http://localhost/cake/blog&#34;&gt;http://localhost/cake/blog&lt;/a&gt; にアクセスして、「Sweet, &amp;ldquo;Blog&amp;rdquo; got Baked by CakePHP!」という画面が出ることを確認します。画面に赤か黄色で示されるエラーがあれば、どこか間違っているので直してください。&lt;/p&gt;
 
 &lt;p&gt;※画像やCSSが表示されない場合、.htaccessの設定が違う場合があります。下記を手がかりに解決してください。&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://book.cakephp.org/ja/view/1533/A-Note-on-mod_rewrite&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://book.cakephp.org/ja/view/1533/A-Note-on-mod_rewrite&#39;, &#39;mod_rewriteについて :: CakePHPブログチュートリアル :: 開発例 :: マニュアル :: 1.3コレクション :: The Cookbook&#39;]);&#34; title=&#34;mod_rewriteについて :: CakePHPブログチュートリアル :: 開発例 :: マニュアル :: 1.3コレクション :: The Cookbook&#34;&gt;mod_rewriteについて :: CakePHPブログチュートリアル :: 開発例 :: マニュアル :: 1.3コレクション :: The Cookbook&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://book.cakephp.org/ja/view/37/Apache-and-mod_rewrite-and-htaccess&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://book.cakephp.org/ja/view/37/Apache-and-mod_rewrite-and-htaccess&#39;, &#39;Apacheとmod_rewrite :: インストール :: CakePHPによる開発 :: マニュアル :: 1.2コレクション :: The Cookbook&#39;]);&#34; title=&#34;Apacheとmod_rewrite :: インストール :: CakePHPによる開発 :: マニュアル :: 1.2コレクション :: The Cookbook&#34;&gt;Apacheとmod_rewrite :: インストール :: CakePHPによる開発 :: マニュアル :: 1.2コレクション :: The Cookbook&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/happy-lucky/20080208/p1&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://d.hatena.ne.jp/happy-lucky/20080208/p1&#39;, &#39;CakePHP mod_rewriteについて &amp;#8211; happy-luckyのPHP5日記&#39;]);&#34; title=&#34;CakePHP mod_rewriteについて - happy-luckyのPHP5日記&#34;&gt;CakePHP mod_rewriteについて &amp;#8211; happy-luckyのPHP5日記&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.glamenv-septzen.net/view/167&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.glamenv-septzen.net/view/167&#39;, &#39;技術/Apache/mod_rewriteメモ(1):RewriteBaseの誤解 &amp;#8211; Glamenv-Septzen.net&#39;]);&#34; title=&#34;技術/Apache/mod_rewriteメモ(1):RewriteBaseの誤解 - Glamenv-Septzen.net&#34;&gt;技術/Apache/mod_rewriteメモ(1):RewriteBaseの誤解 &amp;#8211; Glamenv-Septzen.net&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.itsmemo.com/it/web/000173.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.itsmemo.com/it/web/000173.html&#39;, &#39;動的ページを静的ページのように見せる方法 &amp;#8211; ItsMemo::IT (旧)&#39;]);&#34; title=&#34;動的ページを静的ページのように見せる方法 - ItsMemo::IT (旧)&#34;&gt;動的ページを静的ページのように見せる方法 &amp;#8211; ItsMemo::IT (旧)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://book.cakephp.org/ja/view/1533/A-Note-on-mod_rewrite&#34;&gt;mod_rewriteについて :: CakePHPブログチュートリアル :: 開発例 :: マニュアル :: 1.3コレクション :: The Cookbook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://book.cakephp.org/ja/view/37/Apache-and-mod_rewrite-and-htaccess&#34;&gt;Apacheとmod_rewrite :: インストール :: CakePHPによる開発 :: マニュアル :: 1.2コレクション :: The Cookbook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/happy-lucky/20080208/p1&#34;&gt;CakePHP mod_rewriteについて - happy-luckyのPHP5日記&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.glamenv-septzen.net/view/167&#34;&gt;技術/Apache/mod_rewriteメモ(1):RewriteBaseの誤解 - Glamenv-Septzen.net&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.itsmemo.com/it/web/000173.html&#34;&gt;動的ページを静的ページのように見せる方法 - ItsMemo::IT (旧)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4 id=&#34;5-model-view-controllerをbakeする:c559210a78aceddc33ab13f880a8e277&#34;&gt;5. Model/View/Controllerをbakeする&lt;/h4&gt;
@@ -309,9 +309,9 @@ class DATABASE_CONFIG {
       <guid>http://1000k.github.io/2010/07/05/insert-current-time-in-sqlite3/</guid>
       <description>
 
-&lt;p&gt;&lt;strong&gt;datetime(&amp;#8216;now&amp;#8217;, &amp;#8216;localtime&amp;#8217;)&lt;/strong&gt;を使う。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;datetime(&amp;lsquo;now&amp;rsquo;, &amp;lsquo;localtime&amp;rsquo;)&lt;/strong&gt;を使う。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;INSERT INTO posts (body, created, modified)
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;INSERT INTO posts (body, created, modified)
 VALUES (&#39;ウソ文章&#39;, datetime(&#39;now&#39;, &#39;localtime&#39;), datetime(&#39;now&#39;, &#39;localtime&#39;));
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -319,7 +319,7 @@ VALUES (&#39;ウソ文章&#39;, datetime(&#39;now&#39;, &#39;localtime&#39;), da
 
 &lt;h3 id=&#34;参考:f8899ebbf568af077f83512b36b60fed&#34;&gt;参考&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.tamandua-webtools.net/sqlite3-date.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.tamandua-webtools.net/sqlite3-date.html&#39;, &#39;SQLite3 での日付処理&#39;]);&#34; title=&#34;SQLite3 での日付処理&#34;&gt;SQLite3 での日付処理&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.tamandua-webtools.net/sqlite3-date.html&#34;&gt;SQLite3 での日付処理&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

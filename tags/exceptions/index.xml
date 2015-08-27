@@ -17,7 +17,7 @@
       <guid>http://1000k.github.io/2010/07/23/simplify-controller-by-exception/</guid>
       <description>&lt;p&gt;2009年6月12日の記事でだいぶ古いのですが、CakePHP のコードを改善する TIPS があったので訳してみました。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://mark-story.com/posts/view/simplifying-controller-logic-with-exceptions&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://mark-story.com/posts/view/simplifying-controller-logic-with-exceptions&#39;, &#39;Simplifying Controller logic with Exceptions | Mark Story&#39;]);&#34; title=&#34;Simplifying Controller logic with Exceptions | Mark Story&#34;&gt;Simplifying Controller logic with Exceptions | Mark Story&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://mark-story.com/posts/view/simplifying-controller-logic-with-exceptions&#34;&gt;Simplifying Controller logic with Exceptions | Mark Story&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;要約すると、&lt;strong&gt;「モデル内で例外を吐くようにすると、エラーコードが読みやすくなり、コントローラのテストもしやすくなるよ」&lt;/strong&gt;ということです。&lt;/p&gt;
 

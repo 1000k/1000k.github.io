@@ -23,7 +23,18 @@
 
 &lt;h2 id=&#34;時間と複雑性の関係:194584669bba4a67d0a447ada7873d53&#34;&gt;時間と複雑性の関係&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://blog.1000k.net/wp-content/uploads/complexity_by_time.png&#34; alt=&#34;複雑性と時間&#34; width=&#34;640&#34; height=&#34;480&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://1000k.github.io/img/complexity_by_time.png&#34;  /&gt;
+    
+    
+    &lt;figcaption&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
 
 &lt;p&gt;上はよく見かける時間と複雑性のモデルです。初回リリース時点では低かった複雑性も、その後の度重なる変更を経て、指数関数的に複雑性が上昇します。下げる努力をしなければ、1回の変更に要する労力は増え続け、最終的には変更不能に陥ります。&lt;/p&gt;
 
@@ -94,7 +105,7 @@
 &lt;li&gt;不要なコンポーネントを削除してスリム化する&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;これについては私自身も経験があるので、別の記事で詳しく書く予定です。また、『&lt;a href=&#34;http://www.amazon.co.jp/gp/product/4798116831/ref=as_li_ss_tl?ie=UTF8&amp;camp=247&amp;creative=7399&amp;creativeASIN=4798116831&amp;linkCode=as2&amp;tag=1000k-22&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.amazon.co.jp/gp/product/4798116831/ref=as_li_ss_tl?ie=UTF8&amp;camp=247&amp;creative=7399&amp;creativeASIN=4798116831&amp;linkCode=as2&amp;tag=1000k-22&#39;, &#39;レガシーコード改善ガイド&#39;]);&#34; &gt;レガシーコード改善ガイド&lt;/a&gt;』が素晴らしいアイディアを与えてくれるでしょう。&lt;/p&gt;
+&lt;p&gt;これについては私自身も経験があるので、別の記事で詳しく書く予定です。また、『&lt;a href=&#34;http://www.amazon.co.jp/gp/product/4798116831/ref=as_li_ss_tl?ie=UTF8&amp;amp;camp=247&amp;amp;creative=7399&amp;amp;creativeASIN=4798116831&amp;amp;linkCode=as2&amp;amp;tag=1000k-22&#34;&gt;レガシーコード改善ガイド&lt;/a&gt;』が素晴らしいアイディアを与えてくれるでしょう。&lt;/p&gt;
 
 &lt;h3 id=&#34;逃げる:194584669bba4a67d0a447ada7873d53&#34;&gt;逃げる&lt;/h3&gt;
 

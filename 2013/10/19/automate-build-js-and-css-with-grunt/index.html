@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -56,7 +61,7 @@
 <p>やり方は以下の記事あたりを参考に。</p>
 
 <ul>
-<li><a href="http://havelog.ayumusato.com/develop/javascript/e210-install_nodejs_and_npm.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://havelog.ayumusato.com/develop/javascript/e210-install_nodejs_and_npm.html', 'node.jsとnpmのインストールをしたメモ（CentOS さくらのVPS） ::ハブろぐ']);" >node.jsとnpmのインストールをしたメモ（CentOS さくらのVPS） ::ハブろぐ</a></li>
+<li><a href="http://havelog.ayumusato.com/develop/javascript/e210-install_nodejs_and_npm.html">node.jsとnpmのインストールをしたメモ（CentOS さくらのVPS） ::ハブろぐ</a></li>
 </ul>
 
 <p>次に grunt-cli をグローバルにインストールします。</p>
@@ -119,11 +124,11 @@
     },
     uglify: {
       options: {
-        banner: '/*! &amp;lt;%= pkg.name %&gt; &amp;lt;%= grunt.template.today(&quot;dd-mm-yyyy&quot;) %&gt; */\n'
+        banner: '/*! &lt;%= pkg.name %&gt; &lt;%= grunt.template.today(&quot;dd-mm-yyyy&quot;) %&gt; */\n'
       },
       dist: {
         files: {
-          'app/webroot/js/merged.min.js': ['&amp;lt;%= concat.dist.dest %&gt;']
+          'app/webroot/js/merged.min.js': ['&lt;%= concat.dist.dest %&gt;']
         }
       }
     },
@@ -140,7 +145,7 @@
       }
     },
     watch: {
-      files: ['&amp;lt;%= jshint.files %&gt;'],
+      files: ['&lt;%= jshint.files %&gt;'],
       tasks: ['concat', 'uglify']
     }
   });
@@ -161,8 +166,8 @@
 <p>詳しい記述方法は公式のガイドを参考に。</p>
 
 <ul>
-<li><a href="http://gruntjs.com/configuring-tasks" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://gruntjs.com/configuring-tasks', 'Configuring tasks &#8211; Grunt: The JavaScript Task Runner']);" >Configuring tasks &#8211; Grunt: The JavaScript Task Runner</a></li>
-<li><a href="http://gruntjs.com/creating-tasks" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://gruntjs.com/creating-tasks', 'Creating tasks &#8211; Grunt: The JavaScript Task Runner']);" >Creating tasks &#8211; Grunt: The JavaScript Task Runner</a></li>
+<li><a href="http://gruntjs.com/configuring-tasks">Configuring tasks - Grunt: The JavaScript Task Runner</a></li>
+<li><a href="http://gruntjs.com/creating-tasks">Creating tasks - Grunt: The JavaScript Task Runner</a></li>
 </ul>
 
 <p>あとは <code>grunt {タスク名}</code> と叩くだけで、指定したタスクが動きます。</p>
@@ -176,20 +181,20 @@
 <h2 id="参考:31d9c632b09e89723d113ebbe8ae7aa4">参考</h2>
 
 <ul>
-<li><a href="http://hamalog.tumblr.com/post/18137176043/grunt-js-css" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://hamalog.tumblr.com/post/18137176043/grunt-js-css', 'gruntで快適JS/CSSビルド生活 &#8211; Takazudo hamalog']);" >gruntで快適JS/CSSビルド生活 &#8211; Takazudo hamalog</a></li>
-<li><a href="http://gruntjs.com/getting-started" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://gruntjs.com/getting-started', 'Getting started &#8211; Grunt: The JavaScript Task Runner']);" >Getting started &#8211; Grunt: The JavaScript Task Runner</a></li>
-<li><a href="https://github.com/gruntjs/grunt/wiki/Sample-Gruntfile" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/gruntjs/grunt/wiki/Sample-Gruntfile', 'Sample Gruntfile · gruntjs/grunt Wiki']);" >Sample Gruntfile · gruntjs/grunt Wiki</a>
+<li><a href="http://hamalog.tumblr.com/post/18137176043/grunt-js-css">gruntで快適JS/CSSビルド生活 - Takazudo hamalog</a></li>
+<li><a href="http://gruntjs.com/getting-started">Getting started - Grunt: The JavaScript Task Runner</a></li>
+<li><a href="https://github.com/gruntjs/grunt/wiki/Sample-Gruntfile">Sample Gruntfile · gruntjs/grunt Wiki</a>
 
 <ul>
 <li>Gruntfile のサンプル。</li>
 </ul></li>
-<li><a href="http://gruntjs.com/plugins/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://gruntjs.com/plugins/', 'Plugins &#8211; Grunt: The JavaScript Task Runner']);" >Plugins &#8211; Grunt: The JavaScript Task Runner</a>
+<li><a href="http://gruntjs.com/plugins/">Plugins - Grunt: The JavaScript Task Runner</a>
 
 <ul>
 <li>grunt プラグインの一覧。</li>
-<li>公式のものは &#8216;Show contrib plugins first&#8217; にチェックを入れれば出てくる。</li>
+<li>公式のものは &lsquo;Show contrib plugins first&rsquo; にチェックを入れれば出てくる。</li>
 </ul></li>
-<li><a href="http://publicdraft.studiomohawk.com/2012/12/16/npm-and-package.json/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://publicdraft.studiomohawk.com/2012/12/16/npm-and-package.json/', 'npm / package.json | Public Draft | Outlining and Researching for the Presentation']);" >npm / package.json | Public Draft | Outlining and Researching for the Presentation</a>
+<li><a href="http://publicdraft.studiomohawk.com/2012/12/16/npm-and-package.json/">npm / package.json | Public Draft | Outlining and Researching for the Presentation</a>
 
 <ul>
 <li>package.json の基本。</li>

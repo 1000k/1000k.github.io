@@ -60,7 +60,7 @@ svn, version 1.7.10 (r1485443)
 // `--with-ssl` を忘れずに！
 # cd neon/
 # ./configure --with-ssl
-# make &amp;amp;#038;&amp;amp;#038; make install
+# make &amp;amp;&amp;amp; make install
 
 // Subversion をインストールする。
 # cd ../
@@ -69,7 +69,7 @@ svn, version 1.7.10 (r1485443)
   --without-berkeley-db \
   --with-neon \
   --with-ssl
-# make &amp;amp;#038;&amp;amp;#038; make install
+# make &amp;amp;&amp;amp; make install
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;正しくインストールできると、以下のように &lt;code&gt;ra_neon&lt;/code&gt; という表示が出ます。&lt;/p&gt;
@@ -91,7 +91,7 @@ svn, version 1.7.10 (r1485443)
 
 &lt;p&gt;今回とは逆で、「neon だとエラーになるが serf なら大丈夫だった」という事例もありました。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://masutaka.net/chalow/2009-06-15-1.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://masutaka.net/chalow/2009-06-15-1.html&#39;, &#39;Debian squeeze の subversion で http リポジトリにアクセスできなくなった / マスタカの ChangeLog メモ&#39;]);&#34; &gt;Debian squeeze の subversion で http リポジトリにアクセスできなくなった / マスタカの ChangeLog メモ&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://masutaka.net/chalow/2009-06-15-1.html&#34;&gt;Debian squeeze の subversion で http リポジトリにアクセスできなくなった / マスタカの ChangeLog メモ&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;バージョンアップのたびに不具合が入れ替わるんでしょうか。&lt;/p&gt;
 
@@ -100,9 +100,9 @@ svn, version 1.7.10 (r1485443)
 &lt;h2 id=&#34;参考:b3d12b85aa6526b84cee44966cb0c763&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.iss.ms/2009/04/12/141537&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.iss.ms/2009/04/12/141537&#39;, &#39;[memo][svn] svnクライアントにSSLをサポートさせる « いわぶろ（ろてん）&#39;]);&#34; &gt;[memo][svn] svnクライアントにSSLをサポートさせる « いわぶろ（ろてん）&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.r-unit.co.jp/archives/726&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.r-unit.co.jp/archives/726&#39;, &#39;はだかの隊長日記 » Subversionコンパイル方法&#39;]);&#34; &gt;はだかの隊長日記 » Subversionコンパイル方法&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://masutaka.net/chalow/2009-06-15-1.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://masutaka.net/chalow/2009-06-15-1.html&#39;, &#39;Debian squeeze の subversion で http リポジトリにアクセスできなくなった / マスタカの ChangeLog メモ&#39;]);&#34; &gt;Debian squeeze の subversion で http リポジトリにアクセスできなくなった / マスタカの ChangeLog メモ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.iss.ms/2009/04/12/141537&#34;&gt;[memo][svn] svnクライアントにSSLをサポートさせる « いわぶろ（ろてん）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.r-unit.co.jp/archives/726&#34;&gt;はだかの隊長日記 » Subversionコンパイル方法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://masutaka.net/chalow/2009-06-15-1.html&#34;&gt;Debian squeeze の subversion で http リポジトリにアクセスできなくなった / マスタカの ChangeLog メモ&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -143,8 +143,8 @@ svn, version 1.7.10 (r1485443)
 &lt;h1 id=&#34;参考:8ae62bd64dbb38a5a9b5b7de400f164f&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://openlab.dino.co.jp/2007/10/23/184825129.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://openlab.dino.co.jp/2007/10/23/184825129.html&#39;, &#39;svn diffで-wオプションを使う — ディノオープンラボラトリ&#39;]);&#34; title=&#34;svn diffで-wオプションを使う — ディノオープンラボラトリ&#34;&gt;svn diffで-wオプションを使う — ディノオープンラボラトリ&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.enjoitech.jp/article/71&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.enjoitech.jp/article/71&#39;, &#39;Linux である文字を含む行を削除したい &amp;#8211; Enjoi Blog&#39;]);&#34; title=&#34;Linux である文字を含む行を削除したい - Enjoi Blog&#34;&gt;Linux である文字を含む行を削除したい &amp;#8211; Enjoi Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://openlab.dino.co.jp/2007/10/23/184825129.html&#34;&gt;svn diffで-wオプションを使う — ディノオープンラボラトリ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.enjoitech.jp/article/71&#34;&gt;Linux である文字を含む行を削除したい - Enjoi Blog&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -162,7 +162,7 @@ svn, version 1.7.10 (r1485443)
 &lt;pre&gt;&lt;code&gt;-----------------------------------------------------------------------
 ATTENTION!  Your password for authentication realm:
 
-&amp;amp;lt;http://localhost:80&amp;gt; TEST SVN repository
+&amp;lt;http://localhost:80&amp;gt; TEST SVN repository
 
 can only be stored to disk unencrypted!  You are advised to configure
 your system so that Subversion can store passwords encrypted, if
@@ -193,8 +193,8 @@ store-plaintext-passwords = no
 &lt;h1 id=&#34;参考:a8b04d0b8996e9714afe4865fd320deb&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.linuxforu.com/previews/subversion-16-security-improvements-illustrated/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.linuxforu.com/previews/subversion-16-security-improvements-illustrated/&#39;, &#39;Subversion 1.6: Security Improvements Illustrated – LINUX For You Magazine&#39;]);&#34; title=&#34;Subversion 1.6: Security Improvements Illustrated – LINUX For You Magazine&#34;&gt;Subversion 1.6: Security Improvements Illustrated – LINUX For You Magazine&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/fumokmm/20070820/1187575030&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://d.hatena.ne.jp/fumokmm/20070820/1187575030&#39;, &#39;Subversionのユーザ名とパスワードの記録場所 &amp;#8211; No Programming, No Life&#39;]);&#34; title=&#34;Subversionのユーザ名とパスワードの記録場所 - No Programming, No Life&#34;&gt;Subversionのユーザ名とパスワードの記録場所 &amp;#8211; No Programming, No Life&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.linuxforu.com/previews/subversion-16-security-improvements-illustrated/&#34;&gt;Subversion 1.6: Security Improvements Illustrated – LINUX For You Magazine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/fumokmm/20070820/1187575030&#34;&gt;Subversionのユーザ名とパスワードの記録場所 - No Programming, No Life&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -235,7 +235,7 @@ store-plaintext-passwords = no
 
 &lt;p&gt;キーワードは「&lt;strong&gt;$Id$&lt;/strong&gt;」のように、「$」で囲みます。&lt;/p&gt;
 
-&lt;p&gt;使用可能なキーワードは &lt;a href=&#34;http://wiki.bit-hive.com/tomizoo/pg/Subversion%20%A5%AD%A1%BC%A5%EF%A1%BC%A5%C9%A4%CE%C5%B8%B3%AB&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://wiki.bit-hive.com/tomizoo/pg/Subversion%20%A5%AD%A1%BC%A5%EF%A1%BC%A5%C9%A4%CE%C5%B8%B3%AB&#39;, &#39;Subversion キーワードの展開 &amp;#8211; とみぞーノート&#39;]);&#34; title=&#34;Subversion キーワードの展開 - とみぞーノート&#34;&gt;Subversion キーワードの展開 &amp;#8211; とみぞーノート&lt;/a&gt; あたりを参考にしてください。&lt;/p&gt;
+&lt;p&gt;使用可能なキーワードは &lt;a href=&#34;http://wiki.bit-hive.com/tomizoo/pg/Subversion%20%A5%AD%A1%BC%A5%EF%A1%BC%A5%C9%A4%CE%C5%B8%B3%AB&#34;&gt;Subversion キーワードの展開 - とみぞーノート&lt;/a&gt; あたりを参考にしてください。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;/**
  * テストクラス
@@ -283,9 +283,9 @@ class Uso
 &lt;h2 id=&#34;参考:9b148e080555f5a4ead4adee49ce465c&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://wiki.bit-hive.com/tomizoo/pg/Subversion%20%A5%AD%A1%BC%A5%EF%A1%BC%A5%C9%A4%CE%C5%B8%B3%AB&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://wiki.bit-hive.com/tomizoo/pg/Subversion%20%A5%AD%A1%BC%A5%EF%A1%BC%A5%C9%A4%CE%C5%B8%B3%AB&#39;, &#39;Subversion キーワードの展開 &amp;#8211; とみぞーノート&#39;]);&#34; title=&#34;Subversion キーワードの展開 - とみぞーノート&#34;&gt;Subversion キーワードの展開 &amp;#8211; とみぞーノート&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://bokunomichi.blogspot.com/2007/03/subversiontortoisesvn.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://bokunomichi.blogspot.com/2007/03/subversiontortoisesvn.html&#39;, &#39;僕の道(仮)　devlog: Subversion　クライアントの設定（TortoiseSVN）&#39;]);&#34; title=&#34;僕の道(仮)　devlog: Subversion　クライアントの設定（TortoiseSVN）&#34;&gt;僕の道(仮)　devlog: Subversion　クライアントの設定（TortoiseSVN）&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://cheebow.info/chemt/archives/2006/03/tortoisesvn.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://cheebow.info/chemt/archives/2006/03/tortoisesvn.html&#39;, &#39;ヒビノアワ: TortoiseSVNでキーワードアンカーの設定をする&#39;]);&#34; title=&#34;ヒビノアワ: TortoiseSVNでキーワードアンカーの設定をする&#34;&gt;ヒビノアワ: TortoiseSVNでキーワードアンカーの設定をする&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://wiki.bit-hive.com/tomizoo/pg/Subversion%20%A5%AD%A1%BC%A5%EF%A1%BC%A5%C9%A4%CE%C5%B8%B3%AB&#34;&gt;Subversion キーワードの展開 - とみぞーノート&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://bokunomichi.blogspot.com/2007/03/subversiontortoisesvn.html&#34;&gt;僕の道(仮)　devlog: Subversion　クライアントの設定（TortoiseSVN）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://cheebow.info/chemt/archives/2006/03/tortoisesvn.html&#34;&gt;ヒビノアワ: TortoiseSVNでキーワードアンカーの設定をする&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

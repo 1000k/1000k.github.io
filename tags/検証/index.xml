@@ -21,11 +21,11 @@
 
 &lt;p&gt;単純なページ間の遷移で発生するイベントの順番を確認しておきます。&lt;/p&gt;
 
-&lt;p&gt;なお、イベント一覧は &lt;a href=&#34;http://jquerymobile.com/demos/1.2.0/docs/api/events.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://jquerymobile.com/demos/1.2.0/docs/api/events.html&#39;, &#39;jQuery Mobile Docs &amp;#8211; Events&#39;]);&#34; &gt;jQuery Mobile Docs &amp;#8211; Events&lt;/a&gt; に記されています。&lt;/p&gt;
+&lt;p&gt;なお、イベント一覧は &lt;a href=&#34;http://jquerymobile.com/demos/1.2.0/docs/api/events.html&#34;&gt;jQuery Mobile Docs - Events&lt;/a&gt; に記されています。&lt;/p&gt;
 
 &lt;h2 id=&#34;検証コード:c15683fca1bbc196b47070ebbf2c2463&#34;&gt;検証コード&lt;/h2&gt;
 
-&lt;p&gt;コードはgistにも公開してあります。→&lt;a href=&#34;https://gist.github.com/3886193&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://gist.github.com/3886193&#39;, &#39;Verify the event firing timings of jQuery Mobile — Gist&#39;]);&#34; &gt;Verify the event firing timings of jQuery Mobile — Gist&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;コードはgistにも公開してあります。→&lt;a href=&#34;https://gist.github.com/3886193&#34;&gt;Verify the event firing timings of jQuery Mobile — Gist&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;page1-html:c15683fca1bbc196b47070ebbf2c2463&#34;&gt;page1.html&lt;/h3&gt;
 
@@ -48,7 +48,7 @@
 
 &lt;h3 id=&#34;page2-html:c15683fca1bbc196b47070ebbf2c2463&#34;&gt;page2.html&lt;/h3&gt;
 
-&lt;p&gt;page1 とほぼ同じなので、[data-role=&amp;#8221;page&amp;#8221;]ブロック内だけ。&lt;/p&gt;
+&lt;p&gt;page1 とほぼ同じなので、[data-role=&amp;ldquo;page&amp;rdquo;]ブロック内だけ。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;lt;div data-role=&amp;quot;page&amp;quot; data-theme=&amp;quot;e&amp;quot; id=&amp;quot;page2&amp;quot;&amp;gt;
   &amp;lt;div data-role=&amp;quot;content&amp;quot;&amp;gt;
@@ -157,9 +157,9 @@ pagechange
 &lt;h2 id=&#34;参考:c15683fca1bbc196b47070ebbf2c2463&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://jquerymobile.com/demos/1.2.0/docs/pages/page-scripting.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://jquerymobile.com/demos/1.2.0/docs/pages/page-scripting.html&#39;, &#39;jQuery Mobile Docs &amp;#8211; Scripting pages&#39;]);&#34; &gt;jQuery Mobile Docs &amp;#8211; Scripting pages&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jquerymobile.com/demos/1.2.0/docs/api/events.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://jquerymobile.com/demos/1.2.0/docs/api/events.html&#39;, &#39;jQuery Mobile Docs &amp;#8211; Events&#39;]);&#34; &gt;jQuery Mobile Docs &amp;#8211; Events&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/Naotsugu/20120103/1325568080&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://d.hatena.ne.jp/Naotsugu/20120103/1325568080&#39;, &#39;はじめての jQuery Mobile 1.0 ～その2：ページ遷移～ &amp;#8211; etc9&#39;]);&#34; &gt;はじめての jQuery Mobile 1.0 ～その2：ページ遷移～ &amp;#8211; etc9&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jquerymobile.com/demos/1.2.0/docs/pages/page-scripting.html&#34;&gt;jQuery Mobile Docs - Scripting pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jquerymobile.com/demos/1.2.0/docs/api/events.html&#34;&gt;jQuery Mobile Docs - Events&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/Naotsugu/20120103/1325568080&#34;&gt;はじめての jQuery Mobile 1.0 ～その2：ページ遷移～ - etc9&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

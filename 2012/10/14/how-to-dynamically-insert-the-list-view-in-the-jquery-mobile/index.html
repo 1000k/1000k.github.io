@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -45,23 +50,37 @@
 
 <p>jQuery Mobile 1.2 を使ってリストビューを動的に挿入する手順を紹介します。</p>
 
-<p><a href="http://jquerymobile.com/test/docs/pages/page-dynamic.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://jquerymobile.com/test/docs/pages/page-dynamic.html', '公式マニュアル']);" title="jQuery Mobile Docs - Dynamically Injecting Pages">公式マニュアル</a>にもやり方は書いてあるのですが、本題と関係ない部分（リンクをクリックしたらその取得先を正規表現で取得するなど）が長く読みづらいので、もっと簡単なバージョンを書きました。</p>
+<p><a href="http://jquerymobile.com/test/docs/pages/page-dynamic.html">公式マニュアル</a>にもやり方は書いてあるのですが、本題と関係ない部分（リンクをクリックしたらその取得先を正規表現で取得するなど）が長く読みづらいので、もっと簡単なバージョンを書きました。</p>
 
 <h2 id="やりたいこと:83f3cc2b588221556f2cadc603a0bf3c">やりたいこと</h2>
 
 <ol>
 <li>「Inject!」ボタンを押す</li>
-<li>「data-role=&#8221;content&#8221;」内にリストビューを挿入する</li>
+<li>「data-role=&ldquo;content&rdquo;」内にリストビューを挿入する</li>
 <li>画面遷移せずに表示する</li>
 </ol>
 
 <p>画面イメージはこんな感じです。↓</p>
 
-<p><img src="http://blog.1000k.net/wp-content/uploads/dynamic_injection1.png" alt="" title="before" width="444" height="296" class="alignnone size-full wp-image-1173" /></p>
+<p>
+<figure >
+    
+        <img src="/img/dynamic_injection1.png"  />
+    
+    
+</figure>
+</p>
 
 <p>「Inject!」をクリックすると、ヘッダとコンテンツが書き換えられます。</p>
 
-<p><img src="http://blog.1000k.net/wp-content/uploads/dynamic_injection2.png" alt="" title="after" width="444" height="248" class="alignnone size-full wp-image-1174" /></p>
+<p>
+<figure >
+    
+        <img src="/img/dynamic_injection2.png"  />
+    
+    
+</figure>
+</p>
 
 <h2 id="サンプルコード:83f3cc2b588221556f2cadc603a0bf3c">サンプルコード</h2>
 
@@ -116,11 +135,11 @@
 
 <p>ちなみにこの「:jqmData()」はjQuery Mobile 用のカスタムセレクタです。</p>
 
-<p>意味は「$page.childern(&#8220;[data-role=header]&#8221;)」と同じなのですが、jQM独自の「data-*」という要素をセレクトしたい場合はこちらを使う方が良いそうです。</p>
+<p>意味は「$page.childern(&rdquo;[data-role=header]&ldquo;)」と同じなのですが、jQM独自の「data-*」という要素をセレクトしたい場合はこちらを使う方が良いそうです。</p>
 
 <p>詳しくは下記のマニュアルを参照してください。</p>
 
-<p><a href="http://dev.screw-axis.com/doc/jquery_mobile/api/methods_utilities/methods/jqmData/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://dev.screw-axis.com/doc/jquery_mobile/api/methods_utilities/methods/jqmData/', 'jqmData | jQuery Mobile 1.1.0 日本語リファレンス']);" >jqmData | jQuery Mobile 1.1.0 日本語リファレンス</a></p>
+<p><a href="http://dev.screw-axis.com/doc/jquery_mobile/api/methods_utilities/methods/jqmData/">jqmData | jQuery Mobile 1.1.0 日本語リファレンス</a></p>
 
 <h3 id="リストビューを生成する:83f3cc2b588221556f2cadc603a0bf3c">リストビューを生成する</h3>
 
@@ -184,7 +203,7 @@
 
 
       &lt;p&gt;
-        &lt;a href=&quot;http://jquerymobile.com/test/docs/lists/lists-inset.html&quot; onclick=&quot;_gaq.push(['_trackEvent', 'outbound-article', 'http://jquerymobile.com/test/docs/lists/lists-inset.html', 'jQuery Mobile Docs &amp;#8211; Lists with Form Controls']);&quot; &gt;jQuery Mobile Docs &amp;#8211; Lists with Form Controls&lt;/a&gt;
+        [jQuery Mobile Docs - Lists with Form Controls](http://jquerymobile.com/test/docs/lists/lists-inset.html)
       &lt;/p&gt;
 
 
@@ -209,7 +228,7 @@
 
 <pre><code>  &lt;p&gt;
     「$page.page()」は、遅延してページ要素を編集した後には必ず呼び出さねばならないようです。&lt;br /&gt;
-    その後、「$content.find(&amp;#8220;:jqmData(role=listview)&amp;#8221;).listview();」でリストビューをスタイリングしています。
+    その後、「$content.find(&quot;:jqmData(role=listview)&quot;).listview();」でリストビューをスタイリングしています。
   &lt;/p&gt;
 
 
@@ -236,7 +255,7 @@
 
 
   &lt;p&gt;
-    &lt;a href=&quot;http://jquerymobile.com/test/docs/pages/page-dynamic.html&quot; onclick=&quot;_gaq.push(['_trackEvent', 'outbound-article', 'http://jquerymobile.com/test/docs/pages/page-dynamic.html', '公式ドキュメントのチュートリアル']);&quot; title=&quot;jQuery Mobile Docs - Dynamically Injecting Pages&quot;&gt;公式ドキュメントのチュートリアル&lt;/a&gt;ではここで紹介した内容にプラスして、「クリックしたボタンのhref属性を解析してデータ取得先を分ける」手順が説明されています。むしろその部分が長すぎて理解しづらくなっている気がします。
+    [公式ドキュメントのチュートリアル](http://jquerymobile.com/test/docs/pages/page-dynamic.html)ではここで紹介した内容にプラスして、「クリックしたボタンのhref属性を解析してデータ取得先を分ける」手順が説明されています。むしろその部分が長すぎて理解しづらくなっている気がします。
   &lt;/p&gt;
 
 
@@ -247,7 +266,7 @@
 
   &lt;ul&gt;
     &lt;li&gt;
-      &lt;a href=&quot;http://jquerymobile.com/test/docs/pages/page-dynamic.html&quot; onclick=&quot;_gaq.push(['_trackEvent', 'outbound-article', 'http://jquerymobile.com/test/docs/pages/page-dynamic.html', 'jQuery Mobile Docs &amp;#8211; Dynamically Injecting Pages']);&quot; &gt;jQuery Mobile Docs &amp;#8211; Dynamically Injecting Pages&lt;/a&gt;
+      [jQuery Mobile Docs - Dynamically Injecting Pages](http://jquerymobile.com/test/docs/pages/page-dynamic.html)
       &lt;ul&gt;
         &lt;li&gt;
           公式のチュートリアル。長い。
@@ -259,7 +278,7 @@
 
 
     &lt;li&gt;
-      &lt;a href=&quot;http://jquerymobile.com/test/docs/api/methods.html&quot; onclick=&quot;_gaq.push(['_trackEvent', 'outbound-article', 'http://jquerymobile.com/test/docs/api/methods.html', 'jQuery Mobile Docs &amp;#8211; Methods']);&quot; &gt;jQuery Mobile Docs &amp;#8211; Methods&lt;/a&gt;
+      [jQuery Mobile Docs - Methods](http://jquerymobile.com/test/docs/api/methods.html)
       &lt;ul&gt;
         &lt;li&gt;
           $.mobile.changePage() のリファレンス。
@@ -271,7 +290,7 @@
 
 
     &lt;li&gt;
-      &lt;a href=&quot;http://dev.screw-axis.com/doc/jquery_mobile/api/methods_utilities/methods/jqmData/&quot; onclick=&quot;_gaq.push(['_trackEvent', 'outbound-article', 'http://dev.screw-axis.com/doc/jquery_mobile/api/methods_utilities/methods/jqmData/', 'jqmData | jQuery Mobile 1.1.0 日本語リファレンス']);&quot; &gt;jqmData | jQuery Mobile 1.1.0 日本語リファレンス&lt;/a&gt;
+      [jqmData | jQuery Mobile 1.1.0 日本語リファレンス](http://dev.screw-axis.com/doc/jquery_mobile/api/methods_utilities/methods/jqmData/)
       &lt;ul&gt;
         &lt;li&gt;
           カスタムセレクタ「jqmData」の説明。
@@ -283,12 +302,12 @@
 
 
     &lt;li&gt;
-      &lt;a href=&quot;http://dev.screw-axis.com/doc/jquery_mobile/components/lists/docs/&quot; onclick=&quot;_gaq.push(['_trackEvent', 'outbound-article', 'http://dev.screw-axis.com/doc/jquery_mobile/components/lists/docs/', 'リストビューについて | jQuery Mobile 1.1.0 日本語リファレンス']);&quot; &gt;リストビューについて | jQuery Mobile 1.1.0 日本語リファレンス&lt;/a&gt;
+      [リストビューについて | jQuery Mobile 1.1.0 日本語リファレンス](http://dev.screw-axis.com/doc/jquery_mobile/components/lists/docs/)
     &lt;/li&gt;
 
 
     &lt;li&gt;
-      &lt;a href=&quot;http://www.packtpub.com/article/jquery-mobile-organizing-information-with-list-views&quot; onclick=&quot;_gaq.push(['_trackEvent', 'outbound-article', 'http://www.packtpub.com/article/jquery-mobile-organizing-information-with-list-views', 'jQuery Mobile: Organizing Information with List Views | Packt Publishing']);&quot; &gt;jQuery Mobile: Organizing Information with List Views | Packt Publishing&lt;/a&gt;
+      [jQuery Mobile: Organizing Information with List Views | Packt Publishing](http://www.packtpub.com/article/jquery-mobile-organizing-information-with-list-views)
       &lt;ul&gt;
         &lt;li&gt;
           公式ドキュメントのリストビューの解説ではコードが書いてありませんが、このページには書いています。
@@ -300,7 +319,7 @@
 
 
     &lt;li&gt;
-      &lt;a href=&quot;http://stackoverflow.com/questions/805159/building-html-dom-using-jquery&quot; onclick=&quot;_gaq.push(['_trackEvent', 'outbound-article', 'http://stackoverflow.com/questions/805159/building-html-dom-using-jquery', 'Building HTML (~= DOM) using jQuery &amp;#8211; Stack Overflow']);&quot; &gt;Building HTML (~= DOM) using jQuery &amp;#8211; Stack Overflow&lt;/a&gt;
+      [Building HTML (~= DOM) using jQuery - Stack Overflow](http://stackoverflow.com/questions/805159/building-html-dom-using-jquery)
       &lt;ul&gt;
         &lt;li&gt;
           jQueryのメソッドチェーンを使ってDOMを組み立てる方法。

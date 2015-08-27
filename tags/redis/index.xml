@@ -17,11 +17,11 @@
       <guid>http://1000k.github.io/2013/04/03/installing-redis-2-6/</guid>
       <description>
 
-&lt;p&gt;なぜか&lt;a href=&#34;http://redis.io/download&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://redis.io/download&#39;, &#39;公式サイトのインストール手順&#39;]);&#34; &gt;公式サイトのインストール手順&lt;/a&gt;はコンパイルまでで終わっているので、完全な手順をメモしておきます。&lt;/p&gt;
+&lt;p&gt;なぜか&lt;a href=&#34;http://redis.io/download&#34;&gt;公式サイトのインストール手順&lt;/a&gt;はコンパイルまでで終わっているので、完全な手順をメモしておきます。&lt;/p&gt;
 
 &lt;h2 id=&#34;ダウンロード:d385bf451ffc60def1f51e177c3e1b7c&#34;&gt;ダウンロード&lt;/h2&gt;
 
-&lt;p&gt;最新のソースを &lt;a href=&#34;http://redis.io/download&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://redis.io/download&#39;, &#39;Download – Redis&#39;]);&#34; &gt;Download – Redis&lt;/a&gt; からダウンロードします。&lt;/p&gt;
+&lt;p&gt;最新のソースを &lt;a href=&#34;http://redis.io/download&#34;&gt;Download – Redis&lt;/a&gt; からダウンロードします。&lt;/p&gt;
 
 &lt;p&gt;以下、執筆時のバージョン (2.6.12) で話を進めます。&lt;/p&gt;
 
@@ -42,7 +42,7 @@ $ make distclean
 $ make
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;参考: &lt;a href=&#34;http://www.eschrade.com/page/undefined-reference-to-__sync_add_and_fetch_4/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.eschrade.com/page/undefined-reference-to-__sync_add_and_fetch_4/&#39;, &#39;undefined reference to `__sync_add_and_fetch_4′ when compiling Redis | ESchrade&#39;]);&#34; &gt;undefined reference to `__sync_add_and_fetch_4′ when compiling Redis | ESchrade&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;参考: &lt;a href=&#34;http://www.eschrade.com/page/undefined-reference-to-__sync_add_and_fetch_4/&#34;&gt;undefined reference to `__sync_add_and_fetch_4′ when compiling Redis | ESchrade&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;インストール:d385bf451ffc60def1f51e177c3e1b7c&#34;&gt;インストール&lt;/h2&gt;
 

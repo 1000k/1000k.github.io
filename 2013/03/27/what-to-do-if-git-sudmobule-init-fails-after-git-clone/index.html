@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -53,31 +58,31 @@ $ git submodule update
 
 <p>これで実ファイルがローカルにダウンロードされます。</p>
 
-<p>&#8230;らしいですが、うまくいきませんでした。</p>
+<p>…らしいですが、うまくいきませんでした。</p>
 
-<p>私の場合、&#8221;git submodule init&#8221; を叩いたら以下のエラーが出ました。</p>
+<p>私の場合、&rdquo;git submodule init&rdquo; を叩いたら以下のエラーが出ました。</p>
 
 <pre><code>No submodule mapping found in .gitmodules for path 'chef-repo/cookbooks/ant'
 </code></pre>
 
 <p>原因はプロジェクト内の .gitmodules にありました。</p>
 
-<p>Windows で &#8220;git submodule add&#8221; した時に一部の path が &#8220;&#92;&#8221; という表記になっており、これを git がうまく解釈できなかった模様。</p>
+<p>Windows で &ldquo;git submodule add&rdquo; した時に一部の path が &ldquo;&#92;&rdquo; という表記になっており、これを git がうまく解釈できなかった模様。</p>
 
 <pre><code>[submodule &quot;chef-repo\\cookbooks\\java&quot;]
      path = chef-repo\\cookbooks\\java
      url = git://github.com/opscode-cookbooks/java.git
 </code></pre>
 
-<p>&#8220;&#92;&#8221; を &#8220;/&#8221; に置換してやればOKです。<code>
+<p>&ldquo;&#92;&rdquo; を &ldquo;/&rdquo; に置換してやればOKです。<code>
  [submodule &quot;chef-repo/cookbooks/ava&quot;] path = chef-repo/cookbooks/java url = git://github.com/opscode-cookbooks/java.git</code></p>
 
-<p>これで &#8220;git sudmoule init&#8221; が成功するようになりました。</p>
+<p>これで &ldquo;git sudmoule init&rdquo; が成功するようになりました。</p>
 
 <h2 id="参考:4471c99086089d3b3bb5481282090f4e">参考</h2>
 
 <ul>
-<li><a href="http://edspencer.net/2008/04/git-clone-vs-git-submodule.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://edspencer.net/2008/04/git-clone-vs-git-submodule.html', 'Git clone vs Git submodule : Ed Spencer']);" >Git clone vs Git submodule : Ed Spencer</a></li>
+<li><a href="http://edspencer.net/2008/04/git-clone-vs-git-submodule.html">Git clone vs Git submodule : Ed Spencer</a></li>
 </ul>
 
         </div>

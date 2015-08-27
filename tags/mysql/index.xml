@@ -17,7 +17,7 @@
       <guid>http://1000k.github.io/2014/05/13/collect-audit-log-with-mcafee-mysql-audit-plugin/</guid>
       <description>
 
-&lt;p&gt;McAfee が作った MySQL プラグイン &amp;#8220;&lt;a href=&#34;https://github.com/mcafee/mysql-audit&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/mcafee/mysql-audit&#39;, &#39;McAfee MySQL Audit Plugin&#39;]);&#34; &gt;McAfee MySQL Audit Plugin&lt;/a&gt;&amp;#8221; を使うと、MySQL の監査ログが取得できるようになります。&lt;/p&gt;
+&lt;p&gt;McAfee が作った MySQL プラグイン &amp;ldquo;&lt;a href=&#34;https://github.com/mcafee/mysql-audit&#34;&gt;McAfee MySQL Audit Plugin&lt;/a&gt;&amp;rdquo; を使うと、MySQL の監査ログが取得できるようになります。&lt;/p&gt;
 
 &lt;p&gt;会社のセキュリティ要件で監査が必要になったので、検証してみました。&lt;/p&gt;
 
@@ -35,7 +35,7 @@
 
 &lt;p&gt;CentOS 6.3 (64bit) 上に MySQL 5.6 をインストールしている環境を想定しています。&lt;/p&gt;
 
-&lt;p&gt;まず、&lt;a href=&#34;https://bintray.com/mcafee/mysql-audit-plugin/release&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://bintray.com/mcafee/mysql-audit-plugin/release&#39;, &#39;Plugin のダウンロードページ&#39;]);&#34; &gt;Plugin のダウンロードページ&lt;/a&gt; から最新のバイナリをダウンロードし、MySQL のプラグインディレクトリに解凍します。MySQL のバージョンと OS の bit を間違えないように。&lt;/p&gt;
+&lt;p&gt;まず、&lt;a href=&#34;https://bintray.com/mcafee/mysql-audit-plugin/release&#34;&gt;Plugin のダウンロードページ&lt;/a&gt; から最新のバイナリをダウンロードし、MySQL のプラグインディレクトリに解凍します。MySQL のバージョンと OS の bit を間違えないように。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ wget http://dl.bintray.com/mcafee/mysql-audit-plugin/1.0.4/audit-plugin-mysql-5.6-1.0.4-459-linux-x86_64.zip
 $ unzip audit-plugin-mysql-5.6-1.0.4-459-linux-x86_64.zip
@@ -103,7 +103,7 @@ audit_json_file = On
 
 &lt;h2 id=&#34;プラグインの設定:c6474aa8b06dbbdfd3d89714dc33b5d2&#34;&gt;プラグインの設定&lt;/h2&gt;
 
-&lt;p&gt;設定パラメータを全部書くのは面倒なので主要なものだけ。詳しくは &lt;a href=&#34;https://github.com/mcafee/mysql-audit/wiki/Configuration&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/mcafee/mysql-audit/wiki/Configuration&#39;, &#39;Configuration · mcafee/mysql-audit Wiki&#39;]);&#34; &gt;Configuration · mcafee/mysql-audit Wiki&lt;/a&gt; を参照。&lt;/p&gt;
+&lt;p&gt;設定パラメータを全部書くのは面倒なので主要なものだけ。詳しくは &lt;a href=&#34;https://github.com/mcafee/mysql-audit/wiki/Configuration&#34;&gt;Configuration · mcafee/mysql-audit Wiki&lt;/a&gt; を参照。&lt;/p&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -283,12 +283,12 @@ audit_json_file = On
 &lt;h2 id=&#34;参考:c6474aa8b06dbbdfd3d89714dc33b5d2&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/mcafee/mysql-audit/wiki&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/mcafee/mysql-audit/wiki&#39;, &#39;Home · mcafee/mysql-audit Wiki&#39;]);&#34; &gt;Home · mcafee/mysql-audit Wiki&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mcafee/mysql-audit/wiki&#34;&gt;Home · mcafee/mysql-audit Wiki&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;公式の Wiki。これを見ればだいたい大丈夫。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.majide.com/2012/10/mysql-mcafee-audit-plugin/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.majide.com/2012/10/mysql-mcafee-audit-plugin/&#39;, &#39;McAfeeのおかげでMySQLで監査ログが取れるようになった&#39;]);&#34; &gt;McAfeeのおかげでMySQLで監査ログが取れるようになった&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.majide.com/2012/10/mysql-mcafee-audit-plugin/&#34;&gt;McAfeeのおかげでMySQLで監査ログが取れるようになった&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;インストール手順や設定項目が詳しい。プラグインが読み込めないエラーの直し方も。&lt;/li&gt;
@@ -305,7 +305,7 @@ audit_json_file = On
       <guid>http://1000k.github.io/2014/05/13/estimate-load-of-mcafee-mysql-audit-plugin/</guid>
       <description>
 
-&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/?p=1837&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/?p=1837&#39;, &#39;前の記事&#39;]);&#34; &gt;前の記事&lt;/a&gt; で McAfee MySQL Audit Plugin を使うと簡単に監査ログが取れることを紹介しましたが、性能劣化はどれくらいあるのか心配になったので検証してみました。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/?p=1837&#34;&gt;前の記事&lt;/a&gt; で McAfee MySQL Audit Plugin を使うと簡単に監査ログが取れることを紹介しましたが、性能劣化はどれくらいあるのか心配になったので検証してみました。&lt;/p&gt;
 
 &lt;h2 id=&#34;audit-プラグインの設定値:ca0842c38bf6f0227cc53f5afc5d2b62&#34;&gt;Audit プラグインの設定値&lt;/h2&gt;
 
@@ -318,7 +318,7 @@ audit_json_file = On
 | audit_checksum                  |                            |
 | audit_delay_cmds                |                            |
 | audit_delay_ms                  | 0                          |
-| audit_json_file                 | OFF                        | &amp;amp;lt;- Audit 有効時は ON にする
+| audit_json_file                 | OFF                        | &amp;lt;- Audit 有効時は ON にする
 | audit_json_file_flush           | OFF                        |
 | audit_json_file_sync            | 0                          |
 | audit_json_log_file             | mysql-audit.json           |
@@ -337,7 +337,7 @@ audit_json_file = On
 
 &lt;h2 id=&#34;ベンチマークの条件:ca0842c38bf6f0227cc53f5afc5d2b62&#34;&gt;ベンチマークの条件&lt;/h2&gt;
 
-&lt;p&gt;mysqlslap なら簡単にベンチマークが取れます。詳しい使い方は &lt;a href=&#34;http://blog.1000k.net/?p=1847&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/?p=1847&#39;, &#39;mysqlslap で MySQL の負荷テストをする方法&#39;]);&#34; &gt;mysqlslap で MySQL の負荷テストをする方法&lt;/a&gt; をご覧ください。&lt;/p&gt;
+&lt;p&gt;mysqlslap なら簡単にベンチマークが取れます。詳しい使い方は &lt;a href=&#34;http://blog.1000k.net/?p=1847&#34;&gt;mysqlslap で MySQL の負荷テストをする方法&lt;/a&gt; をご覧ください。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;mysqlslap \
   --no-defaults \
@@ -518,8 +518,8 @@ Average number of queries per client: 1000
 &lt;h2 id=&#34;参考:c586e0247ceee441e4b1b150e9d62fd0&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://dev.mysql.com/doc/refman/5.1/ja/mysqlslap.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://dev.mysql.com/doc/refman/5.1/ja/mysqlslap.html&#39;, &#39;MySQL :: MySQL 5.1 リファレンスマニュアル :: 7.15 mysqlslap — クライアント負荷エミュレーション&#39;]);&#34; &gt;MySQL :: MySQL 5.1 リファレンスマニュアル :: 7.15 mysqlslap — クライアント負荷エミュレーション&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/tetsuyai/20110209/1297253834&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://d.hatena.ne.jp/tetsuyai/20110209/1297253834&#39;, &#39;MySQL標準 負荷測定ツール mysqlslap &amp;#8211; 祈れ、そして働け ～ Ora et labora&#39;]);&#34; &gt;MySQL標準 負荷測定ツール mysqlslap &amp;#8211; 祈れ、そして働け ～ Ora et labora&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dev.mysql.com/doc/refman/5.1/ja/mysqlslap.html&#34;&gt;MySQL :: MySQL 5.1 リファレンスマニュアル :: 7.15 mysqlslap — クライアント負荷エミュレーション&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/tetsuyai/20110209/1297253834&#34;&gt;MySQL標準 負荷測定ツール mysqlslap - 祈れ、そして働け ～ Ora et labora&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -592,15 +592,15 @@ mysql&amp;gt; INSERT INTO users VALUES(0, &amp;quot;name1&amp;quot;);
 1 row in set (0.00 sec)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;「不正なDOUBLE型の値&amp;#8217;uhouho&amp;#8217;を切り捨てました」と書いてあります。どうやら、MySQLの_暗黙の型変換_が悪さをしているようです。&lt;/p&gt;
+&lt;p&gt;「不正なDOUBLE型の値&amp;rsquo;uhouho&amp;rsquo;を切り捨てました」と書いてあります。どうやら、MySQLの_暗黙の型変換_が悪さをしているようです。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://dev.mysql.com/doc/refman/5.1/ja/type-conversion.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://dev.mysql.com/doc/refman/5.1/ja/type-conversion.html&#39;, &#39;MySQL :: MySQL 5.1 リファレンスマニュアル :: 11.1.2 式評価でのタイプ変換&#39;]);&#34; title=&#34;MySQL :: MySQL 5.1 リファレンスマニュアル :: 11.1.2 式評価でのタイプ変換&#34;&gt;MySQL :: MySQL 5.1 リファレンスマニュアル :: 11.1.2 式評価でのタイプ変換&lt;/a&gt; に淡々と箇条書きされていることを引用します。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://dev.mysql.com/doc/refman/5.1/ja/type-conversion.html&#34;&gt;MySQL :: MySQL 5.1 リファレンスマニュアル :: 11.1.2 式評価でのタイプ変換&lt;/a&gt; に淡々と箇条書きされていることを引用します。&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;比較の演算の両方の引数がストリングの場合、それらはストリングとして比較されます。&lt;/li&gt;
 &lt;li&gt;両方の引数が整数の場合、それらは整数として比較されます。&lt;/li&gt;
-&lt;li&gt;&amp;#8230; 中略 &amp;#8230;&lt;/li&gt;
+&lt;li&gt;… 中略 …&lt;/li&gt;
 &lt;li&gt;他のすべてのケースでは、引数は浮動少数点 ( 実 ) 数として比較されます。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
@@ -622,22 +622,22 @@ mysql&amp;gt; SELECT 0 = &#39;x6&#39;;
 &lt;h2 id=&#34;参考:6f5857c1e488bfc7db27046670c471b9&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/hnw/20120405&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://d.hatena.ne.jp/hnw/20120405&#39;, &#39;MySQLの文字列型から数値型への自動型変換が意味不明すぎる &amp;#8211; hnwの日記&#39;]);&#34; title=&#34;MySQLの文字列型から数値型への自動型変換が意味不明すぎる - hnwの日記&#34;&gt;MySQLの文字列型から数値型への自動型変換が意味不明すぎる &amp;#8211; hnwの日記&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/hnw/20120405&#34;&gt;MySQLの文字列型から数値型への自動型変換が意味不明すぎる - hnwの日記&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;文字列が浮動小数点に切り替えられる問題を詳しく解説。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.tokumaru.org/d/20090924.html#p01&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.tokumaru.org/d/20090924.html#p01&#39;, &#39;undefined &amp;#8211; 徳丸浩の日記(2009-09-24)&#39;]);&#34; title=&#34;undefined - 徳丸浩の日記(2009-09-24)&#34;&gt;undefined &amp;#8211; 徳丸浩の日記(2009-09-24)&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.tokumaru.org/d/20090924.html#p01&#34;&gt;undefined - 徳丸浩の日記(2009-09-24)&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;SQLインジェクション対策時にはまりやすいことの説明。値を文字列にキャストしているときに遭遇しうる不具合について解説。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://dev.mysql.com/doc/refman/5.1/ja/server-sql-mode.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://dev.mysql.com/doc/refman/5.1/ja/server-sql-mode.html&#39;, &#39;MySQL :: MySQL 5.1 リファレンスマニュアル :: 4.2.6 SQL モード&#39;]);&#34; title=&#34;MySQL :: MySQL 5.1 リファレンスマニュアル :: 4.2.6 SQL モード&#34;&gt;MySQL :: MySQL 5.1 リファレンスマニュアル :: 4.2.6 SQL モード&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://dev.mysql.com/doc/refman/5.1/ja/server-sql-mode.html&#34;&gt;MySQL :: MySQL 5.1 リファレンスマニュアル :: 4.2.6 SQL モード&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;値チェックのモード。不正な日付や0除算などのチェックを厳格にできる。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://dev.mysql.com/doc/refman/5.1/ja/type-conversion.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://dev.mysql.com/doc/refman/5.1/ja/type-conversion.html&#39;, &#39;MySQL :: MySQL 5.1 リファレンスマニュアル :: 11.1.2 式評価でのタイプ変換&#39;]);&#34; title=&#34;MySQL :: MySQL 5.1 リファレンスマニュアル :: 11.1.2 式評価でのタイプ変換&#34;&gt;MySQL :: MySQL 5.1 リファレンスマニュアル :: 11.1.2 式評価でのタイプ変換&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dev.mysql.com/doc/refman/5.1/ja/type-conversion.html&#34;&gt;MySQL :: MySQL 5.1 リファレンスマニュアル :: 11.1.2 式評価でのタイプ変換&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -652,7 +652,7 @@ mysql&amp;gt; SELECT 0 = &#39;x6&#39;;
 
 &lt;p&gt;MySQL にて BOOLEAN 型のフィールドを作りたいと思ったのですが、Googleで調べると「MySQL の BOOLEAN 型は実質 tinyint(1) と同じ」といったことが書いてありました。&lt;/p&gt;
 
-&lt;p&gt;また、「MySQL で厳密な BOOLEAN 型を表現したければ、ENUM(&amp;#8216;TRUE&amp;#8217;, &amp;#8216;FALSE&amp;#8217;) を使った方がいい」とも書いてありました。&lt;/p&gt;
+&lt;p&gt;また、「MySQL で厳密な BOOLEAN 型を表現したければ、ENUM(&amp;lsquo;TRUE&amp;rsquo;, &amp;lsquo;FALSE&amp;rsquo;) を使った方がいい」とも書いてありました。&lt;/p&gt;
 
 &lt;p&gt;個人的には SQL 文に「WHERE flag IS TRUE」と書いて SELECT できれば文句ありません。そういった挙動ができるのか確認しました。&lt;/p&gt;
 
@@ -747,7 +747,7 @@ SELECT * FROM boolean_test WHERE flag IS FALSE; -- id:2, 4 がヒット
 
 &lt;p&gt;SQL-99 の定義によると、「BOOLEAN 型は TRUE/FALSE/UNKNOWN の3値で表現される」ようです。&lt;/p&gt;
 
-&lt;p&gt;ref: &lt;a href=&#34;http://www.atmarkit.co.jp/fnetwork/tokusyuu/01sql99/sql99_2a.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.atmarkit.co.jp/fnetwork/tokusyuu/01sql99/sql99_2a.html&#39;, &#39;新しい業界標準「SQL99」詳細解説&#39;]);&#34; &gt;新しい業界標準「SQL99」詳細解説&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ref: &lt;a href=&#34;http://www.atmarkit.co.jp/fnetwork/tokusyuu/01sql99/sql99_2a.html&#34;&gt;新しい業界標準「SQL99」詳細解説&lt;/a&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;SQL99では本来の意味であるTRUE（真）とFALSE（偽）およびUNKNOWN（不明）を値として持つ真理値型が提供される。&lt;/p&gt;
@@ -785,10 +785,10 @@ SELECT * FROM boolean_test WHERE flag = &#39;UNKNOWN&#39;; -- ???: id:2, 4 が�
 &lt;h2 id=&#34;参考:fac054033163afd225cf9e287567f3c9&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://slashdot.jp/comments.pl?threshold=0&amp;mode=thread&amp;commentsort=1&amp;sid=446159&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://slashdot.jp/comments.pl?threshold=0&amp;mode=thread&amp;commentsort=1&amp;sid=446159&#39;, &#39;コメント: mySQLには、boolean型が無いなんて・・ &amp;#8211; スラッシュドット・ジャパン&#39;]);&#34; title=&#34;コメント: mySQLには、boolean型が無いなんて・・ - スラッシュドット・ジャパン&#34;&gt;コメント: mySQLには、boolean型が無いなんて・・ &amp;#8211; スラッシュドット・ジャパン&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.atmarkit.co.jp/fnetwork/tokusyuu/01sql99/sql99_2a.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.atmarkit.co.jp/fnetwork/tokusyuu/01sql99/sql99_2a.html&#39;, &#39;新しい業界標準「SQL99」詳細解説&#39;]);&#34; title=&#34;新しい業界標準「SQL99」詳細解説&#34;&gt;新しい業界標準「SQL99」詳細解説&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.geocities.jp/ky_webid/c/010.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.geocities.jp/ky_webid/c/010.html&#39;, &#39;Ｃ言語編　第１０章　変数のサイズ&#39;]);&#34; title=&#34;Ｃ言語編　第１０章　変数のサイズ&#34;&gt;Ｃ言語編　第１０章　変数のサイズ&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.nslabs.jp/book2-sql-types.rhtml&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.nslabs.jp/book2-sql-types.rhtml&#39;, &#39;追補: SQLデータ型の一覧 | Netsphere Laboratories&#39;]);&#34; &gt;追補: SQLデータ型の一覧 | Netsphere Laboratories&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://slashdot.jp/comments.pl?threshold=0&amp;amp;mode=thread&amp;amp;commentsort=1&amp;amp;sid=446159&#34;&gt;コメント: mySQLには、boolean型が無いなんて・・ - スラッシュドット・ジャパン&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.atmarkit.co.jp/fnetwork/tokusyuu/01sql99/sql99_2a.html&#34;&gt;新しい業界標準「SQL99」詳細解説&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.geocities.jp/ky_webid/c/010.html&#34;&gt;Ｃ言語編　第１０章　変数のサイズ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.nslabs.jp/book2-sql-types.rhtml&#34;&gt;追補: SQLデータ型の一覧 | Netsphere Laboratories&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

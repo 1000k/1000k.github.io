@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -43,9 +48,9 @@
         <div class="post-content">
           
 
-<p><strong>datetime(&#8216;now&#8217;, &#8216;localtime&#8217;)</strong>を使う。</p>
+<p><strong>datetime(&lsquo;now&rsquo;, &lsquo;localtime&rsquo;)</strong>を使う。</p>
 
-<pre><code>INSERT INTO posts (body, created, modified)
+<pre><code class="language-sql">INSERT INTO posts (body, created, modified)
 VALUES ('ウソ文章', datetime('now', 'localtime'), datetime('now', 'localtime'));
 </code></pre>
 
@@ -53,7 +58,7 @@ VALUES ('ウソ文章', datetime('now', 'localtime'), datetime('now', 'localtime
 
 <h3 id="参考:f8899ebbf568af077f83512b36b60fed">参考</h3>
 
-<p><a href="http://www.tamandua-webtools.net/sqlite3-date.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.tamandua-webtools.net/sqlite3-date.html', 'SQLite3 での日付処理']);" title="SQLite3 での日付処理">SQLite3 での日付処理</a></p>
+<p><a href="http://www.tamandua-webtools.net/sqlite3-date.html">SQLite3 での日付処理</a></p>
 
         </div>
       </div>

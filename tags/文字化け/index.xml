@@ -38,15 +38,22 @@ netbeans_default_options=&amp;quot;-J-client -J-Xss2m -J-Xms32m -J-XX:PermSize=3
 
 &lt;p&gt;結果&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/LerningRuby-N_2059-e1295677532145.png&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/wp-content/uploads/LerningRuby-N_2059-e1295677532145.png&#39;, &#39;&#39;]);&#34; &gt;&lt;img src=&#34;http://blog.1000k.net/wp-content/uploads/LerningRuby-N_2059-e1295677532145-300x138.png&#34; alt=&#34;&#34; title=&#34;NetBeansで日本語出力&#34; width=&#34;300&#34; height=&#34;138&#34; class=&#34;alignnone size-medium wp-image-638&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/LerningRuby-N_2059-e1295677532145.png&#34;&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://1000k.github.io/img/LerningRuby-N_2059-e1295677532145-300x138.png&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;日本語フォントを指定する-2011-07-07追記:2cc311cc50f4986921909eddc3cc7def&#34;&gt;日本語フォントを指定する (2011/07/07追記)&lt;/h3&gt;
 
-&lt;p&gt;まだ文字化けする場合、出力ウインドウのフォントが日本語に対応していない可能性があります。出力ウインドウの適当な場所を&lt;strong&gt;右クリック -&amp;gt; [フォントを選択&amp;#8230;]&lt;/strong&gt;で、日本語フォントを指定してください。&lt;/p&gt;
+&lt;p&gt;まだ文字化けする場合、出力ウインドウのフォントが日本語に対応していない可能性があります。出力ウインドウの適当な場所を&lt;strong&gt;右クリック -&amp;gt; [フォントを選択…]&lt;/strong&gt;で、日本語フォントを指定してください。&lt;/p&gt;
 
 &lt;h2 id=&#34;参考:2cc311cc50f4986921909eddc3cc7def&#34;&gt;参考&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://completemirage.blog55.fc2.com/blog-entry-39.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://completemirage.blog55.fc2.com/blog-entry-39.html&#39;, &#39;Complete Mirage &amp;#8211; NetBeansでJRuby on Rails&#39;]);&#34; &gt;Complete Mirage &amp;#8211; NetBeansでJRuby on Rails&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://completemirage.blog55.fc2.com/blog-entry-39.html&#34;&gt;Complete Mirage - NetBeansでJRuby on Rails&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

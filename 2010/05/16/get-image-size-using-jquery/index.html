@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -50,7 +55,7 @@
 </ul></li>
 </ul>
 
-<pre><code>/*
+<pre><code class="language-javascript">/*
  * 画像の実際のサイズを取得する
  *
  * @param  string  image  img要素
@@ -63,7 +68,7 @@ function getActualDimension(image) {
         return {width: image.naturalWidth, height: image.naturalHeight};
     }
     if (&quot;src&quot; in image) { // HTMLImageElement
-        if (image[key] &amp;#038;&amp;#038; image[key].src === image.src) {return  image[key];}
+        if (image[key] &amp;&amp; image[key].src === image.src) {return  image[key];}
 
         if (document.uniqueID) { // for IE
             w = $(image).css(&quot;width&quot;);

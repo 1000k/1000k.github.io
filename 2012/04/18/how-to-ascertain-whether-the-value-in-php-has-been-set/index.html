@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -114,7 +119,7 @@ isset(array ()): true
 <table>
 <thead>
 <tr>
-<th>&#8211;</th>
+<th>-</th>
 <th>isset($var)</th>
 <th>!empty($var)</th>
 <th>($var)</th>
@@ -144,14 +149,14 @@ isset(array ()): true
 </tr>
 
 <tr>
-<td>&#8216;false&#8217;</td>
+<td>&lsquo;false&rsquo;</td>
 <td>true</td>
 <td>true</td>
 <td>true</td>
 </tr>
 
 <tr>
-<td>&#8221;</td>
+<td>&ldquo;</td>
 <td>true</td>
 <td>false</td>
 <td>false</td>
@@ -165,14 +170,14 @@ isset(array ()): true
 </tr>
 
 <tr>
-<td>&#8216;0&#8217;</td>
+<td>&lsquo;0&rsquo;</td>
 <td>true</td>
 <td>false</td>
 <td>false</td>
 </tr>
 
 <tr>
-<td>&#8216;aaaaa&#8217;</td>
+<td>&lsquo;aaaaa&rsquo;</td>
 <td>true</td>
 <td>true</td>
 <td>true</td>
@@ -199,7 +204,7 @@ isset(array ()): true
 <ul>
 <li>issetはNULL以外がセットされていればtrue</li>
 <li>「!empty($var)」と「($var)」は同義</li>
-<li>empty()は大変クセが強いので、<a href="http://jp.php.net/manual/ja/function.empty.php" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://jp.php.net/manual/ja/function.empty.php', '公式マニュアル']);" >公式マニュアル</a>を熟読しましょう。</li>
+<li>empty()は大変クセが強いので、<a href="http://jp.php.net/manual/ja/function.empty.php">公式マニュアル</a>を熟読しましょう。</li>
 </ul>
 
 <blockquote>
@@ -208,10 +213,10 @@ isset(array ()): true
 <p>次のような値は空であるとみなされます。</p>
 
 <ul>
-<li>&#8220;&#8221; (空文字列)</li>
+<li>&rdquo;&rdquo; (空文字列)</li>
 <li>0 (整数 の 0)</li>
 <li>0.0 (浮動小数点数の 0)</li>
-<li>&#8220;0&#8221; (文字列 の 0)</li>
+<li>&ldquo;0&rdquo; (文字列 の 0)</li>
 <li>NULL</li>
 <li>FALSE</li>
 <li>array() (空の配列)</li>
@@ -224,9 +229,9 @@ isset(array ()): true
 <p>PHPの公式マニュアルを見て確かめましょう。</p>
 
 <ul>
-<li><a href="http://jp.php.net/manual/ja/function.empty.php" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://jp.php.net/manual/ja/function.empty.php', 'PHP: empty &#8211; Manual']);" >PHP: empty &#8211; Manual</a></li>
-<li><a href="http://jp.php.net/manual/ja/function.isset.php" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://jp.php.net/manual/ja/function.isset.php', 'PHP: isset &#8211; Manual']);" >PHP: isset &#8211; Manual</a></li>
-<li><a href="http://jp.php.net/manual/ja/control-structures.if.php" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://jp.php.net/manual/ja/control-structures.if.php', 'PHP: if &#8211; Manual']);" >PHP: if &#8211; Manual</a></li>
+<li><a href="http://jp.php.net/manual/ja/function.empty.php">PHP: empty - Manual</a></li>
+<li><a href="http://jp.php.net/manual/ja/function.isset.php">PHP: isset - Manual</a></li>
+<li><a href="http://jp.php.net/manual/ja/control-structures.if.php">PHP: if - Manual</a></li>
 </ul>
 
         </div>

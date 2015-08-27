@@ -19,7 +19,7 @@
 
 &lt;p&gt;MySQL にて BOOLEAN 型のフィールドを作りたいと思ったのですが、Googleで調べると「MySQL の BOOLEAN 型は実質 tinyint(1) と同じ」といったことが書いてありました。&lt;/p&gt;
 
-&lt;p&gt;また、「MySQL で厳密な BOOLEAN 型を表現したければ、ENUM(&amp;#8216;TRUE&amp;#8217;, &amp;#8216;FALSE&amp;#8217;) を使った方がいい」とも書いてありました。&lt;/p&gt;
+&lt;p&gt;また、「MySQL で厳密な BOOLEAN 型を表現したければ、ENUM(&amp;lsquo;TRUE&amp;rsquo;, &amp;lsquo;FALSE&amp;rsquo;) を使った方がいい」とも書いてありました。&lt;/p&gt;
 
 &lt;p&gt;個人的には SQL 文に「WHERE flag IS TRUE」と書いて SELECT できれば文句ありません。そういった挙動ができるのか確認しました。&lt;/p&gt;
 
@@ -114,7 +114,7 @@ SELECT * FROM boolean_test WHERE flag IS FALSE; -- id:2, 4 がヒット
 
 &lt;p&gt;SQL-99 の定義によると、「BOOLEAN 型は TRUE/FALSE/UNKNOWN の3値で表現される」ようです。&lt;/p&gt;
 
-&lt;p&gt;ref: &lt;a href=&#34;http://www.atmarkit.co.jp/fnetwork/tokusyuu/01sql99/sql99_2a.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.atmarkit.co.jp/fnetwork/tokusyuu/01sql99/sql99_2a.html&#39;, &#39;新しい業界標準「SQL99」詳細解説&#39;]);&#34; &gt;新しい業界標準「SQL99」詳細解説&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ref: &lt;a href=&#34;http://www.atmarkit.co.jp/fnetwork/tokusyuu/01sql99/sql99_2a.html&#34;&gt;新しい業界標準「SQL99」詳細解説&lt;/a&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;SQL99では本来の意味であるTRUE（真）とFALSE（偽）およびUNKNOWN（不明）を値として持つ真理値型が提供される。&lt;/p&gt;
@@ -152,10 +152,10 @@ SELECT * FROM boolean_test WHERE flag = &#39;UNKNOWN&#39;; -- ???: id:2, 4 が�
 &lt;h2 id=&#34;参考:fac054033163afd225cf9e287567f3c9&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://slashdot.jp/comments.pl?threshold=0&amp;mode=thread&amp;commentsort=1&amp;sid=446159&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://slashdot.jp/comments.pl?threshold=0&amp;mode=thread&amp;commentsort=1&amp;sid=446159&#39;, &#39;コメント: mySQLには、boolean型が無いなんて・・ &amp;#8211; スラッシュドット・ジャパン&#39;]);&#34; title=&#34;コメント: mySQLには、boolean型が無いなんて・・ - スラッシュドット・ジャパン&#34;&gt;コメント: mySQLには、boolean型が無いなんて・・ &amp;#8211; スラッシュドット・ジャパン&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.atmarkit.co.jp/fnetwork/tokusyuu/01sql99/sql99_2a.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.atmarkit.co.jp/fnetwork/tokusyuu/01sql99/sql99_2a.html&#39;, &#39;新しい業界標準「SQL99」詳細解説&#39;]);&#34; title=&#34;新しい業界標準「SQL99」詳細解説&#34;&gt;新しい業界標準「SQL99」詳細解説&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.geocities.jp/ky_webid/c/010.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.geocities.jp/ky_webid/c/010.html&#39;, &#39;Ｃ言語編　第１０章　変数のサイズ&#39;]);&#34; title=&#34;Ｃ言語編　第１０章　変数のサイズ&#34;&gt;Ｃ言語編　第１０章　変数のサイズ&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.nslabs.jp/book2-sql-types.rhtml&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.nslabs.jp/book2-sql-types.rhtml&#39;, &#39;追補: SQLデータ型の一覧 | Netsphere Laboratories&#39;]);&#34; &gt;追補: SQLデータ型の一覧 | Netsphere Laboratories&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://slashdot.jp/comments.pl?threshold=0&amp;amp;mode=thread&amp;amp;commentsort=1&amp;amp;sid=446159&#34;&gt;コメント: mySQLには、boolean型が無いなんて・・ - スラッシュドット・ジャパン&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.atmarkit.co.jp/fnetwork/tokusyuu/01sql99/sql99_2a.html&#34;&gt;新しい業界標準「SQL99」詳細解説&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.geocities.jp/ky_webid/c/010.html&#34;&gt;Ｃ言語編　第１０章　変数のサイズ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.nslabs.jp/book2-sql-types.rhtml&#34;&gt;追補: SQLデータ型の一覧 | Netsphere Laboratories&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

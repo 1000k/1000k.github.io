@@ -19,7 +19,7 @@
 
 &lt;p&gt;Rails 4 アプリを作ろうとして &lt;code&gt;rails new&lt;/code&gt; コマンドを叩いたら、&lt;code&gt;bundle install&lt;/code&gt; のフェーズが永遠に終わらず老人になりそうでした。&lt;/p&gt;
 
-&lt;p&gt;どうやら gem リポジトリの &lt;a href=&#34;http://rubygems.org&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://rubygems.org&#39;, &#39;http://rubygems.org&#39;]);&#34; &gt;&lt;a href=&#34;http://rubygems.org&#34;&gt;http://rubygems.org&lt;/a&gt;&lt;/a&gt; のレスポンスが遅すぎるようです。&lt;/p&gt;
+&lt;p&gt;どうやら gem リポジトリの &lt;a href=&#34;http://rubygems.org&#34;&gt;http://rubygems.org&lt;/a&gt; のレスポンスが遅すぎるようです。&lt;/p&gt;
 
 &lt;p&gt;そこで、Rails アプリの作成時は &lt;code&gt;bundler install&lt;/code&gt; を省略し、Gemfile をいじってもっと早いリポジトリを参照するように変更したら、無事インストールできました。&lt;/p&gt;
 
@@ -51,8 +51,8 @@ source &amp;quot;http://bundler-api.herokuapp.com&amp;quot;
 &lt;h2 id=&#34;参考:52707943b292ea793cda924d2a6b7275&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://qiita.com/quattro_4/items/fcc2ff8b04c43229a2fb&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://qiita.com/quattro_4/items/fcc2ff8b04c43229a2fb&#39;, &#39;Ruby &amp;#8211; bundlerが遅い(Error Bundler::HTTPError)のを解決 &amp;#8211; Qiita [キータ]&#39;]);&#34; &gt;Ruby &amp;#8211; bundlerが遅い(Error Bundler::HTTPError)のを解決 &amp;#8211; Qiita [キータ]&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.ideaxidea.com/archives/2013/08/resolv.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.ideaxidea.com/archives/2013/08/resolv.html&#39;, &#39;Vagrant+VirtualBox（CentOS6）で「gem install rails」がすっごい遅い時の対処法 | IDEA*IDEA&#39;]);&#34; &gt;Vagrant+VirtualBox（CentOS6）で「gem install rails」がすっごい遅い時の対処法 | IDEA*IDEA&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://qiita.com/quattro_4/items/fcc2ff8b04c43229a2fb&#34;&gt;Ruby - bundlerが遅い(Error Bundler::HTTPError)のを解決 - Qiita [キータ]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ideaxidea.com/archives/2013/08/resolv.html&#34;&gt;Vagrant+VirtualBox（CentOS6）で「gem install rails」がすっごい遅い時の対処法 | IDEA*IDEA&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

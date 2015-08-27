@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -45,7 +50,7 @@
 
 <p>vmstatの値をファイルに出力したいとき、次のコマンドが使えます。</p>
 
-<pre><code>nohup vmstat -n -S M 1 | awk '{ print strftime(&quot;%Y/%m/%d %H:%M:%S&quot;), $0 } { system(&quot;:&quot;) }' &gt;&gt; /path/to/log &amp;#038;
+<pre><code>nohup vmstat -n -S M 1 | awk '{ print strftime(&quot;%Y/%m/%d %H:%M:%S&quot;), $0 } { system(&quot;:&quot;) }' &gt;&gt; /path/to/log &amp;
 </code></pre>
 
 <p>出力は下記のようになります。</p>
@@ -68,9 +73,9 @@ $ kill {上で出てきたpid}
 <h1 id="参考:981194324cf5b426a797d33ec4db9e80">参考</h1>
 
 <ul>
-<li><a href="http://babyp.blog55.fc2.com/blog-entry-446.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://babyp.blog55.fc2.com/blog-entry-446.html', 'サーバのリソースを定期的に出力しとく方法：なんとなしの日記']);" >サーバのリソースを定期的に出力しとく方法：なんとなしの日記</a></li>
-<li><a href="http://d.hatena.ne.jp/higher_tomorrow/20110601/1306887919" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://d.hatena.ne.jp/higher_tomorrow/20110601/1306887919', '（今さら） vmstat の結果に時間をつけてファイルに出力する &#8211; あしのあしあと']);" >（今さら） vmstat の結果に時間をつけてファイルに出力する &#8211; あしのあしあと</a></li>
-<li><a href="http://itpro.nikkeibp.co.jp/article/COLUMN/20060227/230850/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://itpro.nikkeibp.co.jp/article/COLUMN/20060227/230850/', '【 nohup 】 ログアウトした後もコマンドを実行し続ける &#8211; Linuxコマンド集：ITpro']);" >【 nohup 】 ログアウトした後もコマンドを実行し続ける &#8211; Linuxコマンド集：ITpro</a></li>
+<li><a href="http://babyp.blog55.fc2.com/blog-entry-446.html">サーバのリソースを定期的に出力しとく方法：なんとなしの日記</a></li>
+<li><a href="http://d.hatena.ne.jp/higher_tomorrow/20110601/1306887919">（今さら） vmstat の結果に時間をつけてファイルに出力する - あしのあしあと</a></li>
+<li><a href="http://itpro.nikkeibp.co.jp/article/COLUMN/20060227/230850/">【 nohup 】 ログアウトした後もコマンドを実行し続ける - Linuxコマンド集：ITpro</a></li>
 </ul>
 
         </div>

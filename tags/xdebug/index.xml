@@ -46,9 +46,9 @@ xdebug.var_display_max_depth = -1
 &lt;h2 id=&#34;参考:4a6779c3da90459c9dffed130ddd9ac1&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://xdebug.org/docs/all_settings#var_display_max_depth&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://xdebug.org/docs/all_settings#var_display_max_depth&#39;, &#39;Xdebug: Documentation&#39;]);&#34; &gt;Xdebug: Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.kantenna.com/info/2012/02/xdebug_vardump.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.kantenna.com/info/2012/02/xdebug_vardump.php&#39;, &#39;[PHP]Xdebugでvar_dump()の出力が省略されて困る場合の対応 | 情報備忘録&#39;]);&#34; &gt;[PHP]Xdebugでvar_dump()の出力が省略されて困る場合の対応 | 情報備忘録&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.crossl.net/blog/php_xdebug_vardump_size/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.crossl.net/blog/php_xdebug_vardump_size/&#39;, &#39;PHPでvar_dump時に数が多いと省略されてしまう現象&#39;]);&#34; &gt;PHPでvar_dump時に数が多いと省略されてしまう現象&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://xdebug.org/docs/all_settings#var_display_max_depth&#34;&gt;Xdebug: Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.kantenna.com/info/2012/02/xdebug_vardump.php&#34;&gt;[PHP]Xdebugでvar_dump()の出力が省略されて困る場合の対応 | 情報備忘録&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.crossl.net/blog/php_xdebug_vardump_size/&#34;&gt;PHPでvar_dump時に数が多いと省略されてしまう現象&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -65,13 +65,13 @@ xdebug.var_display_max_depth = -1
 
 &lt;p&gt;どうやらXAMPP 1.7.3に含まれているxDebugのバージョンが原因のようでした(v2.0.6 rc)。そこで最新のxDebug 2.1.0 を入れたところ、無事取得できるようになりました。&lt;/p&gt;
 
-&lt;p&gt;xDebugの入れ替え方ですが、&lt;a href=&#34;http://www.xdebug.org/find-binary.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.xdebug.org/find-binary.php&#39;, &#39;Xdebug: Support; Tailored Installation Instructions&#39;]);&#34; title=&#34;Xdebug: Support; Tailored Installation Instructions&#34;&gt;Xdebug: Support; Tailored Installation Instructions&lt;/a&gt;にしたがってやるのが一番わかりやすいです。ここのフォームにphpinfoの結果をまるごとコピペするだけで、DLするファイルからphp.iniの設定まですべてやり方を出してくれます。&lt;/p&gt;
+&lt;p&gt;xDebugの入れ替え方ですが、&lt;a href=&#34;http://www.xdebug.org/find-binary.php&#34;&gt;Xdebug: Support; Tailored Installation Instructions&lt;/a&gt;にしたがってやるのが一番わかりやすいです。ここのフォームにphpinfoの結果をまるごとコピペするだけで、DLするファイルからphp.iniの設定まですべてやり方を出してくれます。&lt;/p&gt;
 
 &lt;h3 id=&#34;参考:95dfb16aee8c1717a3a185c8f8b9f562&#34;&gt;参考&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.ryuzee.com/contents/blog/2430&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.ryuzee.com/contents/blog/2430&#39;, &#39;[CakePHP]晴れときどきcakephpでコードカバレージを測定する | Ryuzee.com&#39;]);&#34; title=&#34;[CakePHP]晴れときどきcakephpでコードカバレージを測定する | Ryuzee.com&#34;&gt;[CakePHP]晴れときどきcakephpでコードカバレージを測定する | Ryuzee.com&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.xdebug.org/find-binary.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.xdebug.org/find-binary.php&#39;, &#39;Xdebug: Support; Tailored Installation Instructions&#39;]);&#34; title=&#34;Xdebug: Support; Tailored Installation Instructions&#34;&gt;Xdebug: Support; Tailored Installation Instructions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ryuzee.com/contents/blog/2430&#34;&gt;[CakePHP]晴れときどきcakephpでコードカバレージを測定する | Ryuzee.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.xdebug.org/find-binary.php&#34;&gt;Xdebug: Support; Tailored Installation Instructions&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

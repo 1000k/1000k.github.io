@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -56,43 +61,120 @@
 
 <p>リポジトリの URL は <code>https://foo.com/git/bar.git</code> とします。</p>
 
-<p>&#8220;Jenkins の管理 &gt; Credentials &gt; Add domain&#8221; をクリックし、Git リポジトリのドメインを入力します。</p>
+<p>&ldquo;Jenkins の管理 &gt; Credentials &gt; Add domain&rdquo; をクリックし、Git リポジトリのドメインを入力します。</p>
 
 <p>Specification の URI スキーマには <code>https</code> を選択します。</p>
 
-<p><a href="http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_1.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_1.png', '']);" ><img src="http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_1-300x163.png" alt="jenkins_secure_credientials_1" width="300" height="163" class="alignnone size-medium wp-image-1641" /></a></p>
+<p><a href="http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_1.png">
+<figure >
+    
+        <img src="/img/jenkins_secure_credientials_1-300x163.png"  />
+    
+    
+    <figcaption>
+        
+    </figcaption>
+    
+</figure>
+</a></p>
 
-<p>続いて、&#8221;Add Credentials&#8221; をクリックし、認証情報入力画面を出します。</p>
+<p>続いて、&rdquo;Add Credentials&rdquo; をクリックし、認証情報入力画面を出します。</p>
 
-<p><a href="http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_2.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_2.png', '']);" ><img src="http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_2-300x71.png" alt="jenkins_secure_credientials_2" width="300" height="71" class="alignnone size-medium wp-image-1642" /></a></p>
+<p><a href="http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_2.png">
+<figure >
+    
+        <img src="/img/jenkins_secure_credientials_2-300x71.png"  />
+    
+    
+    <figcaption>
+        
+    </figcaption>
+    
+</figure>
+</a></p>
 
-<p>&#8220;Kind&#8221; は <code>ユーザー名とパスワード</code> を、&#8221;ユーザー名&#8221; には https 認証のユーザー名を入力します。完了したら &#8220;OK&#8221; をクリック。</p>
+<p>&ldquo;Kind&rdquo; は <code>ユーザー名とパスワード</code> を、&rdquo;ユーザー名&rdquo; には https 認証のユーザー名を入力します。完了したら &ldquo;OK&rdquo; をクリック。</p>
 
-<p><a href="http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_3.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_3.png', '']);" ><img src="http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_3-300x139.png" alt="jenkins_secure_credientials_3" width="300" height="139" class="alignnone size-medium wp-image-1643" /></a></p>
+<p><a href="http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_3.png">
+<figure >
+    
+        <img src="/img/jenkins_secure_credientials_3-300x139.png"  />
+    
+    
+    <figcaption>
+        
+    </figcaption>
+    
+</figure>
+</a></p>
 
 <p>これで一旦、認証鍵一覧画面に戻されます。引き続き、いま入力したユーザー名をクリック。</p>
 
-<p><a href="http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_4.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_4.png', '']);" ><img src="http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_4-300x136.png" alt="jenkins_secure_credientials_4" width="300" height="136" class="alignnone size-medium wp-image-1644" /></a></p>
+<p><a href="http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_4.png">
+<figure >
+    
+        <img src="/img/jenkins_secure_credientials_4-300x136.png"  />
+    
+    
+    <figcaption>
+        
+    </figcaption>
+    
+</figure>
+</a></p>
 
-<p>&#8220;Update&#8221; をクリック。</p>
+<p>&ldquo;Update&rdquo; をクリック。</p>
 
-<p><a href="http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_5.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_5.png', '']);" ><img src="http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_5-300x137.png" alt="jenkins_secure_credientials_5" width="300" height="137" class="alignnone size-medium wp-image-1645" /></a></p>
+<p><a href="http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_5.png">
+<figure >
+    
+        <img src="/img/jenkins_secure_credientials_5-300x137.png"  />
+    
+    
+    <figcaption>
+        
+    </figcaption>
+    
+</figure>
+</a></p>
 
-<p>&#8220;パスワード&#8221; 欄に認証パスワードを入力し、&#8221;Save&#8221; をクリック。</p>
+<p>&ldquo;パスワード&rdquo; 欄に認証パスワードを入力し、&rdquo;Save&rdquo; をクリック。</p>
 
-<p><a href="http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_6.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_6.png', '']);" ><img src="http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_6-300x134.png" alt="jenkins_secure_credientials_6" width="300" height="134" class="alignnone size-medium wp-image-1646" /></a></p>
+<p><a href="http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_6.png">
+<figure >
+    
+        <img src="/img/jenkins_secure_credientials_6-300x134.png"  />
+    
+    
+    <figcaption>
+        
+    </figcaption>
+    
+</figure>
+</a></p>
 
 <p>以上で foo.com のリポジトリの認証情報が設定できました。</p>
 
-<p>あとはプロジェクトの設定画面を開き、&#8221;ソースコード管理システム &gt; Git&#8221; の &#8220;Repository URL&#8221; に <code>https://foo.com/git/bar.git</code> を、&#8221;Credentials&#8221; に先ほど入力した ID/PW のペアを選択すれば OKです。</p>
+<p>あとはプロジェクトの設定画面を開き、&rdquo;ソースコード管理システム &gt; Git&rdquo; の &ldquo;Repository URL&rdquo; に <code>https://foo.com/git/bar.git</code> を、&rdquo;Credentials&rdquo; に先ほど入力した ID/PW のペアを選択すれば OKです。</p>
 
-<p><a href="http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_7.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_7.png', '']);" ><img src="http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_7-300x242.png" alt="jenkins_secure_credientials_7" width="300" height="242" class="alignnone size-medium wp-image-1647" /></a></p>
+<p><a href="http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_7.png">
+<figure >
+    
+        <img src="/img/jenkins_secure_credientials_7-300x242.png"  />
+    
+    
+    <figcaption>
+        
+    </figcaption>
+    
+</figure>
+</a></p>
 
 <p>これでプロジェクトをビルド可能になります。</p>
 
 <h2 id="git-1-7-1-では認証が通らない:094599a56af5c07d8e54136f1f310fd1">Git 1.7.1 では認証が通らない？</h2>
 
-<p>CentOS 6.3 で、EPEL リポジトリから Git をインストールすると 1.7.1 が入りますが、これだとうまく認証が通りませんでした。プロジェクトの設定画面で &#8220;Repository URL&#8221; と &#8220;Credential&#8221; を入力しても、 <code>Error performing command: ls-remote -h</code> というエラーが出て進めませんでした。</p>
+<p>CentOS 6.3 で、EPEL リポジトリから Git をインストールすると 1.7.1 が入りますが、これだとうまく認証が通りませんでした。プロジェクトの設定画面で &ldquo;Repository URL&rdquo; と &ldquo;Credential&rdquo; を入力しても、 <code>Error performing command: ls-remote -h</code> というエラーが出て進めませんでした。</p>
 
 <p>仕方ないので手動でソースから Git 1.8.4.1 をインストールしたら、無事エラーが出なくなりました。</p>
 
@@ -107,15 +189,26 @@ make
 make install
 </code></pre>
 
-<p>なお、この場合 Git のバイナリが <code>/usr/local/bin</code> 配下にインストールされるので、&#8221;Jenkins の管理 &gt; システム設定 &gt; Git &gt; Path to Git executable&#8221; に <code>/usr/local/bin/git</code> と入力する必要があります。</p>
+<p>なお、この場合 Git のバイナリが <code>/usr/local/bin</code> 配下にインストールされるので、&rdquo;Jenkins の管理 &gt; システム設定 &gt; Git &gt; Path to Git executable&rdquo; に <code>/usr/local/bin/git</code> と入力する必要があります。</p>
 
-<p><a href="http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_81.png" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_81.png', '']);" ><img src="http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_81-255x300.png" alt="jenkins_secure_credientials_8" width="255" height="300" class="alignnone size-medium wp-image-1649" /></a></p>
+<p><a href="http://blog.1000k.net/wp-content/uploads/jenkins_secure_credientials_81.png">
+<figure >
+    
+        <img src="/img/jenkins_secure_credientials_81-255x300.png"  />
+    
+    
+    <figcaption>
+        
+    </figcaption>
+    
+</figure>
+</a></p>
 
 <h2 id="参考:094599a56af5c07d8e54136f1f310fd1">参考</h2>
 
 <ul>
-<li><a href="https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin', 'Git Plugin &#8211; Jenkins &#8211; Jenkins Wiki']);" >Git Plugin &#8211; Jenkins &#8211; Jenkins Wiki</a></li>
-<li><a href="http://qiita.com/naonya3/items/54c8e3436212ad6686b3" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://qiita.com/naonya3/items/54c8e3436212ad6686b3', 'CentOS6.3にgitをソースコードから入れる &#8211; Qiita [キータ]']);" >CentOS6.3にgitをソースコードから入れる &#8211; Qiita [キータ]</a></li>
+<li><a href="https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin">Git Plugin - Jenkins - Jenkins Wiki</a></li>
+<li><a href="http://qiita.com/naonya3/items/54c8e3436212ad6686b3">CentOS6.3にgitをソースコードから入れる - Qiita [キータ]</a></li>
 </ul>
 
         </div>

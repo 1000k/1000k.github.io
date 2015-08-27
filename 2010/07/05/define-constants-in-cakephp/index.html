@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -47,17 +52,21 @@
 
 <h3 id="defineで定義する方法:40b449d6a266142180bc2f169853d920">defineで定義する方法</h3>
 
-<p>1&#46; <strong>/app/config/bootstrap.php</strong> に下記を追加する</p>
+<ol>
+<li><strong>/app/config/bootstrap.php</strong> に下記を追加する</li>
+</ol>
 
-<pre><code>// /app/config/bootstrap.php
+<pre><code class="language-php">// /app/config/bootstrap.php
 &lt;?php
 config(‘const’);
 ?&gt;
 </code></pre>
 
-<p>2&#46; <strong>/app/config/const.php</strong> に定義したい定数を追加する</p>
+<ol>
+<li><strong>/app/config/const.php</strong> に定義したい定数を追加する</li>
+</ol>
 
-<pre><code>// /app/config/const.php
+<pre><code class="language-php">// /app/config/const.php
 define(’USO’,'800’);
 </code></pre>
 
@@ -65,9 +74,11 @@ define(’USO’,'800’);
 
 <h3 id="連想配列で定義する方法:40b449d6a266142180bc2f169853d920">連想配列で定義する方法</h3>
 
-<p>1&#46; app/config/ 配下に、任意のコンフィグファイルを作成します。ここでは <strong>hige.php</strong> とします。</p>
+<ol>
+<li>app/config/ 配下に、任意のコンフィグファイルを作成します。ここでは <strong>hige.php</strong> とします。</li>
+</ol>
 
-<pre><code>// app/config/hige.php
+<pre><code class="language-php">// app/config/hige.php
 &lt;?php
 $config[&quot;Band1&quot;] = array(
     &quot;name&quot;  =&gt; &quot;Thelonious Monk Quartet&quot;,
@@ -89,12 +100,16 @@ $config[&quot;Band2&quot;] = array(
 ?&gt;
 </code></pre>
 
-<p>2&#46; <strong>app/config/bootstrap.php</strong> に下の行を追加します。</p>
+<ol>
+<li><strong>app/config/bootstrap.php</strong> に下の行を追加します。</li>
+</ol>
 
-<pre><code>Configure::load(&quot;hige&quot;);
+<pre><code class="language-php">Configure::load(&quot;hige&quot;);
 </code></pre>
 
-<p>3&#46; これで任意のスクリプトから設定した値を読み込めるようになりました。例えばコンソールに出力する場合、下記のようになります。</p>
+<ol>
+<li>これで任意のスクリプトから設定した値を読み込めるようになりました。例えばコンソールに出力する場合、下記のようになります。</li>
+</ol>
 
 <pre><code>// app/vendors/shells/moja.php
 &lt;?php
@@ -133,9 +148,9 @@ Miles Davis Quintet
 <h3 id="参考:40b449d6a266142180bc2f169853d920">参考</h3>
 
 <ul>
-<li><a href="http://php.sunvisor.net/2008/01/configure.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://php.sunvisor.net/2008/01/configure.html', 'アプリケーション独自の設定情報(Configureクラス) &#8211; PHP学習日記']);" title="アプリケーション独自の設定情報(Configureクラス) - PHP学習日記">アプリケーション独自の設定情報(Configureクラス) &#8211; PHP学習日記</a></li>
-<li><a href="http://blog.ne2ma2.com/archives/154" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blog.ne2ma2.com/archives/154', '【CakePHP】独自の定数の書き方 | ねねとまつの小部屋']);" title="【CakePHP】独自の定数の書き方 | ねねとまつの小部屋">【CakePHP】独自の定数の書き方 | ねねとまつの小部屋</a></li>
-<li><a href="http://book.cakephp.org/ja/view/1565/Library-Classes" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://book.cakephp.org/ja/view/1565/Library-Classes', 'ライブラリクラス :: 1.2から1.3への移行ガイド :: 付録 :: マニュアル :: 1.3コレクション :: The Cookbook']);" title="ライブラリクラス :: 1.2から1.3への移行ガイド :: 付録 :: マニュアル :: 1.3コレクション :: The Cookbook">ライブラリクラス :: 1.2から1.3への移行ガイド :: 付録 :: マニュアル :: 1.3コレクション :: The Cookbook</a></li>
+<li><a href="http://php.sunvisor.net/2008/01/configure.html">アプリケーション独自の設定情報(Configureクラス) - PHP学習日記</a></li>
+<li><a href="http://blog.ne2ma2.com/archives/154">【CakePHP】独自の定数の書き方 | ねねとまつの小部屋</a></li>
+<li><a href="http://book.cakephp.org/ja/view/1565/Library-Classes">ライブラリクラス :: 1.2から1.3への移行ガイド :: 付録 :: マニュアル :: 1.3コレクション :: The Cookbook</a></li>
 </ul>
 
         </div>

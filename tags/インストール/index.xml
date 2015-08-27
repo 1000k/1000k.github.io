@@ -22,8 +22,8 @@
 &lt;p&gt;下記に記す非公式リポジトリを参照することで、最新のパッケージをyumでインストールできます。&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.famillecollet.com/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.famillecollet.com/&#39;, &#39;Remi&#39;]);&#34; &gt;Remi&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.jasonlitka.com/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.jasonlitka.com/&#39;, &#39;Utter Ramblings&#39;]);&#34; &gt;Utter Ramblings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.famillecollet.com/&#34;&gt;Remi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jasonlitka.com/&#34;&gt;Utter Ramblings&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;なお、これらのサイトで配布されているパッケージの信頼性は公式のリポジトリのものより劣るので、利用の際には注意が必要です。&lt;/p&gt;
@@ -37,7 +37,7 @@
 &lt;p&gt;最新のダウンロード先は下記から確認してください。&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Remi: &lt;a href=&#34;http://rpms.famillecollet.com/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://rpms.famillecollet.com/&#39;, &#39;RepoView: Les RPM de Remi&#39;]);&#34; &gt;RepoView: Les RPM de Remi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Remi: &lt;a href=&#34;http://rpms.famillecollet.com/&#34;&gt;RepoView: Les RPM de Remi&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;EPEL: &lt;a href=&#34;http://download.fedora.redhat.com/pub/epel/5/i386/&#34;&gt;http://download.fedora.redhat.com/pub/epel/5/i386/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -71,7 +71,7 @@ gpgkey=http://www.jasonlitka.com/media/RPM-GPG-KEY-jlitka
 
 &lt;h2 id=&#34;最新パッケージのインストール:f0d8039714e0227fd6e46c45b7c77e52&#34;&gt;最新パッケージのインストール&lt;/h2&gt;
 
-&lt;p&gt;yumコマンドに「&amp;#8211;enablerepo={リポジトリ名}」オプションを付けることで、それぞれのリポジトリを参照できます。&lt;/p&gt;
+&lt;p&gt;yumコマンドに「-enablerepo={リポジトリ名}」オプションを付けることで、それぞれのリポジトリを参照できます。&lt;/p&gt;
 
 &lt;p&gt;PHPの場合&lt;/p&gt;
 
@@ -123,14 +123,14 @@ Is this ok [y/N]:
 &lt;h1 id=&#34;参考:f0d8039714e0227fd6e46c45b7c77e52&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://hoge001.exblog.jp/13982612/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://hoge001.exblog.jp/13982612/&#39;, &#39;hoge001 : CentOS5.5 Apache 2.2.15 インストール&#39;]);&#34; &gt;hoge001 : CentOS5.5 Apache 2.2.15 インストール&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://fedoraproject.org/wiki/About_EPEL/ja&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://fedoraproject.org/wiki/About_EPEL/ja&#39;, &#39;About EPEL/ja &amp;#8211; FedoraProject&#39;]);&#34; &gt;About EPEL/ja &amp;#8211; FedoraProject&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://hoge001.exblog.jp/13982612/&#34;&gt;hoge001 : CentOS5.5 Apache 2.2.15 インストール&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://fedoraproject.org/wiki/About_EPEL/ja&#34;&gt;About EPEL/ja - FedoraProject&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;EPELとは？EPELの目的など&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.goofoo.jp/2011/03/556&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.goofoo.jp/2011/03/556&#39;, &#39;yumでremiリポジトリを使えるようにする | グーフー WordPressのためのLinuxノート&#39;]);&#34; &gt;yumでremiリポジトリを使えるようにする | グーフー WordPressのためのLinuxノート&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://pentan.info/server/linux/yum_new.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://pentan.info/server/linux/yum_new.html&#39;, &#39;yumで、より新しいパッケージをインストールする方法(CentOS) &amp;#8211; [yum/Linux [Red Hatなど]] ぺんたん info&#39;]);&#34; &gt;yumで、より新しいパッケージをインストールする方法(CentOS) &amp;#8211; [yum/Linux [Red Hatなど]] ぺんたん info&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.goofoo.jp/2011/03/556&#34;&gt;yumでremiリポジトリを使えるようにする | グーフー WordPressのためのLinuxノート&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://pentan.info/server/linux/yum_new.html&#34;&gt;yumで、より新しいパッケージをインストールする方法(CentOS) - [yum/Linux [Red Hatなど]] ぺんたん info&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

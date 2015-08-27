@@ -39,7 +39,7 @@ RewriteRule ^(.*)$ /hige/moja/index.php/$1 [L]
 
 &lt;p&gt;CodeIgniterのSQLite3に対する迫害と、引き続き奮闘しています。&lt;/p&gt;
 
-&lt;p&gt;CIでSQLite3を使えるようにする方法は &lt;a href=&#34;http://blog.1000k.net/2010/05/26/codeigniter-codeigniter1-7-2-%E3%81%A7-sqlite3-%E3%81%AEdb%E3%82%92%E4%BD%BF%E3%81%86/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.1000k.net/2010/05/26/codeigniter-codeigniter1-7-2-%E3%81%A7-sqlite3-%E3%81%AEdb%E3%82%92%E4%BD%BF%E3%81%86/&#39;, &#39;先日&#39;]);&#34; title=&#34;CodeIgniter1.7.2 で SQLite3 のDBを使う&#34;&gt;先日&lt;/a&gt; 紹介しました。&lt;/p&gt;
+&lt;p&gt;CIでSQLite3を使えるようにする方法は &lt;a href=&#34;http://blog.1000k.net/2010/05/26/codeigniter-codeigniter1-7-2-%E3%81%A7-sqlite3-%E3%81%AEdb%E3%82%92%E4%BD%BF%E3%81%86/&#34;&gt;先日&lt;/a&gt; 紹介しました。&lt;/p&gt;
 
 &lt;p&gt;CIにはテーブルのカラム名を取得する「$this-&amp;gt;db-&amp;gt;list_fields()」というメソッドがありますが、上の方法で導入したPDOドライバでは使えません。どうやら list_fields() メソッドから呼び出されるローカル関数が定義されていないようです。&lt;/p&gt;
 
@@ -51,7 +51,7 @@ RewriteRule ^(.*)$ /hige/moja/index.php/$1 [L]
 &lt;li&gt;/system/database/drivers/pdo/pdo_driver.php 内に、下記メソッドを追加する。（このメソッドはMySQLドライバ内の同一メソッドをSQLite用に修正したものです）&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;pre&gt;&lt;code&gt;/**
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;/**
  * Show column query
  *
  * Generates a platform-specific query string so that the column names can be fetched
@@ -115,7 +115,7 @@ index.php
 
 &lt;p&gt;この「/nbproject」ディレクトリ内に、以下の「netbeans_ci_code_completion.php」というファイルを配置するだけです。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;?
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;&amp;lt;?
 /**
 * @property CI_Loader $load
 * @property CI_Form_validation $form_validation
@@ -139,7 +139,7 @@ Class Controller {
 
 &lt;h3 id=&#34;参考:fc1e74b047afd2cf65d5232747f988fd&#34;&gt;参考&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.mybelovedphp.com/2009/01/27/netbeans-revisited-code-completion-for-code-igniter-ii/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.mybelovedphp.com/2009/01/27/netbeans-revisited-code-completion-for-code-igniter-ii/&#39;, &#39;My Beloved PHP » Blog Archive » Netbeans revisited: Code Completion for Code-igniter II&#39;]);&#34; title=&#34;My Beloved PHP » Blog Archive » Netbeans revisited: Code Completion for Code-igniter II&#34;&gt;My Beloved PHP » Blog Archive » Netbeans revisited: Code Completion for Code-igniter II&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.mybelovedphp.com/2009/01/27/netbeans-revisited-code-completion-for-code-igniter-ii/&#34;&gt;My Beloved PHP » Blog Archive » Netbeans revisited: Code Completion for Code-igniter II&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -159,15 +159,15 @@ Class Controller {
 
 &lt;h3 id=&#34;手順:780c545c6d70fccec367c9bf61e4dac3&#34;&gt;手順&lt;/h3&gt;
 
-&lt;p&gt;※CodeIgniter 1.7.2 用です。それより前のバージョンだと導入するドライバが違うかもしれないので、&lt;a href=&#34;http://codeigniter.com/wiki/PDO_SQLite3/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://codeigniter.com/wiki/PDO_SQLite3/&#39;, &#39;Wiki | CodeIgniter&#39;]);&#34; title=&#34;Wiki | CodeIgniter&#34;&gt;Wiki | CodeIgniter&lt;/a&gt;あたりを読んでください。&lt;/p&gt;
+&lt;p&gt;※CodeIgniter 1.7.2 用です。それより前のバージョンだと導入するドライバが違うかもしれないので、&lt;a href=&#34;http://codeigniter.com/wiki/PDO_SQLite3/&#34;&gt;Wiki | CodeIgniter&lt;/a&gt;あたりを読んでください。&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;http://codeigniter.com/wiki/PDO_SQLite3/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://codeigniter.com/wiki/PDO_SQLite3/&#39;, &#39;Wiki | CodeIgniter&#39;]);&#34; title=&#34;Wiki | CodeIgniter&#34;&gt;Wiki | CodeIgniter&lt;/a&gt; から、「pdo driver 0 02 by xi.zip」をダウンロード&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://codeigniter.com/wiki/PDO_SQLite3/&#34;&gt;Wiki | CodeIgniter&lt;/a&gt; から、「pdo driver 0 02 by xi.zip」をダウンロード&lt;/li&gt;
 &lt;li&gt;CodeIgniter/system/database/drivers/pdo というディレクトリを作成し、その中に解凍する&lt;/li&gt;
 &lt;li&gt;CodeIgniter/system/application/config/database.php を下記のように編集する&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;pre&gt;&lt;code&gt;// DBファイルが /system/appilication/db/hige.sqlite3 にある場合
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;// DBファイルが /system/appilication/db/hige.sqlite3 にある場合
 $db[&#39;default&#39;][&#39;hostname&#39;] = &amp;quot;&amp;quot;;
 $db[&#39;default&#39;][&#39;username&#39;] = &amp;quot;&amp;quot;;
 $db[&#39;default&#39;][&#39;password&#39;] = &amp;quot;&amp;quot;;
@@ -180,7 +180,7 @@ $db[&#39;default&#39;][&#39;dbprefix&#39;] = &amp;quot;&amp;quot;;
 
 &lt;p&gt;ちゃんとロードできているか確かめたい場合は、適当なviewファイルに&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;?php echo $this-&amp;gt;db-&amp;gt;platform() . &amp;quot; &amp;quot;. $this-&amp;gt;db-&amp;gt;version(); ?&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;&amp;lt;?php echo $this-&amp;gt;db-&amp;gt;platform() . &amp;quot; &amp;quot;. $this-&amp;gt;db-&amp;gt;version(); ?&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;と書いてみて、「pdo 3.6.20」などと出力されればOK。&lt;/p&gt;
@@ -188,8 +188,8 @@ $db[&#39;default&#39;][&#39;dbprefix&#39;] = &amp;quot;&amp;quot;;
 &lt;h3 id=&#34;参考:780c545c6d70fccec367c9bf61e4dac3&#34;&gt;参考&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://codeigniter.com/wiki/PDO_SQLite3/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://codeigniter.com/wiki/PDO_SQLite3/&#39;, &#39;Wiki | CodeIgniter&#39;]);&#34; title=&#34;Wiki | CodeIgniter&#34;&gt;Wiki | CodeIgniter&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.trevorbramble.com/past/2009/9/20/codeigniter_sqlite3/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.trevorbramble.com/past/2009/9/20/codeigniter_sqlite3/&#39;, &#39;CodeIgniter &amp; SQLite3&#39;]);&#34; title=&#34;CodeIgniter &amp; SQLite3&#34;&gt;CodeIgniter &amp;amp; SQLite3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://codeigniter.com/wiki/PDO_SQLite3/&#34;&gt;Wiki | CodeIgniter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.trevorbramble.com/past/2009/9/20/codeigniter_sqlite3/&#34;&gt;CodeIgniter &amp;amp; SQLite3&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -213,7 +213,7 @@ $db[&#39;default&#39;][&#39;dbprefix&#39;] = &amp;quot;&amp;quot;;
 
 &lt;p&gt;下記は「Usersテーブルのデータを取得したり件数をカウントしたりするクラス」の例。 &lt;strong&gt;/system/application/models/users_model.php&lt;/strong&gt;とする。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;&amp;lt;?php
 class Users_model extends Model {
 
     function __construct() {
@@ -248,7 +248,7 @@ class Users_model extends Model {
 /** End of PHP file */
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;データベースクラスの細かい実装は &lt;a href=&#34;http://codeigniter.jp/user_guide_ja/database/index.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://codeigniter.jp/user_guide_ja/database/index.html&#39;, &#39;データベースクラス : CodeIgniter ユーザガイド 日本語版&#39;]);&#34; title=&#34;データベースクラス : CodeIgniter ユーザガイド 日本語版&#34;&gt;データベースクラス : CodeIgniter ユーザガイド 日本語版&lt;/a&gt; を参照。以下に挙げるものはよく使うので覚えておいた方が良い。&lt;/p&gt;
+&lt;p&gt;データベースクラスの細かい実装は &lt;a href=&#34;http://codeigniter.jp/user_guide_ja/database/index.html&#34;&gt;データベースクラス : CodeIgniter ユーザガイド 日本語版&lt;/a&gt; を参照。以下に挙げるものはよく使うので覚えておいた方が良い。&lt;/p&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -260,7 +260,7 @@ class Users_model extends Model {
 
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;$this-&amp;gt;db-&amp;gt;get(&amp;#8216;table_name&amp;#8217;)&lt;/td&gt;
+&lt;td&gt;$this-&amp;gt;db-&amp;gt;get(&amp;lsquo;table_name&amp;rsquo;)&lt;/td&gt;
 &lt;td&gt;table_nameテーブル内の全行を取得する&lt;/td&gt;
 &lt;/tr&gt;
 
@@ -270,7 +270,7 @@ class Users_model extends Model {
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td&gt;$this-&amp;gt;db-&amp;gt;count_all(&amp;#8216;table_name&amp;#8217;)&lt;/td&gt;
+&lt;td&gt;$this-&amp;gt;db-&amp;gt;count_all(&amp;lsquo;table_name&amp;rsquo;)&lt;/td&gt;
 &lt;td&gt;table_nameテーブルの行数を取得する&lt;/td&gt;
 &lt;/tr&gt;
 
@@ -292,7 +292,7 @@ class Users_model extends Model {
 
 &lt;p&gt;&lt;strong&gt;/system/application/controllers/Users.php&lt;/strong&gt; を下記のようにすることで、上述のモデルで作成したAPIをロードできる。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;&amp;lt;?php
 class Users extends Controller {
 
     function __construct() {
@@ -315,7 +315,7 @@ class Users extends Controller {
 
 &lt;h1 id=&#34;参考:9e420bce93e176a58a0a53cf159db0b1&#34;&gt;参考&lt;/h1&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.devshed.com/c/a/PHP/Building-a-DatabaseDriven-Application-with-the-Code-Igniter-PHP-Framework/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.devshed.com/c/a/PHP/Building-a-DatabaseDriven-Application-with-the-Code-Igniter-PHP-Framework/&#39;, &#39;Building a Database-Driven Application with the Code Igniter PHP Framework&#39;]);&#34; title=&#34;Building a Database-Driven Application with the Code Igniter PHP Framework&#34;&gt;Building a Database-Driven Application with the Code Igniter PHP Framework&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.devshed.com/c/a/PHP/Building-a-DatabaseDriven-Application-with-the-Code-Igniter-PHP-Framework/&#34;&gt;Building a Database-Driven Application with the Code Igniter PHP Framework&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;（文字がクレイジーなほど小さくて読みづらいので、「PDF Version Of Article」を見るのがおすすめ）&lt;/p&gt;
 </description>
@@ -331,7 +331,7 @@ class Users extends Controller {
 
 &lt;p&gt;CodeIgniterのルールの中には、「じゃあそんなオプション消しとけよ」と思うようなこともあるので、メモしておきます。&lt;/p&gt;
 
-&lt;p&gt;すべての根拠は &lt;a href=&#34;http://codeigniter.jp/user_guide_ja/general/styleguide.html#class_and_method_naming&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://codeigniter.jp/user_guide_ja/general/styleguide.html#class_and_method_naming&#39;, &#39;PHPコーディングスタイル : CodeIgniter ユーザガイド 日本語版&#39;]);&#34; title=&#34;PHPコーディングスタイル : CodeIgniter ユーザガイド 日本語版&#34;&gt;PHPコーディングスタイル : CodeIgniter ユーザガイド 日本語版&lt;/a&gt; から。&lt;/p&gt;
+&lt;p&gt;すべての根拠は &lt;a href=&#34;http://codeigniter.jp/user_guide_ja/general/styleguide.html#class_and_method_naming&#34;&gt;PHPコーディングスタイル : CodeIgniter ユーザガイド 日本語版&lt;/a&gt; から。&lt;/p&gt;
 
 &lt;h2 id=&#34;short-open-tag-は使わない:c18ed6fb973dc0df1b8f9e9b7ba7f27b&#34;&gt;★short_open_tag は使わない&lt;/h2&gt;
 

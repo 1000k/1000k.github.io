@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -48,7 +53,7 @@
 <ul>
 <li>Oracle VirtualBox で CentOS 6.3 VM を起動</li>
 <li>ホストOSは Windows 7</li>
-<li>ホストOS側の &#8220;c:\www\app&#8221; を VM 側の &#8220;/www&#8221; に共有フォルダとしてマウント</li>
+<li>ホストOS側の &ldquo;c:\www\app&rdquo; を VM 側の &ldquo;/www&rdquo; に共有フォルダとしてマウント</li>
 <li>VM上は Apache 2.2 を稼働させ、PHP アプリサーバーとして利用</li>
 </ul>
 
@@ -74,7 +79,7 @@ Uncaught SyntaxError: Unexpected token ILLEGAL
 
 <h2 id="原因:b37b64915a4bf2c4cb4c44aab2bf62d1">原因</h2>
 
-<p><a href="http://httpd.apache.org/docs/2.2/ja/mod/core.html#enablesendfile" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://httpd.apache.org/docs/2.2/ja/mod/core.html#enablesendfile', 'EnableSendfile ディレクティブ']);" >EnableSendfile ディレクティブ</a> の説明には以下のように書いてあります。</p>
+<p><a href="http://httpd.apache.org/docs/2.2/ja/mod/core.html#enablesendfile">EnableSendfile ディレクティブ</a> の説明には以下のように書いてあります。</p>
 
 <blockquote>
 <p>このディレクティブはクライアントにファイルの内容を送るときに httpd がカーネルの sendfile サポートを使うかどうかを制御します。デフォルトでは、 例えば静的なファイルの配送のように、リクエストの処理にファイルの 途中のデータのアクセスを必要としないときには、Apache は OS が サポートしていればファイルを読み込むことなく sendfile を使って ファイルの内容を送ります。</p>
@@ -97,7 +102,7 @@ Uncaught SyntaxError: Unexpected token ILLEGAL
 
 <h2 id="補足-enablemmap-ディレクティブ:b37b64915a4bf2c4cb4c44aab2bf62d1">補足: EnableMMAP ディレクティブ</h2>
 
-<p>私はまだ遭遇していないのですが、<a href="http://httpd.apache.org/docs/2.2/ja/mod/core.html#enablemmap" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://httpd.apache.org/docs/2.2/ja/mod/core.html#enablemmap', 'EnableMMAP ディレクティブ']);" ><em>EnableMMAP</em> ディレクティブ</a>も Apache をクラッシュさせる危険があるので、Offにしておいた方が良いそうです。</p>
+<p>私はまだ遭遇していないのですが、<a href="http://httpd.apache.org/docs/2.2/ja/mod/core.html#enablemmap"><em>EnableMMAP</em> ディレクティブ</a>も Apache をクラッシュさせる危険があるので、Offにしておいた方が良いそうです。</p>
 
 <blockquote>
 <p>NFS マウントされた DocumentRoot では、httpd がメモリマップしている間にファイルが削除されたり 短くなったりしたときに起こるセグメンテーションフォールトのために httpd がクラッシュする可能性があります。</p>
@@ -112,9 +117,9 @@ EnableMMAP Off
 <h2 id="参考:b37b64915a4bf2c4cb4c44aab2bf62d1">参考</h2>
 
 <ul>
-<li><a href="http://blog.flup.jp/2009/04/06/problem_of_using_shared_folder_to_document_root/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blog.flup.jp/2009/04/06/problem_of_using_shared_folder_to_document_root/', 'DocumentRootに共有フォルダを使った場合の問題 &#8211; フリップフラップ']);" >DocumentRootに共有フォルダを使った場合の問題 &#8211; フリップフラップ</a></li>
-<li><a href="http://tipshare.info/view/4f3481ee4b21227814000001" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://tipshare.info/view/4f3481ee4b21227814000001', 'Virtualbox上のApacheでホストマシンと共有している静的ファイル（CSSなど）の更新が検知されない問題を解決する方法 | tipshare.info']);" >Virtualbox上のApacheでホストマシンと共有している静的ファイル（CSSなど）の更新が検知されない問題を解決する方法 | tipshare.info</a></li>
-<li><a href="http://httpd.apache.org/docs/2.2/ja/mod/core.html#enablemmap" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://httpd.apache.org/docs/2.2/ja/mod/core.html#enablemmap', 'core &#8211; Apache HTTP サーバ']);" >core &#8211; Apache HTTP サーバ</a></li>
+<li><a href="http://blog.flup.jp/2009/04/06/problem_of_using_shared_folder_to_document_root/">DocumentRootに共有フォルダを使った場合の問題 - フリップフラップ</a></li>
+<li><a href="http://tipshare.info/view/4f3481ee4b21227814000001">Virtualbox上のApacheでホストマシンと共有している静的ファイル（CSSなど）の更新が検知されない問題を解決する方法 | tipshare.info</a></li>
+<li><a href="http://httpd.apache.org/docs/2.2/ja/mod/core.html#enablemmap">core - Apache HTTP サーバ</a></li>
 </ul>
 
         </div>

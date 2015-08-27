@@ -103,22 +103,22 @@ class MyConnections
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;a href=&#34;http://jp.php.net/manual/ja/language.variables.variable.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://jp.php.net/manual/ja/language.variables.variable.php&#39;, &#39;PHP: 可変変数 - Manual&#39;]);&#34; title=&#34;PHP: 可変変数 - Manual&#34;&gt;PHP: 可変変数 - Manual&lt;/a&gt;
+    [PHP: 可変変数 - Manual](http://jp.php.net/manual/ja/language.variables.variable.php)
   &lt;/li&gt;
 
 
   &lt;li&gt;
-    &lt;a href=&#34;http://php.net/manual/ja/function.constant.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://php.net/manual/ja/function.constant.php&#39;, &#39;PHP: constant - Manual&#39;]);&#34; title=&#34;PHP: constant - Manual&#34;&gt;PHP: constant - Manual&lt;/a&gt;
+    [PHP: constant - Manual](http://php.net/manual/ja/function.constant.php)
   &lt;/li&gt;
 
 
   &lt;li&gt;
-    &lt;a href=&#34;http://www.shigeweb.jp/php/project_p/?page=static&amp;section=php5oop&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.shigeweb.jp/php/project_p/?page=static&amp;section=php5oop&#39;, &#39;【 ほでなすPHP 】 PHP5の基本 -&gt; スタティックメンバ／クラス定数&#39;]);&#34; title=&#34;【 ほでなすPHP 】 PHP5の基本 -&gt; スタティックメンバ／クラス定数&#34;&gt;【 ほでなすPHP 】 PHP5の基本 -&gt; スタティックメンバ／クラス定数&lt;/a&gt;
+    [ スタティックメンバ／クラス定数&#39;]);&#34; title=&#34;【 ほでなすPHP 】 PHP5の基本 -&gt; スタティックメンバ／クラス定数&#34;&gt;【 ほでなすPHP 】 PHP5の基本 -&gt; スタティックメンバ／クラス定数](http://www.shigeweb.jp/php/project_p/?page=static&amp;section=php5oop)
   &lt;/li&gt;
 
 
   &lt;li&gt;
-    &lt;a href=&#34;http://masha.maakikaku.jp/2008/03/php.php&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://masha.maakikaku.jp/2008/03/php.php&#39;, &#39;[PHP][可変変数] 変数名や関数名を動的に指定する (masha.webTechLog)&#39;]);&#34; title=&#34;[PHP][可変変数] 変数名や関数名を動的に指定する (masha.webTechLog)&#34;&gt;[PHP][可変変数] 変数名や関数名を動的に指定する (masha.webTechLog)&lt;/a&gt;
+    [[PHP][可変変数] 変数名や関数名を動的に指定する (masha.webTechLog)](http://masha.maakikaku.jp/2008/03/php.php)
   &lt;/li&gt;
 
 &lt;/ul&gt;

@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -46,7 +51,7 @@
 <h1 id="設定チュートリアル:6d0eb099fbc632b15b52ccdd35c3ab67">設定チュートリアル</h1>
 
 <ul>
-<li>&#8220;/etc/logrotate.d/&#8221; 配下に設定ファイルを作成する</li>
+<li>&rdquo;/etc/logrotate.d/&rdquo; 配下に設定ファイルを作成する</li>
 <li>「logrotate -d 作成したファイル名」でデバッグする</li>
 <li>翌日午前4時にローテーションが成功していることを確認する
 
@@ -99,7 +104,7 @@
 
 <p>基本的には毎朝4:00に自動実行されるが、デバッグと即時ログローテートを行うこともできる。</p>
 
-<p>参考: <a href="http://www.atmarkit.co.jp/flinux/rensai/linuxtips/749rotatetest.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.atmarkit.co.jp/flinux/rensai/linuxtips/749rotatetest.html', '＠IT：logrotateのテストを行うには']);" title="＠IT：logrotateのテストを行うには">＠IT：logrotateのテストを行うには</a></p>
+<p>参考: <a href="http://www.atmarkit.co.jp/flinux/rensai/linuxtips/749rotatetest.html">＠IT：logrotateのテストを行うには</a></p>
 
 <ul>
 <li>デバッグ</li>
@@ -134,7 +139,7 @@
 
 <h1 id="オプション一覧:6d0eb099fbc632b15b52ccdd35c3ab67">オプション一覧</h1>
 
-<p>参考: <a href="http://www.asahi-net.or.jp/~aa4t-nngk/logrotate.html" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://www.asahi-net.or.jp/~aa4t-nngk/logrotate.html', 'Stray Penguin &#8211; Linux Memo (logrotate)']);" title="Stray Penguin - Linux Memo (logrotate)">Stray Penguin &#8211; Linux Memo (logrotate)</a></p>
+<p>参考: <a href="http://www.asahi-net.or.jp/~aa4t-nngk/logrotate.html">Stray Penguin - Linux Memo (logrotate)</a></p>
 
 <table>
 <thead>
@@ -172,12 +177,12 @@
 
 <tr>
 <td>start <em>num</em></td>
-<td>初代ローテーションファイルの末尾に付加するナンバー。デフォルトは 1。 nuｍ を例えば 5 にすると、a.log =&gt; a.log.5 =&gt; a.log.6 =&gt; &#8230; と推移</td>
+<td>初代ローテーションファイルの末尾に付加するナンバー。デフォルトは 1。 nuｍ を例えば 5 にすると、a.log =&gt; a.log.5 =&gt; a.log.6 =&gt; … と推移</td>
 </tr>
 
 <tr>
 <td>extension <em>ext</em></td>
-<td>ローテーションした旧ログファイルに拡張子 ext を付ける。ドットも必要。例えば some.log を &#8220;extension .bak&#8221; の設定でローテーションすると、初代ローテーションログは some.log.1.bak となる。圧縮も行う場合、圧縮による拡張子はさらにその後ろに付く</td>
+<td>ローテーションした旧ログファイルに拡張子 ext を付ける。ドットも必要。例えば some.log を &ldquo;extension .bak&rdquo; の設定でローテーションすると、初代ローテーションログは some.log.1.bak となる。圧縮も行う場合、圧縮による拡張子はさらにその後ろに付く</td>
 </tr>
 
 <tr>
@@ -197,7 +202,7 @@
 
 <tr>
 <td>compressoptions <em>opt</em></td>
-<td>圧縮プログラムへ渡すオプション。デフォルトは gzip に渡す &#8220;-9&#8221; (圧縮率最大)。現在のところ &#8220;-9 -s&#8221; のようにスペース入りで複数のオプションを指定することは不可能</td>
+<td>圧縮プログラムへ渡すオプション。デフォルトは gzip に渡す &ldquo;-9&rdquo; (圧縮率最大)。現在のところ &ldquo;-9 -s&rdquo; のようにスペース入りで複数のオプションを指定することは不可能</td>
 </tr>
 
 <tr>
@@ -306,7 +311,7 @@
 </tr>
 
 <tr>
-<td>tabooext <em>[+] ext[,ext,&#8230;]</em></td>
+<td>tabooext <em>[+] ext[,ext,…]</em></td>
 <td>include でディレクトリを指定した場合に読み込みから除外するファイルの拡張子を指定。デフォルトで .rpmorig, .rpmsave, .rpmnew, .v, .swp, ~ が設定されている。+ を挟むと追加指定、挟まないと根こそぎ置き換えとなる</td>
 </tr>
 </tbody>
@@ -314,7 +319,7 @@
 
 <h1 id="copytruncate方式の欠点:6d0eb099fbc632b15b52ccdd35c3ab67">copytruncate方式の欠点</h1>
 
-<p>参考: <a href="http://kamoland.com/wiki/wiki.cgi?logrotate%A4%CE%C0%DF%C4%EA" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://kamoland.com/wiki/wiki.cgi?logrotate%A4%CE%C0%DF%C4%EA', 'logrotateの設定 &#8211; KamoLand']);" title="logrotateの設定 - KamoLand">logrotateの設定 &#8211; KamoLand</a></p>
+<p>参考: <a href="http://kamoland.com/wiki/wiki.cgi?logrotate%A4%CE%C0%DF%C4%EA">logrotateの設定 - KamoLand</a></p>
 
 <blockquote>
 <p>今回の方式ではcopytruncateを使っているため，ローテーション時には</p>

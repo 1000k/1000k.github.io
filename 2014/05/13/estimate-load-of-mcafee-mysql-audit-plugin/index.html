@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -43,7 +48,7 @@
         <div class="post-content">
           
 
-<p><a href="http://blog.1000k.net/?p=1837" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blog.1000k.net/?p=1837', '前の記事']);" >前の記事</a> で McAfee MySQL Audit Plugin を使うと簡単に監査ログが取れることを紹介しましたが、性能劣化はどれくらいあるのか心配になったので検証してみました。</p>
+<p><a href="http://blog.1000k.net/?p=1837">前の記事</a> で McAfee MySQL Audit Plugin を使うと簡単に監査ログが取れることを紹介しましたが、性能劣化はどれくらいあるのか心配になったので検証してみました。</p>
 
 <h2 id="audit-プラグインの設定値:ca0842c38bf6f0227cc53f5afc5d2b62">Audit プラグインの設定値</h2>
 
@@ -56,7 +61,7 @@
 | audit_checksum                  |                            |
 | audit_delay_cmds                |                            |
 | audit_delay_ms                  | 0                          |
-| audit_json_file                 | OFF                        | &amp;lt;- Audit 有効時は ON にする
+| audit_json_file                 | OFF                        | &lt;- Audit 有効時は ON にする
 | audit_json_file_flush           | OFF                        |
 | audit_json_file_sync            | 0                          |
 | audit_json_log_file             | mysql-audit.json           |
@@ -75,7 +80,7 @@
 
 <h2 id="ベンチマークの条件:ca0842c38bf6f0227cc53f5afc5d2b62">ベンチマークの条件</h2>
 
-<p>mysqlslap なら簡単にベンチマークが取れます。詳しい使い方は <a href="http://blog.1000k.net/?p=1847" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://blog.1000k.net/?p=1847', 'mysqlslap で MySQL の負荷テストをする方法']);" >mysqlslap で MySQL の負荷テストをする方法</a> をご覧ください。</p>
+<p>mysqlslap なら簡単にベンチマークが取れます。詳しい使い方は <a href="http://blog.1000k.net/?p=1847">mysqlslap で MySQL の負荷テストをする方法</a> をご覧ください。</p>
 
 <pre><code>mysqlslap \
   --no-defaults \

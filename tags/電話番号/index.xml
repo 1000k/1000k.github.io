@@ -31,7 +31,7 @@
  *
  * @param  string $tel  電話番号
  * @return bool   判定結果 (true:正しい電話番号)
- * @see &amp;lt;a href=&amp;quot;http://www.soumu.go.jp/main_sosiki/joho_tsusin/top/tel_number/q_and_a-2001aug.html&amp;quot; onclick=&amp;quot;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.soumu.go.jp/main_sosiki/joho_tsusin/top/tel_number/q_and_a-2001aug.html&#39;, &#39;電話番号に関するＱ＆Ａ&#39;]);&amp;quot; &amp;gt;電話番号に関するＱ＆Ａ&amp;lt;/a&amp;gt;
+ * @see [電話番号に関するＱ＆Ａ](http://www.soumu.go.jp/main_sosiki/joho_tsusin/top/tel_number/q_and_a-2001aug.html)
  */
 function is_valid_tel_number($tel = &amp;quot;&amp;quot;) {
     return preg_match(&amp;quot;/^0\d{9,10}$/&amp;quot;, str_replace(&amp;quot;-&amp;quot;, &amp;quot;&amp;quot;, $tel));
@@ -51,7 +51,7 @@ function is_valid_tel_number($tel = &amp;quot;&amp;quot;) {
  *
  * @param  string $tel  電話番号
  * @return bool   判定結果 (true:正しい電話番号)
- * @see &amp;lt;a href=&amp;quot;http://www.soumu.go.jp/main_sosiki/joho_tsusin/top/tel_number/q_and_a-2001aug.html&amp;quot; onclick=&amp;quot;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.soumu.go.jp/main_sosiki/joho_tsusin/top/tel_number/q_and_a-2001aug.html&#39;, &#39;電話番号に関するＱ＆Ａ&#39;]);&amp;quot; &amp;gt;電話番号に関するＱ＆Ａ&amp;amp;lt;/a&amp;gt;
+ * @see &amp;lt;a href=&amp;quot;http://www.soumu.go.jp/main_sosiki/joho_tsusin/top/tel_number/q_and_a-2001aug.html&amp;quot; onclick=&amp;quot;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.soumu.go.jp/main_sosiki/joho_tsusin/top/tel_number/q_and_a-2001aug.html&#39;, &#39;電話番号に関するＱ＆Ａ&#39;]);&amp;quot; &amp;gt;電話番号に関するＱ＆Ａ&amp;lt;/a&amp;gt;
  */
 function is_valid_tel_number($tel = &amp;quot;&amp;quot;) {
     return preg_match(&amp;quot;/^0\d{9,10}$/&amp;quot;, str_replace(&amp;quot;-&amp;quot;, &amp;quot;&amp;quot;, $tel));
@@ -107,7 +107,7 @@ foreach ($tels as $key =&amp;gt; $tel) {
 &lt;h2 id=&#34;参考:2daffd78901abd39a0325093e2a569a5&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.soumu.go.jp/main_sosiki/joho_tsusin/top/tel_number/q_and_a-2001aug.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.soumu.go.jp/main_sosiki/joho_tsusin/top/tel_number/q_and_a-2001aug.html&#39;, &#39;電話番号に関するＱ＆Ａ&#39;]);&#34; title=&#34;電話番号に関するＱ＆Ａ&#34;&gt;電話番号に関するＱ＆Ａ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.soumu.go.jp/main_sosiki/joho_tsusin/top/tel_number/q_and_a-2001aug.html&#34;&gt;電話番号に関するＱ＆Ａ&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

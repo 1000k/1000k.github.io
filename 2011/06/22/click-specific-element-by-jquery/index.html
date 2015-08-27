@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -49,9 +54,9 @@
 
 <h1 id="例:8f479fe2b847018d9162cbf4baf74733">例</h1>
 
-<p>classが&#8221;uso&#8221;のaリンクをクリックした時に &#8220;a#mojamoja&#8221; をクリックした時のアクション起動したい場合は、下記のように書けます。</p>
+<p>classが&rdquo;uso&rdquo;のaリンクをクリックした時に &ldquo;a#mojamoja&rdquo; をクリックした時のアクション起動したい場合は、下記のように書けます。</p>
 
-<pre><code>$(function() {
+<pre><code class="language-javascript">$(function() {
     $(&quot;a.uso&quot;).click(function(e) {
         e.preventDefault();
         $(&quot;a#mojamoja&quot;).eq(0).click();
@@ -71,9 +76,9 @@
 <h1 id="参考:8f479fe2b847018d9162cbf4baf74733">参考</h1>
 
 <ul>
-<li><a href="http://semooh.jp/jquery/api/events/click/_/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://semooh.jp/jquery/api/events/click/_/', 'click() &#8211; jQuery 日本語リファレンス']);" title="click() - jQuery 日本語リファレンス">click() &#8211; jQuery 日本語リファレンス</a></li>
-<li><a href="http://semooh.jp/jquery/api/events/click/fn/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://semooh.jp/jquery/api/events/click/fn/', 'click(fn) &#8211; jQuery 日本語リファレンス']);" title="click(fn) - jQuery 日本語リファレンス">click(fn) &#8211; jQuery 日本語リファレンス</a></li>
-<li><a href="http://tobysoft.net/wiki/index.php?JavaScript%2FjQuery%2Fready%A4%B8%A4%E3%A4%CA%A4%AF%A4%C6onload%A5%A4%A5%D9%A5%F3%A5%C8%A4%CB%B4%D8%BF%F4%A4%F2%C4%C9%B2%C3%A4%B7%A4%BF%A4%A4" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://tobysoft.net/wiki/index.php?JavaScript%2FjQuery%2Fready%A4%B8%A4%E3%A4%CA%A4%AF%A4%C6onload%A5%A4%A5%D9%A5%F3%A5%C8%A4%CB%B4%D8%BF%F4%A4%F2%C4%C9%B2%C3%A4%B7%A4%BF%A4%A4', 'JavaScript/jQuery/readyじゃなくてonloadイベントに関数を追加したい &#8211; TOBY SOFT wiki']);" title="JavaScript/jQuery/readyじゃなくてonloadイベントに関数を追加したい - TOBY SOFT wiki">JavaScript/jQuery/readyじゃなくてonloadイベントに関数を追加したい &#8211; TOBY SOFT wiki</a></li>
+<li><a href="http://semooh.jp/jquery/api/events/click/_/">click() - jQuery 日本語リファレンス</a></li>
+<li><a href="http://semooh.jp/jquery/api/events/click/fn/">click(fn) - jQuery 日本語リファレンス</a></li>
+<li><a href="http://tobysoft.net/wiki/index.php?JavaScript%2FjQuery%2Fready%A4%B8%A4%E3%A4%CA%A4%AF%A4%C6onload%A5%A4%A5%D9%A5%F3%A5%C8%A4%CB%B4%D8%BF%F4%A4%F2%C4%C9%B2%C3%A4%B7%A4%BF%A4%A4">JavaScript/jQuery/readyじゃなくてonloadイベントに関数を追加したい - TOBY SOFT wiki</a></li>
 </ul>
 
         </div>

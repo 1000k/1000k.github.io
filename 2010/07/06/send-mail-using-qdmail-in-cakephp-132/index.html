@@ -17,6 +17,11 @@
 
 <link href="" rel="alternate" type="application/rss+xml" title="1000g" />
 
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 </head>
 
 <body>
@@ -47,9 +52,11 @@
 
 <h3 id="手順:82fe1e63d08f1c786a02c83fe3f1d6bb">手順</h3>
 
-<p>1&#46; <a href="http://hal456.net/qdmail/downloads" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://hal456.net/qdmail/downloads', 'Qdmailをダウンロード']);" title="ダウンロードdownload - Qdmail - PHP::Mail Library , Quick and Detailed for Multibyte">Qdmailをダウンロード</a>し、/app/controllers/components に解凍する</p>
+<ol>
+<li><p><a href="http://hal456.net/qdmail/downloads">Qdmailをダウンロード</a>し、/app/controllers/components に解凍する</p></li>
 
-<p>2&#46; コンソールプログラムを下記のように作成する</p>
+<li><p>コンソールプログラムを下記のように作成する</p></li>
+</ol>
 
 <pre><code>// /app/vendors/shells/uso.php
 
@@ -71,8 +78,8 @@ class UsoShell extends Shell {
         App::import(&quot;Core&quot;, &quot;Controller&quot;);
         App::import(&quot;Component&quot;, &quot;Qdmail&quot;);
 
-        $this-&gt;Controller =&amp;#038; new Controller();
-        $this-&gt;Qdmail =&amp;#038; new QdmailComponent(null);
+        $this-&gt;Controller =&amp; new Controller();
+        $this-&gt;Qdmail =&amp; new QdmailComponent(null);
         $this-&gt;Qdmail-&gt;startup($this-&gt;Controller);
     }
 
@@ -106,10 +113,10 @@ class UsoShell extends Shell {
 <h3 id="参考:82fe1e63d08f1c786a02c83fe3f1d6bb">参考</h3>
 
 <ul>
-<li><a href="http://hal456.net/qdmail/cakebase" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://hal456.net/qdmail/cakebase', '使い方　CakePHPでのメール送信 &#8211; Qdmail &#8211; PHP::Mail Library , Quick and Detailed for Multibyte']);" title="使い方　CakePHPでのメール送信 - Qdmail - PHP::Mail Library , Quick and Detailed for Multibyte">使い方　CakePHPでのメール送信 &#8211; Qdmail &#8211; PHP::Mail Library , Quick and Detailed for Multibyte</a></li>
-<li><a href="http://c-brains.jp/blog/wsg/10/06/10-110652.php" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://c-brains.jp/blog/wsg/10/06/10-110652.php', '[ステップアップ！ CakePHP] Shell を使ってコマンドラインで CakePHP | バシャログ。']);" title="[ステップアップ！ CakePHP] Shell を使ってコマンドラインで CakePHP | バシャログ。">[ステップアップ！ CakePHP] Shell を使ってコマンドラインで CakePHP | バシャログ。</a></li>
-<li><a href="http://bakery.cakephp.org/articles/view/emailcomponent-in-a-cake-shell" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://bakery.cakephp.org/articles/view/emailcomponent-in-a-cake-shell', 'EmailComponent in a (cake) Shell (Articles) | The Bakery, Everything CakePHP']);" title="EmailComponent in a (cake) Shell (Articles) | The Bakery, Everything CakePHP">EmailComponent in a (cake) Shell (Articles) | The Bakery, Everything CakePHP</a></li>
-<li><a href="http://c-brains.jp/blog/wsg/10/06/10-110652.php" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://c-brains.jp/blog/wsg/10/06/10-110652.php', '[ステップアップ！ CakePHP] Shell を使ってコマンドラインで CakePHP | バシャログ。']);" title="[ステップアップ！ CakePHP] Shell を使ってコマンドラインで CakePHP | バシャログ。">[ステップアップ！ CakePHP] Shell を使ってコマンドラインで CakePHP | バシャログ。</a></li>
+<li><a href="http://hal456.net/qdmail/cakebase">使い方　CakePHPでのメール送信 - Qdmail - PHP::Mail Library , Quick and Detailed for Multibyte</a></li>
+<li><a href="http://c-brains.jp/blog/wsg/10/06/10-110652.php">[ステップアップ！ CakePHP] Shell を使ってコマンドラインで CakePHP | バシャログ。</a></li>
+<li><a href="http://bakery.cakephp.org/articles/view/emailcomponent-in-a-cake-shell">EmailComponent in a (cake) Shell (Articles) | The Bakery, Everything CakePHP</a></li>
+<li><a href="http://c-brains.jp/blog/wsg/10/06/10-110652.php">[ステップアップ！ CakePHP] Shell を使ってコマンドラインで CakePHP | バシャログ。</a></li>
 </ul>
 
         </div>

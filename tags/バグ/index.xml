@@ -17,9 +17,9 @@
       <guid>http://1000k.github.io/2010/05/24/dont-write-php-closing-tag/</guid>
       <description>
 
-&lt;h1 id=&#34;現象:792e315ec7fc7759bc2457a02c4937b7&#34;&gt;現象&lt;/h1&gt;
+&lt;h2 id=&#34;現象:792e315ec7fc7759bc2457a02c4937b7&#34;&gt;現象&lt;/h2&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;&amp;lt;?php
 
 // ... 処理 ...
 
@@ -34,9 +34,9 @@
 
 &lt;p&gt;閉じタグは書かなくてもいい。というか、書くと余計なエラーの原因になるので、&lt;strong&gt;PHPの閉じタグ書くべきではない。&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;参考:792e315ec7fc7759bc2457a02c4937b7&#34;&gt;参考&lt;/h1&gt;
+&lt;h2 id=&#34;参考:792e315ec7fc7759bc2457a02c4937b7&#34;&gt;参考&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://d.hatena.ne.jp/fbis/20090716/1247714151&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://d.hatena.ne.jp/fbis/20090716/1247714151&#39;, &#39;PHPの閉じタグは心の臓に悪いから使わないで &amp;#8211; Unknown::Programming&#39;]);&#34; title=&#34;PHPの閉じタグは心の臓に悪いから使わないで - Unknown::Programming&#34;&gt;PHPの閉じタグは心の臓に悪いから使わないで &amp;#8211; Unknown::Programming&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://d.hatena.ne.jp/fbis/20090716/1247714151&#34;&gt;PHPの閉じタグは心の臓に悪いから使わないで - Unknown::Programming&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

@@ -17,9 +17,9 @@
       <guid>http://1000k.github.io/2010/07/05/insert-current-time-in-sqlite3/</guid>
       <description>
 
-&lt;p&gt;&lt;strong&gt;datetime(&amp;#8216;now&amp;#8217;, &amp;#8216;localtime&amp;#8217;)&lt;/strong&gt;を使う。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;datetime(&amp;lsquo;now&amp;rsquo;, &amp;lsquo;localtime&amp;rsquo;)&lt;/strong&gt;を使う。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;INSERT INTO posts (body, created, modified)
+&lt;pre&gt;&lt;code class=&#34;language-sql&#34;&gt;INSERT INTO posts (body, created, modified)
 VALUES (&#39;ウソ文章&#39;, datetime(&#39;now&#39;, &#39;localtime&#39;), datetime(&#39;now&#39;, &#39;localtime&#39;));
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -27,7 +27,7 @@ VALUES (&#39;ウソ文章&#39;, datetime(&#39;now&#39;, &#39;localtime&#39;), da
 
 &lt;h3 id=&#34;参考:f8899ebbf568af077f83512b36b60fed&#34;&gt;参考&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.tamandua-webtools.net/sqlite3-date.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.tamandua-webtools.net/sqlite3-date.html&#39;, &#39;SQLite3 での日付処理&#39;]);&#34; title=&#34;SQLite3 での日付処理&#34;&gt;SQLite3 での日付処理&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.tamandua-webtools.net/sqlite3-date.html&#34;&gt;SQLite3 での日付処理&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

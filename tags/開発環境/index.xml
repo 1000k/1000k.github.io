@@ -27,7 +27,7 @@
 &lt;ul&gt;
 &lt;li&gt;ほかには GNU screen が有名&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;読み方は &amp;#8220;ティーマックス&amp;#8221;&lt;/li&gt;
+&lt;li&gt;読み方は &amp;ldquo;ティーマックス&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;できること:a506571e48bbc5459d921757c1950894&#34;&gt;できること&lt;/h3&gt;
@@ -268,23 +268,23 @@
 
 &lt;p&gt;&lt;code&gt;~/.tmux.conf&lt;/code&gt; にカスタマイズ設定を書き込むことができます。&lt;/p&gt;
 
-&lt;p&gt;yum でインストールした場合は &lt;code&gt;/usr/share/doc/tmux-1.6/examples/&lt;/code&gt; 配下にサンプルファイルがあります。vimmer は &lt;a href=&#34;https://github.com/jordansissel/tmux/blob/master/trunk/examples/vim-keys.conf&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;https://github.com/jordansissel/tmux/blob/master/trunk/examples/vim-keys.conf&#39;, &#39;vim-keys.conf&#39;]);&#34; &gt;vim-keys.conf&lt;/a&gt; を設定するとペイン操作が楽になるかもしれません。&lt;/p&gt;
+&lt;p&gt;yum でインストールした場合は &lt;code&gt;/usr/share/doc/tmux-1.6/examples/&lt;/code&gt; 配下にサンプルファイルがあります。vimmer は &lt;a href=&#34;https://github.com/jordansissel/tmux/blob/master/trunk/examples/vim-keys.conf&#34;&gt;vim-keys.conf&lt;/a&gt; を設定するとペイン操作が楽になるかもしれません。&lt;/p&gt;
 
 &lt;h2 id=&#34;参考:a506571e48bbc5459d921757c1950894&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man1/tmux.1?query=tmux&amp;sec=1&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://www.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man1/tmux.1?query=tmux&amp;sec=1&#39;, &#39;OpenBSD manual pages&#39;]);&#34; &gt;OpenBSD manual pages&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man1/tmux.1?query=tmux&amp;amp;sec=1&#34;&gt;OpenBSD manual pages&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;公式マニュアル。英語。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://kanjuku-tomato.blogspot.jp/2014/02/tmux.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://kanjuku-tomato.blogspot.jp/2014/02/tmux.html&#39;, &#39;tmuxを使い始めたので基本的な機能の使い方とかを整理してみた &amp;#8211; 完熟トマト&#39;]);&#34; &gt;tmuxを使い始めたので基本的な機能の使い方とかを整理してみた &amp;#8211; 完熟トマト&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://kanjuku-tomato.blogspot.jp/2014/02/tmux.html&#34;&gt;tmuxを使い始めたので基本的な機能の使い方とかを整理してみた - 完熟トマト&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;概念図やスクリーンショット満載でわかりやすいです。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://room6933.com/mymemo/tmux/tmux-basic.html&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://room6933.com/mymemo/tmux/tmux-basic.html&#39;, &#39;tmux基本のコマンド — nato&amp;#8217;s memo 1.0 documentation&#39;]);&#34; &gt;tmux基本のコマンド — nato&amp;#8217;s memo 1.0 documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://qiita.com/b4b4r07/items/01359e8a3066d1c37edc&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://qiita.com/b4b4r07/items/01359e8a3066d1c37edc&#39;, &#39;Vim &amp;#8211; ターミナルマルチプレクサ tmux をカスタマイズする &amp;#8211; Qiita&#39;]);&#34; &gt;Vim &amp;#8211; ターミナルマルチプレクサ tmux をカスタマイズする &amp;#8211; Qiita&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;http://room6933.com/mymemo/tmux/tmux-basic.html&#34;&gt;tmux基本のコマンド — nato&amp;rsquo;s memo 1.0 documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://qiita.com/b4b4r07/items/01359e8a3066d1c37edc&#34;&gt;Vim - ターミナルマルチプレクサ tmux をカスタマイズする - Qiita&lt;/a&gt;
 
 &lt;ul&gt;
 &lt;li&gt;使えるカスタマイズの例。zsh と連携して、ログイン時にいきなり tmux セッションにアタッチする方法など。&lt;/li&gt;
@@ -308,7 +308,7 @@
 &lt;h3 id=&#34;導入手順:36e8d758c47104094651fcffcdfb9662&#34;&gt;導入手順&lt;/h3&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;http://code.google.com/p/zen-coding/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://code.google.com/p/zen-coding/&#39;, &#39;zen-coding &amp;#8211; Project Hosting on Google Code&#39;]);&#34; title=&#34;zen-coding - Project Hosting on Google Code&#34;&gt;zen-coding &amp;#8211; Project Hosting on Google Code&lt;/a&gt; からNetBeans用プラグインをダウンロードする
+&lt;li&gt;&lt;a href=&#34;http://code.google.com/p/zen-coding/&#34;&gt;zen-coding - Project Hosting on Google Code&lt;/a&gt; からNetBeans用プラグインをダウンロードする
 
 &lt;ul&gt;
 &lt;li&gt;執筆時のバージョンは「NetBeans.Zen.HTML.1.2.zip」&lt;/li&gt;
@@ -333,7 +333,7 @@
 &lt;li&gt;下記項目を登録&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;pre&gt;&lt;code&gt;省略名「php」、展開されるテキスト「&amp;lt;?php ${cursor} ?&amp;gt;」
+&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;省略名「php」、展開されるテキスト「&amp;lt;?php ${cursor} ?&amp;gt;」
 省略名「phpe」、展開されるテキスト「
 
 &amp;lt;?php echo ${cursor}; ?&amp;gt;」
@@ -343,7 +343,7 @@
 
 &lt;h3 id=&#34;参考:36e8d758c47104094651fcffcdfb9662&#34;&gt;参考&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://blog.mizoshiri.com/archives/863&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://blog.mizoshiri.com/archives/863&#39;, &#39;Netbeans(windows環境)にZen-Codingを導入&#39;]);&#34; title=&#34;Netbeans(windows環境)にZen-Codingを導入&#34;&gt;Netbeans(windows環境)にZen-Codingを導入&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.mizoshiri.com/archives/863&#34;&gt;Netbeans(windows環境)にZen-Codingを導入&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
