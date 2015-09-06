@@ -769,46 +769,5 @@
 </description>
     </item>
     
-    <item>
-      <title>[SketchUp] 円の中心をマークする</title>
-      <link>http://1000k.github.io/2010/05/17/mark-center-of-the-circle/</link>
-      <pubDate>Sun, 16 May 2010 00:00:00 +0000</pubDate>
-      
-      <guid>http://1000k.github.io/2010/05/17/mark-center-of-the-circle/</guid>
-      <description>&lt;ol&gt;
-&lt;li&gt;&lt;img alt=&#34;メジャーツール&#34; src=&#34;http://download.sketchup.com/OnlineDoc/gsu6_win/Content/Z-images/I-Construction_Tools/const-ToolMeasureLarge.png&#34; title=&#34;メジャーツール&#34; class=&#34;alignnone&#34; width=&#34;24&#34; height=&#34;24&#34; /&gt;メジャーツールを選択する
-
-&lt;ol&gt;
-&lt;li&gt;[Ctrl]キーを押しながら円周をクリックする&lt;/li&gt;
-&lt;li&gt;円の中心当たりにカーソルを移動すると、中心でスナップされるのでクリックする&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[SketchUp] 回転ツールで回転軸を指定する</title>
-      <link>http://1000k.github.io/2010/05/17/specify-rotation-axis-in-rotate-tool/</link>
-      <pubDate>Sun, 16 May 2010 00:00:00 +0000</pubDate>
-      
-      <guid>http://1000k.github.io/2010/05/17/specify-rotation-axis-in-rotate-tool/</guid>
-      <description>&lt;p&gt;参考：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://obuno.exblog.jp/10940828/&#34;&gt;現場施工図とSketchUｐ : 「回転ツール」基準軸方向の決め方&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://sketchup.google.com/support/bin/answer.py?answer=94887&#34;&gt;[回転] ツール - SketchUp ヘルプ&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;やり方：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;img alt=&#34;回転ツール&#34; src=&#34;http://sketchup.google.com/crimages/ja/mod-ToolRotateLarge-ja.png&#34; title=&#34;回転ツール&#34; class=&#34;alignnone&#34; width=&#34;24&#34; height=&#34;24&#34; /&gt;回転ツールを選択&lt;/li&gt;
-&lt;li&gt;回転させたいオブジェクトの一点をクリックしたら、そのまま別の一点までドラッグする（この時ガイド線と分度器が表示される）&lt;/li&gt;
-&lt;li&gt;回転の腕となるガイド線（点線）がカーソルに追従するので、好きな点をクリックする&lt;/li&gt;
-&lt;li&gt;カーソルに合わせてオブジェクトが回転するので、好きな角度でクリックするか、数値を入力してEnterキー&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-    </item>
-    
   </channel>
 </rss>

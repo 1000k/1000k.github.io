@@ -34,11 +34,11 @@
       <span class="ci ci-burger"></span>
     </a>
     <ul class="nav-list">
-       
-	  <li class="spacer">&ac;</li>
+      
 
-      <li><a href="https://github.com/1000k">Github</a></li> 
-      <li><a href="https://twitter.com/1000kei">Twitter</a></li> 
+      <li><a href="https://github.com/1000k">Github</a></li>
+      <li><a href="https://twitter.com/1000kei">Twitter</a></li>
+      
     </ul>
   </div>
 </div>
@@ -48,20 +48,20 @@
         <div class="post">
           <h2 class="post-title"><a href="http://1000k.github.io/2014/05/22/protractor-doesnt-work-for-me/">Protractor が動かなくてハマった</a></h2>
           <span class="post-date">May 22, 2014</span>
-		  
-			<span class="post-tags">
-		  	
-			          #<a href="/tags/angular.js">Angular.js</a>&nbsp;
-		  	
-			          #<a href="/tags/node.js">node.js</a>&nbsp;
-		  	
-			          #<a href="/tags/%E3%83%86%E3%82%B9%E3%83%88">テスト</a>&nbsp;
-		  	
-			          #<a href="/tags/%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0">トラブルシューティング</a>&nbsp;
-		  	
-		    </span>
-		  
-		  
+      
+      <span class="post-tags">
+        
+                #<a href="/tags/angular.js">Angular.js</a>&nbsp;
+        
+                #<a href="/tags/node.js">node.js</a>&nbsp;
+        
+                #<a href="/tags/%E3%83%86%E3%82%B9%E3%83%88">テスト</a>&nbsp;
+        
+                #<a href="/tags/%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0">トラブルシューティング</a>&nbsp;
+        
+        </span>
+      
+      
         </div>
         
       </div>
