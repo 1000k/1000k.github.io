@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>プラグイン on 1000g</title>
-    <link>http://1000k.github.io/categories/%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3/</link>
-    <description>Recent content in プラグイン on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/categories/%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 12 Mar 2011 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/categories/%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -31,15 +31,15 @@
       <pubDate>Sun, 06 Mar 2011 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2011/03/06/sketchup-plugin-instant-roof/</guid>
-      <description>
-
-&lt;p&gt;屋根を作るのはかなり作業量が多いルーチンワークです。Instant Roofプラグインを使って楽をしましょう。&lt;/p&gt;
+      <description>&lt;p&gt;屋根を作るのはかなり作業量が多いルーチンワークです。Instant Roofプラグインを使って楽をしましょう。&lt;/p&gt;
 
 &lt;p&gt;シンプルなものから複雑なものまで、数クリックで作成できます。これが無料で使えるとはちょっと信じられません。&lt;/p&gt;
 
 &lt;p&gt;以下、ダウンロード方法、簡単なチュートリアル、建築用語解説をします。&lt;/p&gt;
 
-&lt;h2 id=&#34;dl先:794e3a1036f089c1fc145590ea252d48&#34;&gt;DL先&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;dl先&#34;&gt;DL先&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.valiarchitects.com/system/files/programs/suscripts/InstantRoof.rbs?download=1&#34;&gt;Instant Roof | Vali Architects | Instant Scripts&lt;/a&gt;&lt;/p&gt;
 
@@ -47,7 +47,7 @@
 
 &lt;p&gt;有料のPro版もありますが、違いは屋根の傾斜を細かく設定できるぐらい？のようです。&lt;/p&gt;
 
-&lt;h2 id=&#34;チュートリアル:794e3a1036f089c1fc145590ea252d48&#34;&gt;チュートリアル&lt;/h2&gt;
+&lt;h2 id=&#34;チュートリアル&#34;&gt;チュートリアル&lt;/h2&gt;
 
 &lt;p&gt;公式サイトに3種類のムービーが用意されており、見ているだけでだいたいの機能は把握できると思います。&lt;/p&gt;
 
@@ -73,7 +73,7 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;単語解説:794e3a1036f089c1fc145590ea252d48&#34;&gt;単語解説&lt;/h2&gt;
+&lt;h2 id=&#34;単語解説&#34;&gt;単語解説&lt;/h2&gt;
 
 &lt;p&gt;Instant Roofは設定パラメーターが豊富で、専門用語も満載なので、素人(私)にはわかりづらいです。&lt;/p&gt;
 
@@ -81,46 +81,38 @@
 
 &lt;p&gt;ビジュアルで把握したければ、&lt;a href=&#34;http://www.valiarchitects.com/sites/default/files/tutorials/pdf/Roof-parameters.pdf&#34;&gt;Roof Parameters&lt;/a&gt;がわかりやすいです。&lt;/p&gt;
 
-&lt;p&gt;eave
-:   軒、ひさし。&lt;/p&gt;
+&lt;dl&gt;
+&lt;dt&gt;eave&lt;/dt&gt;
+&lt;dd&gt;&lt;p&gt;軒、ひさし。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;屋根の外壁から外側に出ている部分。
+&lt;p&gt;屋根の外壁から外側に出ている部分。&lt;/p&gt;
 
-なんと言えばいいのか・・・雨宿りするとき避難するところ。
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;なんと言えばいいのか・・・雨宿りするとき避難するところ。&lt;/p&gt;&lt;/dd&gt;
+&lt;dt&gt;fascia&lt;/dt&gt;
+&lt;dd&gt;&lt;p&gt;鼻隠し (軒先の垂木先端の木口を隠すための板)。&lt;/p&gt;
 
-&lt;p&gt;fascia
-:   鼻隠し (軒先の垂木先端の木口を隠すための板)。&lt;/p&gt;
+&lt;p&gt;参考: &lt;a href=&#34;http://ja.wikipedia.org/wiki/%E9%BC%BB%E9%9A%A0&#34;&gt;鼻隠 - Wikipedia&lt;/a&gt;&lt;/p&gt;&lt;/dd&gt;
+&lt;dt&gt;gable&lt;/dt&gt;
+&lt;dd&gt;&lt;p&gt;切妻 (きりづま)、破風 (はふ)。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;参考: [鼻隠 - Wikipedia](http://ja.wikipedia.org/wiki/%E9%BC%BB%E9%9A%A0)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;「へ」の字型の屋根のこと。&lt;/p&gt;
 
-&lt;p&gt;gable
-:   切妻 (きりづま)、破風 (はふ)。&lt;/p&gt;
+&lt;p&gt;参考: &lt;a href=&#34;http://ja.wikipedia.org/wiki/%E5%88%87%E5%A6%BB%E9%80%A0&#34;&gt;切妻造 - Wikipedia&lt;/a&gt;&lt;/p&gt;&lt;/dd&gt;
+&lt;dt&gt;hips&lt;/dt&gt;
+&lt;dd&gt;&lt;p&gt;隅棟 (寄せ棟などの屋根同士が接合する隅の部分)。&lt;/p&gt;&lt;/dd&gt;
+&lt;dt&gt;mansard&lt;/dt&gt;
+&lt;dd&gt;&lt;p&gt;マンサード屋根、二重勾配の屋根。&lt;/p&gt;&lt;/dd&gt;
+&lt;dt&gt;rafter&lt;/dt&gt;
+&lt;dd&gt;&lt;p&gt;屋根の垂木 (たるき)。&lt;/p&gt;&lt;/dd&gt;
+&lt;dt&gt;shed&lt;/dt&gt;
+&lt;dd&gt;&lt;p&gt;納屋、上屋。&lt;/p&gt;&lt;/dd&gt;
+&lt;/dl&gt;
 
-&lt;pre&gt;&lt;code&gt;「へ」の字型の屋根のこと。
-
-参考: [切妻造 - Wikipedia](http://ja.wikipedia.org/wiki/%E5%88%87%E5%A6%BB%E9%80%A0)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;hips
-:   隅棟 (寄せ棟などの屋根同士が接合する隅の部分)。&lt;/p&gt;
-
-&lt;p&gt;mansard
-:   マンサード屋根、二重勾配の屋根。&lt;/p&gt;
-
-&lt;p&gt;rafter
-:   屋根の垂木 (たるき)。&lt;/p&gt;
-
-&lt;p&gt;shed
-:   納屋、上屋。&lt;/p&gt;
-
-&lt;h2 id=&#34;参考:794e3a1036f089c1fc145590ea252d48&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;p&gt;公式マニュアルが充実しているので、これだけ見れば十分だと思います。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.valiarchitects.com/sketchup_scripts/instant-roof&#34;&gt;Instant Roof | Vali Architects | Instant Scripts&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;a href=&#34;http://www.valiarchitects.com/sketchup_scripts/instant-roof&#34;&gt;Instant Roof | Vali Architects | Instant Scripts&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -129,11 +121,11 @@
       <pubDate>Sat, 05 Mar 2011 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2011/03/05/colleciton-of-sketchup-plugin/</guid>
-      <description>
+      <description>&lt;p&gt;便利なプラグインをまとめて紹介します。&lt;/p&gt;
 
-&lt;p&gt;便利なプラグインをまとめて紹介します。&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;centerpoint:6fbc729b3a070f608b3949c7715b4806&#34;&gt;CenterPoint&lt;/h2&gt;
+&lt;h2 id=&#34;centerpoint&#34;&gt;CenterPoint&lt;/h2&gt;
 
 &lt;p&gt;DL先: &lt;a href=&#34;http://www.smustard.com/script/CenterPoint&#34;&gt;Smustard&amp;trade; - the Companion to Sketchup&amp;trade; - CenterPoint&lt;/a&gt;&lt;/p&gt;
 
@@ -143,7 +135,7 @@
 &lt;li&gt;円などの図形の中心点や、2オブジェクトの中点を知りたいときに便利&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;hole-punching-tool:6fbc729b3a070f608b3949c7715b4806&#34;&gt;Hole Punching Tool&lt;/h2&gt;
+&lt;h2 id=&#34;hole-punching-tool&#34;&gt;Hole Punching Tool&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/hall_panching_tool_5.jpg&#34;&gt;
 &lt;figure &gt;
@@ -164,7 +156,7 @@
 &lt;li&gt;解説ページ: &lt;a href=&#34;http://blog.1000k.net/2010/12/25/%E5%A3%81%E3%81%AB%E7%A9%B4%E3%82%92%E9%96%8B%E3%81%91%E3%82%8B%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3-hole-punchin-tool/&#34;&gt;壁に穴を開けるプラグイン: Hole Punching Tool | 1000g&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;instant-roof:6fbc729b3a070f608b3949c7715b4806&#34;&gt;Instant Roof&lt;/h2&gt;
+&lt;h2 id=&#34;instant-roof&#34;&gt;Instant Roof&lt;/h2&gt;
 
 &lt;p&gt;DL先: &lt;a href=&#34;http://www.valiarchitects.com/system/files/programs/suscripts/InstantRoof.rbs?download=1&#34;&gt;Instant Roof | Vali Architects | Instant Scripts&lt;/a&gt;&lt;/p&gt;
 
@@ -174,7 +166,7 @@
 &lt;li&gt;私が書いた簡単な解説: &lt;a href=&#34;http://blog.1000k.net/2011/03/06/%e5%b1%8b%e6%a0%b9%e3%82%92%e7%9e%ac%e6%99%82%e3%81%ab%e4%bd%9c%e6%88%90%e3%81%99%e3%82%8b%e3%83%97%e3%83%a9%e3%82%b0%e3%82%a4%e3%83%b3-instant-roof/&#34;&gt;屋根を瞬時に作成するプラグイン: Instant Roof | 1000g&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;latticeizer:6fbc729b3a070f608b3949c7715b4806&#34;&gt;Latticeizer&lt;/h2&gt;
+&lt;h2 id=&#34;latticeizer&#34;&gt;Latticeizer&lt;/h2&gt;
 
 &lt;p&gt;DL先: &lt;a href=&#34;http://www.cad-addict.com/2009/08/sketchup-plugins-create-custom-windows.html&#34;&gt;CAD addict: SketchUp Plugins: Create Custom Windows / Curtain Walls&lt;/a&gt;&lt;/p&gt;
 
@@ -184,7 +176,7 @@
 &lt;li&gt;Windowizer3では作れない複雑な窓が作成可能&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;line2walls:6fbc729b3a070f608b3949c7715b4806&#34;&gt;line2walls&lt;/h2&gt;
+&lt;h2 id=&#34;line2walls&#34;&gt;line2walls&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/line2walls.png&#34;&gt;
 &lt;figure &gt;
@@ -202,7 +194,7 @@
 &lt;li&gt;壁の高さ/厚さ、壁を作る向きを設定可能&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;remove-materials:6fbc729b3a070f608b3949c7715b4806&#34;&gt;Remove Materials&lt;/h2&gt;
+&lt;h2 id=&#34;remove-materials&#34;&gt;Remove Materials&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/remove_all_materials.png&#34;&gt;
 &lt;figure &gt;
@@ -220,7 +212,7 @@
 &lt;li&gt;オブジェクトを選択して[プラグイン] &amp;gt; [Remove All Materials]を選択するだけ&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;round-corner:6fbc729b3a070f608b3949c7715b4806&#34;&gt;Round Corner&lt;/h2&gt;
+&lt;h2 id=&#34;round-corner&#34;&gt;Round Corner&lt;/h2&gt;
 
 &lt;p&gt;DL先: &lt;a href=&#34;http://forums.sketchucation.com/viewtopic.php?f=180&amp;amp;t=20485&amp;amp;p=171721#p171721&#34;&gt;View topic - [Plugin] RoundCorner - v2.2c - 23 Feb 11 • SketchUcation Community Forums&lt;/a&gt;&amp;rdquo;&amp;lsquo;（※無料登録＆ログインが必要）&amp;rdquo;&amp;rsquo;&lt;/p&gt;
 
@@ -231,7 +223,7 @@
 &lt;li&gt;紹介記事: &lt;a href=&#34;http://sketchupdate.blogspot.com/2010/07/take-edge-off-roundcorners.html&#34;&gt;Official Google SketchUp Blog: Take the edge off: RoundCorner&lt;/a&gt;（英語）&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;selecto:6fbc729b3a070f608b3949c7715b4806&#34;&gt;Selecto&lt;/h2&gt;
+&lt;h2 id=&#34;selecto&#34;&gt;Selecto&lt;/h2&gt;
 
 &lt;p&gt;DL先: &lt;a href=&#34;http://www.smustard.com/script/Selecto&#34;&gt;Smustard&amp;trade; - the Companion to Sketchup&amp;trade; - Selecto&lt;/a&gt;&lt;/p&gt;
 
@@ -241,7 +233,7 @@
 &lt;li&gt;Altとの組み合わせて選択追加、Ctrlとの組み合わせで選択解除も可能&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;soap-skin-bubble-tool:6fbc729b3a070f608b3949c7715b4806&#34;&gt;Soap Skin Bubble Tool&lt;/h2&gt;
+&lt;h2 id=&#34;soap-skin-bubble-tool&#34;&gt;Soap Skin Bubble Tool&lt;/h2&gt;
 
 &lt;p&gt;DL先: &lt;a href=&#34;http://www.tensile-structures.de/sb_software.html&#34;&gt;www.tensile-structures.de/sb_software.html&lt;/a&gt;&lt;/p&gt;
 
@@ -251,7 +243,7 @@
 &lt;li&gt;紹介記事: &lt;a href=&#34;http://sketchuppluginreviews.com/2010/02/02/soap-skin-bubble-tool-google-sketchup-review/&#34;&gt;Soap Skin Bubble Tool Google SketchUp Review | Sketchup Plugin Reviews&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;windowizer3:6fbc729b3a070f608b3949c7715b4806&#34;&gt;Windowizer3&lt;/h2&gt;
+&lt;h2 id=&#34;windowizer3&#34;&gt;Windowizer3&lt;/h2&gt;
 
 &lt;p&gt;DL先: &lt;a href=&#34;http://www.smustard.com/script/Windowizer3&#34;&gt;Smustard&amp;trade; - the Companion to Sketchup&amp;trade; - Windowizer3&lt;/a&gt;&lt;/p&gt;
 
@@ -264,8 +256,7 @@
 &lt;li&gt;&lt;a href=&#34;http://hanagoromosimizu.blog109.fc2.com/blog-entry-375.html&#34;&gt;大阪上本町　貸衣装　花ごろも清水　別館 Windowizer3 v.3.000（windowizer30b5.zip）&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://rensyutyu.seesaa.net/article/72047666.html&#34;&gt;練習中: プラグイン　windowizer&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -274,9 +265,7 @@
       <pubDate>Sat, 25 Dec 2010 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2010/12/25/sketchup-plugin-hole-punchin-tool/</guid>
-      <description>
-
-&lt;p&gt;厚みのある壁に穴を開けるのは結構面倒です。壁面に平面を描いて[プッシュ/プル]ツールを使うだけですが、大量に同じような穴を開けるのは時間がかかります。また、一度開けた穴を塞ぐ場合も余計な線が残ってしまい、とにかく手間がかかります。&lt;/p&gt;
+      <description>&lt;p&gt;厚みのある壁に穴を開けるのは結構面倒です。壁面に平面を描いて[プッシュ/プル]ツールを使うだけですが、大量に同じような穴を開けるのは時間がかかります。また、一度開けた穴を塞ぐ場合も余計な線が残ってしまい、とにかく手間がかかります。&lt;/p&gt;
 
 &lt;p&gt;そんなとき、この「&lt;a href=&#34;http://forums.sketchucation.com/viewtopic.php?f=323&amp;amp;t=30846&#34;&gt;Hole Punching Tool&lt;/a&gt;」（穴開けツール）プラグインが役に立ちます。コンポーネントを壁面に配置し、右クリックから「Punch」を選ぶだけで、その形に壁が貫通します。&lt;/p&gt;
 
@@ -286,15 +275,17 @@
 
 &lt;p&gt;以下、使い方をメモします。&lt;/p&gt;
 
-&lt;h2 id=&#34;dl先:ade9815a232e73a75d73508fc9ac5215&#34;&gt;DL先&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;dl先&#34;&gt;DL先&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://rhin.crai.archi.fr/RubyLibraryDepot/plugin_details.php?id=726&#34;&gt;Hole Punching Tool (SU Plugin) - Ruby Library Depot&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;インストール方法:ade9815a232e73a75d73508fc9ac5215&#34;&gt;インストール方法&lt;/h2&gt;
+&lt;h2 id=&#34;インストール方法&#34;&gt;インストール方法&lt;/h2&gt;
 
 &lt;p&gt;プラグインフォルダに HolePunchTool.rb を入れるだけです。&lt;/p&gt;
 
-&lt;h2 id=&#34;使い方:ade9815a232e73a75d73508fc9ac5215&#34;&gt;使い方&lt;/h2&gt;
+&lt;h2 id=&#34;使い方&#34;&gt;使い方&lt;/h2&gt;
 
 &lt;p&gt;同梱されている HolePunchTool_documentation.txt に基本的な使い方が書いてあります。&lt;/p&gt;
 
@@ -362,7 +353,7 @@
 &lt;/figure&gt;
 &lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;注意:ade9815a232e73a75d73508fc9ac5215&#34;&gt;注意&lt;/h2&gt;
+&lt;h2 id=&#34;注意&#34;&gt;注意&lt;/h2&gt;
 
 &lt;p&gt;うまくパンチできない場合、コンポーネントの軸または貼り付け平面が正しく設定されていない可能性があります。貼り付け平面が壁面と平行になるように設定しないと失敗するようです。&lt;/p&gt;
 
@@ -370,16 +361,15 @@
 
 &lt;p&gt;&lt;a href=&#34;http://sketchup.google.com/support/bin/answer.py?hl=jp&amp;amp;answer=114526&#34;&gt;[コンポーネントを作成] ダイアログ ボックス - SketchUp ヘルプ&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;チュートリアルムービー:ade9815a232e73a75d73508fc9ac5215&#34;&gt;チュートリアルムービー&lt;/h2&gt;
+&lt;h2 id=&#34;チュートリアルムービー&#34;&gt;チュートリアルムービー&lt;/h2&gt;
 
 &lt;p&gt;以下のムービーではプラグインのダウンロード～Hole Punching方法を一通り紹介しています。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:ade9815a232e73a75d73508fc9ac5215&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://forums.sketchucation.com/viewtopic.php?f=323&amp;amp;t=30846&#34;&gt;View topic - [Plugin] Hole Punching Tool v1.3 20101002 • SketchUcation Community Forums&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;プラグイン作成者のページ兼フォーラム。問題があった場合読んでみると参考になります。&lt;/p&gt;
-</description>
+&lt;p&gt;プラグイン作成者のページ兼フォーラム。問題があった場合読んでみると参考になります。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -394,7 +384,7 @@
 
 &lt;p&gt;非常に便利です。標準で搭載されていてほしい機能。&lt;/p&gt;
 
-&lt;h2 id=&#34;使い方:5683a228e3a5b961dcc8430221de4ef4&#34;&gt;使い方&lt;/h2&gt;
+&lt;h2 id=&#34;使い方&#34;&gt;使い方&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;[選択]ツールで複数面の面を選択する&lt;/li&gt;

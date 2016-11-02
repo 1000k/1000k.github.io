@@ -1,60 +1,74 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ja">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<title> 抄訳: Constructor Injection vs. Setter Injection &middot; 1000g </title>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
+    <title>抄訳: Constructor Injection vs. Setter Injection &middot; 1000g</title>
+    <meta name="author" content="SENDA Keijiro">
+    <meta name="description" content="Programming knowledge">
+    <meta name="generator" content="Hugo 0.17" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-<link rel="stylesheet" href="http://1000k.github.io//css/slim.css">
-<link rel="stylesheet" href="http://1000k.github.io//css/highlight.min.css">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext' rel='stylesheet'>
+    <!-- RSS autodiscovery -->
+    
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
-<link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="http://1000k.github.io/img/favicon.ico">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.2/normalize.min.css">
 
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://1000k.github.io/css/screen.css">
+    <link rel="stylesheet" href="http://1000k.github.io/css/github.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/default.min.css">
 
-<link href="" rel="alternate" type="application/rss+xml" title="1000g" />
-
-
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
+    <!-- Stylesheet for theme color -->
+    <style type="text/css">
+    a, a:visited {color: #33cc99;}
+    .pagination a {color: #33cc99;}
+    .gist .gist-file .gist-meta a:visited {color: #33cc99 !important;}
+    a:focus, a:hover {color: #178b6b;}
+    h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #178b6b;}
+    .older-posts:hover, .newer-posts:hover {color: #178b6b;}
+</style>
 </head>
 
-<body>
-  <div class="container">
-    <div class="header">
-  <h1 class="site-title"><a href="http://1000k.github.io/">1000g</a></h1>
-  <p class="site-tagline">Tech blog</p>
-  <div class="nav">
-    <a class="nav-btn" href="#">
-      <span class="ci ci-burger"></span>
-    </a>
-    <ul class="nav-list">
-      
+<body class="post-template">
 
-      <li><a href="https://github.com/1000k">Github</a></li>
-      <li><a href="https://twitter.com/1000kei">Twitter</a></li>
-      
+    <header id="site-head">
+	
+	<h1 class="blog-title"><a href="http://1000k.github.io/">1000g</a></h1>
+	
+	
+	<h1 class="blog-subtitle">Development knowledge</h1>
+	
+</header>
+    
+<nav class="menu" role="nav">
+    <ul>
+        
+        	<li class="nav nav-current"><a href="/about/">ABOUT</a></li>
+      	
     </ul>
-  </div>
-</div>
-    <div class="content">
-      <div class="post">
-        <h2 class="post-title"><a href="http://1000k.github.io/2012/10/23/translation-constructor-injection-vs-setter-injection/">抄訳: Constructor Injection vs. Setter Injection</a></h2>
-        <div class="post-content">
-          
+</nav>
 
-<p><a href="http://misko.hevery.com/2009/02/19/constructor-injection-vs-setter-injection/">Constructor Injection vs. Setter Injection</a></p>
+
+    <main class="content" role="main">
+	    <article class="post">
+	        <header>
+	        <h1 class="post-title">抄訳: Constructor Injection vs. Setter Injection</h1>
+
+	        <section class="post-content">
+	            <p><a href="http://misko.hevery.com/2009/02/19/constructor-injection-vs-setter-injection/">Constructor Injection vs. Setter Injection</a></p>
 
 <p>3年前の記事ですが、かなり役立つ知識だったので、一部補足しながら訳しました。コードを単体テスト可能にする（＝「接合点を作る」）ために知っておくべき内容です。</p>
 
 <p>クラスBに依存しているクラスAをテストするときに、依存性を排除する典型的な方法として <strong>Constructor Injection</strong> (コンストラクター・インジェクション) と <strong>Setter Injection</strong> (セッター・インジェクション) があります。以下でそれぞれのやり方と、どちらがベターかを解説します。</p>
 
-<h2 id="setter-injection-とは:b2ac201c3b760f5a9180de0cd4a738c1">Setter Injection とは？</h2>
+<p></p>
+
+<h2 id="setter-injection-とは">Setter Injection とは？</h2>
 
 <ul>
 <li>Springフレームワークで使用。</li>
@@ -72,7 +86,7 @@ processor.setOfflineQueue(queue);
 processor.setDatabase(db);
 </code></pre>
 
-<h2 id="constructor-injection-とは:b2ac201c3b760f5a9180de0cd4a738c1">Constructor Injection とは？</h2>
+<h2 id="constructor-injection-とは">Constructor Injection とは？</h2>
 
 <ul>
 <li>Pico-Container や GUICE で使用。</li>
@@ -83,7 +97,7 @@ processor.setDatabase(db);
 <pre><code>CreditCardProcessor processor = new CreditCardProcessor(?queue?, ?db?);
 </code></pre>
 
-<h2 id="どちらが良いか:b2ac201c3b760f5a9180de0cd4a738c1">どちらが良いか？</h2>
+<h2 id="どちらが良いか">どちらが良いか？</h2>
 
 <p>一見すると、コンストラクタにごちゃごちゃ引数を渡さなくて済むぶん Setter Injection の方が楽に書けて良いように思えます。しかし Contructor Injection の方が優れている部分があるため、私は後者を選びます。それは、Constructor Injection はパラメータの順序を指定でき、<a href="http://misko.hevery.com/2008/08/01/circular-dependency-in-constructors-and-dependency-injection/">Circular Dependency</a>（循環参照）に陥る危険が無いという点です。</p>
 
@@ -91,7 +105,7 @@ processor.setDatabase(db);
 
 <p>一方で Constructor Injection はコンストラクタさえ書いてしまえば、指定した順に、自動でクラスをインスタンス化してくれます。コンストラクトの時点ですべて設定が完了するので、後はそのオブジェクトを確実に使えます。</p>
 
-<h2 id="例:b2ac201c3b760f5a9180de0cd4a738c1">例</h2>
+<h2 id="例">例</h2>
 
 <p>CreaditCardProcessor クラスをインスタンス化するケースを考えてみましょう。</p>
 
@@ -144,38 +158,51 @@ CreditCardProcessor processor = new CreditCardProcessor(queue, db);
 <p>このコードの良いところは、コンストラクタに渡す引数が不足していたらコンパイルエラーがちゃんと出ることです。また、意図していない順番でインスタンス化される不具合も防げます。</p>
 
 <p>というわけで、個人的には Constructor Injection がおすすめです。</p>
+	        </section>
+	    </article>
+	</main>
 
-        </div>
-      </div>
-    </div>
+    <footer class="site-footer">
+	<div class="inner">
+		<section class="footer-social">
+			
+		    <a href="//twitter.com/1000kei" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp;
+		    
+		    
+		    <a href="//github.com/1000k" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
+		    
+		    
+		    <a href="" target="_blank" title="RSS"><i class="fa fa-2x fa-fw fa-rss"></i> <span class="hidden">RSS</span></a>
+		</section>
 
-    <hr>
+		<section class="copyright">&copy; 2016 <a href="http://1000k.github.io/">SENDA Keijiro</a>. Released under the MIT license.</section>
+	</div>
+</footer>
 
-    
-      <a class="btn btn-previous" href="http://1000k.github.io/2012/10/24/lecture-of-dependency-injection/">&laquo; 依存性注入の解説とやり方</a>
-    
-    
-      <a class="btn btn-next" href="http://1000k.github.io/2012/10/20/how-to-test-method-using-header-function-in-phpunit/">header()関数を使ったメソッドをPHPUnitでテストする方法 &raquo;</a>
-    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://1000k.github.io/js/index.js"></script>
+<script src="http://1000k.github.io/js/smooth-scroll.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
 
-    <div class="footer">
-  <p>Powered by <a href="http://gohugo.io">Hugo</a>. This theme—Slim—is open sourced on <a href="https://github.com/zhe/hugo-theme-slim">Github</a>.</p>
-</div>
+<script>
+    smoothScroll.init({
+        speed: 800,
+        easing: 'easeInOutCubic',
+        updateURL: false,
+        offset: 125,
+    });
+</script>
+<script>hljs.initHighlightingOnLoad();</script>
 
-  </div>
-  <script src="http://1000k.github.io//js/slim.js"></script>
-  <script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-46659459-2', 'auto');
-ga('send', 'pageview');
-
+<!-- Google Analytics -->
+<script>
+  var _gaq=[['_setAccount','UA-46659459-2'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
 
 
 </body>
-
 </html>

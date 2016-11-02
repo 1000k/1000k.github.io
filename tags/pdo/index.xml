@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pdo on 1000g</title>
-    <link>http://1000k.github.io/tags/pdo/</link>
-    <description>Recent content in Pdo on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/pdo/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 11 Nov 2011 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/pdo/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -21,7 +21,7 @@
 
 &lt;p&gt;いきなり結論を書くと、&lt;strong&gt;「あるPDOオブジェクトからは、別のPDOオブジェクトが作成したインメモリDBには接続できない」&lt;/strong&gt;ようです。&lt;/p&gt;
 
-&lt;h1 id=&#34;テストコード:79219f7f66a89108f263ed750ab9ba1c&#34;&gt;テストコード&lt;/h1&gt;
+&lt;h1 id=&#34;テストコード&#34;&gt;テストコード&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;lt;?php
 /**
@@ -54,7 +54,7 @@ try {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;結果:79219f7f66a89108f263ed750ab9ba1c&#34;&gt;結果&lt;/h1&gt;
+&lt;h1 id=&#34;結果&#34;&gt;結果&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code&gt;Array
 (
@@ -78,7 +78,7 @@ Cannot fetch data via $pdo2.
 
 &lt;p&gt;どちらも同じ「sqlite::memory:」ですが、見ている領域は異なるようです。&lt;/p&gt;
 
-&lt;h1 id=&#34;考察:79219f7f66a89108f263ed750ab9ba1c&#34;&gt;考察&lt;/h1&gt;
+&lt;h1 id=&#34;考察&#34;&gt;考察&lt;/h1&gt;
 
 &lt;p&gt;インメモリDB内に作ったテーブルに、複数のPDOオブジェクトからアクセスすることはできませんでした。&lt;/p&gt;
 

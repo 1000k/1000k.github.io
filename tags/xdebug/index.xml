@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Xdebug on 1000g</title>
-    <link>http://1000k.github.io/tags/xdebug/</link>
-    <description>Recent content in Xdebug on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/xdebug/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 27 Apr 2013 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/xdebug/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -43,7 +43,7 @@ xdebug.var_display_max_data = -1
 xdebug.var_display_max_depth = -1
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;参考:4a6779c3da90459c9dffed130ddd9ac1&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://xdebug.org/docs/all_settings#var_display_max_depth&#34;&gt;Xdebug: Documentation&lt;/a&gt;&lt;/li&gt;
@@ -67,7 +67,7 @@ xdebug.var_display_max_depth = -1
 
 &lt;p&gt;xDebugの入れ替え方ですが、&lt;a href=&#34;http://www.xdebug.org/find-binary.php&#34;&gt;Xdebug: Support; Tailored Installation Instructions&lt;/a&gt;にしたがってやるのが一番わかりやすいです。ここのフォームにphpinfoの結果をまるごとコピペするだけで、DLするファイルからphp.iniの設定まですべてやり方を出してくれます。&lt;/p&gt;
 
-&lt;h3 id=&#34;参考:95dfb16aee8c1717a3a185c8f8b9f562&#34;&gt;参考&lt;/h3&gt;
+&lt;h3 id=&#34;参考&#34;&gt;参考&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.ryuzee.com/contents/blog/2430&#34;&gt;[CakePHP]晴れときどきcakephpでコードカバレージを測定する | Ryuzee.com&lt;/a&gt;&lt;/li&gt;

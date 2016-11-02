@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mongodb on 1000g</title>
-    <link>http://1000k.github.io/tags/mongodb/</link>
-    <description>Recent content in Mongodb on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/mongodb/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 28 Oct 2012 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/mongodb/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -15,9 +15,7 @@
       <pubDate>Sun, 28 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2012/10/28/enable-php-extensions-by-php5enmod/</guid>
-      <description>
-
-&lt;p&gt;Ubuntuにて、peclでMongoDBをインストールしてさあ動かそうと思ったら、以下のエラーが出て動きませんでした。&lt;/p&gt;
+      <description>&lt;p&gt;Ubuntuにて、peclでMongoDBをインストールしてさあ動かそうと思ったら、以下のエラーが出て動きませんでした。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;[Sun Oct 28 19:39:08 2012] [error] [client *.*.*.*] PHP Fatal error:  Class &#39;Mongo&#39; not found in /var/www/html/*.php on line 38
 &lt;/code&gt;&lt;/pre&gt;
@@ -26,7 +24,9 @@
 
 &lt;p&gt;けっきょく原因はUbuntuの作法を分かっていなかったが為のエラーでした。&lt;/p&gt;
 
-&lt;h2 id=&#34;原因:d103d0ed9885bf3d8051c00805d3aeed&#34;&gt;原因&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;原因&#34;&gt;原因&lt;/h2&gt;
 
 &lt;p&gt;UbuntuではApache2同様、PHPの設定ファイルも階層化されています。&lt;/p&gt;
 
@@ -47,7 +47,7 @@
 
 &lt;p&gt;※php5enmod は &lt;strong&gt;PHP &amp;gt;= 5.4.0&lt;/strong&gt; をパッケージでインストールした場合のみ有効です。&lt;/p&gt;
 
-&lt;h2 id=&#34;手順:d103d0ed9885bf3d8051c00805d3aeed&#34;&gt;手順&lt;/h2&gt;
+&lt;h2 id=&#34;手順&#34;&gt;手順&lt;/h2&gt;
 
 &lt;p&gt;mongo.soをWEB/CLI両方で有効にしたい場合は、下記の手順を踏みます。&lt;/p&gt;
 
@@ -80,7 +80,7 @@
 
 &lt;p&gt;うまくいかない場合、ログ（/var/log/apache2/error.log）を見てエラーメッセージを確認してください。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:d103d0ed9885bf3d8051c00805d3aeed&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://bugs.launchpad.net/ubuntu/+source/php-apc/+bug/994882&#34;&gt;Bug #994882 “php5{en/dis}mod not available in php 5.3.10” : Bugs : “php-apc” package : Ubuntu&lt;/a&gt;&lt;/li&gt;
@@ -88,8 +88,7 @@
 
 &lt;p&gt;日頃CentOSばかり触っているとUbuntuルールにつまづきます。&lt;/p&gt;
 
-&lt;p&gt;慣れればUbuntuの整理方法が使いやすいと思うのですが。&lt;/p&gt;
-</description>
+&lt;p&gt;慣れればUbuntuの整理方法が使いやすいと思うのですが。&lt;/p&gt;</description>
     </item>
     
   </channel>

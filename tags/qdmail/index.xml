@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Qdmail on 1000g</title>
-    <link>http://1000k.github.io/tags/qdmail/</link>
-    <description>Recent content in Qdmail on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/qdmail/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 06 Jul 2010 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/qdmail/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -19,7 +19,7 @@
 
 &lt;p&gt;QdmailはCakePHPを初めとしたフレームワークで簡単にメールを作成・送信できるライブラリです。CakePHP1.2 で利用するサンプルは見つかったのですが、1.3で使っている例をあまり見かけず、少しつまづいたのでメモしておきます。&lt;/p&gt;
 
-&lt;h3 id=&#34;手順:82fe1e63d08f1c786a02c83fe3f1d6bb&#34;&gt;手順&lt;/h3&gt;
+&lt;h3 id=&#34;手順&#34;&gt;手順&lt;/h3&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://hal456.net/qdmail/downloads&#34;&gt;Qdmailをダウンロード&lt;/a&gt;し、/app/controllers/components に解凍する&lt;/p&gt;&lt;/li&gt;
@@ -75,11 +75,11 @@ class UsoShell extends Shell {
 ?&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;補足:82fe1e63d08f1c786a02c83fe3f1d6bb&#34;&gt;補足&lt;/h3&gt;
+&lt;h3 id=&#34;補足&#34;&gt;補足&lt;/h3&gt;
 
 &lt;p&gt;何が悪いのかよくわかりませんが、上のコードを実行すると「指定されたパスが見つかりません。」と表示されます。送信するぶんには問題ないのですが、気持ち悪いのでどうにか消せないか方法を探しています。&lt;/p&gt;
 
-&lt;h3 id=&#34;参考:82fe1e63d08f1c786a02c83fe3f1d6bb&#34;&gt;参考&lt;/h3&gt;
+&lt;h3 id=&#34;参考&#34;&gt;参考&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://hal456.net/qdmail/cakebase&#34;&gt;使い方　CakePHPでのメール送信 - Qdmail - PHP::Mail Library , Quick and Detailed for Multibyte&lt;/a&gt;&lt;/li&gt;

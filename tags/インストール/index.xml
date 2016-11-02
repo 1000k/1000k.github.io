@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>インストール on 1000g</title>
-    <link>http://1000k.github.io/tags/%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</link>
-    <description>Recent content in インストール on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 15 Jan 2012 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -15,9 +15,7 @@
       <pubDate>Sun, 15 Jan 2012 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2012/01/15/installing-up-to-date-package-by-yum/</guid>
-      <description>
-
-&lt;p&gt;yum公式リポジトリ内の古いApacheやphpではなく、最新版をrpmで入れる方法です。&lt;/p&gt;
+      <description>&lt;p&gt;yum公式リポジトリ内の古いApacheやphpではなく、最新版をrpmで入れる方法です。&lt;/p&gt;
 
 &lt;p&gt;下記に記す非公式リポジトリを参照することで、最新のパッケージをyumでインストールできます。&lt;/p&gt;
 
@@ -28,9 +26,11 @@
 
 &lt;p&gt;なお、これらのサイトで配布されているパッケージの信頼性は公式のリポジトリのものより劣るので、利用の際には注意が必要です。&lt;/p&gt;
 
-&lt;h1 id=&#34;手順:f0d8039714e0227fd6e46c45b7c77e52&#34;&gt;手順&lt;/h1&gt;
+&lt;p&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;remiリポジトリ追加:f0d8039714e0227fd6e46c45b7c77e52&#34;&gt;Remiリポジトリ追加&lt;/h2&gt;
+&lt;h1 id=&#34;手順&#34;&gt;手順&lt;/h1&gt;
+
+&lt;h2 id=&#34;remiリポジトリ追加&#34;&gt;Remiリポジトリ追加&lt;/h2&gt;
 
 &lt;p&gt;RemiリポジトリはEPELリポジトリに依存しているため、両方追加する必要があります。&lt;/p&gt;
 
@@ -55,7 +55,7 @@ CentOS-Base.repo       CentOS-Media.repo  epel-testing.repo  remi.repo
 CentOS-Debuginfo.repo  CentOS-Vault.repo  epel.repo
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;utterリポジトリ追加:f0d8039714e0227fd6e46c45b7c77e52&#34;&gt;Utterリポジトリ追加&lt;/h2&gt;
+&lt;h2 id=&#34;utterリポジトリ追加&#34;&gt;Utterリポジトリ追加&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;/etc/yum.repos.d/utter.repo&lt;/strong&gt; を開き、下記のように編集します。&lt;/p&gt;
 
@@ -69,7 +69,7 @@ gpgkey=http://www.jasonlitka.com/media/RPM-GPG-KEY-jlitka
 
 &lt;p&gt;以上で、phpやhttpdの最新版がyumでインストールできるようになりました。&lt;/p&gt;
 
-&lt;h2 id=&#34;最新パッケージのインストール:f0d8039714e0227fd6e46c45b7c77e52&#34;&gt;最新パッケージのインストール&lt;/h2&gt;
+&lt;h2 id=&#34;最新パッケージのインストール&#34;&gt;最新パッケージのインストール&lt;/h2&gt;
 
 &lt;p&gt;yumコマンドに「-enablerepo={リポジトリ名}」オプションを付けることで、それぞれのリポジトリを参照できます。&lt;/p&gt;
 
@@ -120,7 +120,7 @@ Total download size: 3.4 M
 Is this ok [y/N]:
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;参考:f0d8039714e0227fd6e46c45b7c77e52&#34;&gt;参考&lt;/h1&gt;
+&lt;h1 id=&#34;参考&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://hoge001.exblog.jp/13982612/&#34;&gt;hoge001 : CentOS5.5 Apache 2.2.15 インストール&lt;/a&gt;&lt;/li&gt;
@@ -131,8 +131,7 @@ Is this ok [y/N]:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.goofoo.jp/2011/03/556&#34;&gt;yumでremiリポジトリを使えるようにする | グーフー WordPressのためのLinuxノート&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://pentan.info/server/linux/yum_new.html&#34;&gt;yumで、より新しいパッケージをインストールする方法(CentOS) - [yum/Linux [Red Hatなど]] ぺんたん info&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
   </channel>

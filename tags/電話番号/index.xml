@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>電話番号 on 1000g</title>
-    <link>http://1000k.github.io/tags/%E9%9B%BB%E8%A9%B1%E7%95%AA%E5%8F%B7/</link>
-    <description>Recent content in 電話番号 on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/%E9%9B%BB%E8%A9%B1%E7%95%AA%E5%8F%B7/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 25 Jan 2011 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/%E9%9B%BB%E8%A9%B1%E7%95%AA%E5%8F%B7/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -15,9 +15,9 @@
       <pubDate>Tue, 25 Jan 2011 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2011/01/25/regex-of-tel-number/</guid>
-      <description>
+      <description>&lt;p&gt;「電話番号 正規表現」で検索するといろいろな正規表現パターンが出てきますが、完璧なものはあまり無いようです。私が必要としていた簡単なものもなかったので、PHPで書いてみました。&lt;/p&gt;
 
-&lt;p&gt;「電話番号 正規表現」で検索するといろいろな正規表現パターンが出てきますが、完璧なものはあまり無いようです。私が必要としていた簡単なものもなかったので、PHPで書いてみました。&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;どういう条件で使えるかコメントに書いたので、よくご確認ください。総務省の電話番号ルールに従っています。&lt;/p&gt;
 
@@ -104,12 +104,11 @@ foreach ($tels as $key =&amp;gt; $tel) {
 13: 080-0000-0000 ... OK
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;参考:2daffd78901abd39a0325093e2a569a5&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.soumu.go.jp/main_sosiki/joho_tsusin/top/tel_number/q_and_a-2001aug.html&#34;&gt;電話番号に関するＱ＆Ａ&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
   </channel>

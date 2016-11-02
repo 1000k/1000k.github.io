@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Grunt on 1000g</title>
-    <link>http://1000k.github.io/tags/grunt/</link>
-    <description>Recent content in Grunt on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/grunt/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 19 Oct 2013 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/grunt/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -17,13 +17,13 @@
       <guid>http://1000k.github.io/2013/10/19/automate-build-js-and-css-with-grunt/</guid>
       <description>
 
-&lt;h2 id=&#34;grunt-とは:31d9c632b09e89723d113ebbe8ae7aa4&#34;&gt;Grunt とは？&lt;/h2&gt;
+&lt;h2 id=&#34;grunt-とは&#34;&gt;Grunt とは？&lt;/h2&gt;
 
 &lt;p&gt;JS/CSS のビルド自動化ツール。&lt;/p&gt;
 
 &lt;p&gt;JS のユニットテスト、ファイルの結合＆難読化＆最小化などの様々なタスクを自動で行うことができます。&lt;/p&gt;
 
-&lt;h2 id=&#34;インストール:31d9c632b09e89723d113ebbe8ae7aa4&#34;&gt;インストール&lt;/h2&gt;
+&lt;h2 id=&#34;インストール&#34;&gt;インストール&lt;/h2&gt;
 
 &lt;p&gt;まず、node.js と npm をインストールします。&lt;/p&gt;
 
@@ -63,7 +63,7 @@
 
 &lt;p&gt;以上で前準備は完了です。&lt;/p&gt;
 
-&lt;h2 id=&#34;使い方:31d9c632b09e89723d113ebbe8ae7aa4&#34;&gt;使い方&lt;/h2&gt;
+&lt;h2 id=&#34;使い方&#34;&gt;使い方&lt;/h2&gt;
 
 &lt;p&gt;プロジェクトのルートに &lt;code&gt;Gruntfile.js&lt;/code&gt; を書いて、実行したいタスクを列挙するだけです。&lt;/p&gt;
 
@@ -143,11 +143,11 @@
 
 &lt;p&gt;例えば上で定義 (&lt;code&gt;grunt.registerTask()&lt;/code&gt; )したタスクから merge を実行したければ、&lt;code&gt;grunt merge&lt;/code&gt; と叩けば OK です。。&lt;/p&gt;
 
-&lt;h2 id=&#34;変更の監視-自動タスク実行:31d9c632b09e89723d113ebbe8ae7aa4&#34;&gt;変更の監視＆自動タスク実行&lt;/h2&gt;
+&lt;h2 id=&#34;変更の監視-自動タスク実行&#34;&gt;変更の監視＆自動タスク実行&lt;/h2&gt;
 
 &lt;p&gt;&lt;code&gt;grunt watch&lt;/code&gt; を叩くことで、指定した js ファイルを監視し、変更があったら自動で指定したタスクを実行してくれます。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:31d9c632b09e89723d113ebbe8ae7aa4&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://hamalog.tumblr.com/post/18137176043/grunt-js-css&#34;&gt;gruntで快適JS/CSSビルド生活 - Takazudo hamalog&lt;/a&gt;&lt;/li&gt;
@@ -178,9 +178,7 @@
       <pubDate>Sat, 19 Oct 2013 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2013/10/20/speed-up-grunt-watch/</guid>
-      <description>
-
-&lt;p&gt;Grunt を使うからには &lt;a href=&#34;https://github.com/gruntjs/grunt-contrib-watch#optionsnospawn&#34;&gt;grunt-contrib-watch&lt;/a&gt; でファイルの変更を監視して自動ビルドしたいのですが、どうも遅い。&lt;/p&gt;
+      <description>&lt;p&gt;Grunt を使うからには &lt;a href=&#34;https://github.com/gruntjs/grunt-contrib-watch#optionsnospawn&#34;&gt;grunt-contrib-watch&lt;/a&gt; でファイルの変更を監視して自動ビルドしたいのですが、どうも遅い。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ grunt watch
 
@@ -206,6 +204,8 @@ Completed in 12.602s at Sat Oct 19 2013 16:26:32 GMT+0000 (UTC) - Waiting...
 &lt;p&gt;タスクの実行自体は1秒もかかっていないのに、全体では12秒ほどかかっていました。&lt;/p&gt;
 
 &lt;p&gt;Gruntfile の設定を見直すことで改善できたので、そのやり方をメモしておきます。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;grunt watch&lt;/code&gt; のボトルネックは、ファイルの変更を検知後にタスクプロセスを子プロセスとしてスポーンさせる部分にあるようです。&lt;/p&gt;
 
@@ -257,13 +257,12 @@ OK
 
 &lt;p&gt;12秒が0.7秒に。イェーイ！&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:bcbef8a25879c17668c0f2da3a272309&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/gruntjs/grunt-contrib-watch/issues/69&#34;&gt;Why Watch is so slow compared to Regarde · Issue #69 · gruntjs/grunt-contrib-watch&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/gruntjs/grunt-contrib-watch#optionsnospawn&#34;&gt;gruntjs/grunt-contrib-watch#optionsnospawn&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
   </channel>

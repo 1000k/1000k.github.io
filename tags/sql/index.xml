@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sql on 1000g</title>
-    <link>http://1000k.github.io/tags/sql/</link>
-    <description>Recent content in Sql on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/sql/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 25 May 2010 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/sql/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -30,7 +30,7 @@
 &lt;li&gt;DISTINCT&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&#34;参考:07ceee9a1b936a2d0a03452dc239ee08&#34;&gt;参考&lt;/h3&gt;
+&lt;h3 id=&#34;参考&#34;&gt;参考&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://java-etc.cocolog-nifty.com/blog/2007/02/post_a311.html&#34;&gt;ＳＱＬの魔術: Javaの日々&lt;/a&gt;&lt;/li&gt;

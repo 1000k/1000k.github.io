@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>勉強会 on 1000g</title>
-    <link>http://1000k.github.io/tags/%E5%8B%89%E5%BC%B7%E4%BC%9A/</link>
-    <description>Recent content in 勉強会 on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/%E5%8B%89%E5%BC%B7%E4%BC%9A/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 16 Dec 2013 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/%E5%8B%89%E5%BC%B7%E4%BC%9A/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -15,9 +15,7 @@
       <pubDate>Mon, 16 Dec 2013 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2013/12/16/agile-samurai-base-camp-2013-report/</guid>
-      <description>
-
-&lt;p&gt;レポートが遅れましたが、12/8 (日) に開催された &lt;a href=&#34;http://www.agilesamuraibasecamp.org/&#34;&gt;Agile Samurai Base Camp&lt;/a&gt; に参加してきました。「テスト駆動開発コース」と「インセプションデッキコース」の2つがありましたが、私は後者に参加しました。&lt;/p&gt;
+      <description>&lt;p&gt;レポートが遅れましたが、12/8 (日) に開催された &lt;a href=&#34;http://www.agilesamuraibasecamp.org/&#34;&gt;Agile Samurai Base Camp&lt;/a&gt; に参加してきました。「テスト駆動開発コース」と「インセプションデッキコース」の2つがありましたが、私は後者に参加しました。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.amazon.co.jp/gp/product/4274068560/ref=as_li_ss_tl?ie=UTF8&amp;amp;camp=247&amp;amp;creative=7399&amp;amp;creativeASIN=4274068560&amp;amp;linkCode=as2&amp;amp;tag=1000k-22&#34;&gt;「アジャイルサムライ」&lt;/a&gt;&lt;img src=&#34;http://ir-jp.amazon-adsystem.com/e/ir?t=1000k-22&amp;l=as2&amp;o=9&amp;a=4274068560&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;&lt;/p&gt;
 
@@ -25,7 +23,9 @@
 
 &lt;p&gt;&lt;a href=&#34;https://twitter.com/nawoto&#34;&gt;西村直人さん&lt;/a&gt;によるワークショップや、&lt;a href=&#34;https://twitter.com/papanda&#34;&gt;市谷聡啓さん&lt;/a&gt;による&lt;a href=&#34;http://www.amazon.co.jp/gp/product/427406932X/ref=as_li_ss_tl?ie=UTF8&amp;amp;camp=247&amp;amp;creative=7399&amp;amp;creativeASIN=427406932X&amp;amp;linkCode=as2&amp;amp;tag=1000k-22&#34;&gt;「リーン開発の現場」&lt;/a&gt;&lt;img src=&#34;http://ir-jp.amazon-adsystem.com/e/ir?t=1000k-22&amp;l=as2&amp;o=9&amp;a=427406932X&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;のエピソードなども大変参考になりましたが、特に3名のスクラム実践者が経験談を話すセッションが参考になりました。それぞれのお話の簡単なまとめを共有します。&lt;/p&gt;
 
-&lt;h3 id=&#34;中佐藤-麻記子-さん:aeb03dc5a51eccc7b018530813e3ea50&#34;&gt;中佐藤 麻記子 さん&lt;/h3&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;中佐藤-麻記子-さん&#34;&gt;中佐藤 麻記子 さん&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.amazon.co.jp/gp/product/4798130613/ref=as_li_ss_tl?ie=UTF8&amp;amp;camp=247&amp;amp;creative=7399&amp;amp;creativeASIN=4798130613&amp;amp;linkCode=as2&amp;amp;tag=1000k-22&#34;&gt;ディシプリンド・アジャイル・デリバリー エンタープライズ・アジャイル実践ガイド (Object Oriented SELECTION)&lt;/a&gt; &lt;img src=&#34;http://ir-jp.amazon-adsystem.com/e/ir?t=1000k-22&amp;l=as2&amp;o=9&amp;a=4798130613&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;の翻訳者。&lt;/p&gt;
 
@@ -38,7 +38,7 @@
 &lt;li&gt;どんなプロジェクト体制だろうと、定期的なふりかえりは必須！&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;しばたひろし-hsbt-https-twitter-com-hsbt-さん:aeb03dc5a51eccc7b018530813e3ea50&#34;&gt;しばたひろし (&lt;a href=&#34;https://twitter.com/hsbt&#34;&gt;@hsbt&lt;/a&gt;) さん&lt;/h3&gt;
+&lt;h3 id=&#34;しばたひろし-hsbt-https-twitter-com-hsbt-さん&#34;&gt;しばたひろし (&lt;a href=&#34;https://twitter.com/hsbt&#34;&gt;@hsbt&lt;/a&gt;) さん&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;paperboy &amp;amp; co. にスクラムを普及させた時にやったこと:
@@ -58,7 +58,7 @@
 &lt;li&gt;インセプションデッキは、意思疎通のためのコンテキストとして非常に便利。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;mti-岩崎さん:aeb03dc5a51eccc7b018530813e3ea50&#34;&gt;MTI 岩崎さん&lt;/h3&gt;
+&lt;h3 id=&#34;mti-岩崎さん&#34;&gt;MTI 岩崎さん&lt;/h3&gt;
 
 &lt;p&gt;スクラムを普及する時に体験したつまづき&lt;/p&gt;
 
@@ -104,8 +104,7 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;私は半年ほど前から会社にアジャイルマインドを広めようとしており、日々苦闘しているのですが、今回のセミナーで大変元気付けられました。具体的なアイディアも仕入れることができました。登壇者の皆さん、ありがとうございました。ぜひまた開催していただきたい。&lt;/p&gt;
-</description>
+&lt;p&gt;私は半年ほど前から会社にアジャイルマインドを広めようとしており、日々苦闘しているのですが、今回のセミナーで大変元気付けられました。具体的なアイディアも仕入れることができました。登壇者の皆さん、ありがとうございました。ぜひまた開催していただきたい。&lt;/p&gt;</description>
     </item>
     
   </channel>

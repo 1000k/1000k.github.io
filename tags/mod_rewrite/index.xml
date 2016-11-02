@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mod_rewrite on 1000g</title>
-    <link>http://1000k.github.io/tags/mod_rewrite/</link>
-    <description>Recent content in Mod_rewrite on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/mod_rewrite/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 23 Jul 2010 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/mod_rewrite/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -36,7 +36,7 @@
 
 &lt;p&gt;これでApacheを再起動すれば、リダイレクトが成功するようになっています。&lt;/p&gt;
 
-&lt;h3 id=&#34;参考:44dfa8f56fa655b8b85093045fdbf75d&#34;&gt;参考&lt;/h3&gt;
+&lt;h3 id=&#34;参考&#34;&gt;参考&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://muumoo.jp/news/2006/04/06/0redirect.html&#34;&gt;URIのリダイレクト設定をやってみた(管理人日記) - むぅもぉ.jp&lt;/a&gt;&lt;/li&gt;

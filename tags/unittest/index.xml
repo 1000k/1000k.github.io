@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Unittest on 1000g</title>
-    <link>http://1000k.github.io/tags/unittest/</link>
-    <description>Recent content in Unittest on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/unittest/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 30 May 2012 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/unittest/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -47,7 +47,7 @@
 
 &lt;p&gt;今までモックをほとんど使ったことがなかったので、勉強してみました。&lt;/p&gt;
 
-&lt;h2 id=&#34;スタブとは:64967b015e52257cb9a199be0513508e&#34;&gt;スタブとは&lt;/h2&gt;
+&lt;h2 id=&#34;スタブとは&#34;&gt;スタブとは&lt;/h2&gt;
 
 &lt;p&gt;ref: &lt;a href=&#34;http://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%BF%E3%83%96&#34;&gt;スタブ - Wikipedia&lt;/a&gt;&lt;/p&gt;
 
@@ -57,7 +57,7 @@
 
 &lt;p&gt;「必ずfalseを返すスタブ」「ランダムな整数を返すスタブ」なんて言葉はよく聞きます。&lt;/p&gt;
 
-&lt;h2 id=&#34;モックとは:64967b015e52257cb9a199be0513508e&#34;&gt;モックとは&lt;/h2&gt;
+&lt;h2 id=&#34;モックとは&#34;&gt;モックとは&lt;/h2&gt;
 
 &lt;p&gt;ref: &lt;a href=&#34;http://d.hatena.ne.jp/sekom/20090702/p1&#34;&gt;スタブとモックの違い - ソフト開発お仕事メモ&lt;/a&gt;&lt;/p&gt;
 
@@ -69,7 +69,7 @@
 | 2  | テスト条件下でのモックオブジェクトの使用 | モックオブジェクトを使用したテストを実施します。                                                     |
 | 3  | 結果の検証                | モックオブジェクトに対し、期待されたとおりにモックオブジェクトが使用されたか問い合わせます。                               |&lt;/p&gt;
 
-&lt;h2 id=&#34;スタブやモックが必要になる理由:64967b015e52257cb9a199be0513508e&#34;&gt;スタブやモックが必要になる理由&lt;/h2&gt;
+&lt;h2 id=&#34;スタブやモックが必要になる理由&#34;&gt;スタブやモックが必要になる理由&lt;/h2&gt;
 
 &lt;p&gt;ref: &lt;a href=&#34;http://www39.atwiki.jp/startruby/pages/23.html&#34;&gt;Start! Ruby - RSpecの構文&lt;/a&gt;&lt;/p&gt;
 
@@ -81,7 +81,7 @@
 
 &lt;p&gt;※ ただし、スタブ/モックを多用し過ぎると、今度はインタフェース不一致の発見を先送りにする、という状況にもなりかねない。このあたりはさじ加減が必要。&lt;/p&gt;
 
-&lt;h2 id=&#34;モックでできること:64967b015e52257cb9a199be0513508e&#34;&gt;モックでできること&lt;/h2&gt;
+&lt;h2 id=&#34;モックでできること&#34;&gt;モックでできること&lt;/h2&gt;
 
 &lt;p&gt;ref: &lt;a href=&#34;http://gihyo.jp/dev/feature/01/php-test/0004&#34;&gt;PHPUnit3で始めるユニットテスト：第4回　モックオブジェクトを使ったテスト｜gihyo.jp … 技術評論社&lt;/a&gt;&lt;/p&gt;
 
@@ -105,7 +105,7 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;スタブとモックの違い:64967b015e52257cb9a199be0513508e&#34;&gt;スタブとモックの違い&lt;/h2&gt;
+&lt;h2 id=&#34;スタブとモックの違い&#34;&gt;スタブとモックの違い&lt;/h2&gt;
 
 &lt;p&gt;ref: &lt;a href=&#34;http://www.ibm.com/developerworks/jp/web/library/wa-mockrails/index.html&#34;&gt;Ruby on Rails でのモックとスタブの作成&lt;/a&gt;&lt;/p&gt;
 
@@ -142,6 +142,8 @@
 &lt;p&gt;要約すると、&lt;strong&gt;「モデル内で例外を吐くようにすると、エラーコードが読みやすくなり、コントローラのテストもしやすくなるよ」&lt;/strong&gt;ということです。&lt;/p&gt;
 
 &lt;p&gt;以下、訳です。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;増大するコードと格闘する日々・・・どうにかクリエイティブな方法で解決したい。そんな悩みを、モデルのメソッドから例外を投げる方法で解決しました。別にビックリするようなものではないです。ただfalseを返すより、ちょっと便利な点がいくつかあります。&lt;/p&gt;
 
@@ -207,8 +209,7 @@ try {
 
 &lt;p&gt;例外を使うと便利になることは多いです。だからと言って、false を返すタイプのメソッドすべてを例外を返すようにする必要はないでしょう。たとえばヘルパから例外を返すようにすると、満足より苦痛を感じることのほうが多くなるでしょう。&lt;/p&gt;
 
-&lt;p&gt;どんなツールもそうですが、正しく使えばメンテナンス性の良いコードを生み出すことができるのです。&lt;/p&gt;
-</description>
+&lt;p&gt;どんなツールもそうですが、正しく使えばメンテナンス性の良いコードを生み出すことができるのです。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -217,11 +218,11 @@ try {
       <pubDate>Tue, 20 Jul 2010 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2010/07/20/assert-vars-from-controller-to-view/</guid>
-      <description>
-
-&lt;p&gt;公式マニュアルの「&lt;a href=&#34;http://book.cakephp.org/ja/view/366/Testing-controllers&#34;&gt;コントローラのテスト&lt;/a&gt;」では、ただ単に変数をdebugして吐いてるだけで一切アサーションをしていません。これってテストと言えるのでしょうか？&lt;/p&gt;
+      <description>&lt;p&gt;公式マニュアルの「&lt;a href=&#34;http://book.cakephp.org/ja/view/366/Testing-controllers&#34;&gt;コントローラのテスト&lt;/a&gt;」では、ただ単に変数をdebugして吐いてるだけで一切アサーションをしていません。これってテストと言えるのでしょうか？&lt;/p&gt;
 
 &lt;p&gt;コントローラのメソッドが実行された後、仕様通りに値が入っているかチェックするにはどうすればいいでしょうか？&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;コントローラ内でsetされた変数は &lt;strong&gt;viewVars&lt;/strong&gt; というメンバ変数に格納されるようです。例えば、下記のようなコントローラがあった場合。&lt;/p&gt;
 
@@ -305,14 +306,13 @@ class UsosControllerTestCase extends CakeTestCase {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;参考:b3a8ccee870fe281430f610f255f01b4&#34;&gt;参考&lt;/h3&gt;
+&lt;h3 id=&#34;参考&#34;&gt;参考&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://mark-story.com/posts/view/anatomy-of-a-cakephp-test-case&#34;&gt;Anatomy of a CakePHP Test Case | Mark Story&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://mark-story.com/posts/view/testing-cakephp-controllers-the-hard-way&#34;&gt;Testing CakePHP Controllers the hard way | Mark Story&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://cakephp.1045679.n5.nabble.com/Getting-viewVars-set-in-a-controller-when-using-Mock-objects-during-testing-td1318031.html#a1318031&#34;&gt;Nabble - CakePHP - Getting viewVars set in a controller when using Mock objects during testing&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -321,9 +321,9 @@ class UsosControllerTestCase extends CakeTestCase {
       <pubDate>Fri, 16 Jul 2010 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2010/07/16/order-of-callback-in-unit-testing/</guid>
-      <description>
+      <description>&lt;p&gt;公式マニュアルだけではSimpleTestのコールバックの実行される順序がわからなかったので、調べた結果をメモしておきます。&lt;/p&gt;
 
-&lt;p&gt;公式マニュアルだけではSimpleTestのコールバックの実行される順序がわからなかったので、調べた結果をメモしておきます。&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;下のようなコードを実行してみました。実際のテストメソッドは「testHige()」です。&lt;/p&gt;
 
@@ -406,12 +406,11 @@ end after
 
 &lt;p&gt;大まかに書くと「start() → startCase() → testHige() → endCase() → end()」の順に実施され、それぞれのメソッドの前後にbefore($method) と after($method) が呼び出されるようです。&lt;/p&gt;
 
-&lt;h3 id=&#34;参考:7c93c2bceb58597d643b29645d174b10&#34;&gt;参考&lt;/h3&gt;
+&lt;h3 id=&#34;参考&#34;&gt;参考&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://book.cakephp.org/ja/view/1206/CakeTestCase-Callback-Methods&#34;&gt;CakeTestCase Callback Methods :: テストの作成 :: テスト(Testing) :: CakePHPによる作業の定石 :: マニュアル :: 1.3コレクション :: The Cookbook&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
   </channel>

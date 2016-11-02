@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Apache on 1000g</title>
-    <link>http://1000k.github.io/categories/apache/</link>
-    <description>Recent content in Apache on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/categories/apache/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 28 Jan 2014 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/categories/apache/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -15,11 +15,9 @@
       <pubDate>Tue, 28 Jan 2014 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2014/01/28/how-to-access-apaches2-with-self-certification/</guid>
-      <description>
+      <description>&lt;p&gt;よくやるけどすぐ忘れるのでメモ。&lt;/p&gt;
 
-&lt;p&gt;よくやるけどすぐ忘れるのでメモ。&lt;/p&gt;
-
-&lt;h2 id=&#34;検証環境:1ec5ca8028cd506870889668379eecae&#34;&gt;検証環境&lt;/h2&gt;
+&lt;h2 id=&#34;検証環境&#34;&gt;検証環境&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;CentOS 6.3&lt;/li&gt;
@@ -28,7 +26,9 @@
 &lt;li&gt;httpd.conf に &lt;code&gt;Include conf.d/*.conf&lt;/code&gt; を書き、&lt;code&gt;/usr/local/apache2/conf.d/*.conf&lt;/code&gt; を自動ロードできるようにしてあります。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;チュートリアル:1ec5ca8028cd506870889668379eecae&#34;&gt;チュートリアル&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;チュートリアル&#34;&gt;チュートリアル&lt;/h2&gt;
 
 &lt;p&gt;オレオレ証明書を作る。(有効期限は10年)&lt;/p&gt;
 
@@ -64,13 +64,12 @@ EOT&amp;quot;
 
 &lt;p&gt;ダン！&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:1ec5ca8028cd506870889668379eecae&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://smokycat.info/ubuntu/440&#34;&gt;ubuntuにオレオレ証明書を入れてapacheにhttpsできるようにする話。 | smokycat.info&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/ozuma/20130511/1368284304&#34;&gt;オレオレ証明書をopensslで作る（詳細版） - ろば電子が詰まっている&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -79,9 +78,7 @@ EOT&amp;quot;
       <pubDate>Wed, 20 Mar 2013 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2013/03/20/workaround-when-static-file-in-shared-folder-can-not-be-loaded-correctly/</guid>
-      <description>
-
-&lt;p&gt;以下の環境でPHPアプリの開発を行っていたところ、静的コンテンツが正しく反映されない現象に陥りました。&lt;/p&gt;
+      <description>&lt;p&gt;以下の環境でPHPアプリの開発を行っていたところ、静的コンテンツが正しく反映されない現象に陥りました。&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Oracle VirtualBox で CentOS 6.3 VM を起動&lt;/li&gt;
@@ -110,7 +107,9 @@ Uncaught SyntaxError: Unexpected token ILLEGAL
 
 &lt;p&gt;原因は Apache の &lt;em&gt;EnableSendfile&lt;/em&gt; ディレクティブでした。&lt;/p&gt;
 
-&lt;h2 id=&#34;原因:b37b64915a4bf2c4cb4c44aab2bf62d1&#34;&gt;原因&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;原因&#34;&gt;原因&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://httpd.apache.org/docs/2.2/ja/mod/core.html#enablesendfile&#34;&gt;EnableSendfile ディレクティブ&lt;/a&gt; の説明には以下のように書いてあります。&lt;/p&gt;
 
@@ -122,7 +121,7 @@ Uncaught SyntaxError: Unexpected token ILLEGAL
 
 &lt;p&gt;つまり、VirtualBox で共有フォルダが NFS としてマウントされていると、ホストOSで行った変更が正しく反映されないことがあるようです。&lt;/p&gt;
 
-&lt;h2 id=&#34;直し方:b37b64915a4bf2c4cb4c44aab2bf62d1&#34;&gt;直し方&lt;/h2&gt;
+&lt;h2 id=&#34;直し方&#34;&gt;直し方&lt;/h2&gt;
 
 &lt;p&gt;&lt;em&gt;/etc/httpd/conf/httpd.conf&lt;/em&gt; に以下の1行を追加して、Apache を再起動すればOKです。&lt;/p&gt;
 
@@ -133,7 +132,7 @@ Uncaught SyntaxError: Unexpected token ILLEGAL
 
 &lt;p&gt;Vagrant + Chef で環境構築が楽にできるようになったから喜んで使っていたら、こんな罠があるとは。&lt;/p&gt;
 
-&lt;h2 id=&#34;補足-enablemmap-ディレクティブ:b37b64915a4bf2c4cb4c44aab2bf62d1&#34;&gt;補足: EnableMMAP ディレクティブ&lt;/h2&gt;
+&lt;h2 id=&#34;補足-enablemmap-ディレクティブ&#34;&gt;補足: EnableMMAP ディレクティブ&lt;/h2&gt;
 
 &lt;p&gt;私はまだ遭遇していないのですが、&lt;a href=&#34;http://httpd.apache.org/docs/2.2/ja/mod/core.html#enablemmap&#34;&gt;&lt;em&gt;EnableMMAP&lt;/em&gt; ディレクティブ&lt;/a&gt;も Apache をクラッシュさせる危険があるので、Offにしておいた方が良いそうです。&lt;/p&gt;
 
@@ -147,14 +146,13 @@ Uncaught SyntaxError: Unexpected token ILLEGAL
 EnableMMAP Off
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;参考:b37b64915a4bf2c4cb4c44aab2bf62d1&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://blog.flup.jp/2009/04/06/problem_of_using_shared_folder_to_document_root/&#34;&gt;DocumentRootに共有フォルダを使った場合の問題 - フリップフラップ&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://tipshare.info/view/4f3481ee4b21227814000001&#34;&gt;Virtualbox上のApacheでホストマシンと共有している静的ファイル（CSSなど）の更新が検知されない問題を解決する方法 | tipshare.info&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://httpd.apache.org/docs/2.2/ja/mod/core.html#enablemmap&#34;&gt;core - Apache HTTP サーバ&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -184,7 +182,7 @@ htpasswd.exe -bc {パスワード生成先のパス} {ID} {パスワード}
 
 &lt;p&gt;（上記のコマンドで生成されるパスワードはMD5）&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:cf50432cf2a4769fc0daace11f9afc31&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://d.hatena.ne.jp/ise_daisuke/20080412/1207978885&#34;&gt;xamppでローカルでBasic認証 - 絶対に読んではいけない日記&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -196,9 +194,7 @@ htpasswd.exe -bc {パスワード生成先のパス} {ID} {パスワード}
       <pubDate>Sun, 15 Jan 2012 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2012/01/15/installing-up-to-date-package-by-yum/</guid>
-      <description>
-
-&lt;p&gt;yum公式リポジトリ内の古いApacheやphpではなく、最新版をrpmで入れる方法です。&lt;/p&gt;
+      <description>&lt;p&gt;yum公式リポジトリ内の古いApacheやphpではなく、最新版をrpmで入れる方法です。&lt;/p&gt;
 
 &lt;p&gt;下記に記す非公式リポジトリを参照することで、最新のパッケージをyumでインストールできます。&lt;/p&gt;
 
@@ -209,9 +205,11 @@ htpasswd.exe -bc {パスワード生成先のパス} {ID} {パスワード}
 
 &lt;p&gt;なお、これらのサイトで配布されているパッケージの信頼性は公式のリポジトリのものより劣るので、利用の際には注意が必要です。&lt;/p&gt;
 
-&lt;h1 id=&#34;手順:f0d8039714e0227fd6e46c45b7c77e52&#34;&gt;手順&lt;/h1&gt;
+&lt;p&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;remiリポジトリ追加:f0d8039714e0227fd6e46c45b7c77e52&#34;&gt;Remiリポジトリ追加&lt;/h2&gt;
+&lt;h1 id=&#34;手順&#34;&gt;手順&lt;/h1&gt;
+
+&lt;h2 id=&#34;remiリポジトリ追加&#34;&gt;Remiリポジトリ追加&lt;/h2&gt;
 
 &lt;p&gt;RemiリポジトリはEPELリポジトリに依存しているため、両方追加する必要があります。&lt;/p&gt;
 
@@ -236,7 +234,7 @@ CentOS-Base.repo       CentOS-Media.repo  epel-testing.repo  remi.repo
 CentOS-Debuginfo.repo  CentOS-Vault.repo  epel.repo
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;utterリポジトリ追加:f0d8039714e0227fd6e46c45b7c77e52&#34;&gt;Utterリポジトリ追加&lt;/h2&gt;
+&lt;h2 id=&#34;utterリポジトリ追加&#34;&gt;Utterリポジトリ追加&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;/etc/yum.repos.d/utter.repo&lt;/strong&gt; を開き、下記のように編集します。&lt;/p&gt;
 
@@ -250,7 +248,7 @@ gpgkey=http://www.jasonlitka.com/media/RPM-GPG-KEY-jlitka
 
 &lt;p&gt;以上で、phpやhttpdの最新版がyumでインストールできるようになりました。&lt;/p&gt;
 
-&lt;h2 id=&#34;最新パッケージのインストール:f0d8039714e0227fd6e46c45b7c77e52&#34;&gt;最新パッケージのインストール&lt;/h2&gt;
+&lt;h2 id=&#34;最新パッケージのインストール&#34;&gt;最新パッケージのインストール&lt;/h2&gt;
 
 &lt;p&gt;yumコマンドに「-enablerepo={リポジトリ名}」オプションを付けることで、それぞれのリポジトリを参照できます。&lt;/p&gt;
 
@@ -301,7 +299,7 @@ Total download size: 3.4 M
 Is this ok [y/N]:
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;参考:f0d8039714e0227fd6e46c45b7c77e52&#34;&gt;参考&lt;/h1&gt;
+&lt;h1 id=&#34;参考&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://hoge001.exblog.jp/13982612/&#34;&gt;hoge001 : CentOS5.5 Apache 2.2.15 インストール&lt;/a&gt;&lt;/li&gt;
@@ -312,8 +310,7 @@ Is this ok [y/N]:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.goofoo.jp/2011/03/556&#34;&gt;yumでremiリポジトリを使えるようにする | グーフー WordPressのためのLinuxノート&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://pentan.info/server/linux/yum_new.html&#34;&gt;yumで、より新しいパッケージをインストールする方法(CentOS) - [yum/Linux [Red Hatなど]] ぺんたん info&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -343,7 +340,7 @@ Is this ok [y/N]:
 
 &lt;p&gt;これでApacheを再起動すれば、リダイレクトが成功するようになっています。&lt;/p&gt;
 
-&lt;h3 id=&#34;参考:44dfa8f56fa655b8b85093045fdbf75d&#34;&gt;参考&lt;/h3&gt;
+&lt;h3 id=&#34;参考&#34;&gt;参考&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://muumoo.jp/news/2006/04/06/0redirect.html&#34;&gt;URIのリダイレクト設定をやってみた(管理人日記) - むぅもぉ.jp&lt;/a&gt;&lt;/li&gt;
@@ -360,7 +357,7 @@ Is this ok [y/N]:
       <guid>http://1000k.github.io/2010/05/19/output-apache-log-by-hostname/</guid>
       <description>
 
-&lt;h2 id=&#34;目的:77765f74a92d10ae85948efc17fa953f&#34;&gt;目的&lt;/h2&gt;
+&lt;h2 id=&#34;目的&#34;&gt;目的&lt;/h2&gt;
 
 &lt;p&gt;&amp;ldquo;server001&amp;rdquo;, &amp;ldquo;server002&amp;rdquo;, …, &amp;ldquo;serverN&amp;rdquo; すべてで共通の httpd.conf を使い、それぞれのログファイルを &amp;ldquo;log/server001/access_log&amp;rdquo;, …, &amp;ldquo;log/serverN/access_log&amp;rdquo; に吐くようにしたい。&lt;/p&gt;
 
@@ -368,7 +365,7 @@ Is this ok [y/N]:
 
 &lt;p&gt;そんな人には以下の方法をおすすめします。&lt;/p&gt;
 
-&lt;h2 id=&#34;やり方:77765f74a92d10ae85948efc17fa953f&#34;&gt;やり方&lt;/h2&gt;
+&lt;h2 id=&#34;やり方&#34;&gt;やり方&lt;/h2&gt;
 
 &lt;p&gt;Apacheディレクトリ内の &lt;strong&gt;envvars&lt;/strong&gt; というファイルに記述することで、OSの環境変数を conf ファイルに渡すことができることを利用します。&lt;/p&gt;
 
@@ -395,7 +392,7 @@ CustomLog &amp;quot;logs/${HOSTNAME}_access_log&amp;quot; common
 &lt;li&gt;Apacheを再起動する&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;参考:77765f74a92d10ae85948efc17fa953f&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://wall-climb.com/2009/05/29/httpd-conf%E5%86%85%E3%81%A7%E5%A4%89%E6%95%B0%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B/&#34;&gt;wall-climb » httpd.conf内で変数を利用する&lt;/a&gt;&lt;/li&gt;

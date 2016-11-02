@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>メモ on 1000g</title>
-    <link>http://1000k.github.io/tags/%E3%83%A1%E3%83%A2/</link>
-    <description>Recent content in メモ on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/%E3%83%A1%E3%83%A2/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 18 Jul 2013 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/%E3%83%A1%E3%83%A2/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -15,9 +15,7 @@
       <pubDate>Thu, 18 Jul 2013 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2013/07/18/summary-of-agile-conference-tokyo-2013/</guid>
-      <description>
-
-&lt;p&gt;Agile Conference Tokyo 2013 のまとめ&lt;/p&gt;
+      <description>&lt;p&gt;Agile Conference Tokyo 2013 のまとめ&lt;/p&gt;
 
 &lt;p&gt;&lt;sup&gt;7&lt;/sup&gt;&amp;frasl;&lt;sub&gt;17&lt;/sub&gt; に開催された &lt;a href=&#34;http://pw.tech-arts.co.jp/act2013/&#34;&gt;Agile Conference tokyo 2013&lt;/a&gt; に参加してきました。10時から18時までひたすら座学で激しく消耗しましたが、得るものも多かったです。&lt;/p&gt;
 
@@ -37,7 +35,9 @@
 
 &lt;p&gt;以下、各セッション毎に重要だと感じたことをまとめます。&lt;/p&gt;
 
-&lt;h2 id=&#34;オープニング:29d91c6d9de33ba41ab60dac9e5e82f1&#34;&gt;オープニング&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;オープニング&#34;&gt;オープニング&lt;/h2&gt;
 
 &lt;p&gt;Mihn Le 氏 (株式会社テクノロジックアート 取締役副社長)&lt;/p&gt;
 
@@ -64,7 +64,7 @@
 &lt;li&gt;アジャイルをやることになったら、_トップボトムで_全員が正しくアジャイルのことを学習しなければならない。また、なにをやっているのか見えるようにしなければならない。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;基調講演-戦略としてのカンバン-ビジネスイノベーションのために:29d91c6d9de33ba41ab60dac9e5e82f1&#34;&gt;基調講演: 戦略としてのカンバン：ビジネスイノベーションのために&lt;/h2&gt;
+&lt;h2 id=&#34;基調講演-戦略としてのカンバン-ビジネスイノベーションのために&#34;&gt;基調講演: 戦略としてのカンバン：ビジネスイノベーションのために&lt;/h2&gt;
 
 &lt;p&gt;Kraig T.Parkinsons 氏 (ThoughtWorks Inc. Principal Consultant)&lt;/p&gt;
 
@@ -77,7 +77,7 @@
 &lt;li&gt;どうすれば企業が常にイノベーションを起こせるのか？それには_イノベーションをルーチン化しなければならない_。一度ヒットをとばしても、それをイノベートし続けなければすぐに陳腐化してしまう。ThoughWorks ではカンバンを使ってこれを実現している。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;カンバンの理念:29d91c6d9de33ba41ab60dac9e5e82f1&#34;&gt;カンバンの理念&lt;/h3&gt;
+&lt;h3 id=&#34;カンバンの理念&#34;&gt;カンバンの理念&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;原則1: 「ストーリーを知っている」と仮定しない
@@ -104,7 +104,7 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;実際にtwが始めたこと:29d91c6d9de33ba41ab60dac9e5e82f1&#34;&gt;実際にTWが始めたこと&lt;/h3&gt;
+&lt;h3 id=&#34;実際にtwが始めたこと&#34;&gt;実際にTWが始めたこと&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;ダイバージェント（発散的）な思考プロセス → 収束的な思考プロセス
@@ -121,7 +121,7 @@
 &lt;li&gt;デリバリーチームがより発散的なアイディアを出せるようにサポートする。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;どうすればこれができるようになるか:29d91c6d9de33ba41ab60dac9e5e82f1&#34;&gt;どうすればこれができるようになるか？&lt;/h3&gt;
+&lt;h3 id=&#34;どうすればこれができるようになるか&#34;&gt;どうすればこれができるようになるか？&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;誰でも参加できる社風を作る。&lt;/li&gt;
@@ -161,7 +161,7 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;セッション1-アジャイルな企業のto-beモデルを提示するscaled-agile-framework-safe:29d91c6d9de33ba41ab60dac9e5e82f1&#34;&gt;セッション1: アジャイルな企業のTo Beモデルを提示するScaled Agile Framework (SAFe)&lt;/h2&gt;
+&lt;h2 id=&#34;セッション1-アジャイルな企業のto-beモデルを提示するscaled-agile-framework-safe&#34;&gt;セッション1: アジャイルな企業のTo Beモデルを提示するScaled Agile Framework (SAFe)&lt;/h2&gt;
 
 &lt;p&gt;藤井 拓氏 (オージス総研 技術部アジャイル開発センター センター長)&lt;/p&gt;
 
@@ -179,7 +179,7 @@
 &lt;li&gt;技術的プラクティスはXP。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;セッション2-スクラムと品質-日本マイクロソフト提供セッションー日本のアジャイル実践の現場から:29d91c6d9de33ba41ab60dac9e5e82f1&#34;&gt;セッション2: スクラムと品質 （日本マイクロソフト提供セッションー日本のアジャイル実践の現場から）&lt;/h2&gt;
+&lt;h2 id=&#34;セッション2-スクラムと品質-日本マイクロソフト提供セッションー日本のアジャイル実践の現場から&#34;&gt;セッション2: スクラムと品質 （日本マイクロソフト提供セッションー日本のアジャイル実践の現場から）&lt;/h2&gt;
 
 &lt;p&gt;細谷 泰夫氏 （三菱電機株式会社 通信機製作所、TFSUG立ち上げスタッフ）&lt;/p&gt;
 
@@ -207,29 +207,29 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;特別講演-エンタープライズ規模におけるカンバンの運用:29d91c6d9de33ba41ab60dac9e5e82f1&#34;&gt;特別講演: エンタープライズ規模におけるカンバンの運用&lt;/h2&gt;
+&lt;h2 id=&#34;特別講演-エンタープライズ規模におけるカンバンの運用&#34;&gt;特別講演: エンタープライズ規模におけるカンバンの運用&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;高木 徹 氏（株式会社豊田マネジメント研究所　副社長）&lt;/li&gt;
 &lt;li&gt;三井 伸行氏（株式会社戦略スタッフ・サービス　取締役）&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;日本のit業界の現状:29d91c6d9de33ba41ab60dac9e5e82f1&#34;&gt;日本のIT業界の現状&lt;/h3&gt;
+&lt;h3 id=&#34;日本のit業界の現状&#34;&gt;日本のIT業界の現状&lt;/h3&gt;
 
 &lt;p&gt;90% 以上が質が不足と回答。特にプロジェクトマネジメントが 62.5% 不足。&lt;/p&gt;
 
-&lt;h3 id=&#34;なぜマネジメントが低下した:29d91c6d9de33ba41ab60dac9e5e82f1&#34;&gt;なぜマネジメントが低下した？&lt;/h3&gt;
+&lt;h3 id=&#34;なぜマネジメントが低下した&#34;&gt;なぜマネジメントが低下した？&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;統制型マネジメントの崩壊&lt;/li&gt;
 &lt;li&gt;自律的に動ける人材が育っていない&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;アジャイル開発の土壌を醸成する:29d91c6d9de33ba41ab60dac9e5e82f1&#34;&gt;アジャイル開発の土壌を醸成する&lt;/h3&gt;
+&lt;h3 id=&#34;アジャイル開発の土壌を醸成する&#34;&gt;アジャイル開発の土壌を醸成する&lt;/h3&gt;
 
 &lt;p&gt;「上司が変わると仕事のやり方が変わる」のはダメ。&lt;/p&gt;
 
-&lt;h3 id=&#34;エンタープライズにおけるカンバンの進化:29d91c6d9de33ba41ab60dac9e5e82f1&#34;&gt;エンタープライズにおけるカンバンの進化&lt;/h3&gt;
+&lt;h3 id=&#34;エンタープライズにおけるカンバンの進化&#34;&gt;エンタープライズにおけるカンバンの進化&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;カンバンに貼り出すことで、個々人が持っている暗黙知が可視化され、議論可能になる。&lt;/li&gt;
@@ -239,7 +239,7 @@
 
 &lt;p&gt;自分やチームの仕事を写像→カンバンに見える化→暗黙知が形式知に置き換えられる→カイゼンのための会話が生まれる→修正した形式知に従ってやってみる→ツールを見て仕事をする（暗黙化）→カイゼンのアイディアを写像→…&lt;/p&gt;
 
-&lt;h3 id=&#34;アジャイルプロセス適用のステップ:29d91c6d9de33ba41ab60dac9e5e82f1&#34;&gt;アジャイルプロセス適用のステップ&lt;/h3&gt;
+&lt;h3 id=&#34;アジャイルプロセス適用のステップ&#34;&gt;アジャイルプロセス適用のステップ&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;ステージ１: 「自分たちがまずどうなりたいのか」を自分たちで見える化する。
@@ -254,7 +254,7 @@
 &lt;li&gt;ステージ2: 事業方針に展開する。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;適用のポイント:29d91c6d9de33ba41ab60dac9e5e82f1&#34;&gt;適用のポイント&lt;/h3&gt;
+&lt;h3 id=&#34;適用のポイント&#34;&gt;適用のポイント&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;経営幹部が組織を変えたいのかどうか確かめ、それをどう落とし込んでいくのか考える。&lt;/li&gt;
@@ -268,27 +268,27 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;セッション3-大規模分散アジャイルを支えるプラットフォーム:29d91c6d9de33ba41ab60dac9e5e82f1&#34;&gt;セッション3: 大規模分散アジャイルを支えるプラットフォーム&lt;/h2&gt;
+&lt;h2 id=&#34;セッション3-大規模分散アジャイルを支えるプラットフォーム&#34;&gt;セッション3: 大規模分散アジャイルを支えるプラットフォーム&lt;/h2&gt;
 
 &lt;p&gt;上村 務氏(日本アイ・ビー・エム株式会社)&lt;/p&gt;
 
 &lt;p&gt;IBM が使っている大規模分散開発用のアジャイルフレームワークの説明。ほとんど Rational 製品の解説だけで終わっていました。&lt;/p&gt;
 
-&lt;h2 id=&#34;セッション4-コンパクトなチームでのアジャイル開発とその実践:29d91c6d9de33ba41ab60dac9e5e82f1&#34;&gt;セッション4: コンパクトなチームでのアジャイル開発とその実践&lt;/h2&gt;
+&lt;h2 id=&#34;セッション4-コンパクトなチームでのアジャイル開発とその実践&#34;&gt;セッション4: コンパクトなチームでのアジャイル開発とその実践&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;及川 喜之氏(株式会社セールスフォース・ドットコム)&lt;/li&gt;
 &lt;li&gt;堀 譲治氏(株式会社シャノン)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;salesforce-のスクラムチーム:29d91c6d9de33ba41ab60dac9e5e82f1&#34;&gt;SalesForce のスクラムチーム&lt;/h3&gt;
+&lt;h3 id=&#34;salesforce-のスクラムチーム&#34;&gt;SalesForce のスクラムチーム&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;100以上のスクラムチームがある。&lt;/li&gt;
 &lt;li&gt;「Salesforce Agile」でググればスライドがいっぱい出てくるよ！&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;シャノンで使っているツール:29d91c6d9de33ba41ab60dac9e5e82f1&#34;&gt;シャノンで使っているツール&lt;/h3&gt;
+&lt;h3 id=&#34;シャノンで使っているツール&#34;&gt;シャノンで使っているツール&lt;/h3&gt;
 
 &lt;p&gt;基本的にOSSや無料パッケージの組み合わせ。&lt;/p&gt;
 
@@ -299,7 +299,7 @@
 &lt;li&gt;Google talk, IRC, Skype&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;pivotal-tracker:29d91c6d9de33ba41ab60dac9e5e82f1&#34;&gt;Pivotal Tracker&lt;/h4&gt;
+&lt;h4 id=&#34;pivotal-tracker&#34;&gt;Pivotal Tracker&lt;/h4&gt;
 
 &lt;p&gt;Googleスプレッドシートでストーリー管理していたが、以下の理由で限界を迎えたので使い始めた。&lt;/p&gt;
 
@@ -325,7 +325,7 @@
 &lt;li&gt;ほかのツールとの統合が容易&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;github-enterprise:29d91c6d9de33ba41ab60dac9e5e82f1&#34;&gt;GitHub Enterprise&lt;/h4&gt;
+&lt;h4 id=&#34;github-enterprise&#34;&gt;GitHub Enterprise&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;外部ツールとのインテグレーションが充実&lt;/li&gt;
@@ -333,7 +333,7 @@
 &lt;li&gt;統計ツール、グラフが充実 → ふりかえりに数値的裏付けが使えるようになった&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;jenkinsを使ったci:29d91c6d9de33ba41ab60dac9e5e82f1&#34;&gt;Jenkinsを使ったCI&lt;/h4&gt;
+&lt;h4 id=&#34;jenkinsを使ったci&#34;&gt;Jenkinsを使ったCI&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;自動テスト、コードカバレッジ監視、デプロイ、Seleniumのキックで利用&lt;/li&gt;
@@ -345,7 +345,7 @@
 
 &lt;p&gt;透明化、自動化ができた。&lt;/p&gt;
 
-&lt;h4 id=&#34;heroku:29d91c6d9de33ba41ab60dac9e5e82f1&#34;&gt;Heroku&lt;/h4&gt;
+&lt;h4 id=&#34;heroku&#34;&gt;Heroku&lt;/h4&gt;
 
 &lt;p&gt;AWS を使いたくても、エンタープライズ向けの必須要件 (セキュリティ、パフォーマンス、SLA、…) をクリアさせることができない。&lt;/p&gt;
 
@@ -364,7 +364,7 @@
 &lt;li&gt;運用をかなり簡素化できる。高度なインフラ知識が無くても十分運用できる。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;セッション5-事例から見るアジャイルの失敗と成功-二度とアジャイルはやりたくなかった人が語るアジャイルの成功ポイント:29d91c6d9de33ba41ab60dac9e5e82f1&#34;&gt;セッション5: 事例から見るアジャイルの失敗と成功 （二度とアジャイルはやりたくなかった人が語るアジャイルの成功ポイント）&lt;/h2&gt;
+&lt;h2 id=&#34;セッション5-事例から見るアジャイルの失敗と成功-二度とアジャイルはやりたくなかった人が語るアジャイルの成功ポイント&#34;&gt;セッション5: 事例から見るアジャイルの失敗と成功 （二度とアジャイルはやりたくなかった人が語るアジャイルの成功ポイント）&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;平岡 嗣晃氏（株式会社　日立ソリューションズ）&lt;/li&gt;
@@ -373,7 +373,7 @@
 
 &lt;p&gt;日立ソリューションズの失敗事例と成功事例。&lt;/p&gt;
 
-&lt;h3 id=&#34;プロセス:29d91c6d9de33ba41ab60dac9e5e82f1&#34;&gt;プロセス&lt;/h3&gt;
+&lt;h3 id=&#34;プロセス&#34;&gt;プロセス&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;プレーンなアジャイル&lt;/li&gt;
@@ -386,7 +386,7 @@
 &lt;li&gt;ウォーターフォール&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;2007年の失敗:29d91c6d9de33ba41ab60dac9e5e82f1&#34;&gt;2007年の失敗&lt;/h3&gt;
+&lt;h3 id=&#34;2007年の失敗&#34;&gt;2007年の失敗&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;本のとおりにやってみようとした。
@@ -401,7 +401,7 @@
 
 &lt;p&gt;2度とアジャイルやりたくないと思った。&lt;/p&gt;
 
-&lt;h3 id=&#34;2012年の成功:29d91c6d9de33ba41ab60dac9e5e82f1&#34;&gt;2012年の成功&lt;/h3&gt;
+&lt;h3 id=&#34;2012年の成功&#34;&gt;2012年の成功&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;なぜアジャイル開発を行うのか？目的を明確化した。
@@ -416,7 +416,7 @@
 &lt;li&gt;変更を受け入れるための進捗には「ゆとり」を持たせて計画する。バッファ。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;ポイント:29d91c6d9de33ba41ab60dac9e5e82f1&#34;&gt;ポイント&lt;/h3&gt;
+&lt;h3 id=&#34;ポイント&#34;&gt;ポイント&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;TDD はいきなりやれと言われても絶対できない。
@@ -444,8 +444,7 @@
 &lt;li&gt;残業を認めず、時間内にやり遂げることが必要。&lt;/li&gt;
 &lt;li&gt;「3ヶ月は続けられない」というアンケート結果が多かった。ずっとアジャイルは無理という印象。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
   </channel>

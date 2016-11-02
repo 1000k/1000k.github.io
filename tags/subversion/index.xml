@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Subversion on 1000g</title>
-    <link>http://1000k.github.io/tags/subversion/</link>
-    <description>Recent content in Subversion on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/subversion/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 25 Jul 2013 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/subversion/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -15,9 +15,7 @@
       <pubDate>Thu, 25 Jul 2013 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2013/07/25/what-to-do-if-you-can-not-switch-and-merge-in-subversion-17/</guid>
-      <description>
-
-&lt;p&gt;Subversion 1.7.10 をソースからインストールしたら、&lt;code&gt;svn switch&lt;/code&gt; や &lt;code&gt;svn merge&lt;/code&gt; が以下のエラーを吐いて失敗するようになってしまいました。&lt;/p&gt;
+      <description>&lt;p&gt;Subversion 1.7.10 をソースからインストールしたら、&lt;code&gt;svn switch&lt;/code&gt; や &lt;code&gt;svn merge&lt;/code&gt; が以下のエラーを吐いて失敗するようになってしまいました。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;# svn merge https://uso.com/svn/mojamoja/2.13.1
 ...
@@ -27,7 +25,9 @@ svn: E200007: Trying to use an unsupported feature
 
 &lt;p&gt;直し方をメモしておきます。&lt;/p&gt;
 
-&lt;h2 id=&#34;原因:b3d12b85aa6526b84cee44966cb0c763&#34;&gt;原因&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;原因&#34;&gt;原因&lt;/h2&gt;
 
 &lt;p&gt;Subversion は内部の HTTP/HTTPS クライアントとして serf または neon を使います。Configure オプションを特に指定しない場合は serf が使われるようですが、これに不具合があったようです。&lt;/p&gt;
 
@@ -44,7 +44,7 @@ svn, version 1.7.10 (r1485443)
 
 &lt;p&gt;「serf が http と https をハンドルするぜ」と書いていますが、実際には E200007 エラーを吐いて止まります。&lt;/p&gt;
 
-&lt;h2 id=&#34;対策:b3d12b85aa6526b84cee44966cb0c763&#34;&gt;対策&lt;/h2&gt;
+&lt;h2 id=&#34;対策&#34;&gt;対策&lt;/h2&gt;
 
 &lt;p&gt;もう一つの選択肢である neon を使うようにしたら、問題なく動作するようになりました。&lt;/p&gt;
 
@@ -87,7 +87,7 @@ svn, version 1.7.10 (r1485443)
 
 &lt;p&gt;&lt;code&gt;handles &#39;https&#39; scheme&lt;/code&gt; と出力されない時は、&lt;code&gt;--with-ssl&lt;/code&gt; を付け忘れています。それでは https 通信ができないので、再コンパイルしてください。&lt;/p&gt;
 
-&lt;h2 id=&#34;余談:b3d12b85aa6526b84cee44966cb0c763&#34;&gt;余談&lt;/h2&gt;
+&lt;h2 id=&#34;余談&#34;&gt;余談&lt;/h2&gt;
 
 &lt;p&gt;今回とは逆で、「neon だとエラーになるが serf なら大丈夫だった」という事例もありました。&lt;/p&gt;
 
@@ -97,14 +97,13 @@ svn, version 1.7.10 (r1485443)
 
 &lt;p&gt;奇妙です。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:b3d12b85aa6526b84cee44966cb0c763&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://blog.iss.ms/2009/04/12/141537&#34;&gt;[memo][svn] svnクライアントにSSLをサポートさせる « いわぶろ（ろてん）&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://blog.r-unit.co.jp/archives/726&#34;&gt;はだかの隊長日記 » Subversionコンパイル方法&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://masutaka.net/chalow/2009-06-15-1.html&#34;&gt;Debian squeeze の subversion で http リポジトリにアクセスできなくなった / マスタカの ChangeLog メモ&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -140,7 +139,7 @@ svn, version 1.7.10 (r1485443)
 
 &lt;p&gt;となっています。&lt;/p&gt;
 
-&lt;h1 id=&#34;参考:8ae62bd64dbb38a5a9b5b7de400f164f&#34;&gt;参考&lt;/h1&gt;
+&lt;h1 id=&#34;参考&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://openlab.dino.co.jp/2007/10/23/184825129.html&#34;&gt;svn diffで-wオプションを使う — ディノオープンラボラトリ&lt;/a&gt;&lt;/li&gt;
@@ -190,7 +189,7 @@ store-plaintext-passwords = no
 
 &lt;p&gt;セキュリティリスクになるので消してしまいましょう。&lt;/p&gt;
 
-&lt;h1 id=&#34;参考:a8b04d0b8996e9714afe4865fd320deb&#34;&gt;参考&lt;/h1&gt;
+&lt;h1 id=&#34;参考&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.linuxforu.com/previews/subversion-16-security-improvements-illustrated/&#34;&gt;Subversion 1.6: Security Improvements Illustrated – LINUX For You Magazine&lt;/a&gt;&lt;/li&gt;
@@ -205,17 +204,17 @@ store-plaintext-passwords = no
       <pubDate>Wed, 27 Oct 2010 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2010/10/27/auto-versioning-in-tortoisesvn/</guid>
-      <description>
-
-&lt;p&gt;オープンソースのコードを見ていると、リビジョン番号などがソースに記載してあるケースがよくあります。&lt;/p&gt;
+      <description>&lt;p&gt;オープンソースのコードを見ていると、リビジョン番号などがソースに記載してあるケースがよくあります。&lt;/p&gt;
 
 &lt;p&gt;どうやら Subversion（や CVS）で実現できるようです。&lt;/p&gt;
 
 &lt;p&gt;私は基本的に Windows で TortoiseSVN を使ってリポジトリのやりとりをしているので、その設定方法をメモしておきます。&lt;/p&gt;
 
-&lt;h2 id=&#34;手順:9b148e080555f5a4ead4adee49ce465c&#34;&gt;手順&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;1-tortoisesvnの設定:9b148e080555f5a4ead4adee49ce465c&#34;&gt;1.TortoiseSVNの設定&lt;/h3&gt;
+&lt;h2 id=&#34;手順&#34;&gt;手順&lt;/h2&gt;
+
+&lt;h3 id=&#34;1-tortoisesvnの設定&#34;&gt;1.TortoiseSVNの設定&lt;/h3&gt;
 
 &lt;p&gt;今回は例としてPHPファイルが自動変換されるよう設定します。&lt;/p&gt;
 
@@ -231,7 +230,7 @@ store-plaintext-passwords = no
 *.php = svn:keywords=Id Date Author Rev
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;2-対象ファイルにsvnキーワードを埋め込む:9b148e080555f5a4ead4adee49ce465c&#34;&gt;2.対象ファイルにsvnキーワードを埋め込む&lt;/h3&gt;
+&lt;h3 id=&#34;2-対象ファイルにsvnキーワードを埋め込む&#34;&gt;2.対象ファイルにsvnキーワードを埋め込む&lt;/h3&gt;
 
 &lt;p&gt;キーワードは「&lt;strong&gt;$Id$&lt;/strong&gt;」のように、「$」で囲みます。&lt;/p&gt;
 
@@ -249,7 +248,7 @@ class Uso
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;3-コミットしてみる:9b148e080555f5a4ead4adee49ce465c&#34;&gt;3.コミットしてみる&lt;/h3&gt;
+&lt;h3 id=&#34;3-コミットしてみる&#34;&gt;3.コミットしてみる&lt;/h3&gt;
 
 &lt;p&gt;ファイルをコミットしてみて、リポジトリブラウザで参照して置換されていれば成功です。&lt;/p&gt;
 
@@ -265,7 +264,7 @@ class Uso
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;注意:9b148e080555f5a4ead4adee49ce465c&#34;&gt;注意&lt;/h2&gt;
+&lt;h2 id=&#34;注意&#34;&gt;注意&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;自動置換は上記設定を行った以後に作られたファイルのみに行われます。&lt;/strong&gt;&lt;/p&gt;
 
@@ -280,14 +279,13 @@ class Uso
 
 &lt;p&gt;これで、ファイルをコミットすると自動でキーワードが置換されるようになります。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:9b148e080555f5a4ead4adee49ce465c&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://wiki.bit-hive.com/tomizoo/pg/Subversion%20%A5%AD%A1%BC%A5%EF%A1%BC%A5%C9%A4%CE%C5%B8%B3%AB&#34;&gt;Subversion キーワードの展開 - とみぞーノート&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://bokunomichi.blogspot.com/2007/03/subversiontortoisesvn.html&#34;&gt;僕の道(仮)　devlog: Subversion　クライアントの設定（TortoiseSVN）&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://cheebow.info/chemt/archives/2006/03/tortoisesvn.html&#34;&gt;ヒビノアワ: TortoiseSVNでキーワードアンカーの設定をする&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
   </channel>

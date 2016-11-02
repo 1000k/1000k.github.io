@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>運用 on 1000g</title>
-    <link>http://1000k.github.io/tags/%E9%81%8B%E7%94%A8/</link>
-    <description>Recent content in 運用 on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/%E9%81%8B%E7%94%A8/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 28 Sep 2011 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/%E9%81%8B%E7%94%A8/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -39,7 +39,7 @@
 $ kill {上で出てきたpid}
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;参考:981194324cf5b426a797d33ec4db9e80&#34;&gt;参考&lt;/h1&gt;
+&lt;h1 id=&#34;参考&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://babyp.blog55.fc2.com/blog-entry-446.html&#34;&gt;サーバのリソースを定期的に出力しとく方法：なんとなしの日記&lt;/a&gt;&lt;/li&gt;

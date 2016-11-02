@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sqlite on 1000g</title>
-    <link>http://1000k.github.io/tags/sqlite/</link>
-    <description>Recent content in Sqlite on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/sqlite/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 11 Nov 2011 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/sqlite/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -21,7 +21,7 @@
 
 &lt;p&gt;いきなり結論を書くと、&lt;strong&gt;「あるPDOオブジェクトからは、別のPDOオブジェクトが作成したインメモリDBには接続できない」&lt;/strong&gt;ようです。&lt;/p&gt;
 
-&lt;h1 id=&#34;テストコード:79219f7f66a89108f263ed750ab9ba1c&#34;&gt;テストコード&lt;/h1&gt;
+&lt;h1 id=&#34;テストコード&#34;&gt;テストコード&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;lt;?php
 /**
@@ -54,7 +54,7 @@ try {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;結果:79219f7f66a89108f263ed750ab9ba1c&#34;&gt;結果&lt;/h1&gt;
+&lt;h1 id=&#34;結果&#34;&gt;結果&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code&gt;Array
 (
@@ -78,7 +78,7 @@ Cannot fetch data via $pdo2.
 
 &lt;p&gt;どちらも同じ「sqlite::memory:」ですが、見ている領域は異なるようです。&lt;/p&gt;
 
-&lt;h1 id=&#34;考察:79219f7f66a89108f263ed750ab9ba1c&#34;&gt;考察&lt;/h1&gt;
+&lt;h1 id=&#34;考察&#34;&gt;考察&lt;/h1&gt;
 
 &lt;p&gt;インメモリDB内に作ったテーブルに、複数のPDOオブジェクトからアクセスすることはできませんでした。&lt;/p&gt;
 
@@ -92,13 +92,11 @@ Cannot fetch data via $pdo2.
       <pubDate>Tue, 06 Jul 2010 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2010/07/06/cakephp-official-tutorial-using-sqlite3/</guid>
-      <description>
-
-&lt;h3 id=&#34;このチュートリアルの目的:c559210a78aceddc33ab13f880a8e277&#34;&gt;このチュートリアルの目的&lt;/h3&gt;
+      <description>&lt;h3 id=&#34;このチュートリアルの目的&#34;&gt;このチュートリアルの目的&lt;/h3&gt;
 
 &lt;p&gt;一つの CakePHP コアに複数のアプリケーションを同居させる方法を学べます。DB を作って database.php を作成すれば、あとはbakeするだけで基本的な画面が出来上がります。&lt;/p&gt;
 
-&lt;h3 id=&#34;公式チュートリアルと今回のやり方の違い:c559210a78aceddc33ab13f880a8e277&#34;&gt;公式チュートリアルと今回のやり方の違い&lt;/h3&gt;
+&lt;h3 id=&#34;公式チュートリアルと今回のやり方の違い&#34;&gt;公式チュートリアルと今回のやり方の違い&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://book.cakephp.org/view/1527/Tutorials-Examples&#34;&gt;公式チュートリアル&lt;/a&gt;&lt;/p&gt;
 
@@ -112,7 +110,9 @@ Cannot fetch data via $pdo2.
 &lt;li&gt;Model/View/Controller は bake して作る&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;作成環境:c559210a78aceddc33ab13f880a8e277&#34;&gt;作成環境&lt;/h3&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;作成環境&#34;&gt;作成環境&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;CakePHP 1.3.2&lt;/li&gt;
@@ -146,13 +146,13 @@ Cannot fetch data via $pdo2.
 &lt;/table&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;手順:c559210a78aceddc33ab13f880a8e277&#34;&gt;手順&lt;/h3&gt;
+&lt;h3 id=&#34;手順&#34;&gt;手順&lt;/h3&gt;
 
-&lt;h4 id=&#34;1-sqlite3を使うための-dbo-sqlite3-php-を導入する:c559210a78aceddc33ab13f880a8e277&#34;&gt;1. SQLite3を使うための dbo_sqlite3.php を導入する&lt;/h4&gt;
+&lt;h4 id=&#34;1-sqlite3を使うための-dbo-sqlite3-php-を導入する&#34;&gt;1. SQLite3を使うための dbo_sqlite3.php を導入する&lt;/h4&gt;
 
 &lt;p&gt;導入先: &lt;strong&gt;{インストールディレクトリ}/cake/libs/model/datasources/dbo/dbo_sqlite3.php&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h4 id=&#34;2-コンソールからblogアプリをbakeする:c559210a78aceddc33ab13f880a8e277&#34;&gt;2. コンソールからblogアプリをbakeする&lt;/h4&gt;
+&lt;h4 id=&#34;2-コンソールからblogアプリをbakeする&#34;&gt;2. コンソールからblogアプリをbakeする&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code&gt;cd c:\xampp\htdocs\cake
 mkdir blog
@@ -235,7 +235,7 @@ Creating file c:\xampp\htdocs\cake\blog\config\database.php
 Wrote `c:\xampp\htdocs\cake\blog\config\database.php`
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id=&#34;3-dbファイルを作成し-テーブルとテストデータを作成する:c559210a78aceddc33ab13f880a8e277&#34;&gt;3. DBファイルを作成し、テーブルとテストデータを作成する&lt;/h4&gt;
+&lt;h4 id=&#34;3-dbファイルを作成し-テーブルとテストデータを作成する&#34;&gt;3. DBファイルを作成し、テーブルとテストデータを作成する&lt;/h4&gt;
 
 &lt;p&gt;DBの作成先: &lt;strong&gt;{インストールディレクトリ}/blog/db/blog.sqlite3&lt;/strong&gt;&lt;/p&gt;
 
@@ -256,7 +256,7 @@ INSERT INTO posts (title,body,created) VALUES (&#39;A title once again&#39;, &#3
 INSERT INTO posts (title,body,created) VALUES (&#39;Title strikes back&#39;, &#39;This is really exciting! Not.&#39;, datetime(&amp;quot;now&amp;quot;, &amp;quot;localtime&amp;quot;));
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id=&#34;4-database-phpを編集する:c559210a78aceddc33ab13f880a8e277&#34;&gt;4. database.phpを編集する&lt;/h4&gt;
+&lt;h4 id=&#34;4-database-phpを編集する&#34;&gt;4. database.phpを編集する&lt;/h4&gt;
 
 &lt;p&gt;編集するファイル: &lt;strong&gt;{インストールディレクトリ}/blog/config/database.php&lt;/strong&gt;&lt;/p&gt;
 
@@ -283,7 +283,7 @@ class DATABASE_CONFIG {
 &lt;li&gt;&lt;a href=&#34;http://www.itsmemo.com/it/web/000173.html&#34;&gt;動的ページを静的ページのように見せる方法 - ItsMemo::IT (旧)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;5-model-view-controllerをbakeする:c559210a78aceddc33ab13f880a8e277&#34;&gt;5. Model/View/Controllerをbakeする&lt;/h4&gt;
+&lt;h4 id=&#34;5-model-view-controllerをbakeする&#34;&gt;5. Model/View/Controllerをbakeする&lt;/h4&gt;
 
 &lt;p&gt;チュートリアルだと「/cake/console/にPATHを設定しろ」と書いていますが、面倒なのでやってません。&lt;/p&gt;
 
@@ -295,10 +295,9 @@ class DATABASE_CONFIG {
 
 &lt;p&gt;この後、何をするか対話式ダイアログで聞かれるので、「M」→「C」→「V」の順に作成してください。（Controllerより先にViewを作ろうとすると「まだControllerがないから作れません」と言われます）&lt;/p&gt;
 
-&lt;h3 id=&#34;6-完成:c559210a78aceddc33ab13f880a8e277&#34;&gt;6. 完成&lt;/h3&gt;
+&lt;h3 id=&#34;6-完成&#34;&gt;6. 完成&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://localhost/cake/blog/posts&#34;&gt;http://localhost/cake/blog/posts&lt;/a&gt; にアクセスすると、画面ができあがってます。&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;a href=&#34;http://localhost/cake/blog/posts&#34;&gt;http://localhost/cake/blog/posts&lt;/a&gt; にアクセスすると、画面ができあがってます。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -382,7 +381,7 @@ class DboSqlite3 extends DboSource {
 
 &lt;p&gt;ちょっと改造すれば使えるようになったので、やり方を共有します。&lt;/p&gt;
 
-&lt;h3 id=&#34;手順:4c4c0989caf014b5d7d6c918a32b9dd5&#34;&gt;手順&lt;/h3&gt;
+&lt;h3 id=&#34;手順&#34;&gt;手順&lt;/h3&gt;
 
 &lt;ol&gt;
 &lt;li&gt;/system/database/drivers/pdo/pdo_driver.php 内に、下記メソッドを追加する。（このメソッドはMySQLドライバ内の同一メソッドをSQLite用に修正したものです）&lt;/li&gt;
@@ -438,7 +437,7 @@ if (isset($row[&#39;COLUMN_NAME&#39;]) || isset($row[&#39;name&#39;]))
 
 &lt;p&gt;以下に、ドライバーの導入手順を示します。&lt;/p&gt;
 
-&lt;h3 id=&#34;手順:780c545c6d70fccec367c9bf61e4dac3&#34;&gt;手順&lt;/h3&gt;
+&lt;h3 id=&#34;手順&#34;&gt;手順&lt;/h3&gt;
 
 &lt;p&gt;※CodeIgniter 1.7.2 用です。それより前のバージョンだと導入するドライバが違うかもしれないので、&lt;a href=&#34;http://codeigniter.com/wiki/PDO_SQLite3/&#34;&gt;Wiki | CodeIgniter&lt;/a&gt;あたりを読んでください。&lt;/p&gt;
 
@@ -466,7 +465,7 @@ $db[&#39;default&#39;][&#39;dbprefix&#39;] = &amp;quot;&amp;quot;;
 
 &lt;p&gt;と書いてみて、「pdo 3.6.20」などと出力されればOK。&lt;/p&gt;
 
-&lt;h3 id=&#34;参考:780c545c6d70fccec367c9bf61e4dac3&#34;&gt;参考&lt;/h3&gt;
+&lt;h3 id=&#34;参考&#34;&gt;参考&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://codeigniter.com/wiki/PDO_SQLite3/&#34;&gt;Wiki | CodeIgniter&lt;/a&gt;&lt;/li&gt;

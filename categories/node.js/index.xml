@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Node.Js on 1000g</title>
-    <link>http://1000k.github.io/categories/node/index.js/</link>
-    <description>Recent content in Node.Js on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/categories/node.js/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 22 May 2014 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/categories/node.js/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -95,7 +95,7 @@ $ java -version
 
 &lt;p&gt;Node.js はデバッグメッセージが雑なことが多いので苦手です。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:44911033301877b7be87059dd5b5c5f6&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/20188679/how-to-run-protractor/23772014#23772014&#34;&gt;angularjs - How to run protractor? - Stack Overflow&lt;/a&gt;&lt;/li&gt;

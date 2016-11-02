@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Vagrant on 1000g</title>
-    <link>http://1000k.github.io/tags/vagrant/</link>
-    <description>Recent content in Vagrant on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/vagrant/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 16 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/vagrant/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -19,7 +19,7 @@
 
 &lt;p&gt;2014/06/24 に Opscode 公式ブログで &lt;a href=&#34;http://www.getchef.com/blog/2014/06/24/from-solo-to-zero-migrating-to-chef-client-local-mode/&#34;&gt;From Solo to Zero: Migrating to Chef Client Local Mode&lt;/a&gt; という記事が公開されました。記事を要約すると「Chef Solo はオワコンだから Chef Client Local Mode を使え」ということのようです。&lt;/p&gt;
 
-&lt;h2 id=&#34;chef-client-local-mode-旧-chef-zero-って:519ef52691307b5f7476688034bf2c1d&#34;&gt;Chef Client Local Mode (旧 Chef Zero) って？&lt;/h2&gt;
+&lt;h2 id=&#34;chef-client-local-mode-旧-chef-zero-って&#34;&gt;Chef Client Local Mode (旧 Chef Zero) って？&lt;/h2&gt;
 
 &lt;p&gt;Chef Client Local Mode (旧 Chef Zero) は Chef Solo の全ての機能を備えており、Chef Server に移行する際にも楽です。Chef Client 11.8.0 から採用されました。実行するには &lt;code&gt;chef-client&lt;/code&gt; に &lt;code&gt;--local-mode&lt;/code&gt; または &lt;code&gt;-z&lt;/code&gt; オプションを付けます。&lt;/p&gt;
 
@@ -29,7 +29,7 @@
 
 &lt;p&gt;Chef Server のフル機能を、Chef Solo 同様の気軽さで使えるのが、Chef Client Local Mode と言っていいでしょう。&lt;/p&gt;
 
-&lt;h2 id=&#34;chef-solo-から-chef-client-local-mode-に移行するべき理由:519ef52691307b5f7476688034bf2c1d&#34;&gt;Chef Solo から Chef Client Local mode に移行するべき理由&lt;/h2&gt;
+&lt;h2 id=&#34;chef-solo-から-chef-client-local-mode-に移行するべき理由&#34;&gt;Chef Solo から Chef Client Local mode に移行するべき理由&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;Local Mode なら Server-Client で使える全ての機能 &amp;#8212; environments, roles, (encrypted) data bags &amp;#8212; が使える。ノードやレシピの検索機能も使える。&lt;/p&gt;&lt;/li&gt;
@@ -54,7 +54,7 @@ end
 
 &lt;p&gt;今すぐ Chef Solo をお払い箱にする必要はありませんが、公式に deprecated 扱いされているので、今後は Solo よりも Local Mode を使うことをお薦めします。これから Chef を始める人は、chef-apply か local mode を使うといいでしょう。&lt;/p&gt;
 
-&lt;h2 id=&#34;vagrant-で使う時はどうする:519ef52691307b5f7476688034bf2c1d&#34;&gt;Vagrant で使う時はどうする？&lt;/h2&gt;
+&lt;h2 id=&#34;vagrant-で使う時はどうする&#34;&gt;Vagrant で使う時はどうする？&lt;/h2&gt;
 
 &lt;p&gt;Vagrant 1.7.0 より、Chef Client Local mode が使えるようになりました。単純に provisioner に &lt;code&gt;chef_zero&lt;/code&gt; を指定するだけで動作します。&lt;/p&gt;
 
@@ -76,7 +76,7 @@ end
 end
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;参考:519ef52691307b5f7476688034bf2c1d&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.getchef.com/blog/2014/06/24/from-solo-to-zero-migrating-to-chef-client-local-mode/&#34;&gt;From Solo to Zero: Migrating to Chef Client Local Mode | Chef Blog&lt;/a&gt;&lt;/li&gt;

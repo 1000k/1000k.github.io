@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Selenium on 1000g</title>
-    <link>http://1000k.github.io/categories/selenium/</link>
-    <description>Recent content in Selenium on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/categories/selenium/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 11 Jun 2010 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/categories/selenium/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -15,15 +15,15 @@
       <pubDate>Fri, 11 Jun 2010 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2010/06/11/automate-screen-capture-using-selenium-ide-pearl-crescent-page-saver/</guid>
-      <description>
-
-&lt;p&gt;多くの画面があるサイトで、すべてのページを、スクロール領域すべてを含めてキャプチャしなければならない。&lt;/p&gt;
+      <description>&lt;p&gt;多くの画面があるサイトで、すべてのページを、スクロール領域すべてを含めてキャプチャしなければならない。&lt;/p&gt;
 
 &lt;p&gt;こんなこと手動でやっていては大変です。しかも画面修正が入って「もう一回全部撮り直せ」と言われたらもう死ぬしかないですね。&lt;/p&gt;
 
 &lt;p&gt;早まる前に、この記事のやり方で自動化してください。&lt;/p&gt;
 
-&lt;h2 id=&#34;必要なもの:462da812d7d4ed2797cfbcdf095e949a&#34;&gt;必要なもの&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;必要なもの&#34;&gt;必要なもの&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;FireFox 3.x&lt;/li&gt;
@@ -31,7 +31,7 @@
 &lt;li&gt;&lt;a href=&#34;http://pearlcrescent.com/products/pagesaver/&#34;&gt;Pearl Crescent Page Saver&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;手順:462da812d7d4ed2797cfbcdf095e949a&#34;&gt;手順&lt;/h2&gt;
+&lt;h2 id=&#34;手順&#34;&gt;手順&lt;/h2&gt;
 
 &lt;p&gt;まず、Pearl Crescent Page Saver のショートカット設定をします。「Page Saverオプション」から、下記の通り設定します。&lt;/p&gt;
 
@@ -138,21 +138,20 @@
 
 &lt;p&gt;あとは上記の要領で、「open」コマンドの対象を撮影したいページのアドレスに変更しながらコピペを繰り返してください。&lt;/p&gt;
 
-&lt;h2 id=&#34;日本語を含むテストケースファイルが読み込めない場合:462da812d7d4ed2797cfbcdf095e949a&#34;&gt;日本語を含むテストケースファイルが読み込めない場合&lt;/h2&gt;
+&lt;h2 id=&#34;日本語を含むテストケースファイルが読み込めない場合&#34;&gt;日本語を含むテストケースファイルが読み込めない場合&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;XHTMLのヘッダを「xml:lang=&amp;ldquo;en&amp;rdquo; lang=&amp;ldquo;en&amp;rdquo;」から「xml:lang=&amp;ldquo;ja&amp;rdquo; lang=&amp;ldquo;ja&amp;rdquo;」に直す&lt;/li&gt;
 &lt;li&gt;ファイル保存形式を「UTF-8 BOM無し」にする&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;tips:462da812d7d4ed2797cfbcdf095e949a&#34;&gt;TIPS&lt;/h2&gt;
+&lt;h2 id=&#34;tips&#34;&gt;TIPS&lt;/h2&gt;
 
 &lt;p&gt;カテゴリ毎に多くのコンテンツがあるようなページを連続キャプチャする場合、カテゴリ毎にテストケースを作成し、それをテストスイートに読み込ませると管理が便利（だと思います）。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:462da812d7d4ed2797cfbcdf095e949a&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://d.hatena.ne.jp/szk-takanori/20071104/1194181489&#34;&gt;Seleniumでキャプチャを取得する拡張コマンド:captureScreenshot - 現場のためのソフトウェア開発プロセス - たかのり日記&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;a href=&#34;http://d.hatena.ne.jp/szk-takanori/20071104/1194181489&#34;&gt;Seleniumでキャプチャを取得する拡張コマンド:captureScreenshot - 現場のためのソフトウェア開発プロセス - たかのり日記&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

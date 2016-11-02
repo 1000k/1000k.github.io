@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Codeigniter on 1000g</title>
-    <link>http://1000k.github.io/categories/codeigniter/</link>
-    <description>Recent content in Codeigniter on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/categories/codeigniter/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 15 Jun 2010 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/categories/codeigniter/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -45,7 +45,7 @@ RewriteRule ^(.*)$ /hige/moja/index.php/$1 [L]
 
 &lt;p&gt;ちょっと改造すれば使えるようになったので、やり方を共有します。&lt;/p&gt;
 
-&lt;h3 id=&#34;手順:4c4c0989caf014b5d7d6c918a32b9dd5&#34;&gt;手順&lt;/h3&gt;
+&lt;h3 id=&#34;手順&#34;&gt;手順&lt;/h3&gt;
 
 &lt;ol&gt;
 &lt;li&gt;/system/database/drivers/pdo/pdo_driver.php 内に、下記メソッドを追加する。（このメソッドはMySQLドライバ内の同一メソッドをSQLite用に修正したものです）&lt;/li&gt;
@@ -99,7 +99,7 @@ if (isset($row[&#39;COLUMN_NAME&#39;]) || isset($row[&#39;name&#39;]))
 
 &lt;p&gt;そこで、以下の方法で単語補完をできるようにしました。&lt;/p&gt;
 
-&lt;h3 id=&#34;手順:fc1e74b047afd2cf65d5232747f988fd&#34;&gt;手順&lt;/h3&gt;
+&lt;h3 id=&#34;手順&#34;&gt;手順&lt;/h3&gt;
 
 &lt;p&gt;CodeIgniterをNetBeansのプロジェクトに登録すると、以下のようなディレクトリ構成になっているはず。&lt;/p&gt;
 
@@ -137,7 +137,7 @@ Class Controller {
 
 &lt;p&gt;※上記ファイルだけでは全ライブラリを網羅していません。使いたければ「/system/library」内にあるクラスも同様のフォーマットで追加してあげてください。（時間があったらあとで追記します）&lt;/p&gt;
 
-&lt;h3 id=&#34;参考:fc1e74b047afd2cf65d5232747f988fd&#34;&gt;参考&lt;/h3&gt;
+&lt;h3 id=&#34;参考&#34;&gt;参考&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.mybelovedphp.com/2009/01/27/netbeans-revisited-code-completion-for-code-igniter-ii/&#34;&gt;My Beloved PHP » Blog Archive » Netbeans revisited: Code Completion for Code-igniter II&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -157,7 +157,7 @@ Class Controller {
 
 &lt;p&gt;以下に、ドライバーの導入手順を示します。&lt;/p&gt;
 
-&lt;h3 id=&#34;手順:780c545c6d70fccec367c9bf61e4dac3&#34;&gt;手順&lt;/h3&gt;
+&lt;h3 id=&#34;手順&#34;&gt;手順&lt;/h3&gt;
 
 &lt;p&gt;※CodeIgniter 1.7.2 用です。それより前のバージョンだと導入するドライバが違うかもしれないので、&lt;a href=&#34;http://codeigniter.com/wiki/PDO_SQLite3/&#34;&gt;Wiki | CodeIgniter&lt;/a&gt;あたりを読んでください。&lt;/p&gt;
 
@@ -185,7 +185,7 @@ $db[&#39;default&#39;][&#39;dbprefix&#39;] = &amp;quot;&amp;quot;;
 
 &lt;p&gt;と書いてみて、「pdo 3.6.20」などと出力されればOK。&lt;/p&gt;
 
-&lt;h3 id=&#34;参考:780c545c6d70fccec367c9bf61e4dac3&#34;&gt;参考&lt;/h3&gt;
+&lt;h3 id=&#34;参考&#34;&gt;参考&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://codeigniter.com/wiki/PDO_SQLite3/&#34;&gt;Wiki | CodeIgniter&lt;/a&gt;&lt;/li&gt;
@@ -202,14 +202,14 @@ $db[&#39;default&#39;][&#39;dbprefix&#39;] = &amp;quot;&amp;quot;;
       <guid>http://1000k.github.io/2010/05/24/usage-of-codeigniter-model/</guid>
       <description>
 
-&lt;h1 id=&#34;modelの役割:9e420bce93e176a58a0a53cf159db0b1&#34;&gt;Modelの役割&lt;/h1&gt;
+&lt;h1 id=&#34;modelの役割&#34;&gt;Modelの役割&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;ControllerやViewから独立して、DBのデータの取り扱い(CRUD)だけに専念する&lt;/li&gt;
 &lt;li&gt;CodeIgniterでは、Modelクラスを継承することで、直感的なDB操作メソッドが利用できる&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;簡単な例:9e420bce93e176a58a0a53cf159db0b1&#34;&gt;簡単な例&lt;/h1&gt;
+&lt;h1 id=&#34;簡単な例&#34;&gt;簡単な例&lt;/h1&gt;
 
 &lt;p&gt;下記は「Usersテーブルのデータを取得したり件数をカウントしたりするクラス」の例。 &lt;strong&gt;/system/application/models/users_model.php&lt;/strong&gt;とする。&lt;/p&gt;
 
@@ -288,7 +288,7 @@ class Users_model extends Model {
 
 &lt;p&gt;このModelクラスのAPIを使うことで、Controllerから簡単にDBのデータを取得できる。&lt;/p&gt;
 
-&lt;h1 id=&#34;controllerからmodelのapiを呼び出す:9e420bce93e176a58a0a53cf159db0b1&#34;&gt;ControllerからModelのAPIを呼び出す&lt;/h1&gt;
+&lt;h1 id=&#34;controllerからmodelのapiを呼び出す&#34;&gt;ControllerからModelのAPIを呼び出す&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;/system/application/controllers/Users.php&lt;/strong&gt; を下記のようにすることで、上述のモデルで作成したAPIをロードできる。&lt;/p&gt;
 
@@ -313,7 +313,7 @@ class Users extends Controller {
 /** End of PHP file */
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;参考:9e420bce93e176a58a0a53cf159db0b1&#34;&gt;参考&lt;/h1&gt;
+&lt;h1 id=&#34;参考&#34;&gt;参考&lt;/h1&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.devshed.com/c/a/PHP/Building-a-DatabaseDriven-Application-with-the-Code-Igniter-PHP-Framework/&#34;&gt;Building a Database-Driven Application with the Code Igniter PHP Framework&lt;/a&gt;&lt;/p&gt;
 
@@ -333,11 +333,11 @@ class Users extends Controller {
 
 &lt;p&gt;すべての根拠は &lt;a href=&#34;http://codeigniter.jp/user_guide_ja/general/styleguide.html#class_and_method_naming&#34;&gt;PHPコーディングスタイル : CodeIgniter ユーザガイド 日本語版&lt;/a&gt; から。&lt;/p&gt;
 
-&lt;h2 id=&#34;short-open-tag-は使わない:c18ed6fb973dc0df1b8f9e9b7ba7f27b&#34;&gt;★short_open_tag は使わない&lt;/h2&gt;
+&lt;h2 id=&#34;short-open-tag-は使わない&#34;&gt;★short_open_tag は使わない&lt;/h2&gt;
 
 &lt;p&gt;サーバーで short_open_tag が有効でないケースもあるので、常に完全なPHP開始タグを用います。&lt;/p&gt;
 
-&lt;h2 id=&#34;インデントにはスペースではなくタブを使う:c18ed6fb973dc0df1b8f9e9b7ba7f27b&#34;&gt;インデントにはスペースではなくタブを使う&lt;/h2&gt;
+&lt;h2 id=&#34;インデントにはスペースではなくタブを使う&#34;&gt;インデントにはスペースではなくタブを使う&lt;/h2&gt;
 
 &lt;p&gt;言語やフレームワークによってこのあたりはまちまちですが、CIではタブ推奨。以下がその理由。&lt;/p&gt;
 
@@ -348,19 +348,19 @@ class Users extends Controller {
 
 &lt;p&gt;（個人的には、半角スペースでインデントされたソースは、キーボードで移動するとき連打を強要させられるので、このルールには賛成です。）&lt;/p&gt;
 
-&lt;h2 id=&#34;true-false-null-は-常に大文字を使う:c18ed6fb973dc0df1b8f9e9b7ba7f27b&#34;&gt;TRUE, FALSE, NULL は、常に大文字を使う&lt;/h2&gt;
+&lt;h2 id=&#34;true-false-null-は-常に大文字を使う&#34;&gt;TRUE, FALSE, NULL は、常に大文字を使う&lt;/h2&gt;
 
 &lt;p&gt;理由はよくわからないけど、そうするらしいです。&lt;/p&gt;
 
-&lt;h2 id=&#34;phpの終了タグは書かない:c18ed6fb973dc0df1b8f9e9b7ba7f27b&#34;&gt;PHPの終了タグは書かない&lt;/h2&gt;
+&lt;h2 id=&#34;phpの終了タグは書かない&#34;&gt;PHPの終了タグは書かない&lt;/h2&gt;
 
 &lt;p&gt;「?&amp;gt;」はエラーに繋がるので書かない。&lt;/p&gt;
 
-&lt;h2 id=&#34;命名規則:c18ed6fb973dc0df1b8f9e9b7ba7f27b&#34;&gt;★命名規則&lt;/h2&gt;
+&lt;h2 id=&#34;命名規則&#34;&gt;★命名規則&lt;/h2&gt;
 
 &lt;p&gt;キャメルケースは使わず、アンダースコアとの組み合わせで表現する。&lt;/p&gt;
 
-&lt;h3 id=&#34;クラス名-先頭大文字-アンダースコア:c18ed6fb973dc0df1b8f9e9b7ba7f27b&#34;&gt;クラス名: 先頭大文字＋アンダースコア&lt;/h3&gt;
+&lt;h3 id=&#34;クラス名-先頭大文字-アンダースコア&#34;&gt;クラス名: 先頭大文字＋アンダースコア&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;間違い:
 class superclass
@@ -370,7 +370,7 @@ class SuperClass
 class Super_class
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;ファイル名-変数名-小文字-アンダースコア:c18ed6fb973dc0df1b8f9e9b7ba7f27b&#34;&gt;ファイル名、変数名: 小文字＋アンダースコア&lt;/h3&gt;
+&lt;h3 id=&#34;ファイル名-変数名-小文字-アンダースコア&#34;&gt;ファイル名、変数名: 小文字＋アンダースコア&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;間違い:
 function fileproperties()   // 表現がわかりにくく、アンダースコアが抜けている

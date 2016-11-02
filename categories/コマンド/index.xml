@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>コマンド on 1000g</title>
-    <link>http://1000k.github.io/categories/%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89/</link>
-    <description>Recent content in コマンド on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/categories/%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 11 Mar 2015 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/categories/%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -19,7 +19,7 @@
 
 &lt;p&gt;とあるきっかけで開発効率強化ウィークに入りました。まずはターミナルをもっと効率的にすべく、tmux を習得することにしました。&lt;/p&gt;
 
-&lt;h2 id=&#34;tumxとは:a506571e48bbc5459d921757c1950894&#34;&gt;tumxとは？&lt;/h2&gt;
+&lt;h2 id=&#34;tumxとは&#34;&gt;tumxとは？&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;ターミナルマルチプレクサ (端末多重化ソフトウェア, 仮想端末マネージャー) のひとつ
@@ -30,7 +30,7 @@
 &lt;li&gt;読み方は &amp;ldquo;ティーマックス&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;できること:a506571e48bbc5459d921757c1950894&#34;&gt;できること&lt;/h3&gt;
+&lt;h3 id=&#34;できること&#34;&gt;できること&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;1つの端末で複数の仮想端末を起動できる&lt;/li&gt;
@@ -45,7 +45,7 @@
 &lt;li&gt;設定ファイルで高度にカスタマイズできる&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;tmuxの構成:a506571e48bbc5459d921757c1950894&#34;&gt;tmuxの構成&lt;/h3&gt;
+&lt;h3 id=&#34;tmuxの構成&#34;&gt;tmuxの構成&lt;/h3&gt;
 
 &lt;p&gt;tmuxはサーバー/クライアント構成を取る。&lt;/p&gt;
 
@@ -63,7 +63,7 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;画面の内包関係:a506571e48bbc5459d921757c1950894&#34;&gt;画面の内包関係&lt;/h3&gt;
+&lt;h3 id=&#34;画面の内包関係&#34;&gt;画面の内包関係&lt;/h3&gt;
 
 &lt;p&gt;&lt;code&gt;セッション &amp;gt; ウィンドウ &amp;gt; ペイン&lt;/code&gt;&lt;/p&gt;
 
@@ -73,34 +73,34 @@
 &lt;li&gt;ペイン: ウィンドウを分割した領域。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;インストール:a506571e48bbc5459d921757c1950894&#34;&gt;インストール&lt;/h2&gt;
+&lt;h2 id=&#34;インストール&#34;&gt;インストール&lt;/h2&gt;
 
 &lt;p&gt;yum ユーザーは EPEL リポジトリからインストールが可能。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;sudo yum install -y tmux
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;チュートリアル:a506571e48bbc5459d921757c1950894&#34;&gt;チュートリアル&lt;/h2&gt;
+&lt;h2 id=&#34;チュートリアル&#34;&gt;チュートリアル&lt;/h2&gt;
 
-&lt;h3 id=&#34;起動:a506571e48bbc5459d921757c1950894&#34;&gt;起動&lt;/h3&gt;
+&lt;h3 id=&#34;起動&#34;&gt;起動&lt;/h3&gt;
 
 &lt;p&gt;&lt;code&gt;tmux&lt;/code&gt; または &lt;code&gt;tmux new-session&lt;/code&gt; で新規セッションを起動すると、新しい仮想端末が開く。&lt;/p&gt;
 
-&lt;h3 id=&#34;ペインの操作:a506571e48bbc5459d921757c1950894&#34;&gt;ペインの操作&lt;/h3&gt;
+&lt;h3 id=&#34;ペインの操作&#34;&gt;ペインの操作&lt;/h3&gt;
 
 &lt;p&gt;&lt;code&gt;C-b %&lt;/code&gt; でペインを分割し、&lt;code&gt;C-b n&lt;/code&gt; で次のウィンドウに移動します。&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;C-b ?&lt;/code&gt; でヘルプが開くので、片方のペインにヘルプを表示した状態で、もう片方でいろいろ実験してみると理解が進みます。&lt;/p&gt;
 
-&lt;h3 id=&#34;デタッチ:a506571e48bbc5459d921757c1950894&#34;&gt;デタッチ&lt;/h3&gt;
+&lt;h3 id=&#34;デタッチ&#34;&gt;デタッチ&lt;/h3&gt;
 
 &lt;p&gt;仮想端末上で &lt;code&gt;C-b d&lt;/code&gt; で、端末がセッションからデタッチされます。&lt;/p&gt;
 
 &lt;p&gt;デタッチ状態ではセッションは残っているので、再度 &lt;code&gt;tmux attach -t セッション番号&lt;/code&gt; と入力すれば、最後の画面から再開できます。&lt;/p&gt;
 
-&lt;h2 id=&#34;基本操作:a506571e48bbc5459d921757c1950894&#34;&gt;基本操作&lt;/h2&gt;
+&lt;h2 id=&#34;基本操作&#34;&gt;基本操作&lt;/h2&gt;
 
-&lt;h3 id=&#34;セッションの操作:a506571e48bbc5459d921757c1950894&#34;&gt;セッションの操作&lt;/h3&gt;
+&lt;h3 id=&#34;セッションの操作&#34;&gt;セッションの操作&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -143,7 +143,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h3 id=&#34;ウィンドウの操作:a506571e48bbc5459d921757c1950894&#34;&gt;ウィンドウの操作&lt;/h3&gt;
+&lt;h3 id=&#34;ウィンドウの操作&#34;&gt;ウィンドウの操作&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -206,7 +206,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h3 id=&#34;ペインの操作-1:a506571e48bbc5459d921757c1950894&#34;&gt;ペインの操作&lt;/h3&gt;
+&lt;h3 id=&#34;ペインの操作-1&#34;&gt;ペインの操作&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -264,13 +264,13 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h2 id=&#34;カスタマイズ:a506571e48bbc5459d921757c1950894&#34;&gt;カスタマイズ&lt;/h2&gt;
+&lt;h2 id=&#34;カスタマイズ&#34;&gt;カスタマイズ&lt;/h2&gt;
 
 &lt;p&gt;&lt;code&gt;~/.tmux.conf&lt;/code&gt; にカスタマイズ設定を書き込むことができます。&lt;/p&gt;
 
 &lt;p&gt;yum でインストールした場合は &lt;code&gt;/usr/share/doc/tmux-1.6/examples/&lt;/code&gt; 配下にサンプルファイルがあります。vimmer は &lt;a href=&#34;https://github.com/jordansissel/tmux/blob/master/trunk/examples/vim-keys.conf&#34;&gt;vim-keys.conf&lt;/a&gt; を設定するとペイン操作が楽になるかもしれません。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:a506571e48bbc5459d921757c1950894&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man1/tmux.1?query=tmux&amp;amp;sec=1&#34;&gt;OpenBSD manual pages&lt;/a&gt;
@@ -303,13 +303,13 @@
 
 &lt;p&gt;Unixタイムスタンプを読みやすい形式に変更するワンライナーを、いくつかの言語で紹介します。&lt;/p&gt;
 
-&lt;h2 id=&#34;シェル:9514b206b957b6cd4e0a3c8ebb046a97&#34;&gt;シェル&lt;/h2&gt;
+&lt;h2 id=&#34;シェル&#34;&gt;シェル&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;$ date -d @1357872483
 2013年  1月 11日 金曜日 11:48:03 JST
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;php:9514b206b957b6cd4e0a3c8ebb046a97&#34;&gt;PHP&lt;/h2&gt;
+&lt;h2 id=&#34;php&#34;&gt;PHP&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;$ php -r &#39;echo date(&amp;quot;r&amp;quot;, 1357872483);&#39;
 Fri, 11 Jan 2013 11:48:03 +090
@@ -319,13 +319,13 @@ Fri, 11 Jan 2013 11:48:03 +090
 
 &lt;p&gt;詳しくは &lt;a href=&#34;http://php.net/manual/ja/function.date.php&#34;&gt;PHP: date - Manual&lt;/a&gt; を参照。&lt;/p&gt;
 
-&lt;h2 id=&#34;ruby:9514b206b957b6cd4e0a3c8ebb046a97&#34;&gt;Ruby&lt;/h2&gt;
+&lt;h2 id=&#34;ruby&#34;&gt;Ruby&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;$ ruby -e &#39;p Time.at(1357872483)&#39;
 Fri Jan 11 11:48:03 +0900 2013
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;参考:9514b206b957b6cd4e0a3c8ebb046a97&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/2371248/how-to-convert-timestamps-to-dates-in-bash&#34;&gt;How to convert timestamps to dates in bash? - Stack Overflow&lt;/a&gt;&lt;/li&gt;
@@ -367,7 +367,7 @@ Complete!
 
 &lt;p&gt;パッケージが不足していないか注意が必要ですね。&lt;/p&gt;
 
-&lt;h1 id=&#34;参考:b209194a963523f744e005b58f948c6d&#34;&gt;参考&lt;/h1&gt;
+&lt;h1 id=&#34;参考&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/hiroponz/20070205&#34;&gt;2007-02-05 - プチ技術メモ&lt;/a&gt;&lt;/li&gt;
@@ -381,15 +381,15 @@ Complete!
       <pubDate>Sun, 15 Jan 2012 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2012/01/15/managing-source-installed-packages-using-paco/</guid>
-      <description>
-
-&lt;p&gt;pacoは、自分でソースからインストールしたアプリでもrpmのようにパッケージ管理できるようになるツールです。&lt;/p&gt;
+      <description>&lt;p&gt;pacoは、自分でソースからインストールしたアプリでもrpmのようにパッケージ管理できるようになるツールです。&lt;/p&gt;
 
 &lt;p&gt;rpmが無いアプリの管理が楽になるのでおすすめです。&lt;/p&gt;
 
 &lt;p&gt;以下、インストール方法と使い方を簡単に記します。&lt;/p&gt;
 
-&lt;h2 id=&#34;インストール手順:2e9f7bf7118303b30947563102a07bb4&#34;&gt;インストール手順&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;インストール手順&#34;&gt;インストール手順&lt;/h2&gt;
 
 &lt;p&gt;最新のソースは &lt;a href=&#34;http://paco.sourceforge.net/&#34;&gt;paco - a source code pacKAGE oRGANIZER for Unix/Linux&lt;/a&gt; で確認してください。&lt;/p&gt;
 
@@ -408,9 +408,9 @@ Complete!
 
 &lt;p&gt;最後の「make logme」でpaco自身のインストール内容を記録しています。&lt;/p&gt;
 
-&lt;h2 id=&#34;使い方:2e9f7bf7118303b30947563102a07bb4&#34;&gt;使い方&lt;/h2&gt;
+&lt;h2 id=&#34;使い方&#34;&gt;使い方&lt;/h2&gt;
 
-&lt;h3 id=&#34;インストールを記録する:2e9f7bf7118303b30947563102a07bb4&#34;&gt;インストールを記録する&lt;/h3&gt;
+&lt;h3 id=&#34;インストールを記録する&#34;&gt;インストールを記録する&lt;/h3&gt;
 
 &lt;p&gt;今後、何らかのアプリをmake installする際には、「paco -D」を付けることでpacoに記録できます。&lt;/p&gt;
 
@@ -418,7 +418,7 @@ Complete!
 # paco -D make install
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;インストール済みパッケージを確認する:2e9f7bf7118303b30947563102a07bb4&#34;&gt;インストール済みパッケージを確認する&lt;/h3&gt;
+&lt;h3 id=&#34;インストール済みパッケージを確認する&#34;&gt;インストール済みパッケージを確認する&lt;/h3&gt;
 
 &lt;p&gt;「-a」オプションを使います。&lt;/p&gt;
 
@@ -426,7 +426,7 @@ Complete!
 paco-2.0.9
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;パッケージでインストールされたファイルを確認する:2e9f7bf7118303b30947563102a07bb4&#34;&gt;パッケージでインストールされたファイルを確認する&lt;/h3&gt;
+&lt;h3 id=&#34;パッケージでインストールされたファイルを確認する&#34;&gt;パッケージでインストールされたファイルを確認する&lt;/h3&gt;
 
 &lt;p&gt;「-f」オプションを使います。&lt;/p&gt;
 
@@ -454,21 +454,20 @@ paco-2.0.9:
 /usr/local/bin/superpaco
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;パッケージをアンインストールする:2e9f7bf7118303b30947563102a07bb4&#34;&gt;パッケージをアンインストールする&lt;/h3&gt;
+&lt;h3 id=&#34;パッケージをアンインストールする&#34;&gt;パッケージをアンインストールする&lt;/h3&gt;
 
 &lt;p&gt;「-r」オプションです。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;# paco -r {アンインストールしたいパッケージ名}
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;参考:2e9f7bf7118303b30947563102a07bb4&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/kasei_san/20100220/p1&#34;&gt;さくらのユーザディレクトリにPACOをインストールしたときの手順 - かせいさんとこ&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://paco.sourceforge.net/&#34;&gt;paco - a source code pacKAGE oRGANIZER for Unix/Linux&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.atmarkit.co.jp/flinux/rensai/linuxtips/886usepaco.html&#34;&gt;ソースからインストールしたアプリを管理するには － ＠IT&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -501,7 +500,7 @@ paco-2.0.9:
 $ kill {上で出てきたpid}
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;参考:981194324cf5b426a797d33ec4db9e80&#34;&gt;参考&lt;/h1&gt;
+&lt;h1 id=&#34;参考&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://babyp.blog55.fc2.com/blog-entry-446.html&#34;&gt;サーバのリソースを定期的に出力しとく方法：なんとなしの日記&lt;/a&gt;&lt;/li&gt;
@@ -544,7 +543,7 @@ $ kill {上で出てきたpid}
 
 &lt;p&gt;となっています。&lt;/p&gt;
 
-&lt;h1 id=&#34;参考:8ae62bd64dbb38a5a9b5b7de400f164f&#34;&gt;参考&lt;/h1&gt;
+&lt;h1 id=&#34;参考&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://openlab.dino.co.jp/2007/10/23/184825129.html&#34;&gt;svn diffで-wオプションを使う — ディノオープンラボラトリ&lt;/a&gt;&lt;/li&gt;

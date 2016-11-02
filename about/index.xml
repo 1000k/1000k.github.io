@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About-rsses on 1000g</title>
+    <link>http://1000k.github.io/about/index.xml</link>
+    <description>Recent content in About-rsses on 1000g</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>Released under the MIT license.</copyright>
+    <lastBuildDate>Sun, 16 May 2010 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://1000k.github.io/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ABOUT</title>
+      <link>http://1000k.github.io/about/</link>
+      <pubDate>Sun, 16 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://1000k.github.io/about/</guid>
+      <description>
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://1000k.github.io/img/DSC_9070-300x300.jpg&#34;  /&gt;
+    
+    
+    &lt;figcaption&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;千田 啓次郎&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;フルボッコエンジニア&lt;/li&gt;
+&lt;li&gt;認定スクラムマスター&lt;/li&gt;
+&lt;li&gt;PHP, CakePHP, Ruby, HTML5, Javascript, SCSS, Compass, Jenkins, Chef&lt;/li&gt;
+&lt;li&gt;twitter: &lt;a href=&#34;http://twitter.com/1000kei/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://twitter.com/1000kei/&#39;, &#39;@1000kei&#39;]);&#34; &gt;@1000kei&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;好きな言葉
+
+&lt;ul&gt;
+&lt;li&gt;DRY&lt;/li&gt;
+&lt;li&gt;Tranceparency&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://connectedco.com/2011/04/18/the-future-is-podular/&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://connectedco.com/2011/04/18/the-future-is-podular/&#39;, &#39;Podular&#39;]);&#34; &gt;Podular&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://ja.wikipedia.org/wiki/KISS%E3%81%AE%E5%8E%9F%E5%89%87&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://ja.wikipedia.org/wiki/KISS%E3%81%AE%E5%8E%9F%E5%89%87&#39;, &#39;Keep it short and simple&#39;]);&#34; &gt;Keep it short and simple&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://ja.wikipedia.org/wiki/%E9%8A%80%E3%81%AE%E5%BC%BE%E3%81%AA%E3%81%A9%E3%81%AA%E3%81%84&#34; onclick=&#34;_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://ja.wikipedia.org/wiki/%E9%8A%80%E3%81%AE%E5%BC%BE%E3%81%AA%E3%81%A9%E3%81%AA%E3%81%84&#39;, &#39;No Silver Bullet&#39;]);&#34; &gt;No Silver Bullet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;嫌いな言葉
+
+&lt;ul&gt;
+&lt;li&gt;残業&lt;/li&gt;
+&lt;li&gt;ダブルチェック&lt;/li&gt;
+&lt;li&gt;運用でカバー&lt;/li&gt;
+&lt;li&gt;ドキュメント駆動&lt;/li&gt;
+&lt;li&gt;マイクロマネジメント&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>バグ on 1000g</title>
-    <link>http://1000k.github.io/tags/%E3%83%90%E3%82%B0/</link>
-    <description>Recent content in バグ on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/%E3%83%90%E3%82%B0/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 24 May 2010 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/%E3%83%90%E3%82%B0/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -17,7 +17,7 @@
       <guid>http://1000k.github.io/2010/05/24/dont-write-php-closing-tag/</guid>
       <description>
 
-&lt;h2 id=&#34;現象:792e315ec7fc7759bc2457a02c4937b7&#34;&gt;現象&lt;/h2&gt;
+&lt;h2 id=&#34;現象&#34;&gt;現象&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;&amp;lt;?php
 
@@ -34,7 +34,7 @@
 
 &lt;p&gt;閉じタグは書かなくてもいい。というか、書くと余計なエラーの原因になるので、&lt;strong&gt;PHPの閉じタグ書くべきではない。&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:792e315ec7fc7759bc2457a02c4937b7&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://d.hatena.ne.jp/fbis/20090716/1247714151&#34;&gt;PHPの閉じタグは心の臓に悪いから使わないで - Unknown::Programming&lt;/a&gt;&lt;/p&gt;
 </description>

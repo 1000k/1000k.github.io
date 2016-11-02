@@ -1,54 +1,66 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ja">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<title> Subversion 1.7 で switch や merge ができないときの対処方法 &middot; 1000g </title>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
+    <title>Subversion 1.7 で switch や merge ができないときの対処方法 &middot; 1000g</title>
+    <meta name="author" content="SENDA Keijiro">
+    <meta name="description" content="Programming knowledge">
+    <meta name="generator" content="Hugo 0.17" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-<link rel="stylesheet" href="http://1000k.github.io//css/slim.css">
-<link rel="stylesheet" href="http://1000k.github.io//css/highlight.min.css">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext' rel='stylesheet'>
+    <!-- RSS autodiscovery -->
+    
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
-<link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="http://1000k.github.io/img/favicon.ico">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.2/normalize.min.css">
 
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://1000k.github.io/css/screen.css">
+    <link rel="stylesheet" href="http://1000k.github.io/css/github.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/default.min.css">
 
-<link href="" rel="alternate" type="application/rss+xml" title="1000g" />
-
-
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
+    <!-- Stylesheet for theme color -->
+    <style type="text/css">
+    a, a:visited {color: #33cc99;}
+    .pagination a {color: #33cc99;}
+    .gist .gist-file .gist-meta a:visited {color: #33cc99 !important;}
+    a:focus, a:hover {color: #178b6b;}
+    h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #178b6b;}
+    .older-posts:hover, .newer-posts:hover {color: #178b6b;}
+</style>
 </head>
 
-<body>
-  <div class="container">
-    <div class="header">
-  <h1 class="site-title"><a href="http://1000k.github.io/">1000g</a></h1>
-  <p class="site-tagline">Tech blog</p>
-  <div class="nav">
-    <a class="nav-btn" href="#">
-      <span class="ci ci-burger"></span>
-    </a>
-    <ul class="nav-list">
-      
+<body class="post-template">
 
-      <li><a href="https://github.com/1000k">Github</a></li>
-      <li><a href="https://twitter.com/1000kei">Twitter</a></li>
-      
+    <header id="site-head">
+	
+	<h1 class="blog-title"><a href="http://1000k.github.io/">1000g</a></h1>
+	
+	
+	<h1 class="blog-subtitle">Development knowledge</h1>
+	
+</header>
+    
+<nav class="menu" role="nav">
+    <ul>
+        
+        	<li class="nav nav-current"><a href="/about/">ABOUT</a></li>
+      	
     </ul>
-  </div>
-</div>
-    <div class="content">
-      <div class="post">
-        <h2 class="post-title"><a href="http://1000k.github.io/2013/07/25/what-to-do-if-you-can-not-switch-and-merge-in-subversion-17/">Subversion 1.7 で switch や merge ができないときの対処方法</a></h2>
-        <div class="post-content">
-          
+</nav>
 
-<p>Subversion 1.7.10 をソースからインストールしたら、<code>svn switch</code> や <code>svn merge</code> が以下のエラーを吐いて失敗するようになってしまいました。</p>
+
+    <main class="content" role="main">
+	    <article class="post">
+	        <header>
+	        <h1 class="post-title">Subversion 1.7 で switch や merge ができないときの対処方法</h1>
+
+	        <section class="post-content">
+	            <p>Subversion 1.7.10 をソースからインストールしたら、<code>svn switch</code> や <code>svn merge</code> が以下のエラーを吐いて失敗するようになってしまいました。</p>
 
 <pre><code># svn merge https://uso.com/svn/mojamoja/2.13.1
 ...
@@ -58,7 +70,9 @@ svn: E200007: Trying to use an unsupported feature
 
 <p>直し方をメモしておきます。</p>
 
-<h2 id="原因:b3d12b85aa6526b84cee44966cb0c763">原因</h2>
+<p></p>
+
+<h2 id="原因">原因</h2>
 
 <p>Subversion は内部の HTTP/HTTPS クライアントとして serf または neon を使います。Configure オプションを特に指定しない場合は serf が使われるようですが、これに不具合があったようです。</p>
 
@@ -75,7 +89,7 @@ svn, version 1.7.10 (r1485443)
 
 <p>「serf が http と https をハンドルするぜ」と書いていますが、実際には E200007 エラーを吐いて止まります。</p>
 
-<h2 id="対策:b3d12b85aa6526b84cee44966cb0c763">対策</h2>
+<h2 id="対策">対策</h2>
 
 <p>もう一つの選択肢である neon を使うようにしたら、問題なく動作するようになりました。</p>
 
@@ -118,7 +132,7 @@ svn, version 1.7.10 (r1485443)
 
 <p><code>handles 'https' scheme</code> と出力されない時は、<code>--with-ssl</code> を付け忘れています。それでは https 通信ができないので、再コンパイルしてください。</p>
 
-<h2 id="余談:b3d12b85aa6526b84cee44966cb0c763">余談</h2>
+<h2 id="余談">余談</h2>
 
 <p>今回とは逆で、「neon だとエラーになるが serf なら大丈夫だった」という事例もありました。</p>
 
@@ -128,45 +142,58 @@ svn, version 1.7.10 (r1485443)
 
 <p>奇妙です。</p>
 
-<h2 id="参考:b3d12b85aa6526b84cee44966cb0c763">参考</h2>
+<h2 id="参考">参考</h2>
 
 <ul>
 <li><a href="http://blog.iss.ms/2009/04/12/141537">[memo][svn] svnクライアントにSSLをサポートさせる « いわぶろ（ろてん）</a></li>
 <li><a href="http://blog.r-unit.co.jp/archives/726">はだかの隊長日記 » Subversionコンパイル方法</a></li>
 <li><a href="http://masutaka.net/chalow/2009-06-15-1.html">Debian squeeze の subversion で http リポジトリにアクセスできなくなった / マスタカの ChangeLog メモ</a></li>
 </ul>
+	        </section>
+	    </article>
+	</main>
 
-        </div>
-      </div>
-    </div>
+    <footer class="site-footer">
+	<div class="inner">
+		<section class="footer-social">
+			
+		    <a href="//twitter.com/1000kei" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp;
+		    
+		    
+		    <a href="//github.com/1000k" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
+		    
+		    
+		    <a href="" target="_blank" title="RSS"><i class="fa fa-2x fa-fw fa-rss"></i> <span class="hidden">RSS</span></a>
+		</section>
 
-    <hr>
+		<section class="copyright">&copy; 2016 <a href="http://1000k.github.io/">SENDA Keijiro</a>. Released under the MIT license.</section>
+	</div>
+</footer>
 
-    
-      <a class="btn btn-previous" href="http://1000k.github.io/2013/08/27/recipe-for-construct-centos-rails4-ruby2/">&laquo; CentOS&#43;Rails4&#43;Ruby2.0の環境を構築するレシピ</a>
-    
-    
-      <a class="btn btn-next" href="http://1000k.github.io/2013/07/18/summary-of-agile-conference-tokyo-2013/">Agile Conference Tokyo 2013 のまとめ &raquo;</a>
-    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://1000k.github.io/js/index.js"></script>
+<script src="http://1000k.github.io/js/smooth-scroll.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
 
-    <div class="footer">
-  <p>Powered by <a href="http://gohugo.io">Hugo</a>. This theme—Slim—is open sourced on <a href="https://github.com/zhe/hugo-theme-slim">Github</a>.</p>
-</div>
+<script>
+    smoothScroll.init({
+        speed: 800,
+        easing: 'easeInOutCubic',
+        updateURL: false,
+        offset: 125,
+    });
+</script>
+<script>hljs.initHighlightingOnLoad();</script>
 
-  </div>
-  <script src="http://1000k.github.io//js/slim.js"></script>
-  <script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-46659459-2', 'auto');
-ga('send', 'pageview');
-
+<!-- Google Analytics -->
+<script>
+  var _gaq=[['_setAccount','UA-46659459-2'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
 
 
 </body>
-
 </html>

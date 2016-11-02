@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jquery Mobile on 1000g</title>
-    <link>http://1000k.github.io/tags/jquery-mobile/</link>
-    <description>Recent content in Jquery Mobile on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/jquery-mobile/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 20 Oct 2012 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/jquery-mobile/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -15,13 +15,13 @@
       <pubDate>Sat, 20 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2012/10/21/how-to-detect-the-page-is-homepage-or-not-in-jqm/</guid>
-      <description>
-
-&lt;p&gt;現在アクセスしているURLがアプリのトップページか否かを判断するには、どうすればいいでしょうか？&lt;/p&gt;
+      <description>&lt;p&gt;現在アクセスしているURLがアプリのトップページか否かを判断するには、どうすればいいでしょうか？&lt;/p&gt;
 
 &lt;p&gt;jQuery Mobile では id 属性を使ってページを識別するため、簡単に判断できます。&lt;/p&gt;
 
-&lt;h2 id=&#34;やりたいこと:0a67ae7ca7c840717b36a9958e52a0df&#34;&gt;やりたいこと&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;やりたいこと&#34;&gt;やりたいこと&lt;/h2&gt;
 
 &lt;p&gt;今アクセスしているURLが、アプリのトップページかどうか判別する関数を作る。&lt;/p&gt;
 
@@ -30,7 +30,7 @@
 &lt;li&gt;それ以外なら false&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;コード:0a67ae7ca7c840717b36a9958e52a0df&#34;&gt;コード&lt;/h2&gt;
+&lt;h2 id=&#34;コード&#34;&gt;コード&lt;/h2&gt;
 
 &lt;p&gt;トップページの id 属性が「top」という想定で進めます。&lt;/p&gt;
 
@@ -65,10 +65,9 @@ function isTop() {
 
 &lt;p&gt;jQuery Mobile では data-* 属性を取得する時にはカスタムセレクタの jqmData() を使うのが作法なので、このような書き方になります。（下記の参考リンク内の「$.fn.jqmData()」参照）&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:0a67ae7ca7c840717b36a9958e52a0df&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://jquerymobile.com/test/docs/api/methods.html&#34;&gt;jQuery Mobile Docs - Methods&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;a href=&#34;http://jquerymobile.com/test/docs/api/methods.html&#34;&gt;jQuery Mobile Docs - Methods&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -77,9 +76,7 @@ function isTop() {
       <pubDate>Sun, 14 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2012/10/14/jqm-remedy-when-the-map-does-not-appear-in-google-maps/</guid>
-      <description>
-
-&lt;p&gt;jQuery Mobile 1.2.0 Final での不具合です。&lt;/p&gt;
+      <description>&lt;p&gt;jQuery Mobile 1.2.0 Final での不具合です。&lt;/p&gt;
 
 &lt;p&gt;jQuery Mobile と Google Maps API の相性がいまいち良くないようで、いろいろな所で不具合が出ます。&lt;/p&gt;
 
@@ -95,9 +92,11 @@ function isTop() {
 
 &lt;p&gt;以下に不具合の検証用コードと、かなり妥協した解決案を記します。&lt;/p&gt;
 
-&lt;h2 id=&#34;検証用コード:463549662c038eb75ba927c71eba6045&#34;&gt;検証用コード&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;gmap1-html:463549662c038eb75ba927c71eba6045&#34;&gt;gmap1.html&lt;/h3&gt;
+&lt;h2 id=&#34;検証用コード&#34;&gt;検証用コード&lt;/h2&gt;
+
+&lt;h3 id=&#34;gmap1-html&#34;&gt;gmap1.html&lt;/h3&gt;
 
 &lt;p&gt;マップを表示するページです。&lt;/p&gt;
 
@@ -124,7 +123,7 @@ function isTop() {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;gmap2-html:463549662c038eb75ba927c71eba6045&#34;&gt;gmap2.html&lt;/h3&gt;
+&lt;h3 id=&#34;gmap2-html&#34;&gt;gmap2.html&lt;/h3&gt;
 
 &lt;p&gt;フォーム画面。今回は dialog を使いました。&lt;/p&gt;
 
@@ -146,18 +145,18 @@ function isTop() {
 
 &lt;p&gt;これらのページを設置し、「gmap1.html -&amp;gt; gmap2.html -&amp;gt; gmap1.html」という遷移をすると、2回目の gmap1.html でマップが表示されません。&lt;/p&gt;
 
-&lt;h2 id=&#34;解決案:463549662c038eb75ba927c71eba6045&#34;&gt;解決案&lt;/h2&gt;
+&lt;h2 id=&#34;解決案&#34;&gt;解決案&lt;/h2&gt;
 
 &lt;p&gt;jQuery Mobile が内部で Ajax をガチャガチャやっているのが悪影響を及ぼしているようなので、Ajaxをオフにすれば治りました。&lt;/p&gt;
 
 &lt;p&gt;上記のコードで、「// $.mobile.ajaxEnabled = false;」となっている部分をコメントアウトすればOKです。&lt;/p&gt;
 
-&lt;h3 id=&#34;gmap1-html-1:463549662c038eb75ba927c71eba6045&#34;&gt;gmap1.html&lt;/h3&gt;
+&lt;h3 id=&#34;gmap1-html-1&#34;&gt;gmap1.html&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;$.mobile.ajaxEnabled = false;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;gmap2-html-1:463549662c038eb75ba927c71eba6045&#34;&gt;gmap2.html&lt;/h3&gt;
+&lt;h3 id=&#34;gmap2-html-1&#34;&gt;gmap2.html&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;$.mobile.ajaxEnabled = false;
 &lt;/code&gt;&lt;/pre&gt;
@@ -173,7 +172,7 @@ function isTop() {
 });
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;参考:463549662c038eb75ba927c71eba6045&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://jquerymobile.com/test/docs/api/globalconfig.html&#34;&gt;jQuery Mobile Docs - Configuring default settings&lt;/a&gt;
@@ -186,8 +185,7 @@ function isTop() {
 &lt;ul&gt;
 &lt;li&gt;「Help, my map is rendered incorrectly! (jQM)」に同じ不具合の対処法が書いてありました。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -196,13 +194,11 @@ function isTop() {
       <pubDate>Sun, 14 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2012/10/14/how-to-dynamically-insert-the-list-view-in-the-jquery-mobile/</guid>
-      <description>
-
-&lt;p&gt;jQuery Mobile 1.2 を使ってリストビューを動的に挿入する手順を紹介します。&lt;/p&gt;
+      <description>&lt;p&gt;jQuery Mobile 1.2 を使ってリストビューを動的に挿入する手順を紹介します。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://jquerymobile.com/test/docs/pages/page-dynamic.html&#34;&gt;公式マニュアル&lt;/a&gt;にもやり方は書いてあるのですが、本題と関係ない部分（リンクをクリックしたらその取得先を正規表現で取得するなど）が長く読みづらいので、もっと簡単なバージョンを書きました。&lt;/p&gt;
 
-&lt;h2 id=&#34;やりたいこと:83f3cc2b588221556f2cadc603a0bf3c&#34;&gt;やりたいこと&lt;/h2&gt;
+&lt;h2 id=&#34;やりたいこと&#34;&gt;やりたいこと&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;「Inject!」ボタンを押す&lt;/li&gt;
@@ -212,27 +208,29 @@ function isTop() {
 
 &lt;p&gt;画面イメージはこんな感じです。↓&lt;/p&gt;
 
-&lt;p&gt;
+
 &lt;figure &gt;
     
         &lt;img src=&#34;http://1000k.github.io/img/dynamic_injection1.png&#34;  /&gt;
     
     
 &lt;/figure&gt;
-&lt;/p&gt;
+
 
 &lt;p&gt;「Inject!」をクリックすると、ヘッダとコンテンツが書き換えられます。&lt;/p&gt;
 
-&lt;p&gt;
+
 &lt;figure &gt;
     
         &lt;img src=&#34;http://1000k.github.io/img/dynamic_injection2.png&#34;  /&gt;
     
     
 &lt;/figure&gt;
-&lt;/p&gt;
 
-&lt;h2 id=&#34;サンプルコード:83f3cc2b588221556f2cadc603a0bf3c&#34;&gt;サンプルコード&lt;/h2&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;サンプルコード&#34;&gt;サンプルコード&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;
 
@@ -263,7 +261,7 @@ function isTop() {
 
 &lt;p&gt;処理の内容を細かく見てみましょう。&lt;/p&gt;
 
-&lt;h3 id=&#34;クリックイベントをバインドする:83f3cc2b588221556f2cadc603a0bf3c&#34;&gt;クリックイベントをバインドする&lt;/h3&gt;
+&lt;h3 id=&#34;クリックイベントをバインドする&#34;&gt;クリックイベントをバインドする&lt;/h3&gt;
 
 &lt;p&gt;はじめに、「Inject!」ボタンをクリックした時に showList() 関数を呼び出すようにバインドします。&lt;/p&gt;
 
@@ -274,7 +272,7 @@ function isTop() {
 
 &lt;p&gt;次に showList() の中身を見てみます。&lt;/p&gt;
 
-&lt;h3 id=&#34;dom要素を格納する:83f3cc2b588221556f2cadc603a0bf3c&#34;&gt;DOM要素を格納する&lt;/h3&gt;
+&lt;h3 id=&#34;dom要素を格納する&#34;&gt;DOM要素を格納する&lt;/h3&gt;
 
 &lt;p&gt;まずはページ内の各要素のDOM要素を変数に格納しておきます。&lt;/p&gt;
 
@@ -291,7 +289,7 @@ function isTop() {
 
 &lt;p&gt;&lt;a href=&#34;http://dev.screw-axis.com/doc/jquery_mobile/api/methods_utilities/methods/jqmData/&#34;&gt;jqmData | jQuery Mobile 1.1.0 日本語リファレンス&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;リストビューを生成する:83f3cc2b588221556f2cadc603a0bf3c&#34;&gt;リストビューを生成する&lt;/h3&gt;
+&lt;h3 id=&#34;リストビューを生成する&#34;&gt;リストビューを生成する&lt;/h3&gt;
 
 &lt;p&gt;続いてリストビューのDOM要素を生成します。&lt;/p&gt;
 
@@ -480,8 +478,7 @@ function isTop() {
     &amp;lt;/li&amp;gt;
 
   &amp;lt;/ul&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
     <item>
@@ -490,19 +487,19 @@ function isTop() {
       <pubDate>Sat, 13 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2012/10/14/order-in-which-the-event-is-fired-when-the-page-transition-of-jquery-mobile/</guid>
-      <description>
-
-&lt;p&gt;ページ遷移持のイベントの発火タイミングをよくよく理解しておかなければ、jQuery Mobile を使いこなすことはできません。&lt;/p&gt;
+      <description>&lt;p&gt;ページ遷移持のイベントの発火タイミングをよくよく理解しておかなければ、jQuery Mobile を使いこなすことはできません。&lt;/p&gt;
 
 &lt;p&gt;単純なページ間の遷移で発生するイベントの順番を確認しておきます。&lt;/p&gt;
 
 &lt;p&gt;なお、イベント一覧は &lt;a href=&#34;http://jquerymobile.com/demos/1.2.0/docs/api/events.html&#34;&gt;jQuery Mobile Docs - Events&lt;/a&gt; に記されています。&lt;/p&gt;
 
-&lt;h2 id=&#34;検証コード:c15683fca1bbc196b47070ebbf2c2463&#34;&gt;検証コード&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;検証コード&#34;&gt;検証コード&lt;/h2&gt;
 
 &lt;p&gt;コードはgistにも公開してあります。→&lt;a href=&#34;https://gist.github.com/3886193&#34;&gt;Verify the event firing timings of jQuery Mobile — Gist&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;page1-html:c15683fca1bbc196b47070ebbf2c2463&#34;&gt;page1.html&lt;/h3&gt;
+&lt;h3 id=&#34;page1-html&#34;&gt;page1.html&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;
 
@@ -521,7 +518,7 @@ function isTop() {
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;page2-html:c15683fca1bbc196b47070ebbf2c2463&#34;&gt;page2.html&lt;/h3&gt;
+&lt;h3 id=&#34;page2-html&#34;&gt;page2.html&lt;/h3&gt;
 
 &lt;p&gt;page1 とほぼ同じなので、[data-role=&amp;ldquo;page&amp;rdquo;]ブロック内だけ。&lt;/p&gt;
 
@@ -534,7 +531,7 @@ function isTop() {
 &amp;lt;/div&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;transition-js:c15683fca1bbc196b47070ebbf2c2463&#34;&gt;transition.js&lt;/h3&gt;
+&lt;h3 id=&#34;transition-js&#34;&gt;transition.js&lt;/h3&gt;
 
 &lt;p&gt;イベント発火時にコンソールにイベント名が出るようにしています。&lt;/p&gt;
 
@@ -567,7 +564,7 @@ $(document).bind(&amp;quot;pageinit&amp;quot;, function() { console.log(&amp;quo
 $(document).bind(&amp;quot;pageremove&amp;quot;, function() { console.log(&amp;quot;pageremove&amp;quot;); });
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;実験:c15683fca1bbc196b47070ebbf2c2463&#34;&gt;実験&lt;/h2&gt;
+&lt;h2 id=&#34;実験&#34;&gt;実験&lt;/h2&gt;
 
 &lt;p&gt;「page1.html -&amp;gt; page2.html -&amp;gt; page1.html -&amp;gt; page2.html」という遷移をした時のコンソールログは以下です。&lt;/p&gt;
 
@@ -619,7 +616,7 @@ pageshow
 pagechange
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;考察:c15683fca1bbc196b47070ebbf2c2463&#34;&gt;考察&lt;/h2&gt;
+&lt;h2 id=&#34;考察&#34;&gt;考察&lt;/h2&gt;
 
 &lt;p&gt;気付いた点をメモします。&lt;/p&gt;
 
@@ -629,14 +626,13 @@ pagechange
 &lt;li&gt;逆に、page1.html で pageinit が発火するのは最初のアクセス時のみ。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;参考:c15683fca1bbc196b47070ebbf2c2463&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://jquerymobile.com/demos/1.2.0/docs/pages/page-scripting.html&#34;&gt;jQuery Mobile Docs - Scripting pages&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://jquerymobile.com/demos/1.2.0/docs/api/events.html&#34;&gt;jQuery Mobile Docs - Events&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/Naotsugu/20120103/1325568080&#34;&gt;はじめての jQuery Mobile 1.0 ～その2：ページ遷移～ - etc9&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
   </channel>

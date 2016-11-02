@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>改造 on 1000g</title>
-    <link>http://1000k.github.io/tags/%E6%94%B9%E9%80%A0/</link>
-    <description>Recent content in 改造 on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/%E6%94%B9%E9%80%A0/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 05 Jul 2011 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/%E6%94%B9%E9%80%A0/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -15,11 +15,9 @@
       <pubDate>Tue, 05 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2011/07/05/mange-fixtures-in-several-directories/</guid>
-      <description>
+      <description>&lt;p&gt;&lt;strong&gt;(2011/07/15 Update) 7/13以前のコードに誤りがあり、正しく動作しなかったので修正しました。&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;(2011/07/15 Update) 7/13以前のコードに誤りがあり、正しく動作しなかったので修正しました。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;やりたいこと:06041edaaf4ad9c158653456ce78f617&#34;&gt;やりたいこと&lt;/h2&gt;
+&lt;h2 id=&#34;やりたいこと&#34;&gt;やりたいこと&lt;/h2&gt;
 
 &lt;p&gt;CakePHPの規則に従うと、フィクスチャは /app/test/fixtures/ ディレクトリにすべて入れなければなりません。この場合、「同じモデルを使うけど、テストケース毎に異なるフィクスチャを代入したい」という要望をかなえるのが難しいです。&lt;/p&gt;
 
@@ -43,7 +41,9 @@
 
 &lt;p&gt;と使い分けられるようにする方法を考えました。&lt;/p&gt;
 
-&lt;h2 id=&#34;やり方:06041edaaf4ad9c158653456ce78f617&#34;&gt;やり方&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;やり方&#34;&gt;やり方&lt;/h2&gt;
 
 &lt;p&gt;CakeTestCase を拡張した MyCakeTestCase を作成し、その中で _loadFixtures をオーバーライドします。&lt;/p&gt;
 
@@ -162,13 +162,13 @@ class HigesControllerTestCase extends MyCakeTestCase {
 ?&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;副作用:06041edaaf4ad9c158653456ce78f617&#34;&gt;副作用&lt;/h2&gt;
+&lt;h2 id=&#34;副作用&#34;&gt;副作用&lt;/h2&gt;
 
 &lt;p&gt;テストケースで「App::import(&amp;lsquo;Lib&amp;rsquo;, &amp;lsquo;MyCakeTestCase&amp;rsquo;);」すると、なぜかMyCakeTestCaseもテスト対象になるらしく、テスト結果の「n/n test cases complete」の値が1増えます。&lt;/p&gt;
 
 &lt;p&gt;テスト結果のGreen/Redには影響しないので、無視してください。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:06041edaaf4ad9c158653456ce78f617&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/hiromi2424/20101215/1292379625&#34;&gt;App::import() は凄い - 24時間CakePHP&lt;/a&gt;
@@ -176,8 +176,7 @@ class HigesControllerTestCase extends MyCakeTestCase {
 &lt;ul&gt;
 &lt;li&gt;本当はApp::importだけでできれば一番いいんですけどね。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
   </channel>

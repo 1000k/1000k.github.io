@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pear on 1000g</title>
-    <link>http://1000k.github.io/tags/pear/</link>
-    <description>Recent content in Pear on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/pear/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 25 Jun 2013 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/pear/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -15,9 +15,7 @@
       <pubDate>Tue, 25 Jun 2013 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2013/06/25/how-to-run-phpunit-under-php-5-2-environment/</guid>
-      <description>
-
-&lt;p&gt;業務で使っているアプリが PHP 5.2 でしか動かず、仕方なく PHP 5.2 でも動く PHPUnit 3.6.11 を使っています。([= 3.6.12 は PHP 5.3 が必要。&amp;rsquo;]);&amp;rdquo; title=&amp;ldquo;PHPUnitをアップグレードしたら動作しなくなった | 1000g&amp;rdquo;&amp;gt;PHPUnit &amp;gt;= 3.6.12 は PHP 5.3 が必要。](&lt;a href=&#34;http://blog.1000k.net/2012/10/19/phpunit%E3%82%92%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%97%E3%81%9F%E3%82%89%E5%8B%95%E4%BD%9C%E3%81%97%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9F/))&#34;&gt;http://blog.1000k.net/2012/10/19/phpunit%E3%82%92%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%97%E3%81%9F%E3%82%89%E5%8B%95%E4%BD%9C%E3%81%97%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9F/))&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;業務で使っているアプリが PHP 5.2 でしか動かず、仕方なく PHP 5.2 でも動く PHPUnit 3.6.11 を使っています。([= 3.6.12 は PHP 5.3 が必要。&amp;rsquo;]);&amp;rdquo; title=&amp;ldquo;PHPUnitをアップグレードしたら動作しなくなった | 1000g&amp;rdquo;&amp;gt;PHPUnit &amp;gt;= 3.6.12 は PHP 5.3 が必要。](&lt;a href=&#34;http://blog.1000k.net/2012/10/19/phpunit%E3%82%92%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%97%E3%81%9F%E3%82%89%E5%8B%95%E4%BD%9C%E3%81%97%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9F/))&#34;&gt;http://blog.1000k.net/2012/10/19/phpunit%E3%82%92%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%97%E3%81%9F%E3%82%89%E5%8B%95%E4%BD%9C%E3%81%97%E3%81%AA%E3%81%8F%E3%81%AA%E3%81%A3%E3%81%9F/))&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;最近になってサーバーのリプレースの時期になり、新しいビルドマシンに PHPUnit をインストールする羽目になったのですが、うまくバージョンが揃わず苦労しました。&lt;/p&gt;
 
@@ -25,11 +23,13 @@
 
 &lt;p&gt;なお、コマンドは全て super user で叩いています。&lt;/p&gt;
 
-&lt;h2 id=&#34;環境:a58652de0ea1df651ea37649dd28159c&#34;&gt;環境&lt;/h2&gt;
+&lt;h2 id=&#34;環境&#34;&gt;環境&lt;/h2&gt;
 
 &lt;p&gt;CentOS 6.3 63bit&lt;/p&gt;
 
-&lt;h2 id=&#34;php-5-2-をインストールする:a58652de0ea1df651ea37649dd28159c&#34;&gt;PHP 5.2 をインストールする&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;php-5-2-をインストールする&#34;&gt;PHP 5.2 をインストールする&lt;/h2&gt;
 
 &lt;p&gt;そもそも5.2系はとっくに Deprecated なので使うべきではないのですが、業務で使うから仕方ない。&lt;/p&gt;
 
@@ -45,7 +45,7 @@
 
 &lt;p&gt;configure オプションは &lt;a href=&#34;http://www.php.net/manual/ja/configure.about.php&#34;&gt;PHP: 中心となる configure オプションのリスト - Manual&lt;/a&gt; を参考に。&lt;/p&gt;
 
-&lt;h2 id=&#34;pear-をアップグレードする:a58652de0ea1df651ea37649dd28159c&#34;&gt;PEAR をアップグレードする&lt;/h2&gt;
+&lt;h2 id=&#34;pear-をアップグレードする&#34;&gt;PEAR をアップグレードする&lt;/h2&gt;
 
 &lt;p&gt;PHP 5.2.17 にデフォルトで入っている PEAR 1.9.1 では、各種パッケージをインストールする時に下のようなエラーが出ます。&lt;/p&gt;
 
@@ -65,7 +65,7 @@ is 1.9.1
 &lt;pre&gt;&lt;code&gt;# pear upgrade PEAR
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;phpunit-をインストールする:a58652de0ea1df651ea37649dd28159c&#34;&gt;PHPUnit をインストールする&lt;/h2&gt;
+&lt;h2 id=&#34;phpunit-をインストールする&#34;&gt;PHPUnit をインストールする&lt;/h2&gt;
 
 &lt;p&gt;これで PHPUnit をインストールする準備が整いました。&lt;/p&gt;
 
@@ -82,7 +82,7 @@ is 1.9.1
 PHPUnit 3.6.11 by Sebastian Bergmann.
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;ついでに関連ツールも入れる:a58652de0ea1df651ea37649dd28159c&#34;&gt;ついでに関連ツールも入れる&lt;/h2&gt;
+&lt;h2 id=&#34;ついでに関連ツールも入れる&#34;&gt;ついでに関連ツールも入れる&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://jenkins-php.org/&#34;&gt;Template for Jenkins Jobs for PHP Projects&lt;/a&gt; で紹介されているツールは下記のコマンドでインストールできます。&lt;/p&gt;
 
@@ -99,7 +99,7 @@ PHPUnit 3.6.11 by Sebastian Bergmann.
 # pear install PHP_CodeSniffer
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;愚痴:a58652de0ea1df651ea37649dd28159c&#34;&gt;愚痴&lt;/h2&gt;
+&lt;h2 id=&#34;愚痴&#34;&gt;愚痴&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/composer/composer&#34;&gt;Composer&lt;/a&gt; を使えれば圧倒的に楽なのですが、PHP &amp;gt;= 5.3.2 でしか動かないので諦めました。&lt;/li&gt;
@@ -107,8 +107,7 @@ PHPUnit 3.6.11 by Sebastian Bergmann.
 &lt;li&gt;自動テストがあれば PHP をバージョンアップできるか検証できるのですが、ほとんどテストケースが無いのでそれも無理。コード総数は10万行。死にたい。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;ちゃんと自動テストは作ろうね！&lt;/p&gt;
-</description>
+&lt;p&gt;ちゃんと自動テストは作ろうね！&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -117,9 +116,7 @@ PHPUnit 3.6.11 by Sebastian Bergmann.
       <pubDate>Fri, 19 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2012/10/19/phpunit-does-not-run-after-upgrade/</guid>
-      <description>
-
-&lt;p&gt;PHPUnit を何となくアップグレードしたら動かなくなってしまいました。&lt;/p&gt;
+      <description>&lt;p&gt;PHPUnit を何となくアップグレードしたら動かなくなってしまいました。&lt;/p&gt;
 
 &lt;p&gt;今回は pear upgrade で PHPUnit を 3.6.11 から 3.6.12 に 更新した後、phpunit コマンドを叩くと下記のようなエラーが出るようになりました。&lt;/p&gt;
 
@@ -134,7 +131,9 @@ Call Stack:
 
 &lt;p&gt;修復に小一時間かかったので、直し方をメモしておきます。&lt;/p&gt;
 
-&lt;h2 id=&#34;原因:50be0dd242e143a3defa66c95863f49e&#34;&gt;原因&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;原因&#34;&gt;原因&lt;/h2&gt;
 
 &lt;p&gt;PHPUnit は PHP &amp;gt;= 5.3 での利用を強く推奨しており、PHP &amp;lt;= 5.2 のままだと動かない機能を盛り込んでくることがあります。&lt;/p&gt;
 
@@ -149,7 +148,7 @@ Call Stack:
 
 &lt;p&gt;上記のソースからおわかりのように、1.0.4 から匿名関数を使っています。これは PHP &amp;gt;= 5.3 でしか動きません。5.2系ではパースエラーになります。&lt;/p&gt;
 
-&lt;h2 id=&#34;対策:50be0dd242e143a3defa66c95863f49e&#34;&gt;対策&lt;/h2&gt;
+&lt;h2 id=&#34;対策&#34;&gt;対策&lt;/h2&gt;
 
 &lt;p&gt;PHP_Timer を再インストールすることで修正可能です。&lt;/p&gt;
 
@@ -175,7 +174,7 @@ install ok: channel://pear.phpunit.de/PHP_Timer-1.0.3
 
 &lt;p&gt;もしくはさっさと5.4系に移行しましょう。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:50be0dd242e143a3defa66c95863f49e&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://dustyreagan.com/downgrade-phpunit-3-6-to-3-5-15/&#34;&gt;How to Downgrade PHPUnit 3.6 to 3.5.15 | Dusty Reagan&lt;/a&gt;
@@ -183,8 +182,7 @@ install ok: channel://pear.phpunit.de/PHP_Timer-1.0.3
 &lt;ul&gt;
 &lt;li&gt;pear パッケージのダウングレード方法はこちらを参考にしました。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -206,13 +204,13 @@ stream_socket_client(): unable to connect to ssl://www.google.com:443 (Unknown e
 
 &lt;p&gt;検証のためcurlコマンドで同じURLに接続を試みると、ちゃんとレスポンスが返ってきます。何か設定をし忘れているに違いない。&lt;/p&gt;
 
-&lt;h1 id=&#34;原因:718cece10d0369f9449331b24890587d&#34;&gt;原因&lt;/h1&gt;
+&lt;h1 id=&#34;原因&#34;&gt;原因&lt;/h1&gt;
 
 &lt;p&gt;どうやら HTTP_Request::setConfig() で正しい接続設定を行えていない場合、&amp;rdquo;Malformed response&amp;rdquo; というエラーが出るようです。&lt;/p&gt;
 
 &lt;p&gt;私の場合、オレオレ証明書の許可と社内プロキシの設定を行っていなかったためにはまってしまったようです。&lt;/p&gt;
 
-&lt;h1 id=&#34;対応:718cece10d0369f9449331b24890587d&#34;&gt;対応&lt;/h1&gt;
+&lt;h1 id=&#34;対応&#34;&gt;対応&lt;/h1&gt;
 
 &lt;p&gt;オレオレ証明書を持ったサイトを許可するために、setConfig() で &lt;strong&gt;ssl_verify_peer&lt;/strong&gt; と &lt;strong&gt;ssl_verify_host&lt;/strong&gt; を false に設定してやります。&lt;/p&gt;
 
@@ -235,7 +233,7 @@ print_r($response);     // HTTPレスポンスが出力される
 
 &lt;p&gt;ほかにも設定項目はあるので、&lt;a href=&#34;http://pear.php.net/manual/en/package.http.http-request2.config.php&#34;&gt;マニュアル&lt;/a&gt;を参考に設定を疑ってみてはどうでしょうか。&lt;/p&gt;
 
-&lt;h1 id=&#34;参考:718cece10d0369f9449331b24890587d&#34;&gt;参考&lt;/h1&gt;
+&lt;h1 id=&#34;参考&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://pear.php.net/manual/en/package.http.http-request2.config.php&#34;&gt;Manual :: Configuration parameters for HTTP_Request2&lt;/a&gt;
@@ -258,11 +256,11 @@ print_r($response);     // HTTPレスポンスが出力される
       <pubDate>Mon, 21 Nov 2011 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2011/11/21/pear-clear-cache-before-pear-install/</guid>
-      <description>
-
-&lt;p&gt;pear installでパッケージをインストールしようと思いましたが、身に覚えのないエラーが出て困りました。&lt;/p&gt;
+      <description>&lt;p&gt;pear installでパッケージをインストールしようと思いましたが、身に覚えのないエラーが出て困りました。&lt;/p&gt;
 
 &lt;p&gt;インストールエラーの原因と、解決法をメモしておきます。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;出てきたエラーメッセージは以下。&lt;/p&gt;
 
@@ -313,12 +311,11 @@ install ok: channel://pear.php.net/HTTP_Request2-2.0.0
 
 &lt;p&gt;でたらめなエラーメッセージはやめていただきたいですね。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:ffbf1c0b8401971288a56b58bcdcb029&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/6442187/security-error-while-installing-phing-using-pear&#34;&gt;Security Error while installing phing using pear - Stack Overflow&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
   </channel>

@@ -1,56 +1,68 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ja">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<title> JavaScript で Chrome のウィンドウを閉じる方法 &middot; 1000g </title>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
+    <title>JavaScript で Chrome のウィンドウを閉じる方法 &middot; 1000g</title>
+    <meta name="author" content="SENDA Keijiro">
+    <meta name="description" content="Programming knowledge">
+    <meta name="generator" content="Hugo 0.17" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-<link rel="stylesheet" href="http://1000k.github.io//css/slim.css">
-<link rel="stylesheet" href="http://1000k.github.io//css/highlight.min.css">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext' rel='stylesheet'>
+    <!-- RSS autodiscovery -->
+    
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
-<link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="http://1000k.github.io/img/favicon.ico">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.2/normalize.min.css">
 
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://1000k.github.io/css/screen.css">
+    <link rel="stylesheet" href="http://1000k.github.io/css/github.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/default.min.css">
 
-<link href="" rel="alternate" type="application/rss+xml" title="1000g" />
-
-
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
+    <!-- Stylesheet for theme color -->
+    <style type="text/css">
+    a, a:visited {color: #33cc99;}
+    .pagination a {color: #33cc99;}
+    .gist .gist-file .gist-meta a:visited {color: #33cc99 !important;}
+    a:focus, a:hover {color: #178b6b;}
+    h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #178b6b;}
+    .older-posts:hover, .newer-posts:hover {color: #178b6b;}
+</style>
 </head>
 
-<body>
-  <div class="container">
-    <div class="header">
-  <h1 class="site-title"><a href="http://1000k.github.io/">1000g</a></h1>
-  <p class="site-tagline">Tech blog</p>
-  <div class="nav">
-    <a class="nav-btn" href="#">
-      <span class="ci ci-burger"></span>
-    </a>
-    <ul class="nav-list">
-      
+<body class="post-template">
 
-      <li><a href="https://github.com/1000k">Github</a></li>
-      <li><a href="https://twitter.com/1000kei">Twitter</a></li>
-      
+    <header id="site-head">
+	
+	<h1 class="blog-title"><a href="http://1000k.github.io/">1000g</a></h1>
+	
+	
+	<h1 class="blog-subtitle">Development knowledge</h1>
+	
+</header>
+    
+<nav class="menu" role="nav">
+    <ul>
+        
+        	<li class="nav nav-current"><a href="/about/">ABOUT</a></li>
+      	
     </ul>
-  </div>
-</div>
-    <div class="content">
-      <div class="post">
-        <h2 class="post-title"><a href="http://1000k.github.io/2015/01/16/close-popup-window-on-chrome/">JavaScript で Chrome のウィンドウを閉じる方法</a></h2>
-        <div class="post-content">
-          
+</nav>
 
-<p>以前リリースしたあるサービスで、「一部の入力フォームを別ウィンドウをポップアップして入力させ、終わったらリンクをクリックして閉じる」という JavaScript の処理を入れていたのですが、なぜか最近の Chrome で画面が固まってしまう不具合が発生しました。2014年の春にテストした時は問題なく動いていたのですが。</p>
 
-<h2 id="再現方法:96680621d7ebbfce2d483f1126ea0d2a">再現方法</h2>
+    <main class="content" role="main">
+	    <article class="post">
+	        <header>
+	        <h1 class="post-title">JavaScript で Chrome のウィンドウを閉じる方法</h1>
+
+	        <section class="post-content">
+	            <p>以前リリースしたあるサービスで、「一部の入力フォームを別ウィンドウをポップアップして入力させ、終わったらリンクをクリックして閉じる」という JavaScript の処理を入れていたのですが、なぜか最近の Chrome で画面が固まってしまう不具合が発生しました。2014年の春にテストした時は問題なく動いていたのですが。</p>
+
+<h2 id="再現方法">再現方法</h2>
 
 <p>不具合は以下の流れで発生します。確認したブラウザは 39.0.2171.99m です。</p>
 
@@ -66,7 +78,9 @@
 
 <p>今なら子ウィンドウを消す JavaScript をどう実装するべきなのかを、少し検証してみました。</p>
 
-<h2 id="検証:96680621d7ebbfce2d483f1126ea0d2a">検証</h2>
+<p></p>
+
+<h2 id="検証">検証</h2>
 
 <p>以下の2つの HTML を用意します。</p>
 
@@ -144,7 +158,7 @@
 
 <p>悪さをしているのは WebKit か検証するため、一応 Safari でも実験しましたが、問題はありませんでした。今のところは Chrome だけ処理を分けるようにすれば良さそうです。ただ、Safari の WebKit は若干バージョンが古い (Safari = WebKit/534.57.2, Chrome = Webkit/537.36) ので、今後のバージョンアップでどうなるかは不明です。</p>
 
-<h2 id="解決策:96680621d7ebbfce2d483f1126ea0d2a">解決策</h2>
+<h2 id="解決策">解決策</h2>
 
 <p>検証結果から、全て Close window 2 (単純版) の書き方にすれば解決するように見えますが、一応古いブラウザーとの互換性を考えて、Chrome だけ単純版に分岐するような JS にしました。</p>
 
@@ -153,45 +167,58 @@
 
 <p>これでどのブラウザーでも閉じられるようになりました。</p>
 
-<h2 id="参考:96680621d7ebbfce2d483f1126ea0d2a">参考</h2>
+<h2 id="参考">参考</h2>
 
 <ul>
 <li><a href="http://stackoverflow.com/questions/19761241/window-close-and-self-close-do-not-close-the-window-in-chrome">javascript - window.close and self.close do not close the window in Chrome - Stack Overflow</a></li>
 <li><a href="http://stackoverflow.com/questions/12625876/how-to-detect-chrome-and-safari-browser-webkit">javascript - How to detect chrome and safari browser (webkit) - Stack Overflow</a></li>
 <li><a href="http://kojikoji75.hatenablog.com/entry/2013/12/15/223839">JavaScriptでWindow.closeする時のブラウザ別対応まとめ - TechNote</a></li>
 </ul>
+	        </section>
+	    </article>
+	</main>
 
-        </div>
-      </div>
-    </div>
+    <footer class="site-footer">
+	<div class="inner">
+		<section class="footer-social">
+			
+		    <a href="//twitter.com/1000kei" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp;
+		    
+		    
+		    <a href="//github.com/1000k" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
+		    
+		    
+		    <a href="" target="_blank" title="RSS"><i class="fa fa-2x fa-fw fa-rss"></i> <span class="hidden">RSS</span></a>
+		</section>
 
-    <hr>
+		<section class="copyright">&copy; 2016 <a href="http://1000k.github.io/">SENDA Keijiro</a>. Released under the MIT license.</section>
+	</div>
+</footer>
 
-    
-      <a class="btn btn-previous" href="http://1000k.github.io/2015/01/27/validate-cakephp2-rules-with-sublime-text2-phpcs-plugin/">&laquo; Sublime Text 2 で CakePHP2 の CodeSniffer ルールを適用する</a>
-    
-    
-      <a class="btn btn-next" href="http://1000k.github.io/2015/01/16/reasons-for-using-chef-client-local-mode-instead-of-chef-solo/">Chef Solo ではなく Chef Client Local Mode を使おう &raquo;</a>
-    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://1000k.github.io/js/index.js"></script>
+<script src="http://1000k.github.io/js/smooth-scroll.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
 
-    <div class="footer">
-  <p>Powered by <a href="http://gohugo.io">Hugo</a>. This theme—Slim—is open sourced on <a href="https://github.com/zhe/hugo-theme-slim">Github</a>.</p>
-</div>
+<script>
+    smoothScroll.init({
+        speed: 800,
+        easing: 'easeInOutCubic',
+        updateURL: false,
+        offset: 125,
+    });
+</script>
+<script>hljs.initHighlightingOnLoad();</script>
 
-  </div>
-  <script src="http://1000k.github.io//js/slim.js"></script>
-  <script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-46659459-2', 'auto');
-ga('send', 'pageview');
-
+<!-- Google Analytics -->
+<script>
+  var _gaq=[['_setAccount','UA-46659459-2'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
 
 
 </body>
-
 </html>

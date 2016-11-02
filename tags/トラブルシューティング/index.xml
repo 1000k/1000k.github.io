@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>トラブルシューティング on 1000g</title>
-    <link>http://1000k.github.io/tags/%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0/</link>
-    <description>Recent content in トラブルシューティング on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 03 Jul 2014 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -142,7 +142,7 @@ $ java -version
 
 &lt;p&gt;Node.js はデバッグメッセージが雑なことが多いので苦手です。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:44911033301877b7be87059dd5b5c5f6&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/20188679/how-to-run-protractor/23772014#23772014&#34;&gt;angularjs - How to run protractor? - Stack Overflow&lt;/a&gt;&lt;/li&gt;
@@ -189,11 +189,11 @@ $ java -version
 
 &lt;p&gt;「else なんて必要ねえよ。else の必要ない書き方しろよ。」と言ってきます。言いたいことはわかりますが、リファクタリングした結果最もメンテナンス性が高くなるなら、if-else 構文を使っても全然問題ないはずです。else を使うだけで警告レベル High で糾弾するのはいかがなものでしょうか。&lt;/p&gt;
 
-&lt;h2 id=&#34;まとめ:fa9ca428d896ab32fcf9e86dc6eea620&#34;&gt;まとめ&lt;/h2&gt;
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
 
 &lt;p&gt;PHPMD はヒステリー気味なので、レポート結果をあまり深刻に受け取らないようにしましょう。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:fa9ca428d896ab32fcf9e86dc6eea620&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://phpmd.org/&#34;&gt;PHPMD - PHP Mess Detector&lt;/a&gt;&lt;/li&gt;
@@ -208,9 +208,7 @@ $ java -version
       <pubDate>Mon, 28 Oct 2013 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2013/10/28/how-to-save-id-and-pw-of-git-repository-in-jenkins/</guid>
-      <description>
-
-&lt;p&gt;Jenkins から https 接続で認証付きの Git リポジトリを参照する場合、以下のように URL に直接ユーザー名とパスワードを書く必要がありました。&lt;/p&gt;
+      <description>&lt;p&gt;Jenkins から https 接続で認証付きの Git リポジトリを参照する場合、以下のように URL に直接ユーザー名とパスワードを書く必要がありました。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;https://{USERNAME}:{PASSWORD}@foo.com/git/bar.git
 &lt;/code&gt;&lt;/pre&gt;
@@ -220,6 +218,8 @@ $ java -version
 &lt;p&gt;ところが、2013年10月22日にリリースされた Git Plugin 2.0 から、Credential Plugin と連携して暗号化したパスワードを保存できるようになったため、大幅に設定が楽になりました。&lt;/p&gt;
 
 &lt;p&gt;以下にそのやり方をメモしておきます。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;リポジトリの URL は &lt;code&gt;https://foo.com/git/bar.git&lt;/code&gt; とします。&lt;/p&gt;
 
@@ -334,7 +334,7 @@ $ java -version
 
 &lt;p&gt;これでプロジェクトをビルド可能になります。&lt;/p&gt;
 
-&lt;h2 id=&#34;git-1-7-1-では認証が通らない:094599a56af5c07d8e54136f1f310fd1&#34;&gt;Git 1.7.1 では認証が通らない？&lt;/h2&gt;
+&lt;h2 id=&#34;git-1-7-1-では認証が通らない&#34;&gt;Git 1.7.1 では認証が通らない？&lt;/h2&gt;
 
 &lt;p&gt;CentOS 6.3 で、EPEL リポジトリから Git をインストールすると 1.7.1 が入りますが、これだとうまく認証が通りませんでした。プロジェクトの設定画面で &amp;ldquo;Repository URL&amp;rdquo; と &amp;ldquo;Credential&amp;rdquo; を入力しても、 &lt;code&gt;Error performing command: ls-remote -h&lt;/code&gt; というエラーが出て進めませんでした。&lt;/p&gt;
 
@@ -366,13 +366,12 @@ make install
 &lt;/figure&gt;
 &lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:094599a56af5c07d8e54136f1f310fd1&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin&#34;&gt;Git Plugin - Jenkins - Jenkins Wiki&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://qiita.com/naonya3/items/54c8e3436212ad6686b3&#34;&gt;CentOS6.3にgitをソースコードから入れる - Qiita [キータ]&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -387,7 +386,7 @@ make install
 
 &lt;p&gt;submodule を最新の状態にするコマンドは &lt;code&gt;git submodule foreach git pull origin master&lt;/code&gt; です。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:e45e994ba8135917364d3e9a430429e3&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/5828324/update-git-submodule&#34;&gt;Update git submodule - Stack Overflow&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -399,9 +398,7 @@ make install
       <pubDate>Sat, 19 Oct 2013 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2013/10/20/speed-up-grunt-watch/</guid>
-      <description>
-
-&lt;p&gt;Grunt を使うからには &lt;a href=&#34;https://github.com/gruntjs/grunt-contrib-watch#optionsnospawn&#34;&gt;grunt-contrib-watch&lt;/a&gt; でファイルの変更を監視して自動ビルドしたいのですが、どうも遅い。&lt;/p&gt;
+      <description>&lt;p&gt;Grunt を使うからには &lt;a href=&#34;https://github.com/gruntjs/grunt-contrib-watch#optionsnospawn&#34;&gt;grunt-contrib-watch&lt;/a&gt; でファイルの変更を監視して自動ビルドしたいのですが、どうも遅い。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ grunt watch
 
@@ -427,6 +424,8 @@ Completed in 12.602s at Sat Oct 19 2013 16:26:32 GMT+0000 (UTC) - Waiting...
 &lt;p&gt;タスクの実行自体は1秒もかかっていないのに、全体では12秒ほどかかっていました。&lt;/p&gt;
 
 &lt;p&gt;Gruntfile の設定を見直すことで改善できたので、そのやり方をメモしておきます。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;grunt watch&lt;/code&gt; のボトルネックは、ファイルの変更を検知後にタスクプロセスを子プロセスとしてスポーンさせる部分にあるようです。&lt;/p&gt;
 
@@ -478,13 +477,12 @@ OK
 
 &lt;p&gt;12秒が0.7秒に。イェーイ！&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:bcbef8a25879c17668c0f2da3a272309&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/gruntjs/grunt-contrib-watch/issues/69&#34;&gt;Why Watch is so slow compared to Regarde · Issue #69 · gruntjs/grunt-contrib-watch&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/gruntjs/grunt-contrib-watch#optionsnospawn&#34;&gt;gruntjs/grunt-contrib-watch#optionsnospawn&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -519,7 +517,7 @@ env: /etc/init.d/mysql_master: そのようなファイルやディレクトリ�
 Usage: /etc/init.d/mysql_master {start|stop|restart|status}
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;参考:78516bd3eda8050d97cd4c550e13df69&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.linuxquestions.org/questions/red-hat-31/init-d-script-error-bad-interpreter-204902/&#34;&gt;init.d script error bad interpreter&lt;/a&gt;&lt;/li&gt;
@@ -534,13 +532,13 @@ Usage: /etc/init.d/mysql_master {start|stop|restart|status}
       <pubDate>Tue, 10 Sep 2013 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2013/09/10/how-to-change-ui-language-to-eignlish-of-photoshop-cc/</guid>
-      <description>
-
-&lt;p&gt;英語サイトからカスタムアクションをダウンロードして使おうとしたものの、レイヤー名が日本語なせいで、英語版のレイヤー名を前提としたアクションが途中で止まってしまいます。&lt;/p&gt;
+      <description>&lt;p&gt;英語サイトからカスタムアクションをダウンロードして使おうとしたものの、レイヤー名が日本語なせいで、英語版のレイヤー名を前提としたアクションが途中で止まってしまいます。&lt;/p&gt;
 
 &lt;p&gt;Photoshop を英語版で動かすようにしたら使えるようになったのですが、そのやり方が直感的ではありませんでした。メモしておきます。&lt;/p&gt;
 
 &lt;p&gt;なお、使用バージョンは Adobe Photoshop CC (version 14.0) です。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;まず、Photoshop を開いている場合は終了します。&lt;/p&gt;
 
@@ -552,10 +550,9 @@ Usage: /etc/init.d/mysql_master {start|stop|restart|status}
 
 &lt;p&gt;高いアドビ税払ってるんだから、このへんのローカリゼーションはちゃんとやってほしいですね。せめて UI の言語ぐらいオプションから設定させてほしいです。（一応 &amp;ldquo;編集 &amp;gt; 環境設定 &amp;gt; インターフェース&amp;rdquo;）の中に言語を選ぶセレクトボックスはありますが、日本語しか選べません。じゃあ置くなよ。）&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:39e92141fb766995ade2d8a4ea832417&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.youtube.com/watch?v=3I8B8QH5uRE&#34;&gt;HOW TO CHANGE LANGUAGE IN PHOTOSHOP [Works with (CC, Win, Mac)] - YouTube&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;a href=&#34;http://www.youtube.com/watch?v=3I8B8QH5uRE&#34;&gt;HOW TO CHANGE LANGUAGE IN PHOTOSHOP [Works with (CC, Win, Mac)] - YouTube&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -572,7 +569,7 @@ Usage: /etc/init.d/mysql_master {start|stop|restart|status}
 
 &lt;p&gt;そこで、Rails アプリの作成時は &lt;code&gt;bundler install&lt;/code&gt; を省略し、Gemfile をいじってもっと早いリポジトリを参照するように変更したら、無事インストールできました。&lt;/p&gt;
 
-&lt;h2 id=&#34;具体的な手順:52707943b292ea793cda924d2a6b7275&#34;&gt;具体的な手順&lt;/h2&gt;
+&lt;h2 id=&#34;具体的な手順&#34;&gt;具体的な手順&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;$ rails new mojamoja --skip-bundle
 $ cd mojamoja
@@ -590,14 +587,14 @@ source &amp;quot;http://bundler-api.herokuapp.com&amp;quot;
 &lt;pre&gt;&lt;code&gt;$ bundle install
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;2013-09-01-追加-rhel-centos-6-x-特有のバグ:52707943b292ea793cda924d2a6b7275&#34;&gt;(2013-09-01 追加) RHEL/CentOS 6.x 特有のバグ&lt;/h2&gt;
+&lt;h2 id=&#34;2013-09-01-追加-rhel-centos-6-x-特有のバグ&#34;&gt;(2013-09-01 追加) RHEL/CentOS 6.x 特有のバグ&lt;/h2&gt;
 
 &lt;p&gt;RHEL/CentOS 6.x を使っている場合、ネットワークの解決が異常に遅くなることがあります。&lt;code&gt;/etc/resolve.conf&lt;/code&gt; に以下の1行を追加すると解決するようです。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;options single-request-reopen
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;参考:52707943b292ea793cda924d2a6b7275&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://qiita.com/quattro_4/items/fcc2ff8b04c43229a2fb&#34;&gt;Ruby - bundlerが遅い(Error Bundler::HTTPError)のを解決 - Qiita [キータ]&lt;/a&gt;&lt;/li&gt;
@@ -612,9 +609,7 @@ source &amp;quot;http://bundler-api.herokuapp.com&amp;quot;
       <pubDate>Thu, 25 Jul 2013 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2013/07/25/what-to-do-if-you-can-not-switch-and-merge-in-subversion-17/</guid>
-      <description>
-
-&lt;p&gt;Subversion 1.7.10 をソースからインストールしたら、&lt;code&gt;svn switch&lt;/code&gt; や &lt;code&gt;svn merge&lt;/code&gt; が以下のエラーを吐いて失敗するようになってしまいました。&lt;/p&gt;
+      <description>&lt;p&gt;Subversion 1.7.10 をソースからインストールしたら、&lt;code&gt;svn switch&lt;/code&gt; や &lt;code&gt;svn merge&lt;/code&gt; が以下のエラーを吐いて失敗するようになってしまいました。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;# svn merge https://uso.com/svn/mojamoja/2.13.1
 ...
@@ -624,7 +619,9 @@ svn: E200007: Trying to use an unsupported feature
 
 &lt;p&gt;直し方をメモしておきます。&lt;/p&gt;
 
-&lt;h2 id=&#34;原因:b3d12b85aa6526b84cee44966cb0c763&#34;&gt;原因&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;原因&#34;&gt;原因&lt;/h2&gt;
 
 &lt;p&gt;Subversion は内部の HTTP/HTTPS クライアントとして serf または neon を使います。Configure オプションを特に指定しない場合は serf が使われるようですが、これに不具合があったようです。&lt;/p&gt;
 
@@ -641,7 +638,7 @@ svn, version 1.7.10 (r1485443)
 
 &lt;p&gt;「serf が http と https をハンドルするぜ」と書いていますが、実際には E200007 エラーを吐いて止まります。&lt;/p&gt;
 
-&lt;h2 id=&#34;対策:b3d12b85aa6526b84cee44966cb0c763&#34;&gt;対策&lt;/h2&gt;
+&lt;h2 id=&#34;対策&#34;&gt;対策&lt;/h2&gt;
 
 &lt;p&gt;もう一つの選択肢である neon を使うようにしたら、問題なく動作するようになりました。&lt;/p&gt;
 
@@ -684,7 +681,7 @@ svn, version 1.7.10 (r1485443)
 
 &lt;p&gt;&lt;code&gt;handles &#39;https&#39; scheme&lt;/code&gt; と出力されない時は、&lt;code&gt;--with-ssl&lt;/code&gt; を付け忘れています。それでは https 通信ができないので、再コンパイルしてください。&lt;/p&gt;
 
-&lt;h2 id=&#34;余談:b3d12b85aa6526b84cee44966cb0c763&#34;&gt;余談&lt;/h2&gt;
+&lt;h2 id=&#34;余談&#34;&gt;余談&lt;/h2&gt;
 
 &lt;p&gt;今回とは逆で、「neon だとエラーになるが serf なら大丈夫だった」という事例もありました。&lt;/p&gt;
 
@@ -694,14 +691,13 @@ svn, version 1.7.10 (r1485443)
 
 &lt;p&gt;奇妙です。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:b3d12b85aa6526b84cee44966cb0c763&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://blog.iss.ms/2009/04/12/141537&#34;&gt;[memo][svn] svnクライアントにSSLをサポートさせる « いわぶろ（ろてん）&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://blog.r-unit.co.jp/archives/726&#34;&gt;はだかの隊長日記 » Subversionコンパイル方法&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://masutaka.net/chalow/2009-06-15-1.html&#34;&gt;Debian squeeze の subversion で http リポジトリにアクセスできなくなった / マスタカの ChangeLog メモ&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -710,9 +706,7 @@ svn, version 1.7.10 (r1485443)
       <pubDate>Fri, 05 Jul 2013 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2013/07/05/chef-server-cannot-get-fqdn/</guid>
-      <description>
-
-&lt;p&gt;どういうわけか会社で使っている Chef Server で &lt;code&gt;knife bootstrap&lt;/code&gt; した後、FQDN が空になっているノードがありました。&lt;/p&gt;
+      <description>&lt;p&gt;どういうわけか会社で使っている Chef Server で &lt;code&gt;knife bootstrap&lt;/code&gt; した後、FQDN が空になっているノードがありました。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;[root@chefserver-vm ~]# knife node show mojamoja-vm
 Node Name:   mojamoja-vm
@@ -730,7 +724,9 @@ Tags:
 
 &lt;p&gt;対処方法をメモしておきます。&lt;/p&gt;
 
-&lt;h2 id=&#34;原因:1e58b670181ec322a9159a897b06acb1&#34;&gt;原因&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;原因&#34;&gt;原因&lt;/h2&gt;
 
 &lt;p&gt;クライアント側サーバーの /etc/hosts で自分の IP と hostname を定義していなかったためでした。&lt;/p&gt;
 
@@ -748,7 +744,7 @@ Tags:
 (↑空)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;対処法:1e58b670181ec322a9159a897b06acb1&#34;&gt;対処法&lt;/h2&gt;
+&lt;h2 id=&#34;対処法&#34;&gt;対処法&lt;/h2&gt;
 
 &lt;p&gt;&lt;code&gt;/etc/hosts&lt;/code&gt; に IP と hostname の対を追加してやります。&lt;/p&gt;
 
@@ -780,15 +776,14 @@ Platform:    centos 6.3
 Tags:
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;参考:1e58b670181ec322a9159a897b06acb1&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://serverfault.com/questions/331936/setting-the-hostname-fqdn-or-short-name&#34;&gt;Setting the hostname: FQDN or short name? - Server Fault&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://sharadchhetri.com/2012/12/23/change-hostname-fqdn-centos-redhat/&#34;&gt;How to change hostname or FQDN in CentOS and Redhat&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;photo by: &lt;a href=&#34;http://www.flickr.com/photos/manoelpetry/5334219183/&#34;&gt;Chef Mauro Sousa e Sous Chef Valdir Ramos by manoel petry, on Flickr&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;photo by: &lt;a href=&#34;http://www.flickr.com/photos/manoelpetry/5334219183/&#34;&gt;Chef Mauro Sousa e Sous Chef Valdir Ramos by manoel petry, on Flickr&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -797,13 +792,13 @@ Tags:
       <pubDate>Tue, 02 Jul 2013 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2013/07/02/jenkins-user-cannot-run-ant/</guid>
-      <description>
-
-&lt;p&gt;CentOS 6.3 にて、&lt;a href=&#34;http://jenkins-php.org/&#34;&gt;Template for Jenkins Jobs for PHP Projects&lt;/a&gt; にある ant タスク (build.xml) 通りに PHPUnit タスクを実行しようとしたら、エラーが出てしまいました。&lt;/p&gt;
+      <description>&lt;p&gt;CentOS 6.3 にて、&lt;a href=&#34;http://jenkins-php.org/&#34;&gt;Template for Jenkins Jobs for PHP Projects&lt;/a&gt; にある ant タスク (build.xml) 通りに PHPUnit タスクを実行しようとしたら、エラーが出てしまいました。&lt;/p&gt;
 
 &lt;p&gt;かなり長時間ハマったのでメモを残しておきます。&lt;/p&gt;
 
-&lt;h2 id=&#34;症状:135291858de89f6329950b22fca515d3&#34;&gt;症状&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;症状&#34;&gt;症状&lt;/h2&gt;
 
 &lt;p&gt;CentOS 6.3 にて、&lt;a href=&#34;http://jenkins-php.org/&#34;&gt;Template for Jenkins Jobs for PHP Projects&lt;/a&gt; にある以下のタスクを実行するとエラーが出ました。&lt;code&gt;
  &amp;lt;target name=&amp;quot;phpunit&amp;quot; description=&amp;quot;Run unit tests using PHPUnit and generates junit.xml and clover.xml&amp;quot;&amp;gt; &amp;lt;exec executable=&amp;quot;phpunit&amp;quot; failonerror=&amp;quot;true&amp;quot;/&amp;gt; &amp;lt;/target&amp;gt;&lt;/code&gt;&lt;/p&gt;
@@ -811,13 +806,13 @@ Tags:
 &lt;p&gt;エラーメッセージ:&lt;code&gt;
  # sudo -u jenkins ant ... phpunit: BUILD FAILED /var/lib/jenkins/jobs/mojamoja-unit-testing/workspace/build.xml:22: Execute failed: java.io.IOException: Cannot run program &amp;quot;phpunit&amp;quot;: error=2, No such file or directory Total time: 0 seconds&lt;/code&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;原因:135291858de89f6329950b22fca515d3&#34;&gt;原因&lt;/h2&gt;
+&lt;h2 id=&#34;原因&#34;&gt;原因&lt;/h2&gt;
 
 &lt;p&gt;どうやら phpunit へのパスが通っていないようです。&lt;/p&gt;
 
 &lt;p&gt;phpunit の実体は &lt;code&gt;/usr/local/bin/phpunit&lt;/code&gt; なのですが、jenkins ユーザーがこの PATH を参照できていない模様。&lt;/p&gt;
 
-&lt;h2 id=&#34;試行錯誤:135291858de89f6329950b22fca515d3&#34;&gt;試行錯誤&lt;/h2&gt;
+&lt;h2 id=&#34;試行錯誤&#34;&gt;試行錯誤&lt;/h2&gt;
 
 &lt;p&gt;まず、jenkins ユーザーの &lt;code&gt;~/.bash_profile&lt;/code&gt; と &lt;code&gt;~/.bashrc&lt;/code&gt; を以下の内容で作成してもダメでした。PATH は反映されません。&lt;/p&gt;
 
@@ -825,7 +820,7 @@ Tags:
 export PATH=$PATH:/usr/local/bin
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;また、下記のように ant タスク内で PATH を変更するシェルを走らせてもダメでした。&lt;/p&gt;
+&lt;p&gt;&lt;p&gt;また、下記のように ant タスク内で PATH を変更するシェルを走らせてもダメでした。&lt;/p&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;lt;target name=&amp;quot;setenv&amp;quot;&amp;gt;
    &amp;lt;exec executable=&amp;quot;/bin/sh&amp;quot;&amp;gt;
@@ -862,9 +857,9 @@ env:
 
 &lt;p&gt;とういわけで、setenv で環境変数をセットする方法はボツでした。&lt;/p&gt;
 
-&lt;h2 id=&#34;解決方法:135291858de89f6329950b22fca515d3&#34;&gt;解決方法&lt;/h2&gt;
+&lt;h2 id=&#34;解決方法&#34;&gt;解決方法&lt;/h2&gt;
 
-&lt;h3 id=&#34;1-jenkins-のグローバルプロパティを設定する:135291858de89f6329950b22fca515d3&#34;&gt;1. Jenkins のグローバルプロパティを設定する&lt;/h3&gt;
+&lt;h3 id=&#34;1-jenkins-のグローバルプロパティを設定する&#34;&gt;1. Jenkins のグローバルプロパティを設定する&lt;/h3&gt;
 
 &lt;p&gt;Jenkins から環境変数を上書きすることで、PATH を追加することができます。&lt;/p&gt;
 
@@ -890,7 +885,7 @@ env:
 
 &lt;p&gt;ただし、この方法だと Jenkins から Ant を実行した時しか PATH は上書きされません。&lt;/p&gt;
 
-&lt;h3 id=&#34;2-sudoers-の-secure-path-を無効にする:135291858de89f6329950b22fca515d3&#34;&gt;2. sudoers の secure_path を無効にする&lt;/h3&gt;
+&lt;h3 id=&#34;2-sudoers-の-secure-path-を無効にする&#34;&gt;2. sudoers の secure_path を無効にする&lt;/h3&gt;
 
 &lt;p&gt;Fedora 系では sudo ユーザー向けの PATH が &lt;code&gt;/sbin:/bin:/usr/sbin:/usr/bin&lt;/code&gt; のみに制限されているので、これを外してやります。&lt;/p&gt;
 
@@ -902,14 +897,13 @@ env:
 &lt;p&gt;sudoers の環境変数は `sudo -l` で確認できます。&lt;code&gt;
  # sudo -l Matching Defaults entries for root on this host: !visiblepw, always\_set\_home, env\_reset, env\_keep=&amp;quot;COLORS DISPLAY HOSTNAME HISTSIZE INPUTRC KDEDIR LS\_COLORS&amp;quot;, env\_keep+=&amp;quot;MAIL PS1 PS2 QTDIR USERNAME LANG LC\_ADDRESS LC\_CTYPE&amp;quot;, env\_keep+=&amp;quot;LC\_COLLATE LC\_IDENTIFICATION LC\_MEASUREMENT LC\_MESSAGES&amp;quot;, env\_keep+=&amp;quot;LC\_MONETARY LC\_NAME LC\_NUMERIC LC\_PAPER LC\_TELEPHONE&amp;quot;, env\_keep+=&amp;quot;LC\_TIME LC\_ALL LANGUAGE LINGUAS \_XKB\_CHARSET XAUTHORITY&amp;quot;, env_keep+=PATH User root may run the following commands on this host: (ALL) ALL&lt;/code&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:135291858de89f6329950b22fca515d3&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://deginzabi163.wordpress.com/2011/04/23/%E8%A6%9A%E6%9B%B8fedora-14%E3%81%AEsudo%E3%81%8Cpath%E7%92%B0%E5%A2%83%E5%A4%89%E6%95%B0%E3%82%92%E6%BD%B0%E3%81%99%E3%81%AE%E3%81%8C%E9%AC%B1%E9%99%B6%E3%81%97%E3%81%84%EF%BC%86%E5%AF%BE%E7%AD%96/&#34;&gt;[覚書]Fedora 14のsudoでPATHがアレで鬱陶しい＆対策 | Deginzabi163&amp;rsquo;s Blog&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://fishrimper.blogspot.jp/2012/12/sudo-path.html&#34;&gt;IT とかその他もろもろ: sudo した時の PATH&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://superuser.com/questions/98686/passing-path-through-sudo&#34;&gt;linux - Passing PATH through sudo - Super User&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -946,7 +940,7 @@ xdebug.var_display_max_data = -1
 xdebug.var_display_max_depth = -1
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;参考:4a6779c3da90459c9dffed130ddd9ac1&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://xdebug.org/docs/all_settings#var_display_max_depth&#34;&gt;Xdebug: Documentation&lt;/a&gt;&lt;/li&gt;
@@ -978,7 +972,7 @@ skip-character-set-client-handshake
 
 &lt;p&gt;これで MariaDB の再起動後、日本語が正しく出力されるようになっています。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:b525f416a269d7b3c0781ad579245a90&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://ozamasa.naganoblog.jp/e1194854.html&#34;&gt;(・∀・) ozamasa:MacのMySQLを5.5から5.6にバージョンアップしたときのメモ。&lt;/a&gt;&lt;/li&gt;
@@ -1025,7 +1019,7 @@ $ git submodule update
 
 &lt;p&gt;これで &amp;ldquo;git sudmoule init&amp;rdquo; が成功するようになりました。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:4471c99086089d3b3bb5481282090f4e&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://edspencer.net/2008/04/git-clone-vs-git-submodule.html&#34;&gt;Git clone vs Git submodule : Ed Spencer&lt;/a&gt;&lt;/li&gt;

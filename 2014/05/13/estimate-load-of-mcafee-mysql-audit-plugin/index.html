@@ -1,56 +1,70 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ja">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<title> McAfee MySQL Audit Plugin の負荷検証 &middot; 1000g </title>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
+    <title>McAfee MySQL Audit Plugin の負荷検証 &middot; 1000g</title>
+    <meta name="author" content="SENDA Keijiro">
+    <meta name="description" content="Programming knowledge">
+    <meta name="generator" content="Hugo 0.17" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-<link rel="stylesheet" href="http://1000k.github.io//css/slim.css">
-<link rel="stylesheet" href="http://1000k.github.io//css/highlight.min.css">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext' rel='stylesheet'>
+    <!-- RSS autodiscovery -->
+    
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
-<link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="http://1000k.github.io/img/favicon.ico">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.2/normalize.min.css">
 
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://1000k.github.io/css/screen.css">
+    <link rel="stylesheet" href="http://1000k.github.io/css/github.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/default.min.css">
 
-<link href="" rel="alternate" type="application/rss+xml" title="1000g" />
-
-
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
+    <!-- Stylesheet for theme color -->
+    <style type="text/css">
+    a, a:visited {color: #33cc99;}
+    .pagination a {color: #33cc99;}
+    .gist .gist-file .gist-meta a:visited {color: #33cc99 !important;}
+    a:focus, a:hover {color: #178b6b;}
+    h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #178b6b;}
+    .older-posts:hover, .newer-posts:hover {color: #178b6b;}
+</style>
 </head>
 
-<body>
-  <div class="container">
-    <div class="header">
-  <h1 class="site-title"><a href="http://1000k.github.io/">1000g</a></h1>
-  <p class="site-tagline">Tech blog</p>
-  <div class="nav">
-    <a class="nav-btn" href="#">
-      <span class="ci ci-burger"></span>
-    </a>
-    <ul class="nav-list">
-      
+<body class="post-template">
 
-      <li><a href="https://github.com/1000k">Github</a></li>
-      <li><a href="https://twitter.com/1000kei">Twitter</a></li>
-      
+    <header id="site-head">
+	
+	<h1 class="blog-title"><a href="http://1000k.github.io/">1000g</a></h1>
+	
+	
+	<h1 class="blog-subtitle">Development knowledge</h1>
+	
+</header>
+    
+<nav class="menu" role="nav">
+    <ul>
+        
+        	<li class="nav nav-current"><a href="/about/">ABOUT</a></li>
+      	
     </ul>
-  </div>
-</div>
-    <div class="content">
-      <div class="post">
-        <h2 class="post-title"><a href="http://1000k.github.io/2014/05/13/estimate-load-of-mcafee-mysql-audit-plugin/">McAfee MySQL Audit Plugin の負荷検証</a></h2>
-        <div class="post-content">
-          
+</nav>
 
-<p><a href="http://blog.1000k.net/?p=1837">前の記事</a> で McAfee MySQL Audit Plugin を使うと簡単に監査ログが取れることを紹介しましたが、性能劣化はどれくらいあるのか心配になったので検証してみました。</p>
 
-<h2 id="audit-プラグインの設定値:ca0842c38bf6f0227cc53f5afc5d2b62">Audit プラグインの設定値</h2>
+    <main class="content" role="main">
+	    <article class="post">
+	        <header>
+	        <h1 class="post-title">McAfee MySQL Audit Plugin の負荷検証</h1>
+
+	        <section class="post-content">
+	            <p><a href="http://blog.1000k.net/?p=1837">前の記事</a> で McAfee MySQL Audit Plugin を使うと簡単に監査ログが取れることを紹介しましたが、性能劣化はどれくらいあるのか心配になったので検証してみました。</p>
+
+<p></p>
+
+<h2 id="audit-プラグインの設定値">Audit プラグインの設定値</h2>
 
 <p>以下の通り、ほぼインストールしたままの状態です。</p>
 
@@ -78,7 +92,7 @@
 +---------------------------------+----------------------------+
 </code></pre>
 
-<h2 id="ベンチマークの条件:ca0842c38bf6f0227cc53f5afc5d2b62">ベンチマークの条件</h2>
+<h2 id="ベンチマークの条件">ベンチマークの条件</h2>
 
 <p>mysqlslap なら簡単にベンチマークが取れます。詳しい使い方は <a href="http://blog.1000k.net/?p=1847">mysqlslap で MySQL の負荷テストをする方法</a> をご覧ください。</p>
 
@@ -99,9 +113,9 @@
   --user=root
 </code></pre>
 
-<h2 id="結果:ca0842c38bf6f0227cc53f5afc5d2b62">結果</h2>
+<h2 id="結果">結果</h2>
 
-<h3 id="audit-無効時:ca0842c38bf6f0227cc53f5afc5d2b62">Audit 無効時</h3>
+<h3 id="audit-無効時">Audit 無効時</h3>
 
 <pre><code>Running for engine innodb
 Average number of seconds to run all queries: 15.935 seconds
@@ -111,7 +125,7 @@ Number of clients running queries: 100
 Average number of queries per client: 1000
 </code></pre>
 
-<h3 id="audit-有効時:ca0842c38bf6f0227cc53f5afc5d2b62">Audit 有効時</h3>
+<h3 id="audit-有効時">Audit 有効時</h3>
 
 <pre><code>Running for engine innodb
 Average number of seconds to run all queries: 19.083 seconds
@@ -122,38 +136,51 @@ Average number of queries per client: 1000
 </code></pre>
 
 <p>若干の性能劣化 (10%～20% 程度) が見られます。カツカツのシステムで使う場合は注意が必要かもしれません。</p>
+	        </section>
+	    </article>
+	</main>
 
-        </div>
-      </div>
-    </div>
+    <footer class="site-footer">
+	<div class="inner">
+		<section class="footer-social">
+			
+		    <a href="//twitter.com/1000kei" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp;
+		    
+		    
+		    <a href="//github.com/1000k" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
+		    
+		    
+		    <a href="" target="_blank" title="RSS"><i class="fa fa-2x fa-fw fa-rss"></i> <span class="hidden">RSS</span></a>
+		</section>
 
-    <hr>
+		<section class="copyright">&copy; 2016 <a href="http://1000k.github.io/">SENDA Keijiro</a>. Released under the MIT license.</section>
+	</div>
+</footer>
 
-    
-      <a class="btn btn-previous" href="http://1000k.github.io/2014/05/13/collect-audit-log-with-mcafee-mysql-audit-plugin/">&laquo; McAfee MySQL Audit Plugin で MySQL の監査ログを採取する</a>
-    
-    
-      <a class="btn btn-next" href="http://1000k.github.io/2014/05/13/load-test-with-mysqlslap/">mysqlslap で MySQL の負荷テストをする方法 &raquo;</a>
-    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://1000k.github.io/js/index.js"></script>
+<script src="http://1000k.github.io/js/smooth-scroll.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
 
-    <div class="footer">
-  <p>Powered by <a href="http://gohugo.io">Hugo</a>. This theme—Slim—is open sourced on <a href="https://github.com/zhe/hugo-theme-slim">Github</a>.</p>
-</div>
+<script>
+    smoothScroll.init({
+        speed: 800,
+        easing: 'easeInOutCubic',
+        updateURL: false,
+        offset: 125,
+    });
+</script>
+<script>hljs.initHighlightingOnLoad();</script>
 
-  </div>
-  <script src="http://1000k.github.io//js/slim.js"></script>
-  <script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-46659459-2', 'auto');
-ga('send', 'pageview');
-
+<!-- Google Analytics -->
+<script>
+  var _gaq=[['_setAccount','UA-46659459-2'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
 
 
 </body>
-
 </html>

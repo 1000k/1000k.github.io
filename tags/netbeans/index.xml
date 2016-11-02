@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Netbeans on 1000g</title>
-    <link>http://1000k.github.io/tags/netbeans/</link>
-    <description>Recent content in Netbeans on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/netbeans/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 22 Jan 2011 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/netbeans/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -19,11 +19,11 @@
 
 &lt;p&gt;NetBeansで出力ウインドウの日本語が文字化けしてしまった時の解決方法です。&lt;/p&gt;
 
-&lt;h3 id=&#34;検証環境:2cc311cc50f4986921909eddc3cc7def&#34;&gt;検証環境&lt;/h3&gt;
+&lt;h3 id=&#34;検証環境&#34;&gt;検証環境&lt;/h3&gt;
 
 &lt;p&gt;NetBeans IDE 7.0 Beta&lt;/p&gt;
 
-&lt;h3 id=&#34;対処法:2cc311cc50f4986921909eddc3cc7def&#34;&gt;対処法&lt;/h3&gt;
+&lt;h3 id=&#34;対処法&#34;&gt;対処法&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;netbeans.conf&lt;/strong&gt;の&lt;strong&gt;「netbeans_default_options」&lt;/strong&gt;ブロックに&lt;strong&gt;「-J-Dfile.encoding=UTF-8」&lt;/strong&gt;を追加してやればいいようです。&lt;/p&gt;
 
@@ -47,11 +47,11 @@ netbeans_default_options=&amp;quot;-J-client -J-Xss2m -J-Xms32m -J-XX:PermSize=3
 &lt;/figure&gt;
 &lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;日本語フォントを指定する-2011-07-07追記:2cc311cc50f4986921909eddc3cc7def&#34;&gt;日本語フォントを指定する (2011/07/07追記)&lt;/h3&gt;
+&lt;h3 id=&#34;日本語フォントを指定する-2011-07-07追記&#34;&gt;日本語フォントを指定する (2011/07/07追記)&lt;/h3&gt;
 
 &lt;p&gt;まだ文字化けする場合、出力ウインドウのフォントが日本語に対応していない可能性があります。出力ウインドウの適当な場所を&lt;strong&gt;右クリック -&amp;gt; [フォントを選択…]&lt;/strong&gt;で、日本語フォントを指定してください。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:2cc311cc50f4986921909eddc3cc7def&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://completemirage.blog55.fc2.com/blog-entry-39.html&#34;&gt;Complete Mirage - NetBeansでJRuby on Rails&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -69,7 +69,7 @@ netbeans_default_options=&amp;quot;-J-client -J-Xss2m -J-Xms32m -J-XX:PermSize=3
 
 &lt;p&gt;そこで、以下の方法で単語補完をできるようにしました。&lt;/p&gt;
 
-&lt;h3 id=&#34;手順:fc1e74b047afd2cf65d5232747f988fd&#34;&gt;手順&lt;/h3&gt;
+&lt;h3 id=&#34;手順&#34;&gt;手順&lt;/h3&gt;
 
 &lt;p&gt;CodeIgniterをNetBeansのプロジェクトに登録すると、以下のようなディレクトリ構成になっているはず。&lt;/p&gt;
 
@@ -107,7 +107,7 @@ Class Controller {
 
 &lt;p&gt;※上記ファイルだけでは全ライブラリを網羅していません。使いたければ「/system/library」内にあるクラスも同様のフォーマットで追加してあげてください。（時間があったらあとで追記します）&lt;/p&gt;
 
-&lt;h3 id=&#34;参考:fc1e74b047afd2cf65d5232747f988fd&#34;&gt;参考&lt;/h3&gt;
+&lt;h3 id=&#34;参考&#34;&gt;参考&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.mybelovedphp.com/2009/01/27/netbeans-revisited-code-completion-for-code-igniter-ii/&#34;&gt;My Beloved PHP » Blog Archive » Netbeans revisited: Code Completion for Code-igniter II&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -125,7 +125,7 @@ Class Controller {
 
 &lt;p&gt;※ただし、NetBeansではスニペット（単語補完）しか用意されていないようで、liタグのネストなどは使えないようです。&lt;/p&gt;
 
-&lt;h3 id=&#34;導入手順:36e8d758c47104094651fcffcdfb9662&#34;&gt;導入手順&lt;/h3&gt;
+&lt;h3 id=&#34;導入手順&#34;&gt;導入手順&lt;/h3&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;http://code.google.com/p/zen-coding/&#34;&gt;zen-coding - Project Hosting on Google Code&lt;/a&gt; からNetBeans用プラグインをダウンロードする
@@ -143,7 +143,7 @@ Class Controller {
 
 &lt;p&gt;あとはHTMLのソースを開いて、「html:xt」→TABキー などやればスルスルとコードが書けます。&lt;/p&gt;
 
-&lt;h3 id=&#34;少し改良:36e8d758c47104094651fcffcdfb9662&#34;&gt;少し改良&lt;/h3&gt;
+&lt;h3 id=&#34;少し改良&#34;&gt;少し改良&lt;/h3&gt;
 
 &lt;p&gt;HTMLへのPHP出力として「＜?php ?＞」ブロックを頻繁に使うので、それもスニペットに追加します。&lt;/p&gt;
 
@@ -161,7 +161,7 @@ Class Controller {
 
 &lt;p&gt;以上です。&lt;/p&gt;
 
-&lt;h3 id=&#34;参考:36e8d758c47104094651fcffcdfb9662&#34;&gt;参考&lt;/h3&gt;
+&lt;h3 id=&#34;参考&#34;&gt;参考&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://blog.mizoshiri.com/archives/863&#34;&gt;Netbeans(windows環境)にZen-Codingを導入&lt;/a&gt;&lt;/p&gt;
 </description>

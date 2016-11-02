@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>コンソール on 1000g</title>
-    <link>http://1000k.github.io/tags/%E3%82%B3%E3%83%B3%E3%82%BD%E3%83%BC%E3%83%AB/</link>
-    <description>Recent content in コンソール on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/%E3%82%B3%E3%83%B3%E3%82%BD%E3%83%BC%E3%83%AB/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 06 Jul 2010 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/%E3%82%B3%E3%83%B3%E3%82%BD%E3%83%BC%E3%83%AB/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -73,7 +73,7 @@ Error: 異常発見
 異常終了します
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;参考:bdb7996c2533e0f70688b6e9484f46be&#34;&gt;参考&lt;/h3&gt;
+&lt;h3 id=&#34;参考&#34;&gt;参考&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/brtRiver/20090427/1240802118&#34;&gt;CakePHPコンソールのシェルを作るときのメモ - ぷぎがぽぎ&lt;/a&gt;&lt;/li&gt;

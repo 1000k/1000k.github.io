@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Android on 1000g</title>
-    <link>http://1000k.github.io/categories/android/</link>
-    <description>Recent content in Android on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/categories/android/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 09 Jan 2012 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/categories/android/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -15,15 +15,15 @@
       <pubDate>Mon, 09 Jan 2012 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2012/01/09/set-up-android-development-environment-on-windows7/</guid>
-      <description>
-
-&lt;p&gt;「Androidは簡単に開発が可能ですよ！」と言われてる割に導入がかなり面倒でした。&lt;/p&gt;
+      <description>&lt;p&gt;「Androidは簡単に開発が可能ですよ！」と言われてる割に導入がかなり面倒でした。&lt;/p&gt;
 
 &lt;p&gt;必要なパッケージとインストールからエミュレーターの起動まで、やり方をメモしておきます。&lt;/p&gt;
 
-&lt;h2 id=&#34;手順:13bda493a2eaedf1be0894608e95258e&#34;&gt;手順&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;1-必要ファイルのダウンロード:13bda493a2eaedf1be0894608e95258e&#34;&gt;1. 必要ファイルのダウンロード&lt;/h3&gt;
+&lt;h2 id=&#34;手順&#34;&gt;手順&lt;/h2&gt;
+
+&lt;h3 id=&#34;1-必要ファイルのダウンロード&#34;&gt;1. 必要ファイルのダウンロード&lt;/h3&gt;
 
 &lt;p&gt;Windows 7 64bitの場合、下記アプリをダウンロードしました。&lt;/p&gt;
 
@@ -49,11 +49,11 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;2-java-6-jdkの設定:13bda493a2eaedf1be0894608e95258e&#34;&gt;2. Java 6 JDKの設定&lt;/h3&gt;
+&lt;h3 id=&#34;2-java-6-jdkの設定&#34;&gt;2. Java 6 JDKの設定&lt;/h3&gt;
 
 &lt;p&gt;インストールしたファイルを実行して、画面に従うだけです。&lt;/p&gt;
 
-&lt;h3 id=&#34;3-android-sdkの設定:13bda493a2eaedf1be0894608e95258e&#34;&gt;3. Android SDKの設定&lt;/h3&gt;
+&lt;h3 id=&#34;3-android-sdkの設定&#34;&gt;3. Android SDKの設定&lt;/h3&gt;
 
 &lt;ol&gt;
 &lt;li&gt;ダウンロードしたファイルを解凍orインストーラー実行&lt;/li&gt;
@@ -65,9 +65,9 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&#34;4-eclipseの設定:13bda493a2eaedf1be0894608e95258e&#34;&gt;4. Eclipseの設定&lt;/h3&gt;
+&lt;h3 id=&#34;4-eclipseの設定&#34;&gt;4. Eclipseの設定&lt;/h3&gt;
 
-&lt;h4 id=&#34;android-developer-tools-adt-のインストール:13bda493a2eaedf1be0894608e95258e&#34;&gt;Android Developer Tools (ADT)のインストール&lt;/h4&gt;
+&lt;h4 id=&#34;android-developer-tools-adt-のインストール&#34;&gt;Android Developer Tools (ADT)のインストール&lt;/h4&gt;
 
 &lt;ol&gt;
 &lt;li&gt;ダウンロードしたファイルを解凍し、eclipse.exeを実行&lt;/li&gt;
@@ -92,7 +92,7 @@
 &lt;li&gt;統計データをGoogleに送るかどうか選択して[Finish]&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h4 id=&#34;avdの作成:13bda493a2eaedf1be0894608e95258e&#34;&gt;AVDの作成&lt;/h4&gt;
+&lt;h4 id=&#34;avdの作成&#34;&gt;AVDの作成&lt;/h4&gt;
 
 &lt;ol&gt;
 &lt;li&gt;[Window] - [AVD Manager]&lt;/li&gt;
@@ -118,7 +118,7 @@
 
 &lt;p&gt;設定は以上で完了です。&lt;/p&gt;
 
-&lt;h3 id=&#34;5-サンプルアプリのビルド:13bda493a2eaedf1be0894608e95258e&#34;&gt;5. サンプルアプリのビルド&lt;/h3&gt;
+&lt;h3 id=&#34;5-サンプルアプリのビルド&#34;&gt;5. サンプルアプリのビルド&lt;/h3&gt;
 
 &lt;p&gt;ここまででビルド可能になっているので、試してみましょう。&lt;/p&gt;
 
@@ -153,7 +153,7 @@
 
 &lt;p&gt;（ただし「提供元不明のアプリ」を使用可能にしておくこと）&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:13bda493a2eaedf1be0894608e95258e&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://gihyo.jp/dev/serial/01/androidapp/0002&#34;&gt;世界を目指せ！Androidアプリ開発入門：第2回　Androidアプリ開発のための環境構築｜gihyo.jp … 技術評論社&lt;/a&gt;
@@ -163,8 +163,7 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://gihyo.jp/dev/serial/01/androidapp/0003&#34;&gt;世界を目指せ！Androidアプリ開発入門：第3回　Android SDKでサンプルアプリを使ってみる｜gihyo.jp … 技術評論社&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://sky.geocities.jp/izeefss/develop/android/env_eclipse.html&#34;&gt;Android開発環境の構築 Eclipse編&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
   </channel>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sublime Text on 1000g</title>
-    <link>http://1000k.github.io/tags/sublime-text/</link>
-    <description>Recent content in Sublime Text on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/sublime-text/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 27 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/sublime-text/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -15,20 +15,20 @@
       <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2015/01/27/validate-cakephp2-rules-with-sublime-text2-phpcs-plugin/</guid>
-      <description>
-
-&lt;p&gt;Sublime Text 2 のエディタ上で PHP CodeSniffer を使い、コーディング規約をチェックする方法です。&lt;a href=&#34;http://benmatselby.github.io/sublime-phpcs/&#34;&gt;sublime-phpcs&lt;/a&gt; プラグインを導入することで、コーディング規約違反のある行がエディタ上に表示されるようになります。&lt;/p&gt;
+      <description>&lt;p&gt;Sublime Text 2 のエディタ上で PHP CodeSniffer を使い、コーディング規約をチェックする方法です。&lt;a href=&#34;http://benmatselby.github.io/sublime-phpcs/&#34;&gt;sublime-phpcs&lt;/a&gt; プラグインを導入することで、コーディング規約違反のある行がエディタ上に表示されるようになります。&lt;/p&gt;
 
 &lt;p&gt;なお、プラグインの公式ページでは phpmd も一緒に導入していますが、&lt;a href=&#34;http://blog.1000k.net/2013/11/26/phpmd-%e3%81%ae%e9%a0%ad%e3%81%8c%e3%81%8b%e3%81%aa%e3%82%8a-messy/&#34;&gt;PHPMD はヒステリックすぎて個人的にお勧めしない&lt;/a&gt; ので省略します。&lt;/p&gt;
 
-&lt;h2 id=&#34;チュートリアル:0e3f1a6b553d4169127746e6faedbbcf&#34;&gt;チュートリアル&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;codesniffer-をインストールする:0e3f1a6b553d4169127746e6faedbbcf&#34;&gt;CodeSniffer をインストールする&lt;/h3&gt;
+&lt;h2 id=&#34;チュートリアル&#34;&gt;チュートリアル&lt;/h2&gt;
+
+&lt;h3 id=&#34;codesniffer-をインストールする&#34;&gt;CodeSniffer をインストールする&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;pear install PHP_CodeSniffer
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;cakephp-のルールセットをインストールする:0e3f1a6b553d4169127746e6faedbbcf&#34;&gt;CakePHP のルールセットをインストールする&lt;/h3&gt;
+&lt;h3 id=&#34;cakephp-のルールセットをインストールする&#34;&gt;CakePHP のルールセットをインストールする&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;pear channel-discover pear.cakephp.org
 pear install cakephp/CakePHP_CodeSniffer
@@ -41,13 +41,13 @@ The installed coding standards are CakePHP, MySource, PEAR, PHPCS, PSR1, PSR2, S
 (CakePHP が含まれていれば OK)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;sublime-text-2-に-codesniffer-プラグインをインストールする:0e3f1a6b553d4169127746e6faedbbcf&#34;&gt;Sublime Text 2 に CodeSniffer プラグインをインストールする&lt;/h3&gt;
+&lt;h3 id=&#34;sublime-text-2-に-codesniffer-プラグインをインストールする&#34;&gt;Sublime Text 2 に CodeSniffer プラグインをインストールする&lt;/h3&gt;
 
 &lt;p&gt;&amp;ldquo;Package Control: Install Package&amp;rdquo; で &lt;code&gt;Phpcs&lt;/code&gt; をインストールするだけ。&lt;/p&gt;
 
 &lt;p&gt;(Package Control 自体のインストール方法は &lt;a href=&#34;https://sublime.wbond.net/installation#st2&#34;&gt;Installation - Package Control&lt;/a&gt; を参照)&lt;/p&gt;
 
-&lt;h3 id=&#34;sublime-text-の設定:0e3f1a6b553d4169127746e6faedbbcf&#34;&gt;Sublime Text の設定&lt;/h3&gt;
+&lt;h3 id=&#34;sublime-text-の設定&#34;&gt;Sublime Text の設定&lt;/h3&gt;
 
 &lt;p&gt;&amp;ldquo;Preferences &amp;gt; Package Settings &amp;gt; PHP Code Sniffer &amp;gt; Settings - User&amp;rdquo; を開き、以下のキーを設定する必要があります。&lt;/p&gt;
 
@@ -69,7 +69,7 @@ The installed coding standards are CakePHP, MySource, PEAR, PHPCS, PSR1, PSR2, S
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;windows-のみ-phpcs-py-を修正する:0e3f1a6b553d4169127746e6faedbbcf&#34;&gt;(Windows のみ) phpcs.py を修正する&lt;/h3&gt;
+&lt;h3 id=&#34;windows-のみ-phpcs-py-を修正する&#34;&gt;(Windows のみ) phpcs.py を修正する&lt;/h3&gt;
 
 &lt;p&gt;Windows では、このまま phpcs が実行しても何も結果が表示されません。&lt;/p&gt;
 
@@ -87,15 +87,15 @@ The installed coding standards are CakePHP, MySource, PEAR, PHPCS, PSR1, PSR2, S
 proc = subprocess.Popen(cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, startupinfo=info, cwd=home, shell=True)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;プラグインを実行する:0e3f1a6b553d4169127746e6faedbbcf&#34;&gt;プラグインを実行する&lt;/h3&gt;
+&lt;h3 id=&#34;プラグインを実行する&#34;&gt;プラグインを実行する&lt;/h3&gt;
 
 &lt;p&gt;PHP ファイルを開いたタブで &lt;code&gt;Ctrl + P &amp;gt; PHP Code Sniffer: Sniff This File&lt;/code&gt; とタイプすれば、コーディング規約違反を検知してくれます。&lt;/p&gt;
 
 &lt;p&gt;これでコーディングルール違反でチームメイトにディスられるリスクを回避できるようになりました。&lt;/p&gt;
 
-&lt;h2 id=&#34;オプション:0e3f1a6b553d4169127746e6faedbbcf&#34;&gt;オプション&lt;/h2&gt;
+&lt;h2 id=&#34;オプション&#34;&gt;オプション&lt;/h2&gt;
 
-&lt;h3 id=&#34;保存時に-sniff-されるのを止める:0e3f1a6b553d4169127746e6faedbbcf&#34;&gt;保存時に Sniff されるのを止める&lt;/h3&gt;
+&lt;h3 id=&#34;保存時に-sniff-されるのを止める&#34;&gt;保存時に Sniff されるのを止める&lt;/h3&gt;
 
 &lt;p&gt;プラグインインストール後のデフォルトだと、保存するたびに規約違反がサジェストされます。&lt;/p&gt;
 
@@ -106,7 +106,7 @@ proc = subprocess.Popen(cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stde
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;参考:0e3f1a6b553d4169127746e6faedbbcf&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://benmatselby.github.io/sublime-phpcs/&#34;&gt;sublime-phpcs&lt;/a&gt;&lt;/li&gt;
@@ -114,8 +114,7 @@ proc = subprocess.Popen(cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stde
 &lt;li&gt;&lt;a href=&#34;https://github.com/cakephp/cakephp-codesniffer&#34;&gt;cakephp/cakephp-codesniffer · GitHub&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/fabpot/PHP-CS-Fixer&#34;&gt;fabpot/PHP-CS-Fixer · GitHub&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://matsu-chara.hatenablog.com/entry/2013/12/27/125026&#34;&gt;sublime-phpcsでPSR-2準拠のコーディング - だいたいよくわからないブログ( ´_ゝ`)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -124,15 +123,15 @@ proc = subprocess.Popen(cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stde
       <pubDate>Tue, 15 Jan 2013 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2013/01/15/suppress-closing-replace-dialog-in-sublime-text-2/</guid>
-      <description>
-
-&lt;p&gt;最近は &lt;a href=&#34;http://www.sublimetext.com/&#34;&gt;Sublime Text 2&lt;/a&gt; をメインのエディタに使っています。しかし、ところどころ「何で？」と思うような不便な点があります。&lt;/p&gt;
+      <description>&lt;p&gt;最近は &lt;a href=&#34;http://www.sublimetext.com/&#34;&gt;Sublime Text 2&lt;/a&gt; をメインのエディタに使っています。しかし、ところどころ「何で？」と思うような不便な点があります。&lt;/p&gt;
 
 &lt;p&gt;「Replace All」をクリックするたびに閉じる置換ダイアログも主な不満の一つです。正規表現を連続で試したい時などはいちいち開き直さねばならず、面倒極まりないです。&lt;/p&gt;
 
 &lt;p&gt;というわけで、「Replace All」 を実行しても閉じないようにカスタマイズする方法をメモします。&lt;/p&gt;
 
-&lt;h2 id=&#34;やり方:de3f7e5a79123635b90b973ac5e3402b&#34;&gt;やり方&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;やり方&#34;&gt;やり方&lt;/h2&gt;
 
 &lt;p&gt;&lt;em&gt;Preferences -&amp;gt; Key Bindings - User&lt;/em&gt; に以下の行を追加します。&lt;/p&gt;
 
@@ -151,10 +150,9 @@ proc = subprocess.Popen(cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stde
 
 &lt;p&gt;ちなみに「&amp;rdquo;keys&amp;rdquo;: [&amp;ldquo;enter&amp;rdquo;]」にすればデフォルトでダイアログを閉じないようにもできます。そこはお好みで。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:de3f7e5a79123635b90b973ac5e3402b&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://sublimetext.userecho.com/topic/45051-search-and-replace-panel-should-not-hide-when-we-click-on-replace-all/&#34;&gt;Search and Replace panel should … / General forum / Sublime Text 2&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;a href=&#34;http://sublimetext.userecho.com/topic/45051-search-and-replace-panel-should-not-hide-when-we-click-on-replace-all/&#34;&gt;Search and Replace panel should … / General forum / Sublime Text 2&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

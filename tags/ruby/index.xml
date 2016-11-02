@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ruby on 1000g</title>
-    <link>http://1000k.github.io/tags/ruby/</link>
-    <description>Recent content in Ruby on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/ruby/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 27 Aug 2013 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -41,13 +41,13 @@
 
 &lt;p&gt;Unixタイムスタンプを読みやすい形式に変更するワンライナーを、いくつかの言語で紹介します。&lt;/p&gt;
 
-&lt;h2 id=&#34;シェル:9514b206b957b6cd4e0a3c8ebb046a97&#34;&gt;シェル&lt;/h2&gt;
+&lt;h2 id=&#34;シェル&#34;&gt;シェル&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;$ date -d @1357872483
 2013年  1月 11日 金曜日 11:48:03 JST
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;php:9514b206b957b6cd4e0a3c8ebb046a97&#34;&gt;PHP&lt;/h2&gt;
+&lt;h2 id=&#34;php&#34;&gt;PHP&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;$ php -r &#39;echo date(&amp;quot;r&amp;quot;, 1357872483);&#39;
 Fri, 11 Jan 2013 11:48:03 +090
@@ -57,13 +57,13 @@ Fri, 11 Jan 2013 11:48:03 +090
 
 &lt;p&gt;詳しくは &lt;a href=&#34;http://php.net/manual/ja/function.date.php&#34;&gt;PHP: date - Manual&lt;/a&gt; を参照。&lt;/p&gt;
 
-&lt;h2 id=&#34;ruby:9514b206b957b6cd4e0a3c8ebb046a97&#34;&gt;Ruby&lt;/h2&gt;
+&lt;h2 id=&#34;ruby&#34;&gt;Ruby&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;$ ruby -e &#39;p Time.at(1357872483)&#39;
 Fri Jan 11 11:48:03 +0900 2013
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;参考:9514b206b957b6cd4e0a3c8ebb046a97&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/2371248/how-to-convert-timestamps-to-dates-in-bash&#34;&gt;How to convert timestamps to dates in bash? - Stack Overflow&lt;/a&gt;&lt;/li&gt;

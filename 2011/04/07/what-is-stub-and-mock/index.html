@@ -1,56 +1,70 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ja">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<title> スタブとモック &middot; 1000g </title>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
+    <title>スタブとモック &middot; 1000g</title>
+    <meta name="author" content="SENDA Keijiro">
+    <meta name="description" content="Programming knowledge">
+    <meta name="generator" content="Hugo 0.17" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-<link rel="stylesheet" href="http://1000k.github.io//css/slim.css">
-<link rel="stylesheet" href="http://1000k.github.io//css/highlight.min.css">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext' rel='stylesheet'>
+    <!-- RSS autodiscovery -->
+    
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
-<link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="http://1000k.github.io/img/favicon.ico">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.2/normalize.min.css">
 
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://1000k.github.io/css/screen.css">
+    <link rel="stylesheet" href="http://1000k.github.io/css/github.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/default.min.css">
 
-<link href="" rel="alternate" type="application/rss+xml" title="1000g" />
-
-
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
+    <!-- Stylesheet for theme color -->
+    <style type="text/css">
+    a, a:visited {color: #33cc99;}
+    .pagination a {color: #33cc99;}
+    .gist .gist-file .gist-meta a:visited {color: #33cc99 !important;}
+    a:focus, a:hover {color: #178b6b;}
+    h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #178b6b;}
+    .older-posts:hover, .newer-posts:hover {color: #178b6b;}
+</style>
 </head>
 
-<body>
-  <div class="container">
-    <div class="header">
-  <h1 class="site-title"><a href="http://1000k.github.io/">1000g</a></h1>
-  <p class="site-tagline">Tech blog</p>
-  <div class="nav">
-    <a class="nav-btn" href="#">
-      <span class="ci ci-burger"></span>
-    </a>
-    <ul class="nav-list">
-      
+<body class="post-template">
 
-      <li><a href="https://github.com/1000k">Github</a></li>
-      <li><a href="https://twitter.com/1000kei">Twitter</a></li>
-      
+    <header id="site-head">
+	
+	<h1 class="blog-title"><a href="http://1000k.github.io/">1000g</a></h1>
+	
+	
+	<h1 class="blog-subtitle">Development knowledge</h1>
+	
+</header>
+    
+<nav class="menu" role="nav">
+    <ul>
+        
+        	<li class="nav nav-current"><a href="/about/">ABOUT</a></li>
+      	
     </ul>
-  </div>
-</div>
-    <div class="content">
-      <div class="post">
-        <h2 class="post-title"><a href="http://1000k.github.io/2011/04/07/what-is-stub-and-mock/">スタブとモック</a></h2>
-        <div class="post-content">
-          
+</nav>
+
+
+    <main class="content" role="main">
+	    <article class="post">
+	        <header>
+	        <h1 class="post-title">スタブとモック</h1>
+
+	        <section class="post-content">
+	            
 
 <p>今までモックをほとんど使ったことがなかったので、勉強してみました。</p>
 
-<h2 id="スタブとは:64967b015e52257cb9a199be0513508e">スタブとは</h2>
+<h2 id="スタブとは">スタブとは</h2>
 
 <p>ref: <a href="http://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%BF%E3%83%96">スタブ - Wikipedia</a></p>
 
@@ -60,7 +74,7 @@
 
 <p>「必ずfalseを返すスタブ」「ランダムな整数を返すスタブ」なんて言葉はよく聞きます。</p>
 
-<h2 id="モックとは:64967b015e52257cb9a199be0513508e">モックとは</h2>
+<h2 id="モックとは">モックとは</h2>
 
 <p>ref: <a href="http://d.hatena.ne.jp/sekom/20090702/p1">スタブとモックの違い - ソフト開発お仕事メモ</a></p>
 
@@ -72,7 +86,7 @@
 | 2  | テスト条件下でのモックオブジェクトの使用 | モックオブジェクトを使用したテストを実施します。                                                     |
 | 3  | 結果の検証                | モックオブジェクトに対し、期待されたとおりにモックオブジェクトが使用されたか問い合わせます。                               |</p>
 
-<h2 id="スタブやモックが必要になる理由:64967b015e52257cb9a199be0513508e">スタブやモックが必要になる理由</h2>
+<h2 id="スタブやモックが必要になる理由">スタブやモックが必要になる理由</h2>
 
 <p>ref: <a href="http://www39.atwiki.jp/startruby/pages/23.html">Start! Ruby - RSpecの構文</a></p>
 
@@ -84,7 +98,7 @@
 
 <p>※ ただし、スタブ/モックを多用し過ぎると、今度はインタフェース不一致の発見を先送りにする、という状況にもなりかねない。このあたりはさじ加減が必要。</p>
 
-<h2 id="モックでできること:64967b015e52257cb9a199be0513508e">モックでできること</h2>
+<h2 id="モックでできること">モックでできること</h2>
 
 <p>ref: <a href="http://gihyo.jp/dev/feature/01/php-test/0004">PHPUnit3で始めるユニットテスト：第4回　モックオブジェクトを使ったテスト｜gihyo.jp … 技術評論社</a></p>
 
@@ -108,7 +122,7 @@
 </ul></li>
 </ul>
 
-<h2 id="スタブとモックの違い:64967b015e52257cb9a199be0513508e">スタブとモックの違い</h2>
+<h2 id="スタブとモックの違い">スタブとモックの違い</h2>
 
 <p>ref: <a href="http://www.ibm.com/developerworks/jp/web/library/wa-mockrails/index.html">Ruby on Rails でのモックとスタブの作成</a></p>
 
@@ -130,37 +144,51 @@
 <p>モックは、エクスペクテーションが事前にプログラムされたものである。エクスペクテーションとは、受信する一連の呼び出しの仕様を表わしたものである。期待されない呼び出しが行なわれた場合は例外をスローする。また、テスト実行後の検証(verification)で、期待された呼び出しがすべてきちんと行われたかどうかを確認する。</p>
 </blockquote>
 
-        </div>
-      </div>
-    </div>
+	        </section>
+	    </article>
+	</main>
 
-    <hr>
+    <footer class="site-footer">
+	<div class="inner">
+		<section class="footer-social">
+			
+		    <a href="//twitter.com/1000kei" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp;
+		    
+		    
+		    <a href="//github.com/1000k" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
+		    
+		    
+		    <a href="" target="_blank" title="RSS"><i class="fa fa-2x fa-fw fa-rss"></i> <span class="hidden">RSS</span></a>
+		</section>
 
-    
-      <a class="btn btn-previous" href="http://1000k.github.io/2011/06/22/click-specific-element-by-jquery/">&laquo; 「要素をクリックする」命令をjQueryで書く</a>
-    
-    
-      <a class="btn btn-next" href="http://1000k.github.io/2011/03/18/randy-wilkins/">SketchUpの活用例: Randy Wilkins &raquo;</a>
-    
+		<section class="copyright">&copy; 2016 <a href="http://1000k.github.io/">SENDA Keijiro</a>. Released under the MIT license.</section>
+	</div>
+</footer>
 
-    <div class="footer">
-  <p>Powered by <a href="http://gohugo.io">Hugo</a>. This theme—Slim—is open sourced on <a href="https://github.com/zhe/hugo-theme-slim">Github</a>.</p>
-</div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://1000k.github.io/js/index.js"></script>
+<script src="http://1000k.github.io/js/smooth-scroll.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
 
-  </div>
-  <script src="http://1000k.github.io//js/slim.js"></script>
-  <script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<script>
+    smoothScroll.init({
+        speed: 800,
+        easing: 'easeInOutCubic',
+        updateURL: false,
+        offset: 125,
+    });
+</script>
+<script>hljs.initHighlightingOnLoad();</script>
 
-ga('create', 'UA-46659459-2', 'auto');
-ga('send', 'pageview');
 
+<!-- Google Analytics -->
+<script>
+  var _gaq=[['_setAccount','UA-46659459-2'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
 
 
 </body>
-
 </html>

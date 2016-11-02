@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tips on 1000g</title>
-    <link>http://1000k.github.io/tags/tips/</link>
-    <description>Recent content in Tips on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/tips/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 28 Jan 2014 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/tips/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -15,11 +15,9 @@
       <pubDate>Tue, 28 Jan 2014 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2014/01/28/how-to-access-apaches2-with-self-certification/</guid>
-      <description>
+      <description>&lt;p&gt;よくやるけどすぐ忘れるのでメモ。&lt;/p&gt;
 
-&lt;p&gt;よくやるけどすぐ忘れるのでメモ。&lt;/p&gt;
-
-&lt;h2 id=&#34;検証環境:1ec5ca8028cd506870889668379eecae&#34;&gt;検証環境&lt;/h2&gt;
+&lt;h2 id=&#34;検証環境&#34;&gt;検証環境&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;CentOS 6.3&lt;/li&gt;
@@ -28,7 +26,9 @@
 &lt;li&gt;httpd.conf に &lt;code&gt;Include conf.d/*.conf&lt;/code&gt; を書き、&lt;code&gt;/usr/local/apache2/conf.d/*.conf&lt;/code&gt; を自動ロードできるようにしてあります。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;チュートリアル:1ec5ca8028cd506870889668379eecae&#34;&gt;チュートリアル&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;チュートリアル&#34;&gt;チュートリアル&lt;/h2&gt;
 
 &lt;p&gt;オレオレ証明書を作る。(有効期限は10年)&lt;/p&gt;
 
@@ -64,13 +64,12 @@ EOT&amp;quot;
 
 &lt;p&gt;ダン！&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:1ec5ca8028cd506870889668379eecae&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://smokycat.info/ubuntu/440&#34;&gt;ubuntuにオレオレ証明書を入れてapacheにhttpsできるようにする話。 | smokycat.info&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/ozuma/20130511/1368284304&#34;&gt;オレオレ証明書をopensslで作る（詳細版） - ろば電子が詰まっている&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -79,9 +78,7 @@ EOT&amp;quot;
       <pubDate>Tue, 17 Dec 2013 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2013/12/17/display-google-maps-showing-fixed-header-and-footer/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;http://jsfiddle.net/893s2/2/&#34;&gt;このデモ&lt;/a&gt;を見れば、何をやりたいかすぐ把握できると思います。&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;http://jsfiddle.net/893s2/2/&#34;&gt;このデモ&lt;/a&gt;を見れば、何をやりたいかすぐ把握できると思います。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/map_1.png&#34;&gt;
 &lt;figure &gt;
@@ -113,7 +110,9 @@ EOT&amp;quot;
 
 &lt;p&gt;以下、このようなコードの実装方法を書きます。&lt;/p&gt;
 
-&lt;h2 id=&#34;コード:58e354fc35f3ca4266379278104f5f1b&#34;&gt;コード&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;コード&#34;&gt;コード&lt;/h2&gt;
 
 &lt;p&gt;まずはお決まりの Google Maps 呼び出しコードと、HTML の構造です。&lt;/p&gt;
 
@@ -206,7 +205,7 @@ footer {
 
 &lt;p&gt;実現したいことはシンプルですが、実装するのに結構工夫が必要だったのでメモしておきました。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:58e354fc35f3ca4266379278104f5f1b&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/2821596/100-height-with-fixed-footer-and-embedded-google-map&#34;&gt;html - 100% height with fixed footer and embedded Google Map - Stack Overflow&lt;/a&gt;
@@ -214,8 +213,7 @@ footer {
 &lt;ul&gt;
 &lt;li&gt;今回のデモは、この Q&amp;amp;A に書かれているコードをシンプルにしただけです。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -224,9 +222,7 @@ footer {
       <pubDate>Mon, 09 Dec 2013 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2013/12/09/skip-procedures-after-beforefilter-in-cakephp/</guid>
-      <description>
-
-&lt;p&gt;サービスをメンテナンス中には、どこのページにアクセスされてもメンテナンス用画面を表示できるようにしたいでしょう。&lt;/p&gt;
+      <description>&lt;p&gt;サービスをメンテナンス中には、どこのページにアクセスされてもメンテナンス用画面を表示できるようにしたいでしょう。&lt;/p&gt;
 
 &lt;p&gt;例えば CakePHP で API を作ったなら、メンテナンス時にはどのページにアクセスしても以下のようなレスポンスが返ってくるようにしたい。&lt;/p&gt;
 
@@ -240,11 +236,13 @@ footer {
 
 &lt;p&gt;なお、CakePHP 2.4.2 で動作確認済みです。&lt;/p&gt;
 
-&lt;h2 id=&#34;やりたいこと:882e9f5bab62127de673717c90df9029&#34;&gt;やりたいこと&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;やりたいこと&#34;&gt;やりたいこと&lt;/h2&gt;
 
 &lt;p&gt;メンテナンスモードが ON の時は、どのアクションを叩かれても JSON でエラーレスポンスを返すようにする。&lt;/p&gt;
 
-&lt;h2 id=&#34;コード:882e9f5bab62127de673717c90df9029&#34;&gt;コード&lt;/h2&gt;
+&lt;h2 id=&#34;コード&#34;&gt;コード&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;App::uses(&#39;Controller&#39;, &#39;Controller&#39;);
 
@@ -295,18 +293,18 @@ class AppController extends Controller {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;ポイント:882e9f5bab62127de673717c90df9029&#34;&gt;ポイント&lt;/h2&gt;
+&lt;h2 id=&#34;ポイント&#34;&gt;ポイント&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;AppController::beforeFilter()&lt;/code&gt; に実装することで、全てのコントローラーに影響させることができます。&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;invokeAction()&lt;/code&gt; をオーバーライドして、メンテナンスモード時にはアクションを実行させないようにしています。これが無いと、画面にはメンテナンス用の表示がされていても、裏側では結局アクションが実行されてしまいます。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;余談:882e9f5bab62127de673717c90df9029&#34;&gt;余談&lt;/h2&gt;
+&lt;h2 id=&#34;余談&#34;&gt;余談&lt;/h2&gt;
 
 &lt;p&gt;本当は CakePHP 2.1 から採用された &lt;a href=&#34;http://book.cakephp.org/2.0/en/core-libraries/events.html&#34;&gt;Events System&lt;/a&gt; を使って &lt;code&gt;beforeFilter()&lt;/code&gt; 以降のアクションを実行されないようにしたかったのですが、やり方がわかりませんでした。アクションを detach する方法をご存知の方がいたら教えて下さい。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:882e9f5bab62127de673717c90df9029&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://book.cakephp.org/2.0/en/views/json-and-xml-views.html&#34;&gt;JSON and XML views — CakePHP Cookbook v2.x documentation&lt;/a&gt;
@@ -316,8 +314,7 @@ class AppController extends Controller {
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://book.cakephp.org/2.0/en/controllers.html#request-life-cycle-callbacks&#34;&gt;Controllers — CakePHP Cookbook v2.x documentation&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;[ invokeAction&amp;rsquo;]);&amp;rdquo; &amp;gt;CakeAPI &amp;gt; invokeAction](&lt;a href=&#34;http://api.cakephp.org/2.4/class-Controller.html#_invokeAction&#34;&gt;http://api.cakephp.org/2.4/class-Controller.html#_invokeAction&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -332,7 +329,7 @@ class AppController extends Controller {
 
 &lt;p&gt;submodule を最新の状態にするコマンドは &lt;code&gt;git submodule foreach git pull origin master&lt;/code&gt; です。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:e45e994ba8135917364d3e9a430429e3&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://stackoverflow.com/questions/5828324/update-git-submodule&#34;&gt;Update git submodule - Stack Overflow&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -344,9 +341,7 @@ class AppController extends Controller {
       <pubDate>Sat, 19 Oct 2013 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2013/10/20/speed-up-grunt-watch/</guid>
-      <description>
-
-&lt;p&gt;Grunt を使うからには &lt;a href=&#34;https://github.com/gruntjs/grunt-contrib-watch#optionsnospawn&#34;&gt;grunt-contrib-watch&lt;/a&gt; でファイルの変更を監視して自動ビルドしたいのですが、どうも遅い。&lt;/p&gt;
+      <description>&lt;p&gt;Grunt を使うからには &lt;a href=&#34;https://github.com/gruntjs/grunt-contrib-watch#optionsnospawn&#34;&gt;grunt-contrib-watch&lt;/a&gt; でファイルの変更を監視して自動ビルドしたいのですが、どうも遅い。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ grunt watch
 
@@ -372,6 +367,8 @@ Completed in 12.602s at Sat Oct 19 2013 16:26:32 GMT+0000 (UTC) - Waiting...
 &lt;p&gt;タスクの実行自体は1秒もかかっていないのに、全体では12秒ほどかかっていました。&lt;/p&gt;
 
 &lt;p&gt;Gruntfile の設定を見直すことで改善できたので、そのやり方をメモしておきます。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;grunt watch&lt;/code&gt; のボトルネックは、ファイルの変更を検知後にタスクプロセスを子プロセスとしてスポーンさせる部分にあるようです。&lt;/p&gt;
 
@@ -423,13 +420,12 @@ OK
 
 &lt;p&gt;12秒が0.7秒に。イェーイ！&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:bcbef8a25879c17668c0f2da3a272309&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/gruntjs/grunt-contrib-watch/issues/69&#34;&gt;Why Watch is so slow compared to Regarde · Issue #69 · gruntjs/grunt-contrib-watch&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/gruntjs/grunt-contrib-watch#optionsnospawn&#34;&gt;gruntjs/grunt-contrib-watch#optionsnospawn&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -438,9 +434,7 @@ OK
       <pubDate>Tue, 24 Sep 2013 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2013/09/24/tips-to-simplify-writing-expection-of-phpunit/</guid>
-      <description>
-
-&lt;p&gt;PHPUnit の小ネタです。&lt;/p&gt;
+      <description>&lt;p&gt;PHPUnit の小ネタです。&lt;/p&gt;
 
 &lt;p&gt;PHPUnit でモックを使ったテストケースを書くと、以下のように記述量が多くなってうんざりします。&lt;/p&gt;
 
@@ -470,6 +464,8 @@ class FooClassTest extends PHPUnit_Framework_TestCase {
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;長い、書きづらい、読みづらい。こんなテストケース、2つ以上書きたくないですね。もっと楽に書くための TIPS をメモしておきます。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;まず、何もしない「プレーンな」モックオブジェクトを作るメソッドを作りましょう。&lt;code&gt;PHPUnit_Framework_TestCase&lt;/code&gt; を継承した &lt;code&gt;MyTestCase&lt;/code&gt; に実装してやります。&lt;/p&gt;
 
@@ -547,13 +543,12 @@ class FooClassTest extends MyTestCase {
 
 &lt;p&gt;こういう改善をしても、Ruby に慣れているとまだ長く感じます。「$」「&amp;rsquo;」「&amp;gt;」などの記号を打つのも煩わしいです。Ruby 使いてえなあ。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:66eb9e16e3cbfb7a24c972ec7c7d6f12&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;[ 第10章 テストダブル&amp;rsquo;]);&amp;rdquo; &amp;gt;PHPUnit 公式マニュアル &amp;gt; 第10章 テストダブル](&lt;a href=&#34;http://phpunit.de/manual/3.8/ja/test-doubles.html&#34;&gt;http://phpunit.de/manual/3.8/ja/test-doubles.html&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://phpunit.de/manual/3.8/ja/appendixes.annotations.html&#34;&gt;付録B アノテーション&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -562,11 +557,11 @@ class FooClassTest extends MyTestCase {
       <pubDate>Wed, 10 Apr 2013 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2013/04/10/how-to-check-communication-between-the-server-using-netcat/</guid>
-      <description>
+      <description>&lt;p&gt;サーバー間のネットワークが繋がっているか確認したい場合、Netcat (nc) コマンドが便利です。&lt;/p&gt;
 
-&lt;p&gt;サーバー間のネットワークが繋がっているか確認したい場合、Netcat (nc) コマンドが便利です。&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;使うコマンド:eab99a5c8d7d52c5c56e0b2e7fa8bbba&#34;&gt;使うコマンド&lt;/h2&gt;
+&lt;h2 id=&#34;使うコマンド&#34;&gt;使うコマンド&lt;/h2&gt;
 
 &lt;p&gt;受信側では &amp;ldquo;-l&amp;rdquo; (Listen mode) オプションを使い、待受状態にします。&lt;/p&gt;
 
@@ -578,18 +573,18 @@ class FooClassTest extends MyTestCase {
 &lt;pre&gt;&lt;code&gt;$ nc -v -z {受信側のIP} {受信側のポート番号}
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;例:eab99a5c8d7d52c5c56e0b2e7fa8bbba&#34;&gt;例&lt;/h2&gt;
+&lt;h2 id=&#34;例&#34;&gt;例&lt;/h2&gt;
 
 &lt;p&gt;host001 のポート 4949 に、host002 から疎通できるかどうかテストするには、下記のようなコマンドを叩きます。&lt;/p&gt;
 
-&lt;h3 id=&#34;1-受信側のポートを-listen-する:eab99a5c8d7d52c5c56e0b2e7fa8bbba&#34;&gt;1. 受信側のポートを listen する&lt;/h3&gt;
+&lt;h3 id=&#34;1-受信側のポートを-listen-する&#34;&gt;1. 受信側のポートを listen する&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;[host001]$ nc -v -k -l 4949
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&amp;rdquo;-v&amp;rdquo; でより多くのメッセージを出力し、&amp;rdquo;-k&amp;rdquo; でコネクションを永続化することができます。（&amp;rdquo;-k&amp;rdquo; を指定しないと1回受信するたびに nc が終了します）&lt;/p&gt;
 
-&lt;h3 id=&#34;2-送信側から接続できるか確かめる:eab99a5c8d7d52c5c56e0b2e7fa8bbba&#34;&gt;2. 送信側から接続できるか確かめる&lt;/h3&gt;
+&lt;h3 id=&#34;2-送信側から接続できるか確かめる&#34;&gt;2. 送信側から接続できるか確かめる&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;[host002]$ nc -v -z host001 4949
 &lt;/code&gt;&lt;/pre&gt;
@@ -606,13 +601,12 @@ class FooClassTest extends MyTestCase {
 &lt;pre&gt;&lt;code&gt;Connection from host002 port 4949 [tcp/munin] accepted
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;参考:eab99a5c8d7d52c5c56e0b2e7fa8bbba&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.techrepublic.com/article/learn-the-many-uses-of-netcat/5689982&#34;&gt;Learn the many uses of netcat | TechRepublic&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.usupi.org/sysad/190.html&#34;&gt;Netcat でネットワークをもう少し活用する - いますぐ実践! Linuxシステム管理 / Vol.190&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -625,7 +619,7 @@ class FooClassTest extends MyTestCase {
 
 &lt;p&gt;file_put_contents()とvar_export()を組み合わせれば、1行で実現できます。&lt;/p&gt;
 
-&lt;h1 id=&#34;コード:48c102883614406009a90644938731e2&#34;&gt;コード&lt;/h1&gt;
+&lt;h1 id=&#34;コード&#34;&gt;コード&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code&gt;/**
  * 変数のvar_dump()結果をログファイルに出力する。
@@ -639,7 +633,7 @@ public function varExportToLog($var, $path) {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;参考:48c102883614406009a90644938731e2&#34;&gt;参考&lt;/h1&gt;
+&lt;h1 id=&#34;参考&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://plaza.rakuten.co.jp/hknopage/diary/201109060000/&#34;&gt;PHPメモ：var_export() - まんじうこわい@楽 - 楽天ブログ（Blog）&lt;/a&gt;&lt;/li&gt;
@@ -677,7 +671,7 @@ public function varExportToLog($var, $path) {
 $ kill {上で出てきたpid}
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;参考:981194324cf5b426a797d33ec4db9e80&#34;&gt;参考&lt;/h1&gt;
+&lt;h1 id=&#34;参考&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://babyp.blog55.fc2.com/blog-entry-446.html&#34;&gt;サーバのリソースを定期的に出力しとく方法：なんとなしの日記&lt;/a&gt;&lt;/li&gt;
@@ -720,7 +714,7 @@ $ kill {上で出てきたpid}
 
 &lt;p&gt;となっています。&lt;/p&gt;
 
-&lt;h1 id=&#34;参考:8ae62bd64dbb38a5a9b5b7de400f164f&#34;&gt;参考&lt;/h1&gt;
+&lt;h1 id=&#34;参考&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://openlab.dino.co.jp/2007/10/23/184825129.html&#34;&gt;svn diffで-wオプションを使う — ディノオープンラボラトリ&lt;/a&gt;&lt;/li&gt;
@@ -735,11 +729,9 @@ $ kill {上で出てきたpid}
       <pubDate>Tue, 05 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2011/07/05/mange-fixtures-in-several-directories/</guid>
-      <description>
+      <description>&lt;p&gt;&lt;strong&gt;(2011/07/15 Update) 7/13以前のコードに誤りがあり、正しく動作しなかったので修正しました。&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;(2011/07/15 Update) 7/13以前のコードに誤りがあり、正しく動作しなかったので修正しました。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;やりたいこと:06041edaaf4ad9c158653456ce78f617&#34;&gt;やりたいこと&lt;/h2&gt;
+&lt;h2 id=&#34;やりたいこと&#34;&gt;やりたいこと&lt;/h2&gt;
 
 &lt;p&gt;CakePHPの規則に従うと、フィクスチャは /app/test/fixtures/ ディレクトリにすべて入れなければなりません。この場合、「同じモデルを使うけど、テストケース毎に異なるフィクスチャを代入したい」という要望をかなえるのが難しいです。&lt;/p&gt;
 
@@ -763,7 +755,9 @@ $ kill {上で出てきたpid}
 
 &lt;p&gt;と使い分けられるようにする方法を考えました。&lt;/p&gt;
 
-&lt;h2 id=&#34;やり方:06041edaaf4ad9c158653456ce78f617&#34;&gt;やり方&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;やり方&#34;&gt;やり方&lt;/h2&gt;
 
 &lt;p&gt;CakeTestCase を拡張した MyCakeTestCase を作成し、その中で _loadFixtures をオーバーライドします。&lt;/p&gt;
 
@@ -882,13 +876,13 @@ class HigesControllerTestCase extends MyCakeTestCase {
 ?&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;副作用:06041edaaf4ad9c158653456ce78f617&#34;&gt;副作用&lt;/h2&gt;
+&lt;h2 id=&#34;副作用&#34;&gt;副作用&lt;/h2&gt;
 
 &lt;p&gt;テストケースで「App::import(&amp;lsquo;Lib&amp;rsquo;, &amp;lsquo;MyCakeTestCase&amp;rsquo;);」すると、なぜかMyCakeTestCaseもテスト対象になるらしく、テスト結果の「n/n test cases complete」の値が1増えます。&lt;/p&gt;
 
 &lt;p&gt;テスト結果のGreen/Redには影響しないので、無視してください。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:06041edaaf4ad9c158653456ce78f617&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/hiromi2424/20101215/1292379625&#34;&gt;App::import() は凄い - 24時間CakePHP&lt;/a&gt;
@@ -896,8 +890,7 @@ class HigesControllerTestCase extends MyCakeTestCase {
 &lt;ul&gt;
 &lt;li&gt;本当はApp::importだけでできれば一番いいんですけどね。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -941,7 +934,7 @@ store-plaintext-passwords = no
 
 &lt;p&gt;セキュリティリスクになるので消してしまいましょう。&lt;/p&gt;
 
-&lt;h1 id=&#34;参考:a8b04d0b8996e9714afe4865fd320deb&#34;&gt;参考&lt;/h1&gt;
+&lt;h1 id=&#34;参考&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.linuxforu.com/previews/subversion-16-security-improvements-illustrated/&#34;&gt;Subversion 1.6: Security Improvements Illustrated – LINUX For You Magazine&lt;/a&gt;&lt;/li&gt;
@@ -962,7 +955,7 @@ store-plaintext-passwords = no
 
 &lt;p&gt;任意の場所をクリックした時にそのアクションを起動したい場合は、jQueryの&lt;strong&gt;click()&lt;/strong&gt;メソッドを使うと簡単に実現できます。&lt;/p&gt;
 
-&lt;h1 id=&#34;例:8f479fe2b847018d9162cbf4baf74733&#34;&gt;例&lt;/h1&gt;
+&lt;h1 id=&#34;例&#34;&gt;例&lt;/h1&gt;
 
 &lt;p&gt;classが&amp;rdquo;uso&amp;rdquo;のaリンクをクリックした時に &amp;ldquo;a#mojamoja&amp;rdquo; をクリックした時のアクション起動したい場合は、下記のように書けます。&lt;/p&gt;
 
@@ -974,7 +967,7 @@ store-plaintext-passwords = no
 });
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;応用-悪用:8f479fe2b847018d9162cbf4baf74733&#34;&gt;応用（悪用？）&lt;/h1&gt;
+&lt;h1 id=&#34;応用-悪用&#34;&gt;応用（悪用？）&lt;/h1&gt;
 
 &lt;p&gt;FirebugやChromeのスクリプト入力ボックスに下記のコードを書き込むと、button#usoを永遠に毎秒10回叩き続けます。&lt;/p&gt;
 
@@ -983,7 +976,7 @@ store-plaintext-passwords = no
 
 &lt;p&gt;「どうしてもボタンが連打したい。でも指が折れて動かせない…。」という名人にお勧めです。&lt;/p&gt;
 
-&lt;h1 id=&#34;参考:8f479fe2b847018d9162cbf4baf74733&#34;&gt;参考&lt;/h1&gt;
+&lt;h1 id=&#34;参考&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://semooh.jp/jquery/api/events/click/_/&#34;&gt;click() - jQuery 日本語リファレンス&lt;/a&gt;&lt;/li&gt;
@@ -1005,14 +998,14 @@ store-plaintext-passwords = no
 
 &lt;p&gt;上のビデオではそんなときの対策を二つ紹介しています。&lt;/p&gt;
 
-&lt;h2 id=&#34;断面-ツールを使う:e9f0ca86109d91329ad503edf61b0d0a&#34;&gt;[断面]ツールを使う&lt;/h2&gt;
+&lt;h2 id=&#34;断面-ツールを使う&#34;&gt;[断面]ツールを使う&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;[断面]ツールと[移動]ツールで室内が切れるまで断面を移動する&lt;/li&gt;
 &lt;li&gt;[ビュー] &amp;gt; [断面平面] をオフにすると元に戻る&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;ルック-アラウンド-ツールを使う:e9f0ca86109d91329ad503edf61b0d0a&#34;&gt;[ルック・アラウンド]ツールを使う&lt;/h2&gt;
+&lt;h2 id=&#34;ルック-アラウンド-ツールを使う&#34;&gt;[ルック・アラウンド]ツールを使う&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;自分の立ち位置を元に視点を回転できるので、壁にぶつかる心配がない&lt;/li&gt;
@@ -1032,11 +1025,11 @@ store-plaintext-passwords = no
       <pubDate>Mon, 13 Dec 2010 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2010/12/13/how-to-draw-steps/</guid>
-      <description>
+      <description>&lt;p&gt;SketchUp で階段を作るのは結構面倒くさいです。以下にいくつかのやり方をメモします。&lt;/p&gt;
 
-&lt;p&gt;SketchUp で階段を作るのは結構面倒くさいです。以下にいくつかのやり方をメモします。&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;the-subdivided-rectangles-method:3571f686719a045de95d57fb6a9c6c1b&#34;&gt;The Subdivided Rectangles method&lt;/h2&gt;
+&lt;h2 id=&#34;the-subdivided-rectangles-method&#34;&gt;The Subdivided Rectangles method&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;ベースとなる長方形を作る&lt;/li&gt;
@@ -1049,7 +1042,7 @@ store-plaintext-passwords = no
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;the-copied-profile-method:3571f686719a045de95d57fb6a9c6c1b&#34;&gt;The Copied Profile method&lt;/h2&gt;
+&lt;h2 id=&#34;the-copied-profile-method&#34;&gt;The Copied Profile method&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;直方体を作る&lt;/li&gt;
@@ -1063,7 +1056,7 @@ store-plaintext-passwords = no
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;the-treads-are-components-method:3571f686719a045de95d57fb6a9c6c1b&#34;&gt;The Treads are Components method&lt;/h2&gt;
+&lt;h2 id=&#34;the-treads-are-components-method&#34;&gt;The Treads are Components method&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;1ステップぶんの直方体を作り、コンポーネント化する&lt;/li&gt;
@@ -1074,8 +1067,7 @@ store-plaintext-passwords = no
 &lt;ul&gt;
 &lt;li&gt;全段が同時に編集できるので追跡しやすく便利&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
+&lt;/ol&gt;</description>
     </item>
     
   </channel>

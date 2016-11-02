@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Zen Coding on 1000g</title>
-    <link>http://1000k.github.io/tags/zen-coding/</link>
-    <description>Recent content in Zen Coding on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/zen-coding/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 26 May 2010 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/zen-coding/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -21,7 +21,7 @@
 
 &lt;p&gt;※ただし、NetBeansではスニペット（単語補完）しか用意されていないようで、liタグのネストなどは使えないようです。&lt;/p&gt;
 
-&lt;h3 id=&#34;導入手順:36e8d758c47104094651fcffcdfb9662&#34;&gt;導入手順&lt;/h3&gt;
+&lt;h3 id=&#34;導入手順&#34;&gt;導入手順&lt;/h3&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;http://code.google.com/p/zen-coding/&#34;&gt;zen-coding - Project Hosting on Google Code&lt;/a&gt; からNetBeans用プラグインをダウンロードする
@@ -39,7 +39,7 @@
 
 &lt;p&gt;あとはHTMLのソースを開いて、「html:xt」→TABキー などやればスルスルとコードが書けます。&lt;/p&gt;
 
-&lt;h3 id=&#34;少し改良:36e8d758c47104094651fcffcdfb9662&#34;&gt;少し改良&lt;/h3&gt;
+&lt;h3 id=&#34;少し改良&#34;&gt;少し改良&lt;/h3&gt;
 
 &lt;p&gt;HTMLへのPHP出力として「＜?php ?＞」ブロックを頻繁に使うので、それもスニペットに追加します。&lt;/p&gt;
 
@@ -57,7 +57,7 @@
 
 &lt;p&gt;以上です。&lt;/p&gt;
 
-&lt;h3 id=&#34;参考:36e8d758c47104094651fcffcdfb9662&#34;&gt;参考&lt;/h3&gt;
+&lt;h3 id=&#34;参考&#34;&gt;参考&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://blog.mizoshiri.com/archives/863&#34;&gt;Netbeans(windows環境)にZen-Codingを導入&lt;/a&gt;&lt;/p&gt;
 </description>

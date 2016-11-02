@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>コマンド on 1000g</title>
-    <link>http://1000k.github.io/tags/%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89/</link>
-    <description>Recent content in コマンド on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 03 Aug 2011 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -42,7 +42,7 @@
 
 &lt;p&gt;となっています。&lt;/p&gt;
 
-&lt;h1 id=&#34;参考:8ae62bd64dbb38a5a9b5b7de400f164f&#34;&gt;参考&lt;/h1&gt;
+&lt;h1 id=&#34;参考&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://openlab.dino.co.jp/2007/10/23/184825129.html&#34;&gt;svn diffで-wオプションを使う — ディノオープンラボラトリ&lt;/a&gt;&lt;/li&gt;
@@ -59,7 +59,7 @@
       <guid>http://1000k.github.io/2010/05/20/usage-of-logrotate/</guid>
       <description>
 
-&lt;h1 id=&#34;設定チュートリアル:6d0eb099fbc632b15b52ccdd35c3ab67&#34;&gt;設定チュートリアル&lt;/h1&gt;
+&lt;h1 id=&#34;設定チュートリアル&#34;&gt;設定チュートリアル&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&amp;rdquo;/etc/logrotate.d/&amp;rdquo; 配下に設定ファイルを作成する&lt;/li&gt;
@@ -71,7 +71,7 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;設定ファイルの書き方:6d0eb099fbc632b15b52ccdd35c3ab67&#34;&gt;設定ファイルの書き方&lt;/h1&gt;
+&lt;h1 id=&#34;設定ファイルの書き方&#34;&gt;設定ファイルの書き方&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code&gt;# コメントアウトは「#」で
 対象ファイル [,対象ファイル, ...] {
@@ -82,7 +82,7 @@
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;設定例:6d0eb099fbc632b15b52ccdd35c3ab67&#34;&gt;設定例&lt;/h2&gt;
+&lt;h2 id=&#34;設定例&#34;&gt;設定例&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;対象ファイル:
@@ -111,7 +111,7 @@
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;logrotateの実行方法:6d0eb099fbc632b15b52ccdd35c3ab67&#34;&gt;logrotateの実行方法&lt;/h1&gt;
+&lt;h1 id=&#34;logrotateの実行方法&#34;&gt;logrotateの実行方法&lt;/h1&gt;
 
 &lt;p&gt;基本的には毎朝4:00に自動実行されるが、デバッグと即時ログローテートを行うこともできる。&lt;/p&gt;
 
@@ -133,7 +133,7 @@
  logrotate -f /etc/logrotate.d/test # testだけ実行
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;関連ファイルの場所:6d0eb099fbc632b15b52ccdd35c3ab67&#34;&gt;関連ファイルの場所&lt;/h1&gt;
+&lt;h1 id=&#34;関連ファイルの場所&#34;&gt;関連ファイルの場所&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;設定ファイル
@@ -148,7 +148,7 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;オプション一覧:6d0eb099fbc632b15b52ccdd35c3ab67&#34;&gt;オプション一覧&lt;/h1&gt;
+&lt;h1 id=&#34;オプション一覧&#34;&gt;オプション一覧&lt;/h1&gt;
 
 &lt;p&gt;参考: &lt;a href=&#34;http://www.asahi-net.or.jp/~aa4t-nngk/logrotate.html&#34;&gt;Stray Penguin - Linux Memo (logrotate)&lt;/a&gt;&lt;/p&gt;
 
@@ -328,7 +328,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h1 id=&#34;copytruncate方式の欠点:6d0eb099fbc632b15b52ccdd35c3ab67&#34;&gt;copytruncate方式の欠点&lt;/h1&gt;
+&lt;h1 id=&#34;copytruncate方式の欠点&#34;&gt;copytruncate方式の欠点&lt;/h1&gt;
 
 &lt;p&gt;参考: &lt;a href=&#34;http://kamoland.com/wiki/wiki.cgi?logrotate%A4%CE%C0%DF%C4%EA&#34;&gt;logrotateの設定 - KamoLand&lt;/a&gt;&lt;/p&gt;
 

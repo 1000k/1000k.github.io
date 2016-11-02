@@ -1,58 +1,72 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ja">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<title> git ワークフロー &middot; 1000g </title>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
+    <title>git ワークフロー &middot; 1000g</title>
+    <meta name="author" content="SENDA Keijiro">
+    <meta name="description" content="Programming knowledge">
+    <meta name="generator" content="Hugo 0.17" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-<link rel="stylesheet" href="http://1000k.github.io//css/slim.css">
-<link rel="stylesheet" href="http://1000k.github.io//css/highlight.min.css">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext' rel='stylesheet'>
+    <!-- RSS autodiscovery -->
+    
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
-<link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="http://1000k.github.io/img/favicon.ico">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.2/normalize.min.css">
 
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://1000k.github.io/css/screen.css">
+    <link rel="stylesheet" href="http://1000k.github.io/css/github.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/default.min.css">
 
-<link href="" rel="alternate" type="application/rss+xml" title="1000g" />
-
-
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
+    <!-- Stylesheet for theme color -->
+    <style type="text/css">
+    a, a:visited {color: #33cc99;}
+    .pagination a {color: #33cc99;}
+    .gist .gist-file .gist-meta a:visited {color: #33cc99 !important;}
+    a:focus, a:hover {color: #178b6b;}
+    h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #178b6b;}
+    .older-posts:hover, .newer-posts:hover {color: #178b6b;}
+</style>
 </head>
 
-<body>
-  <div class="container">
-    <div class="header">
-  <h1 class="site-title"><a href="http://1000k.github.io/">1000g</a></h1>
-  <p class="site-tagline">Tech blog</p>
-  <div class="nav">
-    <a class="nav-btn" href="#">
-      <span class="ci ci-burger"></span>
-    </a>
-    <ul class="nav-list">
-      
+<body class="post-template">
 
-      <li><a href="https://github.com/1000k">Github</a></li>
-      <li><a href="https://twitter.com/1000kei">Twitter</a></li>
-      
+    <header id="site-head">
+	
+	<h1 class="blog-title"><a href="http://1000k.github.io/">1000g</a></h1>
+	
+	
+	<h1 class="blog-subtitle">Development knowledge</h1>
+	
+</header>
+    
+<nav class="menu" role="nav">
+    <ul>
+        
+        	<li class="nav nav-current"><a href="/about/">ABOUT</a></li>
+      	
     </ul>
-  </div>
-</div>
-    <div class="content">
-      <div class="post">
-        <h2 class="post-title"><a href="http://1000k.github.io/2013/04/14/git-workflow/">git ワークフロー</a></h2>
-        <div class="post-content">
-          
+</nav>
 
-<p>実際のプロジェクトを git で運用する時のよくある流れをまとめました。</p>
 
-<h2 id="前準備:c200c94cf5af25837ca230fae46d8045">前準備</h2>
+    <main class="content" role="main">
+	    <article class="post">
+	        <header>
+	        <h1 class="post-title">git ワークフロー</h1>
 
-<h3 id="git-push-コマンドのデフォルトの挙動を変更する:c200c94cf5af25837ca230fae46d8045">git push コマンドのデフォルトの挙動を変更する</h3>
+	        <section class="post-content">
+	            <p>実際のプロジェクトを git で運用する時のよくある流れをまとめました。</p>
+
+<p></p>
+
+<h2 id="前準備">前準備</h2>
+
+<h3 id="git-push-コマンドのデフォルトの挙動を変更する">git push コマンドのデフォルトの挙動を変更する</h3>
 
 <p>git push コマンドのデフォルトの挙動では、引数を指定しないとローカルにある全てのブランチを push してしまいます。そのため、リモートとローカルに同名のブランチがある場合、リモートブランチを同名のローカルブランチで意図せず上書きしてしまう危険があります。</p>
 
@@ -61,7 +75,7 @@
 <pre><code>$ git config  --global push.default current
 </code></pre>
 
-<h2 id="新しいブランチを作成して作業する:c200c94cf5af25837ca230fae46d8045">新しいブランチを作成して作業する</h2>
+<h2 id="新しいブランチを作成して作業する">新しいブランチを作成して作業する</h2>
 
 <p>以下の流れを行う時のコマンドです。</p>
 
@@ -123,7 +137,7 @@ $ git branch -d feature-branch
 $ git push origin :feature-branch
 </code></pre>
 
-<h2 id="ローカルをリモートの状態に合わせる:c200c94cf5af25837ca230fae46d8045">ローカルをリモートの状態に合わせる</h2>
+<h2 id="ローカルをリモートの状態に合わせる">ローカルをリモートの状態に合わせる</h2>
 
 <p>異なるマシンから同じリモートブランチに変更を加えると、それぞれのマシン間で差異が出てしまいます。以下の手順で、ローカルのブランチをリモートにあるブランチと同期させることが可能です。</p>
 
@@ -139,7 +153,7 @@ $ git clean -df
 
 <p>これでリモートとローカルでファイルの中身が同一になりました。</p>
 
-<h2 id="リモートブランチをローカルで編集する:c200c94cf5af25837ca230fae46d8045">リモートブランチをローカルで編集する</h2>
+<h2 id="リモートブランチをローカルで編集する">リモートブランチをローカルで編集する</h2>
 
 <p>リモートにのみ 0.2.0 ブランチがあり、ローカルにはまだ無い場合、以下のコマンドでローカルにコピーすることができます。</p>
 
@@ -150,7 +164,7 @@ $ git branch -r
 $ git checkout -b 0.2.0 origin/0.2.0
 </code></pre>
 
-<h2 id="間違ったコミットを取り消す:c200c94cf5af25837ca230fae46d8045">間違ったコミットを取り消す</h2>
+<h2 id="間違ったコミットを取り消す">間違ったコミットを取り消す</h2>
 
 <p>2つの考え方があるので注意。</p>
 
@@ -158,7 +172,7 @@ $ git checkout -b 0.2.0 origin/0.2.0
 
 <p><a href="http://www.slideshare.net/matsukaz/git-17499005">いつやるの？Git入門</a> が簡潔に内部構造を説明しているので、目を通すことをオススメします。</p>
 
-<h3 id="commit-amend:c200c94cf5af25837ca230fae46d8045">commit -amend</h3>
+<h3 id="commit-amend">commit -amend</h3>
 
 <p>後から前回のコミットに追加して変更をするやり方です。</p>
 
@@ -177,7 +191,7 @@ git commit --amend -m &quot;Successful commit&quot;
 
 <p>これにより、1回目の間違ったコミットは無効化され、2回目のコミットが利用されます。</p>
 
-<h3 id="git-reset:c200c94cf5af25837ca230fae46d8045">git reset</h3>
+<h3 id="git-reset">git reset</h3>
 
 <p>前回のコミットそのものを取り消す (無かったことにする) コマンドです。</p>
 
@@ -193,7 +207,7 @@ git commit --amend -m &quot;Successful commit&quot;
 <pre><code>git reset --hard HEAD^
 </code></pre>
 
-<h2 id="参考:c200c94cf5af25837ca230fae46d8045">参考</h2>
+<h2 id="参考">参考</h2>
 
 <ul>
 <li><a href="http://d.hatena.ne.jp/nayutaya/20090519/1242701594">gitのリモートブランチを使って作業を行う流れのメモ - 那由多屋 開発日誌</a></li>
@@ -204,38 +218,51 @@ git commit --amend -m &quot;Successful commit&quot;
 <li><a href="http://d.hatena.ne.jp/mrgoofy33/20100910/1284069468">git commitをやり直しする＆取り消しする(「get commit -amend」と「git reset」) - hogehoge foobar Blog Style5</a></li>
 <li><a href="http://www.slideshare.net/matsukaz/git-17499005">いつやるの？Git入門</a></li>
 </ul>
+	        </section>
+	    </article>
+	</main>
 
-        </div>
-      </div>
-    </div>
+    <footer class="site-footer">
+	<div class="inner">
+		<section class="footer-social">
+			
+		    <a href="//twitter.com/1000kei" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp;
+		    
+		    
+		    <a href="//github.com/1000k" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
+		    
+		    
+		    <a href="" target="_blank" title="RSS"><i class="fa fa-2x fa-fw fa-rss"></i> <span class="hidden">RSS</span></a>
+		</section>
 
-    <hr>
+		<section class="copyright">&copy; 2016 <a href="http://1000k.github.io/">SENDA Keijiro</a>. Released under the MIT license.</section>
+	</div>
+</footer>
 
-    
-      <a class="btn btn-previous" href="http://1000k.github.io/2013/04/14/avoid-garbled-japanese-in-mariadb-10-0-1/">&laquo; MariaDB 10.0.1 で日本語が文字化けしないようにする</a>
-    
-    
-      <a class="btn btn-next" href="http://1000k.github.io/2013/04/14/tutorial-for-installing-mariadb-10-0-1-in-centos6/">MariaDB 10.0.1 を CentOS 6 にインストールする手順 &raquo;</a>
-    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://1000k.github.io/js/index.js"></script>
+<script src="http://1000k.github.io/js/smooth-scroll.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
 
-    <div class="footer">
-  <p>Powered by <a href="http://gohugo.io">Hugo</a>. This theme—Slim—is open sourced on <a href="https://github.com/zhe/hugo-theme-slim">Github</a>.</p>
-</div>
+<script>
+    smoothScroll.init({
+        speed: 800,
+        easing: 'easeInOutCubic',
+        updateURL: false,
+        offset: 125,
+    });
+</script>
+<script>hljs.initHighlightingOnLoad();</script>
 
-  </div>
-  <script src="http://1000k.github.io//js/slim.js"></script>
-  <script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-46659459-2', 'auto');
-ga('send', 'pageview');
-
+<!-- Google Analytics -->
+<script>
+  var _gaq=[['_setAccount','UA-46659459-2'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
 
 
 </body>
-
 </html>

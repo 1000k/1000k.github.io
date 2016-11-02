@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Javascript on 1000g</title>
-    <link>http://1000k.github.io/tags/javascript/</link>
-    <description>Recent content in Javascript on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/javascript/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 16 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -15,11 +15,9 @@
       <pubDate>Fri, 16 Jan 2015 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2015/01/16/close-popup-window-on-chrome/</guid>
-      <description>
+      <description>&lt;p&gt;以前リリースしたあるサービスで、「一部の入力フォームを別ウィンドウをポップアップして入力させ、終わったらリンクをクリックして閉じる」という JavaScript の処理を入れていたのですが、なぜか最近の Chrome で画面が固まってしまう不具合が発生しました。2014年の春にテストした時は問題なく動いていたのですが。&lt;/p&gt;
 
-&lt;p&gt;以前リリースしたあるサービスで、「一部の入力フォームを別ウィンドウをポップアップして入力させ、終わったらリンクをクリックして閉じる」という JavaScript の処理を入れていたのですが、なぜか最近の Chrome で画面が固まってしまう不具合が発生しました。2014年の春にテストした時は問題なく動いていたのですが。&lt;/p&gt;
-
-&lt;h2 id=&#34;再現方法:96680621d7ebbfce2d483f1126ea0d2a&#34;&gt;再現方法&lt;/h2&gt;
+&lt;h2 id=&#34;再現方法&#34;&gt;再現方法&lt;/h2&gt;
 
 &lt;p&gt;不具合は以下の流れで発生します。確認したブラウザは 39.0.2171.99m です。&lt;/p&gt;
 
@@ -35,7 +33,9 @@
 
 &lt;p&gt;今なら子ウィンドウを消す JavaScript をどう実装するべきなのかを、少し検証してみました。&lt;/p&gt;
 
-&lt;h2 id=&#34;検証:96680621d7ebbfce2d483f1126ea0d2a&#34;&gt;検証&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;検証&#34;&gt;検証&lt;/h2&gt;
 
 &lt;p&gt;以下の2つの HTML を用意します。&lt;/p&gt;
 
@@ -113,7 +113,7 @@
 
 &lt;p&gt;悪さをしているのは WebKit か検証するため、一応 Safari でも実験しましたが、問題はありませんでした。今のところは Chrome だけ処理を分けるようにすれば良さそうです。ただ、Safari の WebKit は若干バージョンが古い (Safari = WebKit/534.57.2, Chrome = Webkit/537.36) ので、今後のバージョンアップでどうなるかは不明です。&lt;/p&gt;
 
-&lt;h2 id=&#34;解決策:96680621d7ebbfce2d483f1126ea0d2a&#34;&gt;解決策&lt;/h2&gt;
+&lt;h2 id=&#34;解決策&#34;&gt;解決策&lt;/h2&gt;
 
 &lt;p&gt;検証結果から、全て Close window 2 (単純版) の書き方にすれば解決するように見えますが、一応古いブラウザーとの互換性を考えて、Chrome だけ単純版に分岐するような JS にしました。&lt;/p&gt;
 
@@ -122,14 +122,13 @@
 
 &lt;p&gt;これでどのブラウザーでも閉じられるようになりました。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:96680621d7ebbfce2d483f1126ea0d2a&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/19761241/window-close-and-self-close-do-not-close-the-window-in-chrome&#34;&gt;javascript - window.close and self.close do not close the window in Chrome - Stack Overflow&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/12625876/how-to-detect-chrome-and-safari-browser-webkit&#34;&gt;javascript - How to detect chrome and safari browser (webkit) - Stack Overflow&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://kojikoji75.hatenablog.com/entry/2013/12/15/223839&#34;&gt;JavaScriptでWindow.closeする時のブラウザ別対応まとめ - TechNote&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -138,13 +137,11 @@
       <pubDate>Wed, 18 Dec 2013 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2013/12/18/display-remaining-time-by-progress-bar/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;http://e.ggtimer.com/&#34;&gt;E.gg Timer&lt;/a&gt; のようなタイマーアプリを作りたかったので、プログレスバーの作り方を調べました。タイマーそのものより、progress タグのスタイルシートをクロスブラウザ対応させるのに苦労しました。&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;http://e.ggtimer.com/&#34;&gt;E.gg Timer&lt;/a&gt; のようなタイマーアプリを作りたかったので、プログレスバーの作り方を調べました。タイマーそのものより、progress タグのスタイルシートをクロスブラウザ対応させるのに苦労しました。&lt;/p&gt;
 
 &lt;p&gt;今回作ったのは下の画像のような簡単なタイマーです。経過時間に合わせてプログレスバーが赤くなります。&lt;/p&gt;
 
-&lt;p&gt;
+
 &lt;figure &gt;
     
         &lt;img src=&#34;http://1000k.github.io/img/timer.png&#34;  /&gt;
@@ -155,15 +152,17 @@
     &lt;/figcaption&gt;
     
 &lt;/figure&gt;
-&lt;/p&gt;
+
 
 &lt;p&gt;&lt;a href=&#34;http://jsfiddle.net/tcxx9/3/&#34;&gt;デモはこちら。&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;なお、IE11, Firefox26, Chrome31 で動作を確認しています。&lt;/p&gt;
 
-&lt;h2 id=&#34;実装コード:2853c5683734ff1185ea9e66d817967b&#34;&gt;実装コード&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;html:2853c5683734ff1185ea9e66d817967b&#34;&gt;HTML&lt;/h3&gt;
+&lt;h2 id=&#34;実装コード&#34;&gt;実装コード&lt;/h2&gt;
+
+&lt;h3 id=&#34;html&#34;&gt;HTML&lt;/h3&gt;
 
 &lt;p&gt;プログレスバー、時間入力欄、開始/停止ボタンがあるだけです。&lt;/p&gt;
 
@@ -183,7 +182,7 @@
 &amp;lt;/fieldset&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;javascript:2853c5683734ff1185ea9e66d817967b&#34;&gt;JavaScript&lt;/h3&gt;
+&lt;h3 id=&#34;javascript&#34;&gt;JavaScript&lt;/h3&gt;
 
 &lt;p&gt;jQuery 1.10.2 で試しました。経過時間に合わせて progress タグの value 要素を増やしていくだけです。&lt;/p&gt;
 
@@ -231,7 +230,7 @@ $(function() {
 
 &lt;p&gt;どうも IE11 ではバーの表示を勝手に加速度を付けて滑らかにする機能が付いているのですが、これが悪さをしているようです。デバッグしてみると value 属性は間違いなく増加しているのですが、画面には反映されませんでした。IE ユーザーはご注意ください。&lt;/p&gt;
 
-&lt;h3 id=&#34;css:2853c5683734ff1185ea9e66d817967b&#34;&gt;CSS&lt;/h3&gt;
+&lt;h3 id=&#34;css&#34;&gt;CSS&lt;/h3&gt;
 
 &lt;p&gt;progress 要素はブラウザ毎に属性の解釈が結構異なります。Opera は面倒なので試してません。すいません。&lt;/p&gt;
 
@@ -267,7 +266,7 @@ progress::-moz-progress-bar {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;参考:2853c5683734ff1185ea9e66d817967b&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.hongkiat.com/blog/html5-progress-bar/&#34;&gt;Creating &amp;amp; Styling Progress Bar With HTML5&lt;/a&gt;&lt;/li&gt;
@@ -279,8 +278,7 @@ progress::-moz-progress-bar {
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://css-tricks.com/html5-progress-element/&#34;&gt;The HTML5 progress Element | CSS-Tricks&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/ja/docs/Web/CSS/::-moz-progress-bar&#34;&gt;::-moz-progress-bar - CSS | MDN&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -291,13 +289,13 @@ progress::-moz-progress-bar {
       <guid>http://1000k.github.io/2013/10/19/automate-build-js-and-css-with-grunt/</guid>
       <description>
 
-&lt;h2 id=&#34;grunt-とは:31d9c632b09e89723d113ebbe8ae7aa4&#34;&gt;Grunt とは？&lt;/h2&gt;
+&lt;h2 id=&#34;grunt-とは&#34;&gt;Grunt とは？&lt;/h2&gt;
 
 &lt;p&gt;JS/CSS のビルド自動化ツール。&lt;/p&gt;
 
 &lt;p&gt;JS のユニットテスト、ファイルの結合＆難読化＆最小化などの様々なタスクを自動で行うことができます。&lt;/p&gt;
 
-&lt;h2 id=&#34;インストール:31d9c632b09e89723d113ebbe8ae7aa4&#34;&gt;インストール&lt;/h2&gt;
+&lt;h2 id=&#34;インストール&#34;&gt;インストール&lt;/h2&gt;
 
 &lt;p&gt;まず、node.js と npm をインストールします。&lt;/p&gt;
 
@@ -337,7 +335,7 @@ progress::-moz-progress-bar {
 
 &lt;p&gt;以上で前準備は完了です。&lt;/p&gt;
 
-&lt;h2 id=&#34;使い方:31d9c632b09e89723d113ebbe8ae7aa4&#34;&gt;使い方&lt;/h2&gt;
+&lt;h2 id=&#34;使い方&#34;&gt;使い方&lt;/h2&gt;
 
 &lt;p&gt;プロジェクトのルートに &lt;code&gt;Gruntfile.js&lt;/code&gt; を書いて、実行したいタスクを列挙するだけです。&lt;/p&gt;
 
@@ -417,11 +415,11 @@ progress::-moz-progress-bar {
 
 &lt;p&gt;例えば上で定義 (&lt;code&gt;grunt.registerTask()&lt;/code&gt; )したタスクから merge を実行したければ、&lt;code&gt;grunt merge&lt;/code&gt; と叩けば OK です。。&lt;/p&gt;
 
-&lt;h2 id=&#34;変更の監視-自動タスク実行:31d9c632b09e89723d113ebbe8ae7aa4&#34;&gt;変更の監視＆自動タスク実行&lt;/h2&gt;
+&lt;h2 id=&#34;変更の監視-自動タスク実行&#34;&gt;変更の監視＆自動タスク実行&lt;/h2&gt;
 
 &lt;p&gt;&lt;code&gt;grunt watch&lt;/code&gt; を叩くことで、指定した js ファイルを監視し、変更があったら自動で指定したタスクを実行してくれます。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:31d9c632b09e89723d113ebbe8ae7aa4&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://hamalog.tumblr.com/post/18137176043/grunt-js-css&#34;&gt;gruntで快適JS/CSSビルド生活 - Takazudo hamalog&lt;/a&gt;&lt;/li&gt;
@@ -452,9 +450,7 @@ progress::-moz-progress-bar {
       <pubDate>Sat, 04 May 2013 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2013/05/04/managing-js-packages-by-bower/</guid>
-      <description>
-
-&lt;h2 id=&#34;bower-とは:2b0e69e44f6fba1737d988e786e216a8&#34;&gt;Bower とは？&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;bower-とは&#34;&gt;Bower とは？&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://bower.io/&#34;&gt;BOWER: A package manager for the web&lt;/a&gt;&lt;/p&gt;
 
@@ -462,7 +458,9 @@ progress::-moz-progress-bar {
 
 &lt;p&gt;プロジェクトで使用する JS ライブラリとバージョンをファイルに記述して管理できるため、バージョン管理が容易になります。&lt;/p&gt;
 
-&lt;h2 id=&#34;インストール:2b0e69e44f6fba1737d988e786e216a8&#34;&gt;インストール&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;インストール&#34;&gt;インストール&lt;/h2&gt;
 
 &lt;p&gt;CentOS 6 でインストールする手順です。&lt;/p&gt;
 
@@ -484,7 +482,7 @@ progress::-moz-progress-bar {
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&#34;使い方:2b0e69e44f6fba1737d988e786e216a8&#34;&gt;使い方&lt;/h2&gt;
+&lt;h2 id=&#34;使い方&#34;&gt;使い方&lt;/h2&gt;
 
 &lt;p&gt;プロジェクトのルートに &lt;code&gt;bower.json&lt;/code&gt; を作り、パッケージ情報を記述し、&lt;code&gt;bower install&lt;/code&gt; を叩くのが基本です。&lt;/p&gt;
 
@@ -522,7 +520,7 @@ bower install &amp;lt;package&amp;gt;#&amp;lt;version&amp;gt;
 
 &lt;p&gt;登録されていないパッケージも、GitHub の URL を直接指定することで管理ができます。&lt;/p&gt;
 
-&lt;h2 id=&#34;好きなディレクトリにコンポーネントをインストールする:2b0e69e44f6fba1737d988e786e216a8&#34;&gt;好きなディレクトリにコンポーネントをインストールする&lt;/h2&gt;
+&lt;h2 id=&#34;好きなディレクトリにコンポーネントをインストールする&#34;&gt;好きなディレクトリにコンポーネントをインストールする&lt;/h2&gt;
 
 &lt;p&gt;デフォルトだと bower.json と同じ階層に components/ というディレクトリを作られてしまいます。これを変えるには、bower.json と同じ階層に &amp;lsquo;.bowerrc` を作成し、以下のように書けば OK です。&lt;/p&gt;
 
@@ -533,7 +531,7 @@ bower install &amp;lt;package&amp;gt;#&amp;lt;version&amp;gt;
 
 &lt;p&gt;これで &lt;code&gt;bower install&lt;/code&gt; を実行すると、コンポーネントは &lt;code&gt;app/webroot/js/&amp;lt;package&amp;gt;&lt;/code&gt; にインストールされます。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:2b0e69e44f6fba1737d988e786e216a8&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://bower.io/&#34;&gt;BOWER: A package manager for the web&lt;/a&gt;&lt;/li&gt;
@@ -542,8 +540,7 @@ bower install &amp;lt;package&amp;gt;#&amp;lt;version&amp;gt;
 &lt;li&gt;&lt;a href=&#34;http://blog.mach3.jp/2013/01/bower.html&#34;&gt;パッケージマネージャー「Bower」が大変便利で捗りそうです | Mach3.laBlog&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://qiita.com/items/ba952bdade627af99e93&#34;&gt;なにはともあれ入れてみるぜ。バウワー。(bower) #Node.js #JavaScript #twitter - Qiita [キータ]&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://net.tutsplus.com/tutorials/tools-and-tips/meet-bower-a-package-manager-for-the-web/&#34;&gt;Meet Bower: A Package Manager For The Web | Nettuts+&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -558,11 +555,11 @@ bower install &amp;lt;package&amp;gt;#&amp;lt;version&amp;gt;
 
 &lt;p&gt;UserAgentがChromeと微妙に似ていて書きにくかったので、メモを残しておきます。&lt;/p&gt;
 
-&lt;h2 id=&#34;やりたいこと:5c20e64dfc0ac35ddade7fa8fcd267b4&#34;&gt;やりたいこと&lt;/h2&gt;
+&lt;h2 id=&#34;やりたいこと&#34;&gt;やりたいこと&lt;/h2&gt;
 
 &lt;p&gt;JavaScriptでSafari 5.x系のユーザーを判別する。&lt;/p&gt;
 
-&lt;h2 id=&#34;スクリプト:5c20e64dfc0ac35ddade7fa8fcd267b4&#34;&gt;スクリプト&lt;/h2&gt;
+&lt;h2 id=&#34;スクリプト&#34;&gt;スクリプト&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;window.onload = function() {
     var ua = navigator.userAgent.toLowerCase();
@@ -578,7 +575,7 @@ bower install &amp;lt;package&amp;gt;#&amp;lt;version&amp;gt;
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;参考:5c20e64dfc0ac35ddade7fa8fcd267b4&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.useragentstring.com/pages/useragentstring.php&#34;&gt;UserAgentString.com - List of User Agent Strings&lt;/a&gt;
@@ -601,6 +598,8 @@ bower install &amp;lt;package&amp;gt;#&amp;lt;version&amp;gt;
       <description>&lt;p&gt;Safari 5.x系では、JavaScriptで window.onload を使って自動でフォームの内容を送信（submit）しても、正しく値を渡せないバグがあります。&lt;/p&gt;
 
 &lt;p&gt;現象と対策を整理しました。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;具体的には下記のようなコードがうまくいきません。&lt;/p&gt;
 
@@ -691,8 +690,7 @@ bower install &amp;lt;package&amp;gt;#&amp;lt;version&amp;gt;
 
 &lt;p&gt;&lt;/li&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/ul&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/ul&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -754,21 +752,21 @@ function getActualDimension(image) {
       <guid>http://1000k.github.io/2010/05/16/cannot-select-gt-and-lt-with-jquery/</guid>
       <description>
 
-&lt;h1 id=&#34;症状:fef478bcfeefba53d74161fd20826e36&#34;&gt;症状&lt;/h1&gt;
+&lt;h1 id=&#34;症状&#34;&gt;症状&lt;/h1&gt;
 
 &lt;p&gt;JavaScriptにおいて、「&amp;lt;」「&amp;gt;」は基本的にダメ文字（使用不可）だが、jQueryのセレクタ内で使用すると選択できたりできなかったりすることがある。&lt;/p&gt;
 
-&lt;h1 id=&#34;原因:fef478bcfeefba53d74161fd20826e36&#34;&gt;原因&lt;/h1&gt;
+&lt;h1 id=&#34;原因&#34;&gt;原因&lt;/h1&gt;
 
 &lt;p&gt;そもそも、XHTMLの仕様では「&amp;lt;」「&amp;gt;」は属性値に使ってはいけない。&lt;/p&gt;
 
 &lt;p&gt;たまに仕様で許可されてない記号も使えるが、そうしたものが選択できるのはブラウザ依存の偶然でしかない。&lt;/p&gt;
 
-&lt;h1 id=&#34;対策:fef478bcfeefba53d74161fd20826e36&#34;&gt;対策&lt;/h1&gt;
+&lt;h1 id=&#34;対策&#34;&gt;対策&lt;/h1&gt;
 
 &lt;p&gt;こういう文字を使うときは、別の文字に置換でもしないとダメ。例えばDOMロード後に全角の「＜」「＞」に置換するとか。&lt;/p&gt;
 
-&lt;h1 id=&#34;参考:fef478bcfeefba53d74161fd20826e36&#34;&gt;参考&lt;/h1&gt;
+&lt;h1 id=&#34;参考&#34;&gt;参考&lt;/h1&gt;
 
 &lt;p&gt;[\&amp;lsquo;) works, but $(\&amp;lsquo;#&amp;lt;buz&amp;gt;\&amp;lsquo;) doesn\&amp;rsquo;t. - jQuery Forum&amp;rsquo;]);&amp;rdquo; &amp;gt;&lt;br /&gt; Selector problem: $(&amp;lsquo;#&amp;#92;&lt;foo&#39;) and $(&#39;#bar&amp;#92;&gt;&amp;rsquo;) works, but $(&amp;lsquo;#&amp;#92;&lt;buz&amp;#92;&gt;&amp;rsquo;) doesn&amp;rsquo;t. - jQuery Forum](&lt;a href=&#34;http://forum.jquery.com/topic/selector-problem-foo-and-bar-works-but-buz-doesn-t-12-4-2010&#34;&gt;http://forum.jquery.com/topic/selector-problem-foo-and-bar-works-but-buz-doesn-t-12-4-2010&lt;/a&gt;)&lt;/p&gt;
 </description>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ftp on 1000g</title>
-    <link>http://1000k.github.io/tags/ftp/</link>
-    <description>Recent content in Ftp on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/ftp/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 15 Jan 2012 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/ftp/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -15,9 +15,7 @@
       <pubDate>Sun, 15 Jan 2012 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2012/01/15/initial-settings-in-cloudcore-vps/</guid>
-      <description>
-
-&lt;p&gt;高スペック＆安価＆国産で話題のCloudCore VPSをレンタルしてみました。&lt;/p&gt;
+      <description>&lt;p&gt;高スペック＆安価＆国産で話題のCloudCore VPSをレンタルしてみました。&lt;/p&gt;
 
 &lt;p&gt;ざっとスペックを確認すると、以下のようになりました。これで月980円はたしかにお得です。&lt;/p&gt;
 
@@ -57,7 +55,9 @@ MemFree:       1859380 kB
 
 &lt;p&gt;今後利用するかもしれないので、初期設定メモを残しておきます。&lt;/p&gt;
 
-&lt;h1 id=&#34;よく使うパッケージのインストール:7a522374c61fbafc7888cdbb99c2c3ca&#34;&gt;よく使うパッケージのインストール&lt;/h1&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;よく使うパッケージのインストール&#34;&gt;よく使うパッケージのインストール&lt;/h1&gt;
 
 &lt;p&gt;CentOS最小構成でインストールされているらしく、よく使うパッケージが全然入っていません。入れておきましょう。&lt;/p&gt;
 
@@ -135,7 +135,7 @@ MemFree:       1859380 kB
 &lt;pre&gt;&lt;code&gt;# yum update
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;作業用ユーザー追加:7a522374c61fbafc7888cdbb99c2c3ca&#34;&gt;作業用ユーザー追加&lt;/h1&gt;
+&lt;h1 id=&#34;作業用ユーザー追加&#34;&gt;作業用ユーザー追加&lt;/h1&gt;
 
 &lt;p&gt;rootでの作業はリスク上よろしくないので、作業用ユーザーを追加します。&lt;/p&gt;
 
@@ -155,7 +155,7 @@ MemFree:       1859380 kB
 ↑この行のコメントアウトを外す。
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;sshポートの変更:7a522374c61fbafc7888cdbb99c2c3ca&#34;&gt;sshポートの変更&lt;/h1&gt;
+&lt;h1 id=&#34;sshポートの変更&#34;&gt;sshポートの変更&lt;/h1&gt;
 
 &lt;p&gt;sshポートデフォルトの22番ではポートスキャンの標的になりやすいので、変更します。&lt;/p&gt;
 
@@ -174,13 +174,13 @@ port 10022
 &lt;pre&gt;&lt;code&gt;# /etc/init.d/sshd restart
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;不要なデーモンの停止:7a522374c61fbafc7888cdbb99c2c3ca&#34;&gt;不要なデーモンの停止&lt;/h1&gt;
+&lt;h1 id=&#34;不要なデーモンの停止&#34;&gt;不要なデーモンの停止&lt;/h1&gt;
 
 &lt;p&gt;初期状態では4つのデーモンしか自動起動設定になっておらず、特に停止するようなデーモンはありません。&lt;/p&gt;
 
 &lt;p&gt;参考: &lt;a href=&#34;http://www.cloudcore.jp/vps/spec/&#34;&gt;スペック｜CloudCore VPS｜KDDIウェブコミュニケーションズ&lt;/a&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;ファイアーウォールの構築:7a522374c61fbafc7888cdbb99c2c3ca&#34;&gt;ファイアーウォールの構築&lt;/h1&gt;
+&lt;h1 id=&#34;ファイアーウォールの構築&#34;&gt;ファイアーウォールの構築&lt;/h1&gt;
 
 &lt;p&gt;ssh(10022), FTP, HTTPで接続できるようポートを開放してやります。&lt;/p&gt;
 
@@ -234,7 +234,7 @@ iptables ファイアウォールルールを適用中:                   [  OK 
 &lt;pre&gt;&lt;code&gt;# chkconfig iptables on
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;ftpを接続可能にする:7a522374c61fbafc7888cdbb99c2c3ca&#34;&gt;FTPを接続可能にする&lt;/h1&gt;
+&lt;h1 id=&#34;ftpを接続可能にする&#34;&gt;FTPを接続可能にする&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;/etc/vsftpd/vsftpd.conf&lt;/strong&gt; を以下のように設定します。&lt;/p&gt;
 
@@ -265,7 +265,7 @@ vsftpd 用の vsftpd を起動中:                               [  OK  ]
 
 &lt;p&gt;FTPクライアントで10022番ポートにSFTP接続可能になっていることを確認してください。&lt;/p&gt;
 
-&lt;h1 id=&#34;参考:7a522374c61fbafc7888cdbb99c2c3ca&#34;&gt;参考&lt;/h1&gt;
+&lt;h1 id=&#34;参考&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://tanaka.sakura.ad.jp/archives/001065.html&#34;&gt;CentOSをサーバーとして活用するための基本的な設定 - さくらインターネット創業日記&lt;/a&gt;
@@ -287,8 +287,7 @@ vsftpd 用の vsftpd を起動中:                               [  OK  ]
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://sakura.off-soft.net/blog/cloudcore_vps_centos_first_setup.html&#34;&gt;評判のCloudCore VPSを使うときに最初にやっておきたいこと(CentOS編) | レンタルサーバー・自宅サーバー設定・構築のヒント&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.cloudcore.jp/vps/spec/&#34;&gt;スペック｜CloudCore VPS｜KDDIウェブコミュニケーションズ&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
   </channel>

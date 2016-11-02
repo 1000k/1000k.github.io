@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Linux on 1000g</title>
-    <link>http://1000k.github.io/categories/linux/</link>
-    <description>Recent content in Linux on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/categories/linux/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 11 Mar 2015 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -19,7 +19,7 @@
 
 &lt;p&gt;とあるきっかけで開発効率強化ウィークに入りました。まずはターミナルをもっと効率的にすべく、tmux を習得することにしました。&lt;/p&gt;
 
-&lt;h2 id=&#34;tumxとは:a506571e48bbc5459d921757c1950894&#34;&gt;tumxとは？&lt;/h2&gt;
+&lt;h2 id=&#34;tumxとは&#34;&gt;tumxとは？&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;ターミナルマルチプレクサ (端末多重化ソフトウェア, 仮想端末マネージャー) のひとつ
@@ -30,7 +30,7 @@
 &lt;li&gt;読み方は &amp;ldquo;ティーマックス&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;できること:a506571e48bbc5459d921757c1950894&#34;&gt;できること&lt;/h3&gt;
+&lt;h3 id=&#34;できること&#34;&gt;できること&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;1つの端末で複数の仮想端末を起動できる&lt;/li&gt;
@@ -45,7 +45,7 @@
 &lt;li&gt;設定ファイルで高度にカスタマイズできる&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;tmuxの構成:a506571e48bbc5459d921757c1950894&#34;&gt;tmuxの構成&lt;/h3&gt;
+&lt;h3 id=&#34;tmuxの構成&#34;&gt;tmuxの構成&lt;/h3&gt;
 
 &lt;p&gt;tmuxはサーバー/クライアント構成を取る。&lt;/p&gt;
 
@@ -63,7 +63,7 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;画面の内包関係:a506571e48bbc5459d921757c1950894&#34;&gt;画面の内包関係&lt;/h3&gt;
+&lt;h3 id=&#34;画面の内包関係&#34;&gt;画面の内包関係&lt;/h3&gt;
 
 &lt;p&gt;&lt;code&gt;セッション &amp;gt; ウィンドウ &amp;gt; ペイン&lt;/code&gt;&lt;/p&gt;
 
@@ -73,34 +73,34 @@
 &lt;li&gt;ペイン: ウィンドウを分割した領域。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;インストール:a506571e48bbc5459d921757c1950894&#34;&gt;インストール&lt;/h2&gt;
+&lt;h2 id=&#34;インストール&#34;&gt;インストール&lt;/h2&gt;
 
 &lt;p&gt;yum ユーザーは EPEL リポジトリからインストールが可能。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;sudo yum install -y tmux
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;チュートリアル:a506571e48bbc5459d921757c1950894&#34;&gt;チュートリアル&lt;/h2&gt;
+&lt;h2 id=&#34;チュートリアル&#34;&gt;チュートリアル&lt;/h2&gt;
 
-&lt;h3 id=&#34;起動:a506571e48bbc5459d921757c1950894&#34;&gt;起動&lt;/h3&gt;
+&lt;h3 id=&#34;起動&#34;&gt;起動&lt;/h3&gt;
 
 &lt;p&gt;&lt;code&gt;tmux&lt;/code&gt; または &lt;code&gt;tmux new-session&lt;/code&gt; で新規セッションを起動すると、新しい仮想端末が開く。&lt;/p&gt;
 
-&lt;h3 id=&#34;ペインの操作:a506571e48bbc5459d921757c1950894&#34;&gt;ペインの操作&lt;/h3&gt;
+&lt;h3 id=&#34;ペインの操作&#34;&gt;ペインの操作&lt;/h3&gt;
 
 &lt;p&gt;&lt;code&gt;C-b %&lt;/code&gt; でペインを分割し、&lt;code&gt;C-b n&lt;/code&gt; で次のウィンドウに移動します。&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;C-b ?&lt;/code&gt; でヘルプが開くので、片方のペインにヘルプを表示した状態で、もう片方でいろいろ実験してみると理解が進みます。&lt;/p&gt;
 
-&lt;h3 id=&#34;デタッチ:a506571e48bbc5459d921757c1950894&#34;&gt;デタッチ&lt;/h3&gt;
+&lt;h3 id=&#34;デタッチ&#34;&gt;デタッチ&lt;/h3&gt;
 
 &lt;p&gt;仮想端末上で &lt;code&gt;C-b d&lt;/code&gt; で、端末がセッションからデタッチされます。&lt;/p&gt;
 
 &lt;p&gt;デタッチ状態ではセッションは残っているので、再度 &lt;code&gt;tmux attach -t セッション番号&lt;/code&gt; と入力すれば、最後の画面から再開できます。&lt;/p&gt;
 
-&lt;h2 id=&#34;基本操作:a506571e48bbc5459d921757c1950894&#34;&gt;基本操作&lt;/h2&gt;
+&lt;h2 id=&#34;基本操作&#34;&gt;基本操作&lt;/h2&gt;
 
-&lt;h3 id=&#34;セッションの操作:a506571e48bbc5459d921757c1950894&#34;&gt;セッションの操作&lt;/h3&gt;
+&lt;h3 id=&#34;セッションの操作&#34;&gt;セッションの操作&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -143,7 +143,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h3 id=&#34;ウィンドウの操作:a506571e48bbc5459d921757c1950894&#34;&gt;ウィンドウの操作&lt;/h3&gt;
+&lt;h3 id=&#34;ウィンドウの操作&#34;&gt;ウィンドウの操作&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -206,7 +206,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h3 id=&#34;ペインの操作-1:a506571e48bbc5459d921757c1950894&#34;&gt;ペインの操作&lt;/h3&gt;
+&lt;h3 id=&#34;ペインの操作-1&#34;&gt;ペインの操作&lt;/h3&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -264,13 +264,13 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h2 id=&#34;カスタマイズ:a506571e48bbc5459d921757c1950894&#34;&gt;カスタマイズ&lt;/h2&gt;
+&lt;h2 id=&#34;カスタマイズ&#34;&gt;カスタマイズ&lt;/h2&gt;
 
 &lt;p&gt;&lt;code&gt;~/.tmux.conf&lt;/code&gt; にカスタマイズ設定を書き込むことができます。&lt;/p&gt;
 
 &lt;p&gt;yum でインストールした場合は &lt;code&gt;/usr/share/doc/tmux-1.6/examples/&lt;/code&gt; 配下にサンプルファイルがあります。vimmer は &lt;a href=&#34;https://github.com/jordansissel/tmux/blob/master/trunk/examples/vim-keys.conf&#34;&gt;vim-keys.conf&lt;/a&gt; を設定するとペイン操作が楽になるかもしれません。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:a506571e48bbc5459d921757c1950894&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man1/tmux.1?query=tmux&amp;amp;sec=1&#34;&gt;OpenBSD manual pages&lt;/a&gt;
@@ -325,7 +325,7 @@ env: /etc/init.d/mysql_master: そのようなファイルやディレクトリ�
 Usage: /etc/init.d/mysql_master {start|stop|restart|status}
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;参考:78516bd3eda8050d97cd4c550e13df69&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.linuxquestions.org/questions/red-hat-31/init-d-script-error-bad-interpreter-204902/&#34;&gt;init.d script error bad interpreter&lt;/a&gt;&lt;/li&gt;
@@ -344,13 +344,13 @@ Usage: /etc/init.d/mysql_master {start|stop|restart|status}
 
 &lt;p&gt;Unixタイムスタンプを読みやすい形式に変更するワンライナーを、いくつかの言語で紹介します。&lt;/p&gt;
 
-&lt;h2 id=&#34;シェル:9514b206b957b6cd4e0a3c8ebb046a97&#34;&gt;シェル&lt;/h2&gt;
+&lt;h2 id=&#34;シェル&#34;&gt;シェル&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;$ date -d @1357872483
 2013年  1月 11日 金曜日 11:48:03 JST
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;php:9514b206b957b6cd4e0a3c8ebb046a97&#34;&gt;PHP&lt;/h2&gt;
+&lt;h2 id=&#34;php&#34;&gt;PHP&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;$ php -r &#39;echo date(&amp;quot;r&amp;quot;, 1357872483);&#39;
 Fri, 11 Jan 2013 11:48:03 +090
@@ -360,13 +360,13 @@ Fri, 11 Jan 2013 11:48:03 +090
 
 &lt;p&gt;詳しくは &lt;a href=&#34;http://php.net/manual/ja/function.date.php&#34;&gt;PHP: date - Manual&lt;/a&gt; を参照。&lt;/p&gt;
 
-&lt;h2 id=&#34;ruby:9514b206b957b6cd4e0a3c8ebb046a97&#34;&gt;Ruby&lt;/h2&gt;
+&lt;h2 id=&#34;ruby&#34;&gt;Ruby&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;$ ruby -e &#39;p Time.at(1357872483)&#39;
 Fri Jan 11 11:48:03 +0900 2013
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;参考:9514b206b957b6cd4e0a3c8ebb046a97&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/2371248/how-to-convert-timestamps-to-dates-in-bash&#34;&gt;How to convert timestamps to dates in bash? - Stack Overflow&lt;/a&gt;&lt;/li&gt;
@@ -408,7 +408,7 @@ Complete!
 
 &lt;p&gt;パッケージが不足していないか注意が必要ですね。&lt;/p&gt;
 
-&lt;h1 id=&#34;参考:b209194a963523f744e005b58f948c6d&#34;&gt;参考&lt;/h1&gt;
+&lt;h1 id=&#34;参考&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/hiroponz/20070205&#34;&gt;2007-02-05 - プチ技術メモ&lt;/a&gt;&lt;/li&gt;
@@ -422,9 +422,7 @@ Complete!
       <pubDate>Sun, 15 Jan 2012 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2012/01/15/initial-settings-in-cloudcore-vps/</guid>
-      <description>
-
-&lt;p&gt;高スペック＆安価＆国産で話題のCloudCore VPSをレンタルしてみました。&lt;/p&gt;
+      <description>&lt;p&gt;高スペック＆安価＆国産で話題のCloudCore VPSをレンタルしてみました。&lt;/p&gt;
 
 &lt;p&gt;ざっとスペックを確認すると、以下のようになりました。これで月980円はたしかにお得です。&lt;/p&gt;
 
@@ -464,7 +462,9 @@ MemFree:       1859380 kB
 
 &lt;p&gt;今後利用するかもしれないので、初期設定メモを残しておきます。&lt;/p&gt;
 
-&lt;h1 id=&#34;よく使うパッケージのインストール:7a522374c61fbafc7888cdbb99c2c3ca&#34;&gt;よく使うパッケージのインストール&lt;/h1&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;よく使うパッケージのインストール&#34;&gt;よく使うパッケージのインストール&lt;/h1&gt;
 
 &lt;p&gt;CentOS最小構成でインストールされているらしく、よく使うパッケージが全然入っていません。入れておきましょう。&lt;/p&gt;
 
@@ -542,7 +542,7 @@ MemFree:       1859380 kB
 &lt;pre&gt;&lt;code&gt;# yum update
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;作業用ユーザー追加:7a522374c61fbafc7888cdbb99c2c3ca&#34;&gt;作業用ユーザー追加&lt;/h1&gt;
+&lt;h1 id=&#34;作業用ユーザー追加&#34;&gt;作業用ユーザー追加&lt;/h1&gt;
 
 &lt;p&gt;rootでの作業はリスク上よろしくないので、作業用ユーザーを追加します。&lt;/p&gt;
 
@@ -562,7 +562,7 @@ MemFree:       1859380 kB
 ↑この行のコメントアウトを外す。
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;sshポートの変更:7a522374c61fbafc7888cdbb99c2c3ca&#34;&gt;sshポートの変更&lt;/h1&gt;
+&lt;h1 id=&#34;sshポートの変更&#34;&gt;sshポートの変更&lt;/h1&gt;
 
 &lt;p&gt;sshポートデフォルトの22番ではポートスキャンの標的になりやすいので、変更します。&lt;/p&gt;
 
@@ -581,13 +581,13 @@ port 10022
 &lt;pre&gt;&lt;code&gt;# /etc/init.d/sshd restart
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;不要なデーモンの停止:7a522374c61fbafc7888cdbb99c2c3ca&#34;&gt;不要なデーモンの停止&lt;/h1&gt;
+&lt;h1 id=&#34;不要なデーモンの停止&#34;&gt;不要なデーモンの停止&lt;/h1&gt;
 
 &lt;p&gt;初期状態では4つのデーモンしか自動起動設定になっておらず、特に停止するようなデーモンはありません。&lt;/p&gt;
 
 &lt;p&gt;参考: &lt;a href=&#34;http://www.cloudcore.jp/vps/spec/&#34;&gt;スペック｜CloudCore VPS｜KDDIウェブコミュニケーションズ&lt;/a&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;ファイアーウォールの構築:7a522374c61fbafc7888cdbb99c2c3ca&#34;&gt;ファイアーウォールの構築&lt;/h1&gt;
+&lt;h1 id=&#34;ファイアーウォールの構築&#34;&gt;ファイアーウォールの構築&lt;/h1&gt;
 
 &lt;p&gt;ssh(10022), FTP, HTTPで接続できるようポートを開放してやります。&lt;/p&gt;
 
@@ -641,7 +641,7 @@ iptables ファイアウォールルールを適用中:                   [  OK 
 &lt;pre&gt;&lt;code&gt;# chkconfig iptables on
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;ftpを接続可能にする:7a522374c61fbafc7888cdbb99c2c3ca&#34;&gt;FTPを接続可能にする&lt;/h1&gt;
+&lt;h1 id=&#34;ftpを接続可能にする&#34;&gt;FTPを接続可能にする&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;/etc/vsftpd/vsftpd.conf&lt;/strong&gt; を以下のように設定します。&lt;/p&gt;
 
@@ -672,7 +672,7 @@ vsftpd 用の vsftpd を起動中:                               [  OK  ]
 
 &lt;p&gt;FTPクライアントで10022番ポートにSFTP接続可能になっていることを確認してください。&lt;/p&gt;
 
-&lt;h1 id=&#34;参考:7a522374c61fbafc7888cdbb99c2c3ca&#34;&gt;参考&lt;/h1&gt;
+&lt;h1 id=&#34;参考&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://tanaka.sakura.ad.jp/archives/001065.html&#34;&gt;CentOSをサーバーとして活用するための基本的な設定 - さくらインターネット創業日記&lt;/a&gt;
@@ -694,8 +694,7 @@ vsftpd 用の vsftpd を起動中:                               [  OK  ]
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://sakura.off-soft.net/blog/cloudcore_vps_centos_first_setup.html&#34;&gt;評判のCloudCore VPSを使うときに最初にやっておきたいこと(CentOS編) | レンタルサーバー・自宅サーバー設定・構築のヒント&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.cloudcore.jp/vps/spec/&#34;&gt;スペック｜CloudCore VPS｜KDDIウェブコミュニケーションズ&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -704,15 +703,15 @@ vsftpd 用の vsftpd を起動中:                               [  OK  ]
       <pubDate>Sun, 15 Jan 2012 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2012/01/15/managing-source-installed-packages-using-paco/</guid>
-      <description>
-
-&lt;p&gt;pacoは、自分でソースからインストールしたアプリでもrpmのようにパッケージ管理できるようになるツールです。&lt;/p&gt;
+      <description>&lt;p&gt;pacoは、自分でソースからインストールしたアプリでもrpmのようにパッケージ管理できるようになるツールです。&lt;/p&gt;
 
 &lt;p&gt;rpmが無いアプリの管理が楽になるのでおすすめです。&lt;/p&gt;
 
 &lt;p&gt;以下、インストール方法と使い方を簡単に記します。&lt;/p&gt;
 
-&lt;h2 id=&#34;インストール手順:2e9f7bf7118303b30947563102a07bb4&#34;&gt;インストール手順&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;インストール手順&#34;&gt;インストール手順&lt;/h2&gt;
 
 &lt;p&gt;最新のソースは &lt;a href=&#34;http://paco.sourceforge.net/&#34;&gt;paco - a source code pacKAGE oRGANIZER for Unix/Linux&lt;/a&gt; で確認してください。&lt;/p&gt;
 
@@ -731,9 +730,9 @@ vsftpd 用の vsftpd を起動中:                               [  OK  ]
 
 &lt;p&gt;最後の「make logme」でpaco自身のインストール内容を記録しています。&lt;/p&gt;
 
-&lt;h2 id=&#34;使い方:2e9f7bf7118303b30947563102a07bb4&#34;&gt;使い方&lt;/h2&gt;
+&lt;h2 id=&#34;使い方&#34;&gt;使い方&lt;/h2&gt;
 
-&lt;h3 id=&#34;インストールを記録する:2e9f7bf7118303b30947563102a07bb4&#34;&gt;インストールを記録する&lt;/h3&gt;
+&lt;h3 id=&#34;インストールを記録する&#34;&gt;インストールを記録する&lt;/h3&gt;
 
 &lt;p&gt;今後、何らかのアプリをmake installする際には、「paco -D」を付けることでpacoに記録できます。&lt;/p&gt;
 
@@ -741,7 +740,7 @@ vsftpd 用の vsftpd を起動中:                               [  OK  ]
 # paco -D make install
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;インストール済みパッケージを確認する:2e9f7bf7118303b30947563102a07bb4&#34;&gt;インストール済みパッケージを確認する&lt;/h3&gt;
+&lt;h3 id=&#34;インストール済みパッケージを確認する&#34;&gt;インストール済みパッケージを確認する&lt;/h3&gt;
 
 &lt;p&gt;「-a」オプションを使います。&lt;/p&gt;
 
@@ -749,7 +748,7 @@ vsftpd 用の vsftpd を起動中:                               [  OK  ]
 paco-2.0.9
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;パッケージでインストールされたファイルを確認する:2e9f7bf7118303b30947563102a07bb4&#34;&gt;パッケージでインストールされたファイルを確認する&lt;/h3&gt;
+&lt;h3 id=&#34;パッケージでインストールされたファイルを確認する&#34;&gt;パッケージでインストールされたファイルを確認する&lt;/h3&gt;
 
 &lt;p&gt;「-f」オプションを使います。&lt;/p&gt;
 
@@ -777,21 +776,20 @@ paco-2.0.9:
 /usr/local/bin/superpaco
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;パッケージをアンインストールする:2e9f7bf7118303b30947563102a07bb4&#34;&gt;パッケージをアンインストールする&lt;/h3&gt;
+&lt;h3 id=&#34;パッケージをアンインストールする&#34;&gt;パッケージをアンインストールする&lt;/h3&gt;
 
 &lt;p&gt;「-r」オプションです。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;# paco -r {アンインストールしたいパッケージ名}
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;参考:2e9f7bf7118303b30947563102a07bb4&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/kasei_san/20100220/p1&#34;&gt;さくらのユーザディレクトリにPACOをインストールしたときの手順 - かせいさんとこ&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://paco.sourceforge.net/&#34;&gt;paco - a source code pacKAGE oRGANIZER for Unix/Linux&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.atmarkit.co.jp/flinux/rensai/linuxtips/886usepaco.html&#34;&gt;ソースからインストールしたアプリを管理するには － ＠IT&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -800,9 +798,7 @@ paco-2.0.9:
       <pubDate>Sun, 15 Jan 2012 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2012/01/15/installing-up-to-date-package-by-yum/</guid>
-      <description>
-
-&lt;p&gt;yum公式リポジトリ内の古いApacheやphpではなく、最新版をrpmで入れる方法です。&lt;/p&gt;
+      <description>&lt;p&gt;yum公式リポジトリ内の古いApacheやphpではなく、最新版をrpmで入れる方法です。&lt;/p&gt;
 
 &lt;p&gt;下記に記す非公式リポジトリを参照することで、最新のパッケージをyumでインストールできます。&lt;/p&gt;
 
@@ -813,9 +809,11 @@ paco-2.0.9:
 
 &lt;p&gt;なお、これらのサイトで配布されているパッケージの信頼性は公式のリポジトリのものより劣るので、利用の際には注意が必要です。&lt;/p&gt;
 
-&lt;h1 id=&#34;手順:f0d8039714e0227fd6e46c45b7c77e52&#34;&gt;手順&lt;/h1&gt;
+&lt;p&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;remiリポジトリ追加:f0d8039714e0227fd6e46c45b7c77e52&#34;&gt;Remiリポジトリ追加&lt;/h2&gt;
+&lt;h1 id=&#34;手順&#34;&gt;手順&lt;/h1&gt;
+
+&lt;h2 id=&#34;remiリポジトリ追加&#34;&gt;Remiリポジトリ追加&lt;/h2&gt;
 
 &lt;p&gt;RemiリポジトリはEPELリポジトリに依存しているため、両方追加する必要があります。&lt;/p&gt;
 
@@ -840,7 +838,7 @@ CentOS-Base.repo       CentOS-Media.repo  epel-testing.repo  remi.repo
 CentOS-Debuginfo.repo  CentOS-Vault.repo  epel.repo
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;utterリポジトリ追加:f0d8039714e0227fd6e46c45b7c77e52&#34;&gt;Utterリポジトリ追加&lt;/h2&gt;
+&lt;h2 id=&#34;utterリポジトリ追加&#34;&gt;Utterリポジトリ追加&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;/etc/yum.repos.d/utter.repo&lt;/strong&gt; を開き、下記のように編集します。&lt;/p&gt;
 
@@ -854,7 +852,7 @@ gpgkey=http://www.jasonlitka.com/media/RPM-GPG-KEY-jlitka
 
 &lt;p&gt;以上で、phpやhttpdの最新版がyumでインストールできるようになりました。&lt;/p&gt;
 
-&lt;h2 id=&#34;最新パッケージのインストール:f0d8039714e0227fd6e46c45b7c77e52&#34;&gt;最新パッケージのインストール&lt;/h2&gt;
+&lt;h2 id=&#34;最新パッケージのインストール&#34;&gt;最新パッケージのインストール&lt;/h2&gt;
 
 &lt;p&gt;yumコマンドに「-enablerepo={リポジトリ名}」オプションを付けることで、それぞれのリポジトリを参照できます。&lt;/p&gt;
 
@@ -905,7 +903,7 @@ Total download size: 3.4 M
 Is this ok [y/N]:
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;参考:f0d8039714e0227fd6e46c45b7c77e52&#34;&gt;参考&lt;/h1&gt;
+&lt;h1 id=&#34;参考&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://hoge001.exblog.jp/13982612/&#34;&gt;hoge001 : CentOS5.5 Apache 2.2.15 インストール&lt;/a&gt;&lt;/li&gt;
@@ -916,8 +914,7 @@ Is this ok [y/N]:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.goofoo.jp/2011/03/556&#34;&gt;yumでremiリポジトリを使えるようにする | グーフー WordPressのためのLinuxノート&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://pentan.info/server/linux/yum_new.html&#34;&gt;yumで、より新しいパッケージをインストールする方法(CentOS) - [yum/Linux [Red Hatなど]] ぺんたん info&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -950,7 +947,7 @@ Is this ok [y/N]:
 $ kill {上で出てきたpid}
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;参考:981194324cf5b426a797d33ec4db9e80&#34;&gt;参考&lt;/h1&gt;
+&lt;h1 id=&#34;参考&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://babyp.blog55.fc2.com/blog-entry-446.html&#34;&gt;サーバのリソースを定期的に出力しとく方法：なんとなしの日記&lt;/a&gt;&lt;/li&gt;
@@ -993,7 +990,7 @@ $ kill {上で出てきたpid}
 
 &lt;p&gt;となっています。&lt;/p&gt;
 
-&lt;h1 id=&#34;参考:8ae62bd64dbb38a5a9b5b7de400f164f&#34;&gt;参考&lt;/h1&gt;
+&lt;h1 id=&#34;参考&#34;&gt;参考&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://openlab.dino.co.jp/2007/10/23/184825129.html&#34;&gt;svn diffで-wオプションを使う — ディノオープンラボラトリ&lt;/a&gt;&lt;/li&gt;
@@ -1010,7 +1007,7 @@ $ kill {上で出てきたpid}
       <guid>http://1000k.github.io/2010/05/20/usage-of-logrotate/</guid>
       <description>
 
-&lt;h1 id=&#34;設定チュートリアル:6d0eb099fbc632b15b52ccdd35c3ab67&#34;&gt;設定チュートリアル&lt;/h1&gt;
+&lt;h1 id=&#34;設定チュートリアル&#34;&gt;設定チュートリアル&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&amp;rdquo;/etc/logrotate.d/&amp;rdquo; 配下に設定ファイルを作成する&lt;/li&gt;
@@ -1022,7 +1019,7 @@ $ kill {上で出てきたpid}
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;設定ファイルの書き方:6d0eb099fbc632b15b52ccdd35c3ab67&#34;&gt;設定ファイルの書き方&lt;/h1&gt;
+&lt;h1 id=&#34;設定ファイルの書き方&#34;&gt;設定ファイルの書き方&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code&gt;# コメントアウトは「#」で
 対象ファイル [,対象ファイル, ...] {
@@ -1033,7 +1030,7 @@ $ kill {上で出てきたpid}
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;設定例:6d0eb099fbc632b15b52ccdd35c3ab67&#34;&gt;設定例&lt;/h2&gt;
+&lt;h2 id=&#34;設定例&#34;&gt;設定例&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;対象ファイル:
@@ -1062,7 +1059,7 @@ $ kill {上で出てきたpid}
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;logrotateの実行方法:6d0eb099fbc632b15b52ccdd35c3ab67&#34;&gt;logrotateの実行方法&lt;/h1&gt;
+&lt;h1 id=&#34;logrotateの実行方法&#34;&gt;logrotateの実行方法&lt;/h1&gt;
 
 &lt;p&gt;基本的には毎朝4:00に自動実行されるが、デバッグと即時ログローテートを行うこともできる。&lt;/p&gt;
 
@@ -1084,7 +1081,7 @@ $ kill {上で出てきたpid}
  logrotate -f /etc/logrotate.d/test # testだけ実行
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h1 id=&#34;関連ファイルの場所:6d0eb099fbc632b15b52ccdd35c3ab67&#34;&gt;関連ファイルの場所&lt;/h1&gt;
+&lt;h1 id=&#34;関連ファイルの場所&#34;&gt;関連ファイルの場所&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;設定ファイル
@@ -1099,7 +1096,7 @@ $ kill {上で出てきたpid}
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;オプション一覧:6d0eb099fbc632b15b52ccdd35c3ab67&#34;&gt;オプション一覧&lt;/h1&gt;
+&lt;h1 id=&#34;オプション一覧&#34;&gt;オプション一覧&lt;/h1&gt;
 
 &lt;p&gt;参考: &lt;a href=&#34;http://www.asahi-net.or.jp/~aa4t-nngk/logrotate.html&#34;&gt;Stray Penguin - Linux Memo (logrotate)&lt;/a&gt;&lt;/p&gt;
 
@@ -1279,7 +1276,7 @@ $ kill {上で出てきたpid}
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h1 id=&#34;copytruncate方式の欠点:6d0eb099fbc632b15b52ccdd35c3ab67&#34;&gt;copytruncate方式の欠点&lt;/h1&gt;
+&lt;h1 id=&#34;copytruncate方式の欠点&#34;&gt;copytruncate方式の欠点&lt;/h1&gt;
 
 &lt;p&gt;参考: &lt;a href=&#34;http://kamoland.com/wiki/wiki.cgi?logrotate%A4%CE%C0%DF%C4%EA&#34;&gt;logrotateの設定 - KamoLand&lt;/a&gt;&lt;/p&gt;
 

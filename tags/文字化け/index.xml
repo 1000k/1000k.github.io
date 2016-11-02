@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>文字化け on 1000g</title>
-    <link>http://1000k.github.io/tags/%E6%96%87%E5%AD%97%E5%8C%96%E3%81%91/</link>
-    <description>Recent content in 文字化け on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/%E6%96%87%E5%AD%97%E5%8C%96%E3%81%91/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 22 Jan 2011 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/%E6%96%87%E5%AD%97%E5%8C%96%E3%81%91/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -19,11 +19,11 @@
 
 &lt;p&gt;NetBeansで出力ウインドウの日本語が文字化けしてしまった時の解決方法です。&lt;/p&gt;
 
-&lt;h3 id=&#34;検証環境:2cc311cc50f4986921909eddc3cc7def&#34;&gt;検証環境&lt;/h3&gt;
+&lt;h3 id=&#34;検証環境&#34;&gt;検証環境&lt;/h3&gt;
 
 &lt;p&gt;NetBeans IDE 7.0 Beta&lt;/p&gt;
 
-&lt;h3 id=&#34;対処法:2cc311cc50f4986921909eddc3cc7def&#34;&gt;対処法&lt;/h3&gt;
+&lt;h3 id=&#34;対処法&#34;&gt;対処法&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;netbeans.conf&lt;/strong&gt;の&lt;strong&gt;「netbeans_default_options」&lt;/strong&gt;ブロックに&lt;strong&gt;「-J-Dfile.encoding=UTF-8」&lt;/strong&gt;を追加してやればいいようです。&lt;/p&gt;
 
@@ -47,11 +47,11 @@ netbeans_default_options=&amp;quot;-J-client -J-Xss2m -J-Xms32m -J-XX:PermSize=3
 &lt;/figure&gt;
 &lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;日本語フォントを指定する-2011-07-07追記:2cc311cc50f4986921909eddc3cc7def&#34;&gt;日本語フォントを指定する (2011/07/07追記)&lt;/h3&gt;
+&lt;h3 id=&#34;日本語フォントを指定する-2011-07-07追記&#34;&gt;日本語フォントを指定する (2011/07/07追記)&lt;/h3&gt;
 
 &lt;p&gt;まだ文字化けする場合、出力ウインドウのフォントが日本語に対応していない可能性があります。出力ウインドウの適当な場所を&lt;strong&gt;右クリック -&amp;gt; [フォントを選択…]&lt;/strong&gt;で、日本語フォントを指定してください。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:2cc311cc50f4986921909eddc3cc7def&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://completemirage.blog55.fc2.com/blog-entry-39.html&#34;&gt;Complete Mirage - NetBeansでJRuby on Rails&lt;/a&gt;&lt;/p&gt;
 </description>

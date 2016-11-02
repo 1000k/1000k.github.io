@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Phpmd on 1000g</title>
-    <link>http://1000k.github.io/tags/phpmd/</link>
-    <description>Recent content in Phpmd on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/phpmd/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 26 Nov 2013 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/phpmd/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -48,11 +48,11 @@
 
 &lt;p&gt;「else なんて必要ねえよ。else の必要ない書き方しろよ。」と言ってきます。言いたいことはわかりますが、リファクタリングした結果最もメンテナンス性が高くなるなら、if-else 構文を使っても全然問題ないはずです。else を使うだけで警告レベル High で糾弾するのはいかがなものでしょうか。&lt;/p&gt;
 
-&lt;h2 id=&#34;まとめ:fa9ca428d896ab32fcf9e86dc6eea620&#34;&gt;まとめ&lt;/h2&gt;
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
 
 &lt;p&gt;PHPMD はヒステリー気味なので、レポート結果をあまり深刻に受け取らないようにしましょう。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:fa9ca428d896ab32fcf9e86dc6eea620&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://phpmd.org/&#34;&gt;PHPMD - PHP Mess Detector&lt;/a&gt;&lt;/li&gt;

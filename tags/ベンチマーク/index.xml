@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ベンチマーク on 1000g</title>
-    <link>http://1000k.github.io/tags/%E3%83%99%E3%83%B3%E3%83%81%E3%83%9E%E3%83%BC%E3%82%AF/</link>
-    <description>Recent content in ベンチマーク on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/%E3%83%99%E3%83%B3%E3%83%81%E3%83%9E%E3%83%BC%E3%82%AF/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 13 May 2014 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/%E3%83%99%E3%83%B3%E3%83%81%E3%83%9E%E3%83%BC%E3%82%AF/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -15,11 +15,11 @@
       <pubDate>Tue, 13 May 2014 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2014/05/13/estimate-load-of-mcafee-mysql-audit-plugin/</guid>
-      <description>
+      <description>&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/?p=1837&#34;&gt;前の記事&lt;/a&gt; で McAfee MySQL Audit Plugin を使うと簡単に監査ログが取れることを紹介しましたが、性能劣化はどれくらいあるのか心配になったので検証してみました。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/?p=1837&#34;&gt;前の記事&lt;/a&gt; で McAfee MySQL Audit Plugin を使うと簡単に監査ログが取れることを紹介しましたが、性能劣化はどれくらいあるのか心配になったので検証してみました。&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;audit-プラグインの設定値:ca0842c38bf6f0227cc53f5afc5d2b62&#34;&gt;Audit プラグインの設定値&lt;/h2&gt;
+&lt;h2 id=&#34;audit-プラグインの設定値&#34;&gt;Audit プラグインの設定値&lt;/h2&gt;
 
 &lt;p&gt;以下の通り、ほぼインストールしたままの状態です。&lt;/p&gt;
 
@@ -47,7 +47,7 @@
 +---------------------------------+----------------------------+
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;ベンチマークの条件:ca0842c38bf6f0227cc53f5afc5d2b62&#34;&gt;ベンチマークの条件&lt;/h2&gt;
+&lt;h2 id=&#34;ベンチマークの条件&#34;&gt;ベンチマークの条件&lt;/h2&gt;
 
 &lt;p&gt;mysqlslap なら簡単にベンチマークが取れます。詳しい使い方は &lt;a href=&#34;http://blog.1000k.net/?p=1847&#34;&gt;mysqlslap で MySQL の負荷テストをする方法&lt;/a&gt; をご覧ください。&lt;/p&gt;
 
@@ -68,9 +68,9 @@
   --user=root
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;結果:ca0842c38bf6f0227cc53f5afc5d2b62&#34;&gt;結果&lt;/h2&gt;
+&lt;h2 id=&#34;結果&#34;&gt;結果&lt;/h2&gt;
 
-&lt;h3 id=&#34;audit-無効時:ca0842c38bf6f0227cc53f5afc5d2b62&#34;&gt;Audit 無効時&lt;/h3&gt;
+&lt;h3 id=&#34;audit-無効時&#34;&gt;Audit 無効時&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;Running for engine innodb
 Average number of seconds to run all queries: 15.935 seconds
@@ -80,7 +80,7 @@ Number of clients running queries: 100
 Average number of queries per client: 1000
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;audit-有効時:ca0842c38bf6f0227cc53f5afc5d2b62&#34;&gt;Audit 有効時&lt;/h3&gt;
+&lt;h3 id=&#34;audit-有効時&#34;&gt;Audit 有効時&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;Running for engine innodb
 Average number of seconds to run all queries: 19.083 seconds
@@ -90,8 +90,7 @@ Number of clients running queries: 100
 Average number of queries per client: 1000
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;若干の性能劣化 (10%～20% 程度) が見られます。カツカツのシステムで使う場合は注意が必要かもしれません。&lt;/p&gt;
-</description>
+&lt;p&gt;若干の性能劣化 (10%～20% 程度) が見られます。カツカツのシステムで使う場合は注意が必要かもしれません。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -100,15 +99,15 @@ Average number of queries per client: 1000
       <pubDate>Tue, 13 May 2014 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2014/05/13/load-test-with-mysqlslap/</guid>
-      <description>
-
-&lt;p&gt;mysqlslap は MySQL の負荷テストに使えるツールです。MySQL &amp;gt;= 5.1.4 からはデフォルトで提供されています。&lt;/p&gt;
+      <description>&lt;p&gt;mysqlslap は MySQL の負荷テストに使えるツールです。MySQL &amp;gt;= 5.1.4 からはデフォルトで提供されています。&lt;/p&gt;
 
 &lt;p&gt;テスト中は &lt;code&gt;mysqlslap&lt;/code&gt; という DB を自動で作って、そこにクエリを投げまくります。&lt;/p&gt;
 
 &lt;p&gt;以下に基本的な使い方をメモしておきます。&lt;/p&gt;
 
-&lt;h2 id=&#34;使い方:c586e0247ceee441e4b1b150e9d62fd0&#34;&gt;使い方&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;使い方&#34;&gt;使い方&lt;/h2&gt;
 
 &lt;p&gt;&lt;code&gt;mysqlslap -?&lt;/code&gt; で詳しいヘルプが見られます。典型的な例は下記。&lt;/p&gt;
 
@@ -227,13 +226,12 @@ Average number of queries per client: 1000
         Average number of queries per client: 2000
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;参考:c586e0247ceee441e4b1b150e9d62fd0&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://dev.mysql.com/doc/refman/5.1/ja/mysqlslap.html&#34;&gt;MySQL :: MySQL 5.1 リファレンスマニュアル :: 7.15 mysqlslap — クライアント負荷エミュレーション&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://d.hatena.ne.jp/tetsuyai/20110209/1297253834&#34;&gt;MySQL標準 負荷測定ツール mysqlslap - 祈れ、そして働け ～ Ora et labora&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
   </channel>

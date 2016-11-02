@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Chrome on 1000g</title>
-    <link>http://1000k.github.io/tags/chrome/</link>
-    <description>Recent content in Chrome on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/chrome/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 02 Jul 2012 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/chrome/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -21,11 +21,11 @@
 
 &lt;p&gt;UserAgentがChromeと微妙に似ていて書きにくかったので、メモを残しておきます。&lt;/p&gt;
 
-&lt;h2 id=&#34;やりたいこと:5c20e64dfc0ac35ddade7fa8fcd267b4&#34;&gt;やりたいこと&lt;/h2&gt;
+&lt;h2 id=&#34;やりたいこと&#34;&gt;やりたいこと&lt;/h2&gt;
 
 &lt;p&gt;JavaScriptでSafari 5.x系のユーザーを判別する。&lt;/p&gt;
 
-&lt;h2 id=&#34;スクリプト:5c20e64dfc0ac35ddade7fa8fcd267b4&#34;&gt;スクリプト&lt;/h2&gt;
+&lt;h2 id=&#34;スクリプト&#34;&gt;スクリプト&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;window.onload = function() {
     var ua = navigator.userAgent.toLowerCase();
@@ -41,7 +41,7 @@
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;参考:5c20e64dfc0ac35ddade7fa8fcd267b4&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.useragentstring.com/pages/useragentstring.php&#34;&gt;UserAgentString.com - List of User Agent Strings&lt;/a&gt;

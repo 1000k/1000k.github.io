@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tortoisesvn on 1000g</title>
-    <link>http://1000k.github.io/tags/tortoisesvn/</link>
-    <description>Recent content in Tortoisesvn on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/tortoisesvn/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 27 Oct 2010 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/tortoisesvn/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -15,17 +15,17 @@
       <pubDate>Wed, 27 Oct 2010 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2010/10/27/auto-versioning-in-tortoisesvn/</guid>
-      <description>
-
-&lt;p&gt;オープンソースのコードを見ていると、リビジョン番号などがソースに記載してあるケースがよくあります。&lt;/p&gt;
+      <description>&lt;p&gt;オープンソースのコードを見ていると、リビジョン番号などがソースに記載してあるケースがよくあります。&lt;/p&gt;
 
 &lt;p&gt;どうやら Subversion（や CVS）で実現できるようです。&lt;/p&gt;
 
 &lt;p&gt;私は基本的に Windows で TortoiseSVN を使ってリポジトリのやりとりをしているので、その設定方法をメモしておきます。&lt;/p&gt;
 
-&lt;h2 id=&#34;手順:9b148e080555f5a4ead4adee49ce465c&#34;&gt;手順&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;1-tortoisesvnの設定:9b148e080555f5a4ead4adee49ce465c&#34;&gt;1.TortoiseSVNの設定&lt;/h3&gt;
+&lt;h2 id=&#34;手順&#34;&gt;手順&lt;/h2&gt;
+
+&lt;h3 id=&#34;1-tortoisesvnの設定&#34;&gt;1.TortoiseSVNの設定&lt;/h3&gt;
 
 &lt;p&gt;今回は例としてPHPファイルが自動変換されるよう設定します。&lt;/p&gt;
 
@@ -41,7 +41,7 @@
 *.php = svn:keywords=Id Date Author Rev
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;2-対象ファイルにsvnキーワードを埋め込む:9b148e080555f5a4ead4adee49ce465c&#34;&gt;2.対象ファイルにsvnキーワードを埋め込む&lt;/h3&gt;
+&lt;h3 id=&#34;2-対象ファイルにsvnキーワードを埋め込む&#34;&gt;2.対象ファイルにsvnキーワードを埋め込む&lt;/h3&gt;
 
 &lt;p&gt;キーワードは「&lt;strong&gt;$Id$&lt;/strong&gt;」のように、「$」で囲みます。&lt;/p&gt;
 
@@ -59,7 +59,7 @@ class Uso
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;3-コミットしてみる:9b148e080555f5a4ead4adee49ce465c&#34;&gt;3.コミットしてみる&lt;/h3&gt;
+&lt;h3 id=&#34;3-コミットしてみる&#34;&gt;3.コミットしてみる&lt;/h3&gt;
 
 &lt;p&gt;ファイルをコミットしてみて、リポジトリブラウザで参照して置換されていれば成功です。&lt;/p&gt;
 
@@ -75,7 +75,7 @@ class Uso
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;注意:9b148e080555f5a4ead4adee49ce465c&#34;&gt;注意&lt;/h2&gt;
+&lt;h2 id=&#34;注意&#34;&gt;注意&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;自動置換は上記設定を行った以後に作られたファイルのみに行われます。&lt;/strong&gt;&lt;/p&gt;
 
@@ -90,14 +90,13 @@ class Uso
 
 &lt;p&gt;これで、ファイルをコミットすると自動でキーワードが置換されるようになります。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:9b148e080555f5a4ead4adee49ce465c&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://wiki.bit-hive.com/tomizoo/pg/Subversion%20%A5%AD%A1%BC%A5%EF%A1%BC%A5%C9%A4%CE%C5%B8%B3%AB&#34;&gt;Subversion キーワードの展開 - とみぞーノート&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://bokunomichi.blogspot.com/2007/03/subversiontortoisesvn.html&#34;&gt;僕の道(仮)　devlog: Subversion　クライアントの設定（TortoiseSVN）&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://cheebow.info/chemt/archives/2006/03/tortoisesvn.html&#34;&gt;ヒビノアワ: TortoiseSVNでキーワードアンカーの設定をする&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
   </channel>

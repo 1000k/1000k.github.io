@@ -1,54 +1,66 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ja">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<title> CloudCore VPS初期設定 &middot; 1000g </title>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
+    <title>CloudCore VPS初期設定 &middot; 1000g</title>
+    <meta name="author" content="SENDA Keijiro">
+    <meta name="description" content="Programming knowledge">
+    <meta name="generator" content="Hugo 0.17" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-<link rel="stylesheet" href="http://1000k.github.io//css/slim.css">
-<link rel="stylesheet" href="http://1000k.github.io//css/highlight.min.css">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext' rel='stylesheet'>
+    <!-- RSS autodiscovery -->
+    
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
-<link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="http://1000k.github.io/img/favicon.ico">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.2/normalize.min.css">
 
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://1000k.github.io/css/screen.css">
+    <link rel="stylesheet" href="http://1000k.github.io/css/github.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/default.min.css">
 
-<link href="" rel="alternate" type="application/rss+xml" title="1000g" />
-
-
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
+    <!-- Stylesheet for theme color -->
+    <style type="text/css">
+    a, a:visited {color: #33cc99;}
+    .pagination a {color: #33cc99;}
+    .gist .gist-file .gist-meta a:visited {color: #33cc99 !important;}
+    a:focus, a:hover {color: #178b6b;}
+    h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #178b6b;}
+    .older-posts:hover, .newer-posts:hover {color: #178b6b;}
+</style>
 </head>
 
-<body>
-  <div class="container">
-    <div class="header">
-  <h1 class="site-title"><a href="http://1000k.github.io/">1000g</a></h1>
-  <p class="site-tagline">Tech blog</p>
-  <div class="nav">
-    <a class="nav-btn" href="#">
-      <span class="ci ci-burger"></span>
-    </a>
-    <ul class="nav-list">
-      
+<body class="post-template">
 
-      <li><a href="https://github.com/1000k">Github</a></li>
-      <li><a href="https://twitter.com/1000kei">Twitter</a></li>
-      
+    <header id="site-head">
+	
+	<h1 class="blog-title"><a href="http://1000k.github.io/">1000g</a></h1>
+	
+	
+	<h1 class="blog-subtitle">Development knowledge</h1>
+	
+</header>
+    
+<nav class="menu" role="nav">
+    <ul>
+        
+        	<li class="nav nav-current"><a href="/about/">ABOUT</a></li>
+      	
     </ul>
-  </div>
-</div>
-    <div class="content">
-      <div class="post">
-        <h2 class="post-title"><a href="http://1000k.github.io/2012/01/15/initial-settings-in-cloudcore-vps/">CloudCore VPS初期設定</a></h2>
-        <div class="post-content">
-          
+</nav>
 
-<p>高スペック＆安価＆国産で話題のCloudCore VPSをレンタルしてみました。</p>
+
+    <main class="content" role="main">
+	    <article class="post">
+	        <header>
+	        <h1 class="post-title">CloudCore VPS初期設定</h1>
+
+	        <section class="post-content">
+	            <p>高スペック＆安価＆国産で話題のCloudCore VPSをレンタルしてみました。</p>
 
 <p>ざっとスペックを確認すると、以下のようになりました。これで月980円はたしかにお得です。</p>
 
@@ -88,7 +100,9 @@ MemFree:       1859380 kB
 
 <p>今後利用するかもしれないので、初期設定メモを残しておきます。</p>
 
-<h1 id="よく使うパッケージのインストール:7a522374c61fbafc7888cdbb99c2c3ca">よく使うパッケージのインストール</h1>
+<p></p>
+
+<h1 id="よく使うパッケージのインストール">よく使うパッケージのインストール</h1>
 
 <p>CentOS最小構成でインストールされているらしく、よく使うパッケージが全然入っていません。入れておきましょう。</p>
 
@@ -166,7 +180,7 @@ MemFree:       1859380 kB
 <pre><code># yum update
 </code></pre>
 
-<h1 id="作業用ユーザー追加:7a522374c61fbafc7888cdbb99c2c3ca">作業用ユーザー追加</h1>
+<h1 id="作業用ユーザー追加">作業用ユーザー追加</h1>
 
 <p>rootでの作業はリスク上よろしくないので、作業用ユーザーを追加します。</p>
 
@@ -186,7 +200,7 @@ MemFree:       1859380 kB
 ↑この行のコメントアウトを外す。
 </code></pre>
 
-<h1 id="sshポートの変更:7a522374c61fbafc7888cdbb99c2c3ca">sshポートの変更</h1>
+<h1 id="sshポートの変更">sshポートの変更</h1>
 
 <p>sshポートデフォルトの22番ではポートスキャンの標的になりやすいので、変更します。</p>
 
@@ -205,13 +219,13 @@ port 10022
 <pre><code># /etc/init.d/sshd restart
 </code></pre>
 
-<h1 id="不要なデーモンの停止:7a522374c61fbafc7888cdbb99c2c3ca">不要なデーモンの停止</h1>
+<h1 id="不要なデーモンの停止">不要なデーモンの停止</h1>
 
 <p>初期状態では4つのデーモンしか自動起動設定になっておらず、特に停止するようなデーモンはありません。</p>
 
 <p>参考: <a href="http://www.cloudcore.jp/vps/spec/">スペック｜CloudCore VPS｜KDDIウェブコミュニケーションズ</a></p>
 
-<h1 id="ファイアーウォールの構築:7a522374c61fbafc7888cdbb99c2c3ca">ファイアーウォールの構築</h1>
+<h1 id="ファイアーウォールの構築">ファイアーウォールの構築</h1>
 
 <p>ssh(10022), FTP, HTTPで接続できるようポートを開放してやります。</p>
 
@@ -265,7 +279,7 @@ iptables ファイアウォールルールを適用中:                   [  OK 
 <pre><code># chkconfig iptables on
 </code></pre>
 
-<h1 id="ftpを接続可能にする:7a522374c61fbafc7888cdbb99c2c3ca">FTPを接続可能にする</h1>
+<h1 id="ftpを接続可能にする">FTPを接続可能にする</h1>
 
 <p><strong>/etc/vsftpd/vsftpd.conf</strong> を以下のように設定します。</p>
 
@@ -296,7 +310,7 @@ vsftpd 用の vsftpd を起動中:                               [  OK  ]
 
 <p>FTPクライアントで10022番ポートにSFTP接続可能になっていることを確認してください。</p>
 
-<h1 id="参考:7a522374c61fbafc7888cdbb99c2c3ca">参考</h1>
+<h1 id="参考">参考</h1>
 
 <ul>
 <li><a href="http://tanaka.sakura.ad.jp/archives/001065.html">CentOSをサーバーとして活用するための基本的な設定 - さくらインターネット創業日記</a>
@@ -319,38 +333,51 @@ vsftpd 用の vsftpd を起動中:                               [  OK  ]
 <li><a href="http://sakura.off-soft.net/blog/cloudcore_vps_centos_first_setup.html">評判のCloudCore VPSを使うときに最初にやっておきたいこと(CentOS編) | レンタルサーバー・自宅サーバー設定・構築のヒント</a></li>
 <li><a href="http://www.cloudcore.jp/vps/spec/">スペック｜CloudCore VPS｜KDDIウェブコミュニケーションズ</a></li>
 </ul>
+	        </section>
+	    </article>
+	</main>
 
-        </div>
-      </div>
-    </div>
+    <footer class="site-footer">
+	<div class="inner">
+		<section class="footer-social">
+			
+		    <a href="//twitter.com/1000kei" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp;
+		    
+		    
+		    <a href="//github.com/1000k" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
+		    
+		    
+		    <a href="" target="_blank" title="RSS"><i class="fa fa-2x fa-fw fa-rss"></i> <span class="hidden">RSS</span></a>
+		</section>
 
-    <hr>
+		<section class="copyright">&copy; 2016 <a href="http://1000k.github.io/">SENDA Keijiro</a>. Released under the MIT license.</section>
+	</div>
+</footer>
 
-    
-      <a class="btn btn-previous" href="http://1000k.github.io/2012/01/15/cannot-unzip-bzip2-in-centos/">&laquo; CentOSでbzip2が解凍できないエラー</a>
-    
-    
-      <a class="btn btn-next" href="http://1000k.github.io/2012/01/15/installing-up-to-date-package-by-yum/">最新のパッケージをyumでインストールする &raquo;</a>
-    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://1000k.github.io/js/index.js"></script>
+<script src="http://1000k.github.io/js/smooth-scroll.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
 
-    <div class="footer">
-  <p>Powered by <a href="http://gohugo.io">Hugo</a>. This theme—Slim—is open sourced on <a href="https://github.com/zhe/hugo-theme-slim">Github</a>.</p>
-</div>
+<script>
+    smoothScroll.init({
+        speed: 800,
+        easing: 'easeInOutCubic',
+        updateURL: false,
+        offset: 125,
+    });
+</script>
+<script>hljs.initHighlightingOnLoad();</script>
 
-  </div>
-  <script src="http://1000k.github.io//js/slim.js"></script>
-  <script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-46659459-2', 'auto');
-ga('send', 'pageview');
-
+<!-- Google Analytics -->
+<script>
+  var _gaq=[['_setAccount','UA-46659459-2'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
 
 
 </body>
-
 </html>

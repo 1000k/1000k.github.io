@@ -1,60 +1,74 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ja">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<title> CakePHP 2 の Controller をテスト駆動で作成するチュートリアル &middot; 1000g </title>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
+    <title>CakePHP 2 の Controller をテスト駆動で作成するチュートリアル &middot; 1000g</title>
+    <meta name="author" content="SENDA Keijiro">
+    <meta name="description" content="Programming knowledge">
+    <meta name="generator" content="Hugo 0.17" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-<link rel="stylesheet" href="http://1000k.github.io//css/slim.css">
-<link rel="stylesheet" href="http://1000k.github.io//css/highlight.min.css">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext' rel='stylesheet'>
+    <!-- RSS autodiscovery -->
+    
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
-<link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="http://1000k.github.io/img/favicon.ico">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.2/normalize.min.css">
 
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://1000k.github.io/css/screen.css">
+    <link rel="stylesheet" href="http://1000k.github.io/css/github.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/default.min.css">
 
-<link href="" rel="alternate" type="application/rss+xml" title="1000g" />
-
-
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
+    <!-- Stylesheet for theme color -->
+    <style type="text/css">
+    a, a:visited {color: #33cc99;}
+    .pagination a {color: #33cc99;}
+    .gist .gist-file .gist-meta a:visited {color: #33cc99 !important;}
+    a:focus, a:hover {color: #178b6b;}
+    h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #178b6b;}
+    .older-posts:hover, .newer-posts:hover {color: #178b6b;}
+</style>
 </head>
 
-<body>
-  <div class="container">
-    <div class="header">
-  <h1 class="site-title"><a href="http://1000k.github.io/">1000g</a></h1>
-  <p class="site-tagline">Tech blog</p>
-  <div class="nav">
-    <a class="nav-btn" href="#">
-      <span class="ci ci-burger"></span>
-    </a>
-    <ul class="nav-list">
-      
+<body class="post-template">
 
-      <li><a href="https://github.com/1000k">Github</a></li>
-      <li><a href="https://twitter.com/1000kei">Twitter</a></li>
-      
+    <header id="site-head">
+	
+	<h1 class="blog-title"><a href="http://1000k.github.io/">1000g</a></h1>
+	
+	
+	<h1 class="blog-subtitle">Development knowledge</h1>
+	
+</header>
+    
+<nav class="menu" role="nav">
+    <ul>
+        
+        	<li class="nav nav-current"><a href="/about/">ABOUT</a></li>
+      	
     </ul>
-  </div>
-</div>
-    <div class="content">
-      <div class="post">
-        <h2 class="post-title"><a href="http://1000k.github.io/2013/02/16/tutorial-to-build-cakephp2-controller-by-tdd/">CakePHP 2 の Controller をテスト駆動で作成するチュートリアル</a></h2>
-        <div class="post-content">
-          
+</nav>
 
-<p>社内でCakePHP 2 を使った TDD を始めたチームがあったので、説明のため書いてみました。</p>
+
+    <main class="content" role="main">
+	    <article class="post">
+	        <header>
+	        <h1 class="post-title">CakePHP 2 の Controller をテスト駆動で作成するチュートリアル</h1>
+
+	        <section class="post-content">
+	            <p>社内でCakePHP 2 を使った TDD を始めたチームがあったので、説明のため書いてみました。</p>
 
 <p>ApisController::index() という、POSTされた値に +1 して返すだけのアクションを TDD で作ります。</p>
 
 <p>せっかく CakePHP なので、bake コマンドを使って進めます。</p>
 
-<h2 id="1-ダミーのテーブルを作成する:ebcb7468c782ecd2d611762d0def266a">1. ダミーのテーブルを作成する</h2>
+<p></p>
+
+<h2 id="1-ダミーのテーブルを作成する">1. ダミーのテーブルを作成する</h2>
 
 <p>bake コマンドはテーブルに紐付いていない MVC を作れません。</p>
 
@@ -71,7 +85,7 @@ mysql&gt; CREATE TABLE `apis` (
 ) ENGINE=InnoDB;
 </code></pre>
 
-<h2 id="2-必要なファイルをbakeする:ebcb7468c782ecd2d611762d0def266a">2. 必要なファイルをbakeする</h2>
+<h2 id="2-必要なファイルをbakeする">2. 必要なファイルをbakeする</h2>
 
 <pre><code>$ cd c:/mojamoja/cake2/app
 $ ./Console/cake.bat bake controller apis
@@ -88,13 +102,13 @@ $ ./Console/cake.bat bake view apis```
 
 <p>$ Console\cake.bat test app controller/ApisController</p>
 
-<h2 id="welcome-to-cakephp-v2-2-5-console:ebcb7468c782ecd2d611762d0def266a">Welcome to CakePHP v2.2.5 Console</h2>
+<h2 id="welcome-to-cakephp-v2-2-5-console">Welcome to CakePHP v2.2.5 Console</h2>
 
 <p>App : app</p>
 
-<h2 id="path-c-work-htdocs-cake2-tdd-tutorial-app:ebcb7468c782ecd2d611762d0def266a">Path: c:\work\htdocs\cake2_tdd_tutorial\app</h2>
+<h2 id="path-c-work-htdocs-cake2-tdd-tutorial-app">Path: c:\work\htdocs\cake2_tdd_tutorial\app</h2>
 
-<h2 id="cakephp-test-shell:ebcb7468c782ecd2d611762d0def266a">CakePHP Test Shell</h2>
+<h2 id="cakephp-test-shell">CakePHP Test Shell</h2>
 
 <p>PHPUnit 3.7.10 by Sebastian Bergmann.</p>
 
@@ -210,13 +224,13 @@ public function index() {
 
 <p>$ Console\cake.bat test app controller/ApisController</p>
 
-<h2 id="welcome-to-cakephp-v2-2-5-console-1:ebcb7468c782ecd2d611762d0def266a">Welcome to CakePHP v2.2.5 Console</h2>
+<h2 id="welcome-to-cakephp-v2-2-5-console-1">Welcome to CakePHP v2.2.5 Console</h2>
 
 <p>App : app</p>
 
-<h2 id="path-c-work-htdocs-cake2-tdd-tutorial-app-1:ebcb7468c782ecd2d611762d0def266a">Path: c:\work\htdocs\cake2_tdd_tutorial\app</h2>
+<h2 id="path-c-work-htdocs-cake2-tdd-tutorial-app-1">Path: c:\work\htdocs\cake2_tdd_tutorial\app</h2>
 
-<h2 id="cakephp-test-shell-1:ebcb7468c782ecd2d611762d0def266a">CakePHP Test Shell</h2>
+<h2 id="cakephp-test-shell-1">CakePHP Test Shell</h2>
 
 <p>PHPUnit 3.7.10 by Sebastian Bergmann.</p>
 
@@ -273,7 +287,7 @@ public function index() {
 
 <p>このように後からコードを洗練することを <strong>リファクタリング</strong> と呼びます。</p>
 
-<h2 id="まとめ:ebcb7468c782ecd2d611762d0def266a">まとめ</h2>
+<h2 id="まとめ">まとめ</h2>
 
 <p>TDD は以下のような流れで、Red-&gt;Green をリズミカルに行います。</p>
 
@@ -288,7 +302,7 @@ public function index() {
 
 <p>そうすることでコードのメンテナンス性を保つことができます。</p>
 
-<h2 id="補足:ebcb7468c782ecd2d611762d0def266a">補足</h2>
+<h2 id="補足">補足</h2>
 
 <p><a href="http://book.cakephp.org/2.0/en/development/testing.html#testing-controllers">公式チュートリアル</a> はそこそこ学べますが、なぜか結果を debug() でコンソールに表示してるだけで、アサーション（期待される値と実際の結果の照合）をやってません。これはダメです。</p>
 
@@ -296,7 +310,7 @@ public function index() {
 
 <p>あと、現在の実装だと $_POST が空の時に Warning が出るので、実際にはもう少しエンハンスが必要になるでしょう。</p>
 
-<h2 id="参考になるサイト:ebcb7468c782ecd2d611762d0def266a">参考になるサイト</h2>
+<h2 id="参考になるサイト">参考になるサイト</h2>
 
 <ul>
 <li><a href="http://api21.cakephp.org">CakePHP API</a>
@@ -315,38 +329,51 @@ public function index() {
 <li>ほとんどの場合は assertEquals() でカバーできますが、知っておくと便利なものも多いです。</li>
 </ul></li>
 </ul>
+	        </section>
+	    </article>
+	</main>
 
-        </div>
-      </div>
-    </div>
+    <footer class="site-footer">
+	<div class="inner">
+		<section class="footer-social">
+			
+		    <a href="//twitter.com/1000kei" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp;
+		    
+		    
+		    <a href="//github.com/1000k" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
+		    
+		    
+		    <a href="" target="_blank" title="RSS"><i class="fa fa-2x fa-fw fa-rss"></i> <span class="hidden">RSS</span></a>
+		</section>
 
-    <hr>
+		<section class="copyright">&copy; 2016 <a href="http://1000k.github.io/">SENDA Keijiro</a>. Released under the MIT license.</section>
+	</div>
+</footer>
 
-    
-      <a class="btn btn-previous" href="http://1000k.github.io/2013/02/19/jenkins-cannot-run-because-of-refering-old-java-jdk/">&laquo; Jenkins が古い Java JDK を参照するせいで起動しなくなった</a>
-    
-    
-      <a class="btn btn-next" href="http://1000k.github.io/2013/01/15/suppress-closing-replace-dialog-in-sublime-text-2/">Sublime Text 2 の置換ダイアログを閉じないようにする &raquo;</a>
-    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://1000k.github.io/js/index.js"></script>
+<script src="http://1000k.github.io/js/smooth-scroll.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
 
-    <div class="footer">
-  <p>Powered by <a href="http://gohugo.io">Hugo</a>. This theme—Slim—is open sourced on <a href="https://github.com/zhe/hugo-theme-slim">Github</a>.</p>
-</div>
+<script>
+    smoothScroll.init({
+        speed: 800,
+        easing: 'easeInOutCubic',
+        updateURL: false,
+        offset: 125,
+    });
+</script>
+<script>hljs.initHighlightingOnLoad();</script>
 
-  </div>
-  <script src="http://1000k.github.io//js/slim.js"></script>
-  <script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-46659459-2', 'auto');
-ga('send', 'pageview');
-
+<!-- Google Analytics -->
+<script>
+  var _gaq=[['_setAccount','UA-46659459-2'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
 
 
 </body>
-
 </html>

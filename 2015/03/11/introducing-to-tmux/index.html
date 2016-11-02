@@ -1,56 +1,70 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ja">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<title> tmuxはじめました &middot; 1000g </title>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
+    <title>tmuxはじめました &middot; 1000g</title>
+    <meta name="author" content="SENDA Keijiro">
+    <meta name="description" content="Programming knowledge">
+    <meta name="generator" content="Hugo 0.17" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-<link rel="stylesheet" href="http://1000k.github.io//css/slim.css">
-<link rel="stylesheet" href="http://1000k.github.io//css/highlight.min.css">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext' rel='stylesheet'>
+    <!-- RSS autodiscovery -->
+    
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
-<link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="http://1000k.github.io/img/favicon.ico">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.2/normalize.min.css">
 
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://1000k.github.io/css/screen.css">
+    <link rel="stylesheet" href="http://1000k.github.io/css/github.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/default.min.css">
 
-<link href="" rel="alternate" type="application/rss+xml" title="1000g" />
-
-
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
+    <!-- Stylesheet for theme color -->
+    <style type="text/css">
+    a, a:visited {color: #33cc99;}
+    .pagination a {color: #33cc99;}
+    .gist .gist-file .gist-meta a:visited {color: #33cc99 !important;}
+    a:focus, a:hover {color: #178b6b;}
+    h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #178b6b;}
+    .older-posts:hover, .newer-posts:hover {color: #178b6b;}
+</style>
 </head>
 
-<body>
-  <div class="container">
-    <div class="header">
-  <h1 class="site-title"><a href="http://1000k.github.io/">1000g</a></h1>
-  <p class="site-tagline">Tech blog</p>
-  <div class="nav">
-    <a class="nav-btn" href="#">
-      <span class="ci ci-burger"></span>
-    </a>
-    <ul class="nav-list">
-      
+<body class="post-template">
 
-      <li><a href="https://github.com/1000k">Github</a></li>
-      <li><a href="https://twitter.com/1000kei">Twitter</a></li>
-      
+    <header id="site-head">
+	
+	<h1 class="blog-title"><a href="http://1000k.github.io/">1000g</a></h1>
+	
+	
+	<h1 class="blog-subtitle">Development knowledge</h1>
+	
+</header>
+    
+<nav class="menu" role="nav">
+    <ul>
+        
+        	<li class="nav nav-current"><a href="/about/">ABOUT</a></li>
+      	
     </ul>
-  </div>
-</div>
-    <div class="content">
-      <div class="post">
-        <h2 class="post-title"><a href="http://1000k.github.io/2015/03/11/introducing-to-tmux/">tmuxはじめました</a></h2>
-        <div class="post-content">
-          
+</nav>
+
+
+    <main class="content" role="main">
+	    <article class="post">
+	        <header>
+	        <h1 class="post-title">tmuxはじめました</h1>
+
+	        <section class="post-content">
+	            
 
 <p>とあるきっかけで開発効率強化ウィークに入りました。まずはターミナルをもっと効率的にすべく、tmux を習得することにしました。</p>
 
-<h2 id="tumxとは:a506571e48bbc5459d921757c1950894">tumxとは？</h2>
+<h2 id="tumxとは">tumxとは？</h2>
 
 <ul>
 <li>ターミナルマルチプレクサ (端末多重化ソフトウェア, 仮想端末マネージャー) のひとつ
@@ -61,7 +75,7 @@
 <li>読み方は &ldquo;ティーマックス&rdquo;</li>
 </ul>
 
-<h3 id="できること:a506571e48bbc5459d921757c1950894">できること</h3>
+<h3 id="できること">できること</h3>
 
 <ul>
 <li>1つの端末で複数の仮想端末を起動できる</li>
@@ -76,7 +90,7 @@
 <li>設定ファイルで高度にカスタマイズできる</li>
 </ul>
 
-<h3 id="tmuxの構成:a506571e48bbc5459d921757c1950894">tmuxの構成</h3>
+<h3 id="tmuxの構成">tmuxの構成</h3>
 
 <p>tmuxはサーバー/クライアント構成を取る。</p>
 
@@ -94,7 +108,7 @@
 </ul></li>
 </ul>
 
-<h3 id="画面の内包関係:a506571e48bbc5459d921757c1950894">画面の内包関係</h3>
+<h3 id="画面の内包関係">画面の内包関係</h3>
 
 <p><code>セッション &gt; ウィンドウ &gt; ペイン</code></p>
 
@@ -104,34 +118,34 @@
 <li>ペイン: ウィンドウを分割した領域。</li>
 </ul>
 
-<h2 id="インストール:a506571e48bbc5459d921757c1950894">インストール</h2>
+<h2 id="インストール">インストール</h2>
 
 <p>yum ユーザーは EPEL リポジトリからインストールが可能。</p>
 
 <pre><code>sudo yum install -y tmux
 </code></pre>
 
-<h2 id="チュートリアル:a506571e48bbc5459d921757c1950894">チュートリアル</h2>
+<h2 id="チュートリアル">チュートリアル</h2>
 
-<h3 id="起動:a506571e48bbc5459d921757c1950894">起動</h3>
+<h3 id="起動">起動</h3>
 
 <p><code>tmux</code> または <code>tmux new-session</code> で新規セッションを起動すると、新しい仮想端末が開く。</p>
 
-<h3 id="ペインの操作:a506571e48bbc5459d921757c1950894">ペインの操作</h3>
+<h3 id="ペインの操作">ペインの操作</h3>
 
 <p><code>C-b %</code> でペインを分割し、<code>C-b n</code> で次のウィンドウに移動します。</p>
 
 <p><code>C-b ?</code> でヘルプが開くので、片方のペインにヘルプを表示した状態で、もう片方でいろいろ実験してみると理解が進みます。</p>
 
-<h3 id="デタッチ:a506571e48bbc5459d921757c1950894">デタッチ</h3>
+<h3 id="デタッチ">デタッチ</h3>
 
 <p>仮想端末上で <code>C-b d</code> で、端末がセッションからデタッチされます。</p>
 
 <p>デタッチ状態ではセッションは残っているので、再度 <code>tmux attach -t セッション番号</code> と入力すれば、最後の画面から再開できます。</p>
 
-<h2 id="基本操作:a506571e48bbc5459d921757c1950894">基本操作</h2>
+<h2 id="基本操作">基本操作</h2>
 
-<h3 id="セッションの操作:a506571e48bbc5459d921757c1950894">セッションの操作</h3>
+<h3 id="セッションの操作">セッションの操作</h3>
 
 <table>
 <thead>
@@ -174,7 +188,7 @@
 </tbody>
 </table>
 
-<h3 id="ウィンドウの操作:a506571e48bbc5459d921757c1950894">ウィンドウの操作</h3>
+<h3 id="ウィンドウの操作">ウィンドウの操作</h3>
 
 <table>
 <thead>
@@ -237,7 +251,7 @@
 </tbody>
 </table>
 
-<h3 id="ペインの操作-1:a506571e48bbc5459d921757c1950894">ペインの操作</h3>
+<h3 id="ペインの操作-1">ペインの操作</h3>
 
 <table>
 <thead>
@@ -295,13 +309,13 @@
 </tbody>
 </table>
 
-<h2 id="カスタマイズ:a506571e48bbc5459d921757c1950894">カスタマイズ</h2>
+<h2 id="カスタマイズ">カスタマイズ</h2>
 
 <p><code>~/.tmux.conf</code> にカスタマイズ設定を書き込むことができます。</p>
 
 <p>yum でインストールした場合は <code>/usr/share/doc/tmux-1.6/examples/</code> 配下にサンプルファイルがあります。vimmer は <a href="https://github.com/jordansissel/tmux/blob/master/trunk/examples/vim-keys.conf">vim-keys.conf</a> を設定するとペイン操作が楽になるかもしれません。</p>
 
-<h2 id="参考:a506571e48bbc5459d921757c1950894">参考</h2>
+<h2 id="参考">参考</h2>
 
 <ul>
 <li><a href="http://www.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man1/tmux.1?query=tmux&amp;sec=1">OpenBSD manual pages</a>
@@ -322,35 +336,51 @@
 </ul></li>
 </ul>
 
-        </div>
-      </div>
-    </div>
+	        </section>
+	    </article>
+	</main>
 
-    <hr>
+    <footer class="site-footer">
+	<div class="inner">
+		<section class="footer-social">
+			
+		    <a href="//twitter.com/1000kei" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp;
+		    
+		    
+		    <a href="//github.com/1000k" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
+		    
+		    
+		    <a href="" target="_blank" title="RSS"><i class="fa fa-2x fa-fw fa-rss"></i> <span class="hidden">RSS</span></a>
+		</section>
 
-    
-    
-      <a class="btn btn-next" href="http://1000k.github.io/2015/01/27/validate-cakephp2-rules-with-sublime-text2-phpcs-plugin/">Sublime Text 2 で CakePHP2 の CodeSniffer ルールを適用する &raquo;</a>
-    
+		<section class="copyright">&copy; 2016 <a href="http://1000k.github.io/">SENDA Keijiro</a>. Released under the MIT license.</section>
+	</div>
+</footer>
 
-    <div class="footer">
-  <p>Powered by <a href="http://gohugo.io">Hugo</a>. This theme—Slim—is open sourced on <a href="https://github.com/zhe/hugo-theme-slim">Github</a>.</p>
-</div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://1000k.github.io/js/index.js"></script>
+<script src="http://1000k.github.io/js/smooth-scroll.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
 
-  </div>
-  <script src="http://1000k.github.io//js/slim.js"></script>
-  <script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<script>
+    smoothScroll.init({
+        speed: 800,
+        easing: 'easeInOutCubic',
+        updateURL: false,
+        offset: 125,
+    });
+</script>
+<script>hljs.initHighlightingOnLoad();</script>
 
-ga('create', 'UA-46659459-2', 'auto');
-ga('send', 'pageview');
 
+<!-- Google Analytics -->
+<script>
+  var _gaq=[['_setAccount','UA-46659459-2'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
 
 
 </body>
-
 </html>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Safari on 1000g</title>
-    <link>http://1000k.github.io/tags/safari/</link>
-    <description>Recent content in Safari on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/safari/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 29 Jun 2012 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/safari/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -18,6 +18,8 @@
       <description>&lt;p&gt;Safari 5.x系では、JavaScriptで window.onload を使って自動でフォームの内容を送信（submit）しても、正しく値を渡せないバグがあります。&lt;/p&gt;
 
 &lt;p&gt;現象と対策を整理しました。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;具体的には下記のようなコードがうまくいきません。&lt;/p&gt;
 
@@ -108,8 +110,7 @@
 
 &lt;p&gt;&lt;/li&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/ul&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/ul&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

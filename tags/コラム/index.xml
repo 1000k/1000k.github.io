@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>コラム on 1000g</title>
-    <link>http://1000k.github.io/tags/%E3%82%B3%E3%83%A9%E3%83%A0/</link>
-    <description>Recent content in コラム on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/%E3%82%B3%E3%83%A9%E3%83%A0/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 09 Jan 2014 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/%E3%82%B3%E3%83%A9%E3%83%A0/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -15,13 +15,13 @@
       <pubDate>Thu, 09 Jan 2014 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2014/01/10/my-history-and-now-of-working-with-agile-method/</guid>
-      <description>
-
-&lt;p&gt;2010年に初めて XP に出会ってから4年が経過し、少なからず経験値も溜まってきました。今年からは私のノウハウを拙いながらもアウトプットをしていきます。&lt;/p&gt;
+      <description>&lt;p&gt;2010年に初めて XP に出会ってから4年が経過し、少なからず経験値も溜まってきました。今年からは私のノウハウを拙いながらもアウトプットをしていきます。&lt;/p&gt;
 
 &lt;p&gt;手始めに、私がアジャイルと出会った経緯と、これまでの取り組みを整理しておきます。&lt;/p&gt;
 
-&lt;h2 id=&#34;入社-ウォーターフォールを使った開発演習:b9d62283c9c366b7e75ef176c55eddeb&#34;&gt;入社 ～ ウォーターフォールを使った開発演習&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;入社-ウォーターフォールを使った開発演習&#34;&gt;入社 ～ ウォーターフォールを使った開発演習&lt;/h2&gt;
 
 &lt;p&gt;私は今の会社に2009年4月に新卒入社しました。私はホームページ作成のアルバイト等をしていたため、HTML, CSS, JS が多少使えましたが、ほとんど開発能力はありませんでした。&lt;/p&gt;
 
@@ -29,7 +29,7 @@
 
 &lt;p&gt;この時に「ウォーターフォールは人間の働き方ではない」と確信しました。見当外れな予測の上に FIX されたスケジュールにチームが振り回され、生きた心地がしませんでした。しかし、当時はほかのやり方を何も知りませんでした。&lt;/p&gt;
 
-&lt;h2 id=&#34;ec-プロジェクトへの参加:b9d62283c9c366b7e75ef176c55eddeb&#34;&gt;EC プロジェクトへの参加&lt;/h2&gt;
+&lt;h2 id=&#34;ec-プロジェクトへの参加&#34;&gt;EC プロジェクトへの参加&lt;/h2&gt;
 
 &lt;p&gt;入社年の9月に EC サービスのプロジェクトに配属されました。当時の私の役割は、社内の企画担当部署の要求を協力会社に伝えるだけの SE でした。&lt;/p&gt;
 
@@ -39,7 +39,7 @@
 
 &lt;p&gt;この頃から、「どうしてもっとうまくやれないのか？」「どうしてこんなに遅いのか？」「どうしてこんなに品質が低いのか？」という疑問を強く抱くようになりました。そしてより良いやり方を探すようになりました。&lt;/p&gt;
 
-&lt;h2 id=&#34;xp-との出会い:b9d62283c9c366b7e75ef176c55eddeb&#34;&gt;XP との出会い&lt;/h2&gt;
+&lt;h2 id=&#34;xp-との出会い&#34;&gt;XP との出会い&lt;/h2&gt;
 
 &lt;p&gt;2010年の初頭に &lt;a href=&#34;http://www.amazon.co.jp/gp/product/4873113954/ref=as_li_ss_tl?ie=UTF8&amp;amp;camp=247&amp;amp;creative=7399&amp;amp;creativeASIN=4873113954&amp;amp;linkCode=as2&amp;amp;tag=1000k-22&#34;&gt;『アート・オブ・アジャイル デベロップメント ―組織を成功に導くエクストリームプログラミング』&lt;/a&gt; に出会い、初めてアジャイルプロセスを学びました。この本を読んだ時の感動は今も覚えています。プロジェクトを改善するための具体的な手法がいくつも提示され、そのアイディアに希望を見出しました。&lt;/p&gt;
 
@@ -47,7 +47,7 @@
 
 &lt;p&gt;この頃にバージョン管理、テスト駆動開発、リファクタリング、継続的インテグレーションなどの基礎スキルを習得しました。私の会社には100人以上エンジニアがいますが、当時はこうしたことを誰もやっていなかったようです。協力会社もやっていませんでした。&lt;/p&gt;
 
-&lt;h2 id=&#34;初めての-xp-チーム-そして大失敗:b9d62283c9c366b7e75ef176c55eddeb&#34;&gt;初めての XP チーム、そして大失敗&lt;/h2&gt;
+&lt;h2 id=&#34;初めての-xp-チーム-そして大失敗&#34;&gt;初めての XP チーム、そして大失敗&lt;/h2&gt;
 
 &lt;p&gt;2010年の終盤に、社内システムの開発プロジェクトのチームリーダーに任命されました。当時の所属部署の一番偉い人が要望を出し、私を含む同期4名が開発チームとしてそれを実装しました。&lt;/p&gt;
 
@@ -67,7 +67,7 @@
 &lt;li&gt;「素晴らしいアイディア」を実践するのは難しい。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;ec-サービスの規模縮小-内製化-そして-ひとりスクラム-の開始:b9d62283c9c366b7e75ef176c55eddeb&#34;&gt;EC サービスの規模縮小、内製化、そして「ひとりスクラム」の開始&lt;/h2&gt;
+&lt;h2 id=&#34;ec-サービスの規模縮小-内製化-そして-ひとりスクラム-の開始&#34;&gt;EC サービスの規模縮小、内製化、そして「ひとりスクラム」の開始&lt;/h2&gt;
 
 &lt;p&gt;本業の EC サービスは十分な売上が上がらず、結局2012年1月には主要な店舗がクローズされました。しかし一部の店舗が残っていたため、システムは存続することになりました。 (この時点でプロジェクトの失敗は明らかだったのだから、システムごと廃棄するべきだったと思います)&lt;/p&gt;
 
@@ -104,7 +104,7 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;認定スクラムマスターの取得:b9d62283c9c366b7e75ef176c55eddeb&#34;&gt;認定スクラムマスターの取得&lt;/h2&gt;
+&lt;h2 id=&#34;認定スクラムマスターの取得&#34;&gt;認定スクラムマスターの取得&lt;/h2&gt;
 
 &lt;p&gt;EC システムの内製化には心を病む寸前まで追い詰められましたが、報酬として技術力の向上とスクラムの習得に繋がりました。&lt;/p&gt;
 
@@ -118,26 +118,25 @@
 
 &lt;p&gt;私の会社は典型的なピラミッド構造の会社であり、若手エンジニアが好き勝手言っても上長の耳には届かないことを知っていました。そこで、少しでも肩書があった方が有利だろうと思い、2013年6月に認定スクラムマスターになりました。結果としてこの肩書は説得力の向上に若干良い効果があったと思います。&lt;/p&gt;
 
-&lt;h2 id=&#34;社内ワークショップの開始:b9d62283c9c366b7e75ef176c55eddeb&#34;&gt;社内ワークショップの開始&lt;/h2&gt;
+&lt;h2 id=&#34;社内ワークショップの開始&#34;&gt;社内ワークショップの開始&lt;/h2&gt;
 
 &lt;p&gt;2013年7月に、スクラムワーキンググループを立ち上げました。過去に社内で3ヶ月だけスクラムを実践していたプロジェクトのメンバー2人を誘いました。月1のワークショップを実践し、アジャイルプロセスを伝播し始めました。この取り組みは現在も続いています。&lt;/p&gt;
 
 &lt;p&gt;そのうちインターンシップ演習や新人開発研修のコーチを担当するようになりました。2013年12月には新人がスクラムチームを作って新しい Web サービスを作るという研修を実践したのですが、これまでに見たことのない成果を上げていました。恐らく従来のやり方しか知らない社員では3ヶ月かかっても完成できないであろうサービスを作り上げていました。これもまた、スクラムの効果を確信するきっかけになりました。&lt;/p&gt;
 
-&lt;h2 id=&#34;そして現在:b9d62283c9c366b7e75ef176c55eddeb&#34;&gt;そして現在&lt;/h2&gt;
+&lt;h2 id=&#34;そして現在&#34;&gt;そして現在&lt;/h2&gt;
 
 &lt;p&gt;現在は定期的に &lt;a href=&#34;https://sites.google.com/site/spostudy/&#34;&gt;POStudy (プロダクトオーナーシップ勉強会)&lt;/a&gt; などの勉強会に参加しつつ、より良いやり方の学習と検証を続けています。&lt;/p&gt;
 
 &lt;p&gt;まだ十分に管理職クラスを巻き込めておらず、会社全体では依然として古いやり方が続いています。それでも、徐々にカンバンを社内で見るようになったり、アジャイルプラクティスが実践されている様子を見かけるようになってきました。&lt;/p&gt;
 
-&lt;h2 id=&#34;まとめ:b9d62283c9c366b7e75ef176c55eddeb&#34;&gt;まとめ&lt;/h2&gt;
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
 
 &lt;p&gt;長々と書きましたが、私がアジャイルプラクティスの啓蒙活動を初めてまだ半年しか経っていません。&lt;/p&gt;
 
 &lt;p&gt;今後も活動を続け、多くの人がハッピーになる仕事ができる環境を作っていくつもりです。&lt;/p&gt;
 
-&lt;p&gt;今年からはノウハウをアウトプットしつつ、外部の人々と頻繁に情報交換できるようにしたいと考えています。&lt;/p&gt;
-</description>
+&lt;p&gt;今年からはノウハウをアウトプットしつつ、外部の人々と頻繁に情報交換できるようにしたいと考えています。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -146,9 +145,7 @@
       <pubDate>Wed, 24 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2012/10/24/lecture-of-dependency-injection/</guid>
-      <description>
-
-&lt;p&gt;&lt;strong&gt;依存性注入 (Dependency Injection)&lt;/strong&gt; は、クラスを単体テスト可能にするために使われるテクニックです。&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;依存性注入 (Dependency Injection)&lt;/strong&gt; は、クラスを単体テスト可能にするために使われるテクニックです。&lt;/p&gt;
 
 &lt;p&gt;これが意識されていないが故に単体テストが全くできないコードをよく見かけます。&lt;/p&gt;
 
@@ -156,7 +153,9 @@
 
 &lt;p&gt;以下のサンプルでは &lt;a href=&#34;http://www.phpunit.de/manual/3.8/ja/index.html&#34;&gt;PHPUnit&lt;/a&gt; を利用しています。&lt;/p&gt;
 
-&lt;h2 id=&#34;単体テストができないケース:d011759973daaf90efe485c60339885a&#34;&gt;単体テストができないケース&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;単体テストができないケース&#34;&gt;単体テストができないケース&lt;/h2&gt;
 
 &lt;p&gt;例えば以下のメソッド Foo::play() は単体テストケースが書けません。&lt;/p&gt;
 
@@ -192,7 +191,7 @@
 
 &lt;p&gt;そのため、通常は Bar クラスを&lt;strong&gt;モック化&lt;/strong&gt;し、Bar クラスの実装を無視できるようにします。&lt;/p&gt;
 
-&lt;h2 id=&#34;モック化とは:d011759973daaf90efe485c60339885a&#34;&gt;モック化とは？&lt;/h2&gt;
+&lt;h2 id=&#34;モック化とは&#34;&gt;モック化とは？&lt;/h2&gt;
 
 &lt;p&gt;モック化とは、クラスの挙動を置き換えることです。例えば特定のメソッドの戻り値を好きな値に指定することができます。&lt;/p&gt;
 
@@ -202,7 +201,7 @@
 
 &lt;p&gt;まだピンと来ない方も、この先の具体例を見ればイメージが掴めると思います。&lt;/p&gt;
 
-&lt;h2 id=&#34;メソッドを単体テスト可能にする:d011759973daaf90efe485c60339885a&#34;&gt;メソッドを単体テスト可能にする&lt;/h2&gt;
+&lt;h2 id=&#34;メソッドを単体テスト可能にする&#34;&gt;メソッドを単体テスト可能にする&lt;/h2&gt;
 
 &lt;p&gt;もしメソッドが下記のようになっていればどうでしょうか？&lt;/p&gt;
 
@@ -235,7 +234,7 @@
 
 &lt;p&gt;（※厳密なインターフェース・インジェクションでは、まずクラスの interface を作成し、それを委譲したメソッドを実装する必要があります。上記の例では簡略化のため interface は作成していません。）&lt;/p&gt;
 
-&lt;h2 id=&#34;コンストラクター-インジェクション:d011759973daaf90efe485c60339885a&#34;&gt;コンストラクター・インジェクション&lt;/h2&gt;
+&lt;h2 id=&#34;コンストラクター-インジェクション&#34;&gt;コンストラクター・インジェクション&lt;/h2&gt;
 
 &lt;p&gt;依存性注入は以下のようなやり方でも実現が可能です。&lt;/p&gt;
 
@@ -285,7 +284,7 @@
 
 &lt;p&gt;コンストラクタの引数に $bar が渡されなかった時はデフォルトの Bar クラスを new するようにしています。これにより、テストの時はモックを注入して使うようにし、本番コードではパラメータを何も指定しないことでデフォルトの Foo クラスを使うようにしています。&lt;/p&gt;
 
-&lt;h2 id=&#34;セッター-インジェクション:d011759973daaf90efe485c60339885a&#34;&gt;セッター・インジェクション&lt;/h2&gt;
+&lt;h2 id=&#34;セッター-インジェクション&#34;&gt;セッター・インジェクション&lt;/h2&gt;
 
 &lt;p&gt;別のアプローチとして、クラスにオブジェクトを注入するためセッターメソッドを用意する方法もあります。&lt;/p&gt;
 
@@ -332,7 +331,7 @@
 
 &lt;p&gt;これが&lt;strong&gt;セッター・インジェクション&lt;/strong&gt; (Setter Injection) です。&lt;/p&gt;
 
-&lt;h2 id=&#34;まとめ:d011759973daaf90efe485c60339885a&#34;&gt;まとめ&lt;/h2&gt;
+&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;単体テストしたければ、メソッド内で外部クラスを new してはいけない。&lt;/li&gt;
@@ -345,17 +344,17 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;補足1-runkitで強引にメソッドの挙動を変える方法:d011759973daaf90efe485c60339885a&#34;&gt;補足1: runkitで強引にメソッドの挙動を変える方法&lt;/h2&gt;
+&lt;h2 id=&#34;補足1-runkitで強引にメソッドの挙動を変える方法&#34;&gt;補足1: runkitで強引にメソッドの挙動を変える方法&lt;/h2&gt;
 
 &lt;p&gt;PHPにおいては &lt;a href=&#34;http://php.net/manual/ja/book.runkit.php&#34;&gt;runkit&lt;/a&gt; を使うことで、モック化をしなくてもメソッドの挙動を強引に変えることが可能です。ただし破壊的な手段であり、これが必要な時点でオブジェクト指向的な設計ができていない疑いが非常に強いです。&lt;/p&gt;
 
 &lt;p&gt;できるだけ Constructor Injection 等の方法を用い、テスト可能になるようリファクタリングをしましょう。リファクタリング中はコードが醜くなるかもしれませんが、最終的に設計が改善できるならば結果OKです。美しさよりも安全性が何より重要です。&lt;/p&gt;
 
-&lt;h2 id=&#34;補足2-constructor-injection-vs-setter-injection:d011759973daaf90efe485c60339885a&#34;&gt;補足2: Constructor Injection vs Setter Injection&lt;/h2&gt;
+&lt;h2 id=&#34;補足2-constructor-injection-vs-setter-injection&#34;&gt;補足2: Constructor Injection vs Setter Injection&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/2012/10/23/%e6%8a%84%e8%a8%b3-constructor-injection-vs-setter-injection/&#34;&gt;抄訳: Constructor Injection vs. Setter Injection | 1000g&lt;/a&gt; にて、コンストラクター・インジェクションとセッター・インジェクションのどちらが良いかを考察しています。結論としてはコンストラクター・インジェクションがベターです。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:d011759973daaf90efe485c60339885a&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://ja.wikipedia.org/wiki/%E4%BE%9D%E5%AD%98%E6%80%A7%E3%81%AE%E6%B3%A8%E5%85%A5&#34;&gt;依存性の注入 - Wikipedia&lt;/a&gt;&lt;/li&gt;
@@ -371,8 +370,7 @@
 &lt;ul&gt;
 &lt;li&gt;PHPUnit 公式マニュアルによるモックの使い方。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
   </channel>

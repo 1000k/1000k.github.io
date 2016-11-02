@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Css on 1000g</title>
-    <link>http://1000k.github.io/categories/css/</link>
-    <description>Recent content in Css on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/categories/css/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 17 Dec 2013 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/categories/css/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -15,9 +15,7 @@
       <pubDate>Tue, 17 Dec 2013 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2013/12/17/display-google-maps-showing-fixed-header-and-footer/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;http://jsfiddle.net/893s2/2/&#34;&gt;このデモ&lt;/a&gt;を見れば、何をやりたいかすぐ把握できると思います。&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;http://jsfiddle.net/893s2/2/&#34;&gt;このデモ&lt;/a&gt;を見れば、何をやりたいかすぐ把握できると思います。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://blog.1000k.net/wp-content/uploads/map_1.png&#34;&gt;
 &lt;figure &gt;
@@ -49,7 +47,9 @@
 
 &lt;p&gt;以下、このようなコードの実装方法を書きます。&lt;/p&gt;
 
-&lt;h2 id=&#34;コード:58e354fc35f3ca4266379278104f5f1b&#34;&gt;コード&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;コード&#34;&gt;コード&lt;/h2&gt;
 
 &lt;p&gt;まずはお決まりの Google Maps 呼び出しコードと、HTML の構造です。&lt;/p&gt;
 
@@ -142,7 +142,7 @@ footer {
 
 &lt;p&gt;実現したいことはシンプルですが、実装するのに結構工夫が必要だったのでメモしておきました。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:58e354fc35f3ca4266379278104f5f1b&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/2821596/100-height-with-fixed-footer-and-embedded-google-map&#34;&gt;html - 100% height with fixed footer and embedded Google Map - Stack Overflow&lt;/a&gt;
@@ -150,8 +150,7 @@ footer {
 &lt;ul&gt;
 &lt;li&gt;今回のデモは、この Q&amp;amp;A に書かれているコードをシンプルにしただけです。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -160,15 +159,15 @@ footer {
       <pubDate>Thu, 24 Feb 2011 00:00:00 +0000</pubDate>
       
       <guid>http://1000k.github.io/2011/02/24/fix-background-gradient-by-css3/</guid>
-      <description>
-
-&lt;p&gt;縦長のページをスクロールしても、背景のグラデーションは固定したままにする方法です。&lt;/p&gt;
+      <description>&lt;p&gt;縦長のページをスクロールしても、背景のグラデーションは固定したままにする方法です。&lt;/p&gt;
 
 &lt;p&gt;実行サンプルは下記 URL で確認できます。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://jsfiddle.net/SWMME/1/&#34;&gt;Fixed Gradient Background - jsFiddle&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;html:b37f2ac83cd0af6aaa66faa99f2f63dc&#34;&gt;HTML&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;html&#34;&gt;HTML&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;div id=&amp;quot;container&amp;quot;&amp;gt;
   &amp;lt;h1&amp;gt;
@@ -178,7 +177,7 @@ footer {
 &amp;lt;/div&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;css:b37f2ac83cd0af6aaa66faa99f2f63dc&#34;&gt;CSS&lt;/h2&gt;
+&lt;h2 id=&#34;css&#34;&gt;CSS&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;h1 { color: #fff; }
 
@@ -201,12 +200,11 @@ footer {
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;参考:b37f2ac83cd0af6aaa66faa99f2f63dc&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/5024143/filter-gradient-and-background-fixed&#34;&gt;css - filter: gradient and background: fixed - Stack Overflow&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
   </channel>

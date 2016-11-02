@@ -3,8 +3,17 @@
   
   <url>
     <loc>http://1000k.github.io/</loc>
-    <lastmod>2015-03-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2016-11-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://1000k.github.io/2016/11/03/retrospective-of-six-month-in-new-work/</loc>
+    <lastmod>2016-11-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://1000k.github.io/projects/</loc>
+    <lastmod>2016-10-02T22:55:05-04:00</lastmod>
   </url>
   
   <url>
@@ -18,12 +27,12 @@
   </url>
   
   <url>
-    <loc>http://1000k.github.io/2015/01/16/close-popup-window-on-chrome/</loc>
+    <loc>http://1000k.github.io/2015/01/16/reasons-for-using-chef-client-local-mode-instead-of-chef-solo/</loc>
     <lastmod>2015-01-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://1000k.github.io/2015/01/16/reasons-for-using-chef-client-local-mode-instead-of-chef-solo/</loc>
+    <loc>http://1000k.github.io/2015/01/16/close-popup-window-on-chrome/</loc>
     <lastmod>2015-01-16T00:00:00+00:00</lastmod>
   </url>
   
@@ -153,12 +162,12 @@
   </url>
   
   <url>
-    <loc>http://1000k.github.io/2013/08/27/change-source-because-bundle-install-is-too-slow/</loc>
+    <loc>http://1000k.github.io/2013/08/27/recipe-for-construct-centos-rails4-ruby2/</loc>
     <lastmod>2013-08-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://1000k.github.io/2013/08/27/recipe-for-construct-centos-rails4-ruby2/</loc>
+    <loc>http://1000k.github.io/2013/08/27/change-source-because-bundle-install-is-too-slow/</loc>
     <lastmod>2013-08-27T00:00:00+00:00</lastmod>
   </url>
   
@@ -213,12 +222,12 @@
   </url>
   
   <url>
-    <loc>http://1000k.github.io/2013/04/14/git-workflow/</loc>
+    <loc>http://1000k.github.io/2013/04/14/tutorial-for-installing-mariadb-10-0-1-in-centos6/</loc>
     <lastmod>2013-04-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://1000k.github.io/2013/04/14/tutorial-for-installing-mariadb-10-0-1-in-centos6/</loc>
+    <loc>http://1000k.github.io/2013/04/14/git-workflow/</loc>
     <lastmod>2013-04-14T00:00:00+00:00</lastmod>
   </url>
   
@@ -233,12 +242,12 @@
   </url>
   
   <url>
-    <loc>http://1000k.github.io/2013/03/27/usage-of-vfsstream/</loc>
+    <loc>http://1000k.github.io/2013/03/27/what-to-do-if-git-sudmobule-init-fails-after-git-clone/</loc>
     <lastmod>2013-03-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://1000k.github.io/2013/03/27/what-to-do-if-git-sudmobule-init-fails-after-git-clone/</loc>
+    <loc>http://1000k.github.io/2013/03/27/usage-of-vfsstream/</loc>
     <lastmod>2013-03-27T00:00:00+00:00</lastmod>
   </url>
   
@@ -308,12 +317,12 @@
   </url>
   
   <url>
-    <loc>http://1000k.github.io/2012/10/14/how-to-dynamically-insert-the-list-view-in-the-jquery-mobile/</loc>
+    <loc>http://1000k.github.io/2012/10/14/jqm-remedy-when-the-map-does-not-appear-in-google-maps/</loc>
     <lastmod>2012-10-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://1000k.github.io/2012/10/14/jqm-remedy-when-the-map-does-not-appear-in-google-maps/</loc>
+    <loc>http://1000k.github.io/2012/10/14/how-to-dynamically-insert-the-list-view-in-the-jquery-mobile/</loc>
     <lastmod>2012-10-14T00:00:00+00:00</lastmod>
   </url>
   
@@ -323,12 +332,12 @@
   </url>
   
   <url>
-    <loc>http://1000k.github.io/2012/09/25/installing-jenkins-in-xampp-env/</loc>
+    <loc>http://1000k.github.io/2012/09/25/glossary-of-terms-in-jenkins/</loc>
     <lastmod>2012-09-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://1000k.github.io/2012/09/25/glossary-of-terms-in-jenkins/</loc>
+    <loc>http://1000k.github.io/2012/09/25/installing-jenkins-in-xampp-env/</loc>
     <lastmod>2012-09-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -383,12 +392,12 @@
   </url>
   
   <url>
-    <loc>http://1000k.github.io/2012/01/15/installing-up-to-date-package-by-yum/</loc>
+    <loc>http://1000k.github.io/2012/01/15/managing-source-installed-packages-using-paco/</loc>
     <lastmod>2012-01-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://1000k.github.io/2012/01/15/managing-source-installed-packages-using-paco/</loc>
+    <loc>http://1000k.github.io/2012/01/15/installing-up-to-date-package-by-yum/</loc>
     <lastmod>2012-01-15T00:00:00+00:00</lastmod>
   </url>
   
@@ -543,12 +552,12 @@
   </url>
   
   <url>
-    <loc>http://1000k.github.io/2010/07/23/redirect-keeping-query-strings-with-mod-rewrite/</loc>
+    <loc>http://1000k.github.io/2010/07/23/simplify-controller-by-exception/</loc>
     <lastmod>2010-07-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://1000k.github.io/2010/07/23/simplify-controller-by-exception/</loc>
+    <loc>http://1000k.github.io/2010/07/23/redirect-keeping-query-strings-with-mod-rewrite/</loc>
     <lastmod>2010-07-23T00:00:00+00:00</lastmod>
   </url>
   
@@ -563,12 +572,12 @@
   </url>
   
   <url>
-    <loc>http://1000k.github.io/2010/07/16/enable-to-get-code-coverage-in-cakephp-13/</loc>
+    <loc>http://1000k.github.io/2010/07/16/order-of-callback-in-unit-testing/</loc>
     <lastmod>2010-07-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://1000k.github.io/2010/07/16/order-of-callback-in-unit-testing/</loc>
+    <loc>http://1000k.github.io/2010/07/16/enable-to-get-code-coverage-in-cakephp-13/</loc>
     <lastmod>2010-07-16T00:00:00+00:00</lastmod>
   </url>
   
@@ -578,12 +587,12 @@
   </url>
   
   <url>
-    <loc>http://1000k.github.io/2010/07/06/cakephp-official-tutorial-using-sqlite3/</loc>
+    <loc>http://1000k.github.io/2010/07/06/basics-for-building-console-app-in-cakephp/</loc>
     <lastmod>2010-07-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://1000k.github.io/2010/07/06/send-mail-using-qdmail-in-cakephp-132/</loc>
+    <loc>http://1000k.github.io/2010/07/06/cakephp-official-tutorial-using-sqlite3/</loc>
     <lastmod>2010-07-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -593,7 +602,7 @@
   </url>
   
   <url>
-    <loc>http://1000k.github.io/2010/07/06/basics-for-building-console-app-in-cakephp/</loc>
+    <loc>http://1000k.github.io/2010/07/06/send-mail-using-qdmail-in-cakephp-132/</loc>
     <lastmod>2010-07-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -638,12 +647,12 @@
   </url>
   
   <url>
-    <loc>http://1000k.github.io/2010/05/26/implement-zen-coding-to-netbeans-68/</loc>
+    <loc>http://1000k.github.io/2010/05/26/using-sqlite3-in-codeigniter-172/</loc>
     <lastmod>2010-05-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://1000k.github.io/2010/05/26/using-sqlite3-in-codeigniter-172/</loc>
+    <loc>http://1000k.github.io/2010/05/26/implement-zen-coding-to-netbeans-68/</loc>
     <lastmod>2010-05-26T00:00:00+00:00</lastmod>
   </url>
   
@@ -653,12 +662,12 @@
   </url>
   
   <url>
-    <loc>http://1000k.github.io/2010/05/24/coding-rules-of-codeigniter/</loc>
+    <loc>http://1000k.github.io/2010/05/24/usage-of-codeigniter-model/</loc>
     <lastmod>2010-05-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://1000k.github.io/2010/05/24/usage-of-codeigniter-model/</loc>
+    <loc>http://1000k.github.io/2010/05/24/coding-rules-of-codeigniter/</loc>
     <lastmod>2010-05-24T00:00:00+00:00</lastmod>
   </url>
   
@@ -688,7 +697,7 @@
   </url>
   
   <url>
-    <loc>http://1000k.github.io/2010/05/16/opening/</loc>
+    <loc>http://1000k.github.io/2010/05/16/cannot-select-gt-and-lt-with-jquery/</loc>
     <lastmod>2010-05-16T00:00:00+00:00</lastmod>
   </url>
   
@@ -698,7 +707,7 @@
   </url>
   
   <url>
-    <loc>http://1000k.github.io/2010/05/16/cannot-select-gt-and-lt-with-jquery/</loc>
+    <loc>http://1000k.github.io/2010/05/16/opening/</loc>
     <lastmod>2010-05-16T00:00:00+00:00</lastmod>
   </url>
   

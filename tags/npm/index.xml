@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Npm on 1000g</title>
-    <link>http://1000k.github.io/tags/npm/</link>
-    <description>Recent content in Npm on 1000g</description>
+    <title>1000g</title>
+    <link>http://1000k.github.io/tags/npm/index.xml</link>
+    <description>Recent content on 1000g</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 19 Oct 2013 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license.</copyright>
     <atom:link href="http://1000k.github.io/tags/npm/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -17,13 +17,13 @@
       <guid>http://1000k.github.io/2013/10/19/automate-build-js-and-css-with-grunt/</guid>
       <description>
 
-&lt;h2 id=&#34;grunt-とは:31d9c632b09e89723d113ebbe8ae7aa4&#34;&gt;Grunt とは？&lt;/h2&gt;
+&lt;h2 id=&#34;grunt-とは&#34;&gt;Grunt とは？&lt;/h2&gt;
 
 &lt;p&gt;JS/CSS のビルド自動化ツール。&lt;/p&gt;
 
 &lt;p&gt;JS のユニットテスト、ファイルの結合＆難読化＆最小化などの様々なタスクを自動で行うことができます。&lt;/p&gt;
 
-&lt;h2 id=&#34;インストール:31d9c632b09e89723d113ebbe8ae7aa4&#34;&gt;インストール&lt;/h2&gt;
+&lt;h2 id=&#34;インストール&#34;&gt;インストール&lt;/h2&gt;
 
 &lt;p&gt;まず、node.js と npm をインストールします。&lt;/p&gt;
 
@@ -63,7 +63,7 @@
 
 &lt;p&gt;以上で前準備は完了です。&lt;/p&gt;
 
-&lt;h2 id=&#34;使い方:31d9c632b09e89723d113ebbe8ae7aa4&#34;&gt;使い方&lt;/h2&gt;
+&lt;h2 id=&#34;使い方&#34;&gt;使い方&lt;/h2&gt;
 
 &lt;p&gt;プロジェクトのルートに &lt;code&gt;Gruntfile.js&lt;/code&gt; を書いて、実行したいタスクを列挙するだけです。&lt;/p&gt;
 
@@ -143,11 +143,11 @@
 
 &lt;p&gt;例えば上で定義 (&lt;code&gt;grunt.registerTask()&lt;/code&gt; )したタスクから merge を実行したければ、&lt;code&gt;grunt merge&lt;/code&gt; と叩けば OK です。。&lt;/p&gt;
 
-&lt;h2 id=&#34;変更の監視-自動タスク実行:31d9c632b09e89723d113ebbe8ae7aa4&#34;&gt;変更の監視＆自動タスク実行&lt;/h2&gt;
+&lt;h2 id=&#34;変更の監視-自動タスク実行&#34;&gt;変更の監視＆自動タスク実行&lt;/h2&gt;
 
 &lt;p&gt;&lt;code&gt;grunt watch&lt;/code&gt; を叩くことで、指定した js ファイルを監視し、変更があったら自動で指定したタスクを実行してくれます。&lt;/p&gt;
 
-&lt;h2 id=&#34;参考:31d9c632b09e89723d113ebbe8ae7aa4&#34;&gt;参考&lt;/h2&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://hamalog.tumblr.com/post/18137176043/grunt-js-css&#34;&gt;gruntで快適JS/CSSビルド生活 - Takazudo hamalog&lt;/a&gt;&lt;/li&gt;

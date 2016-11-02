@@ -1,54 +1,66 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ja">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<title> MySQL 5.1 の boolean 型を検証 &middot; 1000g </title>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
+    <title>MySQL 5.1 の boolean 型を検証 &middot; 1000g</title>
+    <meta name="author" content="SENDA Keijiro">
+    <meta name="description" content="Programming knowledge">
+    <meta name="generator" content="Hugo 0.17" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-<link rel="stylesheet" href="http://1000k.github.io//css/slim.css">
-<link rel="stylesheet" href="http://1000k.github.io//css/highlight.min.css">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext' rel='stylesheet'>
+    <!-- RSS autodiscovery -->
+    
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
-<link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="http://1000k.github.io/img/favicon.ico">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.2/normalize.min.css">
 
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="http://1000k.github.io/css/screen.css">
+    <link rel="stylesheet" href="http://1000k.github.io/css/github.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/default.min.css">
 
-<link href="" rel="alternate" type="application/rss+xml" title="1000g" />
-
-
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
+    <!-- Stylesheet for theme color -->
+    <style type="text/css">
+    a, a:visited {color: #33cc99;}
+    .pagination a {color: #33cc99;}
+    .gist .gist-file .gist-meta a:visited {color: #33cc99 !important;}
+    a:focus, a:hover {color: #178b6b;}
+    h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover {color: #178b6b;}
+    .older-posts:hover, .newer-posts:hover {color: #178b6b;}
+</style>
 </head>
 
-<body>
-  <div class="container">
-    <div class="header">
-  <h1 class="site-title"><a href="http://1000k.github.io/">1000g</a></h1>
-  <p class="site-tagline">Tech blog</p>
-  <div class="nav">
-    <a class="nav-btn" href="#">
-      <span class="ci ci-burger"></span>
-    </a>
-    <ul class="nav-list">
-      
+<body class="post-template">
 
-      <li><a href="https://github.com/1000k">Github</a></li>
-      <li><a href="https://twitter.com/1000kei">Twitter</a></li>
-      
+    <header id="site-head">
+	
+	<h1 class="blog-title"><a href="http://1000k.github.io/">1000g</a></h1>
+	
+	
+	<h1 class="blog-subtitle">Development knowledge</h1>
+	
+</header>
+    
+<nav class="menu" role="nav">
+    <ul>
+        
+        	<li class="nav nav-current"><a href="/about/">ABOUT</a></li>
+      	
     </ul>
-  </div>
-</div>
-    <div class="content">
-      <div class="post">
-        <h2 class="post-title"><a href="http://1000k.github.io/2010/11/15/anatomy-of-mysql-boolean-type/">MySQL 5.1 の boolean 型を検証</a></h2>
-        <div class="post-content">
-          
+</nav>
 
-<p>MySQL にて BOOLEAN 型のフィールドを作りたいと思ったのですが、Googleで調べると「MySQL の BOOLEAN 型は実質 tinyint(1) と同じ」といったことが書いてありました。</p>
+
+    <main class="content" role="main">
+	    <article class="post">
+	        <header>
+	        <h1 class="post-title">MySQL 5.1 の boolean 型を検証</h1>
+
+	        <section class="post-content">
+	            <p>MySQL にて BOOLEAN 型のフィールドを作りたいと思ったのですが、Googleで調べると「MySQL の BOOLEAN 型は実質 tinyint(1) と同じ」といったことが書いてありました。</p>
 
 <p>また、「MySQL で厳密な BOOLEAN 型を表現したければ、ENUM(&lsquo;TRUE&rsquo;, &lsquo;FALSE&rsquo;) を使った方がいい」とも書いてありました。</p>
 
@@ -56,7 +68,9 @@
 
 <p>実験した環境の MySQL バージョンは 5.1.41 です。</p>
 
-<h2 id="データはどのように格納されるのか:fac054033163afd225cf9e287567f3c9">データはどのように格納されるのか？</h2>
+<p></p>
+
+<h2 id="データはどのように格納されるのか">データはどのように格納されるのか？</h2>
 
 <p>以下のように、連番とブール値を対に持つテーブルを作りました。</p>
 
@@ -117,9 +131,9 @@ INSERT INTO boolean_test VALUES (9, 2147483648); -- 4 byteの最大値+1
 2 rows in set (0.00 sec)
 </code></pre>
 
-<h2 id="boolean型としてselectできるか:fac054033163afd225cf9e287567f3c9">BOOLEAN型としてSELECTできるか？</h2>
+<h2 id="boolean型としてselectできるか">BOOLEAN型としてSELECTできるか？</h2>
 
-<h3 id="検索条件を-で指定してみる:fac054033163afd225cf9e287567f3c9">検索条件を「=」で指定してみる</h3>
+<h3 id="検索条件を-で指定してみる">検索条件を「=」で指定してみる</h3>
 
 <pre><code>SELECT * FROM boolean_test WHERE flag = TRUE;  -- id:1, 3 がヒット
 SELECT * FROM boolean_test WHERE flag = FALSE; -- id:2, 4 がヒット
@@ -131,7 +145,7 @@ SELECT * FROM boolean_test WHERE flag = 0;     -- id:2, 4 がヒット
 
 <p>→<strong>「flag = TRUE」という条件は、「flag = 1」と同値。</strong></p>
 
-<h3 id="検索条件を-is-で指定してみる:fac054033163afd225cf9e287567f3c9">検索条件を「IS」で指定してみる</h3>
+<h3 id="検索条件を-is-で指定してみる">検索条件を「IS」で指定してみる</h3>
 
 <pre><code>SELECT * FROM boolean_test WHERE flag IS TRUE;  -- id:1, 3, 6, 7, 8, 9 がヒット
 SELECT * FROM boolean_test WHERE flag IS FALSE; -- id:2, 4 がヒット
@@ -141,7 +155,7 @@ SELECT * FROM boolean_test WHERE flag IS FALSE; -- id:2, 4 がヒット
 
 <p>→<strong>「flag = TRUE」と「flag IS TRUE」は全く別の結果を返す。</strong></p>
 
-<h2 id="unknown-はどういう扱いになる:fac054033163afd225cf9e287567f3c9">UNKNOWN はどういう扱いになる？</h2>
+<h2 id="unknown-はどういう扱いになる">UNKNOWN はどういう扱いになる？</h2>
 
 <p>SQL-99 の定義によると、「BOOLEAN 型は TRUE/FALSE/UNKNOWN の3値で表現される」ようです。</p>
 
@@ -168,7 +182,7 @@ SELECT * FROM boolean_test WHERE flag = 'UNKNOWN'; -- ???: id:2, 4 がヒット
 
 <p>このあたりは MySQL の仕様をよく確認しないとわかりませんが、まず入力しないだろうということで、この際無視します。</p>
 
-<h2 id="考察:fac054033163afd225cf9e287567f3c9">考察</h2>
+<h2 id="考察">考察</h2>
 
 <p>やはり MySQL の BOOLEAN 型は tinyint(1) と同じようです。</p>
 
@@ -176,11 +190,11 @@ SELECT * FROM boolean_test WHERE flag = 'UNKNOWN'; -- ???: id:2, 4 がヒット
 
 <p>また、ENUM 型は検証していませんが、SQL標準（SQL99）ではサポートされていないため、プログラムの互換性を考えると積極的に使う気が起きません。</p>
 
-<h2 id="まとめ:fac054033163afd225cf9e287567f3c9">まとめ</h2>
+<h2 id="まとめ">まとめ</h2>
 
 <p>MySQL で Boolean 型を表したければ、少し気持ち悪いですが tinyint(1) でカラムを作った方が良いようです。</p>
 
-<h2 id="参考:fac054033163afd225cf9e287567f3c9">参考</h2>
+<h2 id="参考">参考</h2>
 
 <ul>
 <li><a href="http://slashdot.jp/comments.pl?threshold=0&amp;mode=thread&amp;commentsort=1&amp;sid=446159">コメント: mySQLには、boolean型が無いなんて・・ - スラッシュドット・ジャパン</a></li>
@@ -188,38 +202,51 @@ SELECT * FROM boolean_test WHERE flag = 'UNKNOWN'; -- ???: id:2, 4 がヒット
 <li><a href="http://www.geocities.jp/ky_webid/c/010.html">Ｃ言語編　第１０章　変数のサイズ</a></li>
 <li><a href="http://www.nslabs.jp/book2-sql-types.rhtml">追補: SQLデータ型の一覧 | Netsphere Laboratories</a></li>
 </ul>
+	        </section>
+	    </article>
+	</main>
 
-        </div>
-      </div>
-    </div>
+    <footer class="site-footer">
+	<div class="inner">
+		<section class="footer-social">
+			
+		    <a href="//twitter.com/1000kei" target="_blank" title="Twitter"><i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span></a>&nbsp;
+		    
+		    
+		    <a href="//github.com/1000k" target="_blank" title="GitHub"><i class="fa fa-2x fa-fw fa-github"></i> <span class="hidden">GitHub</span></a>&nbsp;
+		    
+		    
+		    <a href="" target="_blank" title="RSS"><i class="fa fa-2x fa-fw fa-rss"></i> <span class="hidden">RSS</span></a>
+		</section>
 
-    <hr>
+		<section class="copyright">&copy; 2016 <a href="http://1000k.github.io/">SENDA Keijiro</a>. Released under the MIT license.</section>
+	</div>
+</footer>
 
-    
-      <a class="btn btn-previous" href="http://1000k.github.io/2010/12/06/cooperation-of-skethup-and-cad/">&laquo; SketchupとCADの連携</a>
-    
-    
-      <a class="btn btn-next" href="http://1000k.github.io/2010/11/15/define-class-constant-dynamically/">クラス定数を動的に指定する &raquo;</a>
-    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://1000k.github.io/js/index.js"></script>
+<script src="http://1000k.github.io/js/smooth-scroll.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
 
-    <div class="footer">
-  <p>Powered by <a href="http://gohugo.io">Hugo</a>. This theme—Slim—is open sourced on <a href="https://github.com/zhe/hugo-theme-slim">Github</a>.</p>
-</div>
+<script>
+    smoothScroll.init({
+        speed: 800,
+        easing: 'easeInOutCubic',
+        updateURL: false,
+        offset: 125,
+    });
+</script>
+<script>hljs.initHighlightingOnLoad();</script>
 
-  </div>
-  <script src="http://1000k.github.io//js/slim.js"></script>
-  <script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-46659459-2', 'auto');
-ga('send', 'pageview');
-
+<!-- Google Analytics -->
+<script>
+  var _gaq=[['_setAccount','UA-46659459-2'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
 
 
 </body>
-
 </html>
